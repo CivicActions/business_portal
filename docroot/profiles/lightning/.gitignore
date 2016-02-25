@@ -1,0 +1,9 @@
+# Ignore contrib
+*/contrib/*
+*/custom/*
+
+# Ignore libraries
+libraries/*
+
+# OSX
+.DS_Store
