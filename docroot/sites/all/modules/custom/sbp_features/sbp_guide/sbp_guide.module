@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BP Guide feature.
+ */
+
+include_once 'sbp_guide.features.inc';
