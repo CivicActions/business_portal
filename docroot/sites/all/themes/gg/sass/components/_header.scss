@@ -1,0 +1,68 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * header component.
+ *
+ */
+
+#header {
+  color: $white;
+  background: $grayscale_dark;
+  a {
+    color: $grayscale_light;
+  }
+}
+
+/* Wrapping link for logo. */
+.header__logo {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo image. */
+.header__logo-image {
+  vertical-align: bottom;
+}
+
+/* Wrapper for website name and slogan. */
+.header__name-and-slogan {
+  float: left;
+}
+
+/* The name of the website. */
+.header__site-name {
+  margin: 0;
+  @include adjust-font-size-to( $h1-font-size );
+}
+
+/* The link around the name of the website. */
+.header__site-link {
+  &:link,
+  &:visited {
+    color: #000;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+/* The slogan (or tagline) of a website. */
+.header__site-slogan {
+  margin: 0;
+}
+
+/* The secondary menu (login, etc.) */
+.header__secondary-menu {
+  float: right;
+}
+
+/* Wrapper for any blocks placed in the header region. */
+.header__region {
+  /* Clear the logo. */
+  clear: both;
+}
