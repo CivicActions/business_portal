@@ -136,10 +136,10 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
-  color: $golden_gate;
+  color: $black;
 }
 a:visited {
-  color: $gg_darker;
+  color: $black;
 }
 a:hover,
 a:focus {
@@ -171,11 +171,11 @@ a:hover {
 /* Set 1 unit of vertical rhythm on the top and bottom margin. */
 p,
 pre {
-  margin: rhythm(1) 0;
+  margin: rhythm(0.5) 0;
 }
 blockquote {
   /* Also indent the quote on both sides. */
-  margin: rhythm(1) $indent-amount;
+  margin: rhythm(0.5) $indent-amount;
 }
 
 /**
@@ -188,10 +188,12 @@ h1 {
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  @include leader(1, $h1-font-size);
-  @include trailer(1, $h1-font-size);
+  @include leader(0.5, $h1-font-size);
+  @include trailer(0.5, $h1-font-size);
 }
 h2 {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: normal;
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
   @include trailer(1, $h2-font-size);
