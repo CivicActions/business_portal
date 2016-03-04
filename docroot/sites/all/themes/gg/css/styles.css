@@ -191,6 +191,7 @@ h1 {
   font-size: 2em;
   line-height: 1.5em;
   font-family: 'Droid Sans', sans-serif;
+  font-weight: normal;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin-top: 0.75em;
   margin-bottom: 0.75em;
@@ -1629,7 +1630,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1456926992');
+  background-image: url('../images/progress.gif?1457091759');
 }
 
 /**
@@ -1642,35 +1643,39 @@ tr.selected td {
 /* line 9, ../sass/components/_header.scss */
 #header {
   color: white;
-  background: #313131;
+  background: black;
+  padding: 0;
 }
-/* line 12, ../sass/components/_header.scss */
+/* line 13, ../sass/components/_header.scss */
 #header a {
   color: #e6e6e6;
 }
 
 /* Wrapping link for logo. */
-/* line 18, ../sass/components/_header.scss */
+/* line 19, ../sass/components/_header.scss */
 .header__logo {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
 }
 
 /* Logo image. */
-/* line 25, ../sass/components/_header.scss */
+/* line 27, ../sass/components/_header.scss */
 .header__logo-image {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 30, ../sass/components/_header.scss */
+/* line 32, ../sass/components/_header.scss */
 .header__name-and-slogan {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 20px;
 }
 
 /* The name of the website. */
-/* line 35, ../sass/components/_header.scss */
+/* line 39, ../sass/components/_header.scss */
 .header__site-name {
   margin: 0;
   font-size: 2em;
@@ -1678,30 +1683,30 @@ tr.selected td {
 }
 
 /* The link around the name of the website. */
-/* line 43, ../sass/components/_header.scss */
+/* line 47, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 49, ../sass/components/_header.scss */
+/* line 53, ../sass/components/_header.scss */
 .header__site-link:hover, .header__site-link:focus {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 55, ../sass/components/_header.scss */
+/* line 59, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 60, ../sass/components/_header.scss */
+/* line 64, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 65, ../sass/components/_header.scss */
+/* line 69, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
   clear: both;

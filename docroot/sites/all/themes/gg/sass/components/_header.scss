@@ -8,7 +8,8 @@
 
 #header {
   color: $white;
-  background: $grayscale_dark;
+  background: $black;
+  padding: 0;
   a {
     color: $grayscale_light;
   }
@@ -16,19 +17,22 @@
 
 /* Wrapping link for logo. */
 .header__logo {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
 }
 
 /* Logo image. */
 .header__logo-image {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
 .header__name-and-slogan {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 20px;
 }
 
 /* The name of the website. */
