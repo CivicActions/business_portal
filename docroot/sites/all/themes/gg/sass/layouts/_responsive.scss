@@ -49,6 +49,11 @@ $zen-auto-include-item-base: false;
   @include zen-grid-item-base();
 }
 
+#content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* Containers for grid items and flow items. */
 #header,
 #main,

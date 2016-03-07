@@ -5,3 +5,5 @@ $black: rgb(0, 0, 0);
 $grayscale: #888888;
 $grayscale_dark: rgb(49, 49, 49);
 $grayscale_light: rgb(230, 230, 230);
+$sec1:  rgb(0, 190, 213); //  #00BED5
+$sec1_light:  adjust-lightness($sec1, 50%);

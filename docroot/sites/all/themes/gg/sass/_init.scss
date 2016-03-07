@@ -50,9 +50,9 @@ $legacy-support-for-ie8: true;
 // @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
 
 $base-font-size:   16px; // The font size set on the root html element.
-$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+$base-line-height: 6px; // This line-height determines the basic unit of vertical rhythm.
 
-$h1-font-size: 2    * $base-font-size;
+$h1-font-size: 3    * $base-font-size;
 $h2-font-size: 1.6  * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
