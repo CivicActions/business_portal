@@ -110,7 +110,8 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   // Establish a vertical rhythm unit using $base-line-height.
   @include adjust-leading-to(1);
-  color: $grayscale_dark;
+  color: $grayscale;
+  @include adjust-leading-to(4);
 }
 
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
@@ -137,12 +138,14 @@ body {
  */
 a:link {
   color: $black;
+  text-decoration: none;
 }
 a:visited {
   color: $black;
 }
 a:hover,
 a:focus {
+  text-decoration: underlink;
 }
 a:active {
 }
@@ -186,10 +189,11 @@ h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   @include adjust-font-size-to( $h1-font-size );
   font-family: 'Droid Sans', sans-serif;
+  color: $grayscale_dark;
   font-weight: normal;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  @include leader(0.5, $h1-font-size);
-  @include trailer(0.5, $h1-font-size);
+  @include leader(1, $h1-font-size);
+  @include trailer(1, $h1-font-size);
 }
 h2 {
   font-family: 'Droid Sans', sans-serif;
