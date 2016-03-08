@@ -11,7 +11,6 @@ function sbp_guide_defaultconfig_features() {
   return array(
     'sbp_guide' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
       'user_default_permissions' => 'user_default_permissions',
     ),
   );
@@ -182,7 +181,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
   );
@@ -269,7 +268,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -379,7 +378,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'media_generic',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -392,66 +391,6 @@ function sbp_guide_defaultconfig_field_default_fields() {
   t('Small Business Guide');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_guide_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_sbp_guide';
-  $strongarm->value = 'edit-submission';
-  $export['additional_settings__active_tab_sbp_guide'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__sbp_guide';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '5',
-        ),
-        'title' => array(
-          'weight' => '0',
-        ),
-        'path' => array(
-          'weight' => '4',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__sbp_guide'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__sbp_guide';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__sbp_guide'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_continue_sbp_guide';
-  $strongarm->value = 'Save and add fields';
-  $export['save_continue_sbp_guide'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'workbench_moderation_default_state_sbp_guide';
-  $strongarm->value = 'draft';
-  $export['workbench_moderation_default_state_sbp_guide'] = $strongarm;
-
-  return $export;
 }
 
 /**
