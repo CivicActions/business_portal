@@ -18,6 +18,12 @@
   line-height: 1.17188em;
 }
 
+/* line 13, ../sass/_typography.scss */
+.intro-text .field-item {
+  font-size: 1.6em;
+  line-height: 1.17188em;
+}
+
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -961,6 +967,8 @@ table {
 /* line 52, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
+  margin: 0 auto 40px auto;
+  text-align: center;
 }
 /* line 54, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center > .inside > .panel-pane:not(.pane-node-field-image) {
@@ -1849,6 +1857,11 @@ tr.selected td {
 /* line 9, ../sass/components/_field.scss */
 .field-label {
   color: #313131;
+}
+
+/* line 14, ../sass/components/_field.scss */
+.field-type-entityreference .field-item {
+  margin-bottom: 40px;
 }
 
 /**
