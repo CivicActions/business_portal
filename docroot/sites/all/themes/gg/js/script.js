@@ -21,5 +21,60 @@ Drupal.behaviors.layout = {
   }
 };
 
+Drupal.behaviors.rotator = {
+  attach: function(context, settings) {
+
+    var rotatingWrapper = $(".front .panels-flexible-2 .field-name-field-image ");
+    var rotatingItems = rotatingWrapper.find("img");
+
+    rotatingItems.hide();
+    rotatingWrapper.attr("id", "rotating-items-wrapper");
+    rotatingItems.addClass("rotating-item");
+    //count number of items
+    var numberOfItems = rotatingItems.length;
+
+    if (!numberOfItems) return;
+    console.log(numberOfItems);
+    var InfiniteRotator =
+        {
+          init: function()
+          {
+            //initial fade-in time (in milliseconds)
+            var initialFadeIn = 1000;
+
+            //interval between items (in milliseconds)
+            var itemInterval = 5000;
+
+            //cross-fade time (in milliseconds)
+            var fadeTime = 2500;
+
+
+
+            //set current item
+            var currentItem = 0;
+
+            //show first item
+            rotatingItems.first().eq(currentItem).fadeIn(initialFadeIn);
+
+            //loop through the items
+            var infiniteLoop = setInterval(function(){
+              rotatingItems.eq(currentItem).fadeOut(fadeTime);
+
+              if(currentItem == numberOfItems -1){
+                currentItem = 0;
+              }else{
+                currentItem++;
+              }
+              rotatingItems.eq(currentItem).fadeIn(fadeTime);
+
+            }, itemInterval);
+          }
+        };
+
+    InfiniteRotator.init();
+  }
+};
+
+
 
 })(jQuery, Drupal, this, this.document);

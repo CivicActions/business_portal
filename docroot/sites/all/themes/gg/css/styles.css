@@ -923,38 +923,44 @@ table {
   }
 }
 
-/* line 27, ../sass/layouts/_panels.scss */
+/* line 26, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   margin: 0 auto 0 auto;
   max-width: 1074px;
 }
-/* line 31, ../sass/layouts/_panels.scss */
+/* line 30, ../sass/layouts/_panels.scss */
 .panel-2col-stacked a {
   color: #00bed5;
 }
 
-/* line 36, ../sass/layouts/_panels.scss */
+/* line 35, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first {
   width: 25%;
 }
 @media all and (max-width: 720px) {
-  /* line 36, ../sass/layouts/_panels.scss */
+  /* line 35, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: none;
     width: 100%;
   }
 }
 
-/* line 44, ../sass/layouts/_panels.scss */
+/* line 43, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last {
   width: 75%;
 }
 @media all and (max-width: 720px) {
-  /* line 44, ../sass/layouts/_panels.scss */
+  /* line 43, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: none;
     width: 100%;
   }
+}
+
+/* Flexible panel */
+/* line 52, ../sass/layouts/_panels.scss */
+.panels-flexible-region-2-center {
+  width: 100%;
 }
 
 /* Component (SMACSS module) rules */
@@ -1837,6 +1843,30 @@ tr.selected td {
 /* line 9, ../sass/components/_field.scss */
 .field-label {
   color: #313131;
+}
+
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * Slideshow component.
+ *
+ */
+/* line 9, ../sass/components/_slideshow.scss */
+#rotating-items-wrapper {
+  position: relative;
+  width: 100%;
+  background: black;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* line 17, ../sass/components/_slideshow.scss */
+.rotating-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /**
