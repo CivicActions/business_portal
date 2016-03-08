@@ -18,8 +18,8 @@ function sbp_guide_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function sbp_guide_node_info() {
   $items = array(
-    'guide' => array(
-      'name' => t('Guide'),
+    'sbp_guide' => array(
+      'name' => t('Business Portal Guide'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
