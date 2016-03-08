@@ -225,7 +225,7 @@
   border-right: 0;
   border-bottom: 0;
   display: block;
-  @include adjust-leading-to(1);
+  @include adjust-leading-to(6);
   text-decoration: none;
 }
 

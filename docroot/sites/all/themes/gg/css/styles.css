@@ -962,6 +962,12 @@ table {
 .panels-flexible-region-2-center {
   width: 100%;
 }
+/* line 54, ../sass/layouts/_panels.scss */
+.panels-flexible-region-2-center > .inside > .panel-pane:not(.pane-node-field-image) {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /* Component (SMACSS module) rules */
 /**
@@ -1188,7 +1194,7 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
   border-right: 0;
   border-bottom: 0;
   display: block;
-  line-height: 0.375em;
+  line-height: 2.25em;
   text-decoration: none;
 }
 
@@ -1859,9 +1865,10 @@ tr.selected td {
   background: black;
   height: 500px;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 
-/* line 17, ../sass/components/_slideshow.scss */
+/* line 18, ../sass/components/_slideshow.scss */
 .rotating-item {
   display: none;
   position: absolute;
