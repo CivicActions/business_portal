@@ -968,7 +968,6 @@ table {
 .panels-flexible-region-2-center {
   width: 100%;
   margin: 0 auto 40px auto;
-  text-align: center;
 }
 /* line 54, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center > .inside > .panel-pane:not(.pane-node-field-image) {
