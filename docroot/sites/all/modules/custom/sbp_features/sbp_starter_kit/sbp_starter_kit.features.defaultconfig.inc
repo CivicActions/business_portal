@@ -11,7 +11,6 @@ function sbp_starter_kit_defaultconfig_features() {
   return array(
     'sbp_starter_kit' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
       'user_default_permissions' => 'user_default_permissions',
     ),
   );
@@ -308,9 +307,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
           'sort' => array(
             'type' => 'none',
           ),
-          'target_bundles' => array(
-            'online_resource' => 'online_resource',
-          ),
+          'target_bundles' => array(),
         ),
         'target_type' => 'node',
       ),
@@ -752,25 +749,6 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
   t('Related Permits');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_starter_kit_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_comment_comment_node_sbp_starter_kit';
-  $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_comment_comment_node_sbp_starter_kit'] = $strongarm;
-
-  return $export;
 }
 
 /**
