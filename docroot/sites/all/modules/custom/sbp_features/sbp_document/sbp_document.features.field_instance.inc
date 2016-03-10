@@ -153,6 +153,7 @@ function sbp_document_field_default_field_instances() {
   // Exported field_instance: 'file-document-field_department_organization'.
   $field_instances['file-document-field_department_organization'] = array(
     'bundle' => 'document',
+    'default_value' => array(),
     'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
@@ -209,12 +210,15 @@ function sbp_document_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'inline_entity_form',
+      'module' => 'entityreference',
       'settings' => array(
         'fields' => array(),
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
         'type_settings' => array(
           'allow_existing' => FALSE,
-          'allow_new' => 1,
+          'allow_new' => 0,
           'delete_references' => 0,
           'label_plural' => 'nodes',
           'label_singular' => 'node',
@@ -222,7 +226,7 @@ function sbp_document_field_default_field_instances() {
           'override_labels' => 0,
         ),
       ),
-      'type' => 'inline_entity_form_single',
+      'type' => 'entityreference_autocomplete',
       'weight' => 7,
     ),
   );

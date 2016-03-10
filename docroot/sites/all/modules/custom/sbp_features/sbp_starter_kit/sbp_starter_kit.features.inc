@@ -20,12 +20,19 @@ function sbp_starter_kit_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function sbp_starter_kit_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function sbp_starter_kit_node_info() {
   $items = array(
     'sbp_starter_kit' => array(
-      'name' => t('SBP Starter Kit'),
+      'name' => t('Business Portal Starter Kit'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

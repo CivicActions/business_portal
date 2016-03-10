@@ -14,7 +14,7 @@ function sbp_starter_kit_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_sbp_starter_kit';
-  $strongarm->value = 'edit-panelizer';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_sbp_starter_kit'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -86,6 +86,29 @@ function sbp_starter_kit_strongarm() {
   $strongarm->name = 'diff_view_mode_preview_node_sbp_starter_kit';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_sbp_starter_kit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_field_collection_item__field_starter_kit_key_points';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_field_collection_item__field_starter_kit_key_points'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

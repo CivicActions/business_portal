@@ -10,6 +10,13 @@
 function sbp_starter_kit_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer comment comment_node_sbp_starter_kit defaults'.
+  $permissions['administer panelizer comment comment_node_sbp_starter_kit defaults'] = array(
+    'name' => 'administer panelizer comment comment_node_sbp_starter_kit defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node sbp_starter_kit content'.
   $permissions['administer panelizer node sbp_starter_kit content'] = array(
     'name' => 'administer panelizer node sbp_starter_kit content',

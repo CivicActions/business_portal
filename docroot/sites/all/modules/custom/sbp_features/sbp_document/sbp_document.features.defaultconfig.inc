@@ -11,7 +11,6 @@ function sbp_document_defaultconfig_features() {
   return array(
     'sbp_document' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -234,7 +233,7 @@ function sbp_document_defaultconfig_field_default_fields() {
   $fields['file-document-field_department_organization'] = array(
     'field_config' => array(
       'active' => 1,
-      'cardinality' => 1,
+      'cardinality' => -1,
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_department_organization',
@@ -265,7 +264,7 @@ function sbp_document_defaultconfig_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'department' => 'department',
+            'permit' => 'permit',
           ),
         ),
         'target_type' => 'node',
@@ -275,6 +274,7 @@ function sbp_document_defaultconfig_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'document',
+      'default_value' => array(),
       'default_value_function' => '',
       'deleted' => 0,
       'description' => '',
@@ -331,12 +331,15 @@ function sbp_document_defaultconfig_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'inline_entity_form',
+        'module' => 'entityreference',
         'settings' => array(
           'fields' => array(),
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => 60,
           'type_settings' => array(
             'allow_existing' => FALSE,
-            'allow_new' => 1,
+            'allow_new' => 0,
             'delete_references' => 0,
             'label_plural' => 'nodes',
             'label_singular' => 'node',
@@ -344,7 +347,7 @@ function sbp_document_defaultconfig_field_default_fields() {
             'override_labels' => 0,
           ),
         ),
-        'type' => 'inline_entity_form_single',
+        'type' => 'entityreference_autocomplete',
         'weight' => 7,
       ),
     ),
@@ -749,115 +752,4 @@ function sbp_document_defaultconfig_field_default_fields() {
   t('Short Description');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function sbp_document_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'delete any document files'.
-  $permissions['delete any document files'] = array(
-    'name' => 'delete any document files',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'reviewer' => 'reviewer',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own document files'.
-  $permissions['delete own document files'] = array(
-    'name' => 'delete own document files',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'curator' => 'curator',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete terms in document_business_need'.
-  $permissions['delete terms in document_business_need'] = array(
-    'name' => 'delete terms in document_business_need',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'delete terms in document_business_stage'.
-  $permissions['delete terms in document_business_stage'] = array(
-    'name' => 'delete terms in document_business_stage',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'delete terms in document_type'.
-  $permissions['delete terms in document_type'] = array(
-    'name' => 'delete terms in document_type',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'download any document files'.
-  $permissions['download any document files'] = array(
-    'name' => 'download any document files',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'curator' => 'curator',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: 'download own document files'.
-  $permissions['download own document files'] = array(
-    'name' => 'download own document files',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'curator' => 'curator',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit any document files'.
-  $permissions['edit any document files'] = array(
-    'name' => 'edit any document files',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'curator' => 'curator',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own document files'.
-  $permissions['edit own document files'] = array(
-    'name' => 'edit own document files',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'curator' => 'curator',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit terms in document_business_need'.
-  $permissions['edit terms in document_business_need'] = array(
-    'name' => 'edit terms in document_business_need',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in document_business_stage'.
-  $permissions['edit terms in document_business_stage'] = array(
-    'name' => 'edit terms in document_business_stage',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in document_type'.
-  $permissions['edit terms in document_type'] = array(
-    'name' => 'edit terms in document_type',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
-  return $permissions;
 }
