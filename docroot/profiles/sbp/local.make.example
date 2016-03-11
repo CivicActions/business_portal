@@ -1,0 +1,117 @@
+; sbp make file for local development
+core = "7.x"
+api = "2"
+
+;projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ TODO modules without versions +++++
+
+;projects[bp_content][version] = "" ; TODO add version
+;projects[bp_content][subdir] = "custom"
+
+;projects[bp_page][version] = "" ; TODO add version
+;projects[bp_page][subdir] = "custom"
+
+;projects[bp_taxonomy][version] = "" ; TODO add version
+;projects[bp_taxonomy][subdir] = "custom"
+
+;projects[sbp_terms][version] = "" ; TODO add version
+;projects[sbp_terms][subdir] = "custom"
+
+;projects[sbp_content][version] = "" ; TODO add version
+;projects[sbp_content][subdir] = "custom"
+
+;projects[sbp_department][version] = "" ; TODO add version
+;projects[sbp_department][subdir] = "custom"
+
+;projects[sbp_document][version] = "" ; TODO add version
+;projects[sbp_document][subdir] = "custom"
+
+;projects[sbp_guide][version] = "" ; TODO add version
+;projects[sbp_guide][subdir] = "custom"
+
+;projects[sbp_lexicon][version] = "" ; TODO add version
+;projects[sbp_lexicon][subdir] = "custom"
+
+;projects[sbp_online_resource][version] = "" ; TODO add version
+;projects[sbp_online_resource][subdir] = "custom"
+
+;projects[sbp_page][version] = "" ; TODO add version
+;projects[sbp_page][subdir] = "custom"
+
+;projects[sbp_permits][version] = "" ; TODO add version
+;projects[sbp_permits][subdir] = "custom"
+
+;projects[sbp_starter_kit][version] = "" ; TODO add version
+;projects[sbp_starter_kit][subdir] = "custom"
+
+;projects[sbp_taxonomy][version] = "" ; TODO add version
+;projects[sbp_taxonomy][subdir] = "custom"
+
+; +++++ Libraries +++++
+
+; underscore
+libraries[underscore][directory_name] = "underscore"
+libraries[underscore][type] = "library"
+libraries[underscore][destination] = "libraries"
+libraries[underscore][download][type] = "get"
+libraries[underscore][download][url] = "" ; TODO add download URI
+
+; backbone
+libraries[backbone][directory_name] = "backbone"
+libraries[backbone][type] = "library"
+libraries[backbone][destination] = "libraries"
+libraries[backbone][download][type] = "get"
+libraries[backbone][download][url] = "" ; TODO add download URI
+
+; tablesaw
+libraries[tablesaw][directory_name] = "tablesaw"
+libraries[tablesaw][type] = "library"
+libraries[tablesaw][destination] = "libraries"
+libraries[tablesaw][download][type] = "get"
+libraries[tablesaw][download][url] = "" ; TODO add download URI
+
+; chosen
+libraries[chosen][directory_name] = "chosen"
+libraries[chosen][type] = "library"
+libraries[chosen][destination] = "libraries"
+libraries[chosen][download][type] = "get"
+libraries[chosen][download][url] = "" ; TODO add download URI
+
+; qtip
+libraries[qtip][directory_name] = "qtip"
+libraries[qtip][type] = "library"
+libraries[qtip][destination] = "libraries"
+libraries[qtip][download][type] = "get"
+libraries[qtip][download][url] = "" ; TODO add download URI
+
+; modernizr
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"
+libraries[modernizr][destination] = "libraries"
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "" ; TODO add download URI
+
+; jsonpath
+libraries[jsonpath][directory_name] = "jsonpath"
+libraries[jsonpath][type] = "library"
+libraries[jsonpath][destination] = "libraries"
+libraries[jsonpath][download][type] = "get"
+libraries[jsonpath][download][url] = "" ; TODO add download URI
+
+; rickshaw
+libraries[rickshaw][directory_name] = "rickshaw"
+libraries[rickshaw][type] = "library"
+libraries[rickshaw][destination] = "libraries"
+libraries[rickshaw][download][type] = "get"
+libraries[rickshaw][download][url] = "" ; TODO add download URI
+
+; ckeditor-leaflet
+libraries[ckeditor-leaflet][directory_name] = "ckeditor-leaflet"
+libraries[ckeditor-leaflet][type] = "library"
+libraries[ckeditor-leaflet][destination] = "libraries"
+libraries[ckeditor-leaflet][download][type] = "get"
+libraries[ckeditor-leaflet][download][url] = "" ; TODO add download URI
+

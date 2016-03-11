@@ -1,0 +1,38 @@
+; Packaging information for sbp
+name = "Business Portal"
+description = "sbp"
+exclusive = "1"
+core = "7.x"
+theme = egg
+
+; ----------
+; Base
+; ----------
+base = minimal
+
+; ----------
+; Dependencies
+; ----------
+; Business Portal
+dependencies[] = sbp_content
+dependencies[] = sbp_department
+dependencies[] = sbp_document
+dependencies[] = sbp_guide
+dependencies[] = sbp_landing_page
+dependencies[] = sbp_lexicon
+dependencies[] = sbp_online_resource
+dependencies[] = sbp_page
+dependencies[] = sbp_permits
+dependencies[] = sbp_starter_kit
+dependencies[] = sbp_taxonomy
+//dependencies[] = ctools
+
+; Contributed
+dependencies[] = addressfield
+dependencies[] = field_collection
+dependencies[] = geofield
+dependencies[] = geophp
+dependencies[] = lexicon
+dependencies[] = term_reference_tree
+
+libraries[] = profiler
