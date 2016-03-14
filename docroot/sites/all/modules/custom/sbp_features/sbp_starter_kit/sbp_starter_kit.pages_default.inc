@@ -182,7 +182,7 @@ function sbp_starter_kit_default_page_manager_handlers() {
       'delta_reversed' => 0,
       'formatter_settings' => array(
         'link' => 0,
-        'view_mode' => 'default',
+        'view_mode' => 'teaser',
         'links' => 1,
       ),
       'context' => array(),

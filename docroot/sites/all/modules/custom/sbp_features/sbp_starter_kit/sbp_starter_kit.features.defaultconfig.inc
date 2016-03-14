@@ -597,6 +597,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
+      'fences_wrapper' => 'no_wrapper',
       'field_name' => 'field_featured_resources',
       'label' => 'Featured Resources',
       'required' => 0,

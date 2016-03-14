@@ -385,6 +385,7 @@ function sbp_starter_kit_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
+    'fences_wrapper' => 'no_wrapper',
     'field_name' => 'field_featured_resources',
     'label' => 'Featured Resources',
     'required' => 0,

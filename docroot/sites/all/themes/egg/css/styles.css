@@ -1928,8 +1928,16 @@ tr.selected td {
  */
 /* Sub-component:  bp_starter_kit__key_points  */
 /* line 11, ../sass/components/_bp_starter_kit.scss */
-.field-name-field-starter-kit-key-points {
-  display: none;
+body.node-type-sbp-starter-kit .node-teaser {
+  background: #F7F7F7;
+  margin-bottom: 30px;
+}
+@media all and (min-width: 480px) {
+  /* line 11, ../sass/components/_bp_starter_kit.scss */
+  body.node-type-sbp-starter-kit .node-teaser {
+    display: inline-block;
+    width: 49%;
+  }
 }
 
 /**
