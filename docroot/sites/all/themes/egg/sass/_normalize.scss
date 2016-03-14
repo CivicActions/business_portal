@@ -105,13 +105,16 @@ audio:not([controls]) {
  */
 html {
   font-family: $base-font-family; /* 1 */
-  font-size: 100% * ($base-font-size / 16px); /* 3 */
+  font-size: 100% * ($base-font-size / 16px);
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  @include window_size(desktop) {
+      font-size: 100% * ($base-font-size-desktop / 14px);
+  }
+
   // Establish a vertical rhythm unit using $base-line-height.
-  @include adjust-leading-to(1);
-  color: $grayscale;
   @include adjust-leading-to(4);
+  color: $grayscale;
 }
 
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
@@ -196,6 +199,7 @@ h1 {
   @include trailer(1, $h1-font-size);
 }
 h2 {
+  color: $grayscale_dark;
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
   @include adjust-font-size-to( $h2-font-size );
@@ -203,21 +207,25 @@ h2 {
   @include trailer(1, $h2-font-size);
 }
 h3 {
+  color: $grayscale_dark;
   @include adjust-font-size-to( $h3-font-size );
   @include leader(1, $h3-font-size);
   @include trailer(1, $h3-font-size);
 }
 h4 {
+  color: $grayscale_dark;
   @include adjust-font-size-to( $h4-font-size );
   @include leader(1, $h4-font-size);
   @include trailer(1, $h4-font-size);
 }
 h5 {
+  color: $grayscale_dark;
   @include adjust-font-size-to( $h5-font-size );
   @include leader(1, $h5-font-size);
   @include trailer(1, $h5-font-size);
 }
 h6 {
+  color: $grayscale_dark;
   @include adjust-font-size-to( $h6-font-size );
   @include leader(1, $h6-font-size);
   @include trailer(1, $h6-font-size);

@@ -25,7 +25,11 @@
 @import "components/footer";
 @import "components/field";
 @import "components/slideshow";
-// Optionally, add your own components here.
+
+/* Nodes */
+@import "components/node__teaser";
+@import "components/bp_starter_kit";
+
 @import "print";
 
 /* SMACSS theme rules */

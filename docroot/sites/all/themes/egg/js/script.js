@@ -21,10 +21,28 @@ Drupal.behaviors.layout = {
   }
 };
 
+Drupal.behaviors.accordion = {
+  attach: function(context, settings) {
+
+    var els = $(".field-starter-kit-key-points");
+
+    // A single DIV container needs to be after each field-title header.
+    els.each(function(){
+        $(this).find(".field-content-components").wrapAll("<div class='js-component-wrapper' />");
+    });
+
+    els.accordion({
+     collapsible: true,
+     active: false,
+     header: ".field-title",
+     animated: false});
+  }
+}
+
 Drupal.behaviors.rotator = {
   attach: function(context, settings) {
 
-    var rotatingWrapper = $(".front .panels-flexible-2 .field-name-field-image ");
+    var rotatingWrapper = $(".front .panels-flexible-2 .field-image ");
     var rotatingItems = rotatingWrapper.find("img");
 
     rotatingItems.hide();
