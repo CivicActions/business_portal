@@ -7,15 +7,3 @@
  */
 
 /* Sub-component: guide__teaser  */
-
-.node-teaserZZ {
-  background: #F7F7F7;
-  margin-bottom: 30px;
-
- // need to go a div up.
- @include window_size(tab-narrow-up) {
-  display: inline-block;
-  width: 49%;
-  }
-
-}

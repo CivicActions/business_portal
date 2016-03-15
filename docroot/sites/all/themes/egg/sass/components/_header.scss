@@ -20,12 +20,20 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  padding: 0;
+  padding: 0 0 2px 0;
+  width: 60px;
+  font-size: 360%;
+}
+
+// Logo.
+.front #header a.header__logo.icon-egg {
+  color: $egg_blue;
 }
 
 /* Logo image. */
 .header__logo-image {
   vertical-align: middle;
+ display: none;
 }
 
 /* Wrapper for website name and slogan. */

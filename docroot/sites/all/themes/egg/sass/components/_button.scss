@@ -1,0 +1,20 @@
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * button
+ *
+ */
+
+/* An href styled like a button */
+.views-field-filename,
+a.button--link {
+  display: block;
+  text-align: center;
+  background-color: #EEE;
+//  width: 35px;
+  height: 35px;
+  margin: 0px 0px 0px 7px;
+  border-radius: 50px;
+  transition: all 0.2s ease 0s;
+}
