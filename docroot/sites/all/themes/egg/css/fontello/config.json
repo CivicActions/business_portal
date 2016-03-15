@@ -7,7 +7,7 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "e374e0734bd7eb1baeddf86e20913b0c",
+      "uid": "be31908133875b90c46973fa65e34fb5",
       "css": "folder-open-empty",
       "code": 59392,
       "src": "custom_icons",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "uid": "8984d0da313935d8c4d0ccdd5c1ed484",
+      "uid": "62452543e632b01d4b261649e2237586",
       "css": "folder-empty",
       "code": 59393,
       "src": "custom_icons",
@@ -35,18 +35,24 @@
       ]
     },
     {
-      "uid": "894359cf6a8e87b9d9d29984b98326c8",
+      "uid": "52c0dee244c4bd5da5bc5cc26b457942",
       "css": "egg",
       "code": 59394,
       "src": "custom_icons",
       "selected": true,
       "svg": {
-        "path": "M785.7 600C785.7 756.2 670.5 928.6 514.3 928.6 358.1 928.6 220 756.2 220 600 220 443.8 355.2 145.7 511.4 145.7 667.6 145.7 785.7 443.8 785.7 600Z",
+        "path": "M786 600C786 756 671 929 514 929 358 929 220 756 220 600 220 444 355 146 511 146 668 146 786 444 786 600Z",
         "width": 1000
       },
       "search": [
         "egg"
       ]
+    },
+    {
+      "uid": "9a76bc135eac17d2c8b8ad4a5774fc87",
+      "css": "download",
+      "code": 59395,
+      "src": "fontawesome"
     }
   ]
 }

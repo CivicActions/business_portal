@@ -948,29 +948,25 @@ table {
   margin: 0 auto 0 auto;
   max-width: 1074px;
 }
-/* line 30, ../sass/layouts/_panels.scss */
-.panel-2col-stacked a {
-  color: #00bed5;
-}
 
-/* line 35, ../sass/layouts/_panels.scss */
+/* line 32, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first {
   width: 25%;
 }
 @media all and (max-width: 720px) {
-  /* line 35, ../sass/layouts/_panels.scss */
+  /* line 32, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: none;
     width: 100%;
   }
 }
 
-/* line 43, ../sass/layouts/_panels.scss */
+/* line 40, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last {
   width: 75%;
 }
 @media all and (max-width: 720px) {
-  /* line 43, ../sass/layouts/_panels.scss */
+  /* line 40, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: none;
     width: 100%;
@@ -978,12 +974,12 @@ table {
 }
 
 /* Flexible panel */
-/* line 52, ../sass/layouts/_panels.scss */
+/* line 49, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
   margin: 0 auto 40px auto;
 }
-/* line 54, ../sass/layouts/_panels.scss */
+/* line 51, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center > .inside > .panel-pane:not(.pane-node-field-image) {
   max-width: 1024px;
   margin: 0 auto;
@@ -1918,16 +1914,24 @@ tr.selected td {
  *
  */
 /* An href styled like a button */
-/* line 11, ../sass/components/_button.scss */
-.views-field-filename,
-a.button--link {
-  display: block;
+/* line 10, ../sass/components/_button.scss */
+.button--link {
+  display: inline-block;
   text-align: center;
   background-color: #EEE;
-  height: 35px;
-  margin: 0px 0px 0px 7px;
-  border-radius: 50px;
   transition: all 0.2s ease 0s;
+  padding: 0 10px;
+}
+
+/* line 18, ../sass/components/_button.scss */
+.button--link:hover {
+  background-color: #313131 !important;
+}
+
+/* line 23, ../sass/components/_button.scss */
+.icon-download,
+.icon-folder-empty {
+  color: white;
 }
 
 /* Nodes */
@@ -1958,6 +1962,20 @@ body.node-type-sbp-starter-kit .node-teaser {
     display: inline-block;
     width: 49%;
   }
+}
+
+/* Colors */
+/* line 25, ../sass/components/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit .button--link {
+  background: #00bed5;
+}
+/* line 27, ../sass/components/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit .button--link a {
+  color: white;
+}
+/* line 32, ../sass/components/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit a {
+  color: #00bed5;
 }
 
 /**

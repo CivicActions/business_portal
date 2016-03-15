@@ -7,14 +7,19 @@
  */
 
 /* An href styled like a button */
-.views-field-filename,
-a.button--link {
-  display: block;
+.button--link {
+  display: inline-block;
   text-align: center;
   background-color: #EEE;
-//  width: 35px;
-  height: 35px;
-  margin: 0px 0px 0px 7px;
-  border-radius: 50px;
   transition: all 0.2s ease 0s;
+  padding: 0 10px;
+}
+
+.button--link:hover {
+  background-color: $grayscale_dark !important;
+}
+
+.icon-download,
+.icon-folder-empty {
+  color: white;
 }

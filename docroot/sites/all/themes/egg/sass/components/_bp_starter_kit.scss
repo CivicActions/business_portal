@@ -17,5 +17,19 @@ body.node-type-sbp-starter-kit .node-teaser {
   display: inline-block;
   width: 49%;
   }
+}
 
+/* Colors */
+.node-type-sbp-starter-kit {
+
+  .button--link {
+    background: $egg_starter;
+    a {
+      color: white
+    }
+
+  }
+  a {
+    color: $egg_starter;
+  }
 }
