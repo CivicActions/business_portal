@@ -96,6 +96,7 @@ function sbp_starter_kit_views_default_views() {
   $handler->display->display_options['fields']['filename']['field'] = 'filename';
   $handler->display->display_options['fields']['filename']['relationship'] = 'field_document_fid';
   $handler->display->display_options['fields']['filename']['label'] = '';
+  $handler->display->display_options['fields']['filename']['element_class'] = 'icon-download button--link';
   $handler->display->display_options['fields']['filename']['element_label_colon'] = FALSE;
   /* Field: Field: Description */
   $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
