@@ -34,6 +34,9 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+.idea/
+.project/
+.bundle/
 
 # Other #
 #########
@@ -46,3 +49,11 @@ docroot/.htaccess
 # Composer
 /vendor
 /.composer
+
+# Drupal VM #
+#############
+box/.vagrant/
+box/*.retry
+box/vagrant_ansible_inventory_default
+box/Vagrantfile.local
+box/roles/
