@@ -114,7 +114,7 @@ abstract class SBPMigrationNode extends SBPMigration {
     $this->addFieldMapping('path', 'path');
 
     if ($this->useImages = FALSE) {
-      $this->addImageFieldMappings('field_content_image');
+      $this->addImageFieldMappings('field_image');
     }
     $this->addFieldMapping('body', 'body');
     $this->addFieldMapping('body:format')->defaultValue(module_exists('debut_wysiwyg') ? 'wysiwyg_editor' : 'filtered_html');
@@ -193,31 +193,6 @@ class SBPMigrationStarterKit extends SBPMigrationNode {
 }
 
 /**
- * Landing Page migration for nodes in SBP.
- */
-class SBPMigrationNodeLandingPage extends SBPMigrationNode {
-
-  public function __construct($arguments) {
-    $this->setProperties('sbp_landing_page');
-    $this->useTags = FALSE;
-    parent::__construct($arguments);
-    $this->description = t('Import Landing Pages.');
-    //$this->addFieldMapping('field_document', 'docs');
-    //$this->addFieldMapping('field_related_documents', 'rel_docs');
-    //$this->addFieldMapping('field_related_permits', 'permits');
-  }
-
-  function csvcolumns() {
-    $columns = parent::csvcolumns();
-    //$columns[] = array('kicker', 'Kicker');
-    //$columns[] = array('link', 'Link');
-    //$columns[] = array('link_title', 'Link title');
-    return $columns;
-  }
-
-}
-
-/**
  * Starter Kit migration for nodes in SBP.
  */
 class SBPMigrationNodeContent extends SBPMigrationNode {
@@ -225,6 +200,7 @@ class SBPMigrationNodeContent extends SBPMigrationNode {
   public function __construct($arguments) {
     $this->setProperties('sbp_content');
     $this->useTags = FALSE;
+    $this->useImage = TRUE;
     parent::__construct($arguments);
     $this->description = t('Import Content.');
     //$this->addFieldMapping('field_document', 'docs');
