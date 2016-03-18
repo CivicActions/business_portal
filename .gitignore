@@ -44,11 +44,13 @@ tests/behat/local.yml
 *.sass-cache
 .drush
 test/results.xml
-docroot/.htaccess
-
 # Composer
 /vendor
 /.composer
+
+# Drupal #
+##########
+docroot/sites/default/*
 
 # Drupal VM #
 #############

@@ -87,20 +87,20 @@ apache_vhosts:
     extra_parameters: |
           ProxyPassMatch ^/(.*\.php(/.*)?)$ "fcgi://127.0.0.1:9000{{ drupal_core_path }}"
 
-  - servername: "adminer.{{ vagrant_hostname }}"
-    documentroot: "{{ adminer_install_dir }}"
-    extra_parameters: |
-          ProxyPassMatch ^/(.*\.php(/.*)?)$ "fcgi://127.0.0.1:9000{{ adminer_install_dir }}"
+  #- servername: "adminer.{{ vagrant_hostname }}"
+  #  documentroot: "{{ adminer_install_dir }}"
+  #  extra_parameters: |
+  #        ProxyPassMatch ^/(.*\.php(/.*)?)$ "fcgi://127.0.0.1:9000{{ adminer_install_dir }}"
 
   - servername: "xhprof.{{ vagrant_hostname }}"
     documentroot: "{{ php_xhprof_html_dir }}"
     extra_parameters: |
           ProxyPassMatch ^/(.*\.php(/.*)?)$ "fcgi://127.0.0.1:9000{{ php_xhprof_html_dir }}"
 
-  - servername: "pimpmylog.{{ vagrant_hostname }}"
-    documentroot: "{{ pimpmylog_install_dir }}"
-    extra_parameters: |
-          ProxyPassMatch ^/(.*\.php(/.*)?)$ "fcgi://127.0.0.1:9000{{ pimpmylog_install_dir }}"
+  #- servername: "pimpmylog.{{ vagrant_hostname }}"
+  #  documentroot: "{{ pimpmylog_install_dir }}"
+  #  extra_parameters: |
+  #        ProxyPassMatch ^/(.*\.php(/.*)?)$ "fcgi://127.0.0.1:9000{{ pimpmylog_install_dir }}"
 
   - servername: "{{ vagrant_ip }}"
     serveralias: "dashboard.{{ vagrant_hostname }}"
@@ -162,7 +162,7 @@ installed_extras:
   # - nodejs
   # - pimpmylog
   # - redis
-  # - ruby
+  - ruby
   # - selenium
   - solr
   - varnish
@@ -180,13 +180,14 @@ nodejs_npm_global_packages: []
 
 # `ruby` must be in installed_extras for this to work.
 ruby_install_gems_user: "{{ drupalvm_user }}"
+# ADAM - copy in Gemfile
 ruby_install_gems: []
 
 # You can configure almost anything else on the server in the rest of this file.
 extra_security_enabled: false
 
-drush_version: "master"
-drush_keep_updated: true
+drush_version: "8.0.5"
+drush_keep_updated: false
 drush_composer_cli_options: "--prefer-dist --no-interaction"
 
 firewall_allowed_tcp_ports:
