@@ -5,6 +5,7 @@ core = 7.x
 dependencies[] = migrate
 
 files[] = sbp_migrate.migrate.inc
+files[] = migrate/sbp_landing_page.inc
 files[] = migrate/sbp_migrate.field_content_components.inc
 files[] = migrate/sbp_migrate.field_starter_kit_key_points.inc
 files[] = migrate/nodes.inc
