@@ -18,8 +18,8 @@ function sbp_permits_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function sbp_permits_node_info() {
   $items = array(
-    'permit' => array(
-      'name' => t('Permit'),
+    'sbp_permit' => array(
+      'name' => t('Business Portal Permit'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

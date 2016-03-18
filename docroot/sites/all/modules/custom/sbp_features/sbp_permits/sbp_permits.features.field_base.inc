@@ -154,13 +154,13 @@ function sbp_permits_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_permit_documents'.
-  $field_bases['field_permit_documents'] = array(
+  // Exported field_base: 'field_sbp_permit_documents'.
+  $field_bases['field_sbp_permit_documents'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_permit_documents',
+    'field_name' => 'field_sbp_permit_documents',
     'indexes' => array(
       'revision_id' => array(
         0 => 'revision_id',
@@ -176,13 +176,13 @@ function sbp_permits_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_permit_licence_name'.
-  $field_bases['field_permit_licence_name'] = array(
+  // Exported field_base: 'field_sbp_permit_licence_name'.
+  $field_bases['field_sbp_permit_licence_name'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_permit_licence_name',
+    'field_name' => 'field_sbp_permit_licence_name',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -197,13 +197,13 @@ function sbp_permits_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_permit_tags'.
-  $field_bases['field_permit_tags'] = array(
+  // Exported field_base: 'field_sbp_permit_tags'.
+  $field_bases['field_sbp_permit_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_permit_tags',
+    'field_name' => 'field_sbp_permit_tags',
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
