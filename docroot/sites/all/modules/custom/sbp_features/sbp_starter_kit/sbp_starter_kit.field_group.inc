@@ -21,11 +21,11 @@ function sbp_starter_kit_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'What\'s Inside',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
-      0 => 'field_guides',
-      1 => 'field_related_documents',
-      2 => 'field_related_permits',
+      0 => 'field_related_permits',
+      1 => 'field_guides',
+      2 => 'field_related_documents',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(

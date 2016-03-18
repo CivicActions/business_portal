@@ -141,10 +141,16 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 0,
-        'module' => 'field_collection',
-        'settings' => array(),
-        'type' => 'field_collection_embed',
+        'active' => 1,
+        'module' => 'field_collection_fieldset',
+        'settings' => array(
+          'collapsed' => 1,
+          'field_as_label' => '',
+          'last_item_collapsed' => 0,
+          'new_item_open' => 0,
+          'replace_label' => 0,
+        ),
+        'type' => 'field_collection_fieldset',
         'weight' => 4,
       ),
     ),
@@ -315,93 +321,6 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-sbp_starter_kit-field_content_components'.
-  $fields['node-sbp_starter_kit-field_content_components'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_content_components',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'revision_id' => array(
-          0 => 'revision_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'field_collection',
-      'settings' => array(
-        'hide_blank_items' => 0,
-        'path' => '',
-      ),
-      'translatable' => 0,
-      'type' => 'field_collection',
-    ),
-    'field_instance' => array(
-      'bundle' => 'sbp_starter_kit',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'alternate' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'default' => array(
-          'label' => 'above',
-          'module' => 'field_collection',
-          'settings' => array(
-            'add' => 'Add',
-            'delete' => 'Delete',
-            'description' => TRUE,
-            'edit' => 'Edit',
-            'quickedit' => array(
-              'editor' => 'form',
-            ),
-            'view_mode' => 'full',
-          ),
-          'type' => 'field_collection_view',
-          'weight' => 4,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'thumbnail' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_content_components',
-      'label' => 'Content Components',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'field_collection',
-        'settings' => array(),
-        'type' => 'field_collection_embed',
-        'weight' => 8,
-      ),
-    ),
-  );
-
   // Exported field: 'node-sbp_starter_kit-field_document'.
   $fields['node-sbp_starter_kit-field_document'] = array(
     'field_config' => array(
@@ -507,7 +426,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'media_generic',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -625,7 +544,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'inline_entity_form',
-        'weight' => 10,
+        'weight' => 7,
       ),
     ),
   );
@@ -1060,7 +979,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => 11,
+        'weight' => 6,
       ),
     ),
   );
@@ -1070,7 +989,6 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
   t('Body');
   t('Comment');
   t('Components');
-  t('Content Components');
   t('Documents');
   t('Featured Resources');
   t('Guides');
