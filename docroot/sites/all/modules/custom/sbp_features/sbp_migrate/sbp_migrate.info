@@ -1,0 +1,12 @@
+name = Business Portal Migrate
+description = Provide migration support for Business Portal demo content.
+core = 7.x
+
+dependencies[] = migrate
+
+files[] = sbp_migrate.migrate.inc
+files[] = migrate/sbp_migrate.field_content_components.inc
+files[] = migrate/sbp_migrate.field_starter_kit_key_points.inc
+files[] = migrate/nodes.inc
+files[] = migrate/field_collections.inc
+files[] = plugins/destinations/fields.inc
