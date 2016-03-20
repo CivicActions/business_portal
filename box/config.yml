@@ -51,11 +51,11 @@ install_site: true
 # Settings for building a Drupal site from a makefile (if 'build_makefile:'
 # is 'true').
 drupal_major_version: 8
-drupal_core_path: "/var/www/drupalvm/drupal"
+drupal_core_path: "/var/www/labp"
 drupal_domain: "{{ vagrant_hostname }}"
 drupal_site_name: "Drupal"
 drupal_install_profile: labp
-drupal_enable_modules: [ 'devel' ]
+drupal_enable_modules: []
 drupal_account_name: admin
 drupal_account_pass: admin
 drupal_mysql_user: drupal
