@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Business Portal Wizard feature.
+ */
+
+include_once 'sbp_wizard.features.inc';
