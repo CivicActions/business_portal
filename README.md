@@ -1,6 +1,13 @@
 # LA Business Portal
 Business Portal Drupal Distro
 
+## DrupalVM dependencies
+1. Ansible - This is an automation tool that can be installed from pip with the following instructions: 
+http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip 
+1. Vagrant - This is a VM operations tool that can be downloaded: https://www.vagrantup.com/downloads.html
+1. VirtualBox - This is a VM hypervisor that can be downloaded: https://www.virtualbox.org/wiki/Downloads
+
+
 ## DrupalVM set up
 
 1. Install vagrant and virtualbox
@@ -11,4 +18,11 @@ Business Portal Drupal Distro
 1. `sudo ansible-galaxy install -r provisioning/requirements.yml --force`
 1. `vagrant up`
 1. `vagrant ssh`
-1. Visit labp.local on your browser
+1. Visit labp.dev on your browser
+
+## DrupalVM usage
+
+1. If you have Drush installed on your host machine, DrupalVM will automatically set up an alias 
+`@labp.labp.dev` to interact with DrupalVM
+1. If you require SSH access to access logs, manually alter system configuration, or access other tools 
+in the VM, run `vagrant ssh` from the box directory after set up
