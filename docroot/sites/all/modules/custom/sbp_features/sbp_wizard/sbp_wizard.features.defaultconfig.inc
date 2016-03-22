@@ -12,7 +12,6 @@ function sbp_wizard_defaultconfig_features() {
     'sbp_wizard' => array(
       'field_default_fields' => 'field_default_fields',
       'strongarm' => 'strongarm',
-      'taxonomy_default_vocabularies' => 'taxonomy_default_vocabularies',
       'user_default_permissions' => 'user_default_permissions',
     ),
   );
@@ -23,6 +22,514 @@ function sbp_wizard_defaultconfig_features() {
  */
 function sbp_wizard_defaultconfig_field_default_fields() {
   $fields = array();
+
+  // Exported field: 'comment-comment_node_sbp_wizard_screen-comment_body'.
+  $fields['comment-comment_node_sbp_wizard_screen-comment_body'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(
+        0 => 'comment',
+      ),
+      'field_name' => 'comment_body',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'comment_node_sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'plain_text',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'comment',
+      'field_name' => 'comment_body',
+      'label' => 'Comment',
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 5,
+        ),
+        'type' => 'text_textarea',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-sbp_wizard_screen-field_anchor_name'.
+  $fields['node-sbp_wizard_screen-field_anchor_name'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_anchor_name',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 128,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'CSS friendly text used as id/anchor for the screen on the overall page',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'plain_text',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => 1,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_anchor_name',
+      'label' => 'Anchor Name',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-sbp_wizard_screen-field_button'.
+  $fields['node-sbp_wizard_screen-field_button'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => -1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_button',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'revision_id' => array(
+          0 => 'revision_id',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'field_collection',
+      'settings' => array(
+        'hide_blank_items' => 0,
+        'path' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'field_collection',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => 'Add',
+            'delete' => 'Delete',
+            'description' => TRUE,
+            'edit' => 'Edit',
+            'quickedit' => array(
+              'editor' => 'form',
+            ),
+            'view_mode' => 'full',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_button',
+      'label' => 'Button(s)',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'field_collection',
+        'settings' => array(),
+        'type' => 'field_collection_embed',
+        'weight' => 5,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-sbp_wizard_screen-field_description'.
+  $fields['node-sbp_wizard_screen-field_description'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_description',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'plain_text',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_description',
+      'label' => 'Description',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 5,
+        ),
+        'type' => 'text_textarea',
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-sbp_wizard_screen-field_section'.
+  $fields['node-sbp_wizard_screen-field_section'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_section',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'business_portal_wizard_sections',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => 0,
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'form',
+            ),
+          ),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 2,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_section',
+      'label' => 'Section',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => 3,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-sbp_wizard_screen-field_weight'.
+  $fields['node-sbp_wizard_screen-field_weight'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_weight',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'quickedit' => array(
+              'editor' => 'form',
+            ),
+            'scale' => 0,
+            'thousand_separator' => '',
+          ),
+          'type' => 'number_integer',
+          'weight' => 3,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_weight',
+      'label' => 'Weight',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => 4,
+      ),
+    ),
+  );
 
   // Exported field: 'taxonomy_term-business_portal_wizard_sections-field_color'.
   $fields['taxonomy_term-business_portal_wizard_sections-field_color'] = array(
@@ -155,7 +662,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
       'entity_type' => 'taxonomy_term',
       'field_name' => 'field_image',
       'label' => 'Icon',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
@@ -251,10 +758,17 @@ function sbp_wizard_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Anchor Name');
+  t('Button(s)');
+  t('CSS friendly text used as id/anchor for the screen on the overall page');
   t('Color');
+  t('Comment');
+  t('Description');
   t('Hex html color - #FFF or #000000');
   t('Icon');
   t('Jurisdiction');
+  t('Section');
+  t('Weight');
 
   return $fields;
 }
@@ -268,63 +782,177 @@ function sbp_wizard_defaultconfig_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_taxonomy_term__business_portal_wizard_sections';
+  $strongarm->name = 'additional_settings__active_tab_sbp_wizard_screen';
+  $strongarm->value = 'edit-webform';
+  $export['additional_settings__active_tab_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_sbp_wizard_screen';
+  $strongarm->value = 0;
+  $export['comment_anonymous_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_sbp_wizard_screen';
+  $strongarm->value = 1;
+  $export['comment_default_mode_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_sbp_wizard_screen';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_sbp_wizard_screen';
+  $strongarm->value = 1;
+  $export['comment_form_location_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_sbp_wizard_screen';
+  $strongarm->value = '1';
+  $export['comment_preview_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_sbp_wizard_screen';
+  $strongarm->value = '1';
+  $export['comment_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_sbp_wizard_screen';
+  $strongarm->value = 1;
+  $export['comment_subject_field_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_sbp_wizard_screen';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_sbp_wizard_screen';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_sbp_wizard_screen';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__sbp_wizard_screen';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '5',
+          'weight' => '7',
+        ),
+        'title' => array(
+          'weight' => '1',
         ),
         'path' => array(
           'weight' => '6',
-        ),
-        'name' => array(
-          'weight' => '0',
-        ),
-        'description' => array(
-          'weight' => '1',
         ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_taxonomy_term__business_portal_wizard_sections'] = $strongarm;
+  $export['field_bundle_settings_node__sbp_wizard_screen'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_taxonomy_term__business_portal_wizard_sections';
+  $strongarm->name = 'menu_options_sbp_wizard_screen';
+  $strongarm->value = array();
+  $export['menu_options_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_sbp_wizard_screen';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__sbp_wizard_screen';
   $strongarm->value = TRUE;
-  $export['metatag_enable_taxonomy_term__business_portal_wizard_sections'] = $strongarm;
+  $export['metatag_enable_node__sbp_wizard_screen'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_taxonomy_term_business_portal_wizard_sections';
+  $strongarm->name = 'node_options_sbp_wizard_screen';
+  $strongarm->value = array();
+  $export['node_options_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_sbp_wizard_screen';
+  $strongarm->value = '1';
+  $export['node_preview_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_sbp_wizard_screen';
+  $strongarm->value = 1;
+  $export['node_submitted_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_sbp_wizard_screen';
   $strongarm->value = array(
     'status' => 0,
     'view modes' => array(),
   );
-  $export['panelizer_defaults_taxonomy_term_business_portal_wizard_sections'] = $strongarm;
+  $export['panelizer_defaults_node_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_continue_sbp_wizard_screen';
+  $strongarm->value = 'Save and add fields';
+  $export['save_continue_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_sbp_wizard_screen';
+  $strongarm->value = 0;
+  $export['webform_node_sbp_wizard_screen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_sbp_wizard_screen';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_sbp_wizard_screen'] = $strongarm;
 
   return $export;
-}
-
-/**
- * Implements hook_defaultconfig_taxonomy_default_vocabularies().
- */
-function sbp_wizard_defaultconfig_taxonomy_default_vocabularies() {
-  return array(
-    'business_portal_wizard_sections' => array(
-      'name' => 'Business Portal Wizard Sections',
-      'machine_name' => 'business_portal_wizard_sections',
-      'description' => '',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-    ),
-  );
 }
 
 /**
@@ -333,6 +961,13 @@ function sbp_wizard_defaultconfig_taxonomy_default_vocabularies() {
 function sbp_wizard_defaultconfig_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'administer panelizer node sbp_wizard_screen defaults'.
+  $permissions['administer panelizer node sbp_wizard_screen defaults'] = array(
+    'name' => 'administer panelizer node sbp_wizard_screen defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer taxonomy_term business_portal_wizard_sections defaults'.
   $permissions['administer panelizer taxonomy_term business_portal_wizard_sections defaults'] = array(
     'name' => 'administer panelizer taxonomy_term business_portal_wizard_sections defaults',
@@ -340,18 +975,39 @@ function sbp_wizard_defaultconfig_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'delete terms in business_portal_wizard_sections'.
-  $permissions['delete terms in business_portal_wizard_sections'] = array(
-    'name' => 'delete terms in business_portal_wizard_sections',
+  // Exported permission: 'create sbp_wizard_screen content'.
+  $permissions['create sbp_wizard_screen content'] = array(
+    'name' => 'create sbp_wizard_screen content',
     'roles' => array(),
-    'module' => 'taxonomy',
+    'module' => 'node',
   );
 
-  // Exported permission: 'edit terms in business_portal_wizard_sections'.
-  $permissions['edit terms in business_portal_wizard_sections'] = array(
-    'name' => 'edit terms in business_portal_wizard_sections',
+  // Exported permission: 'delete any sbp_wizard_screen content'.
+  $permissions['delete any sbp_wizard_screen content'] = array(
+    'name' => 'delete any sbp_wizard_screen content',
     'roles' => array(),
-    'module' => 'taxonomy',
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own sbp_wizard_screen content'.
+  $permissions['delete own sbp_wizard_screen content'] = array(
+    'name' => 'delete own sbp_wizard_screen content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any sbp_wizard_screen content'.
+  $permissions['edit any sbp_wizard_screen content'] = array(
+    'name' => 'edit any sbp_wizard_screen content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own sbp_wizard_screen content'.
+  $permissions['edit own sbp_wizard_screen content'] = array(
+    'name' => 'edit own sbp_wizard_screen content',
+    'roles' => array(),
+    'module' => 'node',
   );
 
   return $permissions;
