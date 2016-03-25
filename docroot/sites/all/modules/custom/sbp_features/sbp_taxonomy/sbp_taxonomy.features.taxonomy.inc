@@ -9,14 +9,6 @@
  */
 function sbp_taxonomy_taxonomy_default_vocabularies() {
   return array(
-    'sbp_tags' => array(
-      'name' => 'Tags',
-      'machine_name' => 'sbp_tags',
-      'description' => 'Use tags to group articles on similar topics into categories.',
-      'hierarchy' => 1,
-      'module' => 'taxonomy',
-      'weight' => 0,
-    ),
     'carousel' => array(
       'name' => 'Carousel',
       'machine_name' => 'carousel',
@@ -58,7 +50,7 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
       'weight' => 0,
     ),
     'industry_tags' => array(
-      'name' => 'Permit - Industry',
+      'name' => 'Business Portal Industry',
       'machine_name' => 'industry_tags',
       'description' => '',
       'hierarchy' => 0,
@@ -86,6 +78,14 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
       'machine_name' => 'required_featured_items',
       'description' => 'Which type of item?',
       'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'sbp_tags' => array(
+      'name' => 'Tags',
+      'machine_name' => 'sbp_tags',
+      'description' => 'Use tags to group articles on similar topics into categories.',
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
     ),
