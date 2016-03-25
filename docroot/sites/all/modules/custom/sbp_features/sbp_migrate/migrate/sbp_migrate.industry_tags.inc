@@ -10,7 +10,6 @@ class SBPMigrationTermIndustryTags extends SBPMigrationTerm {
     $this->setProperties('industry_tags');
     parent::__construct($arguments);
     $this->description = t('Import Industry Tag terms.');
-    //$this->addFieldMapping('field_extent', 'extent');
   }
 
   function csvcolumns() {

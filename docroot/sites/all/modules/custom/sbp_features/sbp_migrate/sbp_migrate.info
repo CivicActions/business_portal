@@ -9,6 +9,7 @@ files[] = migrate/sbp_landing_page.inc
 files[] = migrate/sbp_migrate.field_content_components.inc
 files[] = migrate/sbp_migrate.field_starter_kit_key_points.inc
 files[] = migrate/sbp_migrate.industry_tags.inc
+files[] = migrate/sbp_migrate.sbp_permit.inc
 files[] = migrate/nodes.inc
 files[] = migrate/field_collections.inc
 files[] = plugins/destinations/fields.inc
