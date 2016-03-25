@@ -161,6 +161,53 @@ abstract class SBPMigrationNode extends SBPMigration {
   }
 }
 
+/**
+ * Base migration for terms in OpenOutreach.
+ */
+abstract class SBPMigrationTerm extends SBPMigration {
+
+  public function __construct($arguments) {
+    parent::__construct($arguments);
+    $this->description = t('Import taxonomy terms.');
+
+    // Create a map object for tracking the relationships between source rows
+    $this->map = new MigrateSQLMap($this->machineName,
+      array(
+        'name' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => TRUE,
+        ),
+      ),
+      MigrateDestinationTerm::getKeySchema()
+    );
+
+    // Create a MigrateSource object.
+    $this->source = new MigrateSourceCSV($this->getImportFilePath(), $this->csvcolumns(), array('header_rows' => 1));
+    $this->destination = new MigrateDestinationTerm($this->bundle);
+
+
+    $this->addFieldMapping('name', 'name');
+    $this->addFieldMapping('description', 'description');
+    $this->addFieldMapping('format', 'format')->defaultValue(module_exists('debut_wysiwyg') ? 'wysiwyg_editor' : 'filtered_html');
+    $this->addFieldMapping('weight', 'weight');
+    $this->addFieldMapping('parent_name', 'parent_name');
+  }
+
+  function csvcolumns() {
+    $columns[] = array('name', 'Name');
+    $columns[] = array('description', 'Description');
+    $columns[] = array('format', 'Format');
+    $columns[] = array('weight', 'Weight');
+    $columns[] = array('parent_name', 'Parent name');
+    return $columns;
+  }
+
+  protected function setProperties($bundle) {
+    parent::setProperties($bundle);
+    $this->imageDirectory = 'images/' . $bundle;
+  }
+}
 
 /**
  * BUSINESS PORTAL ITEMS
