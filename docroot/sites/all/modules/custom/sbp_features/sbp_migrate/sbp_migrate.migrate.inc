@@ -162,7 +162,7 @@ abstract class SBPMigrationNode extends SBPMigration {
 }
 
 /**
- * Base migration for terms in OpenOutreach.
+ * Base migration for terms in SBP.
  */
 abstract class SBPMigrationTerm extends SBPMigration {
 
@@ -267,59 +267,6 @@ class SBPMigrationNodeContent extends SBPMigrationNode {
 
 
 /**
- * Landing Page migration for nodes in SBP.
-
-class SBPMigrationNodeKeyComponants extends SBPMigrationNode {
-
-  public function __construct($arguments) {
-    //$this->setProperties('sbp_landing_page');
-    $this->useTags = FALSE;
-    parent::__construct($arguments);
-    $this->description = t('Import Landing Pages.');
-    //$this->dependencies = array('Article');
-    //$this->addFieldMapping('field_document', 'docs');
-    //$this->addFieldMapping('field_related_documents', 'rel_docs');
-    //$this->addFieldMapping('field_related_permits', 'permits');
-  }
-
-  function csvcolumns() {
-    $columns = parent::csvcolumns();
-    //$columns[] = array('kicker', 'Kicker');
-    //$columns[] = array('link', 'Link');
-    //$columns[] = array('link_title', 'Link title');
-    return $columns;
-  }
-
-}
- */
-
-/**
- * Starter Kit Key Componenants migration for nodes in SBP.
-class SBPMigrationNodeStarterKitComp extends SBPMigrationNode {
-
-  public function __construct($arguments) {
-    $this->setProperties('field_starter_kit_key_points');
-    $this->useTags = FALSE;
-    parent::__construct($arguments);
-    $this->description = t('Import Starter Kits.');
-    $this->addFieldMapping('field_document', 'docs');
-    $this->addFieldMapping('field_related_documents', 'rel_docs');
-    $this->addFieldMapping('field_related_permits', 'permits');
-  }
-
-  function csvcolumns() {
-    $columns = parent::csvcolumns();
-    $columns[] = array('kicker', 'Kicker');
-    $columns[] = array('link', 'Link');
-    $columns[] = array('link_title', 'Link title');
-    return $columns;
-  }
-
-}
- */
-
-
-/**
  * Migration for menu links in SBP.
  * Adapted from OpenOutreach
  * sample-migration-module-importing-menu-csv.html.
@@ -418,7 +365,7 @@ abstract class SBPMigrationMenuLinks extends SBPMigration {
 }
 
 /**
- * Menu link migration for section in SBP.
+ * Menu link migration for Landing Page in SBP.
  */
 class SBPMigrationMenuLinksSection extends SBPMigrationMenuLinks {
 
