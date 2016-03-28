@@ -81,9 +81,6 @@ function sbp_migrate_map() {
  * Enable required custom migrate support modules.
  */
 function sbp_migrate_enable_migrate_support($modules = array()) {
-  $map = array(
-    'date_migrate' => 'debut_event',
-  );
   if (!empty($modules)) {
     $map = array_intersect($map, $modules);
   }
