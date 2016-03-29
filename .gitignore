@@ -34,6 +34,9 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+.idea/
+.project/
+.bundle/
 
 # Other #
 #########
@@ -41,8 +44,18 @@ tests/behat/local.yml
 *.sass-cache
 .drush
 test/results.xml
-docroot/.htaccess
-
 # Composer
 /vendor
 /.composer
+
+# Drupal #
+##########
+docroot/sites/default/*
+
+# Drupal VM #
+#############
+box/.vagrant/
+box/*.retry
+box/vagrant_ansible_inventory_default
+box/Vagrantfile.local
+box/roles/

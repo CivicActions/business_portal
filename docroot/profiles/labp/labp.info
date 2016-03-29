@@ -1,0 +1,21 @@
+name = LA Business Portal
+description = A portal for businesses in the Los Angeles area.
+core = 7.x
+distribution_name = labp
+
+; Lightning
+dependencies[] = assemble
+dependencies[] = curate
+
+; LABP modules
+dependencies[] = sbp_content
+dependencies[] = sbp_department
+dependencies[] = sbp_document
+dependencies[] = sbp_guide
+dependencies[] = sbp_landing_page
+dependencies[] = sbp_lexicon
+dependencies[] = sbp_online_resource
+dependencies[] = sbp_page
+dependencies[] = sbp_permits
+dependencies[] = sbp_starter_kit
+dependencies[] = sbp_taxonomy
