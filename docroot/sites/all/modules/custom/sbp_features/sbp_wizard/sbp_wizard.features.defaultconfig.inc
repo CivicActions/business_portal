@@ -11,8 +11,7 @@ function sbp_wizard_defaultconfig_features() {
   return array(
     'sbp_wizard' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
-      'user_default_permissions' => 'user_default_permissions',
+      'views_default_views' => 'views_default_views',
     ),
   );
 }
@@ -774,241 +773,58 @@ function sbp_wizard_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_strongarm().
+ * Implements hook_defaultconfig_views_default_views().
  */
-function sbp_wizard_defaultconfig_strongarm() {
+function sbp_wizard_defaultconfig_views_default_views() {
   $export = array();
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_sbp_wizard_screen';
-  $strongarm->value = 'edit-webform';
-  $export['additional_settings__active_tab_sbp_wizard_screen'] = $strongarm;
+  $view = new view();
+  $view->name = 'sbp_wizard';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Business Portal Wizard';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_sbp_wizard_screen';
-  $strongarm->value = 0;
-  $export['comment_anonymous_sbp_wizard_screen'] = $strongarm;
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Business Portal Wizard';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['view_mode'] = 'full';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_sbp_wizard_screen';
-  $strongarm->value = 1;
-  $export['comment_default_mode_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_sbp_wizard_screen';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_sbp_wizard_screen';
-  $strongarm->value = 1;
-  $export['comment_form_location_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_sbp_wizard_screen';
-  $strongarm->value = '1';
-  $export['comment_preview_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_sbp_wizard_screen';
-  $strongarm->value = '1';
-  $export['comment_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_sbp_wizard_screen';
-  $strongarm->value = 1;
-  $export['comment_subject_field_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_enable_revisions_page_node_sbp_wizard_screen';
-  $strongarm->value = 1;
-  $export['diff_enable_revisions_page_node_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_show_preview_changes_node_sbp_wizard_screen';
-  $strongarm->value = 1;
-  $export['diff_show_preview_changes_node_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_view_mode_preview_node_sbp_wizard_screen';
-  $strongarm->value = 'full';
-  $export['diff_view_mode_preview_node_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__sbp_wizard_screen';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '7',
-        ),
-        'title' => array(
-          'weight' => '1',
-        ),
-        'path' => array(
-          'weight' => '6',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_sbp_wizard_screen';
-  $strongarm->value = array();
-  $export['menu_options_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_sbp_wizard_screen';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__sbp_wizard_screen';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_sbp_wizard_screen';
-  $strongarm->value = array();
-  $export['node_options_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_sbp_wizard_screen';
-  $strongarm->value = '1';
-  $export['node_preview_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_sbp_wizard_screen';
-  $strongarm->value = 1;
-  $export['node_submitted_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_sbp_wizard_screen';
-  $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_node_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'save_continue_sbp_wizard_screen';
-  $strongarm->value = 'Save and add fields';
-  $export['save_continue_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'webform_node_sbp_wizard_screen';
-  $strongarm->value = 0;
-  $export['webform_node_sbp_wizard_screen'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'workbench_moderation_default_state_sbp_wizard_screen';
-  $strongarm->value = 'draft';
-  $export['workbench_moderation_default_state_sbp_wizard_screen'] = $strongarm;
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'business-portal-wizard';
+  $export['sbp_wizard'] = $view;
 
   return $export;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function sbp_wizard_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node sbp_wizard_screen defaults'.
-  $permissions['administer panelizer node sbp_wizard_screen defaults'] = array(
-    'name' => 'administer panelizer node sbp_wizard_screen defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer taxonomy_term business_portal_wizard_sections defaults'.
-  $permissions['administer panelizer taxonomy_term business_portal_wizard_sections defaults'] = array(
-    'name' => 'administer panelizer taxonomy_term business_portal_wizard_sections defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create sbp_wizard_screen content'.
-  $permissions['create sbp_wizard_screen content'] = array(
-    'name' => 'create sbp_wizard_screen content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any sbp_wizard_screen content'.
-  $permissions['delete any sbp_wizard_screen content'] = array(
-    'name' => 'delete any sbp_wizard_screen content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own sbp_wizard_screen content'.
-  $permissions['delete own sbp_wizard_screen content'] = array(
-    'name' => 'delete own sbp_wizard_screen content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any sbp_wizard_screen content'.
-  $permissions['edit any sbp_wizard_screen content'] = array(
-    'name' => 'edit any sbp_wizard_screen content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own sbp_wizard_screen content'.
-  $permissions['edit own sbp_wizard_screen content'] = array(
-    'name' => 'edit own sbp_wizard_screen content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  return $permissions;
 }
