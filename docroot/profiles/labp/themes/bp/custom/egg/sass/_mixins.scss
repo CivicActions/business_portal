@@ -53,12 +53,12 @@
 // wizard
 
 @mixin wizard__button--base{
-    @include border-radius(20px);
-    background-color: $wizard__button--deafult;
-    padding: 8px 35px 8px 35px;
-    font-weight: bold;
-    display: inline-block;
-    margin: 0 10px 0 0;
-    cursor: pointer;
+  @include border-radius(20px);
+  background-color: $wizard__button--deafult;
+  padding: 8px 35px 8px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
 
 }
