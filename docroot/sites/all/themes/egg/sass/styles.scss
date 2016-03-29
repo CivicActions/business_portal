@@ -10,6 +10,7 @@
 @import "init";
 @import "colors";
 @import "typography";
+@import "mixins";
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
@@ -26,6 +27,14 @@
 @import "components/field";
 @import "components/slideshow";
 @import "components/button";
+
+/* Wizard */
+
+@import "components/wizard";
+@import "components/wizard_progress_bar";
+@import "components/wizard_bottom_nav";
+
+
 
 /* Nodes */
 @import "components/node__teaser";
