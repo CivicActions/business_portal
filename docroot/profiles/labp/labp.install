@@ -13,8 +13,8 @@
  */
 function labp_install() {
   // Enable default theme.
-  $theme = 'egg';
-  theme_enable(array($theme));
+  $theme = 'lasbptheme';
+  theme_enable(array('egg', 'zen', 'lasbptheme'));
   variable_set('theme_default', $theme);
 
   // Enable admin theme.
