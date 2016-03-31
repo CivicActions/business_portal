@@ -7,8 +7,7 @@
  */
 function sbp_migrate_enable() {
   migrate_static_registration();
-  //sbp_migrate_enable_migrate_support();
-  //sbp_process_imports(); // Change to sbp_migrate_process_imports();
+  sbp_migrate_process_imports();
 }
 
 function sbp_migrate_disable() {

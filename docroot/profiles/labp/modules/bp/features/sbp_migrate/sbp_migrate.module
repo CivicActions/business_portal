@@ -8,7 +8,7 @@
 function sbp_migrate_modules_enabled($modules) {
   migrate_static_registration();
   sbp_migrate_enable_migrate_support();
-  sbp_process_imports($modules);
+  sbp_migrate_process_imports($modules);
 }
 
 /**
@@ -93,7 +93,7 @@ function sbp_migrate_enable_migrate_support($modules = array()) {
 /**
  * Process all registered migrations or those of a specified set of modules.
  */
-function sbp_process_imports($modules = array()) {
+function sbp_migrate_process_imports($modules = array()) {
   // Ensure that migration classes are registered.
   migrate_get_module_apis(TRUE);
   $map = sbp_migrate_map();
