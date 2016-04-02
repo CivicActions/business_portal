@@ -96,13 +96,13 @@ function sbp_wizard_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '8',
         ),
         'title' => array(
           'weight' => '2',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
       ),
       'display' => array(),

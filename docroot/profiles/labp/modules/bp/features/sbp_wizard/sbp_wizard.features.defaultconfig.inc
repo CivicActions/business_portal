@@ -216,7 +216,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -309,6 +309,89 @@ function sbp_wizard_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-sbp_wizard_screen-field_screen_id'.
+  $fields['node-sbp_wizard_screen-field_screen_id'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_screen_id',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'quickedit' => array(
+              'editor' => 'form',
+            ),
+            'scale' => 0,
+            'thousand_separator' => '',
+          ),
+          'type' => 'number_integer',
+          'weight' => 6,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_screen_id',
+      'label' => 'Screen ID',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => 0,
+      ),
+    ),
+  );
+
   // Exported field: 'node-sbp_wizard_screen-field_section'.
   $fields['node-sbp_wizard_screen-field_section'] = array(
     'field_config' => array(
@@ -397,7 +480,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 1,
+        'weight' => 4,
       ),
     ),
   );
@@ -481,6 +564,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'settings' => array(),
         'type' => 'number',
         'weight' => 7,
+        'weight' => 5,
       ),
     ),
   );
@@ -719,26 +803,9 @@ function sbp_wizard_defaultconfig_field_default_fields() {
   t('Hex html color - #FFF or #000000');
   t('Icon');
   t('Jurisdiction');
+  t('Screen ID');
   t('Section');
   t('Weight');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function sbp_wizard_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer services'.
-  $permissions['administer services'] = array(
-    'name' => 'administer services',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'services',
-  );
-
-  return $permissions;
 }

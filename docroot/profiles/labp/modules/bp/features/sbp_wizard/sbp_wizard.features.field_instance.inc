@@ -49,45 +49,6 @@ function sbp_wizard_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_button-field_anchor_name'.
-  $field_instances['field_collection_item-field_button-field_anchor_name'] = array(
-    'bundle' => 'field_button',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Name of the anchor the button will link to.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'plain_text',
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_anchor_name',
-    'label' => 'Button Anchor Destination',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-field_button-field_information_text'.
   $field_instances['field_collection_item-field_button-field_information_text'] = array(
     'bundle' => 'field_button',
@@ -224,7 +185,7 @@ function sbp_wizard_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -540,7 +501,7 @@ function sbp_wizard_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -687,7 +648,6 @@ function sbp_wizard_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Button Anchor Destination');
   t('Button Result Text');
   t('Button Title');
   t('Button(s)');
@@ -697,7 +657,6 @@ function sbp_wizard_field_default_field_instances() {
   t('Hex html color - #FFF or #000000');
   t('Icon');
   t('Jurisdiction');
-  t('Name of the anchor the button will link to.');
   t('Screen ID');
   t('Section');
   t('Text displayed at end of wizard.');
