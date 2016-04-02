@@ -250,68 +250,6 @@ function sbp_wizard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sbp_wizard_screen-field_road_map'.
-  $field_instances['node-sbp_wizard_screen-field_road_map'] = array(
-    'bundle' => 'sbp_wizard_screen',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'plain_text',
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_road_map',
-    'label' => 'Road Map',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-sbp_wizard_screen-field_screen_id'.
   $field_instances['node-sbp_wizard_screen-field_screen_id'] = array(
     'bundle' => 'sbp_wizard_screen',
@@ -719,7 +657,6 @@ function sbp_wizard_field_default_field_instances() {
   t('Hex html color - #FFF or #000000');
   t('Icon');
   t('Jurisdiction');
-  t('Road Map');
   t('Screen ID');
   t('Section');
   t('Text displayed at end of wizard.');
