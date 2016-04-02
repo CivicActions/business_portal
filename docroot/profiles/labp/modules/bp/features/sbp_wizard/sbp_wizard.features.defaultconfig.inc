@@ -309,95 +309,6 @@ function sbp_wizard_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-sbp_wizard_screen-field_road_map'.
-  $fields['node-sbp_wizard_screen-field_road_map'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_road_map',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => 0,
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'sbp_wizard_screen',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'alternate' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'quickedit' => array(
-              'editor' => 'plain_text',
-            ),
-          ),
-          'type' => 'text_default',
-          'weight' => 8,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'thumbnail' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_road_map',
-      'label' => 'Road Map',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => 5,
-        ),
-        'type' => 'text_textarea',
-        'weight' => 6,
-      ),
-    ),
-  );
-
   // Exported field: 'node-sbp_wizard_screen-field_screen_id'.
   $fields['node-sbp_wizard_screen-field_screen_id'] = array(
     'field_config' => array(
@@ -891,7 +802,6 @@ function sbp_wizard_defaultconfig_field_default_fields() {
   t('Hex html color - #FFF or #000000');
   t('Icon');
   t('Jurisdiction');
-  t('Road Map');
   t('Screen ID');
   t('Section');
   t('Weight');
