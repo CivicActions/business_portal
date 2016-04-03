@@ -1,0 +1,9 @@
+name = LA Business Portal Migrate
+description = Provide migration support for Business Portal demo content.
+core = 7.x
+
+dependencies[] = migrate
+dependencies[] = sbp_migrate
+dependencies[] = sbp_wizard
+
+files[] = labp_migrate.migrate.inc
