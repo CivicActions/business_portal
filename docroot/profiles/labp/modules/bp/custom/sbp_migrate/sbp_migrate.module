@@ -67,6 +67,7 @@ function sbp_migrate_map() {
     'SBPMigrationFieldContentComponents' => 'sbp_base',
     'SBPMigrationSBPContentComponents' => 'sbp_content',
     'SBPMigrationTermIndustryTags' => 'taxonomy',
+    'SBPMigrationNodeSBPWizardScreen' => 'sbp_wizard',
     'SBPMigrationPermit' => 'sbp_permits'
     
   );
