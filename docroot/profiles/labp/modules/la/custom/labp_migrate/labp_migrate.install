@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_enable().
+ *
+ * When this module is enabled, process all registered migrations.
+ */
+function labp_migrate_enable() {
+  migrate_static_registration();
+  labp_migrate_process_imports();
+}
+
+function labp_migrate_disable() {
+  MigrateGroup::deregister('sbp');
+}
