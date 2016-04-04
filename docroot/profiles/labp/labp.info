@@ -13,6 +13,7 @@ dependencies[] = sbp_content
 dependencies[] = sbp_department
 dependencies[] = sbp_document
 dependencies[] = sbp_guide
+dependencies[] = sbp_incentives
 dependencies[] = sbp_landing_page
 dependencies[] = sbp_lexicon
 dependencies[] = sbp_online_resource

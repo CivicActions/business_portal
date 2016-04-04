@@ -19,9 +19,9 @@ function sbp_online_resource_ctools_plugin_api($module = NULL, $api = NULL) {
 function sbp_online_resource_node_info() {
   $items = array(
     'online_resource' => array(
-      'name' => t('Online Resource'),
+      'name' => t('Resources'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => 'Business Portal Resource pages',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
