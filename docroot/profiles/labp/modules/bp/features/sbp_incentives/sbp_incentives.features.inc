@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * sbp_online_resource.features.inc
+ * sbp_incentives.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function sbp_online_resource_ctools_plugin_api($module = NULL, $api = NULL) {
+function sbp_incentives_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,12 +16,12 @@ function sbp_online_resource_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function sbp_online_resource_node_info() {
+function sbp_incentives_node_info() {
   $items = array(
-    'online_resource' => array(
-      'name' => t('Resources'),
+    'incentives' => array(
+      'name' => t('Incentives'),
       'base' => 'node_content',
-      'description' => 'Business Portal Resource pages',
+      'description' => t('Business Portal Incentives pages'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
