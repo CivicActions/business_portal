@@ -7,6 +7,9 @@ project = "labp"
 ; Core
 dependencies[] = list
 
+; Contrib
+dependencies[] = menu_block
+
 ; Lightning
 dependencies[] = assemble
 dependencies[] = curate
