@@ -21,7 +21,7 @@ function sbp_incentives_node_info() {
     'incentives' => array(
       'name' => t('Incentives'),
       'base' => 'node_content',
-      'description' => 'Business Portal Incentives pages',
+      'description' => t('Business Portal Incentives pages'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
