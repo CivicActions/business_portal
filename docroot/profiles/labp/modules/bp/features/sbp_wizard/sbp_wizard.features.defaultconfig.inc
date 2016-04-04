@@ -10,10 +10,56 @@
 function sbp_wizard_defaultconfig_features() {
   return array(
     'sbp_wizard' => array(
+      'default_services_endpoint' => 'default_services_endpoint',
       'field_default_fields' => 'field_default_fields',
-      'views_default_views' => 'views_default_views',
+      'user_default_permissions' => 'user_default_permissions',
     ),
   );
+}
+
+/**
+ * Implements hook_defaultconfig_default_services_endpoint().
+ */
+function sbp_wizard_defaultconfig_default_services_endpoint() {
+  $export = array();
+
+  $endpoint = new stdClass();
+  $endpoint->disabled = FALSE; /* Edit this to true to make a default endpoint disabled initially */
+  $endpoint->api_version = 3;
+  $endpoint->name = 'api_json';
+  $endpoint->server = 'rest_server';
+  $endpoint->path = 'api/json';
+  $endpoint->authentication = array();
+  $endpoint->server_settings = array(
+    'formatters' => array(
+      'json' => TRUE,
+      'bencode' => FALSE,
+      'jsonp' => FALSE,
+      'php' => FALSE,
+      'xml' => FALSE,
+    ),
+    'parsers' => array(
+      'application/json' => TRUE,
+      'application/vnd.php.serialized' => FALSE,
+      'application/x-www-form-urlencoded' => FALSE,
+      'application/xml' => FALSE,
+      'multipart/form-data' => FALSE,
+      'text/xml' => FALSE,
+    ),
+  );
+  $endpoint->resources = array(
+    'business-portal-wizard' => array(
+      'operations' => array(
+        'index' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
+  );
+  $endpoint->debug = 0;
+  $export['api_json'] = $endpoint;
+
+  return $export;
 }
 
 /**
@@ -83,97 +129,6 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 0,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-sbp_wizard_screen-field_anchor_name'.
-  $fields['node-sbp_wizard_screen-field_anchor_name'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_anchor_name',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 128,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'sbp_wizard_screen',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => 'CSS friendly text used as id/anchor for the screen on the overall page',
-      'display' => array(
-        'alternate' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'quickedit' => array(
-              'editor' => 'plain_text',
-            ),
-          ),
-          'type' => 'text_default',
-          'weight' => 1,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'thumbnail' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_anchor_name',
-      'label' => 'Anchor Name',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
         'weight' => 0,
       ),
     ),
@@ -349,7 +304,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -442,7 +397,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 3,
+        'weight' => 1,
       ),
     ),
   );
@@ -525,7 +480,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 4,
+        'weight' => 7,
       ),
     ),
   );
@@ -757,9 +712,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Anchor Name');
   t('Button(s)');
-  t('CSS friendly text used as id/anchor for the screen on the overall page');
   t('Color');
   t('Comment');
   t('Description');
@@ -773,58 +726,19 @@ function sbp_wizard_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_views_default_views().
+ * Implements hook_defaultconfig_user_default_permissions().
  */
-function sbp_wizard_defaultconfig_views_default_views() {
-  $export = array();
+function sbp_wizard_defaultconfig_user_default_permissions() {
+  $permissions = array();
 
-  $view = new view();
-  $view->name = 'sbp_wizard';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Business Portal Wizard';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+  // Exported permission: 'administer services'.
+  $permissions['administer services'] = array(
+    'name' => 'administer services',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'services',
+  );
 
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Business Portal Wizard';
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'node';
-  $handler->display->display_options['row_options']['view_mode'] = 'full';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'business-portal-wizard';
-  $export['sbp_wizard'] = $view;
-
-  return $export;
+  return $permissions;
 }
