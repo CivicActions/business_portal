@@ -18,10 +18,10 @@ function sbp_incentives_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function sbp_incentives_node_info() {
   $items = array(
-    'incentivs' => array(
+    'incentives' => array(
       'name' => t('Incentives'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => 'Business Portal Incentives pages',
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
