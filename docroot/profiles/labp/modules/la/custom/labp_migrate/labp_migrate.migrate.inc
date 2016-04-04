@@ -5,6 +5,9 @@
  *  Base migrations used in LABP.
  */
 
+require_once drupal_get_path('module', 'sbp_migrate') . '/sbp_migrate.migrate.inc';
+require_once drupal_get_path('module', 'sbp_migrate') . '/migrate/field_button.inc';
+
 /**
  * Wizard Screen migration for LABP.
  */
