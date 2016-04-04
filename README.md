@@ -18,6 +18,7 @@ http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip
 1. `sudo ansible-galaxy install -r provisioning/requirements.yml --force`
 1. `vagrant up`
 1. `vagrant ssh`
+1. Install the profile with `drush @labp.dev si labp --account-name=admin --account-pass=admin` or `bash ~/Projects/business_portal/assets/install-local-drupalvm.sh`
 1. Visit labp.dev on your browser
 
 ## DrupalVM usage
