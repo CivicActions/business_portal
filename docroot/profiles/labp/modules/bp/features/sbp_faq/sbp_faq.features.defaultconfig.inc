@@ -299,7 +299,7 @@ function sbp_faq_defaultconfig_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_faq';
-  $strongarm->value = 'edit-comment';
+  $strongarm->value = 'edit-rabbit-hole';
   $export['additional_settings__active_tab_faq'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -356,6 +356,41 @@ function sbp_faq_defaultconfig_strongarm() {
     'view modes' => array(),
   );
   $export['panelizer_defaults_taxonomy_term_question_category'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_module_faq';
+  $strongarm->value = 'rh_node';
+  $export['rh_module_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_action_faq';
+  $strongarm->value = '2';
+  $export['rh_node_action_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_override_faq';
+  $strongarm->value = 0;
+  $export['rh_node_override_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_faq';
+  $strongarm->value = '';
+  $export['rh_node_redirect_faq'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rh_node_redirect_response_faq';
+  $strongarm->value = '301';
+  $export['rh_node_redirect_response_faq'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
