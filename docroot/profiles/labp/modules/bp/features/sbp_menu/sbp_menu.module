@@ -5,3 +5,19 @@
  */
 
 include_once 'sbp_menu.features.inc';
+
+/**
+ * Implements hook_block_alter().
+ *
+ * @param $blocks
+ * @param $theme
+ * @param $code_blocks
+ *
+ * Sets menu blocks to display in specific regions.
+ */
+function sbp_menu_block_info_alter(&$blocks, $theme, $code_blocks) {
+  // Menu block in first sidebar.
+  $blocks['menu_block'][1]['region'] = 'sidebar_first';
+  // Footer menu in bottom.
+  $blocks['menu']['menu-footer-']['region'] = 'bottom';
+}
