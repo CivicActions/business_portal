@@ -5,23 +5,3 @@
  */
 
 include_once 'sbp_wizard.features.inc';
-
-function sbp_wizard_views_query_alter(&$view, &$query) {
-  if($view->name == 'business_portal_wizard_json') {
-    /*
-    $sort_field = '_random_seed';
-    foreach($query->field_aliases as $aliases_key => $aliases) {
-      if($sort_code = array_search($sort_field, $aliases)) {
-        unset($query->field_aliases[$aliases_key][$sort_code]);
-        if(empty($query->field_aliases[$aliases_key])) {
-          unset($query->field_aliases[$aliases_key]);  
-        }
-        unset($query->fields[$sort_field]);
-        $query->orderby[0]['field'] = $sort_code;
-        break;
-      }
-    }
-     * 
-     */
-  }
-}
