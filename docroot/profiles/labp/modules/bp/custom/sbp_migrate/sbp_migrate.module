@@ -67,8 +67,9 @@ function sbp_migrate_map() {
     'SBPMigrationFieldContentComponents' => 'sbp_base',
     'SBPMigrationSBPContentComponents' => 'sbp_content',
     'SBPMigrationTermIndustryTags' => 'taxonomy',
-    'SBPMigrationNodeSBPWizardScreen' => 'sbp_wizard',
-    'SBPMigrationPermit' => 'sbp_permits'
+    'SBPMigrationSBPWizardScreen' => 'sbp_wizard',
+    'SBPMigrationWizardSections' => 'sbp_wizard',
+    'SBPMigrationPermit' => 'sbp_permits',
     
   );
   // Allow other modules to alter the migrations to, for example, use

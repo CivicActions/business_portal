@@ -53,7 +53,7 @@ abstract class SBPMigration extends Migration {
   }
 
   protected function setProperties($bundle, $module = 'sbp_migrate') {
-    print $module;
+
     $path = drupal_get_path('module', $module);
     $this->baseImportDirectory = (file_exists($path . '/local') ? $path . '/local' : $path . '/import');
     $this->importFileName = $bundle . '.csv';

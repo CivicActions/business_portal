@@ -4,7 +4,7 @@
  *  Taxonomy Industry Tags migration.
  */
 
-class SBPMigrationWizardSectionsTags extends SBPMigrationTerm {
+class SBPMigrationWizardSections extends SBPMigrationTerm {
 
   public function __construct($arguments) {
     $this->setProperties('business_portal_wizard_sections');
