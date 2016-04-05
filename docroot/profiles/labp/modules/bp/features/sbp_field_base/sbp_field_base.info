@@ -1,7 +1,7 @@
 name = SBP Field Base
 description = All field bases
 core = 7.x
-package = Features
+package = Small Business Portal
 version = 7.x-1.0
 dependencies[] = features
 dependencies[] = image
