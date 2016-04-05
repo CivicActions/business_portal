@@ -4,6 +4,9 @@ core = 7.x
 distribution_name = LABP
 project = "labp"
 
+; Core
+dependencies[] = list
+
 ; Lightning
 dependencies[] = assemble
 dependencies[] = curate
