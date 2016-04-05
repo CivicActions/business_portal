@@ -11,7 +11,6 @@ dependencies[] = term_reference_tree
 dependencies[] = text
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
-features[field_base][] = field_incentive_url
 features[field_instance][] = node-incentives-body
 features[field_instance][] = node-incentives-field_incentive_url
 features[node][] = incentives
