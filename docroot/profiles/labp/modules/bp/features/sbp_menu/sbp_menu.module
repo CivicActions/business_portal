@@ -16,11 +16,18 @@ include_once 'sbp_menu.features.inc';
  * Sets menu blocks to display in specific regions.
  */
 function sbp_menu_block_info_alter(&$blocks, $theme, $code_blocks) {
-  $front = drupal_is_front_page();
-  if ($front === FALSE) {
-    // Menu block in first sidebar.
-    $blocks['menu_block'][1]['region'] = 'sidebar_first';
+  sdpm($blocks);
+  $admin_theme = variable_get('admin_theme');
+  if ($admin_theme && $theme != $admin_theme) {
+    if (isset($blocks['menu']['menu-footer-'])) {
+      $blocks['menu']['menu-footer-']['region'] = 'bottom';
+      $blocks['menu']['menu-footer-']['status'] = 1;
+    }
+    if (isset($blocks['menu_block'][1])) {
+      $blocks['menu_block'][1]['region'] = 'sidebar_first';
+      $blocks['menu_block'][1]['status'] = 1;
+      $blocks['menu_block'][1]['visibility'] = BLOCK_VISIBILITY_LISTED;
+      $blocks['menu-block'][1]['pages'] = '<front>';
+    }
   }
-  // Footer menu in bottom.
-  $blocks['menu']['menu-footer-']['region'] = 'bottom';
 }
