@@ -1,7 +1,7 @@
-id,name,description,format,weight,parent_name,color,jurisdiction,image,image_title,image_alt
-wizard_sections_1,Welcome to the Business Registration Wizard,,,,,6BC3F3,,,,
-wizard_sections_2,Register your business,,,,,89D5C4,,wizard_pencil,,
-wizard_sections_3,Name your business,,,,,E9C759,,,,
-wizard_sections_4,Get Seller's & Tax Use Permits,,,,,6BC3F3,,wizard_percent,,
-wizard_sections_5,Get an EIN,,,,,89D5C4,,wizard_hashtag,,
-wizard_sections_6,Roadmap,,,,,E9C759,,wizard_map,,
+name,description,format,weight,parent_name,color,jurisdiction,image,image_title,image_alt
+Welcome to the Business Registration Wizard,,,,,6BC3F3,1,,,
+Register your business,,,,,89D5C4,2,wizard_pencil,,
+Name your business,,,,,E9C759,2,,,
+Get Seller's & Tax Use Permits,,,,,6BC3F3,1,wizard_percent,,
+Get an EIN,,,,,89D5C4,5,wizard_hashtag,,
+Roadmap,,,,,E9C759,6,wizard_map,,

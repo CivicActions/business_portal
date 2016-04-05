@@ -28,9 +28,21 @@ class SBPMigrationFieldButton extends SBPMigration {
         
     $this->addFieldMapping('field_title', 'title');
     $this->addFieldMapping('field_anchor_name', 'anchor_name');
-    $this->addFieldMapping('field_information_text', 'info');
+    $this->addFieldMapping('field_information_text', 'info');    
+    $this->destination = new MigrateDestinationFieldCollection(
+      'field_button',
+      array(
+        'host_entity_type' => 'node'
+      )
+    );
+    $this->dependencies = array('SBPMigrationSBPWizardScreen');
+    $this->addFieldMapping('host_entity_id', 'parent_id')
+      ->sourceMigration('SBPMigrationSBPWizardScreen');
+
   }
   function csvcolumns() {
+    $columns[] = array('id', 'ID');
+    $columns[] = array('parent_id', 'Host ID');
     $columns[] = array('title', 'Title');
     $columns[] = array('anchor_name', 'Anchor Name');
     $columns[] = array('info', 'Information');

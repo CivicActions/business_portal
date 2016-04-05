@@ -62,6 +62,7 @@ function labp_migrate_map() {
   //  '{migrgate function}' => '{associated module}',    
     'LAPMigrationSBPWizardScreen' => 'sbp_wizard',    
     'LABPMigrationWizardSections' => 'sbp_wizard',
+    'LABPMigrationFieldButton' => 'sbp_wizard',
     );
   // Allow other modules to alter the migrations to, for example, use
   // a custom class.

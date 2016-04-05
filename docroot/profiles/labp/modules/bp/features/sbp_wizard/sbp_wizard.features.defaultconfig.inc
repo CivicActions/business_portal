@@ -317,13 +317,26 @@ function sbp_wizard_defaultconfig_field_default_fields() {
       'deleted' => 0,
       'entity_types' => array(),
       'field_name' => 'field_screen_id',
-      'foreign keys' => array(),
-      'indexes' => array(),
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
       'locked' => 0,
-      'module' => 'number',
-      'settings' => array(),
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 32,
+      ),
       'translatable' => 0,
-      'type' => 'number_integer',
+      'type' => 'text',
     ),
     'field_instance' => array(
       'bundle' => 'sbp_wizard_screen',
@@ -339,18 +352,14 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         ),
         'default' => array(
           'label' => 'above',
-          'module' => 'number',
+          'module' => 'text',
           'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
             'quickedit' => array(
-              'editor' => 'form',
+              'editor' => 'plain_text',
             ),
-            'scale' => 0,
-            'thousand_separator' => '',
           ),
-          'type' => 'number_integer',
-          'weight' => 6,
+          'type' => 'text_default',
+          'weight' => 8,
         ),
         'featured' => array(
           'label' => 'above',
@@ -376,17 +385,16 @@ function sbp_wizard_defaultconfig_field_default_fields() {
       'label' => 'Screen ID',
       'required' => 0,
       'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => '',
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 15,
+        ),
+        'type' => 'text_textfield',
         'weight' => 0,
       ),
     ),

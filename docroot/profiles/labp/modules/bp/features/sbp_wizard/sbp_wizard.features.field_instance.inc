@@ -265,18 +265,14 @@ function sbp_wizard_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'number',
+        'module' => 'text',
         'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
           'quickedit' => array(
-            'editor' => 'form',
+            'editor' => 'plain_text',
           ),
-          'scale' => 0,
-          'thousand_separator' => '',
         ),
-        'type' => 'number_integer',
-        'weight' => 6,
+        'type' => 'text_default',
+        'weight' => 8,
       ),
       'featured' => array(
         'label' => 'above',
@@ -302,17 +298,16 @@ function sbp_wizard_field_default_field_instances() {
     'label' => 'Screen ID',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 15,
+      ),
+      'type' => 'text_textfield',
       'weight' => 0,
     ),
   );

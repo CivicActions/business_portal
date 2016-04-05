@@ -19,9 +19,8 @@ class SBPMigrationWizardSections extends SBPMigrationTerm {
   function csvcolumns() {
     $columns = parent::csvcolumns();
     $columns[] = array('color', 'Color');
-    $columns[] = array('icon', 'Icon');
     $columns[] = array('jurisdiction', 'Jurisdiction');
+    $this->addImageCsvColumns($columns);
     return $columns;
   }
-
 }
