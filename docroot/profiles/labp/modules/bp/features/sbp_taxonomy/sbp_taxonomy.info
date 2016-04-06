@@ -12,6 +12,7 @@ features[taxonomy][] = department_type
 features[taxonomy][] = document_business_need
 features[taxonomy][] = document_business_stage
 features[taxonomy][] = document_type
+features[taxonomy][] = geographical_area
 features[taxonomy][] = industry_tags
 features[taxonomy][] = permit_government_level
 features[taxonomy][] = permit_issuing_department
