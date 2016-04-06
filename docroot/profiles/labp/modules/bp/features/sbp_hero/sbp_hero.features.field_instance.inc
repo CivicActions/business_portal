@@ -15,7 +15,7 @@ function sbp_hero_field_default_field_instances() {
     'bundle' => 'hero',
     'default_value' => array(
       0 => array(
-        'value' => 3,
+        'value' => 0,
       ),
     ),
     'deleted' => 0,
