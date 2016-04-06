@@ -21,7 +21,7 @@ function sbp_online_resource_node_info() {
     'online_resource' => array(
       'name' => t('Resources'),
       'base' => 'node_content',
-      'description' => 'Business Portal Resource pages',
+      'description' => t('Business Portal Resource pages'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
