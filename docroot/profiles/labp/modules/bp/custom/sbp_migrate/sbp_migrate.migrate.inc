@@ -52,8 +52,9 @@ abstract class SBPMigration extends Migration {
     }
   }
 
-  protected function setProperties($bundle) {
-    $path = drupal_get_path('module', 'sbp_migrate');
+  protected function setProperties($bundle, $module = 'sbp_migrate') {
+
+    $path = drupal_get_path('module', $module);
     $this->baseImportDirectory = (file_exists($path . '/local') ? $path . '/local' : $path . '/import');
     $this->importFileName = $bundle . '.csv';
     $this->bundle = $bundle;
@@ -154,8 +155,8 @@ abstract class SBPMigrationNode extends SBPMigration {
     return $columns;
   }
 
-  protected function setProperties($bundle) {
-    parent::setProperties($bundle);
+  protected function setProperties($bundle, $module = 'sbp_migrate') {
+    parent::setProperties($bundle, $module);
     $this->bundle = $bundle;
     $this->imageDirectory = 'images/' . $bundle;
   }
@@ -193,6 +194,16 @@ abstract class SBPMigrationTerm extends SBPMigration {
     $this->addFieldMapping('weight', 'weight');
     $this->addFieldMapping('parent_name', 'parent_name');
   }
+  
+  protected function addImageFieldMappings($field_name) {
+    $this->addFieldMapping($field_name, 'image');
+    $this->addFieldMapping($field_name . ':file_replace')
+      ->defaultValue(FILE_EXISTS_REPLACE);
+    $this->addFieldMapping($field_name . ':source_dir')
+      ->defaultValue($this->getImageDirectoryPath());
+    $this->addFieldMapping($field_name . ':alt', 'image_alt');
+    $this->addFieldMapping($field_name . ':title', 'image_title');
+  }
 
   function csvcolumns() {
     $columns[] = array('name', 'Name');
@@ -203,8 +214,8 @@ abstract class SBPMigrationTerm extends SBPMigration {
     return $columns;
   }
 
-  protected function setProperties($bundle) {
-    parent::setProperties($bundle);
+  protected function setProperties($bundle, $module = 'sbp_migrate') {
+    parent::setProperties($bundle, $module);
     $this->imageDirectory = 'images/' . $bundle;
   }
 }
@@ -245,7 +256,7 @@ class SBPMigrationStarterKit extends SBPMigrationNode {
 class SBPMigrationNodeContent extends SBPMigrationNode {
 
   public function __construct($arguments) {
-    $this->setProperties('sbp_content');
+    $this->setProperties('sbp_content','meh');
     $this->useTags = FALSE;
     $this->useImage = TRUE;
     parent::__construct($arguments);

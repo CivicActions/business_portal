@@ -1,0 +1,9 @@
+id,parent_id,title,anchor_name,info
+field_button_1,wizard_screen_0,1 / Register your business ,1,
+field_button_2,wizard_screen_1,Next ,1.1,
+field_button_3,wizard_screen_1.1,Yes ,1.2,
+field_button_4,wizard_screen_1.1,No , 1.1.2,
+field_button_5,wizard_screen_1.1,Not sure? Learn more , 1.1.1,
+field_button_6,wizard_screen_1.1.1,Back ,1.1,
+field_button_7,wizard_screen_1.1.2,Return to Business Portal , Business Portal Home,
+field_button_8,wizard_screen_1.2,Back,,

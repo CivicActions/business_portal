@@ -57,6 +57,7 @@ function sbp_wizard_views_default_views() {
   $handler->display->display_options['fields']['field_screen_id']['field'] = 'field_screen_id';
   $handler->display->display_options['fields']['field_screen_id']['label'] = 'screen_id';
   $handler->display->display_options['fields']['field_screen_id']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_screen_id']['type'] = 'number_integer';
   $handler->display->display_options['fields']['field_screen_id']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -116,7 +117,6 @@ function sbp_wizard_views_default_views() {
 
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'wizard_services');
-  $handler->display->display_options['path'] = 'business-portal-wizard';
   $export['sbp_wizard'] = $view;
 
   return $export;

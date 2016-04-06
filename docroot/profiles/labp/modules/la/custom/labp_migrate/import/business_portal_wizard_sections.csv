@@ -1,0 +1,7 @@
+name,description,format,weight,parent_name,color,jurisdiction,image,image_title,image_alt
+Welcome to the Business Registration Wizard,,,,,6BC3F3,1,,,
+Register your business,,,,,89D5C4,2,wizard_pencil,,
+Name your business,,,,,E9C759,2,,,
+Get Seller's & Tax Use Permits,,,,,6BC3F3,1,wizard_percent,,
+Get an EIN,,,,,89D5C4,5,wizard_hashtag,,
+Roadmap,,,,,E9C759,6,wizard_map,,
