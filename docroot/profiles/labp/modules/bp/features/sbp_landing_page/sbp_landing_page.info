@@ -28,7 +28,6 @@ features[features_api][] = api:2
 features[field_instance][] = comment-comment_node_sbp_landing_page-comment_body
 features[field_instance][] = node-sbp_landing_page-body
 features[field_instance][] = node-sbp_landing_page-field_content
-features[field_instance][] = node-sbp_landing_page-field_image
 features[node][] = sbp_landing_page
 features[page_manager_handlers][] = node_view__panel_context_a5dcff65-418b-4dcd-9eaa-b4d3a5fdd737
 features[variable][] = additional_settings__active_tab_sbp_landing_page
