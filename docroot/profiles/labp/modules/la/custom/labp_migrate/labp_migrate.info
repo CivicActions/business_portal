@@ -7,3 +7,4 @@ dependencies[] = sbp_migrate
 dependencies[] = sbp_wizard
 
 files[] = labp_migrate.migrate.inc
+files[] = migrate/labp_migrate.sbp_wizard_screen.inc

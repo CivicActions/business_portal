@@ -1,85 +1,24 @@
 id,title,promote,path,body,screen_id,section,description,tip,weight
-wizard_screen_0,0,,,,0,1,"""Welcome to the Business Registration Assistant
-
-This tool provides a guide to help you start your business in the city
-of Los Angeles in five easy steps. Registering your business will give you
-access to important information to help you grow your business and avoid
-getting fines.
-
-1. Register your business
-2. Name your business
-3. Get a seller's permit
-4. Get an Employer Identification Number
-5. See your guide""",,
-wizard_screen_1,1,,,,1,2,"Registering your business with the City of Los Angeles will allow you to conduct business within the city limits. First, let's check to see if you need to register as a business. ",,
+wizard_screen_0,0,,,,0,1,"Welcome to the Business Registration Assistant\nThis tool provides a guide to help you start your business in the city of Los Angeles in five easy steps. Registering your business will give you access to important information to help you grow your business and avoid getting fines.\n\n1. Register your business\n2. Name your business\n3. Get a seller's permit\n4. Get an Employer Identification Number\n5. See your guide",,
+wizard_screen_1,1,,,,1,2,"""Registering your business with the City of Los Angeles will allow you to conduct business within the city limits. First, let's check to see if you need to register as a business.""",,
 wizard_screen_1.1,1.1,,,,1.1,2,Are you self-employed or do you receive any income outside of a salary from an employer?,"Tip: If you make an income by charging for goods or services that you provide, select Yes.",
-wizard_screen_1.1.1,1.1.1,,,,1.1.1,2,"""You don't need to register as a business if:
-1. You are an employee of a firm and report your sole income on a W-2.
-2. You make your income through the receipt of a dividend or by interest from passive investments.
-
-You need to register as a business if:
-1. You work as an independent contractor and receive one or more 1099s.
-2. Your business is a non-profit or trade association.
-3. You operate your business out of your home.
-4. You lease residential or commercial property.
-
-Registering as a business with the City of Los Angeles means that you are liable for city business tax. You will also need to renew your registration on an annual basis. There are business tax exemptions available for certain types of businesses-be sure to file your annual tax renewals on time to qualify for these exemptions.
-
-Please note: The State of California may share information with the City of Los Angeles to identify entities who are conducting business within the City but have not registered with the City.""",,
-wizard_screen_1.1.2,1.1.2,,,,1.1.2,3,"""Thanks for checking. You don't need to register as a business! 
-[check apostrophe in layout]""",,
+wizard_screen_1.1.1,1.1.1,,,,1.1.1,2,"""You don't need to register as a business if:\n1. You are an employee of a firm and report your sole income on a W-2.\n2. You make your income through the receipt of a dividend or by interest from passive investments.\n\nYou need to register as a business if:\n1. You work as an independent contractor and receive one or more 1099s.\n2. Your business is a non-profit or trade association.\n3. You operate your business out of your home.\n4. You lease residential or commercial property.\n\nRegistering as a business with the City of Los Angeles means that you are liable for city business tax. You will also need to renew your registration on an annual basis. There are business tax exemptions available for certain types of businesses-be sure to file your annual tax renewals on time to qualify for these exemptions.\n\nPlease note:The State of California may share information with the City of Los Angeles to identify entities who are conducting business within the Citybut have not registered with the City.""",,
+wizard_screen_1.1.2,1.1.2,,,,1.1.2,3,"""Thanks for checking. You don't need to register as a business!\n[check apostrophe in layout]""",,
 wizard_screen_1.2,1.2,,,,1.2,,Will you perform any business activity in the city of Los Angeles?,"Tip - If you intend to work more than seven days per calendar year for clients located in the city of Los Angeles, select Yes. ",
-wizard_screen_1.2.1,1.2.1,,,,1.2.1,,"""Enter the address or intersection of your business location.
-
-Example: ""14410 Sylvan St"" or
-""Sunset Blvd / Vermont Ave""""",,
-wizard_screen_1.2.2,1.2.2,,,,1.2.2,,"""Your business is not in the city of Los Angeles. 
-
-You can continue to get your guide to register as a business with the County, State and Federal government. Be sure to check with your local municipality to complete your business registration there.""",,
+wizard_screen_1.2.1,1.2.1,,,,1.2.1,,"""Enter the address or intersection of your business location.\nExample: ""14410 Sylvan St"" or\n""Sunset Blvd / Vermont Ave""""",,
+wizard_screen_1.2.2,1.2.2,,,,1.2.2,,"""Your business is not in the city of Los Angeles.\n\nYou can continue to get your guide to register as a business with the County, State and Federal government.Be sure to check with your local municipality to complete your business registration there.""",,
 wizard_screen_1.2.3,1.2.3,,,,1.2.3,,Your business is in the city of Los Angeles. ,,
 wizard_screen_2,2,,,,2,,Continue to see if you need to register your business name with the County of Los Angeles. ,,
 wizard_screen_2.1,2.1,,,,2.1,,"Is your business name the same as your personal name, with your first and last name?",,
-wizard_screen_2.1.1,2.1.1,,,,2.1.1,,"Choosing your business name is an important step.  
-
-A fictitious name or trade name is a business name that is different from your personal name, the names of your partners, or the officially registered name of your LLC or corporation. 
-
-If you decide to use a fictitious name, you must choose a name that no one else in Los Angeles County is using. Use the LA County Fictitious Business Name (FBN) Search to check if the name you want is available. Registering your name with LA County protects it from being used by anybody else.
-
-Consider searching the internet and checking the US Patent and Trademark Office or the California Secretary of State's Corporate Division to see if your name is being used in other areas as well. You can also check whether the website address or URL for your business name is available.",,
+wizard_screen_2.1.1,2.1.1,,,,2.1.1,,"Choosing your business name is an important step.\n\nA fictitious name or trade name is a business name that is different from your personal name, the names of your partners, or the officially registered name of your LLC or corporation.\n\nIf you decide to use a fictitious name, you must choose a name that no one else in Los Angeles County is using. Use the LA County Fictitious Business Name (FBN) Search to check if the name you want is available. Registering your name with LA County protects it from being used by anybody else.\n\nConsider searching the internet and checking the US Patent and Trademark Office or the California Secretary of State's Corporate Division to see if your name is being used in other areas as well. You can also check whether the website address or URL for your business name is available.",,
 wizard_screen_3,3,,,,3,,Find out if you need to register with the California State Board of Equalization to report and pay sales taxes. ,,
 wizard_screen_3.1,3.1,,,,3.1,,"Do you intend to sell any products that will be subject to sales tax, whether as a retailer, manufacturer or wholesaler?","Tip - For example, if you sell shampoo at your hair salon, select Yes.",
 wizard_screen_3.2,3.2,,,,3.2,,"Do you operate a service business and expect to make more than $100,000 in gross (pre-tax) receipts per year?","Tip - If you do less than $100,000 in sales per year, select No.",
-wizard_screen_3.2.1,3.2.1,,,,3.2.1,,"Any business that does over $100,000 a year in sales is required to register with the State of California to report and pay use taxes. Use taxes apply when businesses purchase and use goods for which they did not pay sales taxes, for instance, if you purchased something online and were not charged taxes on those items. 
-
-If you are not yet sure if you will transact more than $100,000 per year, you might consider selecting Yes and registering. ",,
-wizard_screen_3.3,3.3,,,,3.3,,"What kind of business will you have?
-
-Not sure? Learn more.","Tip - A corporation can be a nonprofit organization or a private corporation, such as an S Corporation, C Corporation, or Limited Liability Company (LLC). A sole proprietor is the simplest business entity and requires that you take personal responsibility for all business matters.",
-wizard_screen_3.3.1,3.3.1,,,,3.3.1,,"The legal structure of your business affects how much you pay in taxes and your level of legal responsibility for debts incurred by your business. Here are a few of the most common types of business structures:  
-
-A sole proprietorship is the simplest and most common structure to start a business. Sole proprietorships are owned and run by one individual, or a married couple, with no distinction between the business and the owner. The owner is entitled to all profits and is responsible for all of the business's debts, losses and liabilities.
-
-A partnership is a single business where two or more people share ownership. Each partner contributes to all aspects of the business, including money, property, labor or skill. In return, each partner shares in the profits and losses of the business.
-
-A limited liability company (LLC) is a hybrid type of legal structure that provides the limited liability features of a corporation and the tax efficiencies and operational flexibility of a partnership. LLC members report profits and losses on their personal federal tax returns, just like the owners of a partnership would.
-
-A corporation is more complex and generally suggested for larger, established companies with several employees. ",,
+wizard_screen_3.2.1,3.2.1,,,,3.2.1,,"Any business that does over $100,000 a year in sales is required to register with the State of California to report and pay use taxes. Use taxes apply when businesses purchase and use goods for which they did not pay sales taxes, for instance, if you purchased something online and were not charged taxes on those items.\n\nIf you are not yet sure if you will transact more than $100,000 per year, you might consider selecting Yes and registering. ",,
+wizard_screen_3.3,3.3,,,,3.3,,"What kind of business will you have?\n\nNot sure? Learn more.","Tip - A corporation can be a nonprofit organization or a private corporation, such as an S Corporation, C Corporation, or Limited Liability Company (LLC). A sole proprietor is the simplest business entity and requires that you take personal responsibility for all business matters.",
+wizard_screen_3.3.1,3.3.1,,,,3.3.1,,"The legal structure of your business affects how much you pay in taxes and your level of legal responsibility for debts incurred by your business. Here are a few of the most common types of business structures:\n\nA sole proprietorship is the simplest and most common structure to start a business. Sole proprietorships are owned and run by one individual, or a married couple, with no distinction between the business and the owner. The owner is entitled to all profits and is responsible for all of the business's debts, losses and liabilities.\n\nA partnership is a single business where two or more people share ownership. Each partner contributes to all aspects of the business, including money, property, labor or skill. In return, each partner shares in the profits and losses of the business.\n\nA limited liability company (LLC) is a hybrid type of legal structure that provides the limited liability features of a corporation and the tax efficiencies and operational flexibility of a partnership. LLC members report profits and losses on their personal federal tax returns, just like the owners of a partnership would.\n\nA corporation is more complex and generally suggested for larger, established companies with several employees. ",,
 wizard_screen_4,4,,,,4,,Find out if you need to register with the U.S. Internal Revenue Service (IRS),,
 wizard_screen_4.1,4.1,,,,4.1,,Will you get an Employer Identification Number (EIN)?,A business needs an EIN to pay employees and to file business tax returns. Registering for an EIN is free and an easy way to protect your social security number.,
-wizard_screen_4.1.1,4.1.1,,,,4.1.1,,"An Employer Identification Number (EIN) is a is a free and simple way to get a business federal identification number. Your EIN will allow you to pay taxes, open bank accounts, and conduct other business activities.
-
-All businesses must register for an EIN with the exception of sole proprietors with no employees. Sole proprietors with no employees may opt to use their personal social security number to identify themselves with the federal government. ",,
+wizard_screen_4.1.1,4.1.1,,,,4.1.1,,"An Employer Identification Number (EIN) is a is a free and simple way to get a business federal identification number. Your EIN will allow you to pay taxes, open bank accounts, and conduct other business activities.\n\nAll businesses must register for an EIN with the exception of sole proprietors with no employees. Sole proprietors with no employees may opt to use their personal social security number to identify themselves with the federal government. ",,
 wizard_screen_5,5,,,,5,,Your roadmap is complete!  Follow these steps to start and begin to grow your business! (JC note: not sure if we need this transition page...),,
-wizard_screen_5.1,5.1,,,,5.1,,"Congratulations! Here is your Business Registration guide to you register your business.
-<<insert intro copy>>
-
-[at the end]
-That's all you need to register your business.
-
-Depending on the type of your business, you may also need to obtain additional Permits and Licenses. Check back in September for the LA Business Portal permit and license locator. In the meantime, you may visit our resources section [link]  and CalGold [link] for additional information.
-
-[Julienne/Vikram: Add a sentence about BAVN. Not needed for Monday test]
-
-Good luck!
-
-This not a substitute for legal or professional advice.",,
+wizard_screen_5.1,5.1,,,,5.1,,"Congratulations! Here is your Business Registration guide to you register your business.\n\n<<insert intro copy>>\n\n[at the end]\n\nThat's all you need to register your business.\n\nDepending on the type of your business, you may also need to obtain additional Permits and Licenses. Check back in September for the LA Business Portal permit and license locator. In the meantime, you may visit our resources section [link]  and CalGold [link] for additional information.\n\n[Julienne/Vikram: Add a sentence about BAVN. Not needed for Monday test]\n\nGood luck!\n\nThis not a substitute for legal or professional advice.",,

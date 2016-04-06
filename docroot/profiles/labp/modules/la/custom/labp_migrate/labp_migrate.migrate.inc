@@ -7,11 +7,13 @@
 
 require_once drupal_get_path('module', 'sbp_migrate') . '/sbp_migrate.migrate.inc';
 require_once drupal_get_path('module', 'sbp_migrate') . '/migrate/field_button.inc';
+require_once drupal_get_path('module', 'sbp_migrate') . '/migrate/sbp_migrate.business_portal_wizard_sections.inc';
+require_once drupal_get_path('module', 'sbp_migrate') . '/migrate/sbp_migrate.sbp_wizard_screen.inc';
 
 /**
  * Wizard Screen migration for LABP.
  */
-class LAPMigrationSBPWizardScreen extends SBPMigrationSBPWizardScreen {
+class LABPMigrationSBPWizardScreen extends SBPMigrationSBPWizardScreen {
   // Set module to labp_migrate
   protected function setProperties($bundle, $module = 'labp_migrate') {
     parent::setProperties($bundle, $module);

@@ -6,6 +6,10 @@ project = "labp"
 
 ; Core
 dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+dependencies[] = text
+dependencies[] = color
 
 ; Contrib
 dependencies[] = menu_block
@@ -24,7 +28,7 @@ dependencies[] = sbp_hero
 dependencies[] = sbp_incentives
 dependencies[] = sbp_landing_page
 dependencies[] = sbp_lexicon
-dependencies[] = sbp_menu
+;dependencies[] = sbp_menu
 dependencies[] = sbp_online_resource
 dependencies[] = sbp_page
 dependencies[] = sbp_permits
