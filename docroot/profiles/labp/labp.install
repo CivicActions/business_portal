@@ -169,7 +169,7 @@ function labp_install_finished(&$install_state) {
   // Revert all Features (cleanup install).
   features_revert();
 
-  // Configure menu blocks.
+  // Configures menu blocks.
   cache_clear_all();
   db_update('block')
     ->fields(array(
@@ -179,15 +179,6 @@ function labp_install_finished(&$install_state) {
     ))
     ->condition('module', 'menu')
     ->condition('delta', 'menu-footer-')
-    ->condition('theme', 'lasbptheme')
-    ->execute();
-  db_update('block')
-    ->fields(array(
-      'region' => 'sidebar_first',
-      'status' => 1,
-    ))
-    ->condition('module', 'menu_block')
-    ->condition('delta', 1)
     ->condition('theme', 'lasbptheme')
     ->execute();
   cache_clear_all();

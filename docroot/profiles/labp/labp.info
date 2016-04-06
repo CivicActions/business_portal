@@ -14,6 +14,8 @@ dependencies[] = color
 ; Contrib
 dependencies[] = email
 dependencies[] = menu_block
+dependencies[] = ctools_custom_content
+dependencies[] = panels_import
 
 ; Lightning
 dependencies[] = assemble
@@ -32,6 +34,7 @@ dependencies[] = sbp_lexicon
 dependencies[] = sbp_menu
 dependencies[] = sbp_online_resource
 dependencies[] = sbp_page
+dependencies[] = sbp_panels
 dependencies[] = sbp_permits
 dependencies[] = sbp_starter_kit
 dependencies[] = sbp_taxonomy
