@@ -378,6 +378,71 @@ function sbp_department_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-sbp_department-field_main_feature'.
+  $field_instances['node-sbp_department-field_main_feature'] = array(
+    'bundle' => 'sbp_department',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Add this department to the featured listing on the resources landing page',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_main_feature',
+    'label' => 'Featured on Resources Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-sbp_department-field_phone'.
   $field_instances['node-sbp_department-field_phone'] = array(
     'bundle' => 'sbp_department',
@@ -440,13 +505,82 @@ function sbp_department_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-sbp_department-field_secondary_feature'.
+  $field_instances['node-sbp_department-field_secondary_feature'] = array(
+    'bundle' => 'sbp_department',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Add this department to the featured listing on the Departments page',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_secondary_feature',
+    'label' => 'Featured on Departments Page',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 11,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
+  t('Add this department to the featured listing on the Departments page');
+  t('Add this department to the featured listing on the resources landing page');
   t('Address');
   t('Address Type');
   t('Addresses');
   t('Department Type');
   t('Description');
+  t('Featured on Departments Page');
+  t('Featured on Resources Page');
   t('Phone');
   t('Physical, mailing, etc.');
   t('Website(s)');
