@@ -169,6 +169,29 @@ function labp_install_finished(&$install_state) {
   // Revert all Features (cleanup install).
   features_revert();
 
+  // Configure menu blocks.
+  cache_clear_all();
+  db_update('block')
+    ->fields(array(
+      'region' => 'bottom',
+      'status' => 1,
+      'title' => '<none>',
+    ))
+    ->condition('module', 'menu')
+    ->condition('delta', 'menu-footer-')
+    ->condition('theme', 'lasbptheme')
+    ->execute();
+  db_update('block')
+    ->fields(array(
+      'region' => 'sidebar_first',
+      'status' => 1,
+    ))
+    ->condition('module', 'menu_block')
+    ->condition('delta', 1)
+    ->condition('theme', 'lasbptheme')
+    ->execute();
+  cache_clear_all();
+
   // Remove install messages.
   $messages = array('completed', 'status', 'warning', 'error');
   foreach ($messages as $message) {
@@ -185,4 +208,3 @@ function labp_install_finished(&$install_state) {
     drupal_set_message("LABP install complete.");
   }
 }
-

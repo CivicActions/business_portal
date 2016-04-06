@@ -6,6 +6,10 @@ project = "labp"
 
 ; Core
 dependencies[] = list
+dependencies[] = number
+dependencies[] = options
+dependencies[] = text
+dependencies[] = color
 
 ; Contrib
 dependencies[] = menu_block
