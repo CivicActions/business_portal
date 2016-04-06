@@ -38,7 +38,7 @@ function labp_migrate_migrate_api() {
       ),
     ),
     'field handlers' => array(
-      'LAPMigrationSBPWizardScreen',
+      'LABPMigrationSBPWizardScreen',
     ),
   );
 
@@ -59,8 +59,9 @@ function labp_migrate_migrate_api() {
  */
 function labp_migrate_map() {
   $map = array(
-  //  '{migrgate function}' => '{associated module}',    
-    'LAPMigrationSBPWizardScreen' => 'sbp_wizard',    
+  //  '{migrate class}' => '{associated module}',
+    //'LABPMigrationNodeSBPWizardScreen' => 'sbp_wizard',
+    'LABPMigrationSBPWizardScreen' => 'sbp_wizard',
     'LABPMigrationWizardSections' => 'sbp_wizard',
     'LABPMigrationFieldButton' => 'sbp_wizard',
     );
@@ -75,6 +76,7 @@ function labp_migrate_map() {
  * Enable required custom migrate support modules.
  */
 function labp_migrate_enable_migrate_support($modules = array()) {
+  $map = labp_migrate_map();
   if (!empty($modules)) {
     $map = array_intersect($map, $modules);
   }
