@@ -10,28 +10,9 @@
 function sbp_hero_defaultconfig_features() {
   return array(
     'sbp_hero' => array(
-      'default_fieldable_panels_pane_type' => 'default_fieldable_panels_pane_type',
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
     ),
   );
-}
-
-/**
- * Implements hook_defaultconfig_default_fieldable_panels_pane_type().
- */
-function sbp_hero_defaultconfig_default_fieldable_panels_pane_type() {
-  $export = array();
-
-  $fieldable_panels_pane_type = new stdClass();
-  $fieldable_panels_pane_type->disabled = FALSE; /* Edit this to true to make a default fieldable_panels_pane_type disabled initially */
-  $fieldable_panels_pane_type->api_version = 1;
-  $fieldable_panels_pane_type->name = 'hero';
-  $fieldable_panels_pane_type->title = 'Hero';
-  $fieldable_panels_pane_type->description = 'Provides a widget for the hero section of content.';
-  $export['hero'] = $fieldable_panels_pane_type;
-
-  return $export;
 }
 
 /**
@@ -60,7 +41,6 @@ function sbp_hero_defaultconfig_field_default_fields() {
         'allowed_values' => array(
           1 => 'Color',
           2 => 'Image',
-          3 => 'None',
         ),
         'allowed_values_function' => '',
       ),
@@ -71,7 +51,7 @@ function sbp_hero_defaultconfig_field_default_fields() {
       'bundle' => 'hero',
       'default_value' => array(
         0 => array(
-          'value' => 3,
+          'value' => 0,
         ),
       ),
       'deleted' => 0,
@@ -697,50 +677,4 @@ function sbp_hero_defaultconfig_field_default_fields() {
   t('Width');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_hero_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_fieldable_panels_pane__hero';
-  $strongarm->value = array(
-    'view_modes' => array(
-      'full' => array(
-        'custom_settings' => FALSE,
-      ),
-      'preview' => array(
-        'custom_settings' => FALSE,
-      ),
-      'diff_standard' => array(
-        'custom_settings' => FALSE,
-      ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
-    ),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '-5',
-        ),
-      ),
-      'display' => array(
-        'title' => array(
-          'default' => array(
-            'weight' => '0',
-            'visible' => TRUE,
-          ),
-        ),
-      ),
-    ),
-  );
-  $export['field_bundle_settings_fieldable_panels_pane__hero'] = $strongarm;
-
-  return $export;
 }
