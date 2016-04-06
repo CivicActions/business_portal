@@ -28,7 +28,6 @@ function sbp_field_base_field_default_field_bases() {
       'allowed_values' => array(
         1 => 'Color',
         2 => 'Image',
-        3 => 'None',
       ),
       'allowed_values_function' => '',
     ),

@@ -60,7 +60,6 @@ function sbp_hero_defaultconfig_field_default_fields() {
         'allowed_values' => array(
           1 => 'Color',
           2 => 'Image',
-          3 => 'None',
         ),
         'allowed_values_function' => '',
       ),
@@ -71,7 +70,7 @@ function sbp_hero_defaultconfig_field_default_fields() {
       'bundle' => 'hero',
       'default_value' => array(
         0 => array(
-          'value' => 3,
+          'value' => 0,
         ),
       ),
       'deleted' => 0,
