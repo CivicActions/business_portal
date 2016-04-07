@@ -54,6 +54,7 @@ function lasbptheme_preprocess_html(&$variables, $hook) {
  */
 
 function lasbptheme_preprocess_page(&$variables, $hook) {
+  drupal_add_js('https://globalnav.lacity.org/global_nav_2.0.js', 'external');
   $variables['sample_variable'] = t('Lorem ipsum.');
   drupal_add_library('system', 'ui.accordion');
 }
