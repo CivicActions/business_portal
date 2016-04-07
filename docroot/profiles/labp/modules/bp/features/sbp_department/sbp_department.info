@@ -7,6 +7,7 @@ dependencies[] = features
 dependencies[] = field_collection
 dependencies[] = link
 dependencies[] = sbp_content
+dependencies[] = sbp_field_base
 dependencies[] = sbp_taxonomy
 dependencies[] = strongarm
 dependencies[] = taxonomy
