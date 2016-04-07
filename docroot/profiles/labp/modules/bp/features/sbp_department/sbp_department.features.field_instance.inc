@@ -19,7 +19,7 @@ function sbp_department_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'addressfield',
         'settings' => array(
           'format_handlers' => array(
@@ -118,7 +118,7 @@ function sbp_department_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
           'add' => 'Add',
@@ -131,7 +131,7 @@ function sbp_department_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'featured' => array(
         'label' => 'above',
@@ -182,15 +182,10 @@ function sbp_department_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 5,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'featured' => array(
         'label' => 'above',
@@ -251,7 +246,7 @@ function sbp_department_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'quickedit' => array(
@@ -259,7 +254,7 @@ function sbp_department_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
@@ -313,7 +308,7 @@ function sbp_department_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(
           'quickedit' => array(
@@ -396,14 +391,9 @@ function sbp_department_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'list_default',
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'featured' => array(
@@ -457,7 +447,7 @@ function sbp_department_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'quickedit' => array(
@@ -465,7 +455,7 @@ function sbp_department_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'featured' => array(
         'label' => 'above',
@@ -523,15 +513,10 @@ function sbp_department_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'list_default',
-        'weight' => 7,
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'featured' => array(
         'label' => 'above',
