@@ -14,7 +14,7 @@ function sbp_wizard_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_sbp_wizard_screen';
-  $strongarm->value = 'edit-webform';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_sbp_wizard_screen'] = $strongarm;
 
   $strongarm = new stdClass();

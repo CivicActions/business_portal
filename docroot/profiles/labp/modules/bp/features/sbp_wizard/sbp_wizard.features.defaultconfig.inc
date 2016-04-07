@@ -191,6 +191,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 7,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -276,6 +282,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -372,6 +384,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -450,6 +468,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
         ),
         'teaser' => array(
           'label' => 'above',

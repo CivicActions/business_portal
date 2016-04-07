@@ -38,6 +38,10 @@ function sbp_wizard_views_default_views() {
   $handler->display->display_options['relationships']['field_section_tid']['table'] = 'field_data_field_section';
   $handler->display->display_options['relationships']['field_section_tid']['field'] = 'field_section_tid';
   $handler->display->display_options['relationships']['field_section_tid']['required'] = TRUE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
   /* Field: Content: Section */
   $handler->display->display_options['fields']['field_section']['id'] = 'field_section';
   $handler->display->display_options['fields']['field_section']['table'] = 'field_data_field_section';

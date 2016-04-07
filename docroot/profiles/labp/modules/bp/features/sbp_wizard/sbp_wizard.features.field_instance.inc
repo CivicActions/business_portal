@@ -172,14 +172,18 @@ function sbp_wizard_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
+        'module' => 'services_views',
         'settings' => array(
-          'link' => FALSE,
+          'data_element_key' => '',
           'quickedit' => array(
             'editor' => 'form',
           ),
+          'skip_empty_values' => 0,
+          'skip_safe' => 0,
+          'skip_text_format' => 1,
+          'term_name' => 1,
         ),
-        'type' => 'entityreference_label',
+        'type' => 'services',
         'weight' => 4,
       ),
     ),
@@ -241,6 +245,12 @@ function sbp_wizard_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -308,6 +318,12 @@ function sbp_wizard_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -372,6 +388,12 @@ function sbp_wizard_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -432,6 +454,12 @@ function sbp_wizard_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -498,6 +526,22 @@ function sbp_wizard_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'hidden',
+        'module' => 'services_views',
+        'settings' => array(
+          'data_element_key' => 'screen_id',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+          'skip_empty_values' => 1,
+          'skip_safe' => 0,
+          'skip_text_format' => 1,
+          'term_name' => 1,
+        ),
+        'type' => 'services',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -561,6 +605,12 @@ function sbp_wizard_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -619,6 +669,12 @@ function sbp_wizard_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -685,6 +741,12 @@ function sbp_wizard_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
