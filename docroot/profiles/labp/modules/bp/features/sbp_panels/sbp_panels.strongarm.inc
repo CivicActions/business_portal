@@ -13,344 +13,52 @@ function sbp_panels_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_article';
+  $strongarm->name = 'field_bundle_settings_fieldable_panels_pane__four_column_cta';
   $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_node_article'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_businesssource_center';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 0,
-        'choice' => 0,
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => FALSE,
       ),
-      'default' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
+      'preview' => array(
+        'custom_settings' => FALSE,
       ),
-      'teaser' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
       ),
-      'alternate' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
+      'token' => array(
+        'custom_settings' => FALSE,
       ),
-      'thumbnail' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'title' => array(
+          'weight' => '-5',
+        ),
       ),
-      'featured' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
+      'display' => array(
+        'title' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );
-  $export['panelizer_defaults_node_businesssource_center'] = $strongarm;
+  $export['field_bundle_settings_fieldable_panels_pane__four_column_cta'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_incentives';
+  $strongarm->name = 'field_bundle_settings_field_collection_item__field_calls_to_actions';
   $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'alternate' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'thumbnail' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(),
     ),
   );
-  $export['panelizer_defaults_node_incentives'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_online_resource';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'alternate' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'thumbnail' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_node_online_resource'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_page';
-  $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_node_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_sbp_basic_page';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'alternate' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'thumbnail' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_node_sbp_basic_page'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_sbp_department';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'alternate' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'thumbnail' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_node_sbp_department'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_webform';
-  $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_node_webform'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:businesssource_center:page_manager_selection';
-  $strongarm->value = 'node:businesssource_center:default';
-  $export['panelizer_node:businesssource_center:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:incentives:page_manager_selection';
-  $strongarm->value = 'node:incentives:default';
-  $export['panelizer_node:incentives:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:landing:page_manager_selection';
-  $strongarm->value = 'node:landing:default';
-  $export['panelizer_node:landing:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:online_resource:page_manager_selection';
-  $strongarm->value = 'node:online_resource:default';
-  $export['panelizer_node:online_resource:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:sbp_basic_page:page_manager_selection';
-  $strongarm->value = 'node:sbp_basic_page:default';
-  $export['panelizer_node:sbp_basic_page:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:sbp_content:page_manager_selection';
-  $strongarm->value = 'node:sbp_content:default';
-  $export['panelizer_node:sbp_content:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:sbp_department:page_manager_selection';
-  $strongarm->value = 'node:sbp_department:default';
-  $export['panelizer_node:sbp_department:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:sbp_guide:page_manager_selection';
-  $strongarm->value = 'node:sbp_guide:default';
-  $export['panelizer_node:sbp_guide:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:sbp_landing_page:page_manager_selection';
-  $strongarm->value = 'node:sbp_landing_page:default';
-  $export['panelizer_node:sbp_landing_page:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:sbp_permit:page_manager_selection';
-  $strongarm->value = 'node:sbp_permit:default';
-  $export['panelizer_node:sbp_permit:page_manager_selection'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_node:sbp_starter_kit:page_manager_selection';
-  $strongarm->value = 'node:sbp_starter_kit:default';
-  $export['panelizer_node:sbp_starter_kit:page_manager_selection'] = $strongarm;
+  $export['field_bundle_settings_field_collection_item__field_calls_to_actions'] = $strongarm;
 
   return $export;
 }
