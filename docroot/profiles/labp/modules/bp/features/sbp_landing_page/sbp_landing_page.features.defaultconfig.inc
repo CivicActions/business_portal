@@ -11,7 +11,6 @@ function sbp_landing_page_defaultconfig_features() {
   return array(
     'sbp_landing_page' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -314,55 +313,4 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
   t('Featured Content');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function sbp_landing_page_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node sbp_landing_page defaults'.
-  $permissions['administer panelizer node sbp_landing_page defaults'] = array(
-    'name' => 'administer panelizer node sbp_landing_page defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create sbp_landing_page content'.
-  $permissions['create sbp_landing_page content'] = array(
-    'name' => 'create sbp_landing_page content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any sbp_landing_page content'.
-  $permissions['delete any sbp_landing_page content'] = array(
-    'name' => 'delete any sbp_landing_page content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own sbp_landing_page content'.
-  $permissions['delete own sbp_landing_page content'] = array(
-    'name' => 'delete own sbp_landing_page content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any sbp_landing_page content'.
-  $permissions['edit any sbp_landing_page content'] = array(
-    'name' => 'edit any sbp_landing_page content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own sbp_landing_page content'.
-  $permissions['edit own sbp_landing_page content'] = array(
-    'name' => 'edit own sbp_landing_page content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  return $permissions;
 }
