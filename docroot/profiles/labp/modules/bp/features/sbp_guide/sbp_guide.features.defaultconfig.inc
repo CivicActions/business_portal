@@ -399,13 +399,6 @@ function sbp_guide_defaultconfig_field_default_fields() {
 function sbp_guide_defaultconfig_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'administer panelizer comment comment_node_sbp_guide defaults'.
-  $permissions['administer panelizer comment comment_node_sbp_guide defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_sbp_guide defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node sbp_guide defaults'.
   $permissions['administer panelizer node sbp_guide defaults'] = array(
     'name' => 'administer panelizer node sbp_guide defaults',
