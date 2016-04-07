@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the SBP Views feature.
+ */
+
+include_once 'sbp_views.features.inc';
