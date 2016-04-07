@@ -40,6 +40,7 @@ features[variable][] = metatag_enable_node__sbp_basic_page
 features[variable][] = node_options_sbp_basic_page
 features[variable][] = node_preview_sbp_basic_page
 features[variable][] = node_submitted_sbp_basic_page
+features[variable][] = panelizer_defaults_node_sbp_basic_page
 features[variable][] = webform_node_sbp_basic_page
 features[variable][] = workbench_moderation_default_state_sbp_basic_page
 features_exclude[dependencies][lightning_page] = lightning_page
