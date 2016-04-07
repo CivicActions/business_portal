@@ -49,6 +49,14 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'geographical_area' => array(
+      'name' => 'Geographical Area',
+      'machine_name' => 'geographical_area',
+      'description' => 'Location of the BusinessSource center grouping.',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'industry_tags' => array(
       'name' => 'Business Portal Industry',
       'machine_name' => 'industry_tags',

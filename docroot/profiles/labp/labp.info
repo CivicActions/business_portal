@@ -12,6 +12,7 @@ dependencies[] = text
 dependencies[] = color
 
 ; Contrib
+dependencies[] = email
 dependencies[] = menu_block
 
 ; Lightning
