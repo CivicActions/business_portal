@@ -5,3 +5,13 @@
  */
 
 include_once 'sbp_wizard.features.inc';
+
+/**
+* Implements hook_entity_info_alter().
+*/
+function sbp_wizard_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['json'] = array(
+    'label' => t('json'),
+    'custom settings' => TRUE,
+  );
+}

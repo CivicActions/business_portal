@@ -26,9 +26,9 @@ function sbp_wizard_defaultconfig_default_services_endpoint() {
   $endpoint = new stdClass();
   $endpoint->disabled = FALSE; /* Edit this to true to make a default endpoint disabled initially */
   $endpoint->api_version = 3;
-  $endpoint->name = 'api_json';
+  $endpoint->name = 'rest';
   $endpoint->server = 'rest_server';
-  $endpoint->path = 'api/json';
+  $endpoint->path = 'rest';
   $endpoint->authentication = array();
   $endpoint->server_settings = array(
     'formatters' => array(
@@ -40,15 +40,15 @@ function sbp_wizard_defaultconfig_default_services_endpoint() {
     ),
     'parsers' => array(
       'application/json' => TRUE,
-      'application/vnd.php.serialized' => FALSE,
+      'application/vnd.php.serialized' => TRUE,
+      'application/xml' => TRUE,
+      'multipart/form-data' => TRUE,
+      'text/xml' => TRUE,
       'application/x-www-form-urlencoded' => FALSE,
-      'application/xml' => FALSE,
-      'multipart/form-data' => FALSE,
-      'text/xml' => FALSE,
     ),
   );
   $endpoint->resources = array(
-    'business-portal-wizard' => array(
+    'testing_services' => array(
       'operations' => array(
         'index' => array(
           'enabled' => '1',
@@ -57,7 +57,7 @@ function sbp_wizard_defaultconfig_default_services_endpoint() {
     ),
   );
   $endpoint->debug = 0;
-  $export['api_json'] = $endpoint;
+  $export['rest'] = $endpoint;
 
   return $export;
 }
@@ -191,6 +191,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 7,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -276,6 +282,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -372,6 +384,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 6,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -451,6 +469,12 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 4,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -480,7 +504,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => 7,
+        'weight' => 6,
       ),
     ),
   );
