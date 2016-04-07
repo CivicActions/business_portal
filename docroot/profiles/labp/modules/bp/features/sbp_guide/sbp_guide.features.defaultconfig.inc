@@ -11,7 +11,6 @@ function sbp_guide_defaultconfig_features() {
   return array(
     'sbp_guide' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -391,55 +390,4 @@ function sbp_guide_defaultconfig_field_default_fields() {
   t('Small Business Guide');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function sbp_guide_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node sbp_guide defaults'.
-  $permissions['administer panelizer node sbp_guide defaults'] = array(
-    'name' => 'administer panelizer node sbp_guide defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create sbp_guide content'.
-  $permissions['create sbp_guide content'] = array(
-    'name' => 'create sbp_guide content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any sbp_guide content'.
-  $permissions['delete any sbp_guide content'] = array(
-    'name' => 'delete any sbp_guide content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own sbp_guide content'.
-  $permissions['delete own sbp_guide content'] = array(
-    'name' => 'delete own sbp_guide content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any sbp_guide content'.
-  $permissions['edit any sbp_guide content'] = array(
-    'name' => 'edit any sbp_guide content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own sbp_guide content'.
-  $permissions['edit own sbp_guide content'] = array(
-    'name' => 'edit own sbp_guide content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  return $permissions;
 }
