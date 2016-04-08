@@ -115,6 +115,7 @@ function labp_install() {
   db_insert('users_roles')
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
+  variable_set('site_frontpage', 'home');
 }
 
 /**
