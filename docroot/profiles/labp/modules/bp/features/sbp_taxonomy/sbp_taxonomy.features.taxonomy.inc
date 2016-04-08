@@ -81,6 +81,14 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'question_category' => array(
+      'name' => 'Question Category',
+      'machine_name' => 'question_category',
+      'description' => 'The category used for the FAQ question type',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'required_featured_items' => array(
       'name' => 'Required / Featured Items',
       'machine_name' => 'required_featured_items',
