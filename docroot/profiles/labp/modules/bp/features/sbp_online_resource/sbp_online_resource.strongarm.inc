@@ -13,6 +13,13 @@ function sbp_online_resource_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_online_resource';
+  $strongarm->value = 'edit-panelizer';
+  $export['additional_settings__active_tab_online_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_online_resource';
   $strongarm->value = 0;
   $export['comment_anonymous_online_resource'] = $strongarm;
@@ -62,6 +69,27 @@ function sbp_online_resource_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_online_resource';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_online_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_online_resource';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_online_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_online_resource';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_online_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__online_resource';
   $strongarm->value = array(
     'view_modes' => array(),
@@ -101,6 +129,13 @@ function sbp_online_resource_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__online_resource';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__online_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_online_resource';
   $strongarm->value = array(
     0 => 'status',
@@ -120,6 +155,13 @@ function sbp_online_resource_strongarm() {
   $strongarm->name = 'node_submitted_online_resource';
   $strongarm->value = 0;
   $export['node_submitted_online_resource'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_online_resource';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_online_resource'] = $strongarm;
 
   return $export;
 }
