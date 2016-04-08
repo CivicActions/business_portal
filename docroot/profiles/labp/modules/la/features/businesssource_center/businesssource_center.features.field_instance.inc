@@ -40,6 +40,12 @@ function businesssource_center_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -108,6 +114,12 @@ function businesssource_center_field_default_field_instances() {
         'weight' => 2,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -185,6 +197,12 @@ function businesssource_center_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -242,6 +260,12 @@ function businesssource_center_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -306,6 +330,12 @@ function businesssource_center_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -363,6 +393,12 @@ function businesssource_center_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -448,6 +484,12 @@ function businesssource_center_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -518,6 +560,12 @@ function businesssource_center_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -575,6 +623,12 @@ function businesssource_center_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
