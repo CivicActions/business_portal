@@ -11,8 +11,6 @@ function sbp_permits_defaultconfig_features() {
   return array(
     'sbp_permits' => array(
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -1415,87 +1413,4 @@ function sbp_permits_defaultconfig_field_default_fields() {
   t('Title');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_permits_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__sbp_permit';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'metatags' => array(
-          'weight' => '12',
-        ),
-        'title' => array(
-          'weight' => '0',
-        ),
-        'path' => array(
-          'weight' => '11',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__sbp_permit'] = $strongarm;
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function sbp_permits_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer node sbp_permit defaults'.
-  $permissions['administer panelizer node sbp_permit defaults'] = array(
-    'name' => 'administer panelizer node sbp_permit defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create sbp_permit content'.
-  $permissions['create sbp_permit content'] = array(
-    'name' => 'create sbp_permit content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any sbp_permit content'.
-  $permissions['delete any sbp_permit content'] = array(
-    'name' => 'delete any sbp_permit content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own sbp_permit content'.
-  $permissions['delete own sbp_permit content'] = array(
-    'name' => 'delete own sbp_permit content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any sbp_permit content'.
-  $permissions['edit any sbp_permit content'] = array(
-    'name' => 'edit any sbp_permit content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own sbp_permit content'.
-  $permissions['edit own sbp_permit content'] = array(
-    'name' => 'edit own sbp_permit content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  return $permissions;
 }

@@ -13,16 +13,16 @@ function sbp_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_sbp_basic_page';
-  $strongarm->value = 0;
-  $export['comment_anonymous_sbp_basic_page'] = $strongarm;
+  $strongarm->name = 'additional_settings__active_tab_sbp_basic_page';
+  $strongarm->value = 'edit-panelizer';
+  $export['additional_settings__active_tab_sbp_basic_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_sbp_basic_page';
-  $strongarm->value = '1';
-  $export['comment_sbp_basic_page'] = $strongarm;
+  $strongarm->name = 'comment_anonymous_sbp_basic_page';
+  $strongarm->value = 0;
+  $export['comment_anonymous_sbp_basic_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -55,9 +55,37 @@ function sbp_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_sbp_basic_page';
+  $strongarm->value = '1';
+  $export['comment_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_sbp_basic_page';
   $strongarm->value = 1;
   $export['comment_subject_field_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_sbp_basic_page';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_sbp_basic_page';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_sbp_basic_page';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_sbp_basic_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -74,6 +102,13 @@ function sbp_page_strongarm() {
   $strongarm->name = 'menu_parent_sbp_basic_page';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__sbp_basic_page';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__sbp_basic_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -97,6 +132,67 @@ function sbp_page_strongarm() {
   $strongarm->name = 'node_submitted_sbp_basic_page';
   $strongarm->value = 0;
   $export['node_submitted_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_sbp_basic_page';
+  $strongarm->value = array(
+    'status' => 1,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 1,
+        'substitute' => '',
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'default' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'alternate' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'thumbnail' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
+  );
+  $export['panelizer_defaults_node_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'webform_node_sbp_basic_page';
+  $strongarm->value = 0;
+  $export['webform_node_sbp_basic_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_sbp_basic_page';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_sbp_basic_page'] = $strongarm;
 
   return $export;
 }

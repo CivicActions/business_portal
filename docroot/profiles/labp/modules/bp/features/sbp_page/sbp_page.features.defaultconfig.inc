@@ -1,16 +1,17 @@
 <?php
 /**
  * @file
- * sbp_landing_page.features.defaultconfig.inc
+ * sbp_page.features.defaultconfig.inc
  */
 
 /**
  * Implements hook_defaultconfig_features().
  */
-function sbp_landing_page_defaultconfig_features() {
+function sbp_page_defaultconfig_features() {
   return array(
-    'sbp_landing_page' => array(
+    'sbp_page' => array(
       'field_default_fields' => 'field_default_fields',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -18,11 +19,11 @@ function sbp_landing_page_defaultconfig_features() {
 /**
  * Implements hook_defaultconfig_field_default_fields().
  */
-function sbp_landing_page_defaultconfig_field_default_fields() {
+function sbp_page_defaultconfig_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'comment-comment_node_sbp_landing_page-comment_body'.
-  $fields['comment-comment_node_sbp_landing_page-comment_body'] = array(
+  // Exported field: 'comment-comment_node_sbp_basic_page-comment_body'.
+  $fields['comment-comment_node_sbp_basic_page-comment_body'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => 1,
@@ -51,7 +52,7 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'comment_node_sbp_landing_page',
+      'bundle' => 'comment_node_sbp_basic_page',
       'default_value' => NULL,
       'deleted' => 0,
       'description' => '',
@@ -87,8 +88,8 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-sbp_landing_page-body'.
-  $fields['node-sbp_landing_page-body'] = array(
+  // Exported field: 'node-sbp_basic_page-body'.
+  $fields['node-sbp_basic_page-body'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => 1,
@@ -117,7 +118,7 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'sbp_landing_page',
+      'bundle' => 'sbp_basic_page',
       'default_value' => NULL,
       'deleted' => 0,
       'description' => '',
@@ -180,128 +181,7 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 2,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-sbp_landing_page-field_content'.
-  $fields['node-sbp_landing_page-field_content'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => -1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_content',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(),
-        ),
-        'target_type' => 'node',
-      ),
-      'translatable' => 0,
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'sbp_landing_page',
-      'default_value' => array(),
-      'default_value_function' => '',
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'alternate' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => FALSE,
-            'quickedit' => array(
-              'editor' => 'form',
-            ),
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 1,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'thumbnail' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_content',
-      'label' => 'Featured Content',
-      'required' => 0,
-      'settings' => array(
-        'behaviors' => array(
-          'prepopulate' => array(
-            'status' => 0,
-          ),
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'entityreference',
-        'settings' => array(
-          'fields' => array(),
-          'match_operator' => 'CONTAINS',
-          'path' => '',
-          'size' => 60,
-          'type_settings' => array(
-            'allow_existing' => 1,
-            'allow_new' => 0,
-            'delete_references' => 0,
-            'label_plural' => 'nodes',
-            'label_singular' => 'node',
-            'match_operator' => 'CONTAINS',
-            'override_labels' => 0,
-          ),
-        ),
-        'type' => 'entityreference_autocomplete',
-        'weight' => 3,
+        'weight' => 41,
       ),
     ),
   );
@@ -310,7 +190,62 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Comment');
-  t('Featured Content');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function sbp_page_defaultconfig_strongarm() {
+  $export = array();
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_sbp_basic_page';
+  $strongarm->value = array(
+    'status' => 1,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 1,
+        'substitute' => '',
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'default' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'alternate' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'thumbnail' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
+  );
+  $export['panelizer_defaults_node_sbp_basic_page'] = $strongarm;
+
+  return $export;
 }

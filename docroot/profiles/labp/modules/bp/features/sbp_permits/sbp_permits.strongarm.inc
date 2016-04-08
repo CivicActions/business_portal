@@ -14,7 +14,7 @@ function sbp_permits_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_sbp_permit';
-  $strongarm->value = 'edit-submission';
+  $strongarm->value = 'edit-panelizer';
   $export['additional_settings__active_tab_sbp_permit'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -192,8 +192,45 @@ function sbp_permits_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_sbp_permit';
   $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
+    'status' => 1,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 1,
+        'substitute' => '',
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'default' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'alternate' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'thumbnail' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
   );
   $export['panelizer_defaults_node_sbp_permit'] = $strongarm;
 

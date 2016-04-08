@@ -11,6 +11,44 @@ function sbp_department_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
+  // 'comment-comment_node_sbp_department-comment_body'.
+  $field_instances['comment-comment_node_sbp_department-comment_body'] = array(
+    'bundle' => 'comment_node_sbp_department',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
   // 'field_collection_item-field_addresses-field_address'.
   $field_instances['field_collection_item-field_addresses-field_address'] = array(
     'bundle' => 'field_addresses',
@@ -562,6 +600,7 @@ function sbp_department_field_default_field_instances() {
   t('Address');
   t('Address Type');
   t('Addresses');
+  t('Comment');
   t('Department Type');
   t('Description');
   t('Featured on Departments Page');
