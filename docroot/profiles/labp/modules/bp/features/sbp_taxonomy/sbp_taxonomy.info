@@ -16,6 +16,7 @@ features[taxonomy][] = geographical_area
 features[taxonomy][] = industry_tags
 features[taxonomy][] = permit_government_level
 features[taxonomy][] = permit_issuing_department
+features[taxonomy][] = question_category
 features[taxonomy][] = required_featured_items
 features[taxonomy][] = sbp_tags
 features[taxonomy][] = term_alphabet
