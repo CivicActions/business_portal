@@ -1,0 +1,6 @@
+name = LABP Environment Module
+description = Provides ability to environment switch from Drush.
+package = Los Angeles
+core = 7.x
+dependencies[] = environment
+dependencies[] = googleanalytics
