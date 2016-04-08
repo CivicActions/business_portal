@@ -16,12 +16,14 @@ dependencies[] = email
 dependencies[] = menu_block
 dependencies[] = ctools_custom_content
 dependencies[] = panels_import
+dependencies[] = googleanalytics
+dependencies[] = environment
 
 ; Lightning
 dependencies[] = assemble
 dependencies[] = curate
 
-; LABP modules
+; BP modules
 dependencies[] = sbp_content
 dependencies[] = sbp_department
 dependencies[] = sbp_document
@@ -39,3 +41,7 @@ dependencies[] = sbp_permits
 dependencies[] = sbp_starter_kit
 dependencies[] = sbp_taxonomy
 dependencies[] = sbp_views
+
+; LA modules
+dependencies[] = businesssource_center
+dependencies[] = labp_environment
