@@ -71,6 +71,7 @@ features[field_base][] = field_phone
 features[field_base][] = field_related_documents
 features[field_base][] = field_related_links
 features[field_base][] = field_related_permits
+features[field_base][] = field_resource_type
 features[field_base][] = field_sbp_permit_documents
 features[field_base][] = field_sbp_permit_licence_name
 features[field_base][] = field_sbp_permit_tags
