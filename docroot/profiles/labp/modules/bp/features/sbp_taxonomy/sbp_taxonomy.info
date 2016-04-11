@@ -23,6 +23,7 @@ features[taxonomy][] = permit_issuing_department
 features[taxonomy][] = permit_tags
 features[taxonomy][] = question_category
 features[taxonomy][] = required_featured_items
+features[taxonomy][] = resource_type
 features[taxonomy][] = sbp_tags
 features[taxonomy][] = term_alphabet
 features[taxonomy][] = terms_definitions
