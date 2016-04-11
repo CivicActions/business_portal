@@ -9,6 +9,22 @@
  */
 function sbp_taxonomy_taxonomy_default_vocabularies() {
   return array(
+    'business_needs' => array(
+      'name' => 'Business Needs',
+      'machine_name' => 'business_needs',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'business_ownership' => array(
+      'name' => 'Business Ownership',
+      'machine_name' => 'business_ownership',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'business_portal_wizard_sections' => array(
       'name' => 'Business Portal Wizard Sections',
       'machine_name' => 'business_portal_wizard_sections',

@@ -29,6 +29,7 @@ features[field_base][] = field_background
 features[field_base][] = field_background_color
 features[field_base][] = field_background_image
 features[field_base][] = field_business_need
+features[field_base][] = field_business_ownership
 features[field_base][] = field_business_stage
 features[field_base][] = field_button
 features[field_base][] = field_button_style
