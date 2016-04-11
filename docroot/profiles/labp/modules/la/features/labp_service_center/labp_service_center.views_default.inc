@@ -1,21 +1,21 @@
 <?php
 /**
  * @file
- * businesssource_center.views_default.inc
+ * labp_service_center.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function businesssource_center_views_default_views() {
+function labp_service_center_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'businesssource_center';
+  $view->name = 'labp_service_center';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'BusinessSource Center';
+  $view->human_name = 'Service Center';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -131,12 +131,12 @@ function businesssource_center_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'businesssource_center' => 'businesssource_center',
+    'labp_service_center' => 'labp_service_center',
   );
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $export['businesssource_center'] = $view;
+  $export['labp_service_center'] = $view;
 
   return $export;
 }

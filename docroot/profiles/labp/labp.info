@@ -43,5 +43,5 @@ dependencies[] = sbp_taxonomy
 dependencies[] = sbp_views
 
 ; LA modules
-dependencies[] = businesssource_center
+dependencies[] = labp_service_center
 dependencies[] = labp_environment

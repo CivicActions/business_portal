@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the BusinessSource Center feature.
- */
-
-include_once 'businesssource_center.features.inc';
