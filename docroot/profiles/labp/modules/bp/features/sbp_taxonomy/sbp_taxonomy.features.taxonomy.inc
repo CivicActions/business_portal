@@ -9,6 +9,14 @@
  */
 function sbp_taxonomy_taxonomy_default_vocabularies() {
   return array(
+    'business_portal_wizard_sections' => array(
+      'name' => 'Business Portal Wizard Sections',
+      'machine_name' => 'business_portal_wizard_sections',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'carousel' => array(
       'name' => 'Carousel',
       'machine_name' => 'carousel',
@@ -81,6 +89,14 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'permit_tags' => array(
+      'name' => 'Permit - Tags',
+      'machine_name' => 'permit_tags',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'question_category' => array(
       'name' => 'Question Category',
       'machine_name' => 'question_category',
@@ -108,6 +124,14 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
     'term_alphabet' => array(
       'name' => 'Term Alphabet',
       'machine_name' => 'term_alphabet',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
+    'terms_definitions' => array(
+      'name' => 'Terms & Definitions',
+      'machine_name' => 'terms_definitions',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
