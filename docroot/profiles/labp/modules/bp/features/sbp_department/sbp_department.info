@@ -28,7 +28,6 @@ features[defaultconfig][] = field_default_fields:node-sbp_department-field_link
 features[defaultconfig][] = field_default_fields:node-sbp_department-field_main_feature
 features[defaultconfig][] = field_default_fields:node-sbp_department-field_phone
 features[defaultconfig][] = field_default_fields:node-sbp_department-field_secondary_feature
-features[defaultconfig][] = views_default_views:departments
 features[features_api][] = api:2
 features[field_instance][] = comment-comment_node_sbp_department-comment_body
 features[field_instance][] = field_collection_item-field_addresses-field_address
