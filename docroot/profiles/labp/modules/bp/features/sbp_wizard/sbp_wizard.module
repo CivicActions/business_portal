@@ -43,11 +43,10 @@ function sbp_wizard_block() {
 
   drupal_add_js('profiles/labp/libraries/bp/underscore/underscore-min.js');
   drupal_add_js('profiles/labp/libraries/bp/backbone/backbone-min.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/data-from-drupal.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/models.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/collections.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/views.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/app.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/models.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/collections.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/views.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/app.js');
 
 
   return
