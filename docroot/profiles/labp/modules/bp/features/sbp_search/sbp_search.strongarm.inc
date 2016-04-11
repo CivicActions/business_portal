@@ -65,13 +65,6 @@ function sbp_search_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'search_api_solr_last_optimize';
-  $strongarm->value = 1459402189;
-  $export['search_api_solr_last_optimize'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'search_api_solr_site_hash';
   $strongarm->value = 'k503p7';
   $export['search_api_solr_site_hash'] = $strongarm;

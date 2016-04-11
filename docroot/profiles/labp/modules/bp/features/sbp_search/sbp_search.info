@@ -28,5 +28,4 @@ features[variable][] = date_format_search_api_facetapi_MONTH
 features[variable][] = date_format_search_api_facetapi_SECOND
 features[variable][] = date_format_search_api_facetapi_YEAR
 features[variable][] = search_active_modules
-features[variable][] = search_api_solr_last_optimize
 features[variable][] = search_api_solr_site_hash
