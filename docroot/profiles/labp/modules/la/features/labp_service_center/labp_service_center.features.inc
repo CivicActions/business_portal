@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * businesssource_center.features.inc
+ * labp_service_center.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function businesssource_center_ctools_plugin_api($module = NULL, $api = NULL) {
+function labp_service_center_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
@@ -22,14 +22,14 @@ function businesssource_center_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_views_api().
  */
-function businesssource_center_views_api($module = NULL, $api = NULL) {
+function labp_service_center_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_image_default_styles().
  */
-function businesssource_center_image_default_styles() {
+function labp_service_center_image_default_styles() {
   $styles = array();
 
   // Exported image style: medium_landscape.
@@ -53,10 +53,10 @@ function businesssource_center_image_default_styles() {
 /**
  * Implements hook_node_info().
  */
-function businesssource_center_node_info() {
+function labp_service_center_node_info() {
   $items = array(
-    'businesssource_center' => array(
-      'name' => t('BusinessSource Center'),
+    'labp_service_center' => array(
+      'name' => t('Service Center'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

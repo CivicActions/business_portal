@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * businesssource_center.features.field_instance.inc
+ * labp_service_center.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function businesssource_center_field_default_field_instances() {
+function labp_service_center_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-businesssource_center-body'.
-  $field_instances['node-businesssource_center-body'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-body'.
+  $field_instances['node-labp_service_center-body'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -85,9 +85,9 @@ function businesssource_center_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-businesssource_center-field_address'.
-  $field_instances['node-businesssource_center-field_address'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-field_address'.
+  $field_instances['node-labp_service_center-field_address'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -167,9 +167,9 @@ function businesssource_center_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-businesssource_center-field_email'.
-  $field_instances['node-businesssource_center-field_email'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-field_email'.
+  $field_instances['node-labp_service_center-field_email'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -235,9 +235,9 @@ function businesssource_center_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-businesssource_center-field_geographical_area'.
-  $field_instances['node-businesssource_center-field_geographical_area'] = array(
-    'bundle' => 'businesssource_center',
+  // 'node-labp_service_center-field_geographical_area'.
+  $field_instances['node-labp_service_center-field_geographical_area'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -300,9 +300,9 @@ function businesssource_center_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-businesssource_center-field_languages'.
-  $field_instances['node-businesssource_center-field_languages'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-field_languages'.
+  $field_instances['node-labp_service_center-field_languages'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -368,9 +368,9 @@ function businesssource_center_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-businesssource_center-field_link'.
-  $field_instances['node-businesssource_center-field_link'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-field_link'.
+  $field_instances['node-labp_service_center-field_link'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -453,9 +453,9 @@ function businesssource_center_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-businesssource_center-field_map'.
-  $field_instances['node-businesssource_center-field_map'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-field_map'.
+  $field_instances['node-labp_service_center-field_map'] = array(
+    'bundle' => 'labp_service_center',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -530,9 +530,9 @@ function businesssource_center_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-businesssource_center-field_phone'.
-  $field_instances['node-businesssource_center-field_phone'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-field_phone'.
+  $field_instances['node-labp_service_center-field_phone'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -598,9 +598,9 @@ function businesssource_center_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-businesssource_center-field_services'.
-  $field_instances['node-businesssource_center-field_services'] = array(
-    'bundle' => 'businesssource_center',
+  // Exported field_instance: 'node-labp_service_center-field_services'.
+  $field_instances['node-labp_service_center-field_services'] = array(
+    'bundle' => 'labp_service_center',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',

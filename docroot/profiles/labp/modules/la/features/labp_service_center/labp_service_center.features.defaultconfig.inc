@@ -1,13 +1,24 @@
 <?php
 /**
  * @file
- * businesssource_center.pages_default.inc
+ * labp_service_center.features.defaultconfig.inc
  */
 
 /**
- * Implements hook_default_page_manager_handlers().
+ * Implements hook_defaultconfig_features().
  */
-function businesssource_center_default_page_manager_handlers() {
+function labp_service_center_defaultconfig_features() {
+  return array(
+    'labp_service_center' => array(
+      'default_page_manager_handlers' => 'default_page_manager_handlers',
+    ),
+  );
+}
+
+/**
+ * Implements hook_defaultconfig_default_page_manager_handlers().
+ */
+function labp_service_center_defaultconfig_default_page_manager_handlers() {
   $export = array();
 
   $handler = new stdClass();
@@ -88,7 +99,7 @@ function businesssource_center_default_page_manager_handlers() {
     $pane->pid = 'new-bb102333-b1e5-402d-9a21-9bc4986295d1';
     $pane->panel = 'right';
     $pane->type = 'views_panes';
-    $pane->subtype = 'businesssource_center-panel_pane_1';
+    $pane->subtype = 'labp_service_center-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
