@@ -8,6 +8,18 @@
 function sbp_migrate_enable() {
   migrate_static_registration();
   sbp_migrate_process_imports();
+  $normal_path = drupal_get_normal_path('content/resources');
+  $item = array(
+    'link_path' => $normal_path,
+    'link_title' => 'Resources',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'language' => 'en',
+    'plid' => 0,
+    'module' => 'menu',
+  );
+  menu_link_save($item);
+  menu_cache_clear_all();
 }
 
 function sbp_migrate_disable() {
