@@ -5,7 +5,7 @@ Imports mini-panels, pages and page variants from corresponding subfolders.
 
 INSTALLATION
 -----------
-1. Create 'sites/all/imports' folder.
+1. Create panels import directory: 'sites/all/imports' by default.
 2. Create all necessary subfolders for panels:
 	-> sites/all/imports/page_manager/handlers
 	-> sites/all/imports/page_manager/pages
@@ -16,6 +16,7 @@ INSTALLATION
 4. Do not forget to add '<?php' line to the top of the files.
 5. Move files to corresponding subfolders.
 6. Install this module.
+7. Go to 'admin/config/content/panels-import' and configure the import directory.
 
 MAIN IDEA
 -----------
