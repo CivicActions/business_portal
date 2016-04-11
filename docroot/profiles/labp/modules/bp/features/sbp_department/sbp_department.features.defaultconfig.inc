@@ -10,10 +10,235 @@
 function sbp_department_defaultconfig_features() {
   return array(
     'sbp_department' => array(
+      'default_page_manager_handlers' => 'default_page_manager_handlers',
       'field_default_fields' => 'field_default_fields',
-      'strongarm' => 'strongarm',
+      'views_default_views' => 'views_default_views',
     ),
   );
+}
+
+/**
+ * Implements hook_defaultconfig_default_page_manager_handlers().
+ */
+function sbp_department_defaultconfig_default_page_manager_handlers() {
+  $export = array();
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'node_view__departments';
+  $handler->task = 'node_view';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = -26;
+  $handler->conf = array(
+    'title' => 'Departments',
+    'no_blocks' => 0,
+    'pipeline' => 'ipe',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => 'departments',
+    'access' => array(
+      'logic' => 'and',
+      'plugins' => array(
+        0 => array(
+          'name' => 'path_visibility',
+          'settings' => array(
+            'visibility_setting' => '1',
+            'paths' => 'content/departments',
+          ),
+          'context' => 'empty',
+          'not' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'twocol_stacked';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'top' => NULL,
+      'left' => NULL,
+      'right' => NULL,
+      'bottom' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '9f303ccb-71ca-4c6c-a1b0-67ac15a0c43a';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-bc1d7e89-bc71-4c2f-ab04-97cbaed62bdb';
+    $pane->panel = 'left';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'bc1d7e89-bc71-4c2f-ab04-97cbaed62bdb';
+    $display->content['new-bc1d7e89-bc71-4c2f-ab04-97cbaed62bdb'] = $pane;
+    $display->panels['left'][0] = 'new-bc1d7e89-bc71-4c2f-ab04-97cbaed62bdb';
+    $pane = new stdClass();
+    $pane->pid = 'new-1977a855-1541-49e5-8610-cf5dd88a5dcc';
+    $pane->panel = 'right';
+    $pane->type = 'node_content';
+    $pane->subtype = 'node_content';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'links' => 1,
+      'no_extras' => 1,
+      'override_title' => 0,
+      'override_title_text' => '',
+      'identifier' => '',
+      'link' => 1,
+      'leave_node_title' => 0,
+      'build_mode' => 'full',
+      'context' => array(),
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '1977a855-1541-49e5-8610-cf5dd88a5dcc';
+    $display->content['new-1977a855-1541-49e5-8610-cf5dd88a5dcc'] = $pane;
+    $display->panels['right'][0] = 'new-1977a855-1541-49e5-8610-cf5dd88a5dcc';
+    $pane = new stdClass();
+    $pane->pid = 'new-c12655cc-dc56-4502-8cb6-2780150c63dd';
+    $pane->panel = 'right';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'departments-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_settings' => 'fields',
+      'header_type' => 'none',
+      'view_mode' => 'teaser',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'c12655cc-dc56-4502-8cb6-2780150c63dd';
+    $display->content['new-c12655cc-dc56-4502-8cb6-2780150c63dd'] = $pane;
+    $display->panels['right'][1] = 'new-c12655cc-dc56-4502-8cb6-2780150c63dd';
+    $pane = new stdClass();
+    $pane->pid = 'new-27576cec-c834-416a-aef3-92974627f0a8';
+    $pane->panel = 'top';
+    $pane->type = 'fieldable_panels_pane';
+    $pane->subtype = 'vid:1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'view_mode' => 'full',
+      'fieldable_panels_pane' => (object) array(
+        'bundle' => 'hero',
+        'language' => 'und',
+        'is_new' => TRUE,
+        'title' => '',
+        'link' => 0,
+        'path' => '',
+        'reusable' => 0,
+        'admin_title' => '',
+        'admin_description' => '',
+        'category' => 'Reusable panes',
+        'vid' => '1',
+        'current_vid' => '',
+        'revision' => 1,
+        'fpid' => '1',
+        'field_background' => array(
+          'und' => array(
+            0 => array(
+              'value' => 0,
+            ),
+          ),
+        ),
+        'field_background_color' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'ffffff',
+            ),
+          ),
+        ),
+        'field_background_image' => array(
+          'und' => array(),
+        ),
+        'field_calls_to_action' => array(
+          'und' => array(),
+        ),
+        'field_icon' => array(
+          'und' => array(),
+        ),
+        'field_line_and_subtitle_color' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'ffffff',
+            ),
+          ),
+        ),
+        'field_subtitle_1' => array(
+          'und' => array(),
+        ),
+        'field_subtitle_2' => array(
+          'und' => array(),
+        ),
+        'field_width' => array(
+          'und' => array(),
+        ),
+        'log' => '',
+        'created' => 1460048311,
+        'timestamp' => 1460048311,
+        'changed' => 1460048311,
+        'uuid' => '',
+        'uid' => '1',
+        'vuuid' => '',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '27576cec-c834-416a-aef3-92974627f0a8';
+    $display->content['new-27576cec-c834-416a-aef3-92974627f0a8'] = $pane;
+    $display->panels['top'][0] = 'new-27576cec-c834-416a-aef3-92974627f0a8';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $export['node_view__departments'] = $handler;
+
+  return $export;
 }
 
 /**
@@ -684,99 +909,65 @@ function sbp_department_defaultconfig_field_default_fields() {
 }
 
 /**
- * Implements hook_defaultconfig_strongarm().
+ * Implements hook_defaultconfig_views_default_views().
  */
-function sbp_department_defaultconfig_strongarm() {
+function sbp_department_defaultconfig_views_default_views() {
   $export = array();
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_enable_revisions_page_node_sbp_department';
-  $strongarm->value = 1;
-  $export['diff_enable_revisions_page_node_sbp_department'] = $strongarm;
+  $view = new view();
+  $view->name = 'departments';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Departments';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_show_preview_changes_node_sbp_department';
-  $strongarm->value = 1;
-  $export['diff_show_preview_changes_node_sbp_department'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'diff_view_mode_preview_node_sbp_department';
-  $strongarm->value = 'full';
-  $export['diff_view_mode_preview_node_sbp_department'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'metatag_enable_node__sbp_department';
-  $strongarm->value = TRUE;
-  $export['metatag_enable_node__sbp_department'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_sbp_department';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'alternate' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'thumbnail' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Departments';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sbp_department' => 'sbp_department',
   );
-  $export['panelizer_defaults_node_sbp_department'] = $strongarm;
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'webform_node_sbp_department';
-  $strongarm->value = 0;
-  $export['webform_node_sbp_department'] = $strongarm;
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'workbench_moderation_default_state_sbp_department';
-  $strongarm->value = 'draft';
-  $export['workbench_moderation_default_state_sbp_department'] = $strongarm;
+  /* Display: Content pane */
+  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $export['departments'] = $view;
 
   return $export;
 }
