@@ -12,4 +12,6 @@ files[] = migrate/sbp_migrate.industry_tags.inc
 files[] = migrate/sbp_migrate.sbp_permit.inc
 files[] = migrate/nodes.inc
 files[] = migrate/field_collections.inc
+files[] = migrate/sbp_migrate.business_business_ownership.inc
+files[] = migrate/sbp_migrate.business_needs.inc
 files[] = plugins/destinations/fields.inc
