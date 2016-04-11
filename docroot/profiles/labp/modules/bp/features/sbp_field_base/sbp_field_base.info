@@ -45,6 +45,7 @@ features[field_base][] = field_description
 features[field_base][] = field_document
 features[field_base][] = field_document_type
 features[field_base][] = field_email
+features[field_base][] = field_faq_question_type
 features[field_base][] = field_featured_resources
 features[field_base][] = field_geographical_area
 features[field_base][] = field_government_level
