@@ -19,6 +19,16 @@ function sbp_migrate_enable() {
     'module' => 'menu',
   );
   menu_link_save($item);
+  $normal_path = drupal_get_normal_path('content/departments');
+  $item = array(
+    'link_path' => $normal_path,
+    'link_title' => 'Departments',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => 1527,
+    'module' => 'menu',
+  );
+  menu_link_save($item);
   menu_cache_clear_all();
 }
 
