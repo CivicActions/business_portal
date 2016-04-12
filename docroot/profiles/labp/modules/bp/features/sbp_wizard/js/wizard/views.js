@@ -11,6 +11,9 @@ _.templateSettings = {
 // Wizard //
 ////////////
 
+(function($) {
+
+
 namespace.views.Wizard = Backbone.View.extend({
 
   tagName: 'div',
@@ -62,7 +65,7 @@ namespace.views.Wizard = Backbone.View.extend({
   screenTemplate: _.template('<h1 id="section-title" class="wizard__question">{{section.tid}} / {{Name}} </h1>{{ title }} <br /> <div class="wizard__tip">{{Description}}</div>'),
 
   render: function(){
-    
+
     // If on the results page just print that out:
     if (this.model.get("Confirmation Screen") === "1") {
       var resultsView = new namespace.views.ResultsView({ collection: this.collection });
@@ -115,7 +118,7 @@ namespace.views.Button = Backbone.View.extend({
     "click": "markSelected"
   },
 
-  /* Mark selected, used for forward arrow functionality. 
+  /* Mark selected, used for forward arrow functionality.
    * And setup the next screen from the DOM.
    */
   markSelected: function(event) {
@@ -141,7 +144,7 @@ namespace.views.Button = Backbone.View.extend({
 
 namespace.views.Nav = Backbone.View.extend({
   el: ".wizard__nav",
-  
+
   events:  {
     "click .wizard__arrow-up": "backArrowClick",
     "click .wizard__arrow-down": "forwardArrowClick"
@@ -167,10 +170,10 @@ namespace.views.Nav = Backbone.View.extend({
     namespace.views.wizard.setScreenChosen();
     namespace.views.wizard.remove();
 
-     namespace.views.wizard = new namespace.views.Wizard({ 
+     namespace.views.wizard = new namespace.views.Wizard({
        model : namespace.collections.screens.find({
          Nid: namespace.views.wizard.getCurrentScreen()
-       }) 
+       })
      });
 
     Backbone.trigger("current:update");
@@ -195,7 +198,7 @@ namespace.views.ResultsView = Backbone.View.extend({
        var resultView =  new namespace.views.Result({model: s});
        this.$el.append(resultView.render().el);
       }
-    }, this); 
+    }, this);
   }
 });
 
@@ -204,11 +207,11 @@ namespace.views.ResultsView = Backbone.View.extend({
 ////////////
 
 namespace.views.Result = Backbone.View.extend({
-  
+
   tagName: "li",
-  
+
   render: function() {
-    this.$el.html(this.model.get("chosenResult"));    
+    this.$el.html(this.model.get("chosenResult"));
     return this;
   }
 
@@ -221,7 +224,7 @@ namespace.views.Result = Backbone.View.extend({
 
 
 namespace.views.Progress = Backbone.View.extend({
-  
+
   el: ".wizard__progress-bar",
 
   initialize: function() {
@@ -246,13 +249,13 @@ namespace.views.Progress = Backbone.View.extend({
 
 
 namespace.views.Section = Backbone.View.extend({
-  
+
   tagName: "li",
 
   template: _.template("<h5>{{name}}</h5>"),
-  
+
   render: function() {
-    this.$el.append(this.template({name: this.model.get("title")}));    
+    this.$el.append(this.template({name: this.model.get("title")}));
     var sectionSteps = new namespace.views.SectionSteps({sectionId: this.model.get("id")}).render().el;
     this.$el.append(sectionSteps);
     return this;
@@ -271,14 +274,14 @@ namespace.views.SectionSteps = Backbone.View.extend({
   },
 
   render:function() {
-    
+
     // @TODO move this method into the collection.
     // @TODO Sort screen by section ID.
     var screens = _.filter(namespace.collections.screens.models, function(s){
       return s.attributes.section.tid === this.sectionId;
     }, this);
 
-    var graphic;    
+    var graphic;
     _.each(screens, function(s) {
       if (s.get("Nid") === namespace.views.wizard.model.get("Nid")) {
         graphic = " O ";
@@ -307,3 +310,5 @@ namespace.views.SectionStepItem = Backbone.View.extend({
     return this;
   }
 });
+
+})(jQuery);
