@@ -1,7 +1,6 @@
 .wizard__nav {
   display: inline-block;
-  /* width: 70%; */
-  /* float: left; */
+  margin-top: 30px;
 }
 
 a.wizard__arrow-up {
@@ -23,4 +22,9 @@ a.wizard__arrow-down {
   margin-top: 5px;
   display: block;
   text-indent: -100000px;
+  opacity: 0.2;
+}
+
+a.wizard__arrow-down.active {
+  opacity: 1;
 }

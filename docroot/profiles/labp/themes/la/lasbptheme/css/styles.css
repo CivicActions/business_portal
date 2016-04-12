@@ -2030,7 +2030,7 @@ tr.selected td {
 }
 
 /* line 65, ../sass/components/wizard/_wizard.scss */
-.wizard__button a {
+a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
@@ -2052,7 +2052,7 @@ tr.selected td {
 }
 
 /* line 73, ../sass/components/wizard/_wizard.scss */
-.wizard__button--selected a {
+a.wizard__button--selected {
   text-decoration: none;
   color: white;
 }
@@ -2072,11 +2072,6 @@ tr.selected td {
   .wizard__tip {
     font-size: 1.5em;
   }
-}
-
-/* line 87, ../sass/components/wizard/_wizard.scss */
-.progress-box {
-  display: none;
 }
 
 /* line 1, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -2116,11 +2111,10 @@ tr.selected td {
 /* line 1, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav {
   display: inline-block;
-  /* width: 70%; */
-  /* float: left; */
+  margin-top: 30px;
 }
 
-/* line 7, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 6, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
   background-image: url('../images/wizard/arrow_up.png?1459349360');
   background-repeat: no-repeat;
@@ -2132,7 +2126,7 @@ a.wizard__arrow-up {
   text-indent: -100000px;
 }
 
-/* line 17, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 16, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
   background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
   background-repeat: no-repeat;
@@ -2142,6 +2136,12 @@ a.wizard__arrow-down {
   margin-top: 5px;
   display: block;
   text-indent: -100000px;
+  opacity: 0.2;
+}
+
+/* line 28, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-down.active {
+  opacity: 1;
 }
 
 /* Nodes */

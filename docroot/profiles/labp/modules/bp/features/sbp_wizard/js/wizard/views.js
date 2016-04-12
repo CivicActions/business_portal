@@ -22,6 +22,10 @@ namespace.views.Wizard = Backbone.View.extend({
 
   selected: false,
 
+  toggleSelected: function() {
+    this.selected = !this.selected;
+  },
+
   getCurrentScreen: function() {
     return this.currentScreen;
   },
@@ -62,21 +66,25 @@ namespace.views.Wizard = Backbone.View.extend({
     return false;
   },
 
-  screenTemplate: _.template('<div class="wizard__header">{{section.tid}} / {{Name}}</div><div class="wizard__header-line" /> <div class="wizard__question">{{ title }}</div> <div class="wizard__tip">{{Description}}</div>'),
+  screenTemplate: _.template('<div class="wizard__header">{{section.tid}} / {{Name}}</div><div class="wizard__header-line" /> <h1 class="wizard__question">{{ title }}</h1> <div class="wizard__tip">{{Description}}</div>'),
+ 
 
   render: function(){
-
+    
     // If on the results page just print that out:
     if (this.model.get("Confirmation Screen") === "1") {
-      var resultsView = new namespace.views.ResultsView({ collection: this.collection });
+      var resultsView = new namespace.views.ResultsView(
+        { collection: this.collection}
+      );
+      Backbone.trigger("buttonstate:deselected");
       return true;
     } else {
       this.$el.html(this.screenTemplate(this.model.toJSON()));
       $("#wizard").css("background", this.model.get("Color"));
-      // @TODO fix button selection class logic
-      var buttonsView = new namespace.views.Buttons({ model: this.model });
-      buttonsView.render();
-    }
+        var buttonsView = new namespace.views.Buttons({ model: this.model });
+        buttonsView.render();
+      }
+//    }
     return this;
   }
 });
@@ -91,10 +99,12 @@ namespace.views.Buttons = Backbone.View.extend({
   render: function() {
     this.$el.find("a").remove();
     var buttons = this.model.get("buttons");
-     _.each(buttons, function(b) {
-       var buttonView =  new namespace.views.Button({button: b, model: this.model});
-       this.$el.append(buttonView.render().el);
-    }, this);
+      if (buttons.length > 0) {
+        _.each(buttons, function(b) {
+          var buttonView =  new namespace.views.Button({button: b, model: this.model});
+          this.$el.append(buttonView.render().el);
+        }, this);
+      }
     return this;
   }
 });
@@ -118,14 +128,22 @@ namespace.views.Button = Backbone.View.extend({
     "click": "markSelected"
   },
 
-  /* Mark selected, used for forward arrow functionality.
+  /* Mark selected, used for forward arrow functionality. 
    * And setup the next screen from the DOM.
    */
   markSelected: function(event) {
-    namespace.views.wizard.selected = true;
+    namespace.views.wizard.toggleSelected();
+
+    if (namespace.views.wizard.selected) {
+      this.$el.addClass("wizard__button--selected");
+      Backbone.trigger("buttonstate:selected");
+    } else {
+      $(".wizard__button").removeClass("wizard__button--selected");
+      Backbone.trigger("buttonstate:deselected");
+    }
+  
     namespace.views.wizard.setScreen($(event.currentTarget).attr("go-to-id"));
     namespace.views.wizard.setDataResult($(event.currentTarget).attr("d-result"));
-    this.$el.toggleClass("active");
     event.preventDefault();
 },
 
@@ -144,6 +162,19 @@ namespace.views.Button = Backbone.View.extend({
 
 namespace.views.Nav = Backbone.View.extend({
   el: ".wizard__nav",
+  
+  initialize: function() {
+    Backbone.on("buttonstate:selected", this.arrowVisibilityOn, this);
+    Backbone.on("buttonstate:deselected", this.arrowVisibilityOff, this);
+  },
+
+  arrowVisibilityOn: function() {
+    this.$el.find(".wizard__arrow-down").addClass("active");
+  },
+
+  arrowVisibilityOff: function() {
+    this.$el.find(".wizard__arrow-down").removeClass("active");
+  },
 
   events:  {
     "click .wizard__arrow-up": "backArrowClick",
@@ -169,11 +200,10 @@ namespace.views.Nav = Backbone.View.extend({
   render: function() {
     namespace.views.wizard.setScreenChosen();
     namespace.views.wizard.remove();
-
-     namespace.views.wizard = new namespace.views.Wizard({
+     namespace.views.wizard = new namespace.views.Wizard({ 
        model : namespace.collections.screens.find({
          Nid: namespace.views.wizard.getCurrentScreen()
-       })
+       }) 
      });
 
     Backbone.trigger("current:update");
@@ -198,7 +228,7 @@ namespace.views.ResultsView = Backbone.View.extend({
        var resultView =  new namespace.views.Result({model: s});
        this.$el.append(resultView.render().el);
       }
-    }, this);
+    }, this); 
   }
 });
 
@@ -207,11 +237,11 @@ namespace.views.ResultsView = Backbone.View.extend({
 ////////////
 
 namespace.views.Result = Backbone.View.extend({
-
+  
   tagName: "li",
-
+  
   render: function() {
-    this.$el.html(this.model.get("chosenResult"));
+    this.$el.html(this.model.get("chosenResult"));    
     return this;
   }
 
@@ -224,11 +254,12 @@ namespace.views.Result = Backbone.View.extend({
 
 
 namespace.views.Progress = Backbone.View.extend({
-
-  el: ".wizard__progress-box",
+  
+  el: ".wizard__progress-drawer",
 
   initialize: function() {
     Backbone.on("current:update", this.render, this);
+    this.$el.hide();
   },
 
   render: function() {
@@ -249,13 +280,13 @@ namespace.views.Progress = Backbone.View.extend({
 
 
 namespace.views.Section = Backbone.View.extend({
-
+  
   tagName: "li",
 
   template: _.template("<h5>{{name}}</h5>"),
-
+  
   render: function() {
-    this.$el.append(this.template({name: this.model.get("title")}));
+    this.$el.append(this.template({name: this.model.get("title")}));    
     var sectionSteps = new namespace.views.SectionSteps({sectionId: this.model.get("id")}).render().el;
     this.$el.append(sectionSteps);
     return this;
@@ -274,14 +305,14 @@ namespace.views.SectionSteps = Backbone.View.extend({
   },
 
   render:function() {
-
+    
     // @TODO move this method into the collection.
     // @TODO Sort screen by section ID.
     var screens = _.filter(namespace.collections.screens.models, function(s){
       return s.attributes.section.tid === this.sectionId;
     }, this);
 
-    var graphic;
+    var graphic;    
     _.each(screens, function(s) {
       if (s.get("Nid") === namespace.views.wizard.model.get("Nid")) {
         graphic = " O ";
