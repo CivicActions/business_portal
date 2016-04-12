@@ -1828,50 +1828,57 @@ tr.selected td {
   font-weight: 400;
   color: white;
   background: #0F2940;
-  margin: 0;
   padding: 25px 30px;
-  text-align: top;
-  vertical-align: top;
 }
-/* line 19, ../sass/components/_footer.scss */
+/* line 15, ../sass/components/_footer.scss */
 #footer a {
   color: #6BC3F3;
   font-weight: 700;
 }
-/* line 23, ../sass/components/_footer.scss */
-#footer .footer__copyright {
-  margin: 0;
-  margin: 0 0 5px 0;
+@media (min-width: 768px) {
+  /* line 21, ../sass/components/_footer.scss */
+  #footer .footer__links {
+    float: left;
+  }
 }
-/* line 30, ../sass/components/_footer.scss */
+/* line 28, ../sass/components/_footer.scss */
 #footer .menu {
   margin: 0 0 40px 0;
   padding: 0;
 }
-@media (min-width: 768px) and (max-width: 959px) {
-  /* line 30, ../sass/components/_footer.scss */
+@media (min-width: 768px) {
+  /* line 28, ../sass/components/_footer.scss */
   #footer .menu {
-    margin: 0 0 0 25px;
-    float: left;
+    margin: 0;
   }
 }
-/* line 40, ../sass/components/_footer.scss */
+/* line 37, ../sass/components/_footer.scss */
 #footer .menu__item {
   list-style: none;
-  padding: 0;
-  margin: 0 0 5px 0;
+  margin: 0 0 6px 0;
 }
-@media (min-width: 768px) and (max-width: 959px) {
-  /* line 40, ../sass/components/_footer.scss */
+@media (min-width: 768px) {
+  /* line 37, ../sass/components/_footer.scss */
   #footer .menu__item {
     margin: 0 25px 0 0;
     float: left;
   }
 }
-/* line 52, ../sass/components/_footer.scss */
-#footer .footer__credits {
-  margin: 0;
-  padding: 0;
+/* line 48, ../sass/components/_footer.scss */
+#footer .footer__copyright {
+  margin: 0 0 6px 0;
+}
+@media (min-width: 768px) {
+  /* line 48, ../sass/components/_footer.scss */
+  #footer .footer__copyright {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  /* line 56, ../sass/components/_footer.scss */
+  #footer .footer__credits {
+    float: right;
+  }
 }
 
 /**
