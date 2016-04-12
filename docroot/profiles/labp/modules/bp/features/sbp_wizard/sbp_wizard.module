@@ -14,6 +14,7 @@ function sbp_wizard_entity_info_alter(&$entity_info) {
     'label' => t('json'),
     'custom settings' => TRUE,
   );
+}
 
 /**
  * Implements hook_block_info().
