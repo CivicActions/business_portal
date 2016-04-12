@@ -597,7 +597,7 @@ table {
   /* Add vertical rhythm margins. */
 }
 
-/* line 2, ../sass/_base.scss */
+/* line 1, ../sass/_base.scss */
 body {
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1732,11 +1732,12 @@ tr.selected td {
 #header {
   color: white;
   background: black;
+  background: rgba(0, 0, 0, 0.3);
   padding: 0;
 }
 /* line 14, ../sass/components/_header.scss */
 #header a {
-  color: #e6e6e6;
+  color: white;
 }
 
 /* Wrapping link for logo. */
@@ -1746,66 +1747,87 @@ tr.selected td {
   vertical-align: middle;
   margin: 0;
   padding: 0 0 2px 0;
-  width: 60px;
-  font-size: 360%;
-  border: 2px solid red;
+  width: 200px;
+  float: left;
+  height: 100px;
 }
 
-/* line 32, ../sass/components/_header.scss */
+/* line 35, ../sass/components/_header.scss */
 .front #header a.header__logo.icon-egg {
   color: #0D84E9;
 }
 
 /* Logo image. */
-/* line 37, ../sass/components/_header.scss */
+/* line 40, ../sass/components/_header.scss */
 .header__logo-image {
   vertical-align: middle;
-  display: none;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 43, ../sass/components/_header.scss */
+/* line 46, ../sass/components/_header.scss */
 .header__name-and-slogan {
   display: inline-block;
   vertical-align: middle;
   padding: 0 0 0 20px;
+  display: none;
 }
 
 /* The name of the website. */
-/* line 50, ../sass/components/_header.scss */
+/* line 54, ../sass/components/_header.scss */
 .header__site-name {
   margin: 0;
   font-size: 12px;
 }
 
 /* The link around the name of the website. */
-/* line 60, ../sass/components/_header.scss */
+/* line 64, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 66, ../sass/components/_header.scss */
+/* line 70, ../sass/components/_header.scss */
 .header__site-link:hover, .header__site-link:focus {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 73, ../sass/components/_header.scss */
+/* line 77, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 78, ../sass/components/_header.scss */
+/* line 82, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 83, ../sass/components/_header.scss */
+/* line 87, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
   clear: both;
+}
+
+/* line 92, ../sass/components/_header.scss */
+.block__title {
+  display: none;
+}
+
+/* line 97, ../sass/components/_header.scss */
+#header .menu {
+  float: left;
+}
+
+/* line 102, ../sass/components/_header.scss */
+#header .menu__item {
+  border: 0px solid red;
+  margin: 0 15px 0 0;
+  color: white;
+  font-size: 1.286em;
+  font-weight: 700;
+  list-style: none;
+  display: inline-block;
 }
 
 /**
@@ -1815,6 +1837,13 @@ tr.selected td {
  * Content component.
  *
  */
+/* line 14, ../sass/components/_content.scss */
+.page__title {
+  font-family: Merriweather, serif;
+  font-weight: 900;
+  font-size: 2.250em;
+}
+
 /**
  * @file
  * SMACSS Modules

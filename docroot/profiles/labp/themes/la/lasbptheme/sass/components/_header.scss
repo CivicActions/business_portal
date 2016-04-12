@@ -8,11 +8,11 @@
 
 #header {
   color: $white;
-
   background: $black;
+  background: rgba(0,0,0,.3);
   padding: 0;
   a {
-    color: $grayscale_light;
+    color: $white;
   }
 }
 
@@ -22,9 +22,12 @@
   vertical-align: middle;
   margin: 0;
   padding: 0 0 2px 0;
-  width: 60px;
-  font-size: 360%;
-    border:2px solid red;
+  width: 200px;
+  float:left;
+
+  height:100px;
+
+
 
 }
 
@@ -36,7 +39,7 @@
 /* Logo image. */
 .header__logo-image {
   vertical-align: middle;
- display: none;
+
 }
 
 /* Wrapper for website name and slogan. */
@@ -44,6 +47,7 @@
   display: inline-block;
   vertical-align: middle;
   padding: 0 0 0 20px;
+  display: none;
 }
 
 /* The name of the website. */
@@ -83,4 +87,24 @@ font-size: 12px;
 .header__region {
   /* Clear the logo. */
   clear: both;
+}
+
+.block__title{
+  display: none;
+}
+
+
+#header .menu{
+  float: left;
+
+}
+
+#header .menu__item{
+  border: 0px solid red;
+  margin:0 15px 0 0;
+  color:$white;
+  font-size: 1.286em;
+  font-weight:700;
+  list-style: none;
+  display:inline-block;
 }
