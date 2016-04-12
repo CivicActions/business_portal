@@ -70,6 +70,7 @@ function sbp_migrate_map() {
     'SBPMigrationTermBusinessNeeds' => 'sbp_taxonomy',
     'SBPMigrationTermBusinessOwnership' => 'sbp_taxonomy',
     'SBPMigrationTermResourceType' => 'sbp_taxonomy',
+    'SBPMigrationTermTermsDefinitions' => 'sbp_taxonomy',
     'SBPMigrationPermit' => 'sbp_permits'
     
   );
