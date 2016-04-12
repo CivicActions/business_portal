@@ -2,12 +2,13 @@
   width: 55px;
   height: 500px;
   display: inline-block;
-  float: right;
+  /* float: right; */
   position: absolute;
   right: 0;
+  top: 0;
 }
 .wizard__progress-bar-indicator {
-  background-image: image-url("progress_bar.png");
+  background-image: image-url("wizard/progress_bar.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -17,7 +18,7 @@
   height: 425px;
 }
 .wizard__progress-bar-icon--bulb {
-  background-image: image-url("icon_bulb.png");
+  background-image: image-url("wizard/icon_bulb.png");
   width: 40px;
   height: 55px;
   background-size: 100%;

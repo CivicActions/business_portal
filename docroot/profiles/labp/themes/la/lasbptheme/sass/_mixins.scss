@@ -54,7 +54,7 @@
 
 @mixin wizard__button--base{
     @include border-radius(20px);
-    background-color: $wizard__button--deafult;
+    background-color: $wizard__button--default;
     padding: 8px 35px 8px 35px;
     font-weight: bold;
     display: inline-block;

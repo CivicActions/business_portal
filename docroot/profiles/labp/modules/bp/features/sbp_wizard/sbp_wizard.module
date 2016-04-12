@@ -15,3 +15,76 @@ function sbp_wizard_entity_info_alter(&$entity_info) {
     'custom settings' => TRUE,
   );
 }
+
+/**
+ * Implements hook_block_info().
+ */
+function sbp_wizard_block_info() {
+  $blocks = array();
+  $blocks['wizard'] = array(
+    'info' => t('Wizard Block'),
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+  return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view().
+ */
+function sbp_wizard_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'wizard':
+      $block['subject'] = NULL;
+      $block['content'] = array(
+        '#markup' => sbp_wizard_block(),
+
+      );
+      break;
+  };
+  return $block;
+}
+
+/**
+ * Custom block for wizard HTML, and loading JS assets.
+ */
+function sbp_wizard_block() {
+
+  drupal_add_js('profiles/labp/libraries/bp/underscore/underscore-min.js');
+  drupal_add_js('profiles/labp/libraries/bp/backbone/backbone-min.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/models.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/collections.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/views.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/app.js');
+
+
+  return
+  '<div id="wizard" class="wizard">
+
+    <div class="wizard__header">
+      <div class="wizard__header--intro"></div>
+    </div>
+
+     <hr class="wizard__header-line" />
+     <span class="burger"></span>
+
+
+     <div class="wizard__content-block"></div>
+     <ul class="wizard__content--results-list"></ul>
+
+     <div class="wizard__buttons"></div>
+
+    <div class="wizard__nav">
+      <a href="#" class="wizard__arrow-up">back</a>
+      <a href="#" class="wizard__arrow-down">forward</a>
+    </div>
+
+    <div class="wizard__progress-bar">
+     <div class="wizard__progress-bar-indicator"></div>
+    </div>
+
+    <ul class="progress-box"></ul>
+
+  </div> <!-- Close #wizard -->';
+}

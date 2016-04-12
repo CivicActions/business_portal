@@ -1,0 +1,26 @@
+.wizard__nav {
+  display: inline-block;
+  /* width: 70%; */
+  /* float: left; */
+}
+
+a.wizard__arrow-up {
+  background-image: image-url("wizard/arrow_up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 10px 0 24px;
+  width: 24px;
+  height: 25px;
+  display: block;
+  text-indent: -100000px;
+}
+a.wizard__arrow-down {
+  background-image: image-url("wizard/arrow_down_filled.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 320px;
+  height: 94px;
+  margin-top: 5px;
+  display: block;
+  text-indent: -100000px;
+}
