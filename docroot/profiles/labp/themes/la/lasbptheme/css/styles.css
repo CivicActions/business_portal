@@ -1749,7 +1749,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1457699654');
+  background-image: url('../images/progress.gif?1459349360');
 }
 
 /**
@@ -1932,6 +1932,216 @@ tr.selected td {
 .icon-download,
 .icon-folder-empty {
   color: white;
+}
+
+/* Wizard */
+/* line 3, ../sass/components/wizard/_wizard.scss */
+.wizard {
+  color: #0f2940;
+  font-family: Roboto, sans-serif;
+  position: relative;
+}
+
+/* line 9, ../sass/components/wizard/_wizard.scss */
+.wizard__content-block {
+  display: inline-block;
+  border: 0 solid black;
+  width: 70%;
+  padding: 25px;
+}
+
+/* line 16, ../sass/components/wizard/_wizard.scss */
+.wizard__header {
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+/* line 24, ../sass/components/wizard/_wizard.scss */
+.wizard__header--intro {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+/* line 33, ../sass/components/wizard/_wizard.scss */
+.wizard__header-line {
+  height: 4px;
+  max-width: 80px;
+  background: #0f2940;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 41, ../sass/components/wizard/_wizard.scss */
+.wizard__question {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1.667em;
+}
+@media all and (min-width: 960px) {
+  /* line 41, ../sass/components/wizard/_wizard.scss */
+  .wizard__question {
+    font-size: 3em;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 41, ../sass/components/wizard/_wizard.scss */
+  .wizard__question {
+    font-size: 4em;
+  }
+}
+
+/* line 52, ../sass/components/wizard/_wizard.scss */
+.wizard__buttons {
+  border: 0 solid white;
+}
+
+/* line 55, ../sass/components/wizard/_wizard.scss */
+.wizard__button {
+  background-color: white;
+  padding: 8px 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+/* line 62, ../sass/components/wizard/_wizard.scss */
+.wizard__button {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 35px 8px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+/* line 65, ../sass/components/wizard/_wizard.scss */
+.wizard__button a {
+  color: #0f2940;
+  text-decoration: none;
+}
+
+/* line 69, ../sass/components/wizard/_wizard.scss */
+.wizard__button--selected {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 35px 8px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  background-color: #0f2940;
+}
+
+/* line 73, ../sass/components/wizard/_wizard.scss */
+.wizard__button--selected a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 77, ../sass/components/wizard/_wizard.scss */
+.wizard__tip {
+  font-size: 1.083em;
+}
+@media all and (min-width: 480px) {
+  /* line 77, ../sass/components/wizard/_wizard.scss */
+  .wizard__tip {
+    font-size: 1.333em;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 77, ../sass/components/wizard/_wizard.scss */
+  .wizard__tip {
+    font-size: 1.5em;
+  }
+}
+
+/* line 87, ../sass/components/wizard/_wizard.scss */
+.progress-box {
+  display: none;
+}
+
+/* line 1, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar {
+  width: 55px;
+  height: 500px;
+  display: inline-block;
+  /* float: right; */
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 10, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar-indicator {
+  background-image: url('../images/wizard/progress_bar.png?1459349360');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 12px;
+  height: 425px;
+}
+
+/* line 20, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar-icon--bulb {
+  background-image: url('../images/wizard/icon_bulb.png?1459349360');
+  width: 40px;
+  height: 55px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15px;
+}
+
+/* line 1, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__nav {
+  display: inline-block;
+  /* width: 70%; */
+  /* float: left; */
+}
+
+/* line 7, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-up {
+  background-image: url('../images/wizard/arrow_up.png?1459349360');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 10px 0 24px;
+  width: 24px;
+  height: 25px;
+  display: block;
+  text-indent: -100000px;
+}
+
+/* line 17, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-down {
+  background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 320px;
+  height: 94px;
+  margin-top: 5px;
+  display: block;
+  text-indent: -100000px;
 }
 
 /* Nodes */
