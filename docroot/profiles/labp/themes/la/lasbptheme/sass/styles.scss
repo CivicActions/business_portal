@@ -11,12 +11,17 @@
 @import "colors";
 @import "typography";
 @import "mixins";
+@import "breakpoint";
 
 /* HTML element (SMACSS base) rules */
 @import "normalize";
 
+@import "base";
+
+
 /* Layout rules */
 @import "layouts/responsive";
+
 @import "layouts/panels";
 
 /* Component (SMACSS module) rules */
@@ -28,12 +33,19 @@
 @import "components/slideshow";
 @import "components/button";
 
+
+/* Guide */
+@import "components/guide/main";
+
+
 /* Wizard */
 
-@import "components/wizard";
+//@import "components/wizard";
+
+/*
 @import "components/wizard_progress_bar";
 @import "components/wizard_bottom_nav";
-
+*/
 
 
 /* Nodes */

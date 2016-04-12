@@ -8,6 +8,7 @@
 
 #header {
   color: $white;
+
   background: $black;
   padding: 0;
   a {
@@ -23,6 +24,8 @@
   padding: 0 0 2px 0;
   width: 60px;
   font-size: 360%;
+    border:2px solid red;
+
 }
 
 // Logo.
@@ -46,7 +49,10 @@
 /* The name of the website. */
 .header__site-name {
   margin: 0;
-  @include adjust-font-size-to( $h1-font-size * 1.22);
+//  @include adjust-font-size-to( $h1-font-size * 1.22);
+
+font-size: 12px;
+
 }
 
 /* The link around the name of the website. */

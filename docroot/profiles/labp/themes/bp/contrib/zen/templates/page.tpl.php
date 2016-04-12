@@ -9,7 +9,7 @@
 ?>
 
 <div id="page">
-
+Let's put the header in here.
   <header class="header" id="header" role="banner">
 
     <?php if ($logo): ?>
