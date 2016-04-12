@@ -76,6 +76,9 @@ function sbp_incentives_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
+        'rabbit_hole' => array(
+          'weight' => '0',
+        ),
       ),
       'display' => array(),
     ),

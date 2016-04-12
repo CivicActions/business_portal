@@ -83,6 +83,9 @@ function sbp_online_resource_strongarm() {
         'path' => array(
           'weight' => '1',
         ),
+        'rabbit_hole' => array(
+          'weight' => '0',
+        ),
       ),
       'display' => array(),
     ),
