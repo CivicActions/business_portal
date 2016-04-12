@@ -189,7 +189,7 @@ abstract class SBPMigrationTerm extends SBPMigration {
 
     $this->addFieldMapping('name', 'name');
     $this->addFieldMapping('description', 'description');
-    $this->addFieldMapping('format', 'format')->defaultValue(module_exists('debut_wysiwyg') ? 'wysiwyg_editor' : 'filtered_html');
+    $this->addFieldMapping('format', (module_exists('debut_wysiwyg') ? 'wysiwyg_editor' : 'filtered_html'));
     $this->addFieldMapping('weight', 'weight');
     $this->addFieldMapping('parent_name', 'parent_name');
   }
