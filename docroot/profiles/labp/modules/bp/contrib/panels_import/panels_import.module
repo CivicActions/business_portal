@@ -17,6 +17,24 @@ function panels_import_ctools_plugin_api($module, $api) {
 }
 
 /**
+ * Implements hook_menu().
+ */
+function panels_import_menu() {
+
+  $items['admin/config/content/panels-import'] = array(
+    'title' => 'Panels Import Settings',
+    'description' => 'Manage settings of panels import.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('panels_import_settings'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'panels_import.admin.inc',
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
  * Implementation of hook_pm_existing_pages_info()
  */
 function panels_import_pm_existing_pages_info() {
@@ -38,7 +56,12 @@ function panels_import_pm_existing_pages_info() {
  *   Exported object or NULL.
  */
 function _panels_import_load_defaults($module, $subfolder, $variable) {
-  $imports_dir = 'sites/all/imports';
+  $imports_dir = variable_get('panels_import_directory', 'sites/all/imports');
+
+  if (!is_dir($imports_dir)) {
+    drupal_set_message(t('The %dir directory does not exist.', array('%dir', $imports_dir)), 'error');
+    return NULL;
+  }
 
   $folder = "$imports_dir/$module/$subfolder";
   $files = file_scan_directory($folder, '/\.inc$/', array('recurse' => FALSE));
