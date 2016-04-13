@@ -20,13 +20,6 @@ function labp_service_center_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_labp_service_center';
-  $strongarm->value = '1';
-  $export['comment_labp_service_center'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_labp_service_center';
   $strongarm->value = 1;
   $export['comment_default_mode_labp_service_center'] = $strongarm;
@@ -44,6 +37,13 @@ function labp_service_center_strongarm() {
   $strongarm->name = 'comment_form_location_labp_service_center';
   $strongarm->value = 1;
   $export['comment_form_location_labp_service_center'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_labp_service_center';
+  $strongarm->value = '1';
+  $export['comment_labp_service_center'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -101,6 +101,13 @@ function labp_service_center_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_node__labp_service_center';
+  $strongarm->value = TRUE;
+  $export['metatag_enable_node__labp_service_center'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_labp_service_center';
   $strongarm->value = array(
     0 => 'status',
@@ -121,6 +128,70 @@ function labp_service_center_strongarm() {
   $strongarm->name = 'node_submitted_labp_service_center';
   $strongarm->value = 0;
   $export['node_submitted_labp_service_center'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_comment_comment_node_labp_service_center';
+  $strongarm->value = array(
+    'status' => 0,
+    'view modes' => array(),
+  );
+  $export['panelizer_defaults_comment_comment_node_labp_service_center'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_labp_service_center';
+  $strongarm->value = array(
+    'status' => 1,
+    'view modes' => array(
+      'page_manager' => array(
+        'status' => 1,
+        'substitute' => '',
+        'default' => 1,
+        'choice' => 0,
+      ),
+      'default' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'teaser' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'alternate' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'thumbnail' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'featured' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
+  );
+  $export['panelizer_defaults_node_labp_service_center'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:labp_service_center:page_manager_selection';
+  $strongarm->value = 'node:labp_service_center:default';
+  $export['panelizer_node:labp_service_center:page_manager_selection'] = $strongarm;
 
   return $export;
 }

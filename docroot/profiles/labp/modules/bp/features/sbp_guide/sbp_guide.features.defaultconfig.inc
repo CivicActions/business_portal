@@ -11,6 +11,8 @@ function sbp_guide_defaultconfig_features() {
   return array(
     'sbp_guide' => array(
       'field_default_fields' => 'field_default_fields',
+      'panelizer_defaults' => 'panelizer_defaults',
+      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -272,6 +274,95 @@ function sbp_guide_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-sbp_guide-field_description'.
+  $fields['node-sbp_guide-field_description'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_description',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => 0,
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_guide',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'plain_text',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_description',
+      'label' => 'Description',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 5,
+        ),
+        'type' => 'text_textarea',
+        'weight' => 8,
+      ),
+    ),
+  );
+
   // Exported field: 'node-sbp_guide-field_document'.
   $fields['node-sbp_guide-field_document'] = array(
     'field_config' => array(
@@ -382,12 +473,123 @@ function sbp_guide_defaultconfig_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-sbp_guide-field_heading'.
+  $fields['node-sbp_guide-field_heading'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_heading',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_guide',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'plain_text',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => 3,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_heading',
+      'label' => 'Heading',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Comment');
   t('Content Components');
+  t('Description');
+  t('Heading');
   t('Small Business Guide');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_panelizer_defaults().
+ */
+function sbp_guide_defaultconfig_panelizer_defaults() {
+  $export = array();
+
+  return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function sbp_guide_defaultconfig_strongarm() {
+  $export = array();
+
+  return $export;
 }
