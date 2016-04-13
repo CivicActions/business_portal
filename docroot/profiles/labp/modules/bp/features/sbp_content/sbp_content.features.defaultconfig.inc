@@ -11,6 +11,8 @@ function sbp_content_defaultconfig_features() {
   return array(
     'sbp_content' => array(
       'field_default_fields' => 'field_default_fields',
+      'panelizer_defaults' => 'panelizer_defaults',
+      'strongarm' => 'strongarm',
       'user_default_permissions' => 'user_default_permissions',
     ),
   );
@@ -730,6 +732,24 @@ function sbp_content_defaultconfig_field_default_fields() {
   t('Title');
 
   return $fields;
+}
+
+/**
+ * Implements hook_defaultconfig_panelizer_defaults().
+ */
+function sbp_content_defaultconfig_panelizer_defaults() {
+  $export = array();
+
+  return $export;
+}
+
+/**
+ * Implements hook_defaultconfig_strongarm().
+ */
+function sbp_content_defaultconfig_strongarm() {
+  $export = array();
+
+  return $export;
 }
 
 /**
