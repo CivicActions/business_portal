@@ -184,6 +184,16 @@ function sbp_landing_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_comment_comment_node_sbp_landing_page';
+  $strongarm->value = array(
+    'status' => 0,
+    'view modes' => array(),
+  );
+  $export['panelizer_defaults_comment_comment_node_sbp_landing_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_sbp_landing_page';
   $strongarm->value = array(
     'status' => 1,
@@ -191,7 +201,7 @@ function sbp_landing_page_strongarm() {
       'page_manager' => array(
         'status' => 1,
         'substitute' => '',
-        'default' => 0,
+        'default' => 1,
         'choice' => 0,
       ),
       'default' => array(
@@ -227,6 +237,13 @@ function sbp_landing_page_strongarm() {
     ),
   );
   $export['panelizer_defaults_node_sbp_landing_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:sbp_landing_page:page_manager_selection';
+  $strongarm->value = 'node:sbp_landing_page:default';
+  $export['panelizer_node:sbp_landing_page:page_manager_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
