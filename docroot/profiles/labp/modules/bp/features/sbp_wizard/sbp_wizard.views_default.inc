@@ -93,6 +93,10 @@ function sbp_wizard_views_default_views() {
   );
   $handler->display->display_options['fields']['field_button']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_button']['multi_type'] = 'ul';
+  /* Field: Content: Confirmation Screen */
+  $handler->display->display_options['fields']['field_confirmation_screen']['id'] = 'field_confirmation_screen';
+  $handler->display->display_options['fields']['field_confirmation_screen']['table'] = 'field_data_field_confirmation_screen';
+  $handler->display->display_options['fields']['field_confirmation_screen']['field'] = 'field_confirmation_screen';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -120,6 +124,91 @@ function sbp_wizard_views_default_views() {
 
   /* Display: Services */
   $handler = $view->new_display('services', 'Services', 'wizard_services');
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Section (field_section) */
+  $handler->display->display_options['relationships']['field_section_tid']['id'] = 'field_section_tid';
+  $handler->display->display_options['relationships']['field_section_tid']['table'] = 'field_data_field_section';
+  $handler->display->display_options['relationships']['field_section_tid']['field'] = 'field_section_tid';
+  $handler->display->display_options['relationships']['field_section_tid']['required'] = TRUE;
+  /* Relationship: Content: Section (field_section) */
+  $handler->display->display_options['relationships']['field_section_tid_1']['id'] = 'field_section_tid_1';
+  $handler->display->display_options['relationships']['field_section_tid_1']['table'] = 'field_data_field_section';
+  $handler->display->display_options['relationships']['field_section_tid_1']['field'] = 'field_section_tid';
+  /* Relationship: Taxonomy term: Content using Section */
+  $handler->display->display_options['relationships']['reverse_field_section_node']['id'] = 'reverse_field_section_node';
+  $handler->display->display_options['relationships']['reverse_field_section_node']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['relationships']['reverse_field_section_node']['field'] = 'reverse_field_section_node';
+  $handler->display->display_options['relationships']['reverse_field_section_node']['relationship'] = 'field_section_tid';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  /* Field: Content: Section */
+  $handler->display->display_options['fields']['field_section']['id'] = 'field_section';
+  $handler->display->display_options['fields']['field_section']['table'] = 'field_data_field_section';
+  $handler->display->display_options['fields']['field_section']['field'] = 'field_section';
+  $handler->display->display_options['fields']['field_section']['label'] = 'section';
+  $handler->display->display_options['fields']['field_section']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_section']['type'] = 'services';
+  $handler->display->display_options['fields']['field_section']['settings'] = array(
+    'data_element_key' => '',
+    'skip_safe' => 0,
+    'skip_empty_values' => 0,
+    'term_name' => 1,
+  );
+  /* Field: Content: Screen ID */
+  $handler->display->display_options['fields']['field_screen_id']['id'] = 'field_screen_id';
+  $handler->display->display_options['fields']['field_screen_id']['table'] = 'field_data_field_screen_id';
+  $handler->display->display_options['fields']['field_screen_id']['field'] = 'field_screen_id';
+  $handler->display->display_options['fields']['field_screen_id']['label'] = 'screen_id';
+  $handler->display->display_options['fields']['field_screen_id']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_screen_id']['settings'] = array(
+    'thousand_separator' => '',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Field: Description */
+  $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
+  $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
+  /* Field: Content: Button(s) */
+  $handler->display->display_options['fields']['field_button']['id'] = 'field_button';
+  $handler->display->display_options['fields']['field_button']['table'] = 'field_data_field_button';
+  $handler->display->display_options['fields']['field_button']['field'] = 'field_button';
+  $handler->display->display_options['fields']['field_button']['label'] = 'buttons';
+  $handler->display->display_options['fields']['field_button']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_button']['settings'] = array(
+    'edit' => '',
+    'delete' => '',
+    'add' => '',
+    'description' => 0,
+    'view_mode' => 'services',
+  );
+  $handler->display->display_options['fields']['field_button']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_button']['multi_type'] = 'ul';
+  /* Field: Content: Confirmation Screen */
+  $handler->display->display_options['fields']['field_confirmation_screen']['id'] = 'field_confirmation_screen';
+  $handler->display->display_options['fields']['field_confirmation_screen']['table'] = 'field_data_field_confirmation_screen';
+  $handler->display->display_options['fields']['field_confirmation_screen']['field'] = 'field_confirmation_screen';
+  /* Field: Taxonomy term: Color */
+  $handler->display->display_options['fields']['field_color']['id'] = 'field_color';
+  $handler->display->display_options['fields']['field_color']['table'] = 'field_data_field_color';
+  $handler->display->display_options['fields']['field_color']['field'] = 'field_color';
+  $handler->display->display_options['fields']['field_color']['relationship'] = 'field_section_tid';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['relationship'] = 'field_section_tid';
   $handler->display->display_options['path'] = 'business-portal-wizard';
   $export['sbp_wizard'] = $view;
 
