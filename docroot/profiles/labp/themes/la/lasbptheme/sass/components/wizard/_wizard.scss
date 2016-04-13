@@ -1,8 +1,8 @@
-/*$wizard_left_margin:25px;
-
+$wizard_left_margin: 25px;
 .wizard {
   color: $wizard-text;
-  font-family: Roboto, sans-serif;;
+  font-family: Roboto, sans-serif;
+  background-color: $background-color-default;
 }
 .wizard__intro-screen--register-business {
   background-color: $background-register-your-business;
@@ -12,21 +12,18 @@
   display: inline-block;
   border: 0 solid black;
   width: 70%;
-  padding: 25px;
+  padding: 0 25px 25px;
 }
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
   padding: 0;
   margin: 0 0 15px;
+  padding: 25px 25px 0;
 }
 .wizard__header--intro {
   font-weight: 700;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 1em;
   border: 0;
   padding: 0;
   margin: 0 0 15px;
@@ -40,9 +37,11 @@
   margin: 0;
 }
 .wizard__question {
-  font-family: Merriweather, serif;;
+  font-family: Merriweather, serif;
   font-weight: 400;
   font-size: 1.667em;
+  margin: 0 0 15px;
+  padding: 0;
   @include breakpoint($medium-screen) {
     font-size: 3em;
   }
@@ -70,13 +69,39 @@
 .wizard__button--selected {
   @include wizard__button--base;
   background-color: $wizard__button--selected;
+  padding: 8px 25px 8px 35px;
 }
 .wizard__button--selected a {
   text-decoration: none;
   color: $wizard__button_text--selected;
 }
+.wizard__button--selected-icon {
+  height: 10px;
+  margin: 0 0 0 3px;
+}
 .wizard__tip {
-  font-size: 1.083em;
+  margin: 20px 0 0;
+}
+
+
+// TIP section
+
+.wizard__tip_icon {
+  float: left;
+  height: 20px;
+  width: 20px;
+  background-image: image-url("wizard/icon_info.png");
+  background-size: 100%;
+}
+.wizard__tip_content {
+  float: left;
+  margin: 0 0 0 6px;
+  width: 80%;
+}
+.wizard__tip_copy {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 0.929em;
   @include breakpoint($medium-screen) {
     font-size: 1.333em;
   }
@@ -84,5 +109,13 @@
     font-size: 1.5em;
   }
 }
+.wizard__tip_button {
+  @include border-radius(20px);
+  border: 2px solid $dark_blue;
+  font-size: 0.786em;
+  padding: 6px 15px;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+}
 .wizard__intro-screen--name-business {}
-*/

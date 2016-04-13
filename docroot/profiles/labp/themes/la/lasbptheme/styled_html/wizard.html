@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Wizard
+  </title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+
+
+
+<div id="wizard" class="wizard">
+  <div class="wizard__header">
+    <div class="wizard__header--intro">1 / Register your business</div>
+    <hr class="wizard__header-line" />
+  </div>
+
+
+  <!-- <span class="burger"></span>-->
+
+
+  <div class="wizard__content-block">
+
+    <p class="wizard__question">Will you perform any business activity in the City of Los Angeles?</p>
+    <div class="wizard__buttons">
+      <div class="wizard__button"><a href="">YES</a></div>
+      <div class="wizard__button--selected"><a href="">NO <img class="wizard__button--selected-icon" src="../images/wizard/icon_checkmark.png"></a></div>
+    </div>
+    <div class="wizard__tip">
+      <div class="wizard__tip_icon">
+      </div>
+      <div class="wizard__tip_content">
+        <p class="wizard__tip_copy"> If you perform more than seven days of work for clients located in Los Angeles, or if your business is located in Los Angeles, select Yes.
+          <p>
+            <a href="#" class="wizard__tip_button"> NOT SURE? LEARN MORE</a>
+      </div>
+      <!-- end of tip content -->
+    </div>
+  </div>
+
+
+
+</div>
+<ul class="wizard__content--results-list"></ul>
+
+<div class="wizard__buttons"></div>
+
+<div class="wizard__nav">
+  <a href="#" class="wizard__arrow-up">back</a>
+  <a href="#" class="wizard__arrow-down">forward</a>
+</div>
+
+<div class="wizard__progress-bar">
+  <div class="wizard__progress-bar-indicator"></div>
+</div>
+
+<ul class="wizard__progress-drawer"></ul>
+
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Roboto:400,700,900', 'Merriweather:400,700']
+    }
+  });
+</script>
+
+</html>

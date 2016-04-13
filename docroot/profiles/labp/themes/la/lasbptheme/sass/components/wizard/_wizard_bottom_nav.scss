@@ -4,7 +4,7 @@
   float: left;
 }
 .wizard__arrow-up {
-  background-image: image-url("arrow_up.png");
+  background-image: image-url("wizard/arrow_up.png");
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 0 24px;
@@ -12,7 +12,7 @@
   height: 25px;
 }
 .wizard__arrow-down--filled {
-  background-image: image-url("arrow_down_filled.png");
+  background-image: image-url("wizard/arrow_down_filled.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
