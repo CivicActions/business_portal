@@ -11,6 +11,7 @@ function sbp_page_defaultconfig_features() {
   return array(
     'sbp_page' => array(
       'field_default_fields' => 'field_default_fields',
+      'panelizer_defaults' => 'panelizer_defaults',
       'strongarm' => 'strongarm',
     ),
   );
@@ -195,57 +196,19 @@ function sbp_page_defaultconfig_field_default_fields() {
 }
 
 /**
+ * Implements hook_defaultconfig_panelizer_defaults().
+ */
+function sbp_page_defaultconfig_panelizer_defaults() {
+  $export = array();
+
+  return $export;
+}
+
+/**
  * Implements hook_defaultconfig_strongarm().
  */
 function sbp_page_defaultconfig_strongarm() {
   $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_node_sbp_basic_page';
-  $strongarm->value = array(
-    'status' => 1,
-    'view modes' => array(
-      'page_manager' => array(
-        'status' => 1,
-        'substitute' => '',
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'default' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'teaser' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'alternate' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'thumbnail' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-      'featured' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
-        'choice' => 0,
-      ),
-    ),
-  );
-  $export['panelizer_defaults_node_sbp_basic_page'] = $strongarm;
 
   return $export;
 }
