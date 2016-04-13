@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Terms & Definitions feature.
+ */
+
+include_once 'sbp_terms_definitions.features.inc';
