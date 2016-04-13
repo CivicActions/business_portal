@@ -903,7 +903,7 @@ body {
  * If you want to make the page a fixed width and centered in the viewport,
  * this is the standards-compliant way to do that.
  */
-@media (min-width: 960px) {
+@media all and (min-width: 960px) {
   /* line 39, ../sass/layouts/_labp.scss */
   .header__content {
     width: 960px;
@@ -1766,7 +1766,7 @@ tr.selected td {
 #header a {
   color: white;
 }
-@media (min-width: 480px) {
+@media all and (min-width: 720px) {
   /* line 8, ../sass/components/_header.scss */
   #header {
     height: 55px;
@@ -1774,7 +1774,7 @@ tr.selected td {
 }
 
 /* Wrapping link for logo. */
-/* line 23, ../sass/components/_header.scss */
+/* line 24, ../sass/components/_header.scss */
 .header__logo {
   display: inline-block;
   vertical-align: middle;
@@ -1785,28 +1785,33 @@ tr.selected td {
   display: inline-block;
   width: 171px;
   height: 32px;
+  /*
+@include breakpoint($medium-and-large) {
+  width: 213px;
+  height: 39px;
+}*/
 }
-@media (min-width: 480px) {
-  /* line 23, ../sass/components/_header.scss */
+@media all and (min-width: 720px) {
+  /* line 24, ../sass/components/_header.scss */
   .header__logo {
     width: 213px;
     height: 39px;
   }
 }
 
-/* line 39, ../sass/components/_header.scss */
+/* line 46, ../sass/components/_header.scss */
 .front #header a.header__logo.icon-egg {
   color: #0D84E9;
 }
 
 /* Logo image. */
-/* line 43, ../sass/components/_header.scss */
+/* line 50, ../sass/components/_header.scss */
 .header__logo-image {
   vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 47, ../sass/components/_header.scss */
+/* line 54, ../sass/components/_header.scss */
 .header__name-and-slogan {
   display: inline-block;
   vertical-align: middle;
@@ -1815,47 +1820,47 @@ tr.selected td {
 }
 
 /* The name of the website. */
-/* line 54, ../sass/components/_header.scss */
+/* line 61, ../sass/components/_header.scss */
 .header__site-name {
   margin: 0;
   font-size: 12px;
 }
 
 /* The link around the name of the website. */
-/* line 60, ../sass/components/_header.scss */
+/* line 67, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 65, ../sass/components/_header.scss */
+/* line 72, ../sass/components/_header.scss */
 .header__site-link:focus, .header__site-link:hover {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 71, ../sass/components/_header.scss */
+/* line 78, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 75, ../sass/components/_header.scss */
+/* line 82, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 79, ../sass/components/_header.scss */
+/* line 86, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
 }
 
-/* line 83, ../sass/components/_header.scss */
+/* line 90, ../sass/components/_header.scss */
 .block__title {
   display: none;
 }
 
-/* line 86, ../sass/components/_header.scss */
+/* line 93, ../sass/components/_header.scss */
 #header .menu {
   float: left;
   border: 0 solid red;
@@ -1863,12 +1868,12 @@ tr.selected td {
   padding: 0;
 }
 
-/* line 92, ../sass/components/_header.scss */
+/* line 99, ../sass/components/_header.scss */
 #header .menu__item {
   display: none;
 }
-@media (min-width: 480px) {
-  /* line 92, ../sass/components/_header.scss */
+@media all and (min-width: 720px) {
+  /* line 99, ../sass/components/_header.scss */
   #header .menu__item {
     border: 0 solid red;
     margin: 0 15px 0 0;
@@ -1881,15 +1886,15 @@ tr.selected td {
   }
 }
 
-/* line 105, ../sass/components/_header.scss */
+/* line 115, ../sass/components/_header.scss */
 .menu__hamburger {
   width: 18px;
   height: 15px;
   float: right;
   margin: 16px 16px 0 0;
 }
-@media (min-width: 480px) {
-  /* line 105, ../sass/components/_header.scss */
+@media all and (min-width: 720px) {
+  /* line 115, ../sass/components/_header.scss */
   .menu__hamburger {
     display: none;
   }
@@ -1929,7 +1934,7 @@ tr.selected td {
   color: #6BC3F3;
   font-weight: 700;
 }
-@media (min-width: 768px) {
+@media all and (min-width: 720px) {
   /* line 21, ../sass/components/_footer.scss */
   #footer .footer__links {
     float: left;
@@ -1940,7 +1945,7 @@ tr.selected td {
   margin: 0 0 40px 0;
   padding: 0;
 }
-@media (min-width: 768px) {
+@media all and (min-width: 720px) {
   /* line 28, ../sass/components/_footer.scss */
   #footer .menu {
     margin: 0;
@@ -1951,7 +1956,7 @@ tr.selected td {
   list-style: none;
   margin: 0 0 6px 0;
 }
-@media (min-width: 768px) {
+@media all and (min-width: 720px) {
   /* line 37, ../sass/components/_footer.scss */
   #footer .menu__item {
     margin: 0 25px 0 0;
@@ -1962,13 +1967,13 @@ tr.selected td {
 #footer .footer__copyright {
   margin: 0 0 6px 0;
 }
-@media (min-width: 768px) {
+@media all and (min-width: 720px) {
   /* line 48, ../sass/components/_footer.scss */
   #footer .footer__copyright {
     display: inline-block;
   }
 }
-@media (min-width: 768px) {
+@media all and (min-width: 720px) {
   /* line 56, ../sass/components/_footer.scss */
   #footer .footer__credits {
     float: right;
@@ -2116,25 +2121,19 @@ tr.selected td {
   margin: 0 0 15px;
   padding: 0;
 }
-@media (min-width: 768px) and (max-width: 959px) {
+@media all and (min-width: 960px) {
   /* line 39, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 3em;
   }
 }
-@media (min-width: 960px) {
-  /* line 39, ../sass/components/wizard/_wizard.scss */
-  .wizard__question {
-    font-size: 4em;
-  }
-}
 
-/* line 52, ../sass/components/wizard/_wizard.scss */
+/* line 55, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0 solid white;
 }
 
-/* line 55, ../sass/components/wizard/_wizard.scss */
+/* line 58, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   background-color: white;
   padding: 8px 30px;
@@ -2143,7 +2142,7 @@ tr.selected td {
   margin: 0 10px 0 0;
 }
 
-/* line 62, ../sass/components/wizard/_wizard.scss */
+/* line 65, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -2156,13 +2155,13 @@ tr.selected td {
   cursor: pointer;
 }
 
-/* line 65, ../sass/components/wizard/_wizard.scss */
+/* line 68, ../sass/components/wizard/_wizard.scss */
 .wizard__button a {
   color: #0F2940;
   text-decoration: none;
 }
 
-/* line 69, ../sass/components/wizard/_wizard.scss */
+/* line 72, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -2177,24 +2176,24 @@ tr.selected td {
   padding: 8px 25px 8px 35px;
 }
 
-/* line 74, ../sass/components/wizard/_wizard.scss */
+/* line 77, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 78, ../sass/components/wizard/_wizard.scss */
+/* line 81, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 82, ../sass/components/wizard/_wizard.scss */
+/* line 85, ../sass/components/wizard/_wizard.scss */
 .wizard__tip {
   margin: 20px 0 0;
 }
 
-/* line 89, ../sass/components/wizard/_wizard.scss */
+/* line 92, ../sass/components/wizard/_wizard.scss */
 .wizard__tip_icon {
   float: left;
   height: 20px;
@@ -2203,33 +2202,27 @@ tr.selected td {
   background-size: 100%;
 }
 
-/* line 96, ../sass/components/wizard/_wizard.scss */
+/* line 99, ../sass/components/wizard/_wizard.scss */
 .wizard__tip_content {
   float: left;
   margin: 0 0 0 6px;
   width: 80%;
 }
 
-/* line 101, ../sass/components/wizard/_wizard.scss */
+/* line 104, ../sass/components/wizard/_wizard.scss */
 .wizard__tip_copy {
   padding: 0;
   margin: 0 0 20px;
   font-size: 0.929em;
 }
-@media (min-width: 768px) and (max-width: 959px) {
-  /* line 101, ../sass/components/wizard/_wizard.scss */
+@media all and (min-width: 960px) {
+  /* line 104, ../sass/components/wizard/_wizard.scss */
   .wizard__tip_copy {
     font-size: 1.333em;
   }
 }
-@media (min-width: 960px) {
-  /* line 101, ../sass/components/wizard/_wizard.scss */
-  .wizard__tip_copy {
-    font-size: 1.5em;
-  }
-}
 
-/* line 112, ../sass/components/wizard/_wizard.scss */
+/* line 115, ../sass/components/wizard/_wizard.scss */
 .wizard__tip_button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;

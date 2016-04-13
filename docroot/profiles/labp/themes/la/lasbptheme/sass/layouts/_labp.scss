@@ -37,10 +37,11 @@ $zen-auto-include-item-base: false;
 
 
 .header__content{
-  @include breakpoint($zen-grid-width){
-  width: $zen-grid-width;
-  margin-left: auto;
-  margin-right: auto;
+
+  @include window_size(desktop){
+    width: $zen-grid-width;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 

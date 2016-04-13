@@ -13,9 +13,10 @@
     color: $white;
   }
   height: 47px;
-  @include breakpoint($medium-and-large) {
-    height: 55px;
+  @include window_size(tab-wide-up){
+      height: 55px;
   }
+
   position:fixed;
   width:100%;
 }
@@ -30,10 +31,16 @@
   display: inline-block;
   width: 171px;
   height: 32px;
+    @include window_size(tab-wide-up){
+      width: 213px;
+      height: 39px;
+    }
+
+    /*
   @include breakpoint($medium-and-large) {
     width: 213px;
     height: 39px;
-  }
+  }*/
 }
 // Logo.
 .front #header a.header__logo.icon-egg {
@@ -90,7 +97,10 @@
   padding: 0;
 }
 #header .menu__item {
-  @include breakpoint($medium-and-large) {
+
+
+
+  @include window_size(tab-wide-up){
     border: 0 solid red;
     margin: 0 15px 0 0;
     padding: 0;
@@ -107,7 +117,7 @@
   height: 15px;
   float: right;
   margin: 16px 16px 0 0;
-  @include breakpoint($medium-and-large) {
+  @include window_size(tab-wide-up){
     display: none;
   }
 }

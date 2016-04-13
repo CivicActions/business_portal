@@ -42,13 +42,16 @@ $wizard_left_margin: 25px;
   font-size: 1.667em;
   margin: 0 0 15px;
   padding: 0;
-  @include breakpoint($medium-screen) {
-    font-size: 3em;
+  @include window_size(desktop){
+          font-size: 3em;
   }
-  @include breakpoint($large-screen-and-up) {
-    font-size: 4em;
-  }
+
+
+
+
+
 }
+
 .wizard__buttons {
   border: 0 solid white;
 }
@@ -102,12 +105,12 @@ $wizard_left_margin: 25px;
   padding: 0;
   margin: 0 0 20px;
   font-size: 0.929em;
-  @include breakpoint($medium-screen) {
-    font-size: 1.333em;
+
+  @include window_size(desktop){
+      font-size: 1.333em;
   }
-  @include breakpoint($large-screen-and-up) {
-    font-size: 1.5em;
-  }
+
+
 }
 .wizard__tip_button {
   @include border-radius(20px);

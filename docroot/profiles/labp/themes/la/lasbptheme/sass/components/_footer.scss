@@ -19,7 +19,7 @@
 
 
   .footer__links {
-    @include breakpoint($breakpoint2) {
+    @include window_size(tab-wide-up){
       float:left;
     }
 
@@ -28,7 +28,7 @@
   .menu { // ul
     margin:0 0 40px 0;
     padding: 0;
-      @include breakpoint($breakpoint2) {
+        @include window_size(tab-wide-up){
           margin:0;
       }
 
@@ -37,7 +37,7 @@
   .menu__item { // li
     list-style: none;
     margin: 0 0 6px 0;
-    @include breakpoint($breakpoint2) {
+      @include window_size(tab-wide-up){
         margin: 0 25px 0 0;
         float: left;
     }
@@ -47,7 +47,7 @@
 
   .footer__copyright {
     margin: 0 0 6px 0;
-    @include breakpoint($breakpoint2) {
+      @include window_size(tab-wide-up){
       display: inline-block;
     }
   }
@@ -55,7 +55,7 @@
 
   .footer__credits {
 
-      @include breakpoint($breakpoint2) {
+        @include window_size(tab-wide-up){
         float: right;
     }
 
