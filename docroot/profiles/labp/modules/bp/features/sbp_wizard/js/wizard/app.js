@@ -1,6 +1,6 @@
 var namespace = namespace || {};
 
-(function($) {
+(function($) { 
 
     ///////////////////////////////////////////
     // Create backbone collection "screens". //
@@ -17,8 +17,7 @@ namespace.collections.screens.fetch({
     namespace.views.wizard = new namespace.views.Wizard({
       model: namespace.collections.screens.find({Nid: "19"}, this)
     });
-
-
+    
     // Set the current screen on the wizard.
     namespace.views.wizard.setScreen(namespace.collections.screens.first().get("id"));
 
@@ -29,11 +28,12 @@ namespace.collections.screens.fetch({
       namespace.collections.sections.add(section);
     });
 
-    // Initialize the Nav
+    // Initialize the Nav 
     new namespace.views.Nav();
 
-    // Initialize the Progress bar.
-    new namespace.views.Progress().render().el;
+    // Initialize the Progress bar and progress draw.
+    new namespace.views.ProgressBar().render().el;
+    new namespace.views.ProgressDrawer().render().el;
 
     // Render the wizard.
     $(".wizard__content-block").html(namespace.views.wizard.render().el);
