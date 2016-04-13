@@ -197,9 +197,9 @@ function sbp_starter_kit_strongarm() {
     'status' => 1,
     'view modes' => array(
       'page_manager' => array(
-        'status' => 0,
-        'substitute' => 0,
-        'default' => 0,
+        'status' => 1,
+        'substitute' => '',
+        'default' => 1,
         'choice' => 0,
       ),
       'default' => array(
@@ -235,6 +235,13 @@ function sbp_starter_kit_strongarm() {
     ),
   );
   $export['panelizer_defaults_node_sbp_starter_kit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:sbp_starter_kit:page_manager_selection';
+  $strongarm->value = 'node:sbp_starter_kit:default';
+  $export['panelizer_node:sbp_starter_kit:page_manager_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

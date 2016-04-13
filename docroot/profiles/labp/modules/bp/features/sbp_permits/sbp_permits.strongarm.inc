@@ -190,6 +190,16 @@ function sbp_permits_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_comment_comment_node_sbp_permit';
+  $strongarm->value = array(
+    'status' => 0,
+    'view modes' => array(),
+  );
+  $export['panelizer_defaults_comment_comment_node_sbp_permit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_sbp_permit';
   $strongarm->value = array(
     'status' => 1,
@@ -197,7 +207,7 @@ function sbp_permits_strongarm() {
       'page_manager' => array(
         'status' => 1,
         'substitute' => '',
-        'default' => 0,
+        'default' => 1,
         'choice' => 0,
       ),
       'default' => array(
@@ -233,6 +243,13 @@ function sbp_permits_strongarm() {
     ),
   );
   $export['panelizer_defaults_node_sbp_permit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:sbp_permit:page_manager_selection';
+  $strongarm->value = 'node:sbp_permit:default';
+  $export['panelizer_node:sbp_permit:page_manager_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
