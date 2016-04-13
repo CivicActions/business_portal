@@ -27,3 +27,4 @@ features[taxonomy][] = resource_type
 features[taxonomy][] = sbp_tags
 features[taxonomy][] = term_alphabet
 features[taxonomy][] = terms_definitions
+features[taxonomy][] = terms_definitions_grouping

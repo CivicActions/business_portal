@@ -16,4 +16,5 @@ files[] = migrate/sbp_migrate.business_business_ownership.inc
 files[] = migrate/sbp_migrate.business_needs.inc
 files[] = migrate/sbp_migrate.resource_type.inc
 files[] = migrate/sbp_migrate.terms_definitions.inc
+files[] = migrate/sbp_migrate.terms_definitions_grouping.inc
 files[] = plugins/destinations/fields.inc

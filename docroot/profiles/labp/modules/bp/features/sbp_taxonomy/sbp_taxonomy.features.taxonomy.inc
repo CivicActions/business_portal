@@ -161,5 +161,13 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'terms_definitions_grouping' => array(
+      'name' => 'Terms & Definitions Grouping',
+      'machine_name' => 'terms_definitions_grouping',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
   );
 }
