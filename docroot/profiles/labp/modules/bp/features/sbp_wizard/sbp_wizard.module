@@ -81,7 +81,9 @@ function sbp_wizard_block() {
     </div>
 
     <div class="wizard__progress-bar">
-     <div class="wizard__progress-bar-indicator"></div>
+     <div class="wizard__progress-bar-indicator">
+       <div class="wizard__progress-bar-icon"></div>
+     </div>
     </div>
 
     <ul class="wizard__progress-drawer"></ul>
