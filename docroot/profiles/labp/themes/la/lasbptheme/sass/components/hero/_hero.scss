@@ -1,0 +1,14 @@
+.hero{
+
+
+}
+
+.hero__resources{
+  background-color: #88cff5;
+  height: 550px;
+  background-image:url("../images/hero/hero_homepage.jpg");
+  background-size:100% auto;
+  @include maintain-ratio(1440 550);
+  border:0px solid red;
+
+}

@@ -889,6 +889,31 @@ body {
 }
 /**
  * @file
+ * Positioning for a fixed-width, desktop-centric layout.
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+/**
+ * Center the page.
+ *
+ * If you want to make the page a fixed width and centered in the viewport,
+ * this is the standards-compliant way to do that.
+ */
+@media (min-width: 960px) {
+  /* line 39, ../sass/layouts/_labp.scss */
+  .header__content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/**
+ * @file
  *
  * General panels theming.
  *
@@ -1728,43 +1753,60 @@ tr.selected td {
  * header component.
  *
  */
-/* line 9, ../sass/components/_header.scss */
+/* line 8, ../sass/components/_header.scss */
 #header {
   color: white;
-  background: black;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   padding: 0;
+  height: 47px;
+  position: fixed;
+  width: 100%;
 }
-/* line 14, ../sass/components/_header.scss */
+/* line 12, ../sass/components/_header.scss */
 #header a {
   color: white;
 }
+@media (min-width: 480px) {
+  /* line 8, ../sass/components/_header.scss */
+  #header {
+    height: 55px;
+  }
+}
 
 /* Wrapping link for logo. */
-/* line 20, ../sass/components/_header.scss */
+/* line 23, ../sass/components/_header.scss */
 .header__logo {
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
-  padding: 0 0 2px 0;
-  width: 200px;
+  margin: 7px 0 0 16px;
+  padding: 0;
   float: left;
-  height: 100px;
+  float: left;
+  display: inline-block;
+  width: 171px;
+  height: 32px;
+}
+@media (min-width: 480px) {
+  /* line 23, ../sass/components/_header.scss */
+  .header__logo {
+    width: 213px;
+    height: 39px;
+  }
 }
 
-/* line 35, ../sass/components/_header.scss */
+/* line 39, ../sass/components/_header.scss */
 .front #header a.header__logo.icon-egg {
   color: #0D84E9;
 }
 
 /* Logo image. */
-/* line 40, ../sass/components/_header.scss */
+/* line 43, ../sass/components/_header.scss */
 .header__logo-image {
   vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 46, ../sass/components/_header.scss */
+/* line 47, ../sass/components/_header.scss */
 .header__name-and-slogan {
   display: inline-block;
   vertical-align: middle;
@@ -1780,54 +1822,77 @@ tr.selected td {
 }
 
 /* The link around the name of the website. */
-/* line 64, ../sass/components/_header.scss */
+/* line 60, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 70, ../sass/components/_header.scss */
-.header__site-link:hover, .header__site-link:focus {
+/* line 65, ../sass/components/_header.scss */
+.header__site-link:focus, .header__site-link:hover {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 77, ../sass/components/_header.scss */
+/* line 71, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 82, ../sass/components/_header.scss */
+/* line 75, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 87, ../sass/components/_header.scss */
+/* line 79, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
-  clear: both;
 }
 
-/* line 92, ../sass/components/_header.scss */
+/* line 83, ../sass/components/_header.scss */
 .block__title {
   display: none;
 }
 
-/* line 97, ../sass/components/_header.scss */
+/* line 86, ../sass/components/_header.scss */
 #header .menu {
   float: left;
+  border: 0 solid red;
+  margin: 15px 0 0 30px;
+  padding: 0;
 }
 
-/* line 102, ../sass/components/_header.scss */
+/* line 92, ../sass/components/_header.scss */
 #header .menu__item {
-  border: 0px solid red;
-  margin: 0 15px 0 0;
-  color: white;
-  font-size: 1.286em;
-  font-weight: 700;
-  list-style: none;
-  display: inline-block;
+  display: none;
+}
+@media (min-width: 480px) {
+  /* line 92, ../sass/components/_header.scss */
+  #header .menu__item {
+    border: 0 solid red;
+    margin: 0 15px 0 0;
+    padding: 0;
+    color: white;
+    font-size: 1.286em;
+    font-weight: 700;
+    list-style: none;
+    display: inline-block;
+  }
+}
+
+/* line 105, ../sass/components/_header.scss */
+.menu__hamburger {
+  width: 18px;
+  height: 15px;
+  float: right;
+  margin: 16px 16px 0 0;
+}
+@media (min-width: 480px) {
+  /* line 105, ../sass/components/_header.scss */
+  .menu__hamburger {
+    display: none;
+  }
 }
 
 /**
@@ -1857,7 +1922,7 @@ tr.selected td {
   font-weight: 400;
   color: white;
   background: #0F2940;
-  padding: 25px 30px;
+  padding: 20px 25px 18px 25px;
 }
 /* line 15, ../sass/components/_footer.scss */
 #footer a {
@@ -1978,6 +2043,18 @@ tr.selected td {
 .icon-download,
 .icon-folder-empty {
   color: white;
+}
+
+/* line 6, ../sass/components/hero/_hero.scss */
+.hero__resources {
+  background-color: #88cff5;
+  height: 550px;
+  background-image: url("../images/hero/hero_homepage.jpg");
+  background-size: 100% auto;
+  width: 100%;
+  height: 0;
+  padding-bottom: 38.19444%;
+  border: 0px solid red;
 }
 
 /* Guide */
