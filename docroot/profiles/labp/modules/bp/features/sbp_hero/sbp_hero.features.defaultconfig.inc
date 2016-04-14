@@ -41,6 +41,7 @@ function sbp_hero_defaultconfig_field_default_fields() {
         'allowed_values' => array(
           1 => 'Color',
           2 => 'Image',
+          3 => 'None',
         ),
         'allowed_values_function' => '',
       ),
