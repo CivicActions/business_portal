@@ -11,8 +11,6 @@ function sbp_department_defaultconfig_features() {
   return array(
     'sbp_department' => array(
       'field_default_fields' => 'field_default_fields',
-      'panelizer_defaults' => 'panelizer_defaults',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -75,6 +73,12 @@ function sbp_department_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'json' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -163,6 +167,12 @@ function sbp_department_defaultconfig_field_default_fields() {
           'weight' => 4,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'json' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -264,6 +274,12 @@ function sbp_department_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -356,6 +372,12 @@ function sbp_department_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -371,7 +393,7 @@ function sbp_department_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_link',
-      'label' => 'Website(s)',
+      'label' => 'Website',
       'required' => 0,
       'settings' => array(
         'absolute_url' => 1,
@@ -455,6 +477,12 @@ function sbp_department_defaultconfig_field_default_fields() {
           'weight' => 6,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'json' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -550,6 +578,12 @@ function sbp_department_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -637,6 +671,12 @@ function sbp_department_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -679,35 +719,7 @@ function sbp_department_defaultconfig_field_default_fields() {
   t('Featured on Departments Page');
   t('Featured on Resources Page');
   t('Phone');
-  t('Website(s)');
+  t('Website');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_panelizer_defaults().
- */
-function sbp_department_defaultconfig_panelizer_defaults() {
-  $export = array();
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_department_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_comment_comment_node_sbp_department';
-  $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_comment_comment_node_sbp_department'] = $strongarm;
-
-  return $export;
 }

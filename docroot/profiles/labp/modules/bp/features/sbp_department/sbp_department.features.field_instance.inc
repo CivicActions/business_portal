@@ -177,6 +177,12 @@ function sbp_department_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -226,6 +232,12 @@ function sbp_department_field_default_field_instances() {
         'weight' => 4,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -300,6 +312,12 @@ function sbp_department_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -362,6 +380,12 @@ function sbp_department_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -377,7 +401,7 @@ function sbp_department_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_link',
-    'label' => 'Website(s)',
+    'label' => 'Website',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -435,6 +459,12 @@ function sbp_department_field_default_field_instances() {
         'weight' => 6,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -501,6 +531,12 @@ function sbp_department_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -562,6 +598,12 @@ function sbp_department_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -607,7 +649,7 @@ function sbp_department_field_default_field_instances() {
   t('Featured on Resources Page');
   t('Phone');
   t('Physical, mailing, etc.');
-  t('Website(s)');
+  t('Website');
 
   return $field_instances;
 }
