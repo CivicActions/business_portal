@@ -1,6 +1,24 @@
 
 // mixins used in the progress bar
 
+
+@mixin wizard__progress-bar-root($color:'transparent') {
+  height: 500px;
+  width: 270px;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top:0;
+  right: 0;
+
+  background-image: image-url("wizard/progress_bar.png");
+  background-repeat: no-repeat;
+  background-size:12px;
+  background-position: 24px 12px;
+  background-color:$color;
+}
+
+
 @mixin wizard__progress-bar_icon {
   width:15px;
   height:15px;
@@ -28,38 +46,41 @@
 
 
 
-// root container mobile drawer
-.wizard__progress-bar {
-  height: 500px;
-  width: 270px;
-  display: inline-block;
-  float: right;
-  position: absolute;
-  top:0;
-  right: 0;
-  background-color: $wizard__drawer_light_blue;
-  background-image: image-url("wizard/progress_bar.png");
-  background-repeat: no-repeat;
-  background-size:12px;
-  background-position: 24px 12px;
+// mobile drawer root containers
+.wizard__progress-bar--section_1 {
+  @include wizard__progress-bar-root($wizard__drawer_section_1);
+
+
+
+}
+
+.wizard__progress-bar--section_2 {
+  @include wizard__progress-bar-root($wizard__drawer_section_2);
+
+}
+
+.wizard__progress-bar--section_3{
+  @include wizard__progress-bar-root($wizard__drawer_section_3);
+
+}
+
+.wizard__progress-bar--section_4 {
+  @include wizard__progress-bar-root($wizard__drawer_section_4);
 
 }
 
 
-// root container desktop version
-.wizard__progress-bar--simple{
-  height: 500px;
-  width: 60px;
-  display: inline-block;
-  float: right;
-  position: absolute;
-  top:0;
-  right: 0;
+.wizard__progress-bar--section_5 {
+  @include wizard__progress-bar-root($wizard__drawer_section_5);
 
-  background-image: image-url("wizard/progress_bar.png");
-  background-repeat: no-repeat;
-  background-size:12px;
-  background-position: 24px 12px;
+}
+
+
+//  desktop version root container
+.wizard__progress-bar--simple{
+  @include wizard__progress-bar-root();
+  width: 60px;
+
 
   @include window_size(tab-wide-up){
       width: 270px;
