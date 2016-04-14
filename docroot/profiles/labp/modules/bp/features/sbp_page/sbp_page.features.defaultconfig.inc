@@ -11,8 +11,6 @@ function sbp_page_defaultconfig_features() {
   return array(
     'sbp_page' => array(
       'field_default_fields' => 'field_default_fields',
-      'panelizer_defaults' => 'panelizer_defaults',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -182,7 +180,7 @@ function sbp_page_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 41,
+        'weight' => 5,
       ),
     ),
   );
@@ -193,22 +191,4 @@ function sbp_page_defaultconfig_field_default_fields() {
   t('Comment');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_panelizer_defaults().
- */
-function sbp_page_defaultconfig_panelizer_defaults() {
-  $export = array();
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_page_defaultconfig_strongarm() {
-  $export = array();
-
-  return $export;
 }
