@@ -121,13 +121,16 @@ function sbp_landing_page_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '4',
+          'weight' => '5',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
+        ),
+        'rabbit_hole' => array(
+          'weight' => '0',
         ),
       ),
       'display' => array(),

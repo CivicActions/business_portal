@@ -129,76 +129,25 @@ function sbp_page_panelizer_defaults() {
     $display->content['new-71e5bf08-a7a1-4619-ab4c-ab8cfad02578'] = $pane;
     $display->panels['top'][0] = 'new-71e5bf08-a7a1-4619-ab4c-ab8cfad02578';
     $pane = new stdClass();
-    $pane->pid = 'new-af25035c-bbc4-4674-a17a-6bae24589d83';
+    $pane->pid = 'new-d9740886-1e0d-4387-b89b-67f7e0f71baf';
     $pane->panel = 'top';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'vid:1';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_hero';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'view_mode' => 'full',
-      'fieldable_panels_pane' => (object) array(
-        'bundle' => 'hero',
-        'language' => '',
-        'is_new' => TRUE,
-        'title' => 'Hero',
-        'link' => 0,
-        'path' => '',
-        'reusable' => 0,
-        'admin_title' => '',
-        'admin_description' => '',
-        'category' => 'Reusable panes',
-        'vid' => '1',
-        'current_vid' => '',
-        'revision' => 1,
-        'fpid' => '1',
-        'field_background' => array(
-          'und' => array(
-            0 => array(
-              'value' => 0,
-            ),
-          ),
-        ),
-        'field_background_color' => array(
-          'und' => array(
-            0 => array(
-              'value' => 'ffffff',
-            ),
-          ),
-        ),
-        'field_background_image' => array(
-          'und' => array(),
-        ),
-        'field_calls_to_action' => array(
-          'und' => array(),
-        ),
-        'field_icon' => array(
-          'und' => array(),
-        ),
-        'field_line_and_subtitle_color' => array(
-          'und' => array(
-            0 => array(
-              'value' => 'ffffff',
-            ),
-          ),
-        ),
-        'field_subtitle_1' => array(
-          'und' => array(),
-        ),
-        'field_subtitle_2' => array(
-          'und' => array(),
-        ),
-        'field_width' => array(
-          'und' => array(),
-        ),
-        'log' => '',
-        'created' => 1460517144,
-        'timestamp' => 1460517144,
-        'changed' => 1460517144,
-        'uuid' => '',
-        'uid' => '1',
-        'vuuid' => '',
+      'label' => 'title',
+      'formatter' => 'field_collection_fields',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'view_mode' => 'full',
       ),
+      'context' => array(),
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -208,9 +157,9 @@ function sbp_page_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = 'af25035c-bbc4-4674-a17a-6bae24589d83';
-    $display->content['new-af25035c-bbc4-4674-a17a-6bae24589d83'] = $pane;
-    $display->panels['top'][1] = 'new-af25035c-bbc4-4674-a17a-6bae24589d83';
+    $pane->uuid = 'd9740886-1e0d-4387-b89b-67f7e0f71baf';
+    $display->content['new-d9740886-1e0d-4387-b89b-67f7e0f71baf'] = $pane;
+    $display->panels['top'][1] = 'new-d9740886-1e0d-4387-b89b-67f7e0f71baf';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-4be2b67a-d95c-4925-8d43-df76801ab721';
   $panelizer->display = $display;

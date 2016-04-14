@@ -180,7 +180,7 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -301,7 +301,7 @@ function sbp_landing_page_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );

@@ -112,7 +112,7 @@ function sbp_incentives_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 41,
+      'weight' => 5,
     ),
   );
 
@@ -181,7 +181,7 @@ function sbp_incentives_field_default_field_instances() {
         'track_list' => 0,
       ),
       'type' => 'term_reference_tree',
-      'weight' => 46,
+      'weight' => 9,
     ),
   );
 
@@ -250,7 +250,71 @@ function sbp_incentives_field_default_field_instances() {
         'track_list' => 0,
       ),
       'type' => 'term_reference_tree',
-      'weight' => 48,
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-incentives-field_hero'.
+  $field_instances['node-incentives-field_hero'] = array(
+    'bundle' => 'incentives',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 7,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_hero',
+    'label' => 'Hero',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 4,
     ),
   );
 
@@ -329,7 +393,7 @@ function sbp_incentives_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 42,
+      'weight' => 6,
     ),
   );
 
@@ -398,7 +462,7 @@ function sbp_incentives_field_default_field_instances() {
         'track_list' => 0,
       ),
       'type' => 'term_reference_tree',
-      'weight' => 50,
+      'weight' => 11,
     ),
   );
 
@@ -463,7 +527,7 @@ function sbp_incentives_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 43,
+      'weight' => 7,
     ),
   );
 
@@ -528,7 +592,7 @@ function sbp_incentives_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 44,
+      'weight' => 8,
     ),
   );
 
@@ -540,6 +604,7 @@ function sbp_incentives_field_default_field_instances() {
   t('Comment');
   t('Featured on Resources Page');
   t('Featured on Resources and Incentives Page');
+  t('Hero');
   t('Incentive URL');
   t('Industry Tag');
   t('Select this to feature the Incentive on the Resources and Incentives Landing Page');

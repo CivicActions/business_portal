@@ -114,12 +114,15 @@ function sbp_department_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '2',
+          'weight' => '3',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
+          'weight' => '2',
+        ),
+        'rabbit_hole' => array(
           'weight' => '1',
         ),
       ),

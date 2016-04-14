@@ -119,13 +119,16 @@ function sbp_content_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '6',
+          'weight' => '9',
         ),
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '8',
+        ),
+        'rabbit_hole' => array(
+          'weight' => '0',
         ),
       ),
       'display' => array(),

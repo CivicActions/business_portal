@@ -11,8 +11,6 @@ function sbp_department_defaultconfig_features() {
   return array(
     'sbp_department' => array(
       'field_default_fields' => 'field_default_fields',
-      'panelizer_defaults' => 'panelizer_defaults',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -105,7 +103,7 @@ function sbp_department_defaultconfig_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
   );
@@ -203,7 +201,7 @@ function sbp_department_defaultconfig_field_default_fields() {
           'track_list' => 0,
         ),
         'type' => 'term_reference_tree',
-        'weight' => 7,
+        'weight' => 9,
       ),
     ),
   );
@@ -292,7 +290,7 @@ function sbp_department_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -401,7 +399,7 @@ function sbp_department_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 6,
+        'weight' => 8,
       ),
     ),
   );
@@ -487,7 +485,7 @@ function sbp_department_defaultconfig_field_default_fields() {
           'display_label' => 1,
         ),
         'type' => 'options_onoff',
-        'weight' => 9,
+        'weight' => 10,
       ),
     ),
   );
@@ -578,7 +576,7 @@ function sbp_department_defaultconfig_field_default_fields() {
           'size' => 25,
         ),
         'type' => 'text_textfield',
-        'weight' => 5,
+        'weight' => 7,
       ),
     ),
   );
@@ -682,32 +680,4 @@ function sbp_department_defaultconfig_field_default_fields() {
   t('Website(s)');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_panelizer_defaults().
- */
-function sbp_department_defaultconfig_panelizer_defaults() {
-  $export = array();
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_department_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_comment_comment_node_sbp_department';
-  $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_comment_comment_node_sbp_department'] = $strongarm;
-
-  return $export;
 }

@@ -75,7 +75,7 @@ function sbp_online_resource_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -144,7 +144,7 @@ function sbp_online_resource_field_default_field_instances() {
         'track_list' => 0,
       ),
       'type' => 'term_reference_tree',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -292,6 +292,70 @@ function sbp_online_resource_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance: 'node-online_resource-field_hero'.
+  $field_instances['node-online_resource-field_hero'] = array(
+    'bundle' => 'online_resource',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_hero',
+    'label' => 'Hero',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
       'weight' => 4,
     ),
   );
@@ -426,7 +490,7 @@ function sbp_online_resource_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -560,7 +624,7 @@ function sbp_online_resource_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -574,6 +638,7 @@ function sbp_online_resource_field_default_field_instances() {
   t('Document');
   t('Featured on Resources Page');
   t('Featured on Resources and Incentives Page');
+  t('Hero');
   t('Industry Tag');
   t('Resource Type');
   t('Upload a document to the resource');

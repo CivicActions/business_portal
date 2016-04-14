@@ -11,8 +11,6 @@ function sbp_starter_kit_defaultconfig_features() {
   return array(
     'sbp_starter_kit' => array(
       'field_default_fields' => 'field_default_fields',
-      'panelizer_defaults' => 'panelizer_defaults',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -318,7 +316,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
   );
@@ -428,7 +426,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -546,7 +544,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'inline_entity_form',
-        'weight' => 7,
+        'weight' => 9,
       ),
     ),
   );
@@ -981,7 +979,7 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => 6,
+        'weight' => 8,
       ),
     ),
   );
@@ -1000,22 +998,4 @@ function sbp_starter_kit_defaultconfig_field_default_fields() {
   t('Title');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_panelizer_defaults().
- */
-function sbp_starter_kit_defaultconfig_panelizer_defaults() {
-  $export = array();
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_starter_kit_defaultconfig_strongarm() {
-  $export = array();
-
-  return $export;
 }

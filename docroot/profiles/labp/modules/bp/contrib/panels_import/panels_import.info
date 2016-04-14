@@ -1,9 +1,0 @@
-name = Panels Import
-description = Imports mini-panels, pages and page variants from corresponding subfolders.
-core = 7.x
-package = "Panels"
-configure = admin/structure/taxonomy
-
-dependencies[] = page_manager
-dependencies[] = panels
-dependencies[] = ctools_custom_content

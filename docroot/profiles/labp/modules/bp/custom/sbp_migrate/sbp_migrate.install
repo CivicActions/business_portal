@@ -8,6 +8,51 @@
 function sbp_migrate_enable() {
   migrate_static_registration();
   sbp_migrate_process_imports();
+  //_sbp_migrate_build_panes();
+  _sbp_migrate_build_menu_links();
+}
+
+function sbp_migrate_disable() {
+  MigrateGroup::deregister('sbp');
+}
+
+/**
+ * Creating and placing panel panes from the Migrate pages.
+ */
+function _sbp_migrate_build_panes() {
+  // Creating a department view pane.
+  $pane = new stdClass();
+  $pane->pid = 'new-0a697657-6bc9-431e-8d83-7e512e8bbabe';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'departments-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'view_settings' => 'fields',
+    'header_type' => 'none',
+    'view_mode' => 'teaser',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = '0a697657-6bc9-431e-8d83-7e512e8bbabe';
+
+  // Placing department view pane in the right region of the departments page.
+  $department_display = _sbp_migrate_get_display_by_path('departments');
+  $department_display->add_pane($pane, 'right');
+  panels_save_display($department_display);
+}
+
+/**
+ * Creating the menu links from the Migrate pages.
+ */
+function _sbp_migrate_build_menu_links() {
   $normal_path = drupal_get_normal_path('content/resources');
   $item = array(
     'link_path' => $normal_path,
@@ -32,6 +77,11 @@ function sbp_migrate_enable() {
   menu_cache_clear_all();
 }
 
-function sbp_migrate_disable() {
-  MigrateGroup::deregister('sbp');
+/**
+ * Helper function to grab the PID of the panelized node by path.
+ */
+function _sbp_migrate_get_display_by_path($alias) {
+  $path = drupal_lookup_path("source", $alias);
+  $node = menu_get_object("node", 1, $path);
+  return $node->panelizer['page_manager']->display;
 }

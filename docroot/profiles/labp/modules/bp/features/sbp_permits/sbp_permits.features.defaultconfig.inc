@@ -11,8 +11,6 @@ function sbp_permits_defaultconfig_features() {
   return array(
     'sbp_permits' => array(
       'field_default_fields' => 'field_default_fields',
-      'panelizer_defaults' => 'panelizer_defaults',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -620,7 +618,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 4,
+        'weight' => 5,
       ),
     ),
   );
@@ -711,7 +709,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 6,
+        'weight' => 7,
       ),
     ),
   );
@@ -800,7 +798,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 3,
+        'weight' => 4,
       ),
     ),
   );
@@ -910,7 +908,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'media_generic',
-        'weight' => 10,
+        'weight' => 11,
       ),
     ),
   );
@@ -1013,7 +1011,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           'track_list' => 0,
         ),
         'type' => 'term_reference_tree',
-        'weight' => 8,
+        'weight' => 9,
       ),
     ),
   );
@@ -1102,7 +1100,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -1205,7 +1203,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           'track_list' => 0,
         ),
         'type' => 'term_reference_tree',
-        'weight' => 9,
+        'weight' => 10,
       ),
     ),
   );
@@ -1296,7 +1294,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
   );
@@ -1392,7 +1390,7 @@ function sbp_permits_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => 7,
+        'weight' => 8,
       ),
     ),
   );
@@ -1415,32 +1413,4 @@ function sbp_permits_defaultconfig_field_default_fields() {
   t('Title');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_panelizer_defaults().
- */
-function sbp_permits_defaultconfig_panelizer_defaults() {
-  $export = array();
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_permits_defaultconfig_strongarm() {
-  $export = array();
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'panelizer_defaults_comment_comment_node_sbp_permit';
-  $strongarm->value = array(
-    'status' => 0,
-    'view modes' => array(),
-  );
-  $export['panelizer_defaults_comment_comment_node_sbp_permit'] = $strongarm;
-
-  return $export;
 }
