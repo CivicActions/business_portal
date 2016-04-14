@@ -11,8 +11,6 @@ function sbp_guide_defaultconfig_features() {
   return array(
     'sbp_guide' => array(
       'field_default_fields' => 'field_default_fields',
-      'panelizer_defaults' => 'panelizer_defaults',
-      'strongarm' => 'strongarm',
     ),
   );
 }
@@ -182,7 +180,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 2,
+        'weight' => 4,
       ),
     ),
   );
@@ -269,7 +267,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => 4,
+        'weight' => 6,
       ),
     ),
   );
@@ -358,7 +356,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 8,
+        'weight' => 9,
       ),
     ),
   );
@@ -468,7 +466,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
           ),
         ),
         'type' => 'media_generic',
-        'weight' => 3,
+        'weight' => 5,
       ),
     ),
   );
@@ -559,7 +557,7 @@ function sbp_guide_defaultconfig_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
   );
@@ -574,22 +572,4 @@ function sbp_guide_defaultconfig_field_default_fields() {
   t('Small Business Guide');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_panelizer_defaults().
- */
-function sbp_guide_defaultconfig_panelizer_defaults() {
-  $export = array();
-
-  return $export;
-}
-
-/**
- * Implements hook_defaultconfig_strongarm().
- */
-function sbp_guide_defaultconfig_strongarm() {
-  $export = array();
-
-  return $export;
 }
