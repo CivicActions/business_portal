@@ -6,11 +6,17 @@
   </title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
+<style>
+  body{
+    background-color:#6bc3f3;
+  }
+</style>
 </head>
-
+<body>
 
 
 <div id="wizard" class="wizard">
+
   <div class="wizard__header">
     <div class="wizard__header--intro">1 / Register your business</div>
     <hr class="wizard__header-line" />
@@ -23,10 +29,15 @@
   <div class="wizard__content-block">
 
     <p class="wizard__question">Will you perform any business activity in the City of Los Angeles?</p>
-    <div class="wizard__buttons">
-      <div class="wizard__button"><a href="">YES</a></div>
-      <div class="wizard__button--selected"><a href="">NO <img class="wizard__button--selected-icon" src="../images/wizard/icon_checkmark.png"></a></div>
-    </div>
+
+      <!-- yes no buttons -->
+      <div class="wizard__buttons">
+        <div class="wizard__button"><a href="">YES</a></div>
+        <div class="wizard__button--selected"><a href="">NO <img class="wizard__button--selected-icon" src="../images/wizard/icon_checkmark.png"></a></div>
+      </div>
+        <!-- end of yes no buttons -->
+
+          <!-- tip block -->
     <div class="wizard__tip">
       <div class="wizard__tip_icon">
       </div>
@@ -35,27 +46,31 @@
           <p>
             <a href="#" class="wizard__tip_button"> NOT SURE? LEARN MORE</a>
       </div>
-      <!-- end of tip content -->
+      <!-- end of tip -->
     </div>
   </div>
 
 
 
 </div>
-<ul class="wizard__content--results-list"></ul>
+<!--<ul class="wizard__content--results-list"></ul>-->
 
-<div class="wizard__buttons"></div>
+<!--<div class="wizard__buttons"></div>-->
 
-<div class="wizard__nav">
-  <a href="#" class="wizard__arrow-up">back</a>
-  <a href="#" class="wizard__arrow-down">forward</a>
-</div>
 
-<div class="wizard__progress-bar">
-  <div class="wizard__progress-bar-indicator"></div>
-</div>
+<!-- navigation between -->
+  <div class="wizard__nav">
+    <a href="#" class="wizard__arrow-up"></a>
 
-<ul class="wizard__progress-drawer"></ul>
+    <div class="wizard__arrow-down-wrapper--disabled">
+      <a href="#" class="wizard__arrow-down--disabled"></a>
+
+    <div>
+  </div>
+
+
+
+<!-- <ul class="wizard__progress-drawer"></ul>-->
 
 </div>
 </body>

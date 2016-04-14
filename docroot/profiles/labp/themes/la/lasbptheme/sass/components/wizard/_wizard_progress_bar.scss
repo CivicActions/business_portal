@@ -1,27 +1,204 @@
+
+// mixins used in the progress bar
+
+@mixin wizard__progress-bar_icon {
+  width:15px;
+  height:15px;
+  margin:0 4px 0 0;
+  padding: 0;
+  display: inline-block;
+  background-size: 100% 100%;
+  float: left;
+
+
+
+}
+
+@mixin wizard__progress-large_icon {
+  width:40px;
+  height:100px;
+  float: left;
+  background-image: image-url("wizard/icon_bulb.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 5px 0 0 10px;
+}
+
+
+// root container
 .wizard__progress-bar {
-  width: 55px;
   height: 500px;
+  width: 270px;
   display: inline-block;
   float: right;
   position: absolute;
+  top:0;
   right: 0;
-}
-.wizard__progress-bar-indicator {
+  background-color: #65b9e6;
   background-image: image-url("wizard/progress_bar.png");
-  background-size: 100%;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 15px;
-  left: 14px;
-  width: 12px;
-  height: 425px;
+  background-size:12px;
+  background-position: 24px 12px;
+
 }
-.wizard__progress-bar-icon--bulb {
-  background-image: image-url("wizard/icon_bulb.png");
-  width: 40px;
-  height: 55px;
-  background-size: 100%;
+
+.wizard__progress-bar-section{
+    margin:0;
+    padding: 0;
+    height:103px;
+    @include clearfix;
+}
+
+
+//  adds a highlight behind the section that has been selected
+.wizard__progress-bar-section--selected{
+    margin:0;
+    padding: 0;
+    background-color: rgba(256,256,256,0.3);
+    @include clearfix;
+}
+
+
+
+
+// default dotted progress bar
+.wizard__progress-bar_location_bar{
+  width:58px;
+  height: 100px;
+  float: left;
+
+
+}
+
+
+// use when the user completes the first section
+.wizard__progress-bar_location_bar--completed_first_section{
+  width:58px;
+  float: left;
+  background-image: image-url("wizard/progress_bar_completed.png");
   background-repeat: no-repeat;
-  position: absolute;
-  top: 15px;
+  background-size:12px;
+  background-position: 24px 12px;
+  height: 100%;
+}
+
+// use when the user completes the middle sections
+.wizard__progress-bar_location_bar--completed{
+  width:58px;
+  float: left;
+  background-image: image-url("wizard/progress_bar_completed.png");
+  background-repeat: no-repeat;
+  background-size:12px;
+  background-position: 24px 0;
+  height: 100%;
+}
+
+
+// use on the currently active sections
+.wizard__progress-bar_location_bar--selected{
+  width:58px;
+  float: left;
+  background-image: image-url("wizard/progress_bar_completed_10_px.png");
+  background-repeat: no-repeat;
+  background-size:12px;
+  background-position: 24px 0;
+  height: 100%;
+}
+
+
+
+// icons
+
+// change the display property to make them appear
+
+.wizard__progress-bar_location_icon--city{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_bulb.png");
+  display: none;
+
+}
+
+.wizard__progress-bar_location_icon--county{
+  @include wizard__progress-large_icon;
+  width:45px;
+  margin: 5px 0 0 5px;
+  background-image: image-url("wizard/icon_pencil.png");
+  display: none;
+
+}
+
+.wizard__progress-bar_location_icon--state{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_percentage.png");
+}
+
+.wizard__progress-bar_location_icon--federal{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_pound.png");
+  display: none;
+}
+
+
+.wizard__progress-bar_location_icon--registration{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_map.png");
+  display: none;
+}
+
+
+// middle section
+.wizard__progress-bar_contents{
+  border:0px solid red;
+  float: left;
+  padding: 0 0 0 10px;
+  width: 155px;
+}
+
+
+
+
+// font styling for CITY, COUNTY...etc
+.wizard__progress-bar_government{
+    color:$dark_blue;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 10px 0 4px 0;
+    font-size: 0.857em;
+    letter-spacing: 0.1px;
+}
+
+// font styling for section titles i.e. 1 / Register your business
+.wizard__progress-bar_section_title{
+  color:$dark_blue;
+  font-weight: 700;
+  margin: 0 0 7px 0;
+  padding: 0;
+}
+
+// round status icons
+
+.wizard__progress-bar_status_icons{
+  @include clearfix;
+
+}
+.wizard__progress-bar_icon--incomplete{
+  @include wizard__progress-bar_icon;
+  background-image: image-url("wizard/progress_bar_circle_incomplete.png");
+
+}
+
+
+.wizard__progress-bar_icon--completed{
+  @include wizard__progress-bar_icon;
+  background-image: image-url("wizard/progress_bar_circle_completed.png");
+
+
+}
+
+.wizard__progress-bar_icon--selected{
+  @include wizard__progress-bar_icon;
+  background-image: image-url("wizard/progress_bar_circle_selected.png");
+
+
 }

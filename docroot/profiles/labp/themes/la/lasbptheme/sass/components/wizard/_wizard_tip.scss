@@ -1,0 +1,40 @@
+// TIP section
+.wizard__tip {
+  margin: 20px 0 0 0;
+
+
+}
+
+.wizard__tip_icon {
+  float: left;
+  height: 20px;
+  width: 20px;
+  background-image: image-url("wizard/icon_info.png");
+  background-size: 100%;
+}
+.wizard__tip_content {
+  float: left;
+  margin: 0 0 0 6px;
+  width: 80%;
+
+}
+.wizard__tip_copy {
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 0.929em;
+
+  @include window_size(desktop){
+      font-size: 1.333em;
+  }
+
+
+}
+.wizard__tip_button {
+  @include border-radius(20px);
+  border: 2px solid $dark_blue;
+  font-size: 0.786em;
+  padding: 6px 15px;
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+}

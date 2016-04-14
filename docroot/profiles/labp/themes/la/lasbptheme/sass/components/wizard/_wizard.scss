@@ -12,7 +12,7 @@ $wizard_left_margin: 25px;
   display: inline-block;
   border: 0 solid black;
   width: 70%;
-  padding: 0 25px 25px;
+  padding: 0 0 0 25px;
 }
 .wizard__header {
   font-weight: 700;
@@ -82,43 +82,7 @@ $wizard_left_margin: 25px;
   height: 10px;
   margin: 0 0 0 3px;
 }
-.wizard__tip {
-  margin: 20px 0 0;
-}
 
 
-// TIP section
 
-.wizard__tip_icon {
-  float: left;
-  height: 20px;
-  width: 20px;
-  background-image: image-url("wizard/icon_info.png");
-  background-size: 100%;
-}
-.wizard__tip_content {
-  float: left;
-  margin: 0 0 0 6px;
-  width: 80%;
-}
-.wizard__tip_copy {
-  padding: 0;
-  margin: 0 0 20px;
-  font-size: 0.929em;
-
-  @include window_size(desktop){
-      font-size: 1.333em;
-  }
-
-
-}
-.wizard__tip_button {
-  @include border-radius(20px);
-  border: 2px solid $dark_blue;
-  font-size: 0.786em;
-  padding: 6px 15px;
-  margin: 0;
-  letter-spacing: 0.5px;
-  font-weight: 900;
-}
 .wizard__intro-screen--name-business {}
