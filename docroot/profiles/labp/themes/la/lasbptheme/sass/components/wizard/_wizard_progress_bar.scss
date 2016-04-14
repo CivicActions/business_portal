@@ -25,7 +25,10 @@
 }
 
 
-// root container
+
+
+
+// root container mobile drawer
 .wizard__progress-bar {
   height: 500px;
   width: 270px;
@@ -34,13 +37,36 @@
   position: absolute;
   top:0;
   right: 0;
-  background-color: #65b9e6;
+  background-color: $wizard__drawer_light_blue;
   background-image: image-url("wizard/progress_bar.png");
   background-repeat: no-repeat;
   background-size:12px;
   background-position: 24px 12px;
 
 }
+
+
+// root container desktop version
+.wizard__progress-bar--simple{
+  height: 500px;
+  width: 60px;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top:0;
+  right: 0;
+
+  background-image: image-url("wizard/progress_bar.png");
+  background-repeat: no-repeat;
+  background-size:12px;
+  background-position: 24px 12px;
+
+  @include window_size(tab-wide-up){
+      width: 270px;
+  }
+
+}
+
 
 .wizard__progress-bar-section{
     margin:0;
@@ -148,18 +174,40 @@
 
 // middle section
 .wizard__progress-bar_contents{
-  border:0px solid red;
   float: left;
   padding: 0 0 0 10px;
+  color:$dark_blue;
   width: 155px;
 }
 
+// use on the desktop version on sections that are not active
+.wizard__progress-bar_contents--deselected{
+  float: left;
+  padding: 0 0 0 10px;
+  width: 155px;
+  color:rgba($dark_blue,0.3);
+  display: none;
+  @include window_size(tab-wide-up){
+    display:block;
+  }
+}
 
+// use on the desktop version on sections that are active
+.wizard__progress-bar_contents--selected{
+  float: left;
+  padding: 0 0 0 10px;
+  color:$dark_blue;
+  width: 155px;
+  display: none;
+  @include window_size(tab-wide-up){
+    display:block;
+  }
+}
 
 
 // font styling for CITY, COUNTY...etc
 .wizard__progress-bar_government{
-    color:$dark_blue;
+
     font-weight: 900;
     text-transform: uppercase;
     padding: 0;
@@ -170,7 +218,6 @@
 
 // font styling for section titles i.e. 1 / Register your business
 .wizard__progress-bar_section_title{
-  color:$dark_blue;
   font-weight: 700;
   margin: 0 0 7px 0;
   padding: 0;
