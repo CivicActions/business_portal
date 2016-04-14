@@ -23,7 +23,7 @@ dependencies[] = environment
 dependencies[] = assemble
 dependencies[] = curate
 
-; BP modules
+; BP custom modules
 dependencies[] = sbp_content
 dependencies[] = sbp_department
 dependencies[] = sbp_document
@@ -43,6 +43,9 @@ dependencies[] = sbp_starter_kit
 dependencies[] = sbp_taxonomy
 dependencies[] = sbp_views
 
-; LA modules
+; LA Specific contrib Modules
+dependencies[] = acsf
+
+; LA custom modules
 dependencies[] = labp_service_center
 dependencies[] = labp_environment
