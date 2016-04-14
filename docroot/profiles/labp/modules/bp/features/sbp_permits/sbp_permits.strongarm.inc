@@ -96,13 +96,16 @@ function sbp_permits_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '12',
+          'weight' => '13',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '11',
+          'weight' => '12',
+        ),
+        'rabbit_hole' => array(
+          'weight' => '1',
         ),
       ),
       'display' => array(),
