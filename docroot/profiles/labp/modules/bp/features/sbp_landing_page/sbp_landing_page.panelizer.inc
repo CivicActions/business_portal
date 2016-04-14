@@ -133,34 +133,32 @@ function sbp_landing_page_panelizer_defaults() {
     $pane->pid = 'new-551b42a5-2177-451c-b724-2950a24bde50';
     $pane->panel = 'top';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'vid:4';
+    $pane->subtype = '';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'view_mode' => 'full',
       'fieldable_panels_pane' => (object) array(
-        'timestamp' => 1460509324,
-        'uid' => '1',
-        'title' => 'Hero',
-        'log' => '',
-        'vuuid' => '',
-        'fpid' => '3',
         'bundle' => 'hero',
+        'language' => 'und',
+        'is_new' => TRUE,
+        'title' => '',
         'link' => 0,
         'path' => '',
         'reusable' => 0,
         'admin_title' => '',
         'admin_description' => '',
         'category' => 'Reusable panes',
-        'view_access' => NULL,
-        'edit_access' => NULL,
-        'created' => '1460509308',
-        'changed' => 1460509324,
-        'uuid' => '',
-        'language' => 'und',
-        'current_vid' => '3',
+        'vid' => '1',
+        'current_vid' => '',
+        'revision' => 1,
+        'fpid' => '1',
         'field_background' => array(
-          'und' => array(),
+          'und' => array(
+            0 => array(
+              'value' => 0,
+            ),
+          ),
         ),
         'field_background_color' => array(
           'und' => array(
@@ -194,64 +192,13 @@ function sbp_landing_page_panelizer_defaults() {
         'field_width' => array(
           'und' => array(),
         ),
-        'revision' => 1,
-        'is_new' => FALSE,
-        'original' => (object) array(
-          'vid' => '3',
-          'timestamp' => '1460509308',
-          'uid' => '1',
-          'title' => '',
-          'log' => '',
-          'vuuid' => '',
-          'fpid' => '3',
-          'bundle' => 'hero',
-          'link' => '0',
-          'path' => '',
-          'reusable' => '0',
-          'admin_title' => '',
-          'admin_description' => '',
-          'category' => 'Reusable panes',
-          'view_access' => NULL,
-          'edit_access' => NULL,
-          'created' => '1460509308',
-          'changed' => '1460509308',
-          'uuid' => '',
-          'language' => 'und',
-          'current_vid' => '3',
-          'field_background' => array(
-            'und' => array(
-              0 => array(
-                'value' => '0',
-              ),
-            ),
-          ),
-          'field_background_color' => array(
-            'und' => array(
-              0 => array(
-                'value' => 'ffffff',
-                'format' => NULL,
-                'safe_value' => 'ffffff',
-              ),
-            ),
-          ),
-          'field_background_image' => array(),
-          'field_calls_to_action' => array(),
-          'field_icon' => array(),
-          'field_line_and_subtitle_color' => array(
-            'und' => array(
-              0 => array(
-                'value' => 'ffffff',
-                'format' => NULL,
-                'safe_value' => 'ffffff',
-              ),
-            ),
-          ),
-          'field_subtitle_1' => array(),
-          'field_subtitle_2' => array(),
-          'field_width' => array(),
-        ),
-        'old_vid' => '3',
-        'vid' => '4',
+        'log' => '',
+        'created' => 1460048311,
+        'timestamp' => 1460048311,
+        'changed' => 1460048311,
+        'uuid' => '',
+        'uid' => '1',
+        'vuuid' => '',
       ),
     );
     $pane->cache = array();

@@ -10,12 +10,12 @@ dependencies[] = number
 dependencies[] = options
 dependencies[] = text
 dependencies[] = color
+dependencies[] = syslog
 
 ; Contrib
 dependencies[] = email
 dependencies[] = menu_block
 dependencies[] = ctools_custom_content
-dependencies[] = panels_import
 dependencies[] = googleanalytics
 dependencies[] = environment
 
