@@ -199,7 +199,7 @@ function sbp_starter_kit_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -278,7 +278,7 @@ function sbp_starter_kit_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -355,7 +355,7 @@ function sbp_starter_kit_field_default_field_instances() {
         ),
       ),
       'type' => 'inline_entity_form',
-      'weight' => 7,
+      'weight' => 9,
     ),
   );
 
@@ -432,6 +432,70 @@ function sbp_starter_kit_field_default_field_instances() {
       ),
       'type' => 'inline_entity_form',
       'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-sbp_starter_kit-field_hero'.
+  $field_instances['node-sbp_starter_kit-field_hero'] = array(
+    'bundle' => 'sbp_starter_kit',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 7,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_hero',
+    'label' => 'Hero',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 2,
     ),
   );
 
@@ -651,7 +715,7 @@ function sbp_starter_kit_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -663,6 +727,7 @@ function sbp_starter_kit_field_default_field_instances() {
   t('Documents');
   t('Featured Resources');
   t('Guides');
+  t('Hero');
   t('Related Documents');
   t('Related Permits');
   t('Starter Kit Key Points');
