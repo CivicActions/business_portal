@@ -2363,7 +2363,7 @@ tr.selected td {
   float: left;
 }
 
-/* line 122, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 121, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
   float: left;
@@ -2374,7 +2374,7 @@ tr.selected td {
   height: 100%;
 }
 
-/* line 133, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 132, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
   float: left;
@@ -2385,7 +2385,7 @@ tr.selected td {
   height: 100%;
 }
 
-/* line 145, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 144, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
   float: left;
@@ -2396,7 +2396,7 @@ tr.selected td {
   height: 100%;
 }
 
-/* line 161, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 160, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--city {
   width: 40px;
   height: 100px;
@@ -2409,7 +2409,7 @@ tr.selected td {
   display: none;
 }
 
-/* line 168, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 167, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--county {
   width: 40px;
   height: 100px;
@@ -2424,7 +2424,7 @@ tr.selected td {
   display: none;
 }
 
-/* line 177, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 176, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--state {
   width: 40px;
   height: 100px;
@@ -2436,7 +2436,7 @@ tr.selected td {
   background-image: url('../images/wizard/icon_percentage.png?1460592187');
 }
 
-/* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 181, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--federal {
   width: 40px;
   height: 100px;
@@ -2449,7 +2449,7 @@ tr.selected td {
   display: none;
 }
 
-/* line 189, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 188, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--registration {
   width: 40px;
   height: 100px;
@@ -2462,7 +2462,7 @@ tr.selected td {
   display: none;
 }
 
-/* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 196, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents {
   float: left;
   padding: 0 0 0 10px;
@@ -2470,7 +2470,7 @@ tr.selected td {
   width: 155px;
 }
 
-/* line 205, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 204, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--deselected {
   float: left;
   padding: 0 0 0 10px;
@@ -2479,13 +2479,13 @@ tr.selected td {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 205, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 204, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--deselected {
     display: block;
   }
 }
 
-/* line 217, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 216, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--selected {
   float: left;
   padding: 0 0 0 10px;
@@ -2494,13 +2494,13 @@ tr.selected td {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 217, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 216, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--selected {
     display: block;
   }
 }
 
-/* line 230, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 229, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_government {
   font-weight: 900;
   text-transform: uppercase;
@@ -2510,20 +2510,20 @@ tr.selected td {
   letter-spacing: 0.1px;
 }
 
-/* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 240, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_section_title {
   font-weight: 700;
   margin: 0 0 7px 0;
   padding: 0;
 }
 
-/* line 249, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 248, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_status_icons {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 253, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 252, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--incomplete {
   width: 15px;
   height: 15px;
@@ -2535,7 +2535,7 @@ tr.selected td {
   background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1460583953');
 }
 
-/* line 260, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 259, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--completed {
   width: 15px;
   height: 15px;
@@ -2547,7 +2547,7 @@ tr.selected td {
   background-image: url('../images/wizard/progress_bar_circle_completed.png?1460583974');
 }
 
-/* line 267, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 266, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--selected {
   width: 15px;
   height: 15px;
@@ -2557,6 +2557,19 @@ tr.selected td {
   background-size: 100% 100%;
   float: left;
   background-image: url('../images/wizard/progress_bar_circle_selected.png?1460583938');
+}
+
+/* line 273, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__button--close {
+  border: 0px solid white;
+  background-image: url('../images/wizard/icon_close.png?1460590702');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  float: right;
+  margin: 15px 15px 0 0;
 }
 
 /* line 1, ../sass/components/wizard/_wizard_bottom_nav.scss */

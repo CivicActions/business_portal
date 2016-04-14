@@ -114,7 +114,6 @@
   height: 100px;
   float: left;
 
-
 }
 
 
@@ -269,4 +268,16 @@
   background-image: image-url("wizard/progress_bar_circle_selected.png");
 
 
+}
+
+.wizard__button--close{
+  border:0px solid white;
+  background-image: image-url("wizard/icon_close.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 18px;
+  height:18px;
+  display: inline-block;
+  float:right;
+  margin: 15px 15px 0 0;
 }
