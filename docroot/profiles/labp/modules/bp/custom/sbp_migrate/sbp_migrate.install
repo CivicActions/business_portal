@@ -53,10 +53,10 @@ function _sbp_migrate_build_panes() {
  * Creating the menu links from the Migrate pages.
  */
 function _sbp_migrate_build_menu_links() {
-  $normal_path = drupal_get_normal_path('content/resources');
+  $normal_path = drupal_get_normal_path('start');
   $item = array(
     'link_path' => $normal_path,
-    'link_title' => 'Resources',
+    'link_title' => 'Startup Guide',
     'menu_name' => 'main-menu',
     'weight' => 0,
     'language' => 'en',
@@ -64,13 +64,44 @@ function _sbp_migrate_build_menu_links() {
     'module' => 'menu',
   );
   menu_link_save($item);
-  $normal_path = drupal_get_normal_path('content/departments');
+  $normal_path = drupal_get_normal_path('content/resources');
+  $item = array(
+    'link_path' => $normal_path,
+    'link_title' => 'Resources',
+    'menu_name' => 'main-menu',
+    'weight' => 1,
+    'language' => 'en',
+    'plid' => 0,
+    'module' => 'menu',
+  );
+  $resources = menu_link_save($item);
+  $normal_path = drupal_get_normal_path('resources/resources-incentives');
+  $item = array(
+    'link_path' => $normal_path,
+    'link_title' => 'Resources & Incentives',
+    'menu_name' => 'main-menu',
+    'weight' => 0,
+    'plid' => $resources,
+    'module' => 'menu',
+  );
+  menu_link_save($item);
+  $normal_path = drupal_get_normal_path('departments');
   $item = array(
     'link_path' => $normal_path,
     'link_title' => 'Departments',
     'menu_name' => 'main-menu',
-    'weight' => 0,
-    'plid' => 1527,
+    'weight' => 1,
+    'plid' => $resources,
+    'module' => 'menu',
+  );
+  menu_link_save($item);
+  $normal_path = drupal_get_normal_path('resources/terms-definitions');
+  $item = array(
+    'link_path' => $normal_path,
+    'link_title' => 'Terms & Definitions',
+    'menu_name' => 'main-menu',
+    'weight' => 2,
+    'plid' => $resources,
     'module' => 'menu',
   );
   menu_link_save($item);

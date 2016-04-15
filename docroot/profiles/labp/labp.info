@@ -42,6 +42,7 @@ dependencies[] = sbp_permits
 dependencies[] = sbp_starter_kit
 dependencies[] = sbp_taxonomy
 dependencies[] = sbp_views
+dependencies[] = sbp_migrate
 
 ; LA Specific contrib Modules
 dependencies[] = acsf
