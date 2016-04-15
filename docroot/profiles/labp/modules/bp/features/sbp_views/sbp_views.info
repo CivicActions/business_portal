@@ -15,7 +15,6 @@ features[defaultconfig][] = views_default_views:departments
 features[features_api][] = api:2
 features[views_view][] = bp_featured_resource_page
 features[views_view][] = bp_featured_sub_page
-features[views_view][] = departments
 features[views_view][] = faq_anchors
 features[views_view][] = faq_listing
 features_exclude[dependencies][ctools] = ctools
