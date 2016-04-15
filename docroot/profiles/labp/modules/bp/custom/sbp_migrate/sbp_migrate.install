@@ -64,7 +64,7 @@ function _sbp_migrate_build_menu_links() {
     'module' => 'menu',
   );
   menu_link_save($item);
-  $normal_path = drupal_get_normal_path('content/resources');
+  $normal_path = drupal_get_normal_path('resources');
   $item = array(
     'link_path' => $normal_path,
     'link_title' => 'Resources',
@@ -85,7 +85,7 @@ function _sbp_migrate_build_menu_links() {
     'module' => 'menu',
   );
   menu_link_save($item);
-  $normal_path = drupal_get_normal_path('departments');
+  $normal_path = drupal_get_normal_path('resources/departments');
   $item = array(
     'link_path' => $normal_path,
     'link_title' => 'Departments',
@@ -95,12 +95,22 @@ function _sbp_migrate_build_menu_links() {
     'module' => 'menu',
   );
   menu_link_save($item);
+  $normal_path = drupal_get_normal_path('resources/service-centers');
+  $item = array(
+    'link_path' => $normal_path,
+    'link_title' => 'Service Centers',
+    'menu_name' => 'main-menu',
+    'weight' => 2,
+    'plid' => $resources,
+    'module' => 'menu',
+  );
+  menu_link_save($item);
   $normal_path = drupal_get_normal_path('resources/terms-definitions');
   $item = array(
     'link_path' => $normal_path,
     'link_title' => 'Terms & Definitions',
     'menu_name' => 'main-menu',
-    'weight' => 2,
+    'weight' => 3,
     'plid' => $resources,
     'module' => 'menu',
   );
