@@ -39,6 +39,7 @@ dependencies[] = sbp_online_resource
 dependencies[] = sbp_page
 dependencies[] = sbp_panels
 dependencies[] = sbp_permits
+dependencies[] = sbp_resources_incentives
 dependencies[] = sbp_search
 dependencies[] = sbp_starter_kit
 dependencies[] = sbp_taxonomy
