@@ -24,7 +24,7 @@
 .header__logo {
   display: inline-block;
   vertical-align: middle;
-  margin: 7px 0 0 16px;
+  margin: 7px 0 0 14px;
   padding: 0;
   float: left;
   float: left;
@@ -34,6 +34,7 @@
     @include window_size(tab-wide-up){
       width: 213px;
       height: 39px;
+      margin: 7px 0 0 0;
     }
 
     /*
