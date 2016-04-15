@@ -39,9 +39,13 @@ dependencies[] = sbp_online_resource
 dependencies[] = sbp_page
 dependencies[] = sbp_panels
 dependencies[] = sbp_permits
+dependencies[] = sbp_resources_incentives
+dependencies[] = sbp_search
 dependencies[] = sbp_starter_kit
 dependencies[] = sbp_taxonomy
+dependencies[] = sbp_terms_definitions
 dependencies[] = sbp_views
+dependencies[] = sbp_migrate
 
 ; LA Specific contrib Modules
 dependencies[] = acsf
