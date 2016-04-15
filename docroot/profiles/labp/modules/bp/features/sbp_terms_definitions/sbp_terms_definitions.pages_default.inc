@@ -17,7 +17,7 @@ function sbp_terms_definitions_default_page_manager_handlers() {
   $handler->task = 'node_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
-  $handler->weight = -24;
+  $handler->weight = -22;
   $handler->conf = array(
     'title' => 'Terms and Definitions',
     'no_blocks' => 0,
@@ -68,8 +68,7 @@ function sbp_terms_definitions_default_page_manager_handlers() {
           'name' => 'path_visibility',
           'settings' => array(
             'visibility_setting' => '1',
-            'paths' => 'resources/terms-definitions
-resources/terms-definitions/*',
+            'paths' => 'resources/terms-definitions',
           ),
           'context' => 'empty',
           'not' => FALSE,
@@ -95,28 +94,13 @@ resources/terms-definitions/*',
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-b20a2dcd-48a3-4429-a526-65811183137e';
-    $pane->panel = 'right';
-    $pane->type = 'views';
-    $pane->subtype = 'terms_definitions';
-    $pane->shown = FALSE;
+    $pane->pid = 'new-a18d527e-70ac-4b0e-8d89-90019ea58301';
+    $pane->panel = 'left';
+    $pane->type = 'block';
+    $pane->subtype = 'sbp_terms_definitions-terms_definitions_grouping';
+    $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_pager_settings' => 0,
-      'use_pager' => 1,
-      'nodes_per_page' => '0',
-      'pager_id' => '0',
-      'offset' => '0',
-      'more_link' => 0,
-      'feed_icons' => 0,
-      'panel_args' => 1,
-      'link_to_view' => 0,
-      'args' => '%3',
-      'url' => '',
-      'display' => 'default',
-      'context' => array(
-        0 => '',
-      ),
       'override_title' => 0,
       'override_title_text' => '',
       'override_title_heading' => 'h2',
@@ -129,11 +113,11 @@ resources/terms-definitions/*',
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'b20a2dcd-48a3-4429-a526-65811183137e';
-    $display->content['new-b20a2dcd-48a3-4429-a526-65811183137e'] = $pane;
-    $display->panels['right'][0] = 'new-b20a2dcd-48a3-4429-a526-65811183137e';
+    $pane->uuid = 'a18d527e-70ac-4b0e-8d89-90019ea58301';
+    $display->content['new-a18d527e-70ac-4b0e-8d89-90019ea58301'] = $pane;
+    $display->panels['left'][0] = 'new-a18d527e-70ac-4b0e-8d89-90019ea58301';
     $pane = new stdClass();
-    $pane->pid = 'new-e53008bb-19c4-4bdd-8e21-a2f3938576d2';
+    $pane->pid = 'new-1dacde95-d47b-4916-9f66-f5c78ed52ce8';
     $pane->panel = 'right';
     $pane->type = 'views_panes';
     $pane->subtype = 'terms_definitions-panel_pane_1';
@@ -143,9 +127,6 @@ resources/terms-definitions/*',
       'view_settings' => 'fields',
       'header_type' => 'none',
       'view_mode' => 'full',
-      'arguments' => array(
-        'name' => '',
-      ),
     );
     $pane->cache = array();
     $pane->style = array(
@@ -153,11 +134,11 @@ resources/terms-definitions/*',
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'e53008bb-19c4-4bdd-8e21-a2f3938576d2';
-    $display->content['new-e53008bb-19c4-4bdd-8e21-a2f3938576d2'] = $pane;
-    $display->panels['right'][1] = 'new-e53008bb-19c4-4bdd-8e21-a2f3938576d2';
+    $pane->uuid = '1dacde95-d47b-4916-9f66-f5c78ed52ce8';
+    $display->content['new-1dacde95-d47b-4916-9f66-f5c78ed52ce8'] = $pane;
+    $display->panels['right'][0] = 'new-1dacde95-d47b-4916-9f66-f5c78ed52ce8';
     $pane = new stdClass();
     $pane->pid = 'new-e301e670-4735-426d-a68b-f813df237c91';
     $pane->panel = 'top';
