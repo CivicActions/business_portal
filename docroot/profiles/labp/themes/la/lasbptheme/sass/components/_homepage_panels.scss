@@ -1,0 +1,225 @@
+
+@mixin homepage_panel__icons--default($color:'transparent'){
+  border: 0px solid red;
+  background-color: $color;
+  padding: 20px 25px 20px 25px;
+
+  @include window_size(tab-wide-up){
+        padding: 50px 35px 50px 35px;
+        @include clearfix;
+
+  }
+
+  @include window_size(desktop){
+        padding: 75px 0 75px 0;
+        @include clearfix;
+  }
+
+
+}
+
+
+@mixin homepage_panel__hr_thick($color) {
+  height: 4px;
+  max-width: 80px;
+  background: $color;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+@mixin homepage_panel__hr_thin($color) {
+  height: 2px;
+  max-width: 40px;
+  background: $color;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+
+@mixin homepage_panel__button--base{
+    @include border-radius(20px);
+    background-color:$homepage__panel--button_background;
+    padding: 8px 20px 8px 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin:0 0 20px 0;
+    cursor: pointer;
+
+    @include window_size(desktop){
+        @include border-radius(25px);
+        font-size: 1.143em;
+            padding: 15px 30px 15px 30px;
+          @include clearfix;
+    }
+
+}
+
+//root container of all the panels
+.homepage_panel__intro{
+    @include homepage_panel__icons--default();
+    @include window_size(desktop){
+  background-image: url("../images/panels/illustration_top_panel.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+}
+
+.homepage_panel__icons--light_blue{
+  @include homepage_panel__icons--default($homepage__panel--bg-light-blue);
+}
+
+.homepage_panel__icons--light_grey{
+  @include homepage_panel__icons--default($homepage__panel__bg_light_grey);
+
+    @include window_size(desktop){
+  background-image: url("../images/panels/illustration_bottom_panel.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+}
+
+
+
+
+
+
+.homepage_panel__content_wrapper{
+  @include window_size(desktop){
+    width: $zen-grid-width;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.homepage_panel__content_wrapper_50{
+    width:80%;
+}
+
+}
+
+.homepage_panel__intro_paragraph{
+    font-size:1.286em;
+    line-height: 1.2em;
+    color:$dark_blue;
+
+    @include window_size(tab-wide-up){
+        font-size:1.571em;
+        width: 80%;
+    }
+
+}
+
+.homepage_panel__section{
+  border: 0px solid red;
+  @include window_size(tab-wide-up){
+      width: 25%;
+      float: left;
+  }
+
+
+}
+
+
+.homepage_panel__section--hide_on_mobile{
+  border: 0px solid red;
+  display:none;
+  @include window_size(tab-wide-up){
+      display:block;
+      width: 25%;
+      float: left;
+  }
+}
+// Coming September 2016
+
+.homepage_panel__header{
+  color:$homepage__panel--dark-blue-copy;
+  border: 0px solid red;
+  font-family: Merriweather;
+  font-weight: 700;
+  margin:0 0 18px 0;
+  padding: 0;
+  border:0px solid blue;
+  font-size:1.714em;
+  width: 70%;
+  @include window_size(tab-wide-up){
+      font-size: 2.571em;
+        margin:0 0 30px 0;
+  }
+
+}
+
+.homepage_panel__header-line {
+  @include homepage_panel__hr_thick($wizard-hr);
+}
+
+
+.homepage_panel__header-line--white {
+    @include homepage_panel__hr_thick($white);
+}
+
+
+.homepage_panel__header-line--light-blue {
+    @include homepage_panel__hr_thick($light-blue);
+}
+
+
+
+.homepage_panel__header-line_thin {
+  @include homepage_panel__hr_thin($wizard-hr);
+}
+
+
+.homepage_panel__header-line_thin--white {
+    @include homepage_panel__hr_thin($white);
+}
+
+
+.homepage_panel__header-line_thin--light-blue {
+    @include homepage_panel__hr_thin($light-blue);
+}
+
+
+
+.homepage_panel__icon{
+    width: 65px;
+    float: right;
+    @include window_size(tab-wide-up){
+      width: 134px;
+      float: none;
+  }
+
+}
+
+
+
+
+.homepage_panel__icon_header{
+  color:$homepage__panel--dark-blue-copy;
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 1.286em;
+    width: 60%;
+
+  @include window_size(tab-wide-up){
+    font-size:1.429em;
+  }
+
+}
+
+
+.homepage_panel__paragraph{
+  color:$homepage__panel--dark-blue-copy;
+  width: 65%;
+  margin: 0;
+  padding: 14px 0 25px 0;
+
+}
+
+
+.homepage_pannel__button {
+  @include homepage_panel__button--base;
+}

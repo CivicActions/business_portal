@@ -10,5 +10,16 @@
   background-size:100% auto;
   @include maintain-ratio(1440 550);
   border:0px solid red;
+  @include clearfix;
+}
+
+
+.hero__headline{
+  font-family: Merriweather, serif;
+  font-size: 4em;
+  border: 1px solid white;
+  font-weight: 700;
+  color:#fff;
+
 
 }

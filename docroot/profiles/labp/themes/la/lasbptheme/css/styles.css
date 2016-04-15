@@ -2060,9 +2060,322 @@ tr.selected td {
   height: 0;
   padding-bottom: 38.19444%;
   border: 0px solid red;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 17, ../sass/components/hero/_hero.scss */
+.hero__headline {
+  font-family: Merriweather, serif;
+  font-size: 4em;
+  border: 1px solid white;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* line 6, ../sass/components/hero/_hero.scss */
+.hero__resources {
+  background-color: #88cff5;
+  height: 550px;
+  background-image: url("../images/hero/hero_homepage.jpg");
+  background-size: 100% auto;
+  width: 100%;
+  height: 0;
+  padding-bottom: 38.19444%;
+  border: 0px solid red;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 17, ../sass/components/hero/_hero.scss */
+.hero__headline {
+  font-family: Merriweather, serif;
+  font-size: 4em;
+  border: 1px solid white;
+  font-weight: 700;
+  color: #fff;
 }
 
 /* Guide */
+/* line 60, ../sass/components/_homepage_panels.scss */
+.homepage_panel__intro {
+  border: 0px solid red;
+  background-color: "transparent";
+  padding: 20px 25px 20px 25px;
+}
+@media all and (min-width: 720px) {
+  /* line 60, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__intro {
+    padding: 50px 35px 50px 35px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 60, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__intro {
+    padding: 75px 0 75px 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 60, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__intro {
+    background-image: url("../images/panels/illustration_top_panel.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+/* line 69, ../sass/components/_homepage_panels.scss */
+.homepage_panel__icons--light_blue {
+  border: 0px solid red;
+  background-color: #88cff5;
+  padding: 20px 25px 20px 25px;
+}
+@media all and (min-width: 720px) {
+  /* line 69, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__icons--light_blue {
+    padding: 50px 35px 50px 35px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 69, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__icons--light_blue {
+    padding: 75px 0 75px 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+
+/* line 73, ../sass/components/_homepage_panels.scss */
+.homepage_panel__icons--light_grey {
+  border: 0px solid red;
+  background-color: #f9fafa;
+  padding: 20px 25px 20px 25px;
+}
+@media all and (min-width: 720px) {
+  /* line 73, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__icons--light_grey {
+    padding: 50px 35px 50px 35px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 73, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__icons--light_grey {
+    padding: 75px 0 75px 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 73, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__icons--light_grey {
+    background-image: url("../images/panels/illustration_bottom_panel.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+@media all and (min-width: 960px) {
+  /* line 89, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__content_wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 98, ../sass/components/_homepage_panels.scss */
+.homepage_panel__content_wrapper .homepage_panel__content_wrapper_50 {
+  width: 80%;
+}
+
+/* line 104, ../sass/components/_homepage_panels.scss */
+.homepage_panel__intro_paragraph {
+  font-size: 1.286em;
+  line-height: 1.2em;
+  color: #0F2940;
+}
+@media all and (min-width: 720px) {
+  /* line 104, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__intro_paragraph {
+    font-size: 1.571em;
+    width: 80%;
+  }
+}
+
+/* line 116, ../sass/components/_homepage_panels.scss */
+.homepage_panel__section {
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 116, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__section {
+    width: 25%;
+    float: left;
+  }
+}
+
+/* line 127, ../sass/components/_homepage_panels.scss */
+.homepage_panel__section--hide_on_mobile {
+  border: 0px solid red;
+  display: none;
+}
+@media all and (min-width: 720px) {
+  /* line 127, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__section--hide_on_mobile {
+    display: block;
+    width: 25%;
+    float: left;
+  }
+}
+
+/* line 138, ../sass/components/_homepage_panels.scss */
+.homepage_panel__header {
+  color: #0F2940;
+  border: 0px solid red;
+  font-family: Merriweather;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  padding: 0;
+  border: 0px solid blue;
+  font-size: 1.714em;
+  width: 70%;
+}
+@media all and (min-width: 720px) {
+  /* line 138, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__header {
+    font-size: 2.571em;
+    margin: 0 0 30px 0;
+  }
+}
+
+/* line 155, ../sass/components/_homepage_panels.scss */
+.homepage_panel__header-line {
+  height: 4px;
+  max-width: 80px;
+  background: #0F2940;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 160, ../sass/components/_homepage_panels.scss */
+.homepage_panel__header-line--white {
+  height: 4px;
+  max-width: 80px;
+  background: white;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 165, ../sass/components/_homepage_panels.scss */
+.homepage_panel__header-line--light-blue {
+  height: 4px;
+  max-width: 80px;
+  background: #6BC3F3;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 171, ../sass/components/_homepage_panels.scss */
+.homepage_panel__header-line_thin {
+  height: 2px;
+  max-width: 40px;
+  background: #0F2940;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 176, ../sass/components/_homepage_panels.scss */
+.homepage_panel__header-line_thin--white {
+  height: 2px;
+  max-width: 40px;
+  background: white;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 181, ../sass/components/_homepage_panels.scss */
+.homepage_panel__header-line_thin--light-blue {
+  height: 2px;
+  max-width: 40px;
+  background: #6BC3F3;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 187, ../sass/components/_homepage_panels.scss */
+.homepage_panel__icon {
+  width: 65px;
+  float: right;
+}
+@media all and (min-width: 720px) {
+  /* line 187, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__icon {
+    width: 134px;
+    float: none;
+  }
+}
+
+/* line 200, ../sass/components/_homepage_panels.scss */
+.homepage_panel__icon_header {
+  color: #0F2940;
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 1.286em;
+  width: 60%;
+}
+@media all and (min-width: 720px) {
+  /* line 200, ../sass/components/_homepage_panels.scss */
+  .homepage_panel__icon_header {
+    font-size: 1.429em;
+  }
+}
+
+/* line 214, ../sass/components/_homepage_panels.scss */
+.homepage_panel__paragraph {
+  color: #0F2940;
+  width: 65%;
+  margin: 0;
+  padding: 14px 0 25px 0;
+}
+
+/* line 223, ../sass/components/_homepage_panels.scss */
+.homepage_pannel__button {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #FFDB67;
+  padding: 8px 20px 8px 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+}
+@media all and (min-width: 960px) {
+  /* line 223, ../sass/components/_homepage_panels.scss */
+  .homepage_pannel__button {
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    font-size: 1.143em;
+    padding: 15px 30px 15px 30px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+
 /* Wizard */
 /* line 2, ../sass/components/wizard/_wizard.scss */
 .wizard {
@@ -2133,16 +2446,7 @@ tr.selected td {
   border: 0 solid white;
 }
 
-/* line 58, ../sass/components/wizard/_wizard.scss */
-.wizard__button {
-  background-color: white;
-  padding: 8px 30px;
-  font-weight: bold;
-  display: inline-block;
-  margin: 0 10px 0 0;
-}
-
-/* line 65, ../sass/components/wizard/_wizard.scss */
+/* line 59, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -2155,13 +2459,13 @@ tr.selected td {
   cursor: pointer;
 }
 
-/* line 68, ../sass/components/wizard/_wizard.scss */
+/* line 62, ../sass/components/wizard/_wizard.scss */
 .wizard__button a {
   color: #0F2940;
   text-decoration: none;
 }
 
-/* line 72, ../sass/components/wizard/_wizard.scss */
+/* line 66, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -2176,13 +2480,13 @@ tr.selected td {
   padding: 8px 25px 8px 35px;
 }
 
-/* line 77, ../sass/components/wizard/_wizard.scss */
+/* line 71, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 81, ../sass/components/wizard/_wizard.scss */
+/* line 75, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
@@ -2198,7 +2502,7 @@ tr.selected td {
   float: left;
   height: 20px;
   width: 20px;
-  background-image: url('../images/wizard/icon_info.png?1460525200');
+  background-image: url('../images/wizard/icon_info.png?1460651662');
   background-size: 100%;
 }
 
@@ -2244,7 +2548,7 @@ tr.selected td {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460596972');
+  background-image: url('../images/wizard/progress_bar.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2260,7 +2564,7 @@ tr.selected td {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460596972');
+  background-image: url('../images/wizard/progress_bar.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2276,7 +2580,7 @@ tr.selected td {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460596972');
+  background-image: url('../images/wizard/progress_bar.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2292,7 +2596,7 @@ tr.selected td {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460596972');
+  background-image: url('../images/wizard/progress_bar.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2308,7 +2612,7 @@ tr.selected td {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460596972');
+  background-image: url('../images/wizard/progress_bar.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2324,7 +2628,7 @@ tr.selected td {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460596972');
+  background-image: url('../images/wizard/progress_bar.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2367,7 +2671,7 @@ tr.selected td {
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1460596862');
+  background-image: url('../images/wizard/progress_bar_completed.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2378,7 +2682,7 @@ tr.selected td {
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1460596862');
+  background-image: url('../images/wizard/progress_bar_completed.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -2389,7 +2693,7 @@ tr.selected td {
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1460598048');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1460651662');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -2420,7 +2724,7 @@ tr.selected td {
   margin: 5px 0 0 10px;
   width: 45px;
   margin: 5px 0 0 5px;
-  background-image: url('../images/wizard/icon_pencil.png?1460591876');
+  background-image: url('../images/wizard/icon_pencil.png?1460651662');
   display: none;
 }
 
@@ -2433,7 +2737,7 @@ tr.selected td {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_percentage.png?1460592187');
+  background-image: url('../images/wizard/icon_percentage.png?1460651662');
 }
 
 /* line 181, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -2445,7 +2749,7 @@ tr.selected td {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_pound.png?1460591393');
+  background-image: url('../images/wizard/icon_pound.png?1460651662');
   display: none;
 }
 
@@ -2458,7 +2762,7 @@ tr.selected td {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_map.png?1460592498');
+  background-image: url('../images/wizard/icon_map.png?1460651662');
   display: none;
 }
 
@@ -2532,7 +2836,7 @@ tr.selected td {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1460583953');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1460651662');
 }
 
 /* line 259, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -2544,7 +2848,7 @@ tr.selected td {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1460583974');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1460651662');
 }
 
 /* line 266, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -2556,13 +2860,13 @@ tr.selected td {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1460583938');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1460651662');
 }
 
 /* line 273, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1460590702');
+  background-image: url('../images/wizard/icon_close.png?1460651662');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -2595,7 +2899,7 @@ tr.selected td {
 .wizard__arrow-down-wrapper--disabled {
   border: 0px solid white;
   padding: 10px 10px 0 0;
-  background-image: url('../images/wizard/nav_hr_bar.png?1460576574');
+  background-image: url('../images/wizard/nav_hr_bar.png?1460651662');
   background-repeat: no-repeat;
   background-position: 23px 0;
 }
@@ -2611,7 +2915,7 @@ tr.selected td {
 
 /* line 37, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--disabled {
-  background-image: url('../images/wizard/arrow_down.png?1460574017');
+  background-image: url('../images/wizard/arrow_down.png?1460651662');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -2622,7 +2926,7 @@ tr.selected td {
 
 /* line 48, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1460579047');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1460651662');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -2634,7 +2938,7 @@ tr.selected td {
 
 /* line 61, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1460579047');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1460651662');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
