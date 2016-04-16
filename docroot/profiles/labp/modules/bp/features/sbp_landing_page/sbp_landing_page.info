@@ -41,6 +41,7 @@ features[panelizer_defaults][] = node:sbp_landing_page:default
 features[panelizer_defaults][] = node:sbp_landing_page:departments
 features[panelizer_defaults][] = node:sbp_landing_page:service_centers
 features[panelizer_defaults][] = node:sbp_landing_page:terms_and_definitions
+features[panelizer_defaults][] = node:sbp_landing_page:wizard
 features[variable][] = additional_settings__active_tab_sbp_landing_page
 features[variable][] = comment_anonymous_sbp_landing_page
 features[variable][] = comment_default_mode_sbp_landing_page

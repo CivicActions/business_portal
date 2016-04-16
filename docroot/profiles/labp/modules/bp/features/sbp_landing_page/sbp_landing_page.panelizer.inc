@@ -826,5 +826,94 @@ function sbp_landing_page_panelizer_defaults() {
   $panelizer->display = $display;
   $export['node:sbp_landing_page:terms_and_definitions'] = $panelizer;
 
+  $panelizer = new stdClass();
+  $panelizer->disabled = FALSE; /* Edit this to true to make a default panelizer disabled initially */
+  $panelizer->api_version = 1;
+  $panelizer->name = 'node:sbp_landing_page:wizard';
+  $panelizer->title = 'Wizard';
+  $panelizer->panelizer_type = 'node';
+  $panelizer->panelizer_key = 'sbp_landing_page';
+  $panelizer->no_blocks = FALSE;
+  $panelizer->css_id = '';
+  $panelizer->css = '';
+  $panelizer->pipeline = 'ipe';
+  $panelizer->contexts = array();
+  $panelizer->relationships = array();
+  $panelizer->access = array();
+  $panelizer->view_mode = 'page_manager';
+  $panelizer->css_class = '';
+  $panelizer->title_element = 'H2';
+  $panelizer->link_to_entity = TRUE;
+  $panelizer->extra = array();
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '%node:title';
+  $display->uuid = '580cb959-8e5a-433e-88eb-c1e4a7e70c79';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-65f26957-6e55-4041-8af2-04e125b92039';
+    $pane->panel = 'middle';
+    $pane->type = 'node_links';
+    $pane->subtype = 'node_links';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => FALSE,
+      'override_title_text' => '',
+      'build_mode' => 'page_manager',
+      'identifier' => '',
+      'link' => TRUE,
+      'context' => 'panelizer',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_class' => 'link-wrapper',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '65f26957-6e55-4041-8af2-04e125b92039';
+    $display->content['new-65f26957-6e55-4041-8af2-04e125b92039'] = $pane;
+    $display->panels['middle'][0] = 'new-65f26957-6e55-4041-8af2-04e125b92039';
+    $pane = new stdClass();
+    $pane->pid = 'new-b799fbbf-217f-4c2a-ab8e-df6361bb2077';
+    $pane->panel = 'middle';
+    $pane->type = 'block';
+    $pane->subtype = 'sbp_wizard-wizard';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b799fbbf-217f-4c2a-ab8e-df6361bb2077';
+    $display->content['new-b799fbbf-217f-4c2a-ab8e-df6361bb2077'] = $pane;
+    $display->panels['middle'][1] = 'new-b799fbbf-217f-4c2a-ab8e-df6361bb2077';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
+  $panelizer->display = $display;
+  $export['node:sbp_landing_page:wizard'] = $panelizer;
+
   return $export;
 }

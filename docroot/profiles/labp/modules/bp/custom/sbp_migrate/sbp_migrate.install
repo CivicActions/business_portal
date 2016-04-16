@@ -42,14 +42,13 @@ function _sbp_migrate_set_displays() {
   $panelizer = ctools_export_load_object('panelizer_defaults', 'names', array($terms_page_variant));
   $terms_page->panelizer['page_manager'] = $panelizer[$terms_page_variant];
   node_save($terms_page);
-  /*$new_display = $panelizer[$terms_page_variant];
-  var_dump('OLD DISPLAY');
-  var_dump($terms_page->panelizer['page_manager']->display);
-  var_dump('NEW DISPLAY');
-  var_dump($new_display->display);
 
-  panels_save_display($new_display);*/
-
+  // Placing wizard display on the wizard page.
+  $wiz_page = _sbp_migrate_get_node_by_path('start');
+  $wiz_page_variant = 'node:sbp_landing_page:wizard';
+  $panelizer = ctools_export_load_object('panelizer_defaults', 'names', array($wiz_page_variant));
+  $wiz_page->panelizer['page_manager'] = $panelizer[$wiz_page_variant];
+  node_save($wiz_page);
 }
 
 /**
