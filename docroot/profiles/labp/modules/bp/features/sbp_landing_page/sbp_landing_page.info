@@ -39,6 +39,7 @@ features[field_instance][] = node-sbp_landing_page-field_hero
 features[node][] = sbp_landing_page
 features[panelizer_defaults][] = node:sbp_landing_page:default
 features[panelizer_defaults][] = node:sbp_landing_page:departments
+features[panelizer_defaults][] = node:sbp_landing_page:resources
 features[panelizer_defaults][] = node:sbp_landing_page:service_centers
 features[panelizer_defaults][] = node:sbp_landing_page:terms_and_definitions
 features[panelizer_defaults][] = node:sbp_landing_page:wizard

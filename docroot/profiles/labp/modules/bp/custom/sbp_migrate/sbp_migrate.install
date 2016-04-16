@@ -49,6 +49,13 @@ function _sbp_migrate_set_displays() {
   $panelizer = ctools_export_load_object('panelizer_defaults', 'names', array($wiz_page_variant));
   $wiz_page->panelizer['page_manager'] = $panelizer[$wiz_page_variant];
   node_save($wiz_page);
+
+  // Placing resources display on the resources page.
+  $res_page = _sbp_migrate_get_node_by_path('resources');
+  $res_page_variant = 'node:sbp_landing_page:resources';
+  $panelizer = ctools_export_load_object('panelizer_defaults', 'names', array($res_page_variant));
+  $res_page->panelizer['page_manager'] = $panelizer[$res_page_variant];
+  node_save($res_page);
 }
 
 /**
