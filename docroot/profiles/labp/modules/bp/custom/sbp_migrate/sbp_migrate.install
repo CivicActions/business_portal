@@ -43,6 +43,13 @@ function _sbp_migrate_set_displays() {
   $terms_page->panelizer['page_manager'] = $panelizer[$terms_page_variant];
   node_save($terms_page);
 
+  // Placing r&i display to the r&i page.
+  $ri_page = _sbp_migrate_get_node_by_path('resources/resources-incentives');
+  $ri_page_variant = 'node:sbp_landing_page:resources_incentives';
+  $panelizer = ctools_export_load_object('panelizer_defaults', 'names', array($ri_page_variant));
+  $ri_page->panelizer['page_manager'] = $panelizer[$ri_page_variant];
+  node_save($ri_page);
+
   // Placing wizard display on the wizard page.
   $wiz_page = _sbp_migrate_get_node_by_path('start');
   $wiz_page_variant = 'node:sbp_landing_page:wizard';
