@@ -1,0 +1,15 @@
+.sub_nav__menu{
+     margin:0;
+     padding: 0;
+     background-color: $light-grey;
+     padding:20px 0 20px 0;
+     border: 0px solid red;
+}
+
+.sub_nav__menu_item{
+background-color: $light-grey;
+  list-style: none;
+  color:$dark_blue;
+  font-size: 1.143em;
+  margin:0px 0 10px 0;
+ }

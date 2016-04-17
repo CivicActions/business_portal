@@ -51,8 +51,9 @@
         @include border-radius(25px);
         font-size: 1.143em;
             padding: 15px 30px 15px 30px;
-          @include clearfix;
+
     }
+      @include clearfix;
 
 }
 
@@ -60,11 +61,64 @@
 .homepage_panel__intro{
     @include homepage_panel__icons--default();
     @include window_size(desktop){
-  background-image: url("../images/panels/illustration_top_panel.png");
+      padding: 0;
   background-repeat: no-repeat;
   background-position: top right;
 }
 }
+
+
+
+.homepage_panel__intro_header{
+  color:$homepage__panel--dark-blue-copy;
+  border: 0px solid red;
+  font-family: Merriweather;
+  font-weight: 700;
+  margin:0 0 18px 0;
+  padding: 0;
+  border:0px solid blue;
+  font-size:1.714em;
+  width: 100%;
+  @include window_size(tab-wide-up){
+      font-size: 2.571em;
+        margin:0 0 30px 0;
+  }
+
+}
+
+.homepage_panel__content_col_1{
+
+      width:100%;
+
+    @include window_size(desktop){
+          padding: 75px 0 0 0;
+        border: 0px solid green;
+        width:538px;
+        float:left;
+    }
+}
+
+
+
+
+.homepage_panel__content_col_2{
+  display: none;
+  @include clearfix;
+
+      @include window_size(desktop){
+        border: 0px solid green;
+        width:420px;
+        height: 698px;
+          float:right;
+          display: block;
+          background-image: url("../images/panels/illustration_top_panel.png");
+
+      }
+
+}
+
+
+
 
 .homepage_panel__icons--light_blue{
   @include homepage_panel__icons--default($homepage__panel--bg-light-blue);
@@ -95,8 +149,14 @@
 }
 
 
+
+
 .homepage_panel__content_wrapper_50{
-    width:80%;
+
+      @include window_size(desktop){
+        border: 1px solid red;
+          width:80%;
+      }
 }
 
 
@@ -108,7 +168,7 @@
 
     @include window_size(tab-wide-up){
         font-size:1.571em;
-        width: 80%;
+        width: 90%;
     }
 
 }
@@ -202,8 +262,8 @@
   font-family: Merriweather;
   font-weight: 700;
   font-size: 1.286em;
-    width: 60%;
-
+  width: 70%;
+  border: 0px solid red;
   @include window_size(tab-wide-up){
     font-size:1.429em;
   }
@@ -213,6 +273,7 @@
 
 .homepage_panel__paragraph{
   color:$homepage__panel--dark-blue-copy;
+  border:0px solid red;
   width: 65%;
   margin: 0;
   padding: 14px 0 25px 0;
