@@ -37,7 +37,7 @@ $zen-auto-include-item-base: false;
 
 
 .header__content{
-
+  margin:0 25px 0 25px 0;
   @include window_size(desktop){
     width: $zen-grid-width;
     margin-left: auto;

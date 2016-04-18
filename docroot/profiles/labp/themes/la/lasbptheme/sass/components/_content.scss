@@ -8,6 +8,13 @@
 
 #content {
 
+    @include window_size(desktop){
+        border: 0px solid red;
+        background-image: url("../images/sublevel_left_menu_bg.png");
+        background-repeat: repeat-y;
+        margin:0;
+        padding: 0;
+   }
 }
 
 
@@ -19,7 +26,8 @@
 
 
 .page__content_wrapper{
-    margin: 0 25px 25px 25px;
+    margin: 0;
+    padding: 0;
     border:0px solid red;
 
 
@@ -35,16 +43,34 @@
 
 h2{
   font-family: Merriweather, serif;
+  font-weight: normal;
   font-size: 1.429em;
-  font-weight: 700;
-
+  font-weight: 900;
+  @include window_size(desktop){
+      font-size:2em;
+  }
 }
 
+
+.page__resource_header{
+border-top:1px solid $light-blue;
+padding: 10px 0 0 0;
+@include clearfix;
+
+}
 h3{
   font-family: Merriweather, serif;
   font-weight: 400;
-  border-top:1px solid $light-blue;
-  padding:10px 0 0 0;
+
+  padding:0;
+  margin: 5px 0px 5px 0;
+  width: 70%;
+  display: inline-block;
+  line-height: 1.2em;
+  @include window_size(desktop){
+      font-size:1.571em;
+  }
+
 
 
 }
@@ -53,10 +79,10 @@ h3{
 
 .page__content_col_1{
   border: 0px solid red;
-  margin: 0;
-  background-color: $light-grey;
+  padding: 0 25px 0 25px 0;
+  background-color: $subsection_light_grey;
     @include window_size(desktop){
-    width:227px;
+    width:250px;
     float: left;
     margin: 0px 0;
 
@@ -67,11 +93,54 @@ h3{
 
 .page__content_col_2{
 border: 0px solid red;
+padding: 0 0 300px 0;
+background-color: $white;
   @include window_size(desktop){
-    float: right;;
-    margin: 10px 0;
+    float: left;
+
     width: 700px;
 
   }
+
+}
+
+
+
+.page__content_col_2_wrapper{
+      padding: 0 30px 0 30px;
+}
+
+
+.page__content_paragraph{
+  border: 0px solid red;
+
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.25em;
+  width: 90%;
+    @include window_size(desktop){
+        width: 85%;
+        font-size: 1.143em;
+        line-height: 1.35em;
+    }
+}
+
+
+@mixin page__icon_base($url: "../images/subsections/icon_view.png"){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  width:32px;
+  height:32px;
+  display: inline-block;
+  float: right;
+  margin: 0 0 0 6px;
+}
+.page__icon--view{
+    @include page__icon_base;
+}
+
+.page__icon--download{
+      @include page__icon_base("../images/subsections/icon_download.png");
 
 }

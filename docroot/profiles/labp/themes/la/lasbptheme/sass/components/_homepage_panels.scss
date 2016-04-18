@@ -154,7 +154,7 @@
 .homepage_panel__content_wrapper_50{
 
       @include window_size(desktop){
-        border: 1px solid red;
+        border: 0px solid red;
           width:80%;
       }
 }

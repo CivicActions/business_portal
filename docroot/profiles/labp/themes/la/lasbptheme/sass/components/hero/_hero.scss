@@ -13,7 +13,7 @@
 }
 
 
-.hero__resources{
+.hero__photo{
   background-color: #88cff5;
   height: 550px;
   background-image:url("../images/hero/hero_homepage.jpg");
@@ -63,7 +63,7 @@
 .hero__content_wrapper{
   margin: 0 25px 25px 25px;
     background-color:#88cff5;
-    border:1px solid red;
+    border:0px solid red;
 
 
     @include window_size(desktop){
@@ -101,17 +101,55 @@
 }
 
 
+
 .hero__copy--subsection{
   @include window_size(desktop){
     border: 0px solid blue;
-    margin-left: 227px;
+    /*margin-left: 250px;*/
     background-color: #88cff5;
     height: 100%;
     top:0;
-    bottom:0px;
+    width:700px;
+    float:left;
+
   }
 }
 
+
+.hero__copy--col_1{
+  display: none;
+    border: 1px solid red;
+        @include clearfix;
+  @include window_size(desktop){
+      width: 250px;
+      float:left;
+      border: 0px solid red;
+      display: block;
+        height: 100%;
+    }
+
+}
+
+
+.hero__business__name--subsection{
+  font-weight: 700;
+  color: $white;
+  font-size: 1em;
+  padding: 0;
+    margin:55px 0 3px 0;
+    margin:0px;
+  @include window_size(desktop){
+      margin:85px 0 3px 0;
+      margin:0 0 3px 0;
+  }
+}
+
+.hero__business__description--subsection{
+  color: $white;
+  width: 160px;
+  padding: 0;
+  margin:0;
+}
 
 
 .hero__overlay{
@@ -130,13 +168,21 @@
 }
 
 .hero__bottom_align{
-    position:relative;
+
   @include window_size(desktop){
     border: 0px solid red;
-    padding: 35px;
+    padding: 30px;
     position: absolute;
     bottom: 0;
   }
+}
+
+.hero__bottom_align--bn{
+
+  border: 0px solid red;
+  padding: 30px 30px 50px 0;
+  position: absolute;
+  bottom: 0;
 }
 
 // subsection
