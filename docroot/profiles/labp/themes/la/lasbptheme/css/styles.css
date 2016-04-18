@@ -2449,7 +2449,7 @@ h3 {
 
 /* line 189, ../sass/components/hero/_hero.scss */
 .hero__overlay_partial {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   height: 250px;
   width: 100%;
   position: absolute;
