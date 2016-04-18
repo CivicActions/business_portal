@@ -54,7 +54,7 @@ function labp_field_base_defaultconfig_field_default_fields() {
       'bundle' => 'sbp_wizard_screen',
       'default_value' => NULL,
       'deleted' => 0,
-      'description' => '',
+      'description' => 'LEAVE BLANK, unless this is the address lookup screen, then enter text like "yes".',
       'display' => array(
         'alternate' => array(
           'label' => 'above',
@@ -121,6 +121,7 @@ function labp_field_base_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Address Lookup Form');
+  t('LEAVE BLANK, unless this is the address lookup screen, then enter text like "yes".');
 
   return $fields;
 }
