@@ -87,77 +87,6 @@ function sbp_hero_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'fieldable_panels_pane-hero-field_background_color'.
-  $fields['fieldable_panels_pane-hero-field_background_color'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_background_color',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 6,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'hero',
-      'default_value' => array(
-        0 => array(
-          'value' => 'ffffff',
-        ),
-      ),
-      'deleted' => 0,
-      'description' => 'Please enter the hexadecimal color code <em>without</em> the leading hash or number symbol #.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'quickedit' => array(
-              'editor' => 'plain_text',
-            ),
-          ),
-          'type' => 'text_default',
-          'weight' => 7,
-        ),
-      ),
-      'entity_type' => 'fieldable_panels_pane',
-      'field_name' => 'field_background_color',
-      'label' => 'Background Color',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 6,
-        ),
-        'type' => 'text_textfield',
-        'weight' => -3,
-      ),
-    ),
-  );
-
   // Exported field: 'fieldable_panels_pane-hero-field_background_image'.
   $fields['fieldable_panels_pane-hero-field_background_image'] = array(
     'field_config' => array(
@@ -397,144 +326,6 @@ function sbp_hero_defaultconfig_field_default_fields() {
     ),
   );
 
-  // Exported field: 'fieldable_panels_pane-hero-field_line_and_subtitle_color'.
-  $fields['fieldable_panels_pane-hero-field_line_and_subtitle_color'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_line_and_subtitle_color',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 6,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'hero',
-      'default_value' => array(
-        0 => array(
-          'value' => 'ffffff',
-        ),
-      ),
-      'deleted' => 0,
-      'description' => 'Please enter the hexadecimal color code <em>without</em> the leading hash or number symbol #.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'quickedit' => array(
-              'editor' => 'plain_text',
-            ),
-          ),
-          'type' => 'text_default',
-          'weight' => 8,
-        ),
-      ),
-      'entity_type' => 'fieldable_panels_pane',
-      'field_name' => 'field_line_and_subtitle_color',
-      'label' => 'Line and subtitle color',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 6,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 0,
-      ),
-    ),
-  );
-
-  // Exported field: 'fieldable_panels_pane-hero-field_subtitle_1'.
-  $fields['fieldable_panels_pane-hero-field_subtitle_1'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_subtitle_1',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 255,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'hero',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'quickedit' => array(
-              'editor' => 'plain_text',
-            ),
-          ),
-          'type' => 'text_default',
-          'weight' => 3,
-        ),
-      ),
-      'entity_type' => 'fieldable_panels_pane',
-      'field_name' => 'field_subtitle_1',
-      'label' => 'Subtitle 1',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 60,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 2,
-      ),
-    ),
-  );
-
   // Exported field: 'fieldable_panels_pane-hero-field_subtitle_2'.
   $fields['fieldable_panels_pane-hero-field_subtitle_2'] = array(
     'field_config' => array(
@@ -666,14 +457,10 @@ function sbp_hero_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Background');
-  t('Background Color');
   t('Background Image');
   t('Calls to Action');
   t('Icon');
-  t('Line and subtitle color');
-  t('Please enter the hexadecimal color code <em>without</em> the leading hash or number symbol #.');
   t('Select which type of background is desired.');
-  t('Subtitle 1');
   t('Subtitle 2');
   t('Width');
 

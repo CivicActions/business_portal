@@ -40,77 +40,6 @@ function sbp_panels_defaultconfig_default_fieldable_panels_pane_type() {
 function sbp_panels_defaultconfig_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'fieldable_panels_pane-section_content-field_background_color'.
-  $fields['fieldable_panels_pane-section_content-field_background_color'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_background_color',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => 0,
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => 6,
-      ),
-      'translatable' => 0,
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'section_content',
-      'default_value' => array(
-        0 => array(
-          'value' => 'ffffff',
-        ),
-      ),
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(
-            'quickedit' => array(
-              'editor' => 'plain_text',
-            ),
-          ),
-          'type' => 'text_default',
-          'weight' => 5,
-        ),
-      ),
-      'entity_type' => 'fieldable_panels_pane',
-      'field_name' => 'field_background_color',
-      'label' => 'Background Color',
-      'required' => 1,
-      'settings' => array(
-        'text_processing' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 6,
-        ),
-        'type' => 'text_textfield',
-        'weight' => 3,
-      ),
-    ),
-  );
-
   // Exported field: 'fieldable_panels_pane-section_content-field_background_image'.
   $fields['fieldable_panels_pane-section_content-field_background_image'] = array(
     'field_config' => array(
@@ -183,7 +112,7 @@ function sbp_panels_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 5,
+        'weight' => 4,
       ),
     ),
   );
@@ -268,7 +197,7 @@ function sbp_panels_defaultconfig_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
   );
@@ -333,90 +262,87 @@ function sbp_panels_defaultconfig_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => -1,
+        'weight' => 2,
       ),
     ),
   );
 
-  // Exported field: 'fieldable_panels_pane-section_content-field_line_and_subtitle_color'.
-  $fields['fieldable_panels_pane-section_content-field_line_and_subtitle_color'] = array(
+  // Exported field: 'fieldable_panels_pane-section_content-field_pane_style'.
+  $fields['fieldable_panels_pane-section_content-field_pane_style'] = array(
     'field_config' => array(
       'active' => 1,
       'cardinality' => 1,
       'deleted' => 0,
       'entity_types' => array(),
-      'field_name' => 'field_line_and_subtitle_color',
+      'field_name' => 'field_pane_style',
       'foreign keys' => array(
-        'format' => array(
+        'tid' => array(
           'columns' => array(
-            'format' => 'format',
+            'tid' => 'tid',
           ),
-          'table' => 'filter_format',
+          'table' => 'taxonomy_term_data',
         ),
       ),
       'indexes' => array(
-        'format' => array(
-          0 => 'format',
+        'tid' => array(
+          0 => 'tid',
         ),
       ),
       'locked' => 0,
-      'module' => 'text',
+      'module' => 'taxonomy',
       'settings' => array(
-        'max_length' => 6,
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'style_template',
+            'parent' => 0,
+          ),
+        ),
       ),
       'translatable' => 0,
-      'type' => 'text',
+      'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
       'bundle' => 'section_content',
-      'default_value' => array(
-        0 => array(
-          'value' => '000000',
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => 0,
-      'description' => 'Please enter the hexadecimal color code <em>without</em> the leading hash or number symbol #.',
+      'description' => 'Please select the content pane style',
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
+          'module' => 'taxonomy',
           'settings' => array(
             'quickedit' => array(
-              'editor' => 'plain_text',
+              'editor' => 'form',
             ),
           ),
-          'type' => 'text_default',
+          'type' => 'taxonomy_term_reference_link',
           'weight' => 4,
         ),
       ),
       'entity_type' => 'fieldable_panels_pane',
-      'field_name' => 'field_line_and_subtitle_color',
-      'label' => 'Line Color',
+      'field_name' => 'field_pane_style',
+      'label' => 'Style',
       'required' => 1,
       'settings' => array(
-        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => 6,
-        ),
-        'type' => 'text_textfield',
-        'weight' => -3,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => 1,
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Background Color');
   t('Body');
   t('Bottom Right Background Image');
   t('Buttons');
-  t('Line Color');
-  t('Please enter the hexadecimal color code <em>without</em> the leading hash or number symbol #.');
+  t('Please select the content pane style');
+  t('Style');
 
   return $fields;
 }
@@ -449,7 +375,7 @@ function sbp_panels_defaultconfig_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '0',
         ),
       ),
       'display' => array(

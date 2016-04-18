@@ -145,6 +145,14 @@ function sbp_taxonomy_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'style_template' => array(
+      'name' => 'Style Template',
+      'machine_name' => 'style_template',
+      'description' => 'The generic selection of a style',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'term_alphabet' => array(
       'name' => 'Term Alphabet',
       'machine_name' => 'term_alphabet',
