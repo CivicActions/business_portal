@@ -42,7 +42,7 @@ function sbp_hero_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -90,7 +90,7 @@ function sbp_hero_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -146,7 +146,7 @@ function sbp_hero_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -271,7 +271,43 @@ function sbp_hero_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 4,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_hero-field_pane_style'.
+  $field_instances['field_collection_item-field_hero-field_pane_style'] = array(
+    'bundle' => 'field_hero',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the style template used for this hero.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_pane_style',
+    'label' => 'Style',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 
@@ -310,7 +346,7 @@ function sbp_hero_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -349,7 +385,7 @@ function sbp_hero_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -384,7 +420,7 @@ function sbp_hero_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -396,6 +432,8 @@ function sbp_hero_field_default_field_instances() {
   t('Hero Description');
   t('Hero Title');
   t('Icon');
+  t('Select the style template used for this hero.');
+  t('Style');
   t('Subtitle 1');
   t('Subtitle 2');
   t('Width');
