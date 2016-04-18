@@ -205,7 +205,7 @@ function sbp_landing_page_strongarm() {
         'status' => 1,
         'substitute' => '',
         'default' => 1,
-        'choice' => 0,
+        'choice' => 1,
       ),
       'default' => array(
         'status' => 0,

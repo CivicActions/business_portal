@@ -3,6 +3,8 @@ description = Provide migration support for Business Portal demo content.
 core = 7.x
 
 dependencies[] = migrate
+dependencies[] = sbp_landing_page
+dependencies[] = sbp_terms_definition
 
 files[] = sbp_migrate.migrate.inc
 files[] = migrate/sbp_landing_page.inc
