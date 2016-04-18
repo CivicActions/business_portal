@@ -1,0 +1,97 @@
+<?php
+/**
+ * @file
+ * labp_address_wizard.module
+ * 
+ * Adds Neighborhood Info address lookup to Wizard.
+ */
+
+include_once 'inc/address_form.inc';
+
+/**
+ * Implements hook_menu().
+ *
+ * Sets up calls to drupal_get_form() for all our example cases.
+ *
+ */
+
+function labp_address_wizard_menu() {
+  $items = array();
+
+  $items['address-wizard/test'] = array(
+    'title' => 'Address Lookup',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('labp_address_wizard_address_input'),
+    'access callback' => TRUE,
+    'weight' => 3,
+  );
+  
+  return $items;
+}
+
+function labp_address_wizard_field_attach_view_alter(&$output, $context) {
+  if($context['entity_type'] == 'node' && $context['entity']->type == 'sbp_wizard_screen'){
+    if($output['field_address_lookup_form']){
+    // Add form to _custom view mode to add form to serivce view output 
+      if($context['view_mode'] == '_custom'){
+        $default = $output['field_address_lookup_form'];  
+        foreach($default as $key=>$value){
+          $output['field_address_lookup_form'][$key] = $value;      
+          if($key == '#items'){
+            $output['field_address_lookup_form'][$key] = array(
+              '#markup' => drupal_render(drupal_get_form('labp_address_wizard_address_input')));
+          }
+        }
+      }
+      // Add form to full display
+      if($context['view_mode'] == 'full'){
+        $node = $context['entity'];
+        $instances = _field_invoke_get_instances('node', $node->type, array('deleted' => FALSE, 'field_name' => 'field_address_lookup_form'));
+        $field = $instances[0];
+        $text = drupal_render(drupal_get_form('labp_address_wizard_address_input'));
+
+        $output['field_address_lookup_form'] = array(
+          '#theme' => 'field',
+          '#title' => $field['label'],
+          '#access' => TRUE,
+          '#label_display' => 'hidden',
+          '#field_type' => $field['widget']['module'],
+          '#field_name' => $field['field_name'],
+          '#bundle' => $node->type,
+          '#object' => $node,
+          '#entity_type' => 'node',
+          '#weight' => $field['widget']['weight'],
+          '#view_mode' => 'default',
+          '#language' => $context['language'],
+          '#items' => array(
+            0 => array(
+              'value' => $text,
+              'format' => NULL,
+              'safe_value' => $text
+            )
+          ),
+          0 => array('#markup' => $text),
+        );
+      }
+    }
+  }
+  return $output;
+}
+
+/**
+ * Implements hook_node_view().
+ *
+ * Add the address form to the sbp_wizard view
+ *
+ */
+
+function labp_address_wizard_views_pre_view(&$view, &$display_id, &$args) {
+  if ($view->name == 'sbp_wizard') {
+  $view->add_item($view->current_display, 'field', 'field_data_field_address_lookup_form', 'field_address_lookup_form',
+    array(
+      'label' => 'Address Lookup Form',
+    ), 
+    'field_address_lookup_form');
+  }
+  return $view;
+}
