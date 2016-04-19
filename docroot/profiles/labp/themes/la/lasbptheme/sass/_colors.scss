@@ -15,9 +15,35 @@ $dark_blue: #0F2940;
 $light-blue: #6BC3F3;
 $light-grey:#f9fafa;
 
+// WIZARD
+
 // wizard colors
-$background-color-default:#6BC3F3;
-$background-register-your-business:#89D5C4;
+$background-intro:#6BC3F3;
+$background-city-registration:#89D5C4;
+$background-name:#B5CF6E;
+$background-sellers-permit:#E9C759;
+$background-employeer-identification-number:#6BC3F3;
+$background-your-business_registration-guide:#FBB040;
+
+// wizard contextual screens
+$background-contextual-city-registration:#c5e6de;
+$background-contextual-name:#d8eda2;
+$background-contextual-sellers-permit:#eed78e;
+$background-contextual-employeer-identification-number: #99d5f5;
+
+
+
+// wizard drawers
+$wizard__drawer_city-registration:#82caba;
+$wizard__drawer_name:#abc468;
+$wizard__drawer_sellers-permit:#ddbc54;
+$wizard__drawer_employeer-identification-number:#65b9e6;
+$wizard__drawer_your-business_registration-guide:#eea73c;
+
+
+
+
+
 
 $background-your-business:#B5CF6E;
 $wizard-text:#0F2940;
@@ -26,11 +52,7 @@ $wizard__button--deafult:#fff;
 $wizard__button--selected:#0F2940;
 $wizard__button_text--selected:#FFF;
 
-$wizard__drawer_section_1:#82caba;
-$wizard__drawer_section_2:#abc468;
-$wizard__drawer_section_3:#ddbc54;
-$wizard__drawer_section_4:#65b9e6;
-$wizard__drawer_section_5:#eea73c;
+
 
 // homepage colors
 // they colors are hardcoded in the html templates

@@ -18,6 +18,7 @@
   width: 80%;
 
 }
+
 .wizard__tip_copy {
   padding: 0;
   margin: 0 0 20px;
@@ -26,9 +27,13 @@
   @include window_size(desktop){
       font-size: 1.333em;
   }
-
-
 }
+
+
+
+
+
+
 .wizard__tip_button {
   @include border-radius(20px);
   border: 2px solid $dark_blue;

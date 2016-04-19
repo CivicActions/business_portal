@@ -43,35 +43,36 @@
 }
 
 
+// wizard drawers
 
 
 
 // mobile drawer root containers
 .wizard__progress-bar--section_1 {
-  @include wizard__progress-bar-root($wizard__drawer_section_1);
+  @include wizard__progress-bar-root($wizard__drawer_city-registration);
 
 
 
 }
 
 .wizard__progress-bar--section_2 {
-  @include wizard__progress-bar-root($wizard__drawer_section_2);
+  @include wizard__progress-bar-root($wizard__drawer_name);
 
 }
 
 .wizard__progress-bar--section_3{
-  @include wizard__progress-bar-root($wizard__drawer_section_3);
+  @include wizard__progress-bar-root($wizard__drawer_sellers-permit);
 
 }
 
 .wizard__progress-bar--section_4 {
-  @include wizard__progress-bar-root($wizard__drawer_section_4);
+  @include wizard__progress-bar-root($wizard__drawer_employeer-identification-number);
 
 }
 
 
 .wizard__progress-bar--section_5 {
-  @include wizard__progress-bar-root($wizard__drawer_section_5);
+  @include wizard__progress-bar-root($wizard__drawer_your-business_registration-guide);
 
 }
 

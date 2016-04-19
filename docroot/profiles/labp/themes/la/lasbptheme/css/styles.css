@@ -3154,21 +3154,55 @@ input[type=checkbox]:checked {
   background-color: #6BC3F3;
 }
 
-/* line 7, ../sass/components/wizard/_wizard.scss */
+@media all and (min-width: 960px) {
+  /* line 10, ../sass/components/wizard/_wizard.scss */
+  .homepage_panel__content_wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 19, ../sass/components/wizard/_wizard.scss */
+.wizard_col_1 {
+  border: 0px solid red;
+  width: 100%;
+}
+@media all and (min-width: 960px) {
+  /* line 19, ../sass/components/wizard/_wizard.scss */
+  .wizard_col_1 {
+    width: 700px;
+  }
+}
+
+/* line 27, ../sass/components/wizard/_wizard.scss */
+.wizard_col_2 {
+  border: 0px solid red;
+  width: 30%;
+}
+@media all and (min-width: 960px) {
+  /* line 27, ../sass/components/wizard/_wizard.scss */
+  .wizard_col_2 {
+    width: 260px;
+    border: 0px solid red;
+  }
+}
+
+/* line 35, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-screen--register-business {
   background-color: #89D5C4;
   height: 900px;
 }
 
-/* line 11, ../sass/components/wizard/_wizard.scss */
+/* line 39, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block {
   display: inline-block;
-  border: 0 solid black;
-  width: 70%;
-  padding: 0 0 0 25px;
+  border: 0px solid black;
+  padding: 0 0 0 0;
+  padding: 0 25px 0 25px;
 }
 
-/* line 17, ../sass/components/wizard/_wizard.scss */
+/* line 46, ../sass/components/wizard/_wizard.scss */
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
@@ -3177,16 +3211,37 @@ input[type=checkbox]:checked {
   padding: 25px 25px 0;
 }
 
-/* line 24, ../sass/components/wizard/_wizard.scss */
-.wizard__header--intro {
+/* line 53, ../sass/components/wizard/_wizard.scss */
+.wizard__header--title {
   font-weight: 700;
   font-size: 1em;
   border: 0;
   padding: 0;
   margin: 0 0 15px;
+  border: 0px solid red;
 }
 
-/* line 31, ../sass/components/wizard/_wizard.scss */
+/* line 63, ../sass/components/wizard/_wizard.scss */
+.wizard__header--title-government {
+  font-size: 0.857em;
+  text-transform: uppercase;
+  border: 0px solid red;
+  margin: 0 0 2px 0;
+  padding: 0px;
+}
+
+/* line 72, ../sass/components/wizard/_wizard.scss */
+.wizard__header--title-intro {
+  font-weight: 700;
+  font-size: 1em;
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px;
+  border: 0px solid red;
+  font-size: 1.357em;
+}
+
+/* line 83, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -3196,7 +3251,7 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 39, ../sass/components/wizard/_wizard.scss */
+/* line 91, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3205,18 +3260,18 @@ input[type=checkbox]:checked {
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 39, ../sass/components/wizard/_wizard.scss */
+  /* line 91, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 3em;
   }
 }
 
-/* line 55, ../sass/components/wizard/_wizard.scss */
+/* line 107, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0 solid white;
 }
 
-/* line 59, ../sass/components/wizard/_wizard.scss */
+/* line 111, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3229,13 +3284,13 @@ input[type=checkbox]:checked {
   cursor: pointer;
 }
 
-/* line 62, ../sass/components/wizard/_wizard.scss */
+/* line 114, ../sass/components/wizard/_wizard.scss */
 .wizard__button a {
   color: #0F2940;
   text-decoration: none;
 }
 
-/* line 66, ../sass/components/wizard/_wizard.scss */
+/* line 118, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3250,16 +3305,41 @@ input[type=checkbox]:checked {
   padding: 8px 25px 8px 35px;
 }
 
-/* line 71, ../sass/components/wizard/_wizard.scss */
+/* line 123, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 75, ../sass/components/wizard/_wizard.scss */
+/* line 127, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
+}
+
+/* line 134, ../sass/components/wizard/_wizard.scss */
+.wizard__intro_copy {
+  padding: 0;
+  margin: 0 60px 20px 20px;
+  font-size: 0.929em;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 134, ../sass/components/wizard/_wizard.scss */
+  .wizard__intro_copy {
+    font-size: 1.357em;
+  }
+}
+
+/* line 145, ../sass/components/wizard/_wizard.scss */
+.wizard__illustration {
+  border: 0px solid blue;
+}
+
+/* line 149, ../sass/components/wizard/_wizard.scss */
+.wizard__illustration img {
+  width: 100%;
+  height: 100%;
 }
 
 /* line 2, ../sass/components/wizard/_wizard_tip.scss */
@@ -3272,7 +3352,7 @@ input[type=checkbox]:checked {
   float: left;
   height: 20px;
   width: 20px;
-  background-image: url('../images/wizard/icon_info.png?1460651662');
+  background-image: url('../images/wizard/icon_info.png?1461001382');
   background-size: 100%;
 }
 
@@ -3283,20 +3363,20 @@ input[type=checkbox]:checked {
   width: 80%;
 }
 
-/* line 21, ../sass/components/wizard/_wizard_tip.scss */
+/* line 22, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_copy {
   padding: 0;
   margin: 0 0 20px;
   font-size: 0.929em;
 }
 @media all and (min-width: 960px) {
-  /* line 21, ../sass/components/wizard/_wizard_tip.scss */
+  /* line 22, ../sass/components/wizard/_wizard_tip.scss */
   .wizard__tip_copy {
     font-size: 1.333em;
   }
 }
 
-/* line 32, ../sass/components/wizard/_wizard_tip.scss */
+/* line 37, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3309,7 +3389,7 @@ input[type=checkbox]:checked {
   font-weight: 900;
 }
 
-/* line 50, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 51, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_1 {
   height: 500px;
   width: 270px;
@@ -3318,14 +3398,14 @@ input[type=checkbox]:checked {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460651662');
+  background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #82caba;
 }
 
-/* line 57, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 58, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_2 {
   height: 500px;
   width: 270px;
@@ -3334,14 +3414,14 @@ input[type=checkbox]:checked {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460651662');
+  background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #abc468;
 }
 
-/* line 62, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 63, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_3 {
   height: 500px;
   width: 270px;
@@ -3350,14 +3430,14 @@ input[type=checkbox]:checked {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460651662');
+  background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #ddbc54;
 }
 
-/* line 67, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 68, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_4 {
   height: 500px;
   width: 270px;
@@ -3366,14 +3446,14 @@ input[type=checkbox]:checked {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460651662');
+  background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #65b9e6;
 }
 
-/* line 73, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 74, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_5 {
   height: 500px;
   width: 270px;
@@ -3382,14 +3462,14 @@ input[type=checkbox]:checked {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460651662');
+  background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #eea73c;
 }
 
-/* line 80, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 81, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--simple {
   height: 500px;
   width: 270px;
@@ -3398,7 +3478,7 @@ input[type=checkbox]:checked {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1460651662');
+  background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3406,13 +3486,13 @@ input[type=checkbox]:checked {
   width: 60px;
 }
 @media all and (min-width: 720px) {
-  /* line 80, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 81, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--simple {
     width: 270px;
   }
 }
 
-/* line 92, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 93, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar-section {
   margin: 0;
   padding: 0;
@@ -3421,7 +3501,7 @@ input[type=checkbox]:checked {
   *zoom: 1;
 }
 
-/* line 101, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 102, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar-section--selected {
   margin: 0;
   padding: 0;
@@ -3430,47 +3510,47 @@ input[type=checkbox]:checked {
   *zoom: 1;
 }
 
-/* line 112, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 113, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar {
   width: 58px;
   height: 100px;
   float: left;
 }
 
-/* line 121, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 122, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1460651662');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   height: 100%;
 }
 
-/* line 132, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 133, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1460651662');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
   height: 100%;
 }
 
-/* line 144, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 145, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1460651662');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
   height: 100%;
 }
 
-/* line 160, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 161, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--city {
   width: 40px;
   height: 100px;
@@ -3483,7 +3563,7 @@ input[type=checkbox]:checked {
   display: none;
 }
 
-/* line 167, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 168, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--county {
   width: 40px;
   height: 100px;
@@ -3494,11 +3574,11 @@ input[type=checkbox]:checked {
   margin: 5px 0 0 10px;
   width: 45px;
   margin: 5px 0 0 5px;
-  background-image: url('../images/wizard/icon_pencil.png?1460651662');
+  background-image: url('../images/wizard/icon_pencil.png?1461001382');
   display: none;
 }
 
-/* line 176, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 177, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--state {
   width: 40px;
   height: 100px;
@@ -3507,10 +3587,10 @@ input[type=checkbox]:checked {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_percentage.png?1460651662');
+  background-image: url('../images/wizard/icon_percentage.png?1461001382');
 }
 
-/* line 181, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--federal {
   width: 40px;
   height: 100px;
@@ -3519,11 +3599,11 @@ input[type=checkbox]:checked {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_pound.png?1460651662');
+  background-image: url('../images/wizard/icon_pound.png?1461001382');
   display: none;
 }
 
-/* line 188, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 189, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--registration {
   width: 40px;
   height: 100px;
@@ -3532,11 +3612,11 @@ input[type=checkbox]:checked {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_map.png?1460651662');
+  background-image: url('../images/wizard/icon_map.png?1461001382');
   display: none;
 }
 
-/* line 196, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents {
   float: left;
   padding: 0 0 0 10px;
@@ -3544,7 +3624,7 @@ input[type=checkbox]:checked {
   width: 155px;
 }
 
-/* line 204, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 205, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--deselected {
   float: left;
   padding: 0 0 0 10px;
@@ -3553,13 +3633,13 @@ input[type=checkbox]:checked {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 204, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 205, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--deselected {
     display: block;
   }
 }
 
-/* line 216, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 217, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--selected {
   float: left;
   padding: 0 0 0 10px;
@@ -3568,13 +3648,13 @@ input[type=checkbox]:checked {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 216, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 217, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--selected {
     display: block;
   }
 }
 
-/* line 229, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 230, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_government {
   font-weight: 900;
   text-transform: uppercase;
@@ -3584,20 +3664,20 @@ input[type=checkbox]:checked {
   letter-spacing: 0.1px;
 }
 
-/* line 240, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_section_title {
   font-weight: 700;
   margin: 0 0 7px 0;
   padding: 0;
 }
 
-/* line 248, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 249, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_status_icons {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 252, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 253, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--incomplete {
   width: 15px;
   height: 15px;
@@ -3606,10 +3686,10 @@ input[type=checkbox]:checked {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1460651662');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461001382');
 }
 
-/* line 259, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 260, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--completed {
   width: 15px;
   height: 15px;
@@ -3618,10 +3698,10 @@ input[type=checkbox]:checked {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1460651662');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461001382');
 }
 
-/* line 266, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 267, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--selected {
   width: 15px;
   height: 15px;
@@ -3630,13 +3710,13 @@ input[type=checkbox]:checked {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1460651662');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461001382');
 }
 
-/* line 273, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 274, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1460651662');
+  background-image: url('../images/wizard/icon_close.png?1461001382');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -3669,7 +3749,7 @@ input[type=checkbox]:checked {
 .wizard__arrow-down-wrapper--disabled {
   border: 0px solid white;
   padding: 10px 10px 0 0;
-  background-image: url('../images/wizard/nav_hr_bar.png?1460651662');
+  background-image: url('../images/wizard/nav_hr_bar.png?1461001382');
   background-repeat: no-repeat;
   background-position: 23px 0;
 }
@@ -3685,7 +3765,7 @@ input[type=checkbox]:checked {
 
 /* line 37, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--disabled {
-  background-image: url('../images/wizard/arrow_down.png?1460651662');
+  background-image: url('../images/wizard/arrow_down.png?1461001382');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3696,7 +3776,7 @@ input[type=checkbox]:checked {
 
 /* line 48, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1460651662');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461001382');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3708,7 +3788,7 @@ input[type=checkbox]:checked {
 
 /* line 61, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1460651662');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461001382');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;

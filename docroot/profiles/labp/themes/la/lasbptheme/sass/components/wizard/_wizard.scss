@@ -2,17 +2,46 @@ $wizard_left_margin: 25px;
 .wizard {
   color: $wizard-text;
   font-family: Roboto, sans-serif;
-  background-color: $background-color-default;
+  background-color: $background-intro;
+}
+
+
+
+.homepage_panel__content_wrapper{
+  @include window_size(desktop){
+    width: $zen-grid-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.wizard_col_1{
+  border: 0px solid red;
+  width: 100%;
+  @include window_size(desktop){
+      width: 700px;
+  }
+}
+
+.wizard_col_2{
+  border: 0px solid red;
+  width: 30%;
+  @include window_size(desktop){
+      width: 260px;
+      border: 0px solid red;
+  }
 }
 .wizard__intro-screen--register-business {
-  background-color: $background-register-your-business;
+  background-color: $background-city-registration;
   height: 900px;
 }
 .wizard__content-block {
   display: inline-block;
-  border: 0 solid black;
-  width: 70%;
-  padding: 0 0 0 25px;
+  border: 0px solid black;
+
+  padding: 0 0 0 0;
+  padding: 0 25px 0 25px;
 }
 .wizard__header {
   font-weight: 700;
@@ -21,13 +50,36 @@ $wizard_left_margin: 25px;
   margin: 0 0 15px;
   padding: 25px 25px 0;
 }
-.wizard__header--intro {
+.wizard__header--title {
   font-weight: 700;
   font-size: 1em;
   border: 0;
   padding: 0;
   margin: 0 0 15px;
+  border: 0px solid red;
 }
+
+// larger title for the intro screen
+.wizard__header--title-government {
+  font-size: 0.857em;
+  text-transform: uppercase;
+  border: 0px solid red;
+  margin:0 0 2px 0;
+  padding: 0px;
+}
+
+
+.wizard__header--title-intro {
+  font-weight: 700;
+  font-size: 1em;
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px;
+  border: 0px solid red;
+  font-size: 1.357em;
+}
+
+
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -77,6 +129,27 @@ $wizard_left_margin: 25px;
   margin: 0 0 0 3px;
 }
 
+// used on the intro screen
 
+.wizard__intro_copy {
+  padding: 0;
+
+  margin: 0 60px 20px 20px;
+  font-size: 0.929em;
+  border:0px solid red;
+  @include window_size(desktop){
+      font-size: 1.357em;
+  }
+}
+
+.wizard__illustration{
+  border: 0px solid blue;
+}
+
+.wizard__illustration img{
+    width: 100%;
+    height:100%;
+
+}
 
 .wizard__intro-screen--name-business {}
