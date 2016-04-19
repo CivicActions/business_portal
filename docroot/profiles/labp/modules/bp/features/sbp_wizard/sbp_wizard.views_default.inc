@@ -199,7 +199,7 @@ function sbp_wizard_views_default_views() {
   $handler->display->display_options['fields']['field_confirmation_screen']['id'] = 'field_confirmation_screen';
   $handler->display->display_options['fields']['field_confirmation_screen']['table'] = 'field_data_field_confirmation_screen';
   $handler->display->display_options['fields']['field_confirmation_screen']['field'] = 'field_confirmation_screen';
-  /* Field: Taxonomy term: Color */
+  /* Field: Taxonomy term: Primary Color */
   $handler->display->display_options['fields']['field_color']['id'] = 'field_color';
   $handler->display->display_options['fields']['field_color']['table'] = 'field_data_field_color';
   $handler->display->display_options['fields']['field_color']['field'] = 'field_color';

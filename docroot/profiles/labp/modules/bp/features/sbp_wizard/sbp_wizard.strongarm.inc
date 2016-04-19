@@ -119,10 +119,10 @@ function sbp_wizard_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '5',
+          'weight' => '8',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '9',
         ),
         'name' => array(
           'weight' => '0',
