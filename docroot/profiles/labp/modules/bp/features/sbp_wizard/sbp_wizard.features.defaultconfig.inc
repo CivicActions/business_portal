@@ -564,7 +564,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
       ),
       'entity_type' => 'taxonomy_term',
       'field_name' => 'field_color',
-      'label' => 'Color',
+      'label' => 'Primary Color',
       'required' => 0,
       'settings' => array(
         'text_processing' => 0,
@@ -578,6 +578,249 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         ),
         'type' => 'text_textfield',
         'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-business_portal_wizard_sections-field_contextual_color'.
+  $fields['taxonomy_term-business_portal_wizard_sections-field_contextual_color'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_contextual_color',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'business_portal_wizard_sections',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Please enter the hexadecimal code for the contextual slide background color',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'plain_text',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => 4,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_contextual_color',
+      'label' => 'Contextual Color',
+      'required' => 1,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 3,
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-business_portal_wizard_sections-field_drawer_color'.
+  $fields['taxonomy_term-business_portal_wizard_sections-field_drawer_color'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_drawer_color',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => 0,
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'business_portal_wizard_sections',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'The background color for the drawer',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'plain_text',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => 5,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_drawer_color',
+      'label' => 'Drawer Color',
+      'required' => 1,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => 4,
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-business_portal_wizard_sections-field_illustration'.
+  $fields['taxonomy_term-business_portal_wizard_sections-field_illustration'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_illustration',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => 0,
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'business_portal_wizard_sections',
+      'deleted' => 0,
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+            'quickedit' => array(
+              'editor' => 'form',
+            ),
+          ),
+          'type' => 'image',
+          'weight' => 3,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_illustration',
+      'label' => 'Illustration',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'media',
+        'settings' => array(
+          'allowed_schemes' => array(
+            'oembed' => 0,
+            'public' => 'public',
+          ),
+          'allowed_types' => array(
+            'audio' => 0,
+            'document' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
+          'browser_plugins' => array(
+            'media_default--media_browser_1' => 'media_default--media_browser_1',
+            'media_default--media_browser_my_files' => 0,
+            'media_internet' => 0,
+            'upload' => 'upload',
+          ),
+        ),
+        'type' => 'media_generic',
+        'weight' => 5,
       ),
     ),
   );
@@ -660,7 +903,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 3,
+        'weight' => 6,
       ),
     ),
   );
@@ -729,7 +972,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 4,
+        'weight' => 7,
       ),
     ),
   );
@@ -737,13 +980,18 @@ function sbp_wizard_defaultconfig_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Button(s)');
-  t('Color');
   t('Comment');
+  t('Contextual Color');
   t('Description');
+  t('Drawer Color');
   t('Hex html color - #FFF or #000000');
   t('Icon');
+  t('Illustration');
   t('Jurisdiction');
+  t('Please enter the hexadecimal code for the contextual slide background color');
+  t('Primary Color');
   t('Section');
+  t('The background color for the drawer');
   t('Weight');
 
   return $fields;
