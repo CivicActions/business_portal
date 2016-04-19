@@ -55,3 +55,4 @@ dependencies[] = acsf
 ; LA custom modules
 dependencies[] = labp_service_center
 dependencies[] = labp_environment
+dependencies[] = labp_users
