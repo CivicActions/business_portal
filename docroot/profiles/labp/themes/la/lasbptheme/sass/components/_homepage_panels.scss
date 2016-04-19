@@ -1,5 +1,5 @@
 
-@mixin homepage_panel__icons--default($color:'transparent'){
+@mixin panel__icons--default($color:'transparent'){
   border: 0px solid red;
   background-color: $color;
   padding: 20px 25px 20px 25px;
@@ -19,7 +19,7 @@
 }
 
 
-@mixin homepage_panel__hr_thick($color) {
+@mixin panel__hr_thick($color) {
   height: 4px;
   max-width: 80px;
   background: $color;
@@ -28,7 +28,7 @@
   margin: 0;
 }
 
-@mixin homepage_panel__hr_thin($color) {
+@mixin panel__hr_thin($color) {
   height: 2px;
   max-width: 40px;
   background: $color;
@@ -38,9 +38,9 @@
 }
 
 
-@mixin homepage_panel__button--base{
+@mixin panel__button--base{
     @include border-radius(20px);
-    background-color:$homepage__panel--button_background;
+    background-color:$panel--button_background--yellow;
     padding: 8px 20px 8px 20px;
     font-weight: bold;
     display: inline-block;
@@ -58,8 +58,8 @@
 }
 
 //root container of all the panels
-.homepage_panel__intro{
-    @include homepage_panel__icons--default();
+.panel__intro{
+    @include panel__icons--default();
     @include window_size(desktop){
       padding: 0;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 
 
 
-.homepage_panel__intro_header{
+.panel__intro_header{
   color:$homepage__panel--dark-blue-copy;
   border: 0px solid red;
   font-family: Merriweather;
@@ -86,7 +86,7 @@
 
 }
 
-.homepage_panel__content_col_1{
+.panel__content_col_1{
 
       width:100%;
 
@@ -101,7 +101,7 @@
 
 
 
-.homepage_panel__content_col_2{
+.panel__content_col_2{
   display: none;
   @include clearfix;
 
@@ -118,14 +118,24 @@
 }
 
 
+.panel__icons--light_blue{
+  @include panel__icons--default($homepage__panel--bg-light-blue);
+  border: 0px solid red;
 
-
-.homepage_panel__icons--light_blue{
-  @include homepage_panel__icons--default($homepage__panel--bg-light-blue);
 }
 
-.homepage_panel__icons--light_grey{
-  @include homepage_panel__icons--default($homepage__panel__bg_light_grey);
+.panel__icons--light_grey{
+  @include panel__icons--default($homepage__panel__bg_light_grey);
+}
+
+.panel__icons--light_blue{
+  @include panel__icons--default($homepage__panel--bg-light-blue);
+  border: 0px solid red;
+}
+
+.panel__icons--light_grey{
+  @include panel__icons--default($homepage__panel__bg_light_grey);
+  border: 0px solid red;
 
     @include window_size(desktop){
   background-image: url("../images/panels/illustration_bottom_panel.png");
@@ -140,7 +150,7 @@
 
 
 
-.homepage_panel__content_wrapper{
+.panel__content_wrapper{
   @include window_size(desktop){
     width: $zen-grid-width;
     margin-left: auto;
@@ -151,7 +161,7 @@
 
 
 
-.homepage_panel__content_wrapper_50{
+.panel__content_wrapper_50{
 
       @include window_size(desktop){
         border: 0px solid red;
@@ -161,7 +171,7 @@
 
 
 
-.homepage_panel__intro_paragraph{
+.panel__intro_paragraph{
     font-size:1.286em;
     line-height: 1.2em;
     color:$dark_blue;
@@ -173,7 +183,7 @@
 
 }
 
-.homepage_panel__section{
+.panel__section{
   border: 0px solid red;
   @include window_size(tab-wide-up){
       width: 25%;
@@ -184,7 +194,7 @@
 }
 
 
-.homepage_panel__section--hide_on_mobile{
+.panel__section--hide_on_mobile{
   border: 0px solid red;
   display:none;
   @include window_size(tab-wide-up){
@@ -195,7 +205,7 @@
 }
 // Coming September 2016
 
-.homepage_panel__header{
+.panel__header{
   color:$homepage__panel--dark-blue-copy;
   border: 0px solid red;
   font-family: Merriweather;
@@ -212,39 +222,39 @@
 
 }
 
-.homepage_panel__header-line {
-  @include homepage_panel__hr_thick($wizard-hr);
+.panel__header-line {
+  @include panel__hr_thick($wizard-hr);
 }
 
 
-.homepage_panel__header-line--white {
-    @include homepage_panel__hr_thick($white);
+.panel__header-line--white {
+    @include panel__hr_thick($white);
 }
 
 
-.homepage_panel__header-line--light-blue {
-    @include homepage_panel__hr_thick($light-blue);
-}
-
-
-
-.homepage_panel__header-line_thin {
-  @include homepage_panel__hr_thin($wizard-hr);
-}
-
-
-.homepage_panel__header-line_thin--white {
-    @include homepage_panel__hr_thin($white);
-}
-
-
-.homepage_panel__header-line_thin--light-blue {
-    @include homepage_panel__hr_thin($light-blue);
+.panel__header-line--light-blue {
+    @include panel__hr_thick($light-blue);
 }
 
 
 
-.homepage_panel__icon{
+.panel__header-line_thin {
+  @include panel__hr_thin($wizard-hr);
+}
+
+
+.panel__header-line_thin--white {
+    @include panel__hr_thin($white);
+}
+
+
+.panel__header-line_thin--light-blue {
+    @include panel__hr_thin($light-blue);
+}
+
+
+
+.panel__icon{
     width: 65px;
     float: right;
     @include window_size(tab-wide-up){
@@ -257,7 +267,7 @@
 
 
 
-.homepage_panel__icon_header{
+.panel__icon_header{
   color:$homepage__panel--dark-blue-copy;
   font-family: Merriweather;
   font-weight: 700;
@@ -271,7 +281,7 @@
 }
 
 
-.homepage_panel__paragraph{
+.panel__paragraph{
   color:$homepage__panel--dark-blue-copy;
   border:0px solid red;
   width: 65%;
@@ -281,6 +291,6 @@
 }
 
 
-.homepage_pannel__button {
-  @include homepage_panel__button--base;
+.panel__button--yellow {
+  @include panel__button--base;
 }

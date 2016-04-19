@@ -179,13 +179,13 @@ input[type=checkbox]:checked{
 
 .sub_nav__button{
     @include border-radius(20px);
-    background-color:$homepage__panel--button_background;
+    background-color:$panel--button_background--yellow;
     padding: 8px 20px 8px 20px;
     font-weight: bold;
     display: inline-block;
     margin:0 0 30px 0;
     cursor: pointer;
-  
+
     @include window_size(desktop){
       display: none;
     }

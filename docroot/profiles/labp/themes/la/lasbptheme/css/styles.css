@@ -2810,14 +2810,14 @@ input[type=checkbox]:checked {
 
 /* Guide */
 /* line 61, ../sass/components/_homepage_panels.scss */
-.homepage_panel__intro {
+.panel__intro {
   border: 0px solid red;
   background-color: "transparent";
   padding: 20px 25px 20px 25px;
 }
 @media all and (min-width: 720px) {
   /* line 61, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__intro {
+  .panel__intro {
     padding: 50px 35px 50px 35px;
     overflow: hidden;
     *zoom: 1;
@@ -2825,7 +2825,7 @@ input[type=checkbox]:checked {
 }
 @media all and (min-width: 960px) {
   /* line 61, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__intro {
+  .panel__intro {
     padding: 75px 0 75px 0;
     overflow: hidden;
     *zoom: 1;
@@ -2833,7 +2833,7 @@ input[type=checkbox]:checked {
 }
 @media all and (min-width: 960px) {
   /* line 61, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__intro {
+  .panel__intro {
     padding: 0;
     background-repeat: no-repeat;
     background-position: top right;
@@ -2841,7 +2841,7 @@ input[type=checkbox]:checked {
 }
 
 /* line 72, ../sass/components/_homepage_panels.scss */
-.homepage_panel__intro_header {
+.panel__intro_header {
   color: #0F2940;
   border: 0px solid red;
   font-family: Merriweather;
@@ -2854,19 +2854,19 @@ input[type=checkbox]:checked {
 }
 @media all and (min-width: 720px) {
   /* line 72, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__intro_header {
+  .panel__intro_header {
     font-size: 2.571em;
     margin: 0 0 30px 0;
   }
 }
 
 /* line 89, ../sass/components/_homepage_panels.scss */
-.homepage_panel__content_col_1 {
+.panel__content_col_1 {
   width: 100%;
 }
 @media all and (min-width: 960px) {
   /* line 89, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__content_col_1 {
+  .panel__content_col_1 {
     padding: 75px 0 0 0;
     border: 0px solid green;
     width: 538px;
@@ -2875,14 +2875,14 @@ input[type=checkbox]:checked {
 }
 
 /* line 104, ../sass/components/_homepage_panels.scss */
-.homepage_panel__content_col_2 {
+.panel__content_col_2 {
   display: none;
   overflow: hidden;
   *zoom: 1;
 }
 @media all and (min-width: 960px) {
   /* line 104, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__content_col_2 {
+  .panel__content_col_2 {
     border: 0px solid green;
     width: 420px;
     height: 698px;
@@ -2892,23 +2892,24 @@ input[type=checkbox]:checked {
   }
 }
 
-/* line 123, ../sass/components/_homepage_panels.scss */
-.homepage_panel__icons--light_blue {
+/* line 121, ../sass/components/_homepage_panels.scss */
+.panel__icons--light_blue {
   border: 0px solid red;
   background-color: #88cff5;
   padding: 20px 25px 20px 25px;
+  border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 123, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__icons--light_blue {
+  /* line 121, ../sass/components/_homepage_panels.scss */
+  .panel__icons--light_blue {
     padding: 50px 35px 50px 35px;
     overflow: hidden;
     *zoom: 1;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 123, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__icons--light_blue {
+  /* line 121, ../sass/components/_homepage_panels.scss */
+  .panel__icons--light_blue {
     padding: 75px 0 75px 0;
     overflow: hidden;
     *zoom: 1;
@@ -2916,14 +2917,14 @@ input[type=checkbox]:checked {
 }
 
 /* line 127, ../sass/components/_homepage_panels.scss */
-.homepage_panel__icons--light_grey {
+.panel__icons--light_grey {
   border: 0px solid red;
   background-color: #f9fafa;
   padding: 20px 25px 20px 25px;
 }
 @media all and (min-width: 720px) {
   /* line 127, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__icons--light_grey {
+  .panel__icons--light_grey {
     padding: 50px 35px 50px 35px;
     overflow: hidden;
     *zoom: 1;
@@ -2931,15 +2932,63 @@ input[type=checkbox]:checked {
 }
 @media all and (min-width: 960px) {
   /* line 127, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__icons--light_grey {
+  .panel__icons--light_grey {
+    padding: 75px 0 75px 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+
+/* line 131, ../sass/components/_homepage_panels.scss */
+.panel__icons--light_blue {
+  border: 0px solid red;
+  background-color: #88cff5;
+  padding: 20px 25px 20px 25px;
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 131, ../sass/components/_homepage_panels.scss */
+  .panel__icons--light_blue {
+    padding: 50px 35px 50px 35px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 131, ../sass/components/_homepage_panels.scss */
+  .panel__icons--light_blue {
+    padding: 75px 0 75px 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+
+/* line 136, ../sass/components/_homepage_panels.scss */
+.panel__icons--light_grey {
+  border: 0px solid red;
+  background-color: #f9fafa;
+  padding: 20px 25px 20px 25px;
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 136, ../sass/components/_homepage_panels.scss */
+  .panel__icons--light_grey {
+    padding: 50px 35px 50px 35px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 136, ../sass/components/_homepage_panels.scss */
+  .panel__icons--light_grey {
     padding: 75px 0 75px 0;
     overflow: hidden;
     *zoom: 1;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 127, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__icons--light_grey {
+  /* line 136, ../sass/components/_homepage_panels.scss */
+  .panel__icons--light_grey {
     background-image: url("../images/panels/illustration_bottom_panel.png");
     background-repeat: no-repeat;
     background-position: top right;
@@ -2947,8 +2996,8 @@ input[type=checkbox]:checked {
 }
 
 @media all and (min-width: 960px) {
-  /* line 143, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__content_wrapper {
+  /* line 153, ../sass/components/_homepage_panels.scss */
+  .panel__content_wrapper {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -2956,55 +3005,55 @@ input[type=checkbox]:checked {
 }
 
 @media all and (min-width: 960px) {
-  /* line 154, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__content_wrapper_50 {
+  /* line 164, ../sass/components/_homepage_panels.scss */
+  .panel__content_wrapper_50 {
     border: 0px solid red;
     width: 80%;
   }
 }
 
-/* line 164, ../sass/components/_homepage_panels.scss */
-.homepage_panel__intro_paragraph {
+/* line 174, ../sass/components/_homepage_panels.scss */
+.panel__intro_paragraph {
   font-size: 1.286em;
   line-height: 1.2em;
   color: #0F2940;
 }
 @media all and (min-width: 720px) {
-  /* line 164, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__intro_paragraph {
+  /* line 174, ../sass/components/_homepage_panels.scss */
+  .panel__intro_paragraph {
     font-size: 1.571em;
     width: 90%;
   }
 }
 
-/* line 176, ../sass/components/_homepage_panels.scss */
-.homepage_panel__section {
+/* line 186, ../sass/components/_homepage_panels.scss */
+.panel__section {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 176, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__section {
+  /* line 186, ../sass/components/_homepage_panels.scss */
+  .panel__section {
     width: 25%;
     float: left;
   }
 }
 
-/* line 187, ../sass/components/_homepage_panels.scss */
-.homepage_panel__section--hide_on_mobile {
+/* line 197, ../sass/components/_homepage_panels.scss */
+.panel__section--hide_on_mobile {
   border: 0px solid red;
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 187, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__section--hide_on_mobile {
+  /* line 197, ../sass/components/_homepage_panels.scss */
+  .panel__section--hide_on_mobile {
     display: block;
     width: 25%;
     float: left;
   }
 }
 
-/* line 198, ../sass/components/_homepage_panels.scss */
-.homepage_panel__header {
+/* line 208, ../sass/components/_homepage_panels.scss */
+.panel__header {
   color: #0F2940;
   border: 0px solid red;
   font-family: Merriweather;
@@ -3016,15 +3065,15 @@ input[type=checkbox]:checked {
   width: 70%;
 }
 @media all and (min-width: 720px) {
-  /* line 198, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__header {
+  /* line 208, ../sass/components/_homepage_panels.scss */
+  .panel__header {
     font-size: 2.571em;
     margin: 0 0 30px 0;
   }
 }
 
-/* line 215, ../sass/components/_homepage_panels.scss */
-.homepage_panel__header-line {
+/* line 225, ../sass/components/_homepage_panels.scss */
+.panel__header-line {
   height: 4px;
   max-width: 80px;
   background: #0F2940;
@@ -3033,8 +3082,8 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 220, ../sass/components/_homepage_panels.scss */
-.homepage_panel__header-line--white {
+/* line 230, ../sass/components/_homepage_panels.scss */
+.panel__header-line--white {
   height: 4px;
   max-width: 80px;
   background: white;
@@ -3043,38 +3092,38 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 225, ../sass/components/_homepage_panels.scss */
-.homepage_panel__header-line--light-blue {
+/* line 235, ../sass/components/_homepage_panels.scss */
+.panel__header-line--light-blue {
   height: 4px;
   max-width: 80px;
   background: #6BC3F3;
-  display: block;
-  border: 0 none;
-  margin: 0;
-}
-
-/* line 231, ../sass/components/_homepage_panels.scss */
-.homepage_panel__header-line_thin {
-  height: 2px;
-  max-width: 40px;
-  background: #0F2940;
-  display: block;
-  border: 0 none;
-  margin: 0;
-}
-
-/* line 236, ../sass/components/_homepage_panels.scss */
-.homepage_panel__header-line_thin--white {
-  height: 2px;
-  max-width: 40px;
-  background: white;
   display: block;
   border: 0 none;
   margin: 0;
 }
 
 /* line 241, ../sass/components/_homepage_panels.scss */
-.homepage_panel__header-line_thin--light-blue {
+.panel__header-line_thin {
+  height: 2px;
+  max-width: 40px;
+  background: #0F2940;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 246, ../sass/components/_homepage_panels.scss */
+.panel__header-line_thin--white {
+  height: 2px;
+  max-width: 40px;
+  background: white;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 251, ../sass/components/_homepage_panels.scss */
+.panel__header-line_thin--light-blue {
   height: 2px;
   max-width: 40px;
   background: #6BC3F3;
@@ -3083,21 +3132,21 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 247, ../sass/components/_homepage_panels.scss */
-.homepage_panel__icon {
+/* line 257, ../sass/components/_homepage_panels.scss */
+.panel__icon {
   width: 65px;
   float: right;
 }
 @media all and (min-width: 720px) {
-  /* line 247, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__icon {
+  /* line 257, ../sass/components/_homepage_panels.scss */
+  .panel__icon {
     width: 134px;
     float: none;
   }
 }
 
-/* line 260, ../sass/components/_homepage_panels.scss */
-.homepage_panel__icon_header {
+/* line 270, ../sass/components/_homepage_panels.scss */
+.panel__icon_header {
   color: #0F2940;
   font-family: Merriweather;
   font-weight: 700;
@@ -3106,14 +3155,14 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 260, ../sass/components/_homepage_panels.scss */
-  .homepage_panel__icon_header {
+  /* line 270, ../sass/components/_homepage_panels.scss */
+  .panel__icon_header {
     font-size: 1.429em;
   }
 }
 
-/* line 274, ../sass/components/_homepage_panels.scss */
-.homepage_panel__paragraph {
+/* line 284, ../sass/components/_homepage_panels.scss */
+.panel__paragraph {
   color: #0F2940;
   border: 0px solid red;
   width: 65%;
@@ -3121,8 +3170,8 @@ input[type=checkbox]:checked {
   padding: 14px 0 25px 0;
 }
 
-/* line 284, ../sass/components/_homepage_panels.scss */
-.homepage_pannel__button {
+/* line 294, ../sass/components/_homepage_panels.scss */
+.panel__button--yellow {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
@@ -3136,8 +3185,8 @@ input[type=checkbox]:checked {
   *zoom: 1;
 }
 @media all and (min-width: 960px) {
-  /* line 284, ../sass/components/_homepage_panels.scss */
-  .homepage_pannel__button {
+  /* line 294, ../sass/components/_homepage_panels.scss */
+  .panel__button--yellow {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
