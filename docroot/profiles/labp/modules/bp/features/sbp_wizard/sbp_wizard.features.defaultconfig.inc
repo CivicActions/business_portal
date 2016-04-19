@@ -222,7 +222,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => 5,
+        'weight' => 6,
       ),
     ),
   );
@@ -305,18 +305,115 @@ function sbp_wizard_defaultconfig_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_description',
       'label' => 'Description',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'text_processing' => 0,
+        'text_processing' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => 3,
+        'weight' => 4,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-sbp_wizard_screen-field_screen_type'.
+  $fields['node-sbp_wizard_screen-field_screen_type'] = array(
+    'field_config' => array(
+      'active' => 1,
+      'cardinality' => 1,
+      'deleted' => 0,
+      'entity_types' => array(),
+      'field_name' => 'field_screen_type',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => 0,
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'start' => array(
+            'section' => 'section',
+          ),
+          'question' => 'question',
+          'contextual_help' => 'contextual help',
+          'address_lookup' => 'address lookup',
+          'confirmation' => 'confirmation',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => 0,
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'sbp_wizard_screen',
+      'default_value' => NULL,
+      'deleted' => 0,
+      'description' => 'Please select the type of screen',
+      'display' => array(
+        'alternate' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'quickedit' => array(
+              'editor' => 'form',
+            ),
+          ),
+          'type' => 'list_default',
+          'weight' => 8,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'thumbnail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_screen_type',
+      'label' => 'Screen Type',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => 1,
       ),
     ),
   );
@@ -415,96 +512,7 @@ function sbp_wizard_defaultconfig_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => 1,
-      ),
-    ),
-  );
-
-  // Exported field: 'node-sbp_wizard_screen-field_weight'.
-  $fields['node-sbp_wizard_screen-field_weight'] = array(
-    'field_config' => array(
-      'active' => 1,
-      'cardinality' => 1,
-      'deleted' => 0,
-      'entity_types' => array(),
-      'field_name' => 'field_weight',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'translatable' => 0,
-      'type' => 'number_integer',
-    ),
-    'field_instance' => array(
-      'bundle' => 'sbp_wizard_screen',
-      'default_value' => NULL,
-      'deleted' => 0,
-      'description' => '',
-      'display' => array(
-        'alternate' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'quickedit' => array(
-              'editor' => 'form',
-            ),
-            'scale' => 0,
-            'thousand_separator' => '',
-          ),
-          'type' => 'number_integer',
-          'weight' => 3,
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'json' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 4,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'thumbnail' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_weight',
-      'label' => 'Weight',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => 6,
+        'weight' => 2,
       ),
     ),
   );
@@ -989,10 +997,11 @@ function sbp_wizard_defaultconfig_field_default_fields() {
   t('Illustration');
   t('Jurisdiction');
   t('Please enter the hexadecimal code for the contextual slide background color');
+  t('Please select the type of screen');
   t('Primary Color');
+  t('Screen Type');
   t('Section');
   t('The background color for the drawer');
-  t('Weight');
 
   return $fields;
 }

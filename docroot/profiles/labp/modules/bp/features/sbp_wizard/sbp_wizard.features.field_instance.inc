@@ -71,7 +71,7 @@ function sbp_wizard_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_button_style',
     'label' => 'Style',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -212,77 +212,6 @@ function sbp_wizard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-sbp_wizard_screen-field_address_lookup'.
-  $field_instances['node-sbp_wizard_screen-field_address_lookup'] = array(
-    'bundle' => 'sbp_wizard_screen',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'list_default',
-        'weight' => 9,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'json' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_address_lookup',
-    'label' => 'Address Lookup',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-sbp_wizard_screen-field_button'.
   $field_instances['node-sbp_wizard_screen-field_button'] = array(
     'bundle' => 'sbp_wizard_screen',
@@ -349,79 +278,7 @@ function sbp_wizard_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 5,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-sbp_wizard_screen-field_confirmation_screen'.
-  $field_instances['node-sbp_wizard_screen-field_confirmation_screen'] = array(
-    'bundle' => 'sbp_wizard_screen',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'list_default',
-        'weight' => 8,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'json' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_confirmation_screen',
-    'label' => 'Confirmation Screen',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -477,27 +334,28 @@ function sbp_wizard_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_description',
     'label' => 'Description',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
-  // Exported field_instance: 'node-sbp_wizard_screen-field_screen_id'.
-  $field_instances['node-sbp_wizard_screen-field_screen_id'] = array(
+  // Exported field_instance: 'node-sbp_wizard_screen-field_screen_type'.
+  $field_instances['node-sbp_wizard_screen-field_screen_type'] = array(
     'bundle' => 'sbp_wizard_screen',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Please select the type of screen',
     'display' => array(
       'alternate' => array(
         'label' => 'above',
@@ -507,18 +365,14 @@ function sbp_wizard_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'number',
+        'module' => 'list',
         'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
           'quickedit' => array(
             'editor' => 'form',
           ),
-          'scale' => 0,
-          'thousand_separator' => '',
         ),
-        'type' => 'number_integer',
-        'weight' => 6,
+        'type' => 'list_default',
+        'weight' => 8,
       ),
       'featured' => array(
         'label' => 'above',
@@ -527,19 +381,9 @@ function sbp_wizard_field_default_field_instances() {
         'weight' => 0,
       ),
       'json' => array(
-        'label' => 'hidden',
-        'module' => 'services_views',
-        'settings' => array(
-          'data_element_key' => 'screen_id',
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-          'skip_empty_values' => 1,
-          'skip_safe' => 0,
-          'skip_text_format' => 1,
-          'term_name' => 1,
-        ),
-        'type' => 'services',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -556,22 +400,18 @@ function sbp_wizard_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_screen_id',
-    'label' => 'Screen ID',
-    'required' => 0,
+    'field_name' => 'field_screen_type',
+    'label' => 'Screen Type',
+    'required' => 1,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'number',
+      'active' => 1,
+      'module' => 'options',
       'settings' => array(),
-      'type' => 'number',
-      'weight' => 0,
+      'type' => 'options_select',
+      'weight' => 1,
     ),
   );
 
@@ -636,7 +476,7 @@ function sbp_wizard_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -704,80 +544,7 @@ function sbp_wizard_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-sbp_wizard_screen-field_weight'.
-  $field_instances['node-sbp_wizard_screen-field_weight'] = array(
-    'bundle' => 'sbp_wizard_screen',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'alternate' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-          'scale' => 0,
-          'thousand_separator' => '',
-        ),
-        'type' => 'number_integer',
-        'weight' => 3,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'json' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'thumbnail' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_weight',
-    'label' => 'Weight',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -1082,12 +849,10 @@ function sbp_wizard_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Address Lookup');
   t('Button Result Text');
   t('Button Title');
   t('Button(s)');
   t('Comment');
-  t('Confirmation Screen');
   t('Contextual Color');
   t('Description');
   t('Destination Screen');
@@ -1097,14 +862,14 @@ function sbp_wizard_field_default_field_instances() {
   t('Illustration');
   t('Jurisdiction');
   t('Please enter the hexadecimal code for the contextual slide background color');
+  t('Please select the type of screen');
   t('Primary Color');
-  t('Screen ID');
+  t('Screen Type');
   t('Section');
   t('Style');
   t('Text displayed at end of wizard.');
   t('The background color for the drawer');
   t('Tip');
-  t('Weight');
 
   return $field_instances;
 }

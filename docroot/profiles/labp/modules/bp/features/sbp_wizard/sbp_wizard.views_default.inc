@@ -55,16 +55,6 @@ function sbp_wizard_views_default_views() {
     'skip_empty_values' => 0,
     'term_name' => 1,
   );
-  /* Field: Content: Screen ID */
-  $handler->display->display_options['fields']['field_screen_id']['id'] = 'field_screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['table'] = 'field_data_field_screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['field'] = 'field_screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['label'] = 'screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_screen_id']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
-  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -93,10 +83,6 @@ function sbp_wizard_views_default_views() {
   );
   $handler->display->display_options['fields']['field_button']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_button']['multi_type'] = 'ul';
-  /* Field: Content: Confirmation Screen */
-  $handler->display->display_options['fields']['field_confirmation_screen']['id'] = 'field_confirmation_screen';
-  $handler->display->display_options['fields']['field_confirmation_screen']['table'] = 'field_data_field_confirmation_screen';
-  $handler->display->display_options['fields']['field_confirmation_screen']['field'] = 'field_confirmation_screen';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -157,16 +143,12 @@ function sbp_wizard_views_default_views() {
     'skip_empty_values' => 0,
     'term_name' => 1,
   );
-  /* Field: Content: Screen ID */
-  $handler->display->display_options['fields']['field_screen_id']['id'] = 'field_screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['table'] = 'field_data_field_screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['field'] = 'field_screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['label'] = 'screen_id';
-  $handler->display->display_options['fields']['field_screen_id']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_screen_id']['settings'] = array(
-    'thousand_separator' => '',
-    'prefix_suffix' => 1,
-  );
+  /* Field: Content: Screen Type */
+  $handler->display->display_options['fields']['field_screen_type']['id'] = 'field_screen_type';
+  $handler->display->display_options['fields']['field_screen_type']['table'] = 'field_data_field_screen_type';
+  $handler->display->display_options['fields']['field_screen_type']['field'] = 'field_screen_type';
+  $handler->display->display_options['fields']['field_screen_type']['label'] = 'screen-type';
+  $handler->display->display_options['fields']['field_screen_type']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -195,10 +177,6 @@ function sbp_wizard_views_default_views() {
   );
   $handler->display->display_options['fields']['field_button']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_button']['multi_type'] = 'ul';
-  /* Field: Content: Confirmation Screen */
-  $handler->display->display_options['fields']['field_confirmation_screen']['id'] = 'field_confirmation_screen';
-  $handler->display->display_options['fields']['field_confirmation_screen']['table'] = 'field_data_field_confirmation_screen';
-  $handler->display->display_options['fields']['field_confirmation_screen']['field'] = 'field_confirmation_screen';
   /* Field: Taxonomy term: Primary Color */
   $handler->display->display_options['fields']['field_color']['id'] = 'field_color';
   $handler->display->display_options['fields']['field_color']['table'] = 'field_data_field_color';
@@ -209,6 +187,31 @@ function sbp_wizard_views_default_views() {
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['relationship'] = 'field_section_tid';
+  /* Field: Taxonomy term: Contextual Color */
+  $handler->display->display_options['fields']['field_contextual_color']['id'] = 'field_contextual_color';
+  $handler->display->display_options['fields']['field_contextual_color']['table'] = 'field_data_field_contextual_color';
+  $handler->display->display_options['fields']['field_contextual_color']['field'] = 'field_contextual_color';
+  $handler->display->display_options['fields']['field_contextual_color']['relationship'] = 'field_section_tid';
+  /* Field: Taxonomy term: Drawer Color */
+  $handler->display->display_options['fields']['field_drawer_color']['id'] = 'field_drawer_color';
+  $handler->display->display_options['fields']['field_drawer_color']['table'] = 'field_data_field_drawer_color';
+  $handler->display->display_options['fields']['field_drawer_color']['field'] = 'field_drawer_color';
+  $handler->display->display_options['fields']['field_drawer_color']['relationship'] = 'field_section_tid';
+  $handler->display->display_options['fields']['field_drawer_color']['label'] = 'drawer-color';
+  $handler->display->display_options['fields']['field_drawer_color']['element_label_colon'] = FALSE;
+  /* Field: Taxonomy term: Illustration */
+  $handler->display->display_options['fields']['field_illustration']['id'] = 'field_illustration';
+  $handler->display->display_options['fields']['field_illustration']['table'] = 'field_data_field_illustration';
+  $handler->display->display_options['fields']['field_illustration']['field'] = 'field_illustration';
+  $handler->display->display_options['fields']['field_illustration']['relationship'] = 'field_section_tid';
+  $handler->display->display_options['fields']['field_illustration']['label'] = 'illustration';
+  $handler->display->display_options['fields']['field_illustration']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_illustration']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_illustration']['type'] = 'file_image_file_url_plain';
+  $handler->display->display_options['fields']['field_illustration']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   $handler->display->display_options['path'] = 'business-portal-wizard';
   $export['sbp_wizard'] = $view;
 
