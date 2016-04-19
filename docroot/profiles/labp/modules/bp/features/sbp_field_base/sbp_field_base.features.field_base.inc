@@ -25,31 +25,6 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_address_lookup'.
-  $field_bases['field_address_lookup'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_address_lookup',
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => '',
-        1 => '',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
   // Exported field_base: 'field_addresses'.
   $field_bases['field_addresses'] = array(
     'active' => 1,
@@ -288,6 +263,7 @@ function sbp_field_base_field_default_field_bases() {
       'allowed_values' => array(
         'button' => 'Button',
         'link' => 'Link',
+        'next' => 'Next',
       ),
       'allowed_values_function' => '',
     ),
@@ -384,31 +360,6 @@ function sbp_field_base_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
-  );
-
-  // Exported field_base: 'field_confirmation_screen'.
-  $field_bases['field_confirmation_screen'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_confirmation_screen',
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => '',
-        1 => '',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
   );
 
   // Exported field_base: 'field_content_components'.
@@ -1425,19 +1376,34 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_screen_id'.
-  $field_bases['field_screen_id'] = array(
+  // Exported field_base: 'field_screen_type'.
+  $field_bases['field_screen_type'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_screen_id',
-    'indexes' => array(),
+    'field_name' => 'field_screen_type',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
     'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'start' => array(
+          'section' => 'section',
+        ),
+        'question' => 'question',
+        'contextual_help' => 'contextual help',
+        'address_lookup' => 'address lookup',
+        'confirmation' => 'confirmation',
+      ),
+      'allowed_values_function' => '',
+    ),
     'translatable' => 0,
-    'type' => 'number_integer',
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_secondary_feature'.
@@ -1652,21 +1618,6 @@ function sbp_field_base_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_weight'.
-  $field_bases['field_weight'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_weight',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_width'.
