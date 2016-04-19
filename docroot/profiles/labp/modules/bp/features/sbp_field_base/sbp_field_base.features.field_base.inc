@@ -1392,9 +1392,8 @@ function sbp_field_base_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'start' => array(
-          'section' => 'section',
-        ),
+        'start' => 'start',
+        'section' => 'section',
         'question' => 'question',
         'contextual_help' => 'contextual help',
         'address_lookup' => 'address lookup',
