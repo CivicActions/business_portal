@@ -30,6 +30,7 @@ namespace.collections.Screens = Backbone.Collection.extend({
   next: function(bid) {
     var m = this.find({current: true}), nm;
     m.set({current: false});
+    console.log(m);
     // New model nm
     nm = this.find({
       Nid: m.get("buttons")[bid.charAt(bid.length - 1)]["Destination Screen"]["target_id"]

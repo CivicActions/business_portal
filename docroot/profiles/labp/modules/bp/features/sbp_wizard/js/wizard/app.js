@@ -3,53 +3,55 @@ var namespace = namespace || {};
 
 (function($) {
 
-  ///////////////////////////////////////////
-  // Create backbone collection "screens". //
-  ///////////////////////////////////////////
+  $( document ).ready(function() {
 
-namespace.collections.screens = new namespace.collections.Screens();
+    ///////////////////////////////////////////
+    // Create backbone collection "screens". //
+    ///////////////////////////////////////////
 
-namespace.collections.screens.fetch({
+    namespace.collections.screens = new namespace.collections.Screens();
 
-  async: false,
+    namespace.collections.screens.fetch({
 
-  success: function(data) {
+      async: false,
 
-    var m =  namespace.collections.screens.find({"screen-type": "start"}, this);
+      success: function(data) {
 
-    if (m === undefined) {
-      console.log("APP ERROR: You will need a start screen defined.");
-      return;
-    }
+        var m =  namespace.collections.screens.find({"screen-type": "start"}, this);
 
-    // Initialize the Wizard for rendering with the first model.
-    namespace.views.wizard = new namespace.views.Wizard({
-      model: m
+        if (m === undefined) {
+          console.log("APP ERROR: You will need a start screen defined.");
+          return;
+        }
+
+        namespace.controller.chosen.push(m.get("Nid"));
+
+        // Initialize the Wizard for rendering with the first model.
+        namespace.views.wizard = new namespace.views.Wizard({
+          model: m
+        });
+
+        namespace.views.wizard.model.set({
+          current: true,
+          first: true,
+          chosen: true});
+
+        // Add sections models to the sections collection.
+        _.each(data.models, function(screen) {
+          var section = new namespace.models.Section({id: screen.get("section").tid, title: screen.get("Name")});
+          namespace.collections.sections.add(section);
+        });
+
+        // Initialize the Progress bar and progress draw.
+        new namespace.views.ProgressBar().render().el;
+        new namespace.views.ProgressDrawer().render().el;
+
+      },
+
+      error: function(collection, response, options) {
+        console.log("Fetch error: ")
+      }
+
     });
-
-    namespace.views.wizard.model.set({
-      current: true,
-      first: true,
-      chosen: true});
-
-    // Add sections models to the sections collection.
-    _.each(data.models, function(screen) {
-     var section = new namespace.models.Section({id: screen.get("section").tid, title: screen.get("Name")});
-      namespace.collections.sections.add(section);
-    });
-
-    // Initialize the Progress bar and progress draw.
-    new namespace.views.ProgressBar().render().el;
-    new namespace.views.ProgressDrawer().render().el;
-
-    // Initialize nav.
-    new namespace.views.Nav({});
-  },
-
-  error: function(collection, response, options) {
-    console.log("Fetch error: ")
-  }
-
-});
-
+  });
 })(jQuery);

@@ -20,20 +20,11 @@ namespace.models.Screen = Backbone.Model.extend({
   },
 
   initialize: function() {
-
     this.on('change:current', function(){
-
-      namespace.views.wizard.remove();
-      // Initialize wizard again.
-      console.log("change event");
+      namespace.views.wizard.render();
       Backbone.trigger("current:update");
-      $(".wizard__content-block").html(namespace.views.wizard.render().el);
-
     });
-
   },
-
-
 });
 
 

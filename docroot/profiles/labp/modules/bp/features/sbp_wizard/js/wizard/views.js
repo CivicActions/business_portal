@@ -9,6 +9,7 @@ _.templateSettings = {
 
 
 (function($) {
+  $( document ).ready(function() {
 
 ////////////////
 // Controller //
@@ -32,29 +33,39 @@ namespace.controller = {
 ////////////
 
 namespace.views.Wizard = Backbone.View.extend({
-
-  tagName: 'div',
+  el: ".wizard__content-block",
+  className: "wiz",
 
   screenTemplate: _.template('<div class="wizard__header">{{section.tid}} / {{Name}}</div><div class="wizard__header-line" /> <h1 class="wizard__question">{{ title }}</h1> <div class="wizard__tip">{{Description}}</div>'),
 
   render: function() {
 
-    if (this.model.get("Confirmation Screen") === "1") {
-      var resultsView = new namespace.views.ResultsView(
-        { collection: this.collection}
-      );
-      Backbone.trigger("buttonstate:deselected");
-      return true;
-    } else {
-      console.log(this.$el);
+    $("#wizard").css("background", this.model.get("Primary Color"));
+
+    switch (this.model.get("screen-type")) {
+    case "start":
+      console.log("APP: Start screen");
       this.$el.html(this.screenTemplate(this.model.toJSON()));
-      $("#wizard").css("background", this.model.get("Color"));
-        var buttonsView = new namespace.views.Buttons({ model: this.model });
-        buttonsView.render();
-      }
+      new namespace.views.NavNext();
+      break;
+    case "section":
+//     this.$el.find("h1").remove();
+      console.log("APP: Section screen");
+     this.$el.html(this.screenTemplate(this.model.toJSON()));
+    new namespace.views.Nav();
+      break;
+    default:
+      console.log("APP: No screen type defined");
+      break;
+    }
+
+    // Initialize nav.
+
     return this;
   }
+
 });
+
 
 /////////////
 // Buttons //
@@ -125,6 +136,10 @@ namespace.views.Button = Backbone.View.extend({
 namespace.views.Nav = Backbone.View.extend({
   el: ".wizard__nav",
 
+  initialize: function() {
+    this.$el.find(".wizard__arrow-up").show();
+  },
+
   events:  {
     "click .wizard__arrow-up": "backArrowClick",
     "click .wizard__arrow-down": "forwardArrowClick"
@@ -143,6 +158,29 @@ namespace.views.Nav = Backbone.View.extend({
   }
 
 });
+
+//////////////
+// Nav Next //
+//////////////
+
+namespace.views.NavNext = Backbone.View.extend({
+  el: ".wizard__nav",
+
+  initialize: function() {
+    this.$el.find(".wizard__arrow-up").hide();
+  },
+  events:  {
+    "click .wizard__arrow-down": "forwardArrowClick"
+  },
+
+  forwardArrowClick: function(event) {
+    namespace.controller.bid = "button-id-0";
+    namespace.collections.screens.next(namespace.controller.bid);
+    event.preventDefault();
+  }
+
+});
+
 
 
 ////////////////////////
@@ -308,5 +346,7 @@ namespace.views.SectionStepItem = Backbone.View.extend({
     return this;
   }
 });
+
+  });
 
 })(jQuery);
