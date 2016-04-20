@@ -1,3 +1,4 @@
+
 var namespace = namespace || {};
 
 (function($) {
@@ -10,11 +11,20 @@ namespace.collections.screens = new namespace.collections.Screens();
 
 namespace.collections.screens.fetch({
 
+  async: false,
+
   success: function(data) {
+
+    var m =  namespace.collections.screens.find({"screen-type": "start"}, this);
+
+    if (m === undefined) {
+      console.log("APP ERROR: You will need a start screen defined.");
+      return;
+    }
 
     // Initialize the Wizard for rendering with the first model.
     namespace.views.wizard = new namespace.views.Wizard({
-      model: namespace.collections.screens.find({Nid: "19"}, this)
+      model: m
     });
 
     namespace.views.wizard.model.set({
@@ -34,8 +44,12 @@ namespace.collections.screens.fetch({
 
     // Initialize nav.
     new namespace.views.Nav({});
+  },
 
+  error: function(collection, response, options) {
+    console.log("Fetch error: ")
   }
+
 });
 
 })(jQuery);
