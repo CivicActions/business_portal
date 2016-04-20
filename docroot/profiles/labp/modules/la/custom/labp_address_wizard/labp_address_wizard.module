@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * labp_address_wizard.module
+ * 
+ * Adds Neighborhood Info address lookup to Wizard.
+ */
+
+include_once 'inc/address_form.inc';
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * Add the address form to the sbp_wizard view
+ *
+ */
+function labp_address_wizard_views_pre_render(&$view) {
+  $results = $view->result;
+  foreach ($results as $key => $result) {
+    if ($view->name == 'sbp_wizard') {
+      if($result->field_field_screen_type){
+        if($result->field_field_screen_type[0]['raw']['value'] == 'address_lookup'){
+          if($result->field_field_description[0]['rendered']['#markup']){
+            $output = $result->field_field_description[0]['rendered']['#markup'];
+          }
+          $output .= drupal_render(drupal_get_form('labp_address_wizard_address_input'));
+          $result->field_field_description[0]['rendered']['#markup'] = $output;
+        }
+      }
+    }    
+  }
+  return $view;
+}
