@@ -5,39 +5,6 @@
  */
 
 /**
- * Address input form.
-function labp_address_wizard_address_input($form, &$form_state) {
-  $form['box'] = array(
-    '#type' => 'markup',
-    '#prefix' => '<div id="box">',
-    '#suffix' => '</div>',
-    '#markup' => '<h1>Initial markup for box</h1>',
-  );
-
-  $form['submit'] = array(
-    '#type' => 'submit',
-    '#ajax' => array(
-      'callback' => 'ajax_example_submit_driven_callback',
-      'wrapper' => 'box',
-    ),
-    '#value' => t('Submit'),
-  );
-
-  return $form;
-}
- */
-
-function ajax_example_submit_driven_callback($form, $form_state) {
-  // In most cases, it is recomended that you put this logic in form generation
-  // rather than the callback. Submit driven forms are an exception, because
-  // you may not want to return the form at all.
-  $element = $form['box'];
-  $element['#markup'] = "Clicked submit ({$form_state['values']['op']}): " . date('c');
-  
-  return $element;
-}
-
-/**
  * Returns the render array for the form.
  */
 function labp_address_wizard_address_input($form, &$form_state) {
