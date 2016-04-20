@@ -3202,7 +3202,6 @@ input[type=checkbox]:checked {
   font-family: Roboto, sans-serif;
   margin: 55px 0 0 0;
   border: 0px solid green;
-  background-color: #6BC3F3;
   border: 0px solid green;
   overflow: hidden;
   *zoom: 1;
@@ -3366,12 +3365,29 @@ input[type=checkbox]:checked {
   }
 }
 
-/* line 155, ../sass/components/wizard/_wizard.scss */
+/* line 150, ../sass/components/wizard/_wizard.scss */
+.wizard__question--help {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 15px 0 20px 0;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 150, ../sass/components/wizard/_wizard.scss */
+  .wizard__question--help {
+    font-size: 2em;
+  }
+}
+
+/* line 164, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0 solid white;
 }
 
-/* line 159, ../sass/components/wizard/_wizard.scss */
+/* line 168, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3384,13 +3400,13 @@ input[type=checkbox]:checked {
   cursor: pointer;
 }
 
-/* line 162, ../sass/components/wizard/_wizard.scss */
+/* line 171, ../sass/components/wizard/_wizard.scss */
 .wizard__button a {
   color: #0F2940;
   text-decoration: none;
 }
 
-/* line 166, ../sass/components/wizard/_wizard.scss */
+/* line 175, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3405,19 +3421,19 @@ input[type=checkbox]:checked {
   padding: 8px 25px 8px 35px;
 }
 
-/* line 171, ../sass/components/wizard/_wizard.scss */
+/* line 180, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 175, ../sass/components/wizard/_wizard.scss */
+/* line 184, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 182, ../sass/components/wizard/_wizard.scss */
+/* line 191, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   width: 70%;
@@ -3426,14 +3442,14 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 182, ../sass/components/wizard/_wizard.scss */
+  /* line 191, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 182, ../sass/components/wizard/_wizard.scss */
+  /* line 191, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 80%;
     font-size: 1.357em;
@@ -3441,22 +3457,54 @@ input[type=checkbox]:checked {
   }
 }
 
-/* line 199, ../sass/components/wizard/_wizard.scss */
+/* line 207, ../sass/components/wizard/_wizard.scss */
+.wizard__icon {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin: 15px 20px 20px 0;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 207, ../sass/components/wizard/_wizard.scss */
+  .wizard__icon {
+    float: left;
+  }
+}
+
+/* line 217, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 199, ../sass/components/wizard/_wizard.scss */
+  /* line 217, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
-    width: 95%;
+    width: 90%;
   }
 }
 
-/* line 208, ../sass/components/wizard/_wizard.scss */
+/* line 226, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
+}
+
+/* line 232, ../sass/components/wizard/_wizard.scss */
+.wizard__help_content {
+  border: 0px solid red;
+  width: 85%;
+  margin: 20px 0 0 0;
+}
+
+/* line 238, ../sass/components/wizard/_wizard.scss */
+.wizard__help_hr {
+  height: 2px;
+  max-width: 80px;
+  background: #0F2940;
+  display: block;
+  border: 0 none;
+  margin: 0;
 }
 
 /* line 2, ../sass/components/wizard/_wizard_tip.scss */

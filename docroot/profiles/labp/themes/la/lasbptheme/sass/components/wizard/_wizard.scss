@@ -4,7 +4,7 @@ $wizard_left_margin: 25px;
   font-family: Roboto, sans-serif;
   margin:55px 0 0 0;
   border: 0px solid green;
-  background-color: $background-intro;
+
     border: 0px solid green;
     @include clearfix;
 
@@ -145,12 +145,21 @@ $wizard_left_margin: 25px;
   @include window_size(desktop){
           font-size: 2.571em;
   }
-
-
-
-
-
 }
+
+.wizard__question--help{
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 15px 0 20px 0;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+  @include window_size(desktop){
+          font-size: 2em;
+  }
+}
+
 
 .wizard__buttons {
   border: 0 solid white;
@@ -195,13 +204,22 @@ $wizard_left_margin: 25px;
       margin: 20px 20px 20px 0;
   }
 }
-
+.wizard__icon{
+    float: right;
+    width:40px;
+    height:40px;
+    margin: 15px 20px 20px 0;
+    border: 0px solid red;
+    @include window_size(desktop){
+        float: left;
+    }
+}
 .wizard__illustration{
   border: 0px solid blue;
 
   width: 100%;
   @include window_size(desktop){
-      width: 95%;
+      width: 90%;
   }
 }
 
@@ -211,4 +229,19 @@ $wizard_left_margin: 25px;
 
 }
 
+.wizard__help_content{
+    border: 0px solid red;
+    width: 85%;
+    margin:20px 0 0 0;
+}
+
+.wizard__help_hr{
+    height: 2px;
+    max-width: 80px;
+    background: $dark_blue;
+    display: block;
+    border: 0 none;
+    margin: 0;
+
+}
 .wizard__intro-screen--name-business {}
