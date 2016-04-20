@@ -340,9 +340,8 @@ function sbp_wizard_defaultconfig_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'start' => array(
-            'section' => 'section',
-          ),
+          'start' => 'start',
+          'section' => 'section',
           'question' => 'question',
           'contextual_help' => 'contextual help',
           'address_lookup' => 'address lookup',
