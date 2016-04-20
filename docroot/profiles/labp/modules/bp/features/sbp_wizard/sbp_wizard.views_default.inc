@@ -212,6 +212,19 @@ function sbp_wizard_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
+  /* Field: Field: Icon */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['relationship'] = 'field_section_tid';
+  $handler->display->display_options['fields']['field_image']['label'] = 'icon';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['type'] = 'file_image_file_url_plain';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   $handler->display->display_options['path'] = 'business-portal-wizard';
   $export['sbp_wizard'] = $view;
 
