@@ -1,10 +1,16 @@
 // TIP section
 .wizard__tip {
-  margin: 20px 0 0 0;
+  margin: 20px 0 20px 0;
+
 
 
 }
 
+.wizard__tip_content {
+
+
+
+}
 .wizard__tip_icon {
   float: left;
   height: 20px;
@@ -15,13 +21,14 @@
 .wizard__tip_content {
   float: left;
   margin: 0 0 0 6px;
-  width: 80%;
+  width: 70%;
+
 
 }
 
 .wizard__tip_copy {
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
   font-size: 0.929em;
 
   @include window_size(desktop){
@@ -39,7 +46,9 @@
   border: 2px solid $dark_blue;
   font-size: 0.786em;
   padding: 6px 15px;
-  margin: 0;
+  margin: 0 0 20px 0;
   letter-spacing: 0.5px;
   font-weight: 900;
+  display: inline-block;
+
 }

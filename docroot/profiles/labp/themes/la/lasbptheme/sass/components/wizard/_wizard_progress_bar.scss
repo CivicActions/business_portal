@@ -16,6 +16,10 @@
   background-size:12px;
   background-position: 24px 12px;
   background-color:$color;
+  @include window_size(desktop){
+            margin: 40px 0 0 0;
+
+  }
 }
 
 
@@ -83,8 +87,9 @@
   width: 60px;
 
 
-  @include window_size(tab-wide-up){
+  @include window_size(desktop){
       width: 270px;
+
   }
 
 }

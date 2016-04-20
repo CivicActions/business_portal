@@ -2,25 +2,41 @@
   display: inline-block;
   width: 100%;
   float: left;
-  margin:30px 0 0 0;
-
+  margin:10px 0 0 0;
+  border:0px solid red;
+  @include window_size(desktop){
+        width:95%;
+  }
 }
 .wizard__arrow-up {
   background-image: image-url("wizard/arrow_up.png");
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
+  border: 0px solid red;
+  width: 24px;
+  height: 25px;
+  display: block;
+  @include window_size(desktop){
+       margin: 0 10px 10px 0;
+
+  }
+
+}
+
+.wizard__arrow-down--disabled {
+  background-image: image-url("wizard/arrow_down.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 0 0 24px;
   width: 24px;
   height: 25px;
 
   display: block;
-}
-.wizard__arrow-down-wrapper--disabled{
-  border: 0px solid white;
-  padding: 10px 10px 0 0;
-    background-image: image-url("wizard/nav_hr_bar.png");
-    background-repeat: no-repeat;
-    background-position: 23px 0;
+  @include window_size(desktop){
+       margin: 0 0 0 0;
+
+  }
 
 }
 
@@ -33,17 +49,27 @@
 }
 
 
+.wizard__arrow-down-wrapper--disabled{
+  border: 0px solid white;
+  padding: 10px 10px 0 0;
+    background-image: image-url("wizard/nav_hr_bar.png");
+    background-repeat: no-repeat;
+    background-position: 23px 0;
+    @include window_size(desktop){
+        
+        background-image: image-url("wizard/nav_hr_bar.png");
+        background-position: 0 0;
+        background-repeat:repeat-x;
 
-.wizard__arrow-down--disabled {
-  background-image: image-url("wizard/arrow_down.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0 0 0 24px;
-  width: 24px;
-  height: 25px;
+    }
 
-  display: block;
 }
+
+
+
+
+
+
 
 .wizard__arrow-down--enabled {
   background-image: image-url("wizard/arrow_down_enabled.png");

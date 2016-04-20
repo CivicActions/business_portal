@@ -2,12 +2,16 @@ $wizard_left_margin: 25px;
 .wizard {
   color: $wizard-text;
   font-family: Roboto, sans-serif;
+  margin:55px 0 0 0;
+  border: 0px solid green;
   background-color: $background-intro;
+    border: 0px solid green;
+    @include clearfix;
+
 }
 
-
-
 .homepage_panel__content_wrapper{
+
   @include window_size(desktop){
     width: $zen-grid-width;
     margin-left: auto;
@@ -15,41 +19,68 @@ $wizard_left_margin: 25px;
   }
 }
 
-
-.wizard_col_1{
+.wizard__col_1{
   border: 0px solid red;
   width: 100%;
+  float: left;
+
   @include window_size(desktop){
       width: 700px;
-  }
-}
-
-.wizard_col_2{
-  border: 0px solid red;
-  width: 30%;
-  @include window_size(desktop){
-      width: 260px;
       border: 0px solid red;
   }
 }
+
+.wizard__col_2{
+  border: 0px solid blue;
+  width: 30%;
+  float: left;
+  position: absolute;
+  right:0;
+  @include window_size(desktop){
+      width: 250px;
+      border: 0px solid blue;
+      position: relative;
+
+  }
+}
+
 .wizard__intro-screen--register-business {
   background-color: $background-city-registration;
   height: 900px;
 }
+
 .wizard__content-block {
   display: inline-block;
   border: 0px solid black;
-
-  padding: 0 0 0 0;
+  width: 95%;
   padding: 0 25px 0 25px;
+  @include window_size(desktop){
+      padding: 0;
+  }
+
 }
+
+.wizard__intro-block {
+  display: inline-block;
+  border: 0px solid black;
+
+  padding: 0;
+}
+
+
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
   padding: 0;
-  margin: 0 0 15px;
-  padding: 25px 25px 0;
+  margin: 0 0 20px 0;
+  padding: 10px 25px 0 25px;
+  border: 0px solid red;
+  @include window_size(desktop){
+        padding: 35px 25px 0 0;
+
+  }
 }
+
 .wizard__header--title {
   font-weight: 700;
   font-size: 1em;
@@ -57,6 +88,12 @@ $wizard_left_margin: 25px;
   padding: 0;
   margin: 0 0 15px;
   border: 0px solid red;
+  @include window_size(desktop){
+         font-size: 1.357em;
+
+  }
+
+
 }
 
 // larger title for the intro screen
@@ -64,8 +101,12 @@ $wizard_left_margin: 25px;
   font-size: 0.857em;
   text-transform: uppercase;
   border: 0px solid red;
-  margin:0 0 2px 0;
+  margin:0 0 4px 0;
   padding: 0px;
+
+  @include window_size(desktop){
+          font-size: 1.071em
+  }
 }
 
 
@@ -74,9 +115,14 @@ $wizard_left_margin: 25px;
   font-size: 1em;
   border: 0;
   padding: 0;
-  margin: 0 0 15px;
-  border: 0px solid red;
+  margin: 0 0 15px 0;
+  border: 0px solid pink;
   font-size: 1.357em;
+  @include window_size(desktop){
+          font-size: 2.571em;
+
+  }
+
 }
 
 
@@ -92,10 +138,12 @@ $wizard_left_margin: 25px;
   font-family: Merriweather, serif;
   font-weight: 400;
   font-size: 1.667em;
-  margin: 0 0 15px;
+  margin: 0 0 20px 0;
   padding: 0;
+  width: 80%;
+  border: 0px solid red;
   @include window_size(desktop){
-          font-size: 3em;
+          font-size: 2.571em;
   }
 
 
@@ -131,19 +179,30 @@ $wizard_left_margin: 25px;
 
 // used on the intro screen
 
-.wizard__intro_copy {
+.wizard__copy--section_intro {
   padding: 0;
-
-  margin: 0 60px 20px 20px;
+  width: 70%;
+  margin: 12px 60px 20px 20px;
   font-size: 0.929em;
   border:0px solid red;
+  @include window_size(tab-wide-up){
+        font-size: 1.357em;
+        width: 80%;
+  }
   @include window_size(desktop){
+      width: 80%;
       font-size: 1.357em;
+      margin: 20px 20px 20px 0;
   }
 }
 
 .wizard__illustration{
   border: 0px solid blue;
+
+  width: 100%;
+  @include window_size(desktop){
+      width: 95%;
+  }
 }
 
 .wizard__illustration img{
