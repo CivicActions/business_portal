@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Wizard
+  </title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+<style>
+  body{
+    background-color:#6bc3f3;
+  }
+</style>
+</head>
+<body>
+
+
+<div id="wizard" class="wizard">
+
+  <div class="wizard__header">
+    <div class="wizard__header--title">1 / Register your business</div>
+    <hr class="wizard__header-line" />
+  </div>
+
+
+  <!-- <span class="burger"></span>-->
+
+
+  <div class="wizard__content-block">
+
+    <p class="wizard__question">Will you perform any business activity in the City of Los Angeles?</p>
+
+      <!-- yes no buttons -->
+      <div class="wizard__buttons">
+        <div class="wizard__button"><a href="">YES</a></div>
+        <div class="wizard__button--selected"><a href="">NO<img class="wizard__button--selected-icon" src="../images/wizard/icon_checkmark.png"></a></div>
+      </div>
+        <!-- end of yes no buttons -->
+
+          <!-- tip block -->
+    <div class="wizard__tip">
+      <div class="wizard__tip_icon">
+      </div>
+      <div class="wizard__tip_content">
+        <p class="wizard__tip_copy"> If you perform more than seven days of work for clients located in Los Angeles, or if your business is located in Los Angeles, select Yes.
+          <p>
+            <a href="#" class="wizard__tip_button"> NOT SURE? LEARN MORE</a>
+      </div>
+      <!-- end of tip -->
+    </div>
+  </div>
+
+
+
+</div>
+<!--<ul class="wizard__content--results-list"></ul>-->
+
+<!--<div class="wizard__buttons"></div>-->
+
+
+<!-- navigation between -->
+  <div class="wizard__nav">
+    <a href="#" class="wizard__arrow-up"></a>
+
+    <div class="wizard__arrow-down-wrapper--enabled">
+      <a href="#" class="wizard__arrow-down--enabled"></a>
+      <p class="wizard__nav_label">Next</p>
+
+    </div>
+  </div>
+
+
+<!-- start progress bar -->
+<div class="wizard__progress-bar--section_4">
+
+<!-- section 1 -->
+
+<div class="wizard__progress-bar-section">
+    <div class="wizard__progress-bar_location_bar--completed_first_section">
+        <div class="wizard__progress-bar_location_icon--city"></div>
+    </div>
+
+    <div class="wizard__progress-bar_contents">
+        <p class="wizard__progress-bar_government">city</p>
+        <p class="wizard__progress-bar_section_title">1 / Register your business</p>
+
+          <div class="wizard__progress-bar_status_icons">
+            <div class="wizard__progress-bar_icon--completed"></div>
+          <div class="wizard__progress-bar_icon--selected"></div>
+          </div>
+      </div>
+      <div class="wizard__button--close"></div>
+</div>
+
+<!-- end section 1 -->
+
+<!-- section 2 -->
+
+
+  <div class="wizard__progress-bar-section">
+<!-- to make the dotted line solid use "completed" and "slected" flags  -->
+    <div class="wizard__progress-bar_location_bar--completed">
+      <div class="wizard__progress-bar_location_icon--county"></div>
+    </div>
+
+      <div class="wizard__progress-bar_contents">
+        <p class="wizard__progress-bar_government">county</p>
+        <p class="wizard__progress-bar_section_title">2 / Name your business</p>
+          <div class="wizard__progress-bar_status_icons">
+              <div class="wizard__progress-bar_icon--incomplete"></div>
+          </div>
+      </div>
+    </div>
+
+<!-- end section 2 -->
+
+<!-- section 3 -->
+
+  <div class="wizard__progress-bar-section--selected">
+    <div class="wizard__progress-bar_location_bar--selected">
+      <div class="wizard__progress-bar_location_icon--state"></div>
+    </div>
+
+    <div>
+        <div class="wizard__progress-bar_contents">
+            <p class="wizard__progress-bar_government">state</p>
+            <p class="wizard__progress-bar_section_title">3 / Get a seller's permit</p>
+            <div class="wizard__progress-bar_status_icons">
+                <div class="wizard__progress-bar_icon--incomplete"></div>
+                <div class="wizard__progress-bar_icon--incomplete"></div>
+                <div class="wizard__progress-bar_icon--incomplete"></div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+
+<!-- end section 3 -->
+
+<!-- section 4 -->
+  <div class="wizard__progress-bar-section">
+    <div class="wizard__progress-bar_location_bar">
+        <div class="wizard__progress-bar_location_icon--federal"></div>
+    </div>
+
+
+    <div class="wizard__progress-bar_contents">
+      <p class="wizard__progress-bar_government">federal</p>
+      <p class="wizard__progress-bar_section_title">4 / Get an employer identification number</p>
+      <div class="wizard__progress-bar_status">
+        <div class="wizard__progress-bar_status_icons">
+            <div class="wizard__progress-bar_icon--incomplete"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+<!-- end section 4 -->
+
+  <!-- section 5 -->
+    <div class="wizard__progress-bar-section">
+      <div class="wizard__progress-bar_location_bar">
+          <div class="wizard__progress-bar_location_icon--registration"></div>
+      </div>
+
+      <div class="wizard__progress-bar_contents">
+          <p class="wizard__progress-bar_section_title">5 / Your business registration guide</p>
+        </div>
+</div>
+        <!-- end section 5 -->
+
+
+
+</div>
+</div>
+<!-- end progress bar -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Roboto:400,700,900', 'Merriweather:400,700']
+    }
+  });
+</script>
+
+</html>

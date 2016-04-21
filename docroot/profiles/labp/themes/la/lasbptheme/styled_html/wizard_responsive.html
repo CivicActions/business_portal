@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Wizard Question
+  </title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <style>
+    body {
+      background-color: #89D5C4;
+    }
+  </style>
+  <script src="http://globalnav.lacity.org/global_nav_2.0.js"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header" id="header" role="banner">
+      <div class="header__content"> <!-- start header content -->
+      <a href="/" title="Home" rel="home" class="header__logo icon-egg" id="logo"><img src="../images/la_business_wordmark_dark.png" alt="Home" class="header__logo-image" /></a>
+      <div class="header__name-and-slogan" id="name-and-slogan">
+        <h1 class="header__site-name" id="site-name">
+                       <a href="/" title="Home" class="header__site-link" rel="home"><span>Site-Install</span></a>
+             </h1>
+
+      </div>
+
+      <!--
+
+      <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
+      <h2 class="element-invisible">User menu</h2><ul class="links inline clearfix"><li class="menu-2 first"><a href="/user">My account</a></li>
+      <li class="menu-12 last"><a href="/user/logout">Log out</a></li>
+    </ul>      </nav>
+    -->
+      <div class="header__region region region-header">
+
+
+        <div id="block-system-main-menu" class="block block-system contextual-links-region block-menu first last odd" role="navigation">
+
+    <!--
+          <h2 class="block__title block-title">Main menu</h2>
+          <div class="contextual-links-wrapper contextual-links-processed"><a class="contextual-links-trigger" href="#">Configure</a>
+            <ul class="contextual-links">
+              <li class="menu-list first"><a href="/admin/structure/menu/manage/main-menu/list?destination=node/8">List links</a></li>
+              <li class="menu-edit"><a href="/admin/structure/menu/manage/main-menu/edit?destination=node/8">Edit menu</a></li>
+              <li class="block-configure last"><a href="/admin/structure/block/manage/system/main-menu/configure?destination=node/8">Configure block</a></li>
+            </ul>
+          </div>
+    -->
+          <ul class="menu">
+            <li class="menu__item--selected is-leaf last leaf"><a href="http://labp.dev/content/homepage" title="" class="menu__link">Startup Guide</a></li>
+            <li class="menu__item is-leaf first leaf"><a href="http://labp.dev/content/homepage" title="" class="menu__link">Resources</a></li>
+
+          </ul>
+
+        <!--  <div class="menu__hamburger"><img src="../images/header/icon_hamburger.png" alt="Hamburger" /></div> -->
+          <div class="menu__hamburger--close"><img src="../images/wizard/icon_close.png" alt="Hamburger" /></div>
+
+
+
+        </div>
+      </div>
+    </div> <!-- end of header content -->
+    </header><!-- end of header -->
+
+
+
+<div class="homepage_panel__content_wrapper">
+
+
+  <div id="wizard" class="wizard">
+
+
+
+    <!-- column 1 -->
+    <div class="wizard__col_1">
+
+
+                <!-- header -->
+                <div class="wizard__header">
+                    <div class="wizard__header--title">1 / Register your business</div>
+                    <hr class="wizard__header-line" />
+                </div>
+                <!-- header end -->
+
+
+                <div class="wizard__content-block">
+
+                  <p class="wizard__question">Will you perform any business activity in the City of Los Angeles?</p>
+
+                  <!-- yes no buttons -->
+                  <div class="wizard__buttons">
+                    <div class="wizard__button"><a href="">YES</a></div>
+                    <div class="wizard__button--selected"><a href="">NO <img class="wizard__button--selected-icon" src="../images/wizard/icon_checkmark.png"></a></div>
+                  </div>
+                  <!-- end of yes no buttons -->
+
+                  <!-- tip block -->
+                  <div class="wizard__tip">
+                    <div class="wizard__tip_icon">
+                    </div>
+                    <div class="wizard__tip_content">
+                      <p class="wizard__tip_copy">If you perform more than seven days of work for clients located in Los Angeles, or if your business is located in Los Angeles, select Yes.
+                      </p>
+                          <a href="#" class="wizard__tip_button"> NOT SURE? LEARN MORE</a>
+                    </div>
+                    <!-- end of tip -->
+                  </div>
+                </div>
+
+
+                <!-- navigation between the screens-->
+                <div class="wizard__nav">
+                    <a href="#" class="wizard__arrow-up"></a>
+                        <div class="wizard__arrow-down-wrapper--disabled">
+                    <a href="#" class="wizard__arrow-down--disabled"></a>
+                    </div>
+                </div>
+
+
+
+
+    </div>
+    <!-- end of column 1 -->
+
+    <!-- column 2 -->
+    <div class="wizard__col_2">
+        <!-- start progress bar -->
+        <div class="wizard__progress-bar--simple">
+
+          <!-- section 1 -->
+
+          <div class="wizard__progress-bar-section">
+            <div class="wizard__progress-bar_location_bar--completed_first_section">
+              <div class="wizard__progress-bar_location_icon--city"></div>
+            </div>
+
+            <div class="wizard__progress-bar_contents--deselected">
+              <p class="wizard__progress-bar_government">city</p>
+              <p class="wizard__progress-bar_section_title">1 / Register your business</p>
+
+              <div class="wizard__progress-bar_status_icons">
+                <div class="wizard__progress-bar_icon--completed"></div>
+                <div class="wizard__progress-bar_icon--selected"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end section 1 -->
+
+          <!-- section 2 -->
+
+          <!-- to make the dotted line solid use "completed" and "slected" flags  -->
+          <div class="wizard__progress-bar-section">
+
+            <div class="wizard__progress-bar_location_bar--completed">
+              <div class="wizard__progress-bar_location_icon--county"></div>
+            </div>
+
+            <div class="wizard__progress-bar_contents--deselected">
+              <p class="wizard__progress-bar_government">county</p>
+              <p class="wizard__progress-bar_section_title">2 / Name your business</p>
+              <div class="wizard__progress-bar_status_icons">
+                <div class="wizard__progress-bar_icon--incomplete"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end section 2 -->
+
+
+          <!-- section 3 -->
+
+          <div class="wizard__progress-bar-section">
+            <div class="wizard__progress-bar_location_bar--selected">
+              <div class="wizard__progress-bar_location_icon--state"></div>
+            </div>
+
+            <div>
+              <div class="wizard__progress-bar_contents--selected">
+                <p class="wizard__progress-bar_government">state</p>
+                <p class="wizard__progress-bar_section_title">3 / Get a seller's permit</p>
+                <div class="wizard__progress-bar_status_icons">
+                  <div class="wizard__progress-bar_icon--incomplete"></div>
+                  <div class="wizard__progress-bar_icon--incomplete"></div>
+                  <div class="wizard__progress-bar_icon--incomplete"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- end section 3 -->
+
+          <!-- section 4 -->
+          <div class="wizard__progress-bar-section">
+            <div class="wizard__progress-bar_location_bar">
+              <div class="wizard__progress-bar_location_icon--federal"></div>
+            </div>
+
+
+            <div class="wizard__progress-bar_contents--deselected">
+              <p class="wizard__progress-bar_government">federal</p>
+              <p class="wizard__progress-bar_section_title">4 / Get an employer identification number</p>
+              <div class="wizard__progress-bar_status">
+                <div class="wizard__progress-bar_status_icons">
+                  <div class="wizard__progress-bar_icon--incomplete"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end section 4 -->
+
+
+          <!-- section 5 -->
+          <div class="wizard__progress-bar-section">
+            <div class="wizard__progress-bar_location_bar">
+              <div class="wizard__progress-bar_location_icon--registration"></div>
+            </div>
+
+            <div class="wizard__progress-bar_contents--deselected">
+              <p class="wizard__progress-bar_section_title">5 / Your business registration guide</p>
+            </div>
+          </div>
+          <!-- end section 5 -->
+
+
+
+
+    </div>
+    <!-- end of column 2 -->
+
+</div>
+<!-- end of wizard -->
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- end of wizard -->
+
+
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Roboto:400,700,900', 'Merriweather:400,700']
+    }
+  });
+</script>
+
+</html>
