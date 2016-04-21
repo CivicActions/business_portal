@@ -158,13 +158,7 @@ body {
  */
 /* line 143, ../sass/_normalize.scss */
 a:link {
-  color: black;
   text-decoration: none;
-}
-
-/* line 147, ../sass/_normalize.scss */
-a:visited {
-  color: black;
 }
 
 /* line 150, ../sass/_normalize.scss */
@@ -3022,29 +3016,30 @@ input[type=checkbox]:checked {
   /* line 174, ../sass/components/_homepage_panels.scss */
   .panel__intro_paragraph {
     font-size: 1.571em;
+    font-size: 1.429em;
     width: 90%;
   }
 }
 
-/* line 186, ../sass/components/_homepage_panels.scss */
+/* line 187, ../sass/components/_homepage_panels.scss */
 .panel__section {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 186, ../sass/components/_homepage_panels.scss */
+  /* line 187, ../sass/components/_homepage_panels.scss */
   .panel__section {
     width: 25%;
     float: left;
   }
 }
 
-/* line 197, ../sass/components/_homepage_panels.scss */
+/* line 198, ../sass/components/_homepage_panels.scss */
 .panel__section--hide_on_mobile {
   border: 0px solid red;
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 197, ../sass/components/_homepage_panels.scss */
+  /* line 198, ../sass/components/_homepage_panels.scss */
   .panel__section--hide_on_mobile {
     display: block;
     width: 25%;
@@ -3052,7 +3047,7 @@ input[type=checkbox]:checked {
   }
 }
 
-/* line 208, ../sass/components/_homepage_panels.scss */
+/* line 209, ../sass/components/_homepage_panels.scss */
 .panel__header {
   color: #0F2940;
   border: 0px solid red;
@@ -3065,14 +3060,14 @@ input[type=checkbox]:checked {
   width: 70%;
 }
 @media all and (min-width: 720px) {
-  /* line 208, ../sass/components/_homepage_panels.scss */
+  /* line 209, ../sass/components/_homepage_panels.scss */
   .panel__header {
     font-size: 2.571em;
     margin: 0 0 30px 0;
   }
 }
 
-/* line 225, ../sass/components/_homepage_panels.scss */
+/* line 226, ../sass/components/_homepage_panels.scss */
 .panel__header-line {
   height: 4px;
   max-width: 80px;
@@ -3082,7 +3077,7 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 230, ../sass/components/_homepage_panels.scss */
+/* line 231, ../sass/components/_homepage_panels.scss */
 .panel__header-line--white {
   height: 4px;
   max-width: 80px;
@@ -3092,7 +3087,7 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 235, ../sass/components/_homepage_panels.scss */
+/* line 236, ../sass/components/_homepage_panels.scss */
 .panel__header-line--light-blue {
   height: 4px;
   max-width: 80px;
@@ -3102,7 +3097,7 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 241, ../sass/components/_homepage_panels.scss */
+/* line 242, ../sass/components/_homepage_panels.scss */
 .panel__header-line_thin {
   height: 2px;
   max-width: 40px;
@@ -3112,7 +3107,7 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 246, ../sass/components/_homepage_panels.scss */
+/* line 247, ../sass/components/_homepage_panels.scss */
 .panel__header-line_thin--white {
   height: 2px;
   max-width: 40px;
@@ -3122,7 +3117,7 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 251, ../sass/components/_homepage_panels.scss */
+/* line 252, ../sass/components/_homepage_panels.scss */
 .panel__header-line_thin--light-blue {
   height: 2px;
   max-width: 40px;
@@ -3132,20 +3127,20 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 257, ../sass/components/_homepage_panels.scss */
+/* line 258, ../sass/components/_homepage_panels.scss */
 .panel__icon {
   width: 65px;
   float: right;
 }
 @media all and (min-width: 720px) {
-  /* line 257, ../sass/components/_homepage_panels.scss */
+  /* line 258, ../sass/components/_homepage_panels.scss */
   .panel__icon {
     width: 134px;
     float: none;
   }
 }
 
-/* line 270, ../sass/components/_homepage_panels.scss */
+/* line 271, ../sass/components/_homepage_panels.scss */
 .panel__icon_header {
   color: #0F2940;
   font-family: Merriweather;
@@ -3155,13 +3150,13 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 270, ../sass/components/_homepage_panels.scss */
+  /* line 271, ../sass/components/_homepage_panels.scss */
   .panel__icon_header {
     font-size: 1.429em;
   }
 }
 
-/* line 284, ../sass/components/_homepage_panels.scss */
+/* line 285, ../sass/components/_homepage_panels.scss */
 .panel__paragraph {
   color: #0F2940;
   border: 0px solid red;
@@ -3170,7 +3165,7 @@ input[type=checkbox]:checked {
   padding: 14px 0 25px 0;
 }
 
-/* line 294, ../sass/components/_homepage_panels.scss */
+/* line 295, ../sass/components/_homepage_panels.scss */
 .panel__button--yellow {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3185,30 +3180,35 @@ input[type=checkbox]:checked {
   *zoom: 1;
 }
 @media all and (min-width: 960px) {
-  /* line 294, ../sass/components/_homepage_panels.scss */
+  /* line 295, ../sass/components/_homepage_panels.scss */
   .panel__button--yellow {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
     font-size: 1.143em;
-    padding: 15px 30px 15px 30px;
+    padding: 10px 20px 10px 20px;
   }
 }
 
 /* Wizard */
-/* line 2, ../sass/components/wizard/_wizard.scss */
+/* line 3, ../sass/components/wizard/_wizard.scss */
 .wizard {
   color: #0F2940;
   font-family: Roboto, sans-serif;
   margin: 55px 0 0 0;
   border: 0px solid green;
-  border: 0px solid green;
   overflow: hidden;
   *zoom: 1;
 }
 
+/* line 14, ../sass/components/wizard/_wizard.scss */
+.wizard a {
+  color: #0F2940;
+  font-size: 1em;
+}
+
 @media all and (min-width: 960px) {
-  /* line 13, ../sass/components/wizard/_wizard.scss */
+  /* line 22, ../sass/components/wizard/_wizard.scss */
   .homepage_panel__content_wrapper {
     width: 960px;
     margin-left: auto;
@@ -3216,21 +3216,21 @@ input[type=checkbox]:checked {
   }
 }
 
-/* line 22, ../sass/components/wizard/_wizard.scss */
+/* line 31, ../sass/components/wizard/_wizard.scss */
 .wizard__col_1 {
   border: 0px solid red;
   width: 100%;
   float: left;
 }
 @media all and (min-width: 960px) {
-  /* line 22, ../sass/components/wizard/_wizard.scss */
+  /* line 31, ../sass/components/wizard/_wizard.scss */
   .wizard__col_1 {
     width: 700px;
     border: 0px solid red;
   }
 }
 
-/* line 33, ../sass/components/wizard/_wizard.scss */
+/* line 42, ../sass/components/wizard/_wizard.scss */
 .wizard__col_2 {
   border: 0px solid blue;
   width: 30%;
@@ -3239,7 +3239,7 @@ input[type=checkbox]:checked {
   right: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 33, ../sass/components/wizard/_wizard.scss */
+  /* line 42, ../sass/components/wizard/_wizard.scss */
   .wizard__col_2 {
     width: 250px;
     border: 0px solid blue;
@@ -3247,13 +3247,13 @@ input[type=checkbox]:checked {
   }
 }
 
-/* line 47, ../sass/components/wizard/_wizard.scss */
+/* line 56, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-screen--register-business {
   background-color: #89D5C4;
   height: 900px;
 }
 
-/* line 52, ../sass/components/wizard/_wizard.scss */
+/* line 61, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block {
   display: inline-block;
   border: 0px solid black;
@@ -3261,20 +3261,27 @@ input[type=checkbox]:checked {
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 52, ../sass/components/wizard/_wizard.scss */
+  /* line 61, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block {
     padding: 0;
   }
 }
 
-/* line 63, ../sass/components/wizard/_wizard.scss */
+/* line 72, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-block {
   display: inline-block;
   border: 0px solid black;
   padding: 0;
+  margin: 0;
+}
+@media all and (min-width: 960px) {
+  /* line 72, ../sass/components/wizard/_wizard.scss */
+  .wizard__intro-block {
+    margin: 0;
+  }
 }
 
-/* line 71, ../sass/components/wizard/_wizard.scss */
+/* line 86, ../sass/components/wizard/_wizard.scss */
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
@@ -3284,13 +3291,13 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 71, ../sass/components/wizard/_wizard.scss */
+  /* line 86, ../sass/components/wizard/_wizard.scss */
   .wizard__header {
     padding: 35px 25px 0 0;
   }
 }
 
-/* line 84, ../sass/components/wizard/_wizard.scss */
+/* line 99, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title {
   font-weight: 700;
   font-size: 1em;
@@ -3300,13 +3307,13 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 84, ../sass/components/wizard/_wizard.scss */
+  /* line 99, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title {
     font-size: 1.357em;
   }
 }
 
-/* line 100, ../sass/components/wizard/_wizard.scss */
+/* line 115, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-government {
   font-size: 0.857em;
   text-transform: uppercase;
@@ -3315,13 +3322,13 @@ input[type=checkbox]:checked {
   padding: 0px;
 }
 @media all and (min-width: 960px) {
-  /* line 100, ../sass/components/wizard/_wizard.scss */
+  /* line 115, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-government {
     font-size: 1.071em;
   }
 }
 
-/* line 113, ../sass/components/wizard/_wizard.scss */
+/* line 128, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-intro {
   font-weight: 700;
   font-size: 1em;
@@ -3332,13 +3339,13 @@ input[type=checkbox]:checked {
   font-size: 1.357em;
 }
 @media all and (min-width: 960px) {
-  /* line 113, ../sass/components/wizard/_wizard.scss */
+  /* line 128, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-intro {
     font-size: 2.571em;
   }
 }
 
-/* line 129, ../sass/components/wizard/_wizard.scss */
+/* line 144, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -3348,7 +3355,7 @@ input[type=checkbox]:checked {
   margin: 0;
 }
 
-/* line 137, ../sass/components/wizard/_wizard.scss */
+/* line 152, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3359,13 +3366,14 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 137, ../sass/components/wizard/_wizard.scss */
+  /* line 152, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 2.571em;
+    font-size: 2.4em;
   }
 }
 
-/* line 150, ../sass/components/wizard/_wizard.scss */
+/* line 166, ../sass/components/wizard/_wizard.scss */
 .wizard__question--help {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3376,18 +3384,44 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 150, ../sass/components/wizard/_wizard.scss */
+  /* line 166, ../sass/components/wizard/_wizard.scss */
   .wizard__question--help {
     font-size: 2em;
   }
 }
 
-/* line 164, ../sass/components/wizard/_wizard.scss */
-.wizard__buttons {
-  border: 0 solid white;
+/* line 180, ../sass/components/wizard/_wizard.scss */
+.wizard__question--checklist {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1.667em;
+  margin: 0 0 20px 25px;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 180, ../sass/components/wizard/_wizard.scss */
+  .wizard__question--checklist {
+    font-size: 2.571em;
+    margin: 0 0 20px 0;
+  }
 }
 
-/* line 168, ../sass/components/wizard/_wizard.scss */
+/* line 195, ../sass/components/wizard/_wizard.scss */
+.wizard__checklist_content {
+  border: 0px solid red;
+  width: 75%;
+  margin: 20px 0 0 25px;
+}
+
+/* line 201, ../sass/components/wizard/_wizard.scss */
+.wizard__buttons {
+  border: 0px solid white;
+  margin: 30px 0 30px 0;
+}
+
+/* line 206, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3400,13 +3434,13 @@ input[type=checkbox]:checked {
   cursor: pointer;
 }
 
-/* line 171, ../sass/components/wizard/_wizard.scss */
+/* line 209, ../sass/components/wizard/_wizard.scss */
 .wizard__button a {
   color: #0F2940;
   text-decoration: none;
 }
 
-/* line 175, ../sass/components/wizard/_wizard.scss */
+/* line 213, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3421,43 +3455,57 @@ input[type=checkbox]:checked {
   padding: 8px 25px 8px 35px;
 }
 
-/* line 180, ../sass/components/wizard/_wizard.scss */
+/* line 218, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 184, ../sass/components/wizard/_wizard.scss */
+/* line 222, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 191, ../sass/components/wizard/_wizard.scss */
+/* line 228, ../sass/components/wizard/_wizard.scss */
+.wizard__button--checklist {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 8px 35px 8px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  margin: 20px 0 20px 20px;
+}
+
+/* line 236, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   width: 70%;
-  margin: 12px 60px 20px 20px;
+  margin: 25px 60px 20px 20px;
   font-size: 0.929em;
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 191, ../sass/components/wizard/_wizard.scss */
+  /* line 236, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 191, ../sass/components/wizard/_wizard.scss */
+  /* line 236, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 80%;
     font-size: 1.357em;
-    margin: 20px 20px 20px 0;
+    margin: 30px 20px 30px 0;
   }
 }
 
-/* line 207, ../sass/components/wizard/_wizard.scss */
+/* line 256, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
   float: right;
   width: 40px;
@@ -3466,38 +3514,46 @@ input[type=checkbox]:checked {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 207, ../sass/components/wizard/_wizard.scss */
+  /* line 256, ../sass/components/wizard/_wizard.scss */
   .wizard__icon {
     float: left;
   }
 }
 
-/* line 217, ../sass/components/wizard/_wizard.scss */
+/* line 266, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
+  margin: 20px 0 0 0;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 217, ../sass/components/wizard/_wizard.scss */
+  /* line 266, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
-    width: 90%;
+    width: 95%;
   }
 }
 
-/* line 226, ../sass/components/wizard/_wizard.scss */
+/* line 275, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
+@media all and (min-width: 960px) {
+  /* line 275, ../sass/components/wizard/_wizard.scss */
+  .wizard__illustration img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
-/* line 232, ../sass/components/wizard/_wizard.scss */
+/* line 286, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 85%;
   margin: 20px 0 0 0;
 }
 
-/* line 238, ../sass/components/wizard/_wizard.scss */
+/* line 292, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -3517,184 +3573,180 @@ input[type=checkbox]:checked {
   float: left;
   height: 20px;
   width: 20px;
+  margin: 0 5px 0 0;
   background-image: url('../images/wizard/icon_info.png?1461001382');
   background-size: 100%;
 }
 
-/* line 21, ../sass/components/wizard/_wizard_tip.scss */
+/* line 22, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_content {
   float: left;
   margin: 0 0 0 6px;
   width: 70%;
 }
 
-/* line 29, ../sass/components/wizard/_wizard_tip.scss */
+/* line 30, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_copy {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 0.929em;
 }
 @media all and (min-width: 960px) {
-  /* line 29, ../sass/components/wizard/_wizard_tip.scss */
+  /* line 30, ../sass/components/wizard/_wizard_tip.scss */
   .wizard__tip_copy {
     font-size: 1.333em;
+    font-size: 1.2em;
   }
 }
 
-/* line 44, ../sass/components/wizard/_wizard_tip.scss */
+/* line 46, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   border: 2px solid #0F2940;
-  font-size: 0.786em;
+  font-size: 0.85em !important;
   padding: 6px 15px;
   margin: 0 0 20px 0;
   letter-spacing: 0.5px;
   font-weight: 900;
   display: inline-block;
+  color: #0F2940 !important;
 }
 
-/* line 55, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 60, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_1 {
-  height: 500px;
   width: 270px;
   display: inline-block;
   float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #82caba;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 55, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 60, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--section_1 {
     margin: 40px 0 0 0;
   }
 }
 
-/* line 62, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 67, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_2 {
-  height: 500px;
   width: 270px;
   display: inline-block;
   float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #abc468;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 62, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 67, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--section_2 {
     margin: 40px 0 0 0;
   }
 }
 
-/* line 67, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 72, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_3 {
-  height: 500px;
   width: 270px;
   display: inline-block;
   float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #ddbc54;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 67, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 72, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--section_3 {
     margin: 40px 0 0 0;
   }
 }
 
-/* line 72, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 77, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_4 {
-  height: 500px;
   width: 270px;
   display: inline-block;
   float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #65b9e6;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 72, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 77, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--section_4 {
     margin: 40px 0 0 0;
   }
 }
 
-/* line 78, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 83, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--section_5 {
-  height: 500px;
   width: 270px;
   display: inline-block;
   float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: #eea73c;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 78, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 83, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--section_5 {
     margin: 40px 0 0 0;
   }
 }
 
-/* line 85, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 90, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--simple {
-  height: 500px;
   width: 270px;
   display: inline-block;
   float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-image: url('../images/wizard/progress_bar.png?1461001382');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: "transparent";
   width: 60px;
+  overflow: hidden;
+  *zoom: 1;
 }
 @media all and (min-width: 960px) {
-  /* line 85, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 90, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--simple {
     margin: 40px 0 0 0;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 85, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 90, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--simple {
     width: 270px;
   }
 }
 
-/* line 98, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 102, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar-section {
   margin: 0;
   padding: 0;
@@ -3703,7 +3755,7 @@ input[type=checkbox]:checked {
   *zoom: 1;
 }
 
-/* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar-section--selected {
   margin: 0;
   padding: 0;
@@ -3712,14 +3764,14 @@ input[type=checkbox]:checked {
   *zoom: 1;
 }
 
-/* line 118, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 122, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar {
   width: 58px;
   height: 100px;
   float: left;
 }
 
-/* line 127, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 131, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
   float: left;
@@ -3730,7 +3782,7 @@ input[type=checkbox]:checked {
   height: 100%;
 }
 
-/* line 138, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 142, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
   float: left;
@@ -3741,7 +3793,7 @@ input[type=checkbox]:checked {
   height: 100%;
 }
 
-/* line 150, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 154, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
   float: left;
@@ -3752,7 +3804,7 @@ input[type=checkbox]:checked {
   height: 100%;
 }
 
-/* line 166, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 170, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--city {
   width: 40px;
   height: 100px;
@@ -3765,7 +3817,7 @@ input[type=checkbox]:checked {
   display: none;
 }
 
-/* line 173, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 177, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--county {
   width: 40px;
   height: 100px;
@@ -3780,7 +3832,7 @@ input[type=checkbox]:checked {
   display: none;
 }
 
-/* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--state {
   width: 40px;
   height: 100px;
@@ -3792,7 +3844,7 @@ input[type=checkbox]:checked {
   background-image: url('../images/wizard/icon_percentage.png?1461001382');
 }
 
-/* line 187, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 191, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--federal {
   width: 40px;
   height: 100px;
@@ -3805,7 +3857,7 @@ input[type=checkbox]:checked {
   display: none;
 }
 
-/* line 194, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 198, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_icon--registration {
   width: 40px;
   height: 100px;
@@ -3818,7 +3870,7 @@ input[type=checkbox]:checked {
   display: none;
 }
 
-/* line 202, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 206, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents {
   float: left;
   padding: 0 0 0 10px;
@@ -3826,7 +3878,7 @@ input[type=checkbox]:checked {
   width: 155px;
 }
 
-/* line 210, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 214, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--deselected {
   float: left;
   padding: 0 0 0 10px;
@@ -3835,13 +3887,13 @@ input[type=checkbox]:checked {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 210, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 214, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--deselected {
     display: block;
   }
 }
 
-/* line 222, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 226, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--selected {
   float: left;
   padding: 0 0 0 10px;
@@ -3850,13 +3902,13 @@ input[type=checkbox]:checked {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 222, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 226, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--selected {
     display: block;
   }
 }
 
-/* line 235, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 239, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_government {
   font-weight: 900;
   text-transform: uppercase;
@@ -3866,20 +3918,20 @@ input[type=checkbox]:checked {
   letter-spacing: 0.1px;
 }
 
-/* line 246, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 250, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_section_title {
   font-weight: 700;
   margin: 0 0 7px 0;
   padding: 0;
 }
 
-/* line 254, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 258, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_status_icons {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 258, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 262, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--incomplete {
   width: 15px;
   height: 15px;
@@ -3891,7 +3943,7 @@ input[type=checkbox]:checked {
   background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461001382');
 }
 
-/* line 265, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 269, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--completed {
   width: 15px;
   height: 15px;
@@ -3903,7 +3955,7 @@ input[type=checkbox]:checked {
   background-image: url('../images/wizard/progress_bar_circle_completed.png?1461001382');
 }
 
-/* line 272, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 276, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--selected {
   width: 15px;
   height: 15px;
@@ -3915,7 +3967,7 @@ input[type=checkbox]:checked {
   background-image: url('../images/wizard/progress_bar_circle_selected.png?1461001382');
 }
 
-/* line 279, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 284, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
   background-image: url('../images/wizard/icon_close.png?1461001382');
@@ -3928,7 +3980,7 @@ input[type=checkbox]:checked {
   margin: 15px 15px 0 0;
 }
 
-/* line 1, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 3, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav {
   display: inline-block;
   width: 100%;
@@ -3936,14 +3988,22 @@ input[type=checkbox]:checked {
   margin: 10px 0 0 0;
   border: 0px solid red;
 }
-@media all and (min-width: 960px) {
-  /* line 1, ../sass/components/wizard/_wizard_bottom_nav.scss */
+@media all and (min-width: 720px) {
+  /* line 3, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav {
+    width: 85%;
+    margin: 10px 25px 0 25px;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 3, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav {
+    margin: 10px 0 0 0;
     width: 95%;
   }
 }
 
-/* line 11, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 19, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up {
   background-image: url('../images/wizard/arrow_up.png?1459983230');
   background-repeat: no-repeat;
@@ -3954,14 +4014,14 @@ input[type=checkbox]:checked {
   height: 25px;
   display: block;
 }
-@media all and (min-width: 960px) {
-  /* line 11, ../sass/components/wizard/_wizard_bottom_nav.scss */
+@media all and (min-width: 720px) {
+  /* line 19, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-up {
     margin: 0 10px 10px 0;
   }
 }
 
-/* line 27, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 35, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--disabled {
   background-image: url('../images/wizard/arrow_down.png?1461001382');
   background-repeat: no-repeat;
@@ -3971,23 +4031,34 @@ input[type=checkbox]:checked {
   height: 25px;
   display: block;
 }
-@media all and (min-width: 960px) {
-  /* line 27, ../sass/components/wizard/_wizard_bottom_nav.scss */
+@media all and (min-width: 720px) {
+  /* line 35, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--disabled {
-    margin: 0 0 0 0;
+    margin: 0 0 24px 0;
   }
 }
 
-/* line 43, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 50, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down-wrapper--enabled {
   border: 0px solid white;
   padding: 0;
+  border: 0;
   background-color: #fff;
   overflow: hidden;
   *zoom: 1;
 }
+@media all and (min-width: 720px) {
+  /* line 50, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__arrow-down-wrapper--enabled {
+    background-color: transparent;
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461114100');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    border-bottom: 2px solid white;
+  }
+}
 
-/* line 52, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 67, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down-wrapper--disabled {
   border: 0px solid white;
   padding: 10px 10px 0 0;
@@ -3995,16 +4066,16 @@ input[type=checkbox]:checked {
   background-repeat: no-repeat;
   background-position: 23px 0;
 }
-@media all and (min-width: 960px) {
-  /* line 52, ../sass/components/wizard/_wizard_bottom_nav.scss */
+@media all and (min-width: 720px) {
+  /* line 67, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down-wrapper--disabled {
-    background-image: url('../images/wizard/nav_hr_bar.png?1461001382');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461114100');
     background-position: 0 0;
     background-repeat: repeat-x;
   }
 }
 
-/* line 74, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 91, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled {
   background-image: url('../images/wizard/arrow_down_enabled.png?1461001382');
   background-repeat: no-repeat;
@@ -4012,26 +4083,40 @@ input[type=checkbox]:checked {
   margin: 0;
   width: 58px;
   height: 47px;
-  background-color: #6BC3F3;
-  display: block;
-}
-
-/* line 87, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1461001382');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  width: 58px;
-  height: 47px;
+  border: 0px solid red;
   background-color: #6BC3F3;
   display: block;
   float: left;
 }
+@media all and (min-width: 720px) {
+  /* line 91, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__arrow-down--enabled {
+    border: 0px solid red;
+    background-image: none;
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461114100');
+    width: 40px;
+    background-size: 42px 2px;
+    background-repeat: repeat-x;
+  }
+}
 
-/* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 114, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__arrow-down--enabled img {
+  display: none;
+  width: 24px;
+  height: 25px;
+  margin: 12px 0 0 0;
+}
+@media all and (min-width: 720px) {
+  /* line 114, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__arrow-down--enabled img {
+    display: block;
+  }
+}
+
+/* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459983230');
+  background-image: url('../images/wizard/arrow_down_filled.png');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4040,14 +4125,149 @@ input[type=checkbox]:checked {
   display: block;
   border: 0px solid white;
 }
+@media all and (min-width: 720px) {
+  /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__arrow-down--filled {
+    border: 0px solid red;
+  }
+}
 
-/* line 111, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 140, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0F2940;
   font-weight: 700;
   float: left;
   font-size: 1em;
   border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 140, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav_label {
+    color: white;
+  }
+}
+
+/* line 3, ../sass/components/wizard/_wizard_start.scss */
+.wizard__header--start {
+  font-weight: 700;
+  font-size: 1em;
+  margin: 10px 0 10px 0;
+  padding: 35px 25px 0 25px;
+  width: 100%;
+  border: 0px solid red;
+  background-image: url("../images/wizard/illustrations/illustration_clouds.png");
+  background-size: 112px 48px;
+  background-repeat: no-repeat;
+  background-position: 150px 0;
+}
+@media all and (min-width: 720px) {
+  /* line 3, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__header--start {
+    padding: 35px 25px 0 0;
+    margin: 60px 0 10px 0;
+  }
+}
+
+/* line 22, ../sass/components/wizard/_wizard_start.scss */
+.wizard__start-block {
+  display: inline-block;
+  border: 0px solid black;
+  padding: 0;
+  margin: 0 25px 0 25px;
+}
+@media all and (min-width: 960px) {
+  /* line 22, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__start-block {
+    margin: 0;
+  }
+}
+
+/* line 35, ../sass/components/wizard/_wizard_start.scss */
+.wizard__header--title-start-super {
+  border: 0px solid white;
+  color: white;
+  font-size: 1.357em;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 44, ../sass/components/wizard/_wizard_start.scss */
+.wizard__header--title-start {
+  border: 0px solid white;
+  font-size: 2.429em;
+  color: white;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+@media all and (min-width: 720px) {
+  /* line 44, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__header--title-start {
+    font-size: 3em;
+  }
+}
+
+/* line 55, ../sass/components/wizard/_wizard_start.scss */
+.wizard__copy--section_start {
+  padding: 0;
+  width: 85%;
+  margin: 0px 0 22px 0;
+  font-size: 0.929em;
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 55, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__copy--section_start {
+    font-size: 1.357em;
+    width: 80%;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 55, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__copy--section_start {
+    width: 80%;
+    font-size: 1.357em;
+    margin: 0px 0 22px 0;
+  }
+}
+
+/* line 75, ../sass/components/wizard/_wizard_start.scss */
+.wizard__start_table_of_contents {
+  font-size: 0.929em;
+  font-weight: 700;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 75, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__start_table_of_contents {
+    border: 0px solid red;
+    margin: 0;
+    font-size: 1.071em;
+  }
+}
+
+/* line 91, ../sass/components/wizard/_wizard_start.scss */
+.wizard__start_table_of_contents_item {
+  margin: 0;
+  padding: 0;
+  margin: 2px 0 2px 0;
+}
+
+/* line 97, ../sass/components/wizard/_wizard_start.scss */
+.wizard__copy--time-estimate {
+  border: 0px solid red;
+  width: 80%;
+  font-weight: 700;
+  color: white;
+  font-size: 0.857em;
+}
+@media all and (min-width: 720px) {
+  /* line 97, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__copy--time-estimate {
+    font-size: 1.2em;
+  }
 }
 
 /* Nodes */

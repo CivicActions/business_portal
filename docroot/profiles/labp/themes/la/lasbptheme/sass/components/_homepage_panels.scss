@@ -50,7 +50,7 @@
     @include window_size(desktop){
         @include border-radius(25px);
         font-size: 1.143em;
-            padding: 15px 30px 15px 30px;
+            padding: 10px 20px 10px 20px;
 
     }
       @include clearfix;
@@ -178,6 +178,7 @@
 
     @include window_size(tab-wide-up){
         font-size:1.571em;
+        font-size: 1.429em;
         width: 90%;
     }
 

@@ -3,13 +3,13 @@
 
 <head>
   <title>
-    Wizard Intro
+    Wizard Start
   </title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
   <style>
     body {
-      background-color: #B5CF6E;
+      background-color: #6BC3F3;
     }
   </style>
   <script src="http://globalnav.lacity.org/global_nav_2.0.js"></script>
@@ -80,21 +80,35 @@
 
 
                 <!-- header -->
-                <div class="wizard__header">
-                    <div class="wizard__header--title-government">CITY</div>
-                    <div class="wizard__header--title-intro">1 / Register your business</div>
+                <div class="wizard__header--start">
+                    <div class="wizard__header--title-start-super">Welcome to the</div>
+                    <div class="wizard__header--title-start">Startup Guide</div>
                     <hr class="wizard__header-line" />
                 </div>
                 <!-- header end -->
 
 
                 <!-- content block -->
-                <div class="wizard__intro-block">
+                <div class="wizard__start-block">
                     <!-- where the illustration sits -->
-                    <div class="wizard__illustration"><img  src="../images/wizard/illustrations/illustration_ein.png" alt="Register your business"></div>
+
                     <!-- tip block -->
 
-                        <p class="wizard__copy--section_intro">Registering with the City of Los Angeles is required to conduct business within the city limits. Also, it will enable you to take advantage of the incentives or credits that the city has to offer. First, let's check if you need to register your business.</p>
+                        <p class="wizard__copy--section_start">
+                        Answer a few questions about the business you are looking to open and receive a step-by-step registration checklist to complete the applications necessary to register your business. You're only steps away from becoming compliant. Get started!
+                        </p>
+
+                        <ul class="wizard__start_table_of_contents">
+                            <li class="wizard__start_table_of_contents_item">1 / City registration </li>
+                            <li class="wizard__start_table_of_contents_item">2 / Business name  </li>
+                            <li class="wizard__start_table_of_contents_item">3 / Seller's permit and use taxes  </li>
+                            <li class="wizard__start_table_of_contents_item">4 / Employee Identification Number </li>
+                            <li class="wizard__start_table_of_contents_item">5 / Registration checklist</li>
+                        </ul>
+
+                        <p class="wizard__copy--time-estimate">
+                          The guide is estimated to take 10 to 15 minutes.
+                        </p>
 
                     <!-- end of tip -->
                 </div>
@@ -102,10 +116,11 @@
 
                 <!-- navigation between the screens-->
                 <div class="wizard__nav">
-                    <a href="#" class="wizard__arrow-up"></a>
-                        <div class="wizard__arrow-down-wrapper--disabled">
-                    <a href="#" class="wizard__arrow-down--disabled"></a>
-                    </div>
+                  <div class="wizard__arrow-down-wrapper--enabled">
+                    <a href="#" class="wizard__arrow-down--enabled"><img src="../images/wizard/arrow_down_enabled_desktop.png"></a>
+                    <p class="wizard__nav_label">Next</p>
+
+                  </div>
                 </div>
 
 

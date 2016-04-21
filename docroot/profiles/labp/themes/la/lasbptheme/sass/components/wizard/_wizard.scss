@@ -1,14 +1,23 @@
 $wizard_left_margin: 25px;
+
 .wizard {
   color: $wizard-text;
   font-family: Roboto, sans-serif;
   margin:55px 0 0 0;
-  border: 0px solid green;
+
 
     border: 0px solid green;
+
     @include clearfix;
 
 }
+.wizard a{
+  color: $wizard-text;
+  font-size: 1em;
+ // text-decoration: underline;
+
+}
+
 
 .homepage_panel__content_wrapper{
 
@@ -65,7 +74,13 @@ $wizard_left_margin: 25px;
   border: 0px solid black;
 
   padding: 0;
+  margin: 0;
+  @include window_size(desktop){
+       margin: 0;
+  }
 }
+
+
 
 
 .wizard__header {
@@ -144,6 +159,7 @@ $wizard_left_margin: 25px;
   border: 0px solid red;
   @include window_size(desktop){
           font-size: 2.571em;
+           font-size: 2.4em;
   }
 }
 
@@ -161,8 +177,30 @@ $wizard_left_margin: 25px;
 }
 
 
+.wizard__question--checklist{
+  font-family: Merriweather, serif;
+  font-weight: 400;
+   font-size: 1.667em;
+  margin: 0 0 20px 25px;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+  @include window_size(desktop){
+        font-size: 2.571em;
+        margin: 0 0 20px 0;
+  }
+}
+
+
+.wizard__checklist_content{
+    border: 0px solid red;
+    width: 75%;
+    margin:20px 0 0 25px;
+}
+
 .wizard__buttons {
-  border: 0 solid white;
+  border: 0px solid white;
+  margin: 30px 0 30px 0;
 }
 
 .wizard__button {
@@ -186,12 +224,19 @@ $wizard_left_margin: 25px;
   margin: 0 0 0 3px;
 }
 
+
+.wizard__button--checklist {
+  @include wizard__button--base;
+  margin: 20px 0 20px 20px;
+}
+
+
 // used on the intro screen
 
 .wizard__copy--section_intro {
   padding: 0;
   width: 70%;
-  margin: 12px 60px 20px 20px;
+  margin: 25px 60px 20px 20px;
   font-size: 0.929em;
   border:0px solid red;
   @include window_size(tab-wide-up){
@@ -201,9 +246,13 @@ $wizard_left_margin: 25px;
   @include window_size(desktop){
       width: 80%;
       font-size: 1.357em;
-      margin: 20px 20px 20px 0;
+      margin: 30px 20px 30px 0;
   }
 }
+
+
+
+
 .wizard__icon{
     float: right;
     width:40px;
@@ -216,16 +265,21 @@ $wizard_left_margin: 25px;
 }
 .wizard__illustration{
   border: 0px solid blue;
-
+  margin:20px 0 0 0;
   width: 100%;
   @include window_size(desktop){
-      width: 90%;
+      width: 95%;
   }
 }
 
 .wizard__illustration img{
     width: 100%;
     height:100%;
+    @include window_size(desktop){
+        width: 100%;
+        height:100%;
+    }
+
 
 }
 
@@ -244,4 +298,8 @@ $wizard_left_margin: 25px;
     margin: 0;
 
 }
+
+
+
+
 .wizard__intro-screen--name-business {}

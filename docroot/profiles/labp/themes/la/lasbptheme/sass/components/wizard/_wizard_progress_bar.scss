@@ -3,13 +3,9 @@
 
 
 @mixin wizard__progress-bar-root($color:'transparent') {
-  height: 500px;
   width: 270px;
   display: inline-block;
   float: right;
-  position: absolute;
-  top:0;
-  right: 0;
 
   background-image: image-url("wizard/progress_bar.png");
   background-repeat: no-repeat;
@@ -20,6 +16,15 @@
             margin: 40px 0 0 0;
 
   }
+}
+
+@mixin wizard__progress-bar-drawer-root($color:'transparent') {
+     @include wizard__progress-bar-root($color);
+     position: absolute;
+     top:0;
+     right:0;
+
+
 }
 
 
@@ -53,30 +58,30 @@
 
 // mobile drawer root containers
 .wizard__progress-bar--section_1 {
-  @include wizard__progress-bar-root($wizard__drawer_city-registration);
+  @include wizard__progress-bar-drawer-root($wizard__drawer_city-registration);
 
 
 
 }
 
 .wizard__progress-bar--section_2 {
-  @include wizard__progress-bar-root($wizard__drawer_name);
+  @include wizard__progress-bar-drawer-root($wizard__drawer_name);
 
 }
 
 .wizard__progress-bar--section_3{
-  @include wizard__progress-bar-root($wizard__drawer_sellers-permit);
+  @include wizard__progress-bar-drawer-root($wizard__drawer_sellers-permit);
 
 }
 
 .wizard__progress-bar--section_4 {
-  @include wizard__progress-bar-root($wizard__drawer_employeer-identification-number);
+  @include wizard__progress-bar-drawer-root($wizard__drawer_employeer-identification-number);
 
 }
 
 
 .wizard__progress-bar--section_5 {
-  @include wizard__progress-bar-root($wizard__drawer_your-business_registration-guide);
+  @include wizard__progress-bar-drawer-root($wizard__drawer_your-business_registration-guide);
 
 }
 
@@ -85,8 +90,7 @@
 .wizard__progress-bar--simple{
   @include wizard__progress-bar-root();
   width: 60px;
-
-
+  @include clearfix;
   @include window_size(desktop){
       width: 270px;
 
@@ -276,6 +280,7 @@
 
 }
 
+// button for the drawer
 .wizard__button--close{
   border:0px solid white;
   background-image: image-url("wizard/icon_close.png");
