@@ -23,7 +23,9 @@ namespace.controller = {
     this.selected = !this.selected;
   },
 
-  chosen: []
+  chosen: [],
+
+  nextId: undefined
 
 }
 
@@ -42,24 +44,31 @@ namespace.views.Wizard = Backbone.View.extend({
 
     $("#wizard").css("background", this.model.get("Primary Color"));
 
+    console.log("Model", this.model);
     switch (this.model.get("screen-type")) {
     case "start":
-      console.log("APP: Start screen");
+      console.log("APP: Start");
       this.$el.html(this.screenTemplate(this.model.toJSON()));
+      namespace.controller.nextId = this.model.get("buttons")[0]["Destination Screen"]["target_id"];
       new namespace.views.NavNext();
       break;
     case "section":
-//     this.$el.find("h1").remove();
-      console.log("APP: Section screen");
+      console.log("APP: Section");
+      this.$el.html(this.screenTemplate(this.model.toJSON()));
+      namespace.controller.nextId = this.model.get("buttons")[0]["Destination Screen"]["target_id"];
+      new namespace.views.NavNext();
+      break;
+    case "question":
+      console.log("APP: question");
      this.$el.html(this.screenTemplate(this.model.toJSON()));
-    new namespace.views.Nav();
+      var buttonsView = new namespace.views.Buttons({ model: this.model });
+      buttonsView.render();
+      new namespace.views.Nav();
       break;
     default:
       console.log("APP: No screen type defined");
       break;
     }
-
-    // Initialize nav.
 
     return this;
   }
@@ -75,15 +84,22 @@ namespace.views.Buttons = Backbone.View.extend({
   el: ".wizard__buttons",
 
   render: function() {
-    this.$el.find("a").remove();
+    this.$el.find("a").remove(); // Remove any buttons from before.
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
-          var button =  new namespace.views.Button({
-            button: b, model: this.model,
-            index: index
-          });
-          this.$el.append(button.render().el);
+          if (b.Style["#markup"] === "Button") {
+            var button =  new namespace.views.Button({
+              button: b, model: this.model,
+              index: index
+            });
+            console.log("length", index);
+            this.$el.append(button.render().el);
+          }
+          if (b.Style["#markup"] === "Next") {
+            namespace.controller.selected = true;
+            namespace.controller.nextId =  b["Destination Screen"]["target_id"];
+          }
         }, this);
       }
     return this;
@@ -151,7 +167,11 @@ namespace.views.Nav = Backbone.View.extend({
   },
 
   forwardArrowClick: function(event) {
+    console.log("SELECT", namespace.controller.selected);
+    console.log("BID: ", namespace.controller.bid);
     if (namespace.controller.selected) {
+    namespace.controller.nextId = namespace.views.wizard.model.get("buttons")[namespace.controller.bid.charAt(namespace.controller.bid.length - 1)]["Destination Screen"]["target_id"];
+      console.log("NEXT ID", namespace.controller.nextId);
       namespace.collections.screens.next(namespace.controller.bid);
     }
     event.preventDefault();
@@ -168,14 +188,14 @@ namespace.views.NavNext = Backbone.View.extend({
 
   initialize: function() {
     this.$el.find(".wizard__arrow-up").hide();
+    this.$el.find(".wizard__arrow-down");
   },
   events:  {
     "click .wizard__arrow-down": "forwardArrowClick"
   },
 
   forwardArrowClick: function(event) {
-    namespace.controller.bid = "button-id-0";
-    namespace.collections.screens.next(namespace.controller.bid);
+    namespace.collections.screens.next();
     event.preventDefault();
   }
 

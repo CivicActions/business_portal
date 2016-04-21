@@ -21,8 +21,11 @@ namespace.models.Screen = Backbone.Model.extend({
 
   initialize: function() {
     this.on('change:current', function(){
-      namespace.views.wizard.render();
-      Backbone.trigger("current:update");
+      console.log("current change", this);
+      if (this.get("current") === true) {
+        namespace.views.wizard.render();
+        Backbone.trigger("current:update");
+      }
     });
   },
 });

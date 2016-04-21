@@ -14,8 +14,8 @@ namespace.collections.Screens = Backbone.Collection.extend({
   prev: function() {
     if (namespace.controller.chosen.length > 1) {
       namespace.controller.chosen.pop();
-      var m = this.find({current: true}), nm;
-      m.set({current: false});
+      // var m = this.find({current: true}), nm;
+      // m.set({current: false});
       nm = this.find({
         Nid: _.last(namespace.controller.chosen)
       });
@@ -28,17 +28,21 @@ namespace.collections.Screens = Backbone.Collection.extend({
   },
 
   next: function(bid) {
-    var m = this.find({current: true}), nm;
-    m.set({current: false});
-    console.log(m);
+//    var m = this.find({current: true}), nm;
+//    m.set({current: false});
     // New model nm
-    nm = this.find({
-      Nid: m.get("buttons")[bid.charAt(bid.length - 1)]["Destination Screen"]["target_id"]
+
+   var nm = this.find({
+      Nid:  namespace.controller.nextId
     });
+
+    console.log("next click");
     namespace.controller.chosen.push(nm.get("Nid"));
     namespace.views.wizard = new namespace.views.Wizard({
       model: nm
     });
+
+    // Bid needed here, yes, for results.
     nm.set({chosen: true, current: true, bid: bid});
     this.logging();
   },
