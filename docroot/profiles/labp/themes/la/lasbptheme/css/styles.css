@@ -1864,16 +1864,19 @@ tr.selected td {
 /* line 96, ../sass/components/_header.scss */
 #header .menu {
   float: left;
-  margin: 15px 0 0 66px;
+  margin: 0 0 0 66px;
   padding: 0;
+  height: 100%;
+  height: 55px;
 }
 
-/* line 102, ../sass/components/_header.scss */
+/* line 108, ../sass/components/_header.scss */
 #header .menu__item {
+  height: 100%;
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 102, ../sass/components/_header.scss */
+  /* line 108, ../sass/components/_header.scss */
   #header .menu__item {
     margin: 0 15px 0 0;
     padding: 0;
@@ -1885,7 +1888,40 @@ tr.selected td {
   }
 }
 
-/* line 118, ../sass/components/_header.scss */
+/* line 124, ../sass/components/_header.scss */
+#header .menu__item--selected {
+  height: 100%;
+  display: none;
+}
+@media all and (min-width: 720px) {
+  /* line 124, ../sass/components/_header.scss */
+  #header .menu__item--selected {
+    margin: 0 15px 0 0;
+    border: 0px solid pink;
+    color: white;
+    font-size: 1.286em;
+    font-weight: 700;
+    list-style: none;
+    display: inline-block;
+    background-image: url("../images/hero/menu_selector.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+  }
+}
+
+/* line 147, ../sass/components/_header.scss */
+#header .menu__item a {
+  display: block;
+}
+
+/* line 153, ../sass/components/_header.scss */
+#header .menu__link {
+  border: 0px solid red;
+  margin: 14px 0 0 0;
+  display: block;
+}
+
+/* line 160, ../sass/components/_header.scss */
 .menu__hamburger {
   width: 18px;
   height: 15px;
@@ -1893,13 +1929,13 @@ tr.selected td {
   margin: 16px 16px 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 118, ../sass/components/_header.scss */
+  /* line 160, ../sass/components/_header.scss */
   .menu__hamburger {
     display: none;
   }
 }
 
-/* line 128, ../sass/components/_header.scss */
+/* line 170, ../sass/components/_header.scss */
 .menu__hamburger--close {
   width: 16px;
   height: 16px;
@@ -1907,13 +1943,13 @@ tr.selected td {
   margin: 16px 16px 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 128, ../sass/components/_header.scss */
+  /* line 170, ../sass/components/_header.scss */
   .menu__hamburger--close {
     display: none;
   }
 }
 
-/* line 140, ../sass/components/_header.scss */
+/* line 182, ../sass/components/_header.scss */
 .menu__hamburger_contents {
   background-color: #47aee6;
   position: absolute;
@@ -1924,20 +1960,20 @@ tr.selected td {
   width: 100%;
 }
 @media all and (min-width: 720px) {
-  /* line 140, ../sass/components/_header.scss */
+  /* line 182, ../sass/components/_header.scss */
   .menu__hamburger_contents {
     display: none;
   }
 }
 
-/* line 156, ../sass/components/_header.scss */
+/* line 198, ../sass/components/_header.scss */
 .menu__hamburger_items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 161, ../sass/components/_header.scss */
+/* line 204, ../sass/components/_header.scss */
 .menu__item_hamburger {
   margin: 20px 25px 20px 25px;
   padding: 0 0 20px 0;
@@ -1948,7 +1984,7 @@ tr.selected td {
   list-style: none;
 }
 
-/* line 178, ../sass/components/_header.scss */
+/* line 221, ../sass/components/_header.scss */
 .menu__item_hamburger--last {
   margin: 20px 25px 0 25px;
   padding: 0 0 20px 0;
