@@ -17,7 +17,7 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 <div class="homepage_panel__icons style_variant_<?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?>>
   <div class="homepage_panel__content_wrapper">
     <h2 class="homepage_panel__header"><?php print $pane_title; ?></h2>
-    <hr class="homepage_panel__header-line--white"/>
+    <hr class="homepage_panel__header-line"/>
     <?php
 
     foreach ($field_calls_to_actions as $cta_key => $cta_value) {
@@ -36,7 +36,7 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
               src="<?php print $cta_icon; ?>"/></div>
         <?php endif; ?>
           <h3 class="homepage_panel__icon_header"><?php if (!empty($cta_title)): print $cta_title; endif; ?></h3>
-          <hr class="homepage_panel__header-line_thin">
+          <hr class="homepage_panel__header-line_thin"/>
           <p class="homepage_panel__paragraph">
             <?php
             if (!empty($cta_description)) {
