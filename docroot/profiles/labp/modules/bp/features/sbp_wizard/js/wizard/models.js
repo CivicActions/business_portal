@@ -17,7 +17,8 @@ namespace.models.Screen = Backbone.Model.extend({
     buttons: [],
     Color: "#EEEEEE",
     order: null,
-    next: undefined
+    next: undefined,
+    chosenResultText: ""
   },
 
   initialize: function() {
