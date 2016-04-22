@@ -5,46 +5,72 @@
 var namespace = namespace ||  {};
 namespace.collections = {}
 
+
+////////////////
+// Chosen     //
+////////////////
+
+namespace.collections.Chosen = Backbone.Collection.extend ({
+
+  model: namespace.models.Screen,
+  selected: false,
+  toggleSelected: function() {
+    this.selected = !this.selected;
+  },
+
+  prev: function() {
+    if (this.length > 1) {
+      // Drop last item.
+      this.remove(this.last());
+      namespace.views.wizard = new namespace.views.Wizard({
+        model: this.last()
+      });
+
+      namespace.views.wizard.render();
+    }
+
+
+  }
+});
+
+namespace.collections.chosen = new namespace.collections.Chosen();
+
+namespace.collections.chosen.on("add", function(m) {
+
+  // Trigger rendering of the newly added model.
+   var model = this.find({
+     Nid: m.get("Nid")
+   });
+
+  namespace.views.wizard = new namespace.views.Wizard({
+    model: model
+  });
+  namespace.views.wizard.render();
+
+});
+
+
 namespace.collections.Screens = Backbone.Collection.extend({
 
   model: namespace.models.Screen,
 
   url: "/api/json/business-portal-wizard",
 
-  prev: function() {
-    if (namespace.controller.chosen.length > 1) {
-      namespace.controller.chosen.pop();
-      // var m = this.find({current: true}), nm;
-      // m.set({current: false});
-      nm = this.find({
-        Nid: _.last(namespace.controller.chosen)
-      });
-      namespace.views.wizard = new namespace.views.Wizard({
-        model: nm
-      });
-      nm.set({chosen: true,current: true});
-    }
-    this.logging();
-  },
+  next: function() {
 
-  next: function(bid) {
-//    var m = this.find({current: true}), nm;
-//    m.set({current: false});
-    // New model nm
+    // Add the models next screen to the chosen collection.
 
-   var nm = this.find({
-      Nid:  namespace.controller.nextId
-    });
 
-    console.log("next click");
-    namespace.controller.chosen.push(nm.get("Nid"));
-    namespace.views.wizard = new namespace.views.Wizard({
-      model: nm
-    });
+    // Push to chosen.
+   // namespace.controller.chosen.push(obj);
 
-    // Bid needed here, yes, for results.
-    nm.set({chosen: true, current: true, bid: bid});
-    this.logging();
+    // Send to render.
+    // namespace.views.wizard = new namespace.views.Wizard({
+    //   model: model
+    // });
+    // namespace.views.wizard.render();
+
+//    this.log();
   },
 
   getResults: function() {
@@ -61,8 +87,11 @@ namespace.collections.Screens = Backbone.Collection.extend({
     }, this);
   },
 
-  logging: function() {
-    console.log(namespace.controller.chosen);
+  log: function() {
+
+    console.log("CHOSEN: ",
+                _.pluck(namespace.collections.chosen, "nid")
+               );
   },
 
 });

@@ -11,24 +11,6 @@ _.templateSettings = {
 (function($) {
   $( document ).ready(function() {
 
-////////////////
-// Controller //
-////////////////
-
-namespace.controller = {
-
-  selected: false,
-
-  toggleSelected: function() {
-    this.selected = !this.selected;
-  },
-
-  chosen: [],
-
-  nextId: undefined
-
-}
-
 
 ////////////
 // Wizard //
@@ -43,24 +25,19 @@ namespace.views.Wizard = Backbone.View.extend({
   render: function() {
 
     $("#wizard").css("background", this.model.get("Primary Color"));
+      this.$el.html(this.screenTemplate(this.model.toJSON()));
 
-    console.log("Model", this.model);
     switch (this.model.get("screen-type")) {
     case "start":
       console.log("APP: Start");
-      this.$el.html(this.screenTemplate(this.model.toJSON()));
-      namespace.controller.nextId = this.model.get("buttons")[0]["Destination Screen"]["target_id"];
-      new namespace.views.NavNext();
+      new namespace.views.NavStart({model: this.model});
       break;
     case "section":
       console.log("APP: Section");
-      this.$el.html(this.screenTemplate(this.model.toJSON()));
-      namespace.controller.nextId = this.model.get("buttons")[0]["Destination Screen"]["target_id"];
-      new namespace.views.NavNext();
+      new namespace.views.NavSection();
       break;
     case "question":
       console.log("APP: question");
-     this.$el.html(this.screenTemplate(this.model.toJSON()));
       var buttonsView = new namespace.views.Buttons({ model: this.model });
       buttonsView.render();
       new namespace.views.Nav();
@@ -97,8 +74,7 @@ namespace.views.Buttons = Backbone.View.extend({
             this.$el.append(button.render().el);
           }
           if (b.Style["#markup"] === "Next") {
-            namespace.controller.selected = true;
-            namespace.controller.nextId =  b["Destination Screen"]["target_id"];
+            // Set selected.
           }
         }, this);
       }
@@ -127,13 +103,13 @@ namespace.views.Button = Backbone.View.extend({
   },
 
   markSelected: function(event) {
-    namespace.controller.toggleSelected();
-    if (namespace.controller.selected) {
-      namespace.controller.bid =  $(event.currentTarget).attr("id");
-     this.$el.addClass("wizard__button--selected");
-    } else {
-     $(".wizard__button").removeClass("wizard__button--selected");
-    }
+    // namespace.controller.toggleSelected();
+    // if (namespace.controller.selected) {
+    //   _.last(namespace.controller.chosen).bid = $(event.currentTarget).attr("id");
+    //  this.$el.addClass("wizard__button--selected");
+    // } else {
+    //  $(".wizard__button").removeClass("wizard__button--selected");
+    // }
     event.preventDefault();
 },
 
@@ -144,6 +120,58 @@ namespace.views.Button = Backbone.View.extend({
     return this;
   }
 });
+
+
+///////////////
+// Nav Start //
+///////////////
+
+namespace.views.NavStart = Backbone.View.extend({
+  el: ".wizard__nav",
+
+  initialize: function() {
+    this.$el.find(".wizard__arrow-up").hide();
+  },
+  events:  {
+    "click .wizard__arrow-down": "forwardArrowClick"
+  },
+
+  forwardArrowClick: function() {
+    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
+    namespace.collections.chosen.add(m);
+    event.preventDefault();
+  }
+
+});
+
+/////////////////
+// Nav Section //
+/////////////////
+
+namespace.views.NavSection = Backbone.View.extend({
+  el: ".wizard__nav",
+
+  initialize: function() {
+    this.$el.find(".wizard__arrow-up").show();
+  },
+
+  events:  {
+    "click .wizard__arrow-up": "backArrowClick",
+    "click .wizard__arrow-down": "forwardArrowClick"
+  },
+
+  backArrowClick: function(event) {
+    namespace.collections.chosen.prev();
+    event.preventDefault();
+  },
+
+  forwardArrowClick: function(event) {
+    namespace.collections.screens.next();
+    event.preventDefault();
+  }
+
+});
+
 
 /////////
 // Nav //
@@ -167,35 +195,10 @@ namespace.views.Nav = Backbone.View.extend({
   },
 
   forwardArrowClick: function(event) {
-    console.log("SELECT", namespace.controller.selected);
-    console.log("BID: ", namespace.controller.bid);
-    if (namespace.controller.selected) {
-    namespace.controller.nextId = namespace.views.wizard.model.get("buttons")[namespace.controller.bid.charAt(namespace.controller.bid.length - 1)]["Destination Screen"]["target_id"];
-      console.log("NEXT ID", namespace.controller.nextId);
-      namespace.collections.screens.next(namespace.controller.bid);
-    }
-    event.preventDefault();
-  }
-
-});
-
-//////////////
-// Nav Next //
-//////////////
-
-namespace.views.NavNext = Backbone.View.extend({
-  el: ".wizard__nav",
-
-  initialize: function() {
-    this.$el.find(".wizard__arrow-up").hide();
-    this.$el.find(".wizard__arrow-down");
-  },
-  events:  {
-    "click .wizard__arrow-down": "forwardArrowClick"
-  },
-
-  forwardArrowClick: function(event) {
-    namespace.collections.screens.next();
+//    if (namespace.controller.selected) {
+    //  namespace.collections.screens.next();
+    // Add to chosen collection.
+  //  }
     event.preventDefault();
   }
 
