@@ -55,3 +55,30 @@ bundle exec compass clean
 ``` bash
 bundle exec compass compile
 ```
+
+## Using the example database
+
+All steps below are assumed to be run from the command line
+
+### Step 1. Clear out your database
+`drush sql-dump -y`
+
+### Step 2. Load prod database
+`drush sql-cli < /assets/labp-2016-04-22T22-41-01.sql`
+
+### Step 3. Enable stage file proxy
+`drush en stage_file_proxy -y`
+
+### Step 4. Disable Acquia Cloud Site Factory module
+`drush dis acsf -y`
+
+### Step 5. Login as admin
+`drush uli`
+
+### Step 6. Configure stage file proxy
+- Go to `admin/config/system/stage_file_proxy`  
+- Enter `http://labp.cityofla.acsitefactory.com` for origin
+- Enter `sites/g/files/wph521/f` for the directory
+
+### Step 7. Clear cache
+`drush cc all`
