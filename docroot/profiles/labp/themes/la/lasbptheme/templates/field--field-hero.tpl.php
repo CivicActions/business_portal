@@ -57,9 +57,19 @@ foreach($heros as $hero){
 <!-- hero start -->
 <div class="pane__hero_<?php print $width; ?> style_variant_<?php print $pane_style; ?> <?php print $classes; ?>">
   <?php if($background_image):?>
-    <div class="hero__overlay_<?php print $width; ?>_photo">
-      <img src="<?php print file_create_url($background_image); ?>" />
-    </div>
+     <?php if($width == "full"){ ?>
+        <div class = "hero__image--bg-full">
+          <div style = "background-image: url(<?php print $background_image_path;?>)" class="hero__overlay_<?php print $width; ?>_photo">
+            <img src="<?php print file_create_url($background_image); ?>" />
+          </div>
+      </div>
+      <?php } else{ ?>
+      <div class = "hero__image--bg-half">
+        <div class="hero__overlay_<?php print $width; ?>_photo">
+          <img src="<?php print file_create_url($background_image); ?>" />
+        </div>
+      </div>
+      <?php } ?>
   <?php endif; ?>
   <div class="hero__overlay_<?php print $width; ?>">
     <div class="hero__icon_bottom_alignment">
