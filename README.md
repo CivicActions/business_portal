@@ -27,3 +27,31 @@ http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip
 `@labp.labp.dev` to interact with DrupalVM
 1. If you require SSH access to access logs, manually alter system configuration, or access other tools 
 in the VM, run `vagrant ssh` from the box directory after set up
+
+## Compass and SASS installation with Bundler
+
+Note: The directories below assume you are running gem from your local computer. 
+
+If running from DrupalVM, please substitute `/var/www/labp` for `~/Projects/business_portal/docroot`.
+
+### Step 1. Install bundler
+```bash
+cd ~/Projects/business_portal/docroot/profiles/labp/themes/la/lasbptheme
+gem install bundler
+```
+Please use `sudo gem install bundler` when running on DrupalVM
+
+### Step 2. Install required gems
+``` bash
+bundle install
+```
+
+### Step 3. Clean compass from the bundle
+``` bash
+bundle exec compass clean
+```
+
+### Step 4. Execute compass from the bundle
+``` bash
+bundle exec compass compile
+```

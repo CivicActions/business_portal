@@ -1,0 +1,103 @@
+@mixin panel__hr_thick($color) {
+  height: 4px;
+  max-width: 80px;
+  background: $color;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+@mixin panel__hr_thin($color) {
+  height: 2px;
+  max-width: 40px;
+  background: $color;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+@mixin panel__button--base($bgcolor) {
+  //@include border-radius(20px);
+  background-color:$bgcolor;
+  padding: 8px 20px 8px 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin:0 0 20px 0;
+  cursor: pointer;
+
+  @include window_size(desktop){
+    //@include border-radius(25px);
+    font-size: 1.143em;
+    padding: 10px 20px 10px 20px;
+
+  }
+  //@include clearfix;
+
+}
+
+.panel__header{
+  font-family: Merriweather;
+  font-weight: 700;
+  margin:0 0 18px 0;
+  padding: 0;
+  font-size:1.714em;
+  width: 70%;
+  @include window_size(tab-wide-up){
+    font-size: 2.571em;
+    margin:0 0 30px 0;
+  }
+
+}
+
+.panel__header-line {
+  @include panel__hr_thick(blue);
+}
+
+.panel__header-line_thin {
+  @include panel__hr_thin(blue);
+}
+
+.panel__icon{
+  width: 65px;
+  float: right;
+  @include window_size(tab-wide-up){
+    width: 134px;
+    float: none;
+  }
+
+}
+
+.panel__icon_header{
+  color: black;
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 1.286em;
+  width: 70%;
+  @include window_size(tab-wide-up){
+    font-size:1.429em;
+  }
+
+}
+
+.panel__paragraph{
+  color: navy;
+  width: 65%;
+  margin: 0;
+  padding: 14px 0 25px 0;
+
+}
+
+.panel__button--yellow {
+  @include panel__button--base(yellow);
+}
+
+.panel__section{
+  @include window_size(tab-wide-up){
+    width: 25%;
+    float: left;
+  }
+}
+
+.pane-bundle-four-column-cta > .pane-title {
+  display: none;
+}
