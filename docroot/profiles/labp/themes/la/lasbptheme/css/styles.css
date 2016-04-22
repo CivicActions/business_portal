@@ -2666,7 +2666,7 @@ a.wizard__button--selected {
 .wizard__progress-bar-indicator {
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url('../images/wizard/progress_bar.png?1461280441');
+  background-image: url('../images/wizard/progress_bar.png?1461285846');
   position: relative;
   top: 15px;
   left: 14px;
@@ -2678,7 +2678,7 @@ a.wizard__button--selected {
 .section-1 .wizard__progress-bar-icon {
   width: 40px;
   height: 55px;
-  background-image: url('../images/wizard/icon_info.png?1461280441');
+  background-image: url('../images/wizard/icon_info.png?1461285846');
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -2716,7 +2716,7 @@ a.wizard__arrow-up {
 
 /* line 16, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down_filled.png?1461280441');
+  background-image: url('../images/wizard/arrow_down_filled.png?1461285846');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
