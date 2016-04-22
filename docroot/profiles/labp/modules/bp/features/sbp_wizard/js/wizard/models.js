@@ -16,24 +16,25 @@ namespace.models.Screen = Backbone.Model.extend({
     description: "",
     buttons: [],
     Color: "#EEEEEE",
-    order: null
+    order: null,
+    next: undefined,
+    chosenResultText: ""
   },
 
   initialize: function() {
-
-    this.on('change:current', function(){
-
-      namespace.views.wizard.remove();
-      // Initialize wizard again.
-      console.log("change event");
-      Backbone.trigger("current:update");
-      $(".wizard__content-block").html(namespace.views.wizard.render().el);
-
-    });
-
+    this.setNextScreen();
   },
 
-
+  setNextScreen: function() {
+    // Set the next screen, when we have that information available:
+    switch (this.get("buttons").length) {
+    case 1:
+    case 2:
+      var nid = this.get("buttons")[0]["Destination Screen"]["target_id"];
+      this.set({next: nid});
+      break;
+    }
+  }
 });
 
 

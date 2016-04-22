@@ -9,22 +9,7 @@ _.templateSettings = {
 
 
 (function($) {
-
-////////////////
-// Controller //
-////////////////
-
-namespace.controller = {
-
-  selected: false,
-
-  toggleSelected: function() {
-    this.selected = !this.selected;
-  },
-
-  chosen: []
-
-}
+  $( document ).ready(function() {
 
 
 ////////////
@@ -32,29 +17,41 @@ namespace.controller = {
 ////////////
 
 namespace.views.Wizard = Backbone.View.extend({
-
-  tagName: 'div',
+  el: ".wizard__content-block",
+  className: "wiz",
 
   screenTemplate: _.template('<div class="wizard__header">{{section.tid}} / {{Name}}</div><div class="wizard__header-line" /> <h1 class="wizard__question">{{ title }}</h1> <div class="wizard__tip">{{Description}}</div>'),
 
   render: function() {
 
-    if (this.model.get("Confirmation Screen") === "1") {
-      var resultsView = new namespace.views.ResultsView(
-        { collection: this.collection}
-      );
-      Backbone.trigger("buttonstate:deselected");
-      return true;
-    } else {
-      console.log(this.$el);
+    $("#wizard").css("background", this.model.get("Primary Color"));
       this.$el.html(this.screenTemplate(this.model.toJSON()));
-      $("#wizard").css("background", this.model.get("Color"));
-        var buttonsView = new namespace.views.Buttons({ model: this.model });
-        buttonsView.render();
-      }
+
+    switch (this.model.get("screen-type")) {
+    case "start":
+      console.log("APP: Start");
+      new namespace.views.NavStart({model: this.model});
+      break;
+    case "section":
+      console.log("APP: Section");
+      new namespace.views.NavSection({model: this.model});
+      break;
+    case "question":
+      console.log("APP: question");
+      var buttonsView = new namespace.views.Buttons({ model: this.model });
+      buttonsView.render();
+      new namespace.views.Nav({model: this.model});
+      break;
+    default:
+      console.log("APP: No screen type defined");
+      break;
+    }
+
     return this;
   }
+
 });
+
 
 /////////////
 // Buttons //
@@ -64,15 +61,21 @@ namespace.views.Buttons = Backbone.View.extend({
   el: ".wizard__buttons",
 
   render: function() {
-    this.$el.find("a").remove();
+    this.$el.find("a").remove(); // Remove any buttons from before.
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
-          var button =  new namespace.views.Button({
-            button: b, model: this.model,
-            index: index
-          });
-          this.$el.append(button.render().el);
+          if (b.Style["#markup"] === "Button") {
+            var button =  new namespace.views.Button({
+              button: b, model: this.model,
+              index: index
+            });
+            console.log("length", index);
+            this.$el.append(button.render().el);
+          }
+          if (b.Style["#markup"] === "Next") {
+            // Set selected.
+          }
         }, this);
       }
     return this;
@@ -100,13 +103,24 @@ namespace.views.Button = Backbone.View.extend({
   },
 
   markSelected: function(event) {
-    namespace.controller.toggleSelected();
-    if (namespace.controller.selected) {
-      namespace.controller.bid =  $(event.currentTarget).attr("id");
-     this.$el.addClass("wizard__button--selected");
-    } else {
-     $(".wizard__button").removeClass("wizard__button--selected");
+    namespace.collections.chosen.toggleSelected();
+     if (namespace.collections.chosen.selected) {
+       this.$el.addClass("wizard__button--selected");
+     } else {
+       $(".wizard__button").removeClass("wizard__button--selected");
     }
+    var m = namespace.collections.chosen.last();
+    var bidString =  $(event.currentTarget).attr("id");
+    var bid = bidString.charAt(bidString.length -1);
+    var nid = m.get("buttons")[bid]["Destination Screen"]["target_id"];
+    var resultText =  m.get("buttons")[bid]["Button Result Text"]["#markup"];
+
+    m.set({
+      next: nid,
+      chosenBid: bid,
+      chosenResultText: resultText
+    });
+
     event.preventDefault();
 },
 
@@ -118,12 +132,39 @@ namespace.views.Button = Backbone.View.extend({
   }
 });
 
-/////////
-// Nav //
-/////////
 
-namespace.views.Nav = Backbone.View.extend({
+///////////////
+// Nav Start //
+///////////////
+
+namespace.views.NavStart = Backbone.View.extend({
   el: ".wizard__nav",
+
+  initialize: function() {
+    this.$el.find(".wizard__arrow-up").hide();
+  },
+  events:  {
+    "click .wizard__arrow-down": "forwardArrowClick"
+  },
+
+  forwardArrowClick: function() {
+    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
+    namespace.collections.chosen.add(m);
+    event.preventDefault();
+  }
+
+});
+
+/////////////////
+// Nav Section //
+/////////////////
+
+namespace.views.NavSection = Backbone.View.extend({
+  el: ".wizard__nav",
+
+  initialize: function() {
+    this.$el.find(".wizard__arrow-up").show();
+  },
 
   events:  {
     "click .wizard__arrow-up": "backArrowClick",
@@ -131,18 +172,48 @@ namespace.views.Nav = Backbone.View.extend({
   },
 
   backArrowClick: function(event) {
-    namespace.collections.screens.prev();
+    namespace.collections.chosen.prev();
     event.preventDefault();
   },
 
   forwardArrowClick: function(event) {
-    if (namespace.controller.selected) {
-      namespace.collections.screens.next(namespace.controller.bid);
-    }
+    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
+    namespace.collections.chosen.add(m);
+  }
+
+});
+
+
+/////////
+// Nav //
+/////////
+
+namespace.views.Nav = Backbone.View.extend({
+  el: ".wizard__nav",
+
+  initialize: function() {
+    this.$el.find(".wizard__arrow-up").show();
+    console.log("buttons", this.model.get("buttons"));
+  },
+
+  events:  {
+    "click .wizard__arrow-up": "backArrowClick",
+    "click .wizard__arrow-down": "forwardArrowClick"
+  },
+
+  backArrowClick: function() {
+    namespace.collections.chosen.prev();
+    event.preventDefault();
+  },
+
+  forwardArrowClick: function(event) {
+    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
+    namespace.collections.chosen.add(m);
     event.preventDefault();
   }
 
 });
+
 
 
 ////////////////////////
@@ -308,5 +379,7 @@ namespace.views.SectionStepItem = Backbone.View.extend({
     return this;
   }
 });
+
+  });
 
 })(jQuery);
