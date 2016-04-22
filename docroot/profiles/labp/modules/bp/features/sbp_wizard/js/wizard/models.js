@@ -25,9 +25,13 @@ namespace.models.Screen = Backbone.Model.extend({
   },
 
   setNextScreen: function() {
-    if (this.get("buttons").length === 2) {
+    // Set the next screen, when we have that information available:
+    switch (this.get("buttons").length) {
+    case 1:
+    case 2:
       var nid = this.get("buttons")[0]["Destination Screen"]["target_id"];
       this.set({next: nid});
+      break;
     }
   }
 });

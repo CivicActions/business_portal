@@ -34,13 +34,13 @@ namespace.views.Wizard = Backbone.View.extend({
       break;
     case "section":
       console.log("APP: Section");
-      new namespace.views.NavSection();
+      new namespace.views.NavSection({model: this.model});
       break;
     case "question":
       console.log("APP: question");
       var buttonsView = new namespace.views.Buttons({ model: this.model });
       buttonsView.render();
-      new namespace.views.Nav();
+      new namespace.views.Nav({model: this.model});
       break;
     default:
       console.log("APP: No screen type defined");
@@ -110,6 +110,20 @@ namespace.views.Button = Backbone.View.extend({
     // } else {
     //  $(".wizard__button").removeClass("wizard__button--selected");
     // }
+    var m = namespace.collections.chosen.last();
+    // Mark collection selected @todo
+    console.log("event", event.currentTarget);
+    var bidString =  $(event.currentTarget).attr("id");
+    var bid = bidString.charAt(bidString.length -1);
+    console.log("bid", bidString.charAt(bidString.length -1));
+    console.log("mark selected", bid);
+    // @ TODO change NID to be the targe ID for the button, and chosenResultText to be the choice otherwise undefined.
+    m.set({
+      next: "NID",
+      chosenBid: bid,
+      chosenResultText: "Actual result text"
+    });
+
     event.preventDefault();
 },
 
@@ -166,8 +180,8 @@ namespace.views.NavSection = Backbone.View.extend({
   },
 
   forwardArrowClick: function(event) {
-    namespace.collections.screens.next();
-    event.preventDefault();
+    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
+    namespace.collections.chosen.add(m);
   }
 
 });
@@ -182,6 +196,7 @@ namespace.views.Nav = Backbone.View.extend({
 
   initialize: function() {
     this.$el.find(".wizard__arrow-up").show();
+    console.log("m", this.model.get("buttons"));
   },
 
   events:  {
@@ -189,16 +204,16 @@ namespace.views.Nav = Backbone.View.extend({
     "click .wizard__arrow-down": "forwardArrowClick"
   },
 
-  backArrowClick: function(event) {
-    namespace.collections.screens.prev();
+  backArrowClick: function() {
+    namespace.collections.chosen.prev();
     event.preventDefault();
   },
 
   forwardArrowClick: function(event) {
-//    if (namespace.controller.selected) {
-    //  namespace.collections.screens.next();
-    // Add to chosen collection.
-  //  }
+    console.log("event", event);
+    namespace.collections.chosen.selected = true;
+    var m =  namespace.collections.screens.find({"Nid": "20"});
+    namespace.collections.chosen.add(m);
     event.preventDefault();
   }
 
