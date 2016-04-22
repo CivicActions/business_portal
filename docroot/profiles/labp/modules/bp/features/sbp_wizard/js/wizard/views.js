@@ -103,25 +103,22 @@ namespace.views.Button = Backbone.View.extend({
   },
 
   markSelected: function(event) {
-    // namespace.controller.toggleSelected();
-    // if (namespace.controller.selected) {
-    //   _.last(namespace.controller.chosen).bid = $(event.currentTarget).attr("id");
-    //  this.$el.addClass("wizard__button--selected");
-    // } else {
-    //  $(".wizard__button").removeClass("wizard__button--selected");
-    // }
+    namespace.collections.chosen.toggleSelected();
+     if (namespace.collections.chosen.selected) {
+       this.$el.addClass("wizard__button--selected");
+     } else {
+       $(".wizard__button").removeClass("wizard__button--selected");
+    }
     var m = namespace.collections.chosen.last();
-    // Mark collection selected @todo
-    console.log("event", event.currentTarget);
     var bidString =  $(event.currentTarget).attr("id");
     var bid = bidString.charAt(bidString.length -1);
-    console.log("bid", bidString.charAt(bidString.length -1));
-    console.log("mark selected", bid);
-    // @ TODO change NID to be the targe ID for the button, and chosenResultText to be the choice otherwise undefined.
+    var nid = m.get("buttons")[bid]["Destination Screen"]["target_id"];
+    var resultText =  m.get("buttons")[bid]["Button Result Text"]["#markup"];
+
     m.set({
-      next: "NID",
+      next: nid,
       chosenBid: bid,
-      chosenResultText: "Actual result text"
+      chosenResultText: resultText
     });
 
     event.preventDefault();
@@ -196,7 +193,7 @@ namespace.views.Nav = Backbone.View.extend({
 
   initialize: function() {
     this.$el.find(".wizard__arrow-up").show();
-    console.log("m", this.model.get("buttons"));
+    console.log("buttons", this.model.get("buttons"));
   },
 
   events:  {
@@ -210,9 +207,7 @@ namespace.views.Nav = Backbone.View.extend({
   },
 
   forwardArrowClick: function(event) {
-    console.log("event", event);
-    namespace.collections.chosen.selected = true;
-    var m =  namespace.collections.screens.find({"Nid": "20"});
+    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
     namespace.collections.chosen.add(m);
     event.preventDefault();
   }
