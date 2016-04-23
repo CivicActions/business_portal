@@ -1,7 +1,7 @@
   // Model constructor Screen.
 
-var namespace = namespace ||  {};
-namespace.models = {};
+var wiz = wiz ||  {};
+wiz.models = {};
 
 (function($) {
 
@@ -9,7 +9,7 @@ namespace.models = {};
 // Screen //
 ////////////
 
-namespace.models.Screen = Backbone.Model.extend({
+wiz.models.Screen = Backbone.Model.extend({
   defaults: {
     chosen: false,
     title: "",
@@ -44,6 +44,6 @@ namespace.models.Screen = Backbone.Model.extend({
 // Section //
 /////////////
 
-namespace.models.Section = Backbone.Model.extend({});
+wiz.models.Section = Backbone.Model.extend({});
 
 })(jQuery);
