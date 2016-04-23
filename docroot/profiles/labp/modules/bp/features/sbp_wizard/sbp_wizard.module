@@ -75,7 +75,14 @@ function sbp_wizard_block() {
 
      <div class="wizard__buttons"></div>
 
-    <div class="wizard__nav"></div>
+     <div class="wizard__tip">
+       <div class="wizard__tip_icon"></div>
+       <div class="wizard__tip_content">
+       <p class="wizard__tip_copy"></p>
+       </div>
+     </div>
+
+     <div class="wizard__nav"></div>
 
     <div class="wizard__progress-bar">
      <div class="wizard__progress-bar-indicator">

@@ -1,5 +1,5 @@
-var namespace = namespace || {};
-namespace.views = {};
+var wiz = wiz || {};
+wiz.views = {};
 
 // User moustachs style templates.
 _.templateSettings = {
@@ -16,7 +16,7 @@ _.templateSettings = {
 // Wizard //
 ////////////
 
-namespace.views.Wizard = Backbone.View.extend({
+wiz.views.Wizard = Backbone.View.extend({
   el: ".wizard__content-block",
   className: "wiz",
 
@@ -38,7 +38,7 @@ namespace.views.Wizard = Backbone.View.extend({
       break;
     case "question":
       console.log("APP: question");
-      var buttons = new namespace.views.Buttons({ model: this.model });
+      var buttons = new wiz.views.Buttons({ model: this.model });
       buttons.render();
       break;
     default:
@@ -56,17 +56,29 @@ namespace.views.Wizard = Backbone.View.extend({
 // Buttons //
 /////////////
 
-namespace.views.Buttons = Backbone.View.extend({
+wiz.views.Buttons = Backbone.View.extend({
   el: ".wizard__buttons",
 
   render: function() {
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
+          console.log("style", b.Style);
           if (b.Style["#markup"] === "Button") {
-            var button =  new namespace.views.Button({
-              button: b, model: this.model,
-              index: index
+            var button =  new wiz.views.Button({
+              button: b,
+              model: this.model,
+              index: index,
+              className: "wizard__button"
+            });
+            this.$el.append(button.render().el);
+          }
+          if (b.Style["#markup"] === "Link") {
+            var button =  new wiz.views.Button({
+              button: b,
+              model: this.model,
+              index: index,
+              className: "wizard__tip_button"
             });
             this.$el.append(button.render().el);
           }
@@ -83,11 +95,9 @@ namespace.views.Buttons = Backbone.View.extend({
 // A Button //
 //////////////
 
-namespace.views.Button = Backbone.View.extend({
+wiz.views.Button = Backbone.View.extend({
 
   tagName: "a",
-
-  className: "wizard__button",
 
   initialize: function(options) {
     this.options = options || {};
@@ -100,13 +110,13 @@ namespace.views.Button = Backbone.View.extend({
   },
 
   markSelected: function(event) {
-    namespace.collections.chosen.toggleSelected();
-     if (namespace.collections.chosen.selected) {
+    wiz.collections.chosen.toggleSelected();
+     if (wiz.collections.chosen.selected) {
        this.$el.addClass("wizard__button--selected");
      } else {
        $(".wizard__button").removeClass("wizard__button--selected");
     }
-    var m = namespace.collections.chosen.last();
+    var m = wiz.collections.chosen.last();
     var bidString =  $(event.currentTarget).attr("id");
     var bid = bidString.charAt(bidString.length -1);
     if (m.get("buttons")[bid]["Destination Screen"] !== undefined) {
@@ -141,7 +151,7 @@ namespace.views.Button = Backbone.View.extend({
 // Nav //
 /////////
 
-namespace.views.Nav = Backbone.View.extend({
+wiz.views.Nav = Backbone.View.extend({
   el: ".wizard__nav",
 
   initialize: function() {
@@ -155,28 +165,28 @@ namespace.views.Nav = Backbone.View.extend({
 
   backArrowClick: function() {
 
-    if (namespace.collections.chosen.length > 1) {
-      var last = namespace.collections.chosen.last();
-      namespace.collections.chosen.remove(last);
-      namespace.views.wizard = new namespace.views.Wizard({
-        model: namespace.collections.chosen.last()
+    if (wiz.collections.chosen.length > 1) {
+      var last = wiz.collections.chosen.last();
+      wiz.collections.chosen.remove(last);
+      wiz.views.wizard = new wiz.views.Wizard({
+        model: wiz.collections.chosen.last()
      });
-      namespace.views.wizard.render();
+      wiz.views.wizard.render();
     }
 
     event.preventDefault();
   },
 
   forwardArrowClick: function(event) {
-    var m =  namespace.collections.screens.find({
-      "Nid": namespace.views.wizard.model.get("next")
+    var m =  wiz.collections.screens.find({
+      "Nid": wiz.views.wizard.model.get("next")
     });
-    namespace.collections.chosen.add(m);
+    wiz.collections.chosen.add(m);
     event.preventDefault();
   },
 
   render: function() {
-    var arrows = new namespace.views.NavArrows();
+    var arrows = new wiz.views.NavArrows();
     this.$el.append(arrows.render().el);
   }
 
@@ -187,7 +197,7 @@ namespace.views.Nav = Backbone.View.extend({
 // NAV ARROWS //
 ////////////////
 
-namespace.views.NavArrows = Backbone.View.extend({
+wiz.views.NavArrows = Backbone.View.extend({
   tagName: "a",
 
    navTemplate: _.template('<a href="#" class="wizard__arrow-up">back</a><a href="#" class="wizard__arrow-down">forward</a>'),
@@ -205,15 +215,15 @@ namespace.views.NavArrows = Backbone.View.extend({
 // // Results View /////
 ////////////////////////
 
-namespace.views.ResultsView = Backbone.View.extend({
+wiz.views.ResultsView = Backbone.View.extend({
   el: ".wizard__content--results-list",
 
   initialize: function() {
     this.$el.append("<h5>Results</h5>");
     var results = [];
-    results = namespace.collections.screens.getResults();
+    results = wiz.collections.screens.getResults();
     _.each(results, function(r) {
-      var resultView = new namespace.views.Result({result: r});
+      var resultView = new wiz.views.Result({result: r});
       this.$el.append(resultView.render().el);
     }, this);
 
@@ -224,7 +234,7 @@ namespace.views.ResultsView = Backbone.View.extend({
 // Result //
 ////////////
 
-namespace.views.Result = Backbone.View.extend({
+wiz.views.Result = Backbone.View.extend({
 
   tagName: "li",
 
@@ -245,7 +255,7 @@ namespace.views.Result = Backbone.View.extend({
 // Progress Bar //
 //////////////////
 
-namespace.views.ProgressBar = Backbone.View.extend({
+wiz.views.ProgressBar = Backbone.View.extend({
 
   el: ".wizard__progress-bar",
 
@@ -258,7 +268,7 @@ namespace.views.ProgressBar = Backbone.View.extend({
     this.$el.removeClass(function(index, css) {
       return (css.match (/\bsection-\S+/g) || []).join(' ');
     });
-    this.$el.addClass("section-" + namespace.views.wizard.model.get("section").tid);
+    this.$el.addClass("section-" + wiz.views.wizard.model.get("section").tid);
   },
 
   render: function() {
@@ -272,7 +282,7 @@ namespace.views.ProgressBar = Backbone.View.extend({
 // Progress Drawer //
 /////////////////////
 
-namespace.views.ProgressDrawer = Backbone.View.extend({
+wiz.views.ProgressDrawer = Backbone.View.extend({
 
   el: ".wizard__progress-drawer",
 
@@ -286,10 +296,10 @@ namespace.views.ProgressDrawer = Backbone.View.extend({
     this.$el.find("ul").remove();
     this.$el.find("li").remove();
 
-    var progress = namespace.collections.sections.models;
+    var progress = wiz.collections.sections.models;
 
     _.each(progress, function(section) {
-      var s = new namespace.views.Section({model: section}).render().el;
+      var s = new wiz.views.Section({model: section}).render().el;
       this.$el.append(s);
     }, this);
 
@@ -299,7 +309,7 @@ namespace.views.ProgressDrawer = Backbone.View.extend({
 });
 
 
-namespace.views.Section = Backbone.View.extend({
+wiz.views.Section = Backbone.View.extend({
 
   tagName: "li",
 
@@ -307,7 +317,7 @@ namespace.views.Section = Backbone.View.extend({
 
   render: function() {
     this.$el.append(this.template({name: this.model.get("title")}));
-    var sectionSteps = new namespace.views.SectionSteps({sectionId: this.model.get("id")}).render().el;
+    var sectionSteps = new wiz.views.SectionSteps({sectionId: this.model.get("id")}).render().el;
     this.$el.append(sectionSteps);
     return this;
   }
@@ -317,7 +327,7 @@ namespace.views.Section = Backbone.View.extend({
 
 
 
-namespace.views.SectionSteps = Backbone.View.extend({
+wiz.views.SectionSteps = Backbone.View.extend({
 
   tagName: "ul",
 
@@ -330,18 +340,18 @@ namespace.views.SectionSteps = Backbone.View.extend({
 
     // @TODO move this method into the collection.
     // @TODO Sort screen by section ID.
-    var screens = _.filter(namespace.collections.screens.models, function(s){
+    var screens = _.filter(wiz.collections.screens.models, function(s){
       return s.attributes.section.tid === this.sectionId;
     }, this);
 
     var graphic;
     _.each(screens, function(s) {
-      if (s.get("Nid") === namespace.views.wizard.model.get("Nid")) {
+      if (s.get("Nid") === wiz.views.wizard.model.get("Nid")) {
         graphic = " O ";
       } else {
         graphic = " | ";
       }
-      var sectionStepItem = new namespace.views.SectionStepItem({graphic: graphic}).render().el;
+      var sectionStepItem = new wiz.views.SectionStepItem({graphic: graphic}).render().el;
       this.$el.append(sectionStepItem);
     }, this );
     return this;
@@ -350,7 +360,7 @@ namespace.views.SectionSteps = Backbone.View.extend({
 
 
 
-namespace.views.SectionStepItem = Backbone.View.extend({
+wiz.views.SectionStepItem = Backbone.View.extend({
   tagName: "li",
 
   initialize: function(options) {

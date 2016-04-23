@@ -2,47 +2,47 @@
 // Collections //
 /////////////////
 
-var namespace = namespace ||  {};
-namespace.collections = {}
+var wiz = wiz ||  {};
+wiz.collections = {}
 
 
 ////////////////
 // Chosen     //
 ////////////////
 
-namespace.collections.Chosen = Backbone.Collection.extend ({
+wiz.collections.Chosen = Backbone.Collection.extend ({
 
-  model: namespace.models.Screen,
+  model: wiz.models.Screen,
   selected: false,
   toggleSelected: function() {
     this.selected = !this.selected;
   },
 });
 
-namespace.collections.chosen = new namespace.collections.Chosen();
+wiz.collections.chosen = new wiz.collections.Chosen();
 
-namespace.collections.chosen.on("add", function(m) {
+wiz.collections.chosen.on("add", function(m) {
 
   // Trigger rendering of the newly added model.
    var model = this.find({
      Nid: m.get("Nid")
    });
 
-  namespace.views.wizard = new namespace.views.Wizard({
+  wiz.views.wizard = new wiz.views.Wizard({
     model: model
   });
-  namespace.views.wizard.render();
+  wiz.views.wizard.render();
 });
 
 
-namespace.collections.Screens = Backbone.Collection.extend({
+wiz.collections.Screens = Backbone.Collection.extend({
 
-  model: namespace.models.Screen,
+  model: wiz.models.Screen,
 
   url: "/api/json/business-portal-wizard",
 
   // getResults: function() {
-  //   return _.map(namespace.controller.chosen, function(s) {
+  //   return _.map(wiz.controller.chosen, function(s) {
   //     var m;
   //     m = this.find({
   //       Nid: s
@@ -60,9 +60,9 @@ namespace.collections.Screens = Backbone.Collection.extend({
 // Sections //
 //////////////
 
-namespace.collections.Sections = Backbone.Collection.extend({
-  model: namespace.models.Section
+wiz.collections.Sections = Backbone.Collection.extend({
+  model: wiz.models.Section
 
 });
 
-namespace.collections.sections = new namespace.collections.Sections();
+wiz.collections.sections = new wiz.collections.Sections();
