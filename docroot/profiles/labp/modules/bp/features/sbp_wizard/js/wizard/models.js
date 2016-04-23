@@ -30,8 +30,10 @@ namespace.models.Screen = Backbone.Model.extend({
     switch (this.get("buttons").length) {
     case 1:
     case 2:
+      if (this.get("buttons")[0]["Destination Screen"] !== undefined) {
       var nid = this.get("buttons")[0]["Destination Screen"]["target_id"];
       this.set({next: nid});
+      }
       break;
     }
   }

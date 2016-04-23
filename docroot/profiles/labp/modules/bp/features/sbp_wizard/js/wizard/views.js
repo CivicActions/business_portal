@@ -23,24 +23,23 @@ namespace.views.Wizard = Backbone.View.extend({
   screenTemplate: _.template('<div class="wizard__header">{{section.tid}} / {{Name}}</div><div class="wizard__header-line" /> <h1 class="wizard__question">{{ title }}</h1> <div class="wizard__tip">{{Description}}</div>'),
 
   render: function() {
+    $("#wizard").css("background", "#" + this.model.get("Primary Color"));
+    this.$el.html(this.screenTemplate(this.model.toJSON()));
 
-    $("#wizard").css("background", this.model.get("Primary Color"));
-      this.$el.html(this.screenTemplate(this.model.toJSON()));
+    // Clean up dom elements and events.
+    $(".wizard__buttons").find("a").remove();
 
     switch (this.model.get("screen-type")) {
     case "start":
       console.log("APP: Start");
-      new namespace.views.NavStart({model: this.model});
       break;
     case "section":
       console.log("APP: Section");
-      new namespace.views.NavSection({model: this.model});
       break;
     case "question":
       console.log("APP: question");
-      var buttonsView = new namespace.views.Buttons({ model: this.model });
-      buttonsView.render();
-      new namespace.views.Nav({model: this.model});
+      var buttons = new namespace.views.Buttons({ model: this.model });
+      buttons.render();
       break;
     default:
       console.log("APP: No screen type defined");
@@ -61,7 +60,6 @@ namespace.views.Buttons = Backbone.View.extend({
   el: ".wizard__buttons",
 
   render: function() {
-    this.$el.find("a").remove(); // Remove any buttons from before.
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
@@ -70,7 +68,6 @@ namespace.views.Buttons = Backbone.View.extend({
               button: b, model: this.model,
               index: index
             });
-            console.log("length", index);
             this.$el.append(button.render().el);
           }
           if (b.Style["#markup"] === "Next") {
@@ -112,13 +109,19 @@ namespace.views.Button = Backbone.View.extend({
     var m = namespace.collections.chosen.last();
     var bidString =  $(event.currentTarget).attr("id");
     var bid = bidString.charAt(bidString.length -1);
-    var nid = m.get("buttons")[bid]["Destination Screen"]["target_id"];
-    var resultText =  m.get("buttons")[bid]["Button Result Text"]["#markup"];
+    if (m.get("buttons")[bid]["Destination Screen"] !== undefined) {
+      var nid = m.get("buttons")[bid]["Destination Screen"]["target_id"];
+    } else {
+      console.log("APP: Destination screen not defined.");
+      return;
+    }
+    // @TODO check for undefined button results.
+    //var resultText =  m.get("buttons")[bid]["Button Result Text"]["#markup"];
 
     m.set({
       next: nid,
       chosenBid: bid,
-      chosenResultText: resultText
+      chosenResultText: "@TODO"
     });
 
     event.preventDefault();
@@ -133,56 +136,6 @@ namespace.views.Button = Backbone.View.extend({
 });
 
 
-///////////////
-// Nav Start //
-///////////////
-
-namespace.views.NavStart = Backbone.View.extend({
-  el: ".wizard__nav",
-
-  initialize: function() {
-    this.$el.find(".wizard__arrow-up").hide();
-  },
-  events:  {
-    "click .wizard__arrow-down": "forwardArrowClick"
-  },
-
-  forwardArrowClick: function() {
-    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
-    namespace.collections.chosen.add(m);
-    event.preventDefault();
-  }
-
-});
-
-/////////////////
-// Nav Section //
-/////////////////
-
-namespace.views.NavSection = Backbone.View.extend({
-  el: ".wizard__nav",
-
-  initialize: function() {
-    this.$el.find(".wizard__arrow-up").show();
-  },
-
-  events:  {
-    "click .wizard__arrow-up": "backArrowClick",
-    "click .wizard__arrow-down": "forwardArrowClick"
-  },
-
-  backArrowClick: function(event) {
-    namespace.collections.chosen.prev();
-    event.preventDefault();
-  },
-
-  forwardArrowClick: function(event) {
-    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
-    namespace.collections.chosen.add(m);
-  }
-
-});
-
 
 /////////
 // Nav //
@@ -192,8 +145,7 @@ namespace.views.Nav = Backbone.View.extend({
   el: ".wizard__nav",
 
   initialize: function() {
-    this.$el.find(".wizard__arrow-up").show();
-    console.log("buttons", this.model.get("buttons"));
+//    this.$el.find(".wizard__arrow-up").hide();
   },
 
   events:  {
@@ -202,16 +154,49 @@ namespace.views.Nav = Backbone.View.extend({
   },
 
   backArrowClick: function() {
-    namespace.collections.chosen.prev();
+
+    if (namespace.collections.chosen.length > 1) {
+      var last = namespace.collections.chosen.last();
+      namespace.collections.chosen.remove(last);
+      namespace.views.wizard = new namespace.views.Wizard({
+        model: namespace.collections.chosen.last()
+     });
+      namespace.views.wizard.render();
+    }
+
     event.preventDefault();
   },
 
   forwardArrowClick: function(event) {
-    var m =  namespace.collections.screens.find({"Nid": this.model.get("next")});
+    var m =  namespace.collections.screens.find({
+      "Nid": namespace.views.wizard.model.get("next")
+    });
     namespace.collections.chosen.add(m);
     event.preventDefault();
+  },
+
+  render: function() {
+    var arrows = new namespace.views.NavArrows();
+    this.$el.append(arrows.render().el);
   }
 
+});
+
+
+////////////////
+// NAV ARROWS //
+////////////////
+
+namespace.views.NavArrows = Backbone.View.extend({
+  tagName: "a",
+
+   navTemplate: _.template('<a href="#" class="wizard__arrow-up">back</a><a href="#" class="wizard__arrow-down">forward</a>'),
+
+  render: function() {
+    this.$el.html("FOOBAR");
+    this.$el.html(this.navTemplate());
+    return this;
+  }
 });
 
 
@@ -227,7 +212,6 @@ namespace.views.ResultsView = Backbone.View.extend({
     this.$el.append("<h5>Results</h5>");
     var results = [];
     results = namespace.collections.screens.getResults();
-    console.log(results);
     _.each(results, function(r) {
       var resultView = new namespace.views.Result({result: r});
       this.$el.append(resultView.render().el);
