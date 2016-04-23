@@ -74,12 +74,12 @@ a.wizard__button--selected {
   text-decoration: none;
   color: $wizard__button_text--selected;
 }
-.wizard__tip {
-  font-size: 1.083em;
-  @include window_size(tab-narrow-up) {
-    font-size: 1.333em;
-  }
-  @include window_size(desktop) {
-    font-size: 1.5em;
-  }
-}
+/* .wizard__tip { */
+/*   font-size: 1.083em; */
+/*   @include window_size(tab-narrow-up) { */
+/*     font-size: 1.333em; */
+/*   } */
+/*   @include window_size(desktop) { */
+/*     font-size: 1.5em; */
+/*   } */
+/* } */

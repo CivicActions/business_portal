@@ -63,10 +63,22 @@ wiz.views.Buttons = Backbone.View.extend({
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
+          console.log("style", b.Style);
           if (b.Style["#markup"] === "Button") {
             var button =  new wiz.views.Button({
-              button: b, model: this.model,
-              index: index
+              button: b,
+              model: this.model,
+              index: index,
+              className: "wizard__button"
+            });
+            this.$el.append(button.render().el);
+          }
+          if (b.Style["#markup"] === "Link") {
+            var button =  new wiz.views.Button({
+              button: b,
+              model: this.model,
+              index: index,
+              className: "wizard__tip_button"
             });
             this.$el.append(button.render().el);
           }
@@ -86,8 +98,6 @@ wiz.views.Buttons = Backbone.View.extend({
 wiz.views.Button = Backbone.View.extend({
 
   tagName: "a",
-
-  className: "wizard__button",
 
   initialize: function(options) {
     this.options = options || {};
