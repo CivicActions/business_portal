@@ -32,6 +32,9 @@ wiz.collections.chosen.on("add", function(m) {
     model: model
   });
   wiz.views.wizard.render();
+
+  // Let others know about it.
+    Backbone.on("screen:add", this.render, this);
 });
 
 

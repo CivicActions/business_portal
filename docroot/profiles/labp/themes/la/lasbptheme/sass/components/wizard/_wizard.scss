@@ -21,6 +21,20 @@ $wizard_left_margin:25px;
   padding: 0;
   margin: 0 0 15px;
 }
+
+.wizard__header--title-intro {
+  font-weight: 700;
+  font-size: 1em;
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px 0;
+  border: 0px solid pink;
+  font-size: 1.357em;
+  @include window_size(desktop){
+    font-size: 2.571em;
+ }
+}
+
 .wizard__header--intro {
   font-weight: 700;
   font-size: 1.5em;
