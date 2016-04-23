@@ -61,36 +61,26 @@ function sbp_wizard_block() {
 
   return
   '<div id="wizard" class="wizard">
-
-    <div class="wizard__header">
-      <div class="wizard__header--intro"></div>
-    </div>
-
-     <hr class="wizard__header-line" />
-     <span class="burger"></span>
-
-
-     <div class="wizard__content-block"></div>
-     <ul class="wizard__content--results-list"></ul>
+     <div class="wizard__col_1"></div>
 
      <div class="wizard__buttons"></div>
 
-     <div class="wizard__tip">
-       <div class="wizard__tip_icon"></div>
-       <div class="wizard__tip_content">
-       <p class="wizard__tip_copy"></p>
+       <div class="wizard__tip">
+         <div class="wizard__tip_icon"></div>
+         <div class="wizard__tip_content">
+         <p class="wizard__tip_copy"></p>
+         </div>
        </div>
+       <div class="wizard__nav"></div>
      </div>
 
-     <div class="wizard__nav"></div>
 
-    <div class="wizard__progress-bar">
-     <div class="wizard__progress-bar-indicator">
-       <div class="wizard__progress-bar-icon"></div>
-     </div>
+     <div class="wizard__col_2">
+      <div class="wizard__progress-bar">
+       <div class="wizard__progress-bar-indicator">
+         <div class="wizard__progress-bar-icon"></div>
+       </div>
+      <ul class="wizard__progress-drawer"></ul>
     </div>
-
-    <ul class="wizard__progress-drawer"></ul>
-
   </div> <!-- Close #wizard -->';
 }

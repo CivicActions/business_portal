@@ -17,10 +17,10 @@ _.templateSettings = {
 ////////////
 
 wiz.views.Wizard = Backbone.View.extend({
-  el: ".wizard__content-block",
+  el: ".wizard__col_1",
   className: "wiz",
 
-  screenTemplate: _.template('<div class="wizard__header">{{section.tid}} / {{Name}}</div><div class="wizard__header-line" /> <h1 class="wizard__question">{{ title }}</h1> <div class="wizard__tip">{{Description}}</div>'),
+  screenTemplate: _.template('<div class="wizard__header"><div class="wizard__header--title-government"> {{Name}}</div> <div class="wizard__header--title-intro">{{ title }}</div> <div class="wizard__header-line"></div> <div class="wizard__tip">{{Description}}</div></div><div class="wizard__intro-block><div><div class="wizard__illustration"><img src="{{illustration}}"></div> <div class="wizard__copy--section_intro"></div> </div>'),
 
   render: function() {
     $("#wizard").css("background", "#" + this.model.get("Primary Color"));
@@ -287,17 +287,18 @@ wiz.views.ProgressDrawer = Backbone.View.extend({
   el: ".wizard__progress-drawer",
 
   initialize: function() {
-    Backbone.on("current:update", this.render, this);
 //    this.$el.hide();
-    this.$el.css("background", "#ccc");
+    Backbone.on("screen:add", this.render, this);
   },
 
   render: function() {
     this.$el.find("ul").remove();
     this.$el.find("li").remove();
 
-    var progress = wiz.collections.sections.models;
+    var m = wiz.views.wizard.model;
+    this.$el.css("background", "#" + m.get("drawer-color"));
 
+    var progress = wiz.collections.sections.models;
     _.each(progress, function(section) {
       var s = new wiz.views.Section({model: section}).render().el;
       this.$el.append(s);
@@ -328,7 +329,6 @@ wiz.views.Section = Backbone.View.extend({
 
 
 wiz.views.SectionSteps = Backbone.View.extend({
-
   tagName: "ul",
 
   initialize: function(options) {

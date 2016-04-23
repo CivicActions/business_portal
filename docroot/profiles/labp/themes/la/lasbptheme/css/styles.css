@@ -1959,7 +1959,24 @@ tr.selected td {
   margin: 0 0 15px;
 }
 
-/* line 24, ../sass/components/wizard/_wizard.scss */
+/* line 25, ../sass/components/wizard/_wizard.scss */
+.wizard__header--title-intro {
+  font-weight: 700;
+  font-size: 1em;
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px 0;
+  border: 0px solid pink;
+  font-size: 1.357em;
+}
+@media all and (min-width: 960px) {
+  /* line 25, ../sass/components/wizard/_wizard.scss */
+  .wizard__header--title-intro {
+    font-size: 2.571em;
+  }
+}
+
+/* line 38, ../sass/components/wizard/_wizard.scss */
 .wizard__header--intro {
   font-weight: 700;
   font-size: 1.5em;
@@ -1970,7 +1987,7 @@ tr.selected td {
   margin: 0 0 15px;
 }
 
-/* line 33, ../sass/components/wizard/_wizard.scss */
+/* line 47, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -1980,31 +1997,31 @@ tr.selected td {
   margin: 0;
 }
 
-/* line 41, ../sass/components/wizard/_wizard.scss */
+/* line 55, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
   font-size: 1.667em;
 }
 @media all and (min-width: 960px) {
-  /* line 41, ../sass/components/wizard/_wizard.scss */
+  /* line 55, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 3em;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 41, ../sass/components/wizard/_wizard.scss */
+  /* line 55, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 4em;
   }
 }
 
-/* line 52, ../sass/components/wizard/_wizard.scss */
+/* line 66, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0 solid white;
 }
 
-/* line 55, ../sass/components/wizard/_wizard.scss */
+/* line 69, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   background-color: white;
   padding: 8px 30px;
@@ -2013,7 +2030,7 @@ tr.selected td {
   margin: 0 10px 0 0;
 }
 
-/* line 62, ../sass/components/wizard/_wizard.scss */
+/* line 76, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -2028,13 +2045,13 @@ tr.selected td {
   cursor: pointer;
 }
 
-/* line 65, ../sass/components/wizard/_wizard.scss */
+/* line 79, ../sass/components/wizard/_wizard.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
 
-/* line 69, ../sass/components/wizard/_wizard.scss */
+/* line 83, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -2050,7 +2067,7 @@ a.wizard__button {
   background-color: #0f2940;
 }
 
-/* line 73, ../sass/components/wizard/_wizard.scss */
+/* line 87, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   text-decoration: none;
   color: white;
