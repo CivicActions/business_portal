@@ -177,26 +177,7 @@ $wizard_left_margin: 25px;
 }
 
 
-.wizard__question--checklist{
-  font-family: Merriweather, serif;
-  font-weight: 400;
-   font-size: 1.667em;
-  margin: 0 0 20px 25px;
-  padding: 0;
-  width: 80%;
-  border: 0px solid red;
-  @include window_size(desktop){
-        font-size: 2.571em;
-        margin: 0 0 20px 0;
-  }
-}
 
-
-.wizard__checklist_content{
-    border: 0px solid red;
-    width: 75%;
-    margin:20px 0 0 25px;
-}
 
 .wizard__buttons {
   border: 0px solid white;
@@ -225,10 +206,6 @@ $wizard_left_margin: 25px;
 }
 
 
-.wizard__button--checklist {
-  @include wizard__button--base;
-  margin: 20px 0 20px 20px;
-}
 
 
 // used on the intro screen
@@ -236,7 +213,7 @@ $wizard_left_margin: 25px;
 .wizard__copy--section_intro {
   padding: 0;
   width: 70%;
-  margin: 25px 60px 20px 20px;
+  margin: 15px 60px 20px 20px;
   font-size: 0.929em;
   border:0px solid red;
   @include window_size(tab-wide-up){
@@ -265,7 +242,7 @@ $wizard_left_margin: 25px;
 }
 .wizard__illustration{
   border: 0px solid blue;
-  margin:20px 0 0 0;
+  margin:0 0 0 0;
   width: 100%;
   @include window_size(desktop){
       width: 95%;

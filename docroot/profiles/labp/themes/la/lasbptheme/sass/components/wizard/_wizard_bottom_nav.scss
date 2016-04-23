@@ -86,17 +86,89 @@
 
 
 
+@mixin wizard__arrow-down--enabled($color) {
+    background-image: image-url("wizard/arrow_down_enabled.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    width: 58px;
+    height: 47px;
+    border: 0px solid red;
+    background-color: $color;
+    display: block;
+    float: left;
+    @include window_size(tab-wide-up){
+          border: 0px solid red;
+          background-image:none;
+          background-image: image-url("wizard/nav_hr_bar_white.png");
+          width: 40px;
+          background-size: 42px 2px;
+          background-repeat:repeat-x;
 
+    }
+}
 
 .wizard__arrow-down--enabled {
-  background-image: image-url("wizard/arrow_down_enabled.png");
+  @include wizard__arrow-down--enabled($light-blue);
+
+
+}
+
+.wizard__arrow-down--enabled_section_1 {
+  @include wizard__arrow-down--enabled($background-color-section-1);
+
+
+}
+.wizard__arrow-down--enabled_section_2 {
+  @include wizard__arrow-down--enabled($background-color-section-2);
+
+
+}
+
+.wizard__arrow-down--enabled_section_3 {
+  @include wizard__arrow-down--enabled($background-color-section-3);
+
+
+}
+
+.wizard__arrow-down--enabled_section_4 {
+  @include wizard__arrow-down--enabled($background-color-section-4);
+
+
+}
+.wizard__arrow-down--desktop{
+    display: none;
+    width: 24px;
+    height: 25px;
+    margin:12px 0 0 0;
+    @include window_size(tab-wide-up){
+        display: block;
+    }
+}
+
+
+.wizard__arrow-down--enabled img, .wizard__arrow-left--enabled img, {
+    display: none;
+    width: 24px;
+    height: 25px;
+    margin:12px 0 0 0;
+    @include window_size(tab-wide-up){
+        display: block;
+    }
+}
+
+
+
+
+.wizard__arrow-left--enabled {
+  background-image: image-url("wizard/arrow_left_enabled.png");
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
   width: 58px;
   height: 47px;
   border: 0px solid red;
-  background-color: $light-blue;
+  background-color: $background-color-section-5;
   display: block;
   float: left;
   @include window_size(tab-wide-up){
@@ -108,18 +180,8 @@
         background-repeat:repeat-x;
 
   }
-
 }
 
-.wizard__arrow-down--enabled img{
-    display: none;
-    width: 24px;
-    height: 25px;
-    margin:12px 0 0 0;
-    @include window_size(tab-wide-up){
-        display: block;
-    }
-}
 
 .wizard__arrow-down--filled {
   background-image: image-url("wizard/arrow_down_filled.png");
@@ -136,6 +198,9 @@
 }
 
 
+
+
+
 // Copy next to the arrow
 .wizard__nav_label{
   color:$dark_blue;
@@ -143,6 +208,8 @@
   float: left;
   font-size: 1em;
   border: 0px solid red;
+  margin: 0;
+  padding: 15px 0 0 4px;
   @include window_size(tab-wide-up){
         color:$white;
   }
