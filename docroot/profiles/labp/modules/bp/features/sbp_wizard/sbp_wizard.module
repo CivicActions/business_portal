@@ -75,10 +75,7 @@ function sbp_wizard_block() {
 
      <div class="wizard__buttons"></div>
 
-    <div class="wizard__nav">
-      <a href="#" class="wizard__arrow-up">back</a>
-      <a href="#" class="wizard__arrow-down">forward</a>
-    </div>
+    <div class="wizard__nav"></div>
 
     <div class="wizard__progress-bar">
      <div class="wizard__progress-bar-indicator">

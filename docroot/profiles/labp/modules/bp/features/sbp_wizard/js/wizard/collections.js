@@ -17,17 +17,6 @@ namespace.collections.Chosen = Backbone.Collection.extend ({
   toggleSelected: function() {
     this.selected = !this.selected;
   },
-
-  prev: function() {
-    if (this.length > 1) {
-      // Drop last item.
-      this.remove(this.last());
-      namespace.views.wizard = new namespace.views.Wizard({
-        model: this.last()
-      });
-      namespace.views.wizard.render();
-    }
-  },
 });
 
 namespace.collections.chosen = new namespace.collections.Chosen();
