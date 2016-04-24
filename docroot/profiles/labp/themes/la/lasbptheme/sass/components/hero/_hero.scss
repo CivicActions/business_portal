@@ -3,6 +3,14 @@
 
 }
 
+.hero__image--bg-full {
+  background-attachment: cover;
+  max-height: 400px
+}
+
+
+/*******************************************/
+
 @mixin hero__hr_thick($color) {
   height: 4px;
   max-width: 80px;
