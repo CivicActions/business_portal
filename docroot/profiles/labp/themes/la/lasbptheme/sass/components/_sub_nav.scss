@@ -95,7 +95,7 @@ fieldset{
 
 
 
-input[type="search"]{
+.sub_nav__form input[type="search"]{
   border: 0px solid red;
   padding: 0 10px 0 10px;
   @include border-radius(4px);
@@ -120,7 +120,7 @@ input[type="search"]{
 
 }
 
-input[type="checkbox"]{
+.sub_nav__form input[type="checkbox"]{
   -webkit-appearance: none;
   border:1px solid #DDDDDD;
   background-color: #ffffff;
@@ -132,7 +132,7 @@ input[type="checkbox"]{
     @include border-radius(2px);
 }
 
-input[type=checkbox]:checked{
+.sub_nav__form input[type=checkbox]:checked{
   background-color: $light-blue;
   border:1px solid $light-blue;
   color: $white;
