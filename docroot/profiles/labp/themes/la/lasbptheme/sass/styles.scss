@@ -8,12 +8,15 @@
 
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
-@import "colors";
-@import "typography";
-@import "mixins";
+
+/* Skin partials */
+@import "skin/colors";
 
 /* HTML element (SMACSS base) rules */
-@import "normalize";
+@import "base/typography";
+@import "base/mixins";
+@import "base/print";
+@import "base/normalize";
 
 /* Layout rules */
 @import "layouts/responsive";
@@ -27,6 +30,7 @@
 @import "components/field";
 @import "components/slideshow";
 @import "components/button";
+@import "components/hero/hero";
 
 /* Wizard */
 
@@ -44,7 +48,7 @@
 /* Panels */
 @import "components/_four_column_cta";
 
-@import "print";
+@import "base/print";
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
