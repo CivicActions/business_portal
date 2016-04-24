@@ -47,6 +47,7 @@ $heros = $items[0]['entity']['field_collection_item'];
 foreach($heros as $hero){
   $width = strtolower($hero['field_width'][0]['#markup']);
   $background_image = $hero['field_background_image']['#items']['0']['uri'];
+  $background_image_path = file_create_url($background_image);
   $pane_style = strtolower($hero['field_pane_style'][0]['#title']);
   $hero_title = $hero['field_hero_title'][0]['#markup'];
   $icon = $hero['field_icon']['#items']['0']['uri'];
@@ -58,11 +59,11 @@ foreach($heros as $hero){
 <div class="pane__hero_<?php print $width; ?> style_variant_<?php print $pane_style; ?> <?php print $classes; ?>">
   <?php if($background_image):?>
      <?php if($width == "full"){ ?>
-        <div class = "hero__image--bg-full">
-          <div style = "background-image: url(<?php print $background_image_path;?>)" class="hero__overlay_<?php print $width; ?>_photo">
+        <div class = "hero__image--bg-full" style = "background-image: url('<?php print $background_image_path;?>')">
+          <div class="hero__overlay_photo<?php print $width; ?>">
             <img src="<?php print file_create_url($background_image); ?>" />
           </div>
-      </div>
+        </div>
       <?php } else{ ?>
       <div class = "hero__image--bg-half">
         <div class="hero__overlay_<?php print $width; ?>_photo">
