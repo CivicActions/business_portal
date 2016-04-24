@@ -16,6 +16,11 @@
   font-weight: bold;
   color:#fff;
   font-size: 2.143em;
+  
+  @include window_size(tab-wide-up){
+  font-size: 3em;
+  margin: 2.8em 0 0;
+}
   @include window_size(desktop){
     font-size: 4em;
     margin: 4.8em 0 0;
