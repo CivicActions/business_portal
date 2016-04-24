@@ -16,8 +16,6 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 ?>
 <div class="panel__icons style_variant_<?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?>>
   <div class="panel__content_wrapper">
-    <h2 class="panel__header"><?php print $pane_title; ?></h2>
-    <hr class="panel__header-line"/>
     <?php
 
     foreach ($field_calls_to_actions as $cta_key => $cta_value) {
