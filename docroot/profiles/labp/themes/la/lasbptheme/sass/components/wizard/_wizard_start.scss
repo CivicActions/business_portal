@@ -1,0 +1,105 @@
+// styles for the start screen of the Wizard
+
+.wizard__header--start {
+  font-weight: 700;
+  font-size: 1em;
+  margin: 10px 0 10px 0;
+  padding: 35px 25px 0 25px;
+  width: 100%;
+  border: 0px solid red;
+  background-image: url("../images/wizard/illustrations/illustration_clouds.png");
+  background-size: 112px 48px;
+  background-repeat: no-repeat;
+  background-position: 150px 0;
+  @include window_size(tab-wide-up){
+    padding: 35px 25px 0 0;
+    margin: 60px 0 10px 0;
+  }
+}
+
+.wizard__start-block {
+  display: inline-block;
+  border: 0px solid black;
+  padding: 0;
+  margin: 0 25px 0 25px;
+  @include window_size(desktop){
+    margin: 0;
+  }
+}
+
+
+
+
+.wizard__header--title-start-super{
+  border: 0px solid white;
+  color: $white;
+  font-size: 1.357em;
+  margin: 0;
+  padding: 0;
+
+}
+
+.wizard__header--title-start{
+  border: 0px solid white;
+  font-size: 2.429em;
+  color: $white;
+  padding: 0;
+  margin:0 0 18px 0;
+  @include window_size(tab-wide-up){
+    font-size: 3em;
+  }
+}
+
+.wizard__copy--section_start {
+  padding: 0;
+  width: 85%;
+
+  margin:0px 0 22px 0;
+
+  font-size: 0.929em;
+  border:0px solid red;
+  @include window_size(tab-wide-up){
+    font-size: 1.357em;
+    width: 80%;
+  }
+  @include window_size(desktop){
+    width: 80%;
+    font-size: 1.357em;
+    margin:0px 0 22px 0;
+  }
+}
+
+// start screen table of contents
+.wizard__start_table_of_contents{
+  font-size: 0.929em;
+  font-weight: 700;
+  list-style: none;
+
+  padding: 0;
+  margin:0 0 20px 0;
+  border: 0px solid red;
+  @include window_size(desktop){
+
+    border:0px solid red;
+    margin:0;
+    font-size: 1.071em;
+  }
+}
+
+.wizard__start_table_of_contents_item{
+  margin:0;
+  padding: 0;
+  margin: 2px 0 2px 0;
+}
+
+.wizard__copy--time-estimate{
+  border: 0px solid red;
+  width: 80%;
+  font-weight: 700;
+  color: $white;
+  font-size: 0.857em;
+  @include window_size(tab-wide-up){
+    font-size: 1.2em;
+
+  }
+}
