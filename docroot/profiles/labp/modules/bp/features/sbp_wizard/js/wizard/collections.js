@@ -23,18 +23,19 @@ wiz.collections.chosen = new wiz.collections.Chosen();
 
 wiz.collections.chosen.on("add", function(m) {
 
+  // Remove any existing wizard dom and events.
+
   // Trigger rendering of the newly added model.
    var model = this.find({
      Nid: m.get("Nid")
    });
-
-  wiz.views.wizard = new wiz.views.Wizard({
+  var view = new wiz.views.Wizard({
     model: model
   });
-  wiz.views.wizard.render();
+  wiz.instance.goto(view);
 
   // Let others know about it.
-    Backbone.on("screen:add", this.render, this);
+  // Backbone.on("screen:add", this.render, this);
 });
 
 

@@ -1,26 +1,142 @@
-$wizard_left_margin:25px;
+$wizard_left_margin: 25px;
 
 .wizard {
   color: $wizard-text;
-  font-family: Roboto, sans-serif;;
-  position: relative;
+  font-family: Roboto, sans-serif;
+  margin:55px 0 0 0;
+
+
+    border: 0px solid green;
+
+    @include clearfix;
+
+}
+.wizard a{
+  color: $wizard-text;
+  font-size: 1em;
+ // text-decoration: underline;
+
+}
+
+
+.homepage_panel__content_wrapper{
+
+  @include window_size(desktop){
+    width: $zen-grid-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.wizard__col_1{
+  border: 0px solid red;
+  width: 100%;
+  float: left;
+
+  @include window_size(desktop){
+      width: 700px;
+      border: 0px solid red;
+  }
+}
+
+.wizard__col_2{
+  border: 0px solid blue;
+  width: 30%;
+  float: left;
+  position: absolute;
+  right:0;
+  @include window_size(desktop){
+      width: 250px;
+      border: 0px solid blue;
+      position: relative;
+
+  }
+}
+
+.wizard__intro-screen--register-business {
+  background-color: $background-city-registration;
+  height: 900px;
 }
 
 .wizard__content-block {
   display: inline-block;
-  border: 0 solid black;
-  width: 70%;
-  padding: 25px;
+  border: 0px solid black;
+  width: 95%;
+  padding: 0 25px 0 25px;
+  @include window_size(desktop){
+      padding: 0;
+  }
+
 }
+
+.wizard__intro-block {
+  display: inline-block;
+  border: 0px solid black;
+
+  padding: 0;
+  margin: 0;
+  @include window_size(desktop){
+       margin: 0;
+  }
+}
+
+.wizard__content-block--help {
+  display: inline-block;
+  border: 0px solid black;
+
+  padding: 0 25px 0 25px;
+  @include window_size(desktop){
+      padding: 0;
+  }
+
+}
+
+
+
+
+
 
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  padding: 0;
+  margin: 0 0 20px 0;
+  padding: 10px 25px 0 25px;
+  border: 0px solid red;
+  @include window_size(desktop){
+        padding: 35px 25px 0 0;
+
+  }
+}
+
+.wizard__header--title {
+  font-weight: 700;
+  font-size: 1em;
+  border: 0;
   padding: 0;
   margin: 0 0 15px;
+  border: 0px solid red;
+  @include window_size(desktop){
+         font-size: 1.357em;
+
+  }
+
+
 }
+
+// larger title for the intro screen
+.wizard__header--title-government {
+  font-size: 0.857em;
+  text-transform: uppercase;
+  border: 0px solid red;
+  margin:0 0 4px 0;
+  padding: 0px;
+
+  @include window_size(desktop){
+          font-size: 1.071em
+  }
+}
+
 
 .wizard__header--title-intro {
   font-weight: 700;
@@ -31,19 +147,13 @@ $wizard_left_margin:25px;
   border: 0px solid pink;
   font-size: 1.357em;
   @include window_size(desktop){
-    font-size: 2.571em;
- }
+          font-size: 2.571em;
+
+  }
+
 }
 
-.wizard__header--intro {
-  font-weight: 700;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 0;
-  padding: 0;
-  margin: 0 0 15px;
-}
+
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -53,47 +163,152 @@ $wizard_left_margin:25px;
   margin: 0;
 }
 .wizard__question {
-  font-family: Merriweather, serif;;
+  font-family: Merriweather, serif;
   font-weight: 400;
   font-size: 1.667em;
-  @include window_size(desktop) {
-    font-size: 3em;
-  }
-  @include window_size(desktop) {
-    font-size: 4em;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+  @include window_size(desktop){
+          font-size: 2.571em;
+           font-size: 2.4em;
   }
 }
+
+.wizard__question--help{
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 15px 0 20px 0;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+  @include window_size(tab-wide-up){
+          font-size: 2em;
+          width: 70%;
+  }
+}
+
+
+
+
 .wizard__buttons {
-  border: 0 solid white;
+  border: 0px solid white;
+  margin: 30px 0 30px 0;
 }
-.wizard__button {
-  background-color: white;
-  padding: 8px 30px;
-  font-weight: bold;
-  display: inline-block;
-  margin: 0 10px 0 0;
-}
+
 .wizard__button {
   @include wizard__button--base;
 }
-a.wizard__button {
+.wizard__button a {
   color: $wizard_text;
   text-decoration: none;
 }
 .wizard__button--selected {
   @include wizard__button--base;
   background-color: $wizard__button--selected;
+  padding: 8px 25px 8px 35px;
 }
-a.wizard__button--selected {
+.wizard__button--selected a {
   text-decoration: none;
   color: $wizard__button_text--selected;
 }
-/* .wizard__tip { */
-/*   font-size: 1.083em; */
-/*   @include window_size(tab-narrow-up) { */
-/*     font-size: 1.333em; */
-/*   } */
-/*   @include window_size(desktop) { */
-/*     font-size: 1.5em; */
-/*   } */
-/* } */
+.wizard__button--selected-icon {
+  height: 10px;
+  margin: 0 0 0 3px;
+}
+
+
+
+
+// used on the intro screen
+
+.wizard__copy--section_intro {
+  padding: 0;
+  width: 70%;
+  margin: 15px 60px 20px 20px;
+  font-size: 0.929em;
+  border:0px solid red;
+  @include window_size(tab-wide-up){
+        font-size: 1.357em;
+        width: 80%;
+  }
+  @include window_size(desktop){
+      width: 80%;
+      font-size: 1.357em;
+      margin: 30px 20px 30px 0;
+  }
+}
+
+
+
+
+.wizard__icon{
+    float: right;
+    width:40px;
+    height:40px;
+    margin: 15px 20px 20px 0;
+    border: 0px solid red;
+    @include window_size(desktop){
+        float: left;
+    }
+}
+
+.wizard__icon_help{
+    float: right;
+    width:40px;
+    height:40px;
+    margin: 15px 0 20px 0;
+    border: 0px solid red;
+    @include window_size(desktop){
+        //float: left;
+    }
+}
+
+.wizard__header_block--help{
+    border: 0px solid red;
+    margin: 0;
+    padding: 0;
+    @include clearfix;
+}
+
+
+.wizard__illustration{
+  border: 0px solid blue;
+  margin:0 0 0 0;
+  width: 100%;
+  @include window_size(desktop){
+      width: 95%;
+  }
+}
+
+.wizard__illustration img{
+    width: 100%;
+    height:100%;
+    @include window_size(desktop){
+        width: 100%;
+        height:100%;
+    }
+
+
+}
+
+.wizard__help_content{
+    border: 0px solid red;
+    width: 90%;
+    margin:20px 0 20px 0;
+    @include window_size(desktop){
+        width: 60%;
+    }
+}
+
+.wizard__help_hr{
+    height: 2px;
+    max-width: 80px;
+    background: $dark_blue;
+    display: block;
+    border: 0 none;
+    margin: 0;
+
+}

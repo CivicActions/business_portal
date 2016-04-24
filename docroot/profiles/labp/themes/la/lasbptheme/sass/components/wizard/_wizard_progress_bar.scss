@@ -1,38 +1,285 @@
-.wizard__progress-bar {
-  width: 55px;
-  height: 500px;
+// mixins used in the progress bar
+
+
+@mixin wizard__progress-bar-root($color:'transparent') {
+  width: 270px;
   display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.wizard__progress-bar-indicator {
-  background-size: 100%;
-  background-repeat: no-repeat;
+  float: right;
+
   background-image: image-url("wizard/progress_bar.png");
-  position: relative;
-  top: 15px;
-  left: 14px;
-  width: 12px;
-  height: 425px;
-}
-
-.section-1 .wizard__progress-bar-icon {
-  width: 40px;
-  height: 55px;
-  background-image: image-url("wizard/icon_info.png");
-  background-size: 100%;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
+  background-size:12px;
+  background-position: 24px 12px;
+  background-color:$color;
+  @include window_size(desktop){
+            margin: 40px 0 0 0;
+
+  }
 }
 
-.section-2 .wizard__progress-bar-icon {
-  width: 40px;
-  height: 55px;
+@mixin wizard__progress-bar-drawer-root($color:'transparent') {
+     @include wizard__progress-bar-root($color);
+     position: absolute;
+     top:0;
+     right:0;
+
+
+}
+
+
+@mixin wizard__progress-bar_icon {
+  width:15px;
+  height:15px;
+  margin:0 4px 0 0;
+  padding: 0;
+  display: inline-block;
+  background-size: 100% 100%;
+  float: left;
+
+
+
+}
+
+@mixin wizard__progress-large_icon {
+  width:40px;
+  height:100px;
+  float: left;
   background-image: image-url("wizard/icon_bulb.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 100px;
+  margin: 5px 0 0 10px;
+}
+
+
+// wizard drawers
+
+
+
+// mobile drawer root containers
+.wizard__progress-bar--section_1 {
+  @include wizard__progress-bar-drawer-root($wizard__drawer_city-registration);
+}
+
+.wizard__progress-bar--section_2 {
+  @include wizard__progress-bar-drawer-root($wizard__drawer_name);
+}
+
+.wizard__progress-bar--section_3{
+  @include wizard__progress-bar-drawer-root($wizard__drawer_sellers-permit);
+}
+
+.wizard__progress-bar--section_4 {
+  @include wizard__progress-bar-drawer-root($wizard__drawer_employeer-identification-number);
+
+}
+
+
+.wizard__progress-bar--section_5 {
+  @include wizard__progress-bar-drawer-root($wizard__drawer_your-business_registration-guide);
+
+}
+
+
+//  desktop version root container
+.wizard__progress-bar--simple{
+  @include wizard__progress-bar-root();
+  width: 60px;
+  @include clearfix;
+  @include window_size(desktop){
+      width: 270px;
+
+  }
+}
+
+
+.wizard__progress-bar-section{
+    margin:0;
+    padding: 0;
+    height:103px;
+    @include clearfix;
+}
+
+
+//  adds a highlight behind the section that has been selected
+.wizard__progress-bar-section--selected{
+    margin:0;
+    padding: 0;
+    background-color: rgba(255,255,255,0.3);
+    @include clearfix;
+}
+
+
+// default dotted progress bar
+.wizard__progress-bar_location_bar{
+  width:58px;
+  height: 100px;
+  float: left;
+
+}
+
+
+// use when the user completes the first section
+.wizard__progress-bar_location_bar--completed_first_section{
+  width:58px;
+  float: left;
+  background-image: image-url("wizard/progress_bar_completed.png");
+  background-repeat: no-repeat;
+  background-size:12px;
+  background-position: 24px 12px;
+  height: 100%;
+}
+
+// use when the user completes the middle sections
+.wizard__progress-bar_location_bar--completed{
+  width:58px;
+  float: left;
+  background-image: image-url("wizard/progress_bar_completed.png");
+  background-repeat: no-repeat;
+  background-size:12px;
+  background-position: 24px 0;
+  height: 100%;
+}
+
+
+// use on the currently active sections
+.wizard__progress-bar_location_bar--selected{
+  width:58px;
+  float: left;
+  background-image: image-url("wizard/progress_bar_completed_10_px.png");
+  background-repeat: no-repeat;
+  background-size:12px;
+  background-position: 24px 0;
+  height: 100%;
+}
+
+
+
+// icons
+
+// change the display property to make them appear
+
+.wizard__progress-bar_location_icon--city{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_bulb.png");
+  display: none;
+
+}
+
+.wizard__progress-bar_location_icon--county{
+  @include wizard__progress-large_icon;
+  width:45px;
+  margin: 5px 0 0 5px;
+  background-image: image-url("wizard/icon_pencil.png");
+  display: none;
+
+}
+
+.wizard__progress-bar_location_icon--state{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_percentage.png");
+}
+
+.wizard__progress-bar_location_icon--federal{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_pound.png");
+  display: none;
+}
+
+
+.wizard__progress-bar_location_icon--registration{
+  @include wizard__progress-large_icon;
+  background-image: image-url("wizard/icon_map.png");
+  display: none;
+}
+
+
+// middle section
+.wizard__progress-bar_contents{
+  float: left;
+  padding: 0 0 0 10px;
+  color:$dark_blue;
+  width: 155px;
+}
+
+// use on the desktop version on sections that are not active
+.wizard__progress-bar_contents--deselected{
+  float: left;
+  padding: 0 0 0 10px;
+  width: 155px;
+  color:rgba($dark_blue,0.3);
+  display: none;
+  @include window_size(tab-wide-up){
+    display:block;
+  }
+}
+
+// use on the desktop version on sections that are active
+.wizard__progress-bar_contents--selected{
+  float: left;
+  padding: 0 0 0 10px;
+  color:$dark_blue;
+  width: 155px;
+  display: none;
+  @include window_size(tab-wide-up){
+    display:block;
+  }
+}
+
+
+// font styling for CITY, COUNTY...etc
+.wizard__progress-bar_government{
+
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 10px 0 4px 0;
+    font-size: 0.857em;
+    letter-spacing: 0.1px;
+}
+
+// font styling for section titles i.e. 1 / Register your business
+.wizard__progress-bar_section_title{
+  font-weight: 700;
+  margin: 0 0 7px 0;
+  padding: 0;
+}
+
+// round status icons
+
+.wizard__progress-bar_status_icons{
+  @include clearfix;
+
+}
+.wizard__progress-bar_icon--incomplete{
+  @include wizard__progress-bar_icon;
+  background-image: image-url("wizard/progress_bar_circle_incomplete.png");
+
+}
+
+
+.wizard__progress-bar_icon--completed{
+  @include wizard__progress-bar_icon;
+  background-image: image-url("wizard/progress_bar_circle_completed.png");
+
+
+}
+
+.wizard__progress-bar_icon--selected{
+  @include wizard__progress-bar_icon;
+  background-image: image-url("wizard/progress_bar_circle_selected.png");
+
+
+}
+
+// button for the drawer
+.wizard__button--close{
+  border:0px solid white;
+  background-image: image-url("wizard/icon_close.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 18px;
+  height:18px;
+  display: inline-block;
+  float:right;
+  margin: 15px 15px 0 0;
 }
