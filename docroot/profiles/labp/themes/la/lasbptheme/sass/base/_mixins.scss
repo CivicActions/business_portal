@@ -50,6 +50,21 @@
 }
 
 
+/* Wrapper width mixin for containers */
+@mixin wrapper($wrapper-width: 75%){
+  width: $wrapper-width;
+  margin: 0 auto;
+}
+
+/* ========= Style Variants ========= */
+@mixin style-variant($variant-color: #6BC3F3) {
+  hr {
+    background-color: $variant-color;
+    width: 80px;
+  }
+}
+
+
 // wizard
 
 @mixin wizard__button--base{

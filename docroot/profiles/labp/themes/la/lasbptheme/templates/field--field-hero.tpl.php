@@ -56,44 +56,66 @@ foreach($heros as $hero){
 }
 ?>
 <!-- hero start -->
-<div class="pane__hero_<?php print $width; ?> style_variant_<?php print $pane_style; ?> <?php print $classes; ?>">
+<div class="pane__hero pane__hero_<?php print $width; ?> style-variant__<?php print $pane_style; ?> <?php print $classes; ?>">
   <?php if($background_image):?>
      <?php if($width == "full"){ ?>
         <div class = "hero__image--bg-full" style = "background-image: url('<?php print $background_image_path;?>')">
-          <div class="hero__overlay_photo<?php print $width; ?>">
-            <img src="<?php print file_create_url($background_image); ?>" />
+          <div class = "hero__image--overlay">
+            <div class = "hero__content-wrapper">
+                <div class="hero__icon_bottom_alignment">
+                  <?php if($icon):?>
+                    <div class="hero__icon"><img src="<?php print file_create_url($icon); ?>" /></div>
+                  <?php endif; ?>
+                  <div class="hero__headline"><?php print $hero_title; ?></div>
+                  <hr class = "hero__line">
+                </div>
+              <?php if($hero_subtitle || $hero_subtitle_long): ?>
+                    <div class="hero__bottom_align--bn">
+                      <?php if($hero_subtitle): ?>
+                        <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
+                      <?php endif; ?>
+                      <?php if($hero_subtitle_long): ?>
+                        <p class="hero__business__description">
+                          <?php print $hero_subtitle_long; ?>
+                        </p>
+                      <?php endif; ?>
+                    </div>
+                  </div>
+              <?php endif; ?>
           </div>
         </div>
+      </div>
       <?php } else{ ?>
       <div class = "hero__image--bg-half">
         <div class="hero__overlay_<?php print $width; ?>_photo">
           <img src="<?php print file_create_url($background_image); ?>" />
         </div>
+        <div class="hero__overlay_<?php print $width; ?>">
+          <div class="hero__icon_bottom_alignment">
+            <?php if($icon):?>
+              <div class="hero__icon"><img src="<?php print file_create_url($icon); ?>" /></div>
+            <?php endif; ?>
+            <div class="hero__headline"><?php print $hero_title; ?></div>
+          </div>
+        </div>
+        <?php if($hero_subtitle || $hero_subtitle_long): ?>
+          <div class="hero__content_wrapper">
+            <div class="hero__copy--col_1">
+              <div class="hero__bottom_align--bn">
+                <?php if($hero_subtitle): ?>
+                  <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
+                <?php endif; ?>
+                <?php if($hero_subtitle_long): ?>
+                  <p class="hero__business__description">
+                    <?php print $hero_subtitle_long; ?>
+                  </p>
+                <?php endif; ?>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
+      </div>
       </div>
       <?php } ?>
   <?php endif; ?>
-  <div class="hero__overlay_<?php print $width; ?>">
-    <div class="hero__icon_bottom_alignment">
-      <?php if($icon):?>
-        <div class="hero__icon"><img src="<?php print file_create_url($icon); ?>" /></div>
-      <?php endif; ?>
-      <div class="hero__headline"><?php print $hero_title; ?></div>
-    </div>
-  </div>
-  <?php if($hero_subtitle || $hero_subtitle_long): ?>
-    <div class="hero__content_wrapper">
-      <div class="hero__copy--col_1">
-        <div class="hero__bottom_align--bn">
-          <?php if($hero_subtitle): ?>
-            <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
-          <?php endif; ?>
-          <?php if($hero_subtitle_long): ?>
-            <p class="hero__business__description">
-              <?php print $hero_subtitle_long; ?>
-            </p>
-            <?php endif; ?>
-        </div>
-      </div>
-    </div>
-  <?php endif; ?>
-</div>
+
