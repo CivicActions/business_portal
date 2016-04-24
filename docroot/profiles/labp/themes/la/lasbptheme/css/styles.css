@@ -2682,7 +2682,7 @@ a.wizard__button--selected {
 .section-2 .wizard__progress-bar-icon {
   width: 40px;
   height: 55px;
-  background-image: url('../images/wizard/icon_bulb.png?1459349360');
+  background-image: url('../images/wizard/icon_bulb.png?1461165606');
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -2736,7 +2736,7 @@ a.wizard__arrow-down.active {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1460629436');
+  background-image: url('../images/wizard/icon_info.png?1461285846');
   background-size: 100%;
 }
 
@@ -2763,19 +2763,17 @@ a.wizard__arrow-down.active {
 
 /* line 36, ../sass/components/wizard/wizard_tip.scss */
 .wizard__tip_button {
-  -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
-  border: 2px solid #0f2940;
+  border: 2px solid #0F2940;
   font-size: 0.85em !important;
   padding: 6px 15px;
   margin: 0 0 20px 0;
   letter-spacing: 0.5px;
   font-weight: 900;
   display: inline-block;
-  color: #0f2940 !important;
+  color: #0F2940 !important;
 }
 
 /* Nodes */
