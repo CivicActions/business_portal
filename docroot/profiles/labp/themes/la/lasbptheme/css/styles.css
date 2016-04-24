@@ -6,24 +6,26 @@
  * of these @include files will be combined into a single file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
-/* Skin partials */
+/* Wrapper width mixin for containers */
+/* ========= Style Variants ========= */
 /* HTML element (SMACSS base) rules */
 /**
  * @file
- * SMACSS Modules
+ * SMACSS Modules: Base Typography
  *
  *
  */
-/*
-.pane-node-field-subtitle {
-  @include adjust-font-size-to( $h2-font-size );
-}
-
-
-.intro-text .field-item {
-  @include adjust-font-size-to( $h2-font-size );
-}
+/* @TODO Find out if Merriweather and Roboto should be linked to or downloaded into theme
+*
+* Notes: Merriweather & Roboto are being declared in styles but I can not
+* see it imported anywhere. Will add a links to google fonts until we decide if we
+* want to serve the font from google or download it in the theme. Or until I confirm where
+the fonts are being added.
 */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+/* Wrapper width mixin for containers */
+/* ========= Style Variants ========= */
 /**
  * @file
  * Print styling
@@ -214,7 +216,7 @@ audio:not([controls]) {
  */
 /* line 106, ../sass/base/_normalize.scss */
 html {
-  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: "Roboto", sans-serif;
   /* 1 */
   font-size: 87.5%;
   -ms-text-size-adjust: 100%;
@@ -1856,14 +1858,19 @@ tr.selected td {
   }
 }
 
-/* Wrapping link for logo. */
 /* line 26, ../sass/components/_header.scss */
+.header--wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Wrapping link for logo. */
+/* line 30, ../sass/components/_header.scss */
 .header__logo {
   display: inline-block;
   vertical-align: middle;
   margin: 7px 0 0 25px;
   padding: 0;
-  float: left;
   float: left;
   display: inline-block;
   width: 171px;
@@ -1875,7 +1882,7 @@ tr.selected td {
 }*/
 }
 @media all and (min-width: 720px) {
-  /* line 26, ../sass/components/_header.scss */
+  /* line 30, ../sass/components/_header.scss */
   .header__logo {
     width: 213px;
     height: 39px;
@@ -1883,19 +1890,19 @@ tr.selected td {
   }
 }
 
-/* line 49, ../sass/components/_header.scss */
+/* line 52, ../sass/components/_header.scss */
 .front #header a.header__logo.icon-egg {
   color: #0d84e9;
 }
 
 /* Logo image. */
-/* line 53, ../sass/components/_header.scss */
+/* line 56, ../sass/components/_header.scss */
 .header__logo-image {
   vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 57, ../sass/components/_header.scss */
+/* line 60, ../sass/components/_header.scss */
 .header__name-and-slogan {
   display: inline-block;
   vertical-align: middle;
@@ -1904,47 +1911,47 @@ tr.selected td {
 }
 
 /* The name of the website. */
-/* line 64, ../sass/components/_header.scss */
+/* line 67, ../sass/components/_header.scss */
 .header__site-name {
   margin: 0;
   font-size: 12px;
 }
 
 /* The link around the name of the website. */
-/* line 71, ../sass/components/_header.scss */
+/* line 73, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 76, ../sass/components/_header.scss */
+/* line 78, ../sass/components/_header.scss */
 .header__site-link:focus, .header__site-link:hover {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 81, ../sass/components/_header.scss */
+/* line 84, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 85, ../sass/components/_header.scss */
+/* line 88, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 89, ../sass/components/_header.scss */
+/* line 92, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
 }
 
-/* line 93, ../sass/components/_header.scss */
+/* line 96, ../sass/components/_header.scss */
 .block__title {
   display: none;
 }
 
-/* line 96, ../sass/components/_header.scss */
+/* line 99, ../sass/components/_header.scss */
 #header .menu {
   float: left;
   margin: 0 0 0 66px;
@@ -1953,31 +1960,30 @@ tr.selected td {
   height: 55px;
 }
 
-/* line 108, ../sass/components/_header.scss */
+/* line 111, ../sass/components/_header.scss */
 #header .menu__item {
   height: 100%;
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 108, ../sass/components/_header.scss */
+  /* line 111, ../sass/components/_header.scss */
   #header .menu__item {
     margin: 0 15px 0 0;
     padding: 0;
     color: white;
     font-size: 1.286em;
-    font-weight: 700;
     list-style: none;
     display: inline-block;
   }
 }
 
-/* line 124, ../sass/components/_header.scss */
+/* line 126, ../sass/components/_header.scss */
 #header .menu__item--selected {
   height: 100%;
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 124, ../sass/components/_header.scss */
+  /* line 126, ../sass/components/_header.scss */
   #header .menu__item--selected {
     margin: 0 15px 0 0;
     border: 0px solid pink;
@@ -1992,19 +1998,19 @@ tr.selected td {
   }
 }
 
-/* line 147, ../sass/components/_header.scss */
+/* line 149, ../sass/components/_header.scss */
 #header .menu__item a {
   display: block;
 }
 
-/* line 153, ../sass/components/_header.scss */
+/* line 155, ../sass/components/_header.scss */
 #header .menu__link {
   border: 0px solid red;
   margin: 14px 0 0 0;
   display: block;
 }
 
-/* line 160, ../sass/components/_header.scss */
+/* line 162, ../sass/components/_header.scss */
 .menu__hamburger {
   width: 18px;
   height: 15px;
@@ -2012,13 +2018,13 @@ tr.selected td {
   margin: 16px 16px 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 160, ../sass/components/_header.scss */
+  /* line 162, ../sass/components/_header.scss */
   .menu__hamburger {
     display: none;
   }
 }
 
-/* line 170, ../sass/components/_header.scss */
+/* line 172, ../sass/components/_header.scss */
 .menu__hamburger--close {
   width: 16px;
   height: 16px;
@@ -2026,13 +2032,13 @@ tr.selected td {
   margin: 16px 16px 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 170, ../sass/components/_header.scss */
+  /* line 172, ../sass/components/_header.scss */
   .menu__hamburger--close {
     display: none;
   }
 }
 
-/* line 182, ../sass/components/_header.scss */
+/* line 184, ../sass/components/_header.scss */
 .menu__hamburger_contents {
   background-color: #47aee6;
   position: absolute;
@@ -2043,20 +2049,20 @@ tr.selected td {
   width: 100%;
 }
 @media all and (min-width: 720px) {
-  /* line 182, ../sass/components/_header.scss */
+  /* line 184, ../sass/components/_header.scss */
   .menu__hamburger_contents {
     display: none;
   }
 }
 
-/* line 198, ../sass/components/_header.scss */
+/* line 200, ../sass/components/_header.scss */
 .menu__hamburger_items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 204, ../sass/components/_header.scss */
+/* line 206, ../sass/components/_header.scss */
 .menu__item_hamburger {
   margin: 20px 25px 20px 25px;
   padding: 0 0 20px 0;
@@ -2067,7 +2073,7 @@ tr.selected td {
   list-style: none;
 }
 
-/* line 221, ../sass/components/_header.scss */
+/* line 223, ../sass/components/_header.scss */
 .menu__item_hamburger--last {
   margin: 20px 25px 0 25px;
   padding: 0 0 20px 0;
@@ -2173,14 +2179,73 @@ tr.selected td {
   color: white;
 }
 
-/* line 6, ../sass/components/hero/_hero.scss */
+/* line 1, ../sass/components/hero/_hero.scss */
+.pane__hero {
+  margin-top: -55px;
+}
+
+/* line 5, ../sass/components/hero/_hero.scss */
 .hero__image--bg-full {
-  background-attachment: cover;
-  max-height: 400px;
+  background-size: cover;
+}
+
+/* line 9, ../sass/components/hero/_hero.scss */
+.hero__image--overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 14, ../sass/components/hero/_hero.scss */
+.hero__headline {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 2.143em;
+}
+@media all and (min-width: 960px) {
+  /* line 14, ../sass/components/hero/_hero.scss */
+  .hero__headline {
+    font-size: 4em;
+    margin: 4.8em 0 0;
+  }
+}
+
+/* line 25, ../sass/components/hero/_hero.scss */
+hr.hero__line {
+  height: 4px;
+  border: none;
+  margin: 1.5em 0 0;
+}
+
+/* line 31, ../sass/components/hero/_hero.scss */
+.hero__bottom_align--bn {
+  margin-bottom: 2em;
+}
+
+/*====== Style variants ======== */
+/* line 61, ../sass/base/_mixins.scss */
+.style-variant__light.blue hr {
+  background-color: #6BC3F3;
+  width: 80px;
+}
+
+/*========== Layout ======== */
+/* line 47, ../sass/components/hero/_hero.scss */
+.hero__content-wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.hero__content-wrapper:before, .hero__content-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.hero__content-wrapper:after {
+  clear: both;
 }
 
 /*******************************************/
-/* line 24, ../sass/components/hero/_hero.scss */
+/* line 64, ../sass/components/hero/_hero.scss */
 .hero__photo {
   background-color: #88cff5;
   height: 550px;
@@ -2191,7 +2256,7 @@ tr.selected td {
   overflow: hidden;
 }
 @media all and (min-width: 960px) {
-  /* line 24, ../sass/components/hero/_hero.scss */
+  /* line 64, ../sass/components/hero/_hero.scss */
   .hero__photo {
     width: 100%;
     height: 0;
@@ -2201,21 +2266,21 @@ tr.selected td {
   }
 }
 
-/* line 45, ../sass/components/hero/_hero.scss */
+/* line 85, ../sass/components/hero/_hero.scss */
 .hero__subsection {
   background-color: #88cff5;
   border: 0px solid red;
   overflow: hidden;
 }
 @media all and (min-width: 960px) {
-  /* line 45, ../sass/components/hero/_hero.scss */
+  /* line 85, ../sass/components/hero/_hero.scss */
   .hero__subsection {
     height: 550px;
     background-size: 100% auto;
   }
 }
 
-/* line 62, ../sass/components/hero/_hero.scss */
+/* line 102, ../sass/components/hero/_hero.scss */
 .hero__line--white {
   height: 4px;
   max-width: 80px;
@@ -2226,22 +2291,22 @@ tr.selected td {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 62, ../sass/components/hero/_hero.scss */
+  /* line 102, ../sass/components/hero/_hero.scss */
   .hero__line--white {
     display: block;
   }
 }
 
-/* line 71, ../sass/components/hero/_hero.scss */
+/* line 111, ../sass/components/hero/_hero.scss */
 .hero__content_wrapper {
   margin: 0 25px 25px 25px;
   background-color: #88cff5;
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 71, ../sass/components/hero/_hero.scss */
+  /* line 111, ../sass/components/hero/_hero.scss */
   .hero__content_wrapper {
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     border: 0px solid green;
@@ -2249,20 +2314,20 @@ tr.selected td {
   }
 }
 
-/* line 87, ../sass/components/hero/_hero.scss */
+/* line 127, ../sass/components/hero/_hero.scss */
 .hero__photo {
   border: 0px solid red;
 }
 
-/* line 93, ../sass/components/hero/_hero.scss */
+/* line 133, ../sass/components/hero/_hero.scss */
 .hero__content_wrapper--subsection {
   margin: 0 25px 25px 25px;
   position: relative;
 }
 @media all and (min-width: 960px) {
-  /* line 93, ../sass/components/hero/_hero.scss */
+  /* line 133, ../sass/components/hero/_hero.scss */
   .hero__content_wrapper--subsection {
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     border: 10px solid green;
@@ -2273,7 +2338,7 @@ tr.selected td {
 }
 
 @media all and (min-width: 960px) {
-  /* line 113, ../sass/components/hero/_hero.scss */
+  /* line 153, ../sass/components/hero/_hero.scss */
   .hero__copy--subsection {
     border: 0px solid blue;
     /*margin-left: 250px;*/
@@ -2285,14 +2350,14 @@ tr.selected td {
   }
 }
 
-/* line 127, ../sass/components/hero/_hero.scss */
+/* line 167, ../sass/components/hero/_hero.scss */
 .hero__copy--col_1 {
   display: none;
   border: 1px solid red;
   overflow: hidden;
 }
 @media all and (min-width: 960px) {
-  /* line 127, ../sass/components/hero/_hero.scss */
+  /* line 167, ../sass/components/hero/_hero.scss */
   .hero__copy--col_1 {
     width: 250px;
     float: left;
@@ -2302,7 +2367,7 @@ tr.selected td {
   }
 }
 
-/* line 142, ../sass/components/hero/_hero.scss */
+/* line 182, ../sass/components/hero/_hero.scss */
 .hero__business__name--subsection {
   font-weight: 700;
   color: white;
@@ -2312,14 +2377,14 @@ tr.selected td {
   margin: 0px;
 }
 @media all and (min-width: 960px) {
-  /* line 142, ../sass/components/hero/_hero.scss */
+  /* line 182, ../sass/components/hero/_hero.scss */
   .hero__business__name--subsection {
     margin: 85px 0 3px 0;
     margin: 0 0 3px 0;
   }
 }
 
-/* line 155, ../sass/components/hero/_hero.scss */
+/* line 195, ../sass/components/hero/_hero.scss */
 .hero__business__description--subsection {
   color: white;
   width: 160px;
@@ -2327,7 +2392,7 @@ tr.selected td {
   margin: 0;
 }
 
-/* line 163, ../sass/components/hero/_hero.scss */
+/* line 203, ../sass/components/hero/_hero.scss */
 .hero__overlay {
   background-color: rgba(0, 0, 0, 0.3);
   border: 0px solid red;
@@ -2337,7 +2402,7 @@ tr.selected td {
   height: 550px;
 }
 @media all and (min-width: 960px) {
-  /* line 163, ../sass/components/hero/_hero.scss */
+  /* line 203, ../sass/components/hero/_hero.scss */
   .hero__overlay {
     width: 100%;
     height: 0;
@@ -2347,7 +2412,7 @@ tr.selected td {
 }
 
 @media all and (min-width: 960px) {
-  /* line 178, ../sass/components/hero/_hero.scss */
+  /* line 218, ../sass/components/hero/_hero.scss */
   .hero__bottom_align {
     border: 0px solid red;
     padding: 30px;
@@ -2356,15 +2421,7 @@ tr.selected td {
   }
 }
 
-/* line 188, ../sass/components/hero/_hero.scss */
-.hero__bottom_align--bn {
-  border: 0px solid red;
-  padding: 30px 30px 50px 0;
-  position: absolute;
-  bottom: 0;
-}
-
-/* line 197, ../sass/components/hero/_hero.scss */
+/* line 231, ../sass/components/hero/_hero.scss */
 .hero__overlay_partial {
   background-color: rgba(0, 0, 0, 0.3);
   height: 250px;
@@ -2373,14 +2430,14 @@ tr.selected td {
   top: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 197, ../sass/components/hero/_hero.scss */
+  /* line 231, ../sass/components/hero/_hero.scss */
   .hero__overlay_partial {
     height: 550px;
     width: 50%;
   }
 }
 
-/* line 209, ../sass/components/hero/_hero.scss */
+/* line 243, ../sass/components/hero/_hero.scss */
 .hero__overlay_partial_photo {
   width: 100%;
   height: 250px;
@@ -2390,7 +2447,7 @@ tr.selected td {
   background-repeat: no-repeat;
 }
 @media all and (min-width: 960px) {
-  /* line 209, ../sass/components/hero/_hero.scss */
+  /* line 243, ../sass/components/hero/_hero.scss */
   .hero__overlay_partial_photo {
     position: absolute;
     top: 0;
@@ -2400,7 +2457,7 @@ tr.selected td {
   }
 }
 
-/* line 232, ../sass/components/hero/_hero.scss */
+/* line 266, ../sass/components/hero/_hero.scss */
 .hero__copy_block {
   position: absolute;
   bottom: 30px;
@@ -2408,25 +2465,7 @@ tr.selected td {
   border: 0px solid red;
 }
 
-/* line 241, ../sass/components/hero/_hero.scss */
-.hero__headline {
-  font-family: Merriweather, serif;
-  border: 0px solid red;
-  margin: 0;
-  font-weight: 700;
-  color: #fff;
-  font-size: 2.143em;
-  margin: 0 25px 20px 0;
-}
-@media all and (min-width: 960px) {
-  /* line 241, ../sass/components/hero/_hero.scss */
-  .hero__headline {
-    font-size: 4em;
-    margin: 0 0 25px 0;
-  }
-}
-
-/* line 266, ../sass/components/hero/_hero.scss */
+/* line 286, ../sass/components/hero/_hero.scss */
 .hero__business__name {
   font-weight: 700;
   color: white;
@@ -2435,13 +2474,13 @@ tr.selected td {
   margin: 55px 0 3px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 266, ../sass/components/hero/_hero.scss */
+  /* line 286, ../sass/components/hero/_hero.scss */
   .hero__business__name {
     margin: 85px 0 3px 0;
   }
 }
 
-/* line 277, ../sass/components/hero/_hero.scss */
+/* line 297, ../sass/components/hero/_hero.scss */
 .hero__business__description {
   color: white;
   width: 80%;
@@ -2449,7 +2488,7 @@ tr.selected td {
   margin: 0;
 }
 
-/* line 287, ../sass/components/hero/_hero.scss */
+/* line 307, ../sass/components/hero/_hero.scss */
 .hero__headline--subsection_mobile {
   color: white;
   font-family: Merriweather, serif;
@@ -2457,18 +2496,18 @@ tr.selected td {
   font-weight: 700;
 }
 @media all and (min-width: 960px) {
-  /* line 287, ../sass/components/hero/_hero.scss */
+  /* line 307, ../sass/components/hero/_hero.scss */
   .hero__headline--subsection_mobile {
     display: none;
   }
 }
 
-/* line 303, ../sass/components/hero/_hero.scss */
+/* line 323, ../sass/components/hero/_hero.scss */
 .hero__headline--subsection {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 303, ../sass/components/hero/_hero.scss */
+  /* line 323, ../sass/components/hero/_hero.scss */
   .hero__headline--subsection {
     font-size: 2.571em;
     margin: 0 0 25px 0;
@@ -2479,33 +2518,33 @@ tr.selected td {
   }
 }
 
-/* line 317, ../sass/components/hero/_hero.scss */
+/* line 337, ../sass/components/hero/_hero.scss */
 .hero__description--subsection {
   color: #0f2940;
   font-size: 1.143em;
   border: 0px solid white;
 }
 @media all and (min-width: 960px) {
-  /* line 317, ../sass/components/hero/_hero.scss */
+  /* line 337, ../sass/components/hero/_hero.scss */
   .hero__description--subsection {
     font-size: 1.429em;
   }
 }
 
-/* line 333, ../sass/components/hero/_hero.scss */
+/* line 353, ../sass/components/hero/_hero.scss */
 .hero__icon--subsection_mobile {
   display: block;
   width: 100px;
   margin: 0 0 5px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 333, ../sass/components/hero/_hero.scss */
+  /* line 353, ../sass/components/hero/_hero.scss */
   .hero__icon--subsection_mobile {
     display: none;
   }
 }
 
-/* line 346, ../sass/components/hero/_hero.scss */
+/* line 366, ../sass/components/hero/_hero.scss */
 .hero__icon_bottom_alignment--subsection {
   position: absolute;
   bottom: 0;
@@ -2513,12 +2552,12 @@ tr.selected td {
   margin: 0 25px 25px 25px;
 }
 
-/* line 354, ../sass/components/hero/_hero.scss */
+/* line 374, ../sass/components/hero/_hero.scss */
 .hero__icon--subsection_desktop {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 354, ../sass/components/hero/_hero.scss */
+  /* line 374, ../sass/components/hero/_hero.scss */
   .hero__icon--subsection_desktop {
     display: block;
     width: 100px;
