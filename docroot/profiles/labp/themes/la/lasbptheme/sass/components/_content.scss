@@ -46,6 +46,7 @@ h2{
   font-weight: normal;
   font-size: 1.429em;
   font-weight: 900;
+  color: $dark_blue;
   @include window_size(desktop){
       font-size:2em;
   }

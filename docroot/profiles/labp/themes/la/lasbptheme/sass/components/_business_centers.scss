@@ -1,0 +1,82 @@
+// styles for the business source page
+.page__heading--allcaps{
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 1.143em;
+    border:0px solid red;
+    margin:0;
+    padding: 5px 0 15px 0;
+    color:$dark_blue;
+}
+
+
+.business_source__block{
+    border-top: 1px solid $light_blue;
+}
+
+.business_source__header{
+    font-size:1.571em;
+    font-weight: 700;
+}
+
+.business_source__header--bold{
+    font-weight: 700;
+    margin:20px 0 0 0;
+    padding: 0;
+    border: 0px solid red;
+    @include window_size(desktop){
+        width: 85%;
+        font-size: 1.143em;
+        line-height: 1.35em;
+    }
+}
+
+
+.business_source__map_image{
+    border: 1px solid rgba(0,0,0,0.3);
+
+}
+.business_source__map_block{
+    border: 0px solid red;
+    @include clearfix;
+}
+
+.business_source__services_block{
+    border-top: 1px solid $light_blue;
+    @include clearfix;
+    @include window_size(tab-wide-up){
+        border: 0;
+    }
+
+}
+
+
+
+.business_source__wrapper_50{
+    width: 99%;
+    @include window_size(tab-wide-up){
+        width:50%;
+        float: left;
+    }
+}
+.business_source__margin_wrapper{
+    margin:20px 0 0 0;
+    @include window_size(tab-wide-up){
+        margin:0 0 0 20px;
+    }
+}
+
+.business_source__address_paragraph{
+
+  border: 0px solid red;
+  line-height: 1.25em;
+  width: 90%;
+  margin: 0 0 20px 0;
+  padding: 0;
+    @include window_size(desktop){
+        width: 85%;
+        font-size: 1.143em;
+        line-height: 1.35em;
+    }
+}
