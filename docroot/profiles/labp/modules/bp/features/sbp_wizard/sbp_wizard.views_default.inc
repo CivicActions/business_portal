@@ -165,6 +165,12 @@ function sbp_wizard_views_default_views() {
   $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
   $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
   $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
+  /* Field: Content: Tip */
+  $handler->display->display_options['fields']['field_tip']['id'] = 'field_tip';
+  $handler->display->display_options['fields']['field_tip']['table'] = 'field_data_field_tip';
+  $handler->display->display_options['fields']['field_tip']['field'] = 'field_tip';
+  $handler->display->display_options['fields']['field_tip']['label'] = 'tip';
+  $handler->display->display_options['fields']['field_tip']['element_label_colon'] = FALSE;
   /* Field: Content: Button(s) */
   $handler->display->display_options['fields']['field_button']['id'] = 'field_button';
   $handler->display->display_options['fields']['field_button']['table'] = 'field_data_field_button';

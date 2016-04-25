@@ -77,6 +77,12 @@ function sbp_incentives_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -146,6 +152,12 @@ function sbp_incentives_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -210,6 +222,12 @@ function sbp_incentives_field_default_field_instances() {
         'weight' => 5,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -289,6 +307,12 @@ function sbp_incentives_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -343,6 +367,12 @@ function sbp_incentives_field_default_field_instances() {
         'weight' => 1,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -427,6 +457,12 @@ function sbp_incentives_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -500,6 +536,12 @@ function sbp_incentives_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -516,7 +558,7 @@ function sbp_incentives_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_main_feature',
     'label' => 'Featured on Resources Page',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -528,6 +570,81 @@ function sbp_incentives_field_default_field_instances() {
       ),
       'type' => 'options_onoff',
       'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-incentives-field_resource_type'.
+  $field_instances['node-incentives-field_resource_type'] = array(
+    'bundle' => 'incentives',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_resource_type',
+    'label' => 'Resource Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'term_reference_tree',
+      'settings' => array(
+        'cascading_selection' => 0,
+        'filter_view' => '',
+        'leaves_only' => 0,
+        'max_depth' => '',
+        'parent_term_id' => '',
+        'select_parents' => 0,
+        'start_minimized' => 0,
+        'token_display' => '',
+        'track_list' => 0,
+      ),
+      'type' => 'term_reference_tree',
+      'weight' => 13,
     ),
   );
 
@@ -565,6 +682,12 @@ function sbp_incentives_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'json' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -581,7 +704,7 @@ function sbp_incentives_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_secondary_feature',
     'label' => 'Featured on Resources and Incentives Page',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -607,6 +730,7 @@ function sbp_incentives_field_default_field_instances() {
   t('Hero');
   t('Incentive URL');
   t('Industry Tag');
+  t('Resource Type');
   t('Select this to feature the Incentive on the Resources and Incentives Landing Page');
   t('Selecting this will have the Incentive show up on the featured listing on the resources page');
 

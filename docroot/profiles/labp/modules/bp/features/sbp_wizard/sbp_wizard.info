@@ -34,7 +34,6 @@ features[defaultconfig][] = field_default_fields:node-sbp_wizard_screen-field_bu
 features[defaultconfig][] = field_default_fields:node-sbp_wizard_screen-field_description
 features[defaultconfig][] = field_default_fields:node-sbp_wizard_screen-field_screen_type
 features[defaultconfig][] = field_default_fields:node-sbp_wizard_screen-field_section
-features[defaultconfig][] = field_default_fields:node-sbp_wizard_screen-field_weight
 features[defaultconfig][] = field_default_fields:taxonomy_term-business_portal_wizard_sections-field_color
 features[defaultconfig][] = field_default_fields:taxonomy_term-business_portal_wizard_sections-field_contextual_color
 features[defaultconfig][] = field_default_fields:taxonomy_term-business_portal_wizard_sections-field_drawer_color

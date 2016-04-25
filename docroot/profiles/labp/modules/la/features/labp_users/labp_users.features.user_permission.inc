@@ -281,6 +281,7 @@ function labp_users_user_default_permissions() {
   $permissions['administer content revisions'] = array(
     'name' => 'administer content revisions',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'reviewer' => 'reviewer',
     ),
@@ -302,6 +303,7 @@ function labp_users_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'reviewer' => 'reviewer',
     ),
@@ -912,6 +914,7 @@ function labp_users_user_default_permissions() {
   $permissions['change layouts in place editing'] = array(
     'name' => 'change layouts in place editing',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'marketer' => 'marketer',
     ),
@@ -1035,6 +1038,7 @@ function labp_users_user_default_permissions() {
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -1998,6 +2002,7 @@ function labp_users_user_default_permissions() {
   $permissions['import media'] = array(
     'name' => 'import media',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'media_bulk_upload',
@@ -2131,6 +2136,7 @@ function labp_users_user_default_permissions() {
   $permissions['view all unpublished content'] = array(
     'name' => 'view all unpublished content',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -2187,6 +2193,7 @@ function labp_users_user_default_permissions() {
   $permissions['view own private files'] = array(
     'name' => 'view own private files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -2208,6 +2215,7 @@ function labp_users_user_default_permissions() {
   $permissions['view private files'] = array(
     'name' => 'view private files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
