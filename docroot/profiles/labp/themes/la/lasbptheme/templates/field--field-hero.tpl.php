@@ -61,7 +61,7 @@ foreach($heros as $hero){
 }
 ?>
 <!-- hero start -->
-<div class="pane__hero pane__hero_<?php print $width; ?> style-variant__<?php print $pane_style; ?> <?php print $classes; ?>">
+<div class="pane__hero pane__hero_<?php print $width; ?> style-variant <?php print $pane_style; ?> <?php print $classes; ?>">
     <?php if($width == "full") { ?>
         <div class = "hero__image--bg hero__layout--<?php print $width; ?> " style = "background-image: url('<?php print $background_image_path;?>')">
           <div class = "hero__image--overlay">
