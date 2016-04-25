@@ -252,8 +252,6 @@ wiz.views.Buttons = Backbone.View.extend({
               index: index,
               className: "wizard__button"
             });
-            // @TODO fix so as to include wrapper.
-//           this.$el.html(this.template(this.model.toJSON()));
             this.$el.append(button.render().el);
           }
           if (b.Style["#markup"] === "Link") {
@@ -264,9 +262,6 @@ wiz.views.Buttons = Backbone.View.extend({
               className: "wizard__tip_button"
             });
             this.$el.append(button.render().el);
-          }
-          if (b.Style["#markup"] === "Next") {
-            // Set selected.
           }
         }, this);
       }
@@ -295,9 +290,9 @@ wiz.views.Button = Backbone.View.extend({
   markSelected: function(event) {
     wiz.collections.chosen.toggleSelected();
      if (wiz.collections.chosen.selected) {
-       this.$el.addClass("wizard__button--selected");
+      this.$el.addClass("wizard__button--selected");
      } else {
-       $(".wizard__button").removeClass("wizard__button--selected");
+      $(".wizard__button").removeClass("wizard__button--selected");
     }
     var m = wiz.collections.chosen.last();
     var bidString =  $(event.currentTarget).attr("id");

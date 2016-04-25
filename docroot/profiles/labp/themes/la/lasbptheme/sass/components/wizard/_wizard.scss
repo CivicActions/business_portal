@@ -196,16 +196,14 @@ $wizard_left_margin: 25px;
 .wizard__button {
   @include wizard__button--base;
 }
-.wizard__button a {
+a.wizard__button {
   color: $wizard_text;
   text-decoration: none;
 }
-.wizard__button--selected {
-  @include wizard__button--base;
+a.wizard__button--selected {
   background-color: $wizard__button--selected;
-  padding: 8px 25px 8px 35px;
 }
-.wizard__button--selected a {
+a.wizard__button--selected {
   text-decoration: none;
   color: $wizard__button_text--selected;
 }

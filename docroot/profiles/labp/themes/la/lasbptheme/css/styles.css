@@ -2809,41 +2809,29 @@ hr.hero__line {
 }
 
 /* line 199, ../sass/components/wizard/_wizard.scss */
-.wizard__button a {
+a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
 
 /* line 203, ../sass/components/wizard/_wizard.scss */
-.wizard__button--selected {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  background-color: white;
-  padding: 8px 35px 8px 35px;
-  font-weight: bold;
-  display: inline-block;
-  margin: 0 10px 0 0;
-  cursor: pointer;
+a.wizard__button--selected {
   background-color: #0f2940;
-  padding: 8px 25px 8px 35px;
 }
 
-/* line 208, ../sass/components/wizard/_wizard.scss */
-.wizard__button--selected a {
+/* line 206, ../sass/components/wizard/_wizard.scss */
+a.wizard__button--selected {
   text-decoration: none;
   color: white;
 }
 
-/* line 212, ../sass/components/wizard/_wizard.scss */
+/* line 210, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 222, ../sass/components/wizard/_wizard.scss */
+/* line 220, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   width: 70%;
@@ -2852,14 +2840,14 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 222, ../sass/components/wizard/_wizard.scss */
+  /* line 220, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 222, ../sass/components/wizard/_wizard.scss */
+  /* line 220, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 80%;
     font-size: 1.357em;
@@ -2867,7 +2855,7 @@ hr.hero__line {
   }
 }
 
-/* line 242, ../sass/components/wizard/_wizard.scss */
+/* line 240, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
   float: right;
   width: 40px;
@@ -2876,13 +2864,13 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 242, ../sass/components/wizard/_wizard.scss */
+  /* line 240, ../sass/components/wizard/_wizard.scss */
   .wizard__icon {
     float: left;
   }
 }
 
-/* line 253, ../sass/components/wizard/_wizard.scss */
+/* line 251, ../sass/components/wizard/_wizard.scss */
 .wizard__icon_help {
   float: right;
   width: 40px;
@@ -2891,7 +2879,7 @@ hr.hero__line {
   border: 0px solid red;
 }
 
-/* line 264, ../sass/components/wizard/_wizard.scss */
+/* line 262, ../sass/components/wizard/_wizard.scss */
 .wizard__header_block--help {
   border: 0px solid red;
   margin: 0;
@@ -2899,46 +2887,46 @@ hr.hero__line {
   overflow: hidden;
 }
 
-/* line 272, ../sass/components/wizard/_wizard.scss */
+/* line 270, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   margin: 0 0 0 0;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 272, ../sass/components/wizard/_wizard.scss */
+  /* line 270, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
     width: 95%;
   }
 }
 
-/* line 281, ../sass/components/wizard/_wizard.scss */
+/* line 279, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 281, ../sass/components/wizard/_wizard.scss */
+  /* line 279, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 292, ../sass/components/wizard/_wizard.scss */
+/* line 290, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 292, ../sass/components/wizard/_wizard.scss */
+  /* line 290, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
 
-/* line 301, ../sass/components/wizard/_wizard.scss */
+/* line 299, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
