@@ -53,11 +53,15 @@ foreach($heros as $hero){
   $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 
   $hero_title = $hero['field_hero_title'][0]['#markup'];
-  $icon = $hero['field_icon']['#items']['0']['uri'];
-  $icon_path = file_create_url($icon);
+  if (!empty($hero['field_icon'])) {
+    $icon = $hero['field_icon']['#items']['0']['uri'];
+    $icon_path = file_create_url($icon);
+  }
   $hero_subtitle = $hero['field_subtitle_long']['#items'][0]['value'];
   $hero_subtitle_long = $hero['field_subtitle_2']['#items'][0]['value'];
-  $hero_description = $hero['field_description']['#items'][0]['value'];
+  if (!empty($hero['field_description'])) {
+    $hero_description = $hero['field_description']['#items'][0]['value'];
+  }
 }
 ?>
 <!-- hero start -->
