@@ -87,5 +87,9 @@ All steps below are assumed to be run from the command line
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Default node index` 
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Resources & Incentives` 
 
-### Step 8. Clear cache
+### Step 8. Switch theme back to profile theme
+- `drush dis labusinessportaltheme -y`
+- `drush vset theme_default lasbptheme`
+
+### Step 9. Clear cache
 `drush cc all`
