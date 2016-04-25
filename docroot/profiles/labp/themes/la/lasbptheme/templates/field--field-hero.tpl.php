@@ -49,8 +49,7 @@ foreach($heros as $hero){
   $background_image = $hero['field_background_image']['#items']['0']['uri'];
   $background_image_path = file_create_url($background_image);
 
-  //$pane_style = strtolower($hero['field_pane_style'][0]['#title']);
-  $pane_style = $hero['field_pane_style'][0]['taxonomy_term'];
+  $pane_style = $hero['field_pane_style']['#items'][0]['taxonomy_term'];
   $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 
   $hero_title = $hero['field_hero_title'][0]['#markup'];
