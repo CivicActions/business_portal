@@ -4,18 +4,13 @@ $wizard_left_margin: 25px;
   color: $wizard-text;
   font-family: Roboto, sans-serif;
   margin:55px 0 0 0;
-
-
-    border: 0px solid green;
-
-    @include clearfix;
-
+  border: 0px solid green;
+  @include clearfix;
+  font-size: 120%; // re-adjust depending on site font
 }
 .wizard a{
   color: $wizard-text;
   font-size: 1em;
- // text-decoration: underline;
-
 }
 
 

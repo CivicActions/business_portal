@@ -61,17 +61,7 @@ function sbp_wizard_block() {
 
   return
 
-  '
-  <div id="wizard" class="wizard">
-      <div class="wizard__header"></div>
-      <div class="wizard__intro-block"></div>
-      <div class="wizard__tip">
-        <div class="wizard__tip_icon"></div>
-        <div class="wizard__tip_content">
-          <p class="wizard__tip_copy"></p>
-        </div>
-      </div>
-  </div> <!-- Close #wizard -->
+  '<div id="wizard" class="wizard"></div>
 
   <script type="text/template" id="header-template">
     <div class="wizard__header--title--government"> {{Name}}</div>
@@ -79,20 +69,38 @@ function sbp_wizard_block() {
     <div class="wizard__header-line"></div>
   </script>
 
-  <script type="text/template" id="intro">
+  <script type="text/template" id="header-for-question-template">
+    <div class="wizard__header--title">{{Name}}</div>
+    <div class="wizard__header-line"></div>
+  </script>
+
+  <script type="text/template" id="intro-template">
     <div class="wizard__copy--section_intro">{{Description}}</div>
   </script>
 
-  <script type="text/template" id="intro-with-illustration">
+  <script type="text/template" id="intro-with-illustration-template">
     <div class="wizard__illustration"><img src="{{illustration}}"></div>
     <div class="wizard__copy--section_intro">{{Description}}</div>
   </script>
 
-  <script type="text/template" id="buttons">
+  <script type="text/template" id="question-template">
+    <div class="wizard__question">{{title}}</div>
+  </script>
+
+  <script type="text/template" id="buttons-template">
     <div class="wizard__buttons"></div>
   </script>
 
-  <script type="text/template" id="progress">
+  <script type="text/template" id="tip-template">
+      <div class="wizard__tip">
+        <div class="wizard__tip_icon"></div>
+        <div class="wizard__tip_content">
+          <p class="wizard__tip_copy">TIP PLACEHOLDER @TODO</p>
+        </div>
+      </div>
+  </script>
+
+  <script type="text/template" id="progress-template">
     <div class="wizard__col_2">
       <div class="wizard__progress-bar">
         <div class="wizard__progress-bar-indicator">
