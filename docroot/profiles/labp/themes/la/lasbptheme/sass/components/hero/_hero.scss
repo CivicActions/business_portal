@@ -168,7 +168,6 @@
 }
 
 .hero__bottom_align{
-
   @include window_size(desktop){
     border: 0px solid red;
     padding: 30px;
@@ -178,11 +177,21 @@
 }
 
 .hero__bottom_align--bn{
-
   border: 0px solid red;
   padding: 30px 30px 50px 0;
   position: absolute;
   bottom: 0;
+}
+
+
+.hero__bottom_align_detail{
+    border: 0px solid red;
+  @include window_size(desktop){
+    border: 0px solid red;
+    padding: 30px 30px 20px 30px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 // subsection
@@ -206,6 +215,7 @@
     background-size: auto 130%;
     background-position: 60%;
     background-repeat: no-repeat;
+    border: 0px solid red;
 
   @include window_size(desktop){
       position: absolute;
@@ -214,8 +224,26 @@
       width:50%;
       background-size: auto 100%;
   }
-
 }
+
+
+
+
+
+.hero__overlay_partial_color{
+border:0px solid red;
+  background-color:  #6bc3f3;
+  height:250px;
+  width:100%;
+position: relative;
+  @include window_size(desktop){
+      position: absolute;
+      top:0;
+      height:550px;
+      width:50%;
+  }
+}
+
 
 
 
@@ -281,7 +309,25 @@
     font-family: Merriweather, serif;
     font-size: 1.714em;
     font-weight: 700;
+    border: 0px solid red;
 
+
+    @include window_size(desktop){
+
+        display:none;
+
+    }
+
+}
+
+.hero__headline--subsection_mobile_color{
+    color:$white;
+    font-family: Merriweather, serif;
+    font-size: 1.714em;
+    font-size: 1.4em;
+    font-weight: 700;
+    border: 0px solid red;
+    color: $dark_blue;
 
     @include window_size(desktop){
 
@@ -310,11 +356,14 @@
   color:$dark_blue;
   font-size: 1.143em;
   border: 0px solid white;
-
+  margin:30px 0 30px 0;
     @include window_size(desktop){
         font-size: 1.429em;
     }
 }
+
+
+
 
 
 
@@ -342,6 +391,13 @@
   margin: 0 25px 25px 25px;
 }
 
+.hero__icon_bottom_alignment--subsection_color{
+  position: absolute;
+  bottom:0;
+  border: 0px solid red;
+  margin: 0 25px 25px 25px;
+}
+
 
 .hero__icon--subsection_desktop{
   display: none;
@@ -352,4 +408,29 @@
       margin-bottom: 15px;
   }
 
+}
+
+.hero__button--base{
+    @include border-radius(20px);
+    background-color:$white;
+    padding: 8px 20px 8px 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin:0 10px 10px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    @include window_size(desktop){
+        @include border-radius(25px);
+        font-size: 1.143em;
+            padding: 10px 20px 10px 20px;
+                margin:0 10px 20px 0;
+
+    }
+      @include clearfix;
+
+}
+
+.hero__button--base a{
+        color:$dark_blue;
 }

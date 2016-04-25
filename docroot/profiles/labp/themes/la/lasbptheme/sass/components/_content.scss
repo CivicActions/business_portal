@@ -107,15 +107,12 @@ background-color: $white;
 
 
 .page__content_col_2_wrapper{
-      padding: 0 30px 0 30px;
+      padding: 10px 30px 0 30px;
 }
 
 
 .page__content_paragraph{
   border: 0px solid red;
-
-  width: 100%;
-  font-size: 1em;
   line-height: 1.25em;
   width: 90%;
     @include window_size(desktop){
@@ -123,6 +120,52 @@ background-color: $white;
         font-size: 1.143em;
         line-height: 1.35em;
     }
+}
+
+.page__content_paragraph--detail_page{
+
+  border: 0px solid red;
+  line-height: 1.25em;
+  color:rgba(0,0,0,0.6);
+  width: 90%;
+    @include window_size(desktop){
+        width: 85%;
+        font-size: 1.143em;
+        line-height: 1.35em;
+    }
+}
+
+.page__content_paragraph_strong--detail_page{
+  border: 0px solid red;
+  line-height: 1.25em;
+  color:rgba(0,0,0,0.6);
+  font-weight: 700;
+  width: 90%;
+    @include window_size(desktop){
+        width: 85%;
+        font-size: 1.143em;
+        line-height: 1.35em;
+    }
+}
+
+
+.page__content_ul--detail_page{
+  border: 0px solid red;
+  line-height: 1.25em;
+  color:rgba(0,0,0,0.6);
+
+  width: 90%;
+    @include window_size(desktop){
+        width: 85%;
+        font-size: 1.143em;
+        line-height: 1.35em;
+    }
+}
+
+
+.page__content_ul--detail_page li{
+     margin:0;
+     padding:0;
 }
 
 
