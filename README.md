@@ -80,5 +80,12 @@ All steps below are assumed to be run from the command line
 - Enter `http://labp.cityofla.acsitefactory.com` for origin
 - Enter `sites/g/files/wph521/f` for the directory
 
-### Step 7. Clear cache
+### Step 7. Change back to the development solr server
+- Go to `admin/config/search/search_api`
+- Enable `LABP VM` by clicking `Enable` under `Operations`
+- Disable `Acquia Search` by clicking `Disable` under `Operations`
+- Switch the server to LABP VM by clicking `Edit` under `Operations` for `Default node index` 
+- Switch the server to LABP VM by clicking `Edit` under `Operations` for `Resources & Incentives` 
+
+### Step 8. Clear cache
 `drush cc all`
