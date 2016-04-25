@@ -64,7 +64,7 @@ All steps below are assumed to be run from the command line
 `drush sql-drop -y`
 
 ### Step 2. Load prod database
-`drush sql-cli < /assets/labp-2016-04-25T12-58-04.sql`
+`drush sql-cli < /assets/labp-2016-04-25T17-42-12.sql`
 
 ### Step 3. Enable stage file proxy
 `drush en stage_file_proxy -y`
