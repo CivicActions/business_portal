@@ -5,28 +5,20 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1em;
-  text-align: center;
-  transition-property: -webkit-transform;
-  transition-property: transform;
+  height: 900px;
   transition-duration: 0.5s;
-  transition-timing-function: ease;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  transform: translate3D(95%,0,0); /* X value must be same as Nav width */
+  -moz-transform: translate3D(95%,0,0); /* X value must be same as Nav width */
+  -webkit-transform: translate3D(95%,0,0); /* X value must be same as Nav width */
 }
 
 .page.is-visible {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  transform: translate3D(0,0,0); /* X value must be same as Nav width */
+  -moz-transform: translate3D(0,0,0); /* X value must be same as Nav width */
+  -webkit-transform: translate3D(0,0,0); /* X value must be same as Nav width */
 }
 
 /* .home-change { */
 /*   color: white; */
 /*   background: #F2CF66; */
 /* } */
-
-/* .activity-change { */
-/*   color: white; */
-/*   background: #F2994B; */
-/* } */
-
