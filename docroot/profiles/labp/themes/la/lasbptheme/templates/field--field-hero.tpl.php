@@ -63,9 +63,6 @@ foreach($heros as $hero){
           <div class = "hero__image--overlay">
             <div class = "hero__content-wrapper">
                 <div class="hero__icon_bottom_alignment">
-                  <?php if($icon):?>
-                    <div class="hero__icon"><img src="<?php print file_create_url($icon); ?>" /></div>
-                  <?php endif; ?>
                   <div class="hero__headline"><?php print $hero_title; ?></div>
                   <hr class = "hero__line">
                 </div>
