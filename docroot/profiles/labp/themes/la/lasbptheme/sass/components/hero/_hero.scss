@@ -148,12 +148,12 @@ $zen-gutter-width:  20px;
 
 .hero__layout--half {
   @include window_size(tab-wide-up){
-    $zen-column-count: 3 !global;
+    $zen-column-count: 3;
     .left  { @include zen-grid-item (1, 1); }
     .right { @include zen-grid-item (2, 2); }
   }
   @include window_size(desktop){
-    $zen-column-count: 4 !global;
+    $zen-column-count: 4;
     .left  { @include zen-grid-item (1, 1); }
     .right { @include zen-grid-item (3, 2); }
   }
