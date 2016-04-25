@@ -1,15 +1,15 @@
-@mixin panel__hr_thick($color) {
-  height: 4px;
-  max-width: 80px;
+@mixin panel__hr_thin($color) {
+  height: 2px;
+  max-width: 40px;
   background: $color;
   display: block;
   border: 0 none;
   margin: 0;
 }
 
-@mixin panel__hr_thin($color) {
-  height: 2px;
-  max-width: 40px;
+@mixin panel__hr_thick($color) {
+  height: 4px;
+  max-width: 80px;
   background: $color;
   display: block;
   border: 0 none;
@@ -55,6 +55,10 @@
 
 .panel__header-line_thin {
   @include panel__hr_thin(blue);
+}
+
+.panel__icons {
+  display: block;
 }
 
 .panel__icon{
