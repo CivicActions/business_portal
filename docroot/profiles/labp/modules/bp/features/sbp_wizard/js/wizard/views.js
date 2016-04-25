@@ -169,8 +169,27 @@ wiz.views.App = wiz.extensions.View.extend({
 
           var nav = new wiz.views.Nav({model: this.model});
           this.$el.append(nav.render().el);
-
           break;
+
+        case "confirmation":
+          console.log("APP: confirmation");
+
+          var header = new wiz.views.Header({model: this.model});
+          this.$el.append(header.render().el);
+
+          var question = new wiz.views.Question({model: this.model});
+          this.$el.append(question.render().el);
+
+          var intro = new wiz.views.IntroWithIllustration({ model: this.model });
+          this.$el.append(intro.render().el);
+
+          var results = new wiz.views.ResultsView({model: this.model});
+          this.$el.append(results.render().el);
+
+          var nav = new wiz.views.NavStartOver({model: this.model});
+          this.$el.append(nav.render().el);
+          break;
+
         default:
           console.log("APP: No screen type defined");
           break;
@@ -301,6 +320,8 @@ wiz.views.Button = Backbone.View.extend({
   },
 
   markSelected: function(event) {
+    var resultText;
+
     wiz.collections.chosen.toggleSelected();
      if (wiz.collections.chosen.selected) {
        this.$el.addClass("wizard__button--selected");
@@ -316,16 +337,13 @@ wiz.views.Button = Backbone.View.extend({
     if (m.get("buttons")[bid]["Destination Screen"] !== undefined) {
       var nid = m.get("buttons")[bid]["Destination Screen"]["target_id"];
     } else {
-      console.log("APP: Destination screen not defined.");
+      console.log("APP: Destination screen not defined: ", m.get("buttons"));
       return;
     }
-    // @TODO check for undefined button results.
-    //var resultText =  m.get("buttons")[bid]["Button Result Text"]["#markup"];
 
     m.set({
       next: nid,
       chosenBid: bid,
-      chosenResultText: "@TODO"
     });
 
     event.preventDefault();
@@ -477,22 +495,35 @@ wiz.views.NavContextualHelp = Backbone.View.extend({
   }
 });
 
+
+////////////////////
+// Nav Start Over //
+////////////////////
+
+wiz.views.NavStartOver = Backbone.View.extend({
+  template: _.template($('#wizard-nav-start-over-template').html()),
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
+});
+
 ////////////////////////
 // // Results View /////
 ////////////////////////
 
 wiz.views.ResultsView = Backbone.View.extend({
-  el: ".wizard__content--results-list",
+  className: ".wizard__content--results-list",
 
   initialize: function() {
     this.$el.append("<h5>Results</h5>");
     var results = [];
-    results = wiz.collections.screens.getResults();
-    _.each(results, function(r) {
-      var resultView = new wiz.views.Result({result: r});
-      this.$el.append(resultView.render().el);
+    results = wiz.collections.chosen.getResults();
+    console.log("res:", results);
+    _.each(results, function(r, index) {
+      var result = new wiz.views.Result({result: r, index: index});
+      this.$el.append(result.render().el);
     }, this);
-
   }
 });
 
@@ -504,12 +535,15 @@ wiz.views.Result = Backbone.View.extend({
 
   tagName: "li",
 
+  template: _.template($('#results-template').html()),
+
   initialize: function(options) {
     this.result = options.result;
+    this.index = options.index + 1;
   },
 
   render: function() {
-    this.$el.html(this.result);
+    this.$el.append(this.template({result: this.result, index: this.index}));
     return this;
   }
 
