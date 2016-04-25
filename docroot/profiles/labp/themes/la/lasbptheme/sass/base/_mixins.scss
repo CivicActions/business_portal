@@ -57,7 +57,8 @@
 }
 
 /* ========= Style Variants ========= */
-@mixin style-variant($variant-color: #6BC3F3) {
+@mixin style-variant($variant-color) {
+  background-color: $variant-color;
   hr {
     background-color: $variant-color;
     width: 80px;
