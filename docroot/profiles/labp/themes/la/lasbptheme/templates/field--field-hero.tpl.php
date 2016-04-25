@@ -48,74 +48,68 @@ foreach($heros as $hero){
   $width = strtolower($hero['field_width'][0]['#markup']);
   $background_image = $hero['field_background_image']['#items']['0']['uri'];
   $background_image_path = file_create_url($background_image);
-  $pane_style = strtolower($hero['field_pane_style'][0]['#title']);
+
+  $pane_style = $hero['field_pane_style']['#items'][0]['taxonomy_term'];
+  $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
+
   $hero_title = $hero['field_hero_title'][0]['#markup'];
   $icon = $hero['field_icon']['#items']['0']['uri'];
+  $icon_path = file_create_url($icon);
   $hero_subtitle = $hero['field_subtitle_long']['#items'][0]['value'];
   $hero_subtitle_long = $hero['field_subtitle_2']['#items'][0]['value'];
+  $hero_description = $hero['field_description']['#items'][0]['value'];
 }
 ?>
 <!-- hero start -->
-<div class="pane__hero pane__hero_<?php print $width; ?> style-variant__<?php print $pane_style; ?> <?php print $classes; ?>">
-  <?php if($background_image):?>
-     <?php if($width == "full"){ ?>
-        <div class = "hero__image--bg-full" style = "background-image: url('<?php print $background_image_path;?>')">
+<div class="pane__hero pane__hero_<?php print $width; ?> style-variant <?php print $pane_style; ?> <?php print $classes; ?>">
+    <?php if($width == "full") { ?>
+        <div class = "hero__image--bg hero__layout--<?php print $width; ?> " style = "background-image: url('<?php print $background_image_path;?>')">
           <div class = "hero__image--overlay">
             <div class = "hero__content-wrapper">
-                <div class="hero__icon_bottom_alignment">
-                  <?php if($icon):?>
-                    <div class="hero__icon"><img src="<?php print file_create_url($icon); ?>" /></div>
-                  <?php endif; ?>
-                  <div class="hero__headline"><?php print $hero_title; ?></div>
-                  <hr class = "hero__line">
-                </div>
-              <?php if($hero_subtitle || $hero_subtitle_long): ?>
-                    <div class="hero__bottom_align--bn">
-                      <?php if($hero_subtitle): ?>
-                        <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
-                      <?php endif; ?>
-                      <?php if($hero_subtitle_long): ?>
-                        <p class="hero__business__description">
-                          <?php print $hero_subtitle_long; ?>
-                        </p>
-                      <?php endif; ?>
-                    </div>
-                  </div>
-              <?php endif; ?>
-          </div>
-        </div>
-      </div>
-      <?php } else{ ?>
-      <div class = "hero__image--bg-half">
-        <div class="hero__overlay_<?php print $width; ?>_photo">
-          <img src="<?php print file_create_url($background_image); ?>" />
-        </div>
-        <div class="hero__overlay_<?php print $width; ?>">
-          <div class="hero__icon_bottom_alignment">
-            <?php if($icon):?>
-              <div class="hero__icon"><img src="<?php print file_create_url($icon); ?>" /></div>
-            <?php endif; ?>
-            <div class="hero__headline"><?php print $hero_title; ?></div>
-          </div>
-        </div>
-        <?php if($hero_subtitle || $hero_subtitle_long): ?>
-          <div class="hero__content_wrapper">
-            <div class="hero__copy--col_1">
-              <div class="hero__bottom_align--bn">
-                <?php if($hero_subtitle): ?>
-                  <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
-                <?php endif; ?>
-                <?php if($hero_subtitle_long): ?>
-                  <p class="hero__business__description">
-                    <?php print $hero_subtitle_long; ?>
-                  </p>
-                <?php endif; ?>
+              <div class="hero__icon_bottom_alignment">
+                <div class="hero__headline"><?php print $hero_title; ?></div>
+                <hr class = "hero__line">
               </div>
+              <?php if($hero_subtitle || $hero_subtitle_long): ?>
+                <div class="hero__bottom_align--bn">
+                  <?php if($hero_subtitle): ?>
+                    <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
+                  <?php endif; ?>
+                  <?php if($hero_subtitle_long): ?>
+                    <p class="hero__business__description">
+                      <?php print $hero_subtitle_long; ?>
+                    </p>
+                  <?php endif; ?>
+                </div>
+              <?php endif; ?>
             </div>
           </div>
-        <?php endif; ?>
-      </div>
-      </div>
-      <?php } ?>
-  <?php endif; ?>
+        </div>
+
+<!-- Half width starts -->
+    <?php } else{ ?>
+        <div class = "hero__image--bg hero__layout--<?php print $width; ?> " style = "background-image: url('<?php print $background_image_path;?>')">
+            <div class = "hero__image--overlay">
+                <div class = "hero__content-wrapper">
+                    <div class = "left">
+                      <?php if ($icon): ?>
+                        <div class = "hero__icon">
+                           <img src = "<?php print $icon_path; ?>" />
+                        </div>
+                      <?php endif; ?>
+                    </div>
+                    <div class = "right">
+                      <div class="hero__headline"><?php print $hero_title; ?></div>
+                        <hr class = "hero__line">
+                        <?php if($hero_description): ?>
+                          <p class="hero__description">
+                             <?php print $hero_description; ?>
+                          </p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php } ?>
+
 

@@ -61,7 +61,7 @@ bundle exec compass compile
 All steps below are assumed to be run from the command line
 
 ### Step 1. Clear out your database
-`drush sql-dump -y`
+`drush sql-drop -y`
 
 ### Step 2. Load prod database
 `drush sql-cli < /assets/labp-2016-04-25T12-58-04.sql`
