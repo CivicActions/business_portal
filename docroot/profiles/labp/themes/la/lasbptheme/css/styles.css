@@ -23,7 +23,7 @@
 * want to serve the font from google or download it in the theme. Or until I confirm where
 the fonts are being added.
 */
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
 /* Wrapper width mixin for containers */
 /* ========= Style Variants ========= */
@@ -2215,6 +2215,21 @@ hr.hero__line {
 }
 
 /* line 33, ../sass/components/hero/_hero.scss */
+.hero__business__name {
+  color: #fff;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+/* line 40, ../sass/components/hero/_hero.scss */
+.hero__business__description {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+/* line 46, ../sass/components/hero/_hero.scss */
 .hero__description {
   color: #fff;
   font-size: 1.4em;
@@ -2222,7 +2237,7 @@ hr.hero__line {
   margin: 2em 0 4em;
 }
 
-/* line 40, ../sass/components/hero/_hero.scss */
+/* line 53, ../sass/components/hero/_hero.scss */
 .hero__bottom_align--bn {
   margin-bottom: 2em;
 }
@@ -2230,56 +2245,60 @@ hr.hero__line {
 /*****************************
 *     Full Width
 ******************************/
-/* line 55, ../sass/components/hero/_hero.scss */
+/* line 68, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__headline {
   font-size: 2.143em;
 }
 @media all and (min-width: 720px) {
-  /* line 55, ../sass/components/hero/_hero.scss */
+  /* line 68, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__headline {
     font-size: 3em;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 55, ../sass/components/hero/_hero.scss */
+  /* line 68, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__headline {
     font-size: 4em;
     margin: 4.8em 0 0;
   }
 }
+/* line 79, ../sass/components/hero/_hero.scss */
+.hero__layout--full .hero__bottom_align--bn {
+  margin: 5em 0 3em;
+}
 
 /*****************************
 *     Half Width
 ******************************/
-/* line 74, ../sass/components/hero/_hero.scss */
+/* line 90, ../sass/components/hero/_hero.scss */
 .hero__layout--half .hero__icon {
   margin: 9em 0 0;
 }
-/* line 77, ../sass/components/hero/_hero.scss */
+/* line 93, ../sass/components/hero/_hero.scss */
 .hero__layout--half .hero__icon img {
   width: 100%;
   max-width: 150px;
 }
-/* line 82, ../sass/components/hero/_hero.scss */
+/* line 98, ../sass/components/hero/_hero.scss */
 .hero__layout--half .hero__headline {
   font-size: 1.8em;
   margin: 4em 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 82, ../sass/components/hero/_hero.scss */
+  /* line 98, ../sass/components/hero/_hero.scss */
   .hero__layout--half .hero__headline {
     font-size: 2.143em;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 82, ../sass/components/hero/_hero.scss */
+  /* line 98, ../sass/components/hero/_hero.scss */
   .hero__layout--half .hero__headline {
     font-size: 2.6em;
   }
 }
 
 /*====== Style variants ======== */
-/* line 99, ../sass/components/hero/_hero.scss */
+/* line 115, ../sass/components/hero/_hero.scss */
 .style-variant.light_blue {
   background-color: #6BC3F3;
 }
@@ -2288,7 +2307,7 @@ hr.hero__line {
   background-color: #6BC3F3;
   width: 80px;
 }
-/* line 102, ../sass/components/hero/_hero.scss */
+/* line 118, ../sass/components/hero/_hero.scss */
 .style-variant.light_green {
   background-color: #B5CF6E;
 }
@@ -2297,7 +2316,7 @@ hr.hero__line {
   background-color: #B5CF6E;
   width: 80px;
 }
-/* line 105, ../sass/components/hero/_hero.scss */
+/* line 121, ../sass/components/hero/_hero.scss */
 .style-variant.blue {
   background-color: #0D84E9;
 }
@@ -2306,7 +2325,7 @@ hr.hero__line {
   background-color: #0D84E9;
   width: 80px;
 }
-/* line 108, ../sass/components/hero/_hero.scss */
+/* line 124, ../sass/components/hero/_hero.scss */
 .style-variant.white {
   background-color: white;
 }
@@ -2315,7 +2334,7 @@ hr.hero__line {
   background-color: white;
   width: 80px;
 }
-/* line 111, ../sass/components/hero/_hero.scss */
+/* line 127, ../sass/components/hero/_hero.scss */
 .style-variant.light_grey {
   background-color: #e6e6e6;
 }
@@ -2326,7 +2345,7 @@ hr.hero__line {
 }
 
 /*========== Layout ======== */
-/* line 123, ../sass/components/hero/_hero.scss */
+/* line 139, ../sass/components/hero/_hero.scss */
 .hero__content-wrapper {
   width: 75%;
   margin: 0 auto;
@@ -2342,14 +2361,14 @@ hr.hero__line {
 }
 
 @media all and (min-width: 720px) {
-  /* line 136, ../sass/components/hero/_hero.scss */
+  /* line 152, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 26.66667%;
     margin-left: 0%;
     margin-right: -26.66667%;
   }
-  /* line 137, ../sass/components/hero/_hero.scss */
+  /* line 153, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 53.33333%;
@@ -2358,14 +2377,14 @@ hr.hero__line {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 141, ../sass/components/hero/_hero.scss */
+  /* line 157, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 142, ../sass/components/hero/_hero.scss */
+  /* line 158, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 60%;
@@ -2375,7 +2394,7 @@ hr.hero__line {
 }
 
 /*******************************************/
-/* line 157, ../sass/components/hero/_hero.scss */
+/* line 173, ../sass/components/hero/_hero.scss */
 .hero__line--white {
   height: 4px;
   max-width: 80px;
@@ -2386,7 +2405,7 @@ hr.hero__line {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 157, ../sass/components/hero/_hero.scss */
+  /* line 173, ../sass/components/hero/_hero.scss */
   .hero__line--white {
     display: block;
   }
