@@ -120,6 +120,13 @@ function sbp_wizard_block() {
     </div>
   </script>
 
+  <script type="text/template" id="wizard-nav-start-over-template">
+    <div class="wizard__arrow-down-wrapper">
+       <a href="#" class="wizard__arrow-up"><img src="../images/wizard/arrow_left_enabled_desktop.png"></a>
+      <p class="wizard__nav_label_help">Start Over</p>
+    </div>
+  </script>
+
   <script type="text/template" id="tip-template">
       <div class="wizard__tip">
         <div class="wizard__tip_icon"></div>
@@ -127,6 +134,11 @@ function sbp_wizard_block() {
           <p class="wizard__tip_copy">TIP PLACEHOLDER @TODO</p>
         </div>
       </div>
+  </script>
+
+  <script type="text/template" id="results-template">
+    <div class="wizard__step"> step {{index}}<div>
+    <div class="wizard__result">{{result}}<div>
   </script>
 
   <script type="text/template" id="progress-template">

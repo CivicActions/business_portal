@@ -17,9 +17,22 @@ wiz.collections.Chosen = Backbone.Collection.extend ({
   toggleSelected: function() {
     this.selected = !this.selected;
   },
+
+  getResults: function() {
+    return _.chain(this.models).map(function(m) {
+      if (m.get("buttons") !== undefined) {
+        if (m.get("chosenBid") !== undefined) {
+          if (m.get("buttons")[m.get("chosenBid")]["Button Result Text"] !== undefined) {
+            return m.get("buttons")[m.get("chosenBid")]["Button Result Text"]["#markup"];
+          }
+        }
+      }
+    }, this).filter(_.identity).value();
+  }
 });
 
-wiz.collections.chosen = new wiz.collections.Chosen();
+wiz.collections.chosen = new wiz.collections.Chosen({});
+
 
 wiz.collections.chosen.on("add", function(m) {
 
@@ -32,11 +45,12 @@ wiz.collections.chosen.on("add", function(m) {
   var view = new wiz.views.Wizard({
     model: model
   });
+
   wiz.instance.goto(view);
-  console.log("m", model);
 
   // Let others know about it.
   // Backbone.on("screen:add", this.render, this);
+
 });
 
 
@@ -45,18 +59,6 @@ wiz.collections.Screens = Backbone.Collection.extend({
   model: wiz.models.Screen,
 
   url: "/api/json/business-portal-wizard",
-
-  // getResults: function() {
-  //   return _.map(wiz.controller.chosen, function(s) {
-  //     var m;
-  //     m = this.find({
-  //       Nid: s
-  //     });
-  //     console.log("m", m);
-  //     var bid = m.get("bid");
-  //     return m.get("buttons")[bid.charAt(bid.length - 1)]["Button Result Text"]["#markup"];
-  //   }, this);
-  // },
 
 });
 
