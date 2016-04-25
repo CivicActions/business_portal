@@ -30,6 +30,19 @@ hr.hero__line {
   margin: 2em 0 0;
 }
 
+.hero__business__name {
+  color: #fff;
+  font-size: 1.1em;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.hero__business__description {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
 .hero__description {
   color: #fff;
   font-size: 1.4em;
@@ -55,13 +68,16 @@ hr.hero__line {
   .hero__headline {
     font-size: 2.143em;
 
-    @include window_size(tab-wide-up){
+    @include window_size(tab-wide-up) {
       font-size: 3em;
     }
-    @include window_size(desktop){
+    @include window_size(desktop) {
       font-size: 4em;
       margin: 4.8em 0 0;
     }
+  }
+  .hero__bottom_align--bn {
+    margin: 5em 0 3em;
   }
 }
 
