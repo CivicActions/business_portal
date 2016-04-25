@@ -2280,26 +2280,53 @@ hr.hero__line {
 
 /*====== Style variants ======== */
 /* line 99, ../sass/components/hero/_hero.scss */
-.style-variant__light.blue {
+.style-variant.light_blue {
   background-color: #6BC3F3;
 }
 /* line 62, ../sass/base/_mixins.scss */
-.style-variant__light.blue hr {
+.style-variant.light_blue hr {
   background-color: #6BC3F3;
   width: 80px;
 }
 /* line 102, ../sass/components/hero/_hero.scss */
-.style-variant__light.green {
+.style-variant.light_green {
   background-color: #B5CF6E;
 }
 /* line 62, ../sass/base/_mixins.scss */
-.style-variant__light.green hr {
+.style-variant.light_green hr {
   background-color: #B5CF6E;
+  width: 80px;
+}
+/* line 105, ../sass/components/hero/_hero.scss */
+.style-variant.blue {
+  background-color: #0D84E9;
+}
+/* line 62, ../sass/base/_mixins.scss */
+.style-variant.blue hr {
+  background-color: #0D84E9;
+  width: 80px;
+}
+/* line 108, ../sass/components/hero/_hero.scss */
+.style-variant.white {
+  background-color: white;
+}
+/* line 62, ../sass/base/_mixins.scss */
+.style-variant.white hr {
+  background-color: white;
+  width: 80px;
+}
+/* line 111, ../sass/components/hero/_hero.scss */
+.style-variant.light_grey {
+  background-color: #e6e6e6;
+}
+/* line 62, ../sass/base/_mixins.scss */
+.style-variant.light_grey hr {
+  background-color: #e6e6e6;
   width: 80px;
 }
 
 /*========== Layout ======== */
-/* line 114, ../sass/components/hero/_hero.scss */
+/* line 123, ../sass/components/hero/_hero.scss */
 .hero__content-wrapper {
   width: 75%;
   margin: 0 auto;
@@ -2315,14 +2342,14 @@ hr.hero__line {
 }
 
 @media all and (min-width: 720px) {
-  /* line 127, ../sass/components/hero/_hero.scss */
+  /* line 136, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 26.66667%;
     margin-left: 0%;
     margin-right: -26.66667%;
   }
-  /* line 128, ../sass/components/hero/_hero.scss */
+  /* line 137, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 53.33333%;
@@ -2331,14 +2358,14 @@ hr.hero__line {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 132, ../sass/components/hero/_hero.scss */
+  /* line 141, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 133, ../sass/components/hero/_hero.scss */
+  /* line 142, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 60%;
@@ -2348,7 +2375,7 @@ hr.hero__line {
 }
 
 /*******************************************/
-/* line 148, ../sass/components/hero/_hero.scss */
+/* line 157, ../sass/components/hero/_hero.scss */
 .hero__line--white {
   height: 4px;
   max-width: 80px;
@@ -2359,7 +2386,7 @@ hr.hero__line {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 148, ../sass/components/hero/_hero.scss */
+  /* line 157, ../sass/components/hero/_hero.scss */
   .hero__line--white {
     display: block;
   }

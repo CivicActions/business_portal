@@ -95,12 +95,21 @@ hr.hero__line {
 
 
 /*====== Style variants ======== */
-.style-variant__light {
-  &.blue {
-   @include style-variant( #6BC3F3 );
+.style-variant {
+  &.light_blue {
+   @include style-variant( $light-blue );
   }
-  &.green {
-    @include style-variant( #B5CF6E );
+  &.light_green {
+    @include style-variant( $background-name );
+  }
+  &.blue {
+    @include style-variant( $egg_blue );
+  }
+  &.white {
+    @include style-variant ( $white );
+  }
+  &.light_grey {
+    @include style-variant ( $grayscale_light );
   }
 }
 
