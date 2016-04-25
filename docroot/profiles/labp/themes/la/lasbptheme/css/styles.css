@@ -686,29 +686,29 @@ table {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1em;
-  text-align: center;
-  transition-property: -webkit-transform;
-  transition-property: transform;
+  height: 800px;
   transition-duration: 0.5s;
-  transition-timing-function: ease;
-  -webkit-transform: translate3d(100%, 0, 0);
-  transform: translate3d(100%, 0, 0);
+  transform: translate3D(95%, 0, 0);
+  /* X value must be same as Nav width */
+  -moz-transform: translate3D(95%, 0, 0);
+  /* X value must be same as Nav width */
+  -webkit-transform: translate3D(95%, 0, 0);
+  /* X value must be same as Nav width */
 }
 
-/* line 18, ../sass/base/_transitions.scss */
+/* line 15, ../sass/base/_transitions.scss */
 .page.is-visible {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+  /* X value must be same as Nav width */
+  -moz-transform: translate3D(0, 0, 0);
+  /* X value must be same as Nav width */
+  -webkit-transform: translate3D(0, 0, 0);
+  /* X value must be same as Nav width */
 }
 
 /* .home-change { */
 /*   color: white; */
 /*   background: #F2CF66; */
-/* } */
-/* .activity-change { */
-/*   color: white; */
-/*   background: #F2994B; */
 /* } */
 /* Layout rules */
 /**
@@ -1826,7 +1826,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459798895');
+  background-image: url('../images/progress.gif?1459349360');
 }
 
 /**
@@ -3075,7 +3075,7 @@ hr.hero__line {
   width: 270px;
   display: inline-block;
   float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3096,7 +3096,7 @@ hr.hero__line {
   width: 270px;
   display: inline-block;
   float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3117,7 +3117,7 @@ hr.hero__line {
   width: 270px;
   display: inline-block;
   float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3138,7 +3138,7 @@ hr.hero__line {
   width: 270px;
   display: inline-block;
   float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3159,7 +3159,7 @@ hr.hero__line {
   width: 270px;
   display: inline-block;
   float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3180,7 +3180,7 @@ hr.hero__line {
   width: 270px;
   display: inline-block;
   float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3228,7 +3228,7 @@ hr.hero__line {
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3239,7 +3239,7 @@ hr.hero__line {
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3250,7 +3250,7 @@ hr.hero__line {
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
   float: left;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3262,11 +3262,11 @@ hr.hero__line {
   width: 40px;
   height: 100px;
   float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
+  background-image: url('../images/wizard/icon_bulb.png?1461492462');
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
+  background-image: url('../images/wizard/icon_bulb.png?1461492462');
   display: none;
 }
 
@@ -3275,13 +3275,13 @@ hr.hero__line {
   width: 40px;
   height: 100px;
   float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
+  background-image: url('../images/wizard/icon_bulb.png?1461492462');
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
   width: 45px;
   margin: 5px 0 0 5px;
-  background-image: url('../images/wizard/icon_pencil.png?1461530233');
+  background-image: url('../images/wizard/icon_pencil.png?1461563616');
   display: none;
 }
 
@@ -3290,11 +3290,11 @@ hr.hero__line {
   width: 40px;
   height: 100px;
   float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
+  background-image: url('../images/wizard/icon_bulb.png?1461492462');
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_percentage.png?1461530233');
+  background-image: url('../images/wizard/icon_percentage.png?1461563616');
 }
 
 /* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3302,11 +3302,11 @@ hr.hero__line {
   width: 40px;
   height: 100px;
   float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
+  background-image: url('../images/wizard/icon_bulb.png?1461492462');
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_pound.png?1461530233');
+  background-image: url('../images/wizard/icon_pound.png?1461563616');
   display: none;
 }
 
@@ -3315,11 +3315,11 @@ hr.hero__line {
   width: 40px;
   height: 100px;
   float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
+  background-image: url('../images/wizard/icon_bulb.png?1461492462');
   background-size: 100%;
   background-repeat: no-repeat;
   margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_map.png?1461530233');
+  background-image: url('../images/wizard/icon_map.png?1461563616');
   display: none;
 }
 
@@ -3392,7 +3392,7 @@ hr.hero__line {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461563616');
 }
 
 /* line 260, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3404,7 +3404,7 @@ hr.hero__line {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461563616');
 }
 
 /* line 267, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3416,13 +3416,13 @@ hr.hero__line {
   display: inline-block;
   background-size: 100% 100%;
   float: left;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461563616');
 }
 
 /* line 275, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461530233');
+  background-image: url('../images/wizard/icon_close.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -3466,7 +3466,7 @@ hr.hero__line {
 
 /* line 39, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1461492462');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -3484,7 +3484,7 @@ hr.hero__line {
 
 /* line 55, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--disabled {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
+  background-image: url('../images/wizard/arrow_down.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3511,7 +3511,7 @@ hr.hero__line {
   /* line 70, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down-wrapper--enabled {
     background-color: transparent;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     background-position: 0 0;
     background-repeat: repeat-x;
     border-bottom: 2px solid white;
@@ -3522,14 +3522,14 @@ hr.hero__line {
 .wizard__arrow-down-wrapper--disabled {
   border: 0px solid white;
   padding: 10px 10px 0 0;
-  background-image: url('../images/wizard/nav_hr_bar.png?1461530233');
+  background-image: url('../images/wizard/nav_hr_bar.png?1461563616');
   background-repeat: no-repeat;
   background-position: 23px 0;
 }
 @media all and (min-width: 720px) {
   /* line 87, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down-wrapper--disabled {
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     background-position: 0 0;
     background-repeat: repeat-x;
   }
@@ -3537,7 +3537,7 @@ hr.hero__line {
 
 /* line 131, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3553,7 +3553,7 @@ hr.hero__line {
   .wizard__arrow-down--enabled {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3562,7 +3562,7 @@ hr.hero__line {
 
 /* line 137, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled_section_1 {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3578,7 +3578,7 @@ hr.hero__line {
   .wizard__arrow-down--enabled_section_1 {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3587,7 +3587,7 @@ hr.hero__line {
 
 /* line 142, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled_section_2 {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3603,7 +3603,7 @@ hr.hero__line {
   .wizard__arrow-down--enabled_section_2 {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3612,7 +3612,7 @@ hr.hero__line {
 
 /* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled_section_3 {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3628,7 +3628,7 @@ hr.hero__line {
   .wizard__arrow-down--enabled_section_3 {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3637,7 +3637,7 @@ hr.hero__line {
 
 /* line 154, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled_section_4 {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3653,7 +3653,7 @@ hr.hero__line {
   .wizard__arrow-down--enabled_section_4 {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3662,7 +3662,7 @@ hr.hero__line {
 
 /* line 160, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-left--enabled_section_4_help {
-  background-image: url('../images/wizard/arrow_down_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3678,7 +3678,7 @@ hr.hero__line {
   .wizard__arrow-left--enabled_section_4_help {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3737,7 +3737,7 @@ hr.hero__line {
 
 /* line 203, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-left--enabled {
-  background-image: url('../images/wizard/arrow_left_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3753,7 +3753,7 @@ hr.hero__line {
   .wizard__arrow-left--enabled {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3762,7 +3762,7 @@ hr.hero__line {
 
 /* line 227, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-left--enabled_help {
-  background-image: url('../images/wizard/arrow_left_enabled_help.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled_help.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3778,7 +3778,7 @@ hr.hero__line {
   .wizard__arrow-left--enabled_help {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3787,7 +3787,7 @@ hr.hero__line {
 
 /* line 253, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
+  background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -3849,7 +3849,7 @@ hr.hero__line {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461530233');
+  background-image: url('../images/wizard/icon_info.png?1461563616');
   background-size: 100%;
 }
 
