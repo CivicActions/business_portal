@@ -146,6 +146,12 @@ function sbp_faq_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -245,6 +251,12 @@ function sbp_faq_defaultconfig_field_default_fields() {
           'weight' => 1,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'json' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',

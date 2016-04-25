@@ -10,6 +10,7 @@ dependencies[] = lightning_base
 dependencies[] = options
 dependencies[] = rabbit_hole
 dependencies[] = rh_node
+dependencies[] = sbp_field_base
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
