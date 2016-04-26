@@ -58,7 +58,9 @@
 }
 
 /* FILTERS */
-.pane-facetapi h2.pane-title {
+.pane-facetapi h2.pane-title,
+.pane-sbp-terms-definitions h2.pane-title
+{
   list-style: none;
   color:$dark_blue;
   font-size: 1.143em;
@@ -74,7 +76,8 @@
 ul.facetapi-facet-field-business-need li,
 ul.facetapi-facet-field-business-ownership li,
 ul.facetapi-facet-field-industry-tag li,
-ul.facetapi-facet-field-resource-type li {
+ul.facetapi-facet-field-resource-type li,
+.pane-sbp-terms-definitions ul li {
   list-style: none;
   color:$dark_blue;
   font-size: 0.929em;
