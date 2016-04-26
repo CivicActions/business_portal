@@ -96,7 +96,7 @@ wiz.views.App = wiz.extensions.View.extend({
 
     wiz.views.Wizard = wiz.extensions.View.extend({
 
-      className: "wizard",
+      className: "wiz",
 
       render: function() {
 
@@ -205,7 +205,7 @@ wiz.views.App = wiz.extensions.View.extend({
 ////////////
 
 wiz.views.Header = Backbone.View.extend({
-  className: ".wizard__header",
+  className: ".wizard__header constrained",
   template: _.template($('#header-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -218,7 +218,7 @@ wiz.views.Header = Backbone.View.extend({
 /////////////////////////
 
 wiz.views.HeaderForQuestion = Backbone.View.extend({
-  className: ".wizard__header",
+  className: ".wizard__header constrained",
   template: _.template($('#header-for-question-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -231,7 +231,7 @@ wiz.views.HeaderForQuestion = Backbone.View.extend({
 ///////////
 
 wiz.views.Intro = Backbone.View.extend({
-  className: ".wizard__intro-block",
+  className: ".wizard__intro-block constrained",
   template: _.template($('#intro-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -244,7 +244,7 @@ wiz.views.Intro = Backbone.View.extend({
 /////////////////////////////
 
 wiz.views.IntroWithIllustration = Backbone.View.extend({
-  className: ".wizard__intro-block",
+  className: ".wizard__intro-block constrained",
   template: _.template($('#intro-with-illustration-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -270,7 +270,7 @@ wiz.views.Question = Backbone.View.extend({
 /////////////
 
 wiz.views.Buttons = Backbone.View.extend({
-  className: "wizard__buttons",
+  className: "wizard__buttons constrained",
   template: _.template($('#buttons-template').html()),
 
   render: function() {
@@ -363,7 +363,6 @@ wiz.views.Button = Backbone.View.extend({
 /////////
 
 wiz.views.Tip = Backbone.View.extend({
-//  className: ".wizard__intro-block",
   template: _.template($('#tip-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -559,7 +558,7 @@ wiz.views.ProgressBar = Backbone.View.extend({
 
   template: _.template($('#progress-bar-section-template').html()),
   templateWithIcon: _.template($('#progress-bar-section-with-icon-template').html()),
-  className: "wizard__progress-bar--simple wizard__col_2",
+  className: "wizard__progress-bar--simple",
 
   render: function() {
     var currentSection = this.model.get("section").tid;

@@ -2,9 +2,12 @@
 
 
 @mixin wizard__progress-bar-root($color:'transparent') {
-  width: 270px;
+  width: 10%;
   display: inline-block;
-  float: right;
+  position: absolute;
+  @include clearfix;
+  top: 0;
+  right: 0;
   background-image: image-url("wizard/progress_bar.png");
   background-repeat: no-repeat;
   background-size:12px;
@@ -16,9 +19,18 @@
   }
 }
 
+@mixin wizard__progress-bar_icon {
+  width:15px;
+  height:15px;
+  margin:0 4px 0 0;
+  padding: 0;
+  display: inline-block;
+  background-size: 100% 100%;
+}
+
+
 //  desktop version root container
 .wizard__progress-bar--simple{
-  border: 1px solid red !important;
   @include wizard__progress-bar-root();
   width: 60px;
   @include clearfix;
@@ -49,20 +61,9 @@
 .wizard__progress-bar_location_bar{
   width:58px;
   height: 100px;
-  float: left;
+//  float: left;
 
 }
-
-
-/* @mixin wizard__progress-bar_icon { */
-/*   width:15px; */
-/*   height:15px; */
-/*   margin:0 4px 0 0; */
-/*   padding: 0; */
-/*   display: inline-block; */
-/*   background-size: 100% 100%; */
-/*   float: left; */
-/* } */
 
 /* @mixin wizard__progress-large_icon { */
 /*   width:40px; */
@@ -82,7 +83,7 @@
 // use when the user completes the first section
 .wizard__progress-bar_location_bar--completed_first_section{
   width:58px;
-  float: left;
+//  float: left;
   background-image: image-url("wizard/progress_bar_completed.png");
   background-repeat: no-repeat;
   background-size:12px;
@@ -93,7 +94,7 @@
 // use when the user completes the middle sections
 .wizard__progress-bar_location_bar--completed{
   width:58px;
-  float: left;
+//  float: left;
   background-image: image-url("wizard/progress_bar_completed.png");
   background-repeat: no-repeat;
   background-size:12px;
@@ -105,7 +106,7 @@
 // use on the currently active sections
 .wizard__progress-bar_location_bar--selected{
   width:58px;
-  float: left;
+//  float: left;
   background-image: image-url("wizard/progress_bar_completed_10_px.png");
   background-repeat: no-repeat;
   background-size:12px;
@@ -119,44 +120,44 @@
 
 // change the display property to make them appear
 
-.wizard__progress-bar_location_icon--city{
-  @include wizard__progress-large_icon;
-  background-image: image-url("wizard/icon_bulb.png");
-  display: none;
+/* .wizard__progress-bar_location_icon--city{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_bulb.png"); */
+/*   display: none; */
 
-}
+/* } */
 
-.wizard__progress-bar_location_icon--county{
-  @include wizard__progress-large_icon;
-  width:45px;
-  margin: 5px 0 0 5px;
-  background-image: image-url("wizard/icon_pencil.png");
-  display: none;
+/* .wizard__progress-bar_location_icon--county{ */
+/*   @include wizard__progress-large_icon; */
+/*   width:45px; */
+/*   margin: 5px 0 0 5px; */
+/*   background-image: image-url("wizard/icon_pencil.png"); */
+/*   display: none; */
 
-}
+/* } */
 
-.wizard__progress-bar_location_icon--state{
-  @include wizard__progress-large_icon;
-  background-image: image-url("wizard/icon_percentage.png");
-}
+/* .wizard__progress-bar_location_icon--state{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_percentage.png"); */
+/* } */
 
-.wizard__progress-bar_location_icon--federal{
-  @include wizard__progress-large_icon;
-  background-image: image-url("wizard/icon_pound.png");
-  display: none;
-}
+/* .wizard__progress-bar_location_icon--federal{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_pound.png"); */
+/*   display: none; */
+/* } */
 
 
-.wizard__progress-bar_location_icon--registration{
-  @include wizard__progress-large_icon;
-  background-image: image-url("wizard/icon_map.png");
-  display: none;
-}
+/* .wizard__progress-bar_location_icon--registration{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_map.png"); */
+/*   display: none; */
+/* } */
 
 
 // middle section
 .wizard__progress-bar_contents{
-  float: left;
+//  float: left;
   padding: 0 0 0 10px;
   color:$dark_blue;
   width: 155px;
