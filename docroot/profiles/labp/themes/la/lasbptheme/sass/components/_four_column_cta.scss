@@ -77,14 +77,20 @@
     padding: 3em 0 10em;
   }
 
-
   .panel__section {
-      @include window_size(tab-wide-up) {
-        @include zen-grid-flow-item(1, 4, true, false);
-        @include zen-float(left);
-      }
+    margin-top: 2em;
+    @include window_size(tab-wide-up) {
+      @include zen-grid-flow-item(2, 4, true, false);
+      @include zen-float(left);
+      margin-top: 0;
+    }
+    @include window_size(desktop) {
+      @include zen-grid-flow-item(1, 4, true, false);
+      @include zen-float(left);
+      margin-top: 0;
     }
   }
+}
 
 
 /*

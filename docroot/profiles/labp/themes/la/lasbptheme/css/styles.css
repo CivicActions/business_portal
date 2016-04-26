@@ -3969,8 +3969,31 @@ body.node-type-sbp-starter-kit .node-teaser {
     padding: 3em 0 10em;
   }
 }
+/* line 80, ../sass/components/_four_column_cta.scss */
+.four-col-wrapper .panel__section {
+  margin-top: 2em;
+}
 @media all and (min-width: 720px) {
-  /* line 81, ../sass/components/_four_column_cta.scss */
+  /* line 80, ../sass/components/_four_column_cta.scss */
+  .four-col-wrapper .panel__section {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: 40%;
+    padding-left: 0;
+    margin-left: 20px;
+    padding-right: 10px;
+    margin-right: -10px;
+    float: left;
+    margin-top: 0;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 80, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper .panel__section {
     padding-left: 10px;
     padding-right: 10px;
@@ -3985,6 +4008,7 @@ body.node-type-sbp-starter-kit .node-teaser {
     padding-right: 15px;
     margin-right: -15px;
     float: left;
+    margin-top: 0;
   }
 }
 
