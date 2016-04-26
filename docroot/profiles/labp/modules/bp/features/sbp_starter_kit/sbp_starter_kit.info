@@ -54,7 +54,6 @@ features[field_instance][] = node-sbp_starter_kit-field_starter_kit_key_points
 features[node][] = sbp_starter_kit
 features[page_manager_handlers][] = node_view__panel_context_f43af71f-fd46-44b0-9735-6cb69c73ddbd
 features[panelizer_defaults][] = node:sbp_starter_kit:default
-features[user_permission][] = administer panelizer comment comment_node_sbp_starter_kit defaults
 features[user_permission][] = administer panelizer node sbp_starter_kit content
 features[user_permission][] = administer panelizer node sbp_starter_kit context
 features[user_permission][] = administer panelizer node sbp_starter_kit defaults
