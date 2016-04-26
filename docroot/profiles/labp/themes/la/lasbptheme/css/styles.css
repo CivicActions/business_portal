@@ -2719,16 +2719,18 @@ hr.hero__line {
   }
 }
 
-/* line 2, ../sass/components/_landing_page_views.scss */
+/* line 3, ../sass/components/_landing_page_views.scss */
 .pane-bp-featured-sub-page,
-.pane-bp-featured-resource-page {
+.pane-bp-featured-resource-page,
+.pane-terms-definitions {
   margin: 0;
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 2, ../sass/components/_landing_page_views.scss */
+  /* line 3, ../sass/components/_landing_page_views.scss */
   .pane-bp-featured-sub-page,
-  .pane-bp-featured-resource-page {
+  .pane-bp-featured-resource-page,
+  .pane-terms-definitions {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -2736,9 +2738,11 @@ hr.hero__line {
   }
 }
 
-/* line 17, ../sass/components/_landing_page_views.scss */
+/* line 20, ../sass/components/_landing_page_views.scss */
 .pane-bp-featured-sub-page h2,
-.pane-bp-featured-resource-page h2 {
+.pane-bp-featured-resource-page h2,
+.pane-terms-definitions h3,
+.pane-labp-service-center h2 {
   font-family: Merriweather, serif;
   font-weight: normal;
   font-size: 1.429em;
@@ -2748,16 +2752,21 @@ hr.hero__line {
   padding: 0px 10px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 17, ../sass/components/_landing_page_views.scss */
+  /* line 20, ../sass/components/_landing_page_views.scss */
   .pane-bp-featured-sub-page h2,
-  .pane-bp-featured-resource-page h2 {
+  .pane-bp-featured-resource-page h2,
+  .pane-terms-definitions h3,
+  .pane-labp-service-center h2 {
     font-size: 2em;
   }
 }
 
-/* line 32, ../sass/components/_landing_page_views.scss */
+/* line 38, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-title,
-.view-bp-featured-resource-page .views-field-title {
+.view-bp-featured-resource-page .views-field-title,
+.view-id-terms_definitions .views-field-name,
+.view-id-departments .views-field-title,
+.view-id-labp_service_center .views-field-title {
   font-family: Merriweather, serif;
   font-weight: 400;
   padding: 0;
@@ -2767,25 +2776,30 @@ hr.hero__line {
   line-height: 1.2em;
 }
 @media all and (min-width: 960px) {
-  /* line 32, ../sass/components/_landing_page_views.scss */
+  /* line 38, ../sass/components/_landing_page_views.scss */
   .view-id-bp_featured_sub_page .views-field-title,
-  .view-bp-featured-resource-page .views-field-title {
+  .view-bp-featured-resource-page .views-field-title,
+  .view-id-terms_definitions .views-field-name,
+  .view-id-departments .views-field-title,
+  .view-id-labp_service_center .views-field-title {
     font-size: 1.571em;
   }
 }
 
-/* line 49, ../sass/components/_landing_page_views.scss */
+/* line 56, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node,
 .view-id-bp_featured_sub_page .views-field-field-document,
 .view-bp-featured-resource-page .views-field-view-node,
-.view-bp-featured-resource-page .views-field-field-document {
+.view-bp-featured-resource-page .views-field-field-document,
+.view-id-departments .views-field-view-node {
   width: 10%;
   display: inline-block;
 }
 
-/* line 55, ../sass/components/_landing_page_views.scss */
+/* line 63, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node a,
-.view-bp-featured-resource-page .views-field-view-node a {
+.view-bp-featured-resource-page .views-field-view-node a,
+.view-id-departments .views-field-view-node a {
   text-indent: -9999px;
   background-image: url("../images/icon_view.png");
   background-repeat: no-repeat;
@@ -2797,7 +2811,7 @@ hr.hero__line {
   margin: 0 0 0 6px;
 }
 
-/* line 61, ../sass/components/_landing_page_views.scss */
+/* line 69, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-field-document a,
 .view-bp-featured-resource-page .views-field-field-document a {
   text-indent: -9999px;
@@ -2811,16 +2825,85 @@ hr.hero__line {
   margin: 0 0 0 6px;
 }
 
-/* line 67, ../sass/components/_landing_page_views.scss */
-.view-id-bp_featured_sub_page .views-field-body
-.view-bp-featured-resource-page .views-field-body {
+/* line 78, ../sass/components/_landing_page_views.scss */
+.view-id-bp_featured_sub_page .views-field-body,
+.view-bp-featured-resource-page .views-field-body,
+.view-id-terms_definitions .views-field-description,
+.view-id-departments .views-field-field-description,
+.view-id-labp_service_center .views-field-body {
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 67, ../sass/components/_landing_page_views.scss */
-  .view-id-bp_featured_sub_page .views-field-body
-  .view-bp-featured-resource-page .views-field-body {
+  /* line 78, ../sass/components/_landing_page_views.scss */
+  .view-id-bp_featured_sub_page .views-field-body,
+  .view-bp-featured-resource-page .views-field-body,
+  .view-id-terms_definitions .views-field-description,
+  .view-id-departments .views-field-field-description,
+  .view-id-labp_service_center .views-field-body {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+/** Business source center stuff only **/
+/* line 92, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-map,
+.view-id-labp_service_center .views-field-field-services,
+.view-id-labp_service_center .views-field-field-languages {
+  width: 45%;
+  display: inline;
+  float: left;
+}
+
+/* line 97, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-map img {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* line 104, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-address,
+.view-id-labp_service_center .views-field-field-email,
+.view-id-labp_service_center .views-field-field-phone {
+  width: 45%;
+  display: inline;
+  float: right;
+}
+
+/* line 114, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-address .field-content,
+.view-id-labp_service_center .views-field-field-email .field-content,
+.view-id-labp_service_center .views-field-field-phone .field-content,
+.view-id-labp_service_center .views-field-field-services .field-content,
+.view-id-labp_service_center .views-field-field-languages .field-content {
+  line-height: 1.25em;
+  width: 90%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+@media all and (min-width: 960px) {
+  /* line 114, ../sass/components/_landing_page_views.scss */
+  .view-id-labp_service_center .views-field-field-address .field-content,
+  .view-id-labp_service_center .views-field-field-email .field-content,
+  .view-id-labp_service_center .views-field-field-phone .field-content,
+  .view-id-labp_service_center .views-field-field-services .field-content,
+  .view-id-labp_service_center .views-field-field-languages .field-content {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+/* line 126, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-label {
+  font-weight: 700;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+@media all and (min-width: 960px) {
+  /* line 126, ../sass/components/_landing_page_views.scss */
+  .view-id-labp_service_center .views-label {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
