@@ -29,7 +29,7 @@ function sbp_terms_definitions_views_default_views() {
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
       'field' => 'field_term_definitions_grouping',
@@ -37,33 +37,7 @@ function sbp_terms_definitions_views_default_views() {
       'rendered_strip' => 0,
     ),
   );
-  $handler->display->display_options['style_options']['columns'] = array(
-    'field_term_definitions_grouping' => 'field_term_definitions_grouping',
-    'name' => 'name',
-    'description' => 'description',
-  );
-  $handler->display->display_options['style_options']['default'] = '-1';
-  $handler->display->display_options['style_options']['info'] = array(
-    'field_term_definitions_grouping' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'name' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'description' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-  );
+  $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Taxonomy term: Term & Definitions Grouping */
   $handler->display->display_options['fields']['field_term_definitions_grouping']['id'] = 'field_term_definitions_grouping';
   $handler->display->display_options['fields']['field_term_definitions_grouping']['table'] = 'field_data_field_term_definitions_grouping';
