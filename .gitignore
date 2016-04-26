@@ -56,6 +56,8 @@ docroot/sites/default/*
 #############
 box/.vagrant/
 box/*.retry
+box/*/*.retry
 box/vagrant_ansible_inventory_default
 box/Vagrantfile.local
 box/roles/
+
