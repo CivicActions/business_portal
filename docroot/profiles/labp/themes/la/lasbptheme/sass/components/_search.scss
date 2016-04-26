@@ -1,0 +1,73 @@
+@mixin page__icon_base($url: "../images/icon_view.png"){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  width:32px;
+  height:32px;
+  display: inline-block;
+  float: right;
+  margin: 0 0 0 6px;
+}
+
+.pane-sbp-resource-incentives-panel-pane-1 {
+  margin: 0;
+  padding: 0;
+  border:0px solid red;
+
+
+  @include window_size(desktop){
+    width: $zen-grid-width;
+    margin-left: auto;
+    margin-right: auto;
+    @include clearfix;
+  }
+
+}
+
+.pane-sbp-resource-incentives-panel-pane-1 h2{
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 1.429em;
+  font-weight: 900;
+  color: $dark_blue;
+  @include window_size(desktop){
+    font-size:2em;
+  }
+
+  border-bottom:1px solid $light-blue;
+  padding: 0px 10px 0 0;
+}
+
+.view-id-sbp_resource_incentives .views-field-title {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+
+  padding:0;
+  margin: 5px 0px 5px 0;
+  width: 70%;
+  display: inline-block;
+  line-height: 1.2em;
+  @include window_size(desktop){
+    font-size:1.571em;
+  }
+}
+
+.view-id-sbp_resource_incentives .views-field-view-node {
+  width: 20%;
+  display: inline-block;
+}
+
+.view-id-sbp_resource_incentives .views-field-view-node a {
+  text-indent: -9999px;
+  @include page__icon_base;
+}
+
+.view-id-sbp_resource_incentives .views-field-body {
+  line-height: 1.25em;
+  width: 90%;
+  @include window_size(desktop){
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}

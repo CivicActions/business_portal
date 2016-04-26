@@ -1066,8 +1066,9 @@ table {
 }
 
 /* LEFT PANE */
-/* line 61, ../sass/layouts/_panels.scss */
-.panel-2col-stacked .panel-col-top .panel-col-first .inside {
+/* line 62, ../sass/layouts/_panels.scss */
+.panel-2col-stacked .panel-col-top .panel-col-first .inside,
+.panel-2col-stacked .panel-col-top .panel-col-last .inside {
   padding: 0px;
 }
 
@@ -1834,7 +1835,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459349360');
+  background-image: url('../images/progress.gif?1459798895');
 }
 
 /**
@@ -2419,6 +2420,89 @@ hr.hero__line {
   }
 }
 
+/* line 12, ../sass/components/_search.scss */
+.pane-sbp-resource-incentives-panel-pane-1 {
+  margin: 0;
+  padding: 0;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 12, ../sass/components/_search.scss */
+  .pane-sbp-resource-incentives-panel-pane-1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+}
+
+/* line 27, ../sass/components/_search.scss */
+.pane-sbp-resource-incentives-panel-pane-1 h2 {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 1.429em;
+  font-weight: 900;
+  color: #0f2940;
+  border-bottom: 1px solid #6bc3f3;
+  padding: 0px 10px 0 0;
+}
+@media all and (min-width: 960px) {
+  /* line 27, ../sass/components/_search.scss */
+  .pane-sbp-resource-incentives-panel-pane-1 h2 {
+    font-size: 2em;
+  }
+}
+
+/* line 41, ../sass/components/_search.scss */
+.view-id-sbp_resource_incentives .views-field-title {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 5px 0px 5px 0;
+  width: 70%;
+  display: inline-block;
+  line-height: 1.2em;
+}
+@media all and (min-width: 960px) {
+  /* line 41, ../sass/components/_search.scss */
+  .view-id-sbp_resource_incentives .views-field-title {
+    font-size: 1.571em;
+  }
+}
+
+/* line 55, ../sass/components/_search.scss */
+.view-id-sbp_resource_incentives .views-field-view-node {
+  width: 20%;
+  display: inline-block;
+}
+
+/* line 60, ../sass/components/_search.scss */
+.view-id-sbp_resource_incentives .views-field-view-node a {
+  text-indent: -9999px;
+  background-image: url("../images/icon_view.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: right;
+  margin: 0 0 0 6px;
+}
+
+/* line 65, ../sass/components/_search.scss */
+.view-id-sbp_resource_incentives .views-field-body {
+  line-height: 1.25em;
+  width: 90%;
+}
+@media all and (min-width: 960px) {
+  /* line 65, ../sass/components/_search.scss */
+  .view-id-sbp_resource_incentives .views-field-body {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
 /* Wizard */
 /* line 3, ../sass/components/wizard/_wizard.scss */
 #wizard {
@@ -2881,7 +2965,7 @@ a.wizard__button--selected {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461563616');
+  background-image: url('../images/wizard/progress_bar.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2937,7 +3021,7 @@ a.wizard__button--selected {
 /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -2947,7 +3031,7 @@ a.wizard__button--selected {
 /* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -2957,7 +3041,7 @@ a.wizard__button--selected {
 /* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3057,7 +3141,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
 }
 
 /* line 222, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3068,7 +3152,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
 }
 
 /* line 229, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3079,7 +3163,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
 }
 
 /**********/
@@ -3088,7 +3172,7 @@ a.wizard__button--selected {
 /* line 250, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461563616');
+  background-image: url('../images/wizard/icon_close.png?1461530233');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -3151,7 +3235,7 @@ a.wizard__button--selected {
 
 /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461492462');
+  background-image: url('../images/wizard/arrow_up.png?1459798895');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -3171,7 +3255,7 @@ a.wizard__arrow-up {
 
 /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461563616');
+  background-image: url('../images/wizard/arrow_down.png?1461530233');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3189,12 +3273,12 @@ a.wizard__arrow-down {
 
 /* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461563616');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
 }
 
 /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461563616');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
   background-color: #99d5f5;
   display: block;
   float: right;
@@ -3204,7 +3288,7 @@ a.wizard__arrow-down.enabled {
   .wizard__arrow-up.enabled.left {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3213,7 +3297,7 @@ a.wizard__arrow-down.enabled {
 
 /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
+  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -3275,7 +3359,7 @@ a.wizard__arrow-down.enabled {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461563616');
+  background-image: url('../images/wizard/icon_info.png?1461530233');
   background-size: 100%;
 }
 
