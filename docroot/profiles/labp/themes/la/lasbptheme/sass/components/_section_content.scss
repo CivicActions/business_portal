@@ -1,6 +1,5 @@
 
 @mixin panel__icons--default($color:'transparent'){
-  border: 0px solid red;
   background-color: $color;
   padding: 20px 25px 20px 25px;
 
@@ -31,8 +30,7 @@
 }
 
 .panel__intro_header{
-  color: navy;
-  font-family: Merriweather;
+  font-family: $heading-font;
   font-weight: 700;
   margin:0 0 18px 0;
   padding: 0;
@@ -47,38 +45,17 @@
 
 .panel__intro_paragraph{
   font-size:1.286em;
-  line-height: 1.2em;
-  color: navy;
+  line-height: 1.4em;
 
   @include window_size(tab-wide-up){
     font-size:1.571em;
-    font-size: 1.429em;
     width: 90%;
   }
 
 }
 
-.panel__content_wrapper{
-  @include window_size(desktop){
-    width: $zen-grid-width;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.panel__content_col_1{
-
-  width:100%;
-
-  @include window_size(desktop){
-    padding: 75px 0 0 0;
-    width: 75%;
-    float:left;
-  }
-}
-
 .panel__header-line {
-  @include panel__hr_thick(blue);
+  @include hr-thick;
 }
 
 .panel__button {
@@ -92,6 +69,25 @@
 
 .pane-bundle-section-content > .pane-title {
   display: none;
+}
+
+
+/************************************************
+*              LAYOUT
+*************************************************/
+.panel__content_wrapper{
+  @include zen-grid-container();
+  @include window_size(desktop){
+    width: $zen-grid-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.panel__content_col_1 {
+  width:100%;
+  @include window_size(desktop) {
+    padding: 75px 0 0 0;
+  }
 }
 
 

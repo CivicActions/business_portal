@@ -1,107 +1,97 @@
-@mixin panel__hr_thin($color) {
-  height: 2px;
-  max-width: 40px;
-  background: $color;
-  display: block;
-  border: 0 none;
-  margin: 0;
-}
-
-@mixin panel__hr_thick($color) {
-  height: 4px;
-  max-width: 80px;
-  background: $color;
-  display: block;
-  border: 0 none;
-  margin: 0;
-}
-
-@mixin panel__button--base($bgcolor) {
-  //@include border-radius(20px);
-  background-color:$bgcolor;
-  padding: 8px 20px 8px 20px;
-  font-weight: bold;
-  display: inline-block;
-  margin:0 0 20px 0;
-  cursor: pointer;
-
-  @include window_size(desktop){
-    //@include border-radius(25px);
-    font-size: 1.143em;
-    padding: 10px 20px 10px 20px;
-
-  }
-  //@include clearfix;
-
-}
-
-.panel__header{
-  font-family: Merriweather;
-  font-weight: 700;
-  margin:0 0 18px 0;
+.panel__header,
+.panel__icon_header {
+  font-family: $heading-font;
+  margin:0 0 1em 0;
   padding: 0;
   font-size:1.714em;
-  width: 70%;
   @include window_size(tab-wide-up){
     font-size: 2.571em;
-    margin:0 0 30px 0;
+    margin:0 0 2em 0;
   }
-
 }
 
+.panel__icon_header{
+  font-size: 1.286em;
+  line-height:1.3;
+  margin-bottom: 0;
+  @include window_size(tab-wide-up){
+    font-size: 1.429em;
+    min-height: 60px;
+  }
+}
+
+
 .panel__header-line {
-  @include panel__hr_thick(blue);
+  @include hr-thick;
 }
 
 .panel__header-line_thin {
-  @include panel__hr_thin(blue);
+  @include hr-thin;
 }
 
 .panel__icons {
   display: block;
 }
 
+
 .panel__icon{
-  width: 65px;
+  max-width: 65px;
+  width: 100%;
   float: right;
+  margin: 0 0 2em;
+
   @include window_size(tab-wide-up){
-    width: 134px;
+    max-width: 134px;
+    width: 100%;
     float: none;
   }
-
-}
-
-.panel__icon_header{
-  color: black;
-  font-family: Merriweather;
-  font-weight: 700;
-  font-size: 1.286em;
-  width: 70%;
-  @include window_size(tab-wide-up){
-    font-size:1.429em;
-  }
-
 }
 
 .panel__paragraph{
   color: navy;
-  width: 65%;
+  //width: 65%;
   margin: 0;
-  padding: 14px 0 25px 0;
+  //padding: 14px 0 25px 0;
 
-}
-
-.panel__button--yellow {
-  @include panel__button--base(yellow);
-}
-
-.panel__section{
-  @include window_size(tab-wide-up){
-    width: 25%;
-    float: left;
-  }
 }
 
 .pane-bundle-four-column-cta > .pane-title {
   display: none;
 }
+
+.panel__section {
+  line-height: 1.3em;
+}
+
+/*************************************
+*         Layout
+**************************************/
+
+.four-col-wrapper {
+  $zen-column-count: 4 !global;
+  @include zen-grid-container;
+  width: 90%;
+  margin: 0 0 0 auto;
+  padding: 2.5em 0 5em;
+  @include window_size(desktop) {
+    padding: 3em 0 10em;
+  }
+
+
+  .panel__section {
+      @include window_size(tab-wide-up) {
+        @include zen-grid-flow-item(1, 4, true, false);
+        @include zen-float(left);
+      }
+    }
+  }
+
+
+/*
+
+.panel__button--yellow {
+  @include panel__button--base(yellow);
+}
+
+
+*/
