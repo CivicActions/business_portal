@@ -64,7 +64,7 @@ All steps below are assumed to be run from the command line
 `drush sql-drop -y`
 
 ### Step 2. Load prod database
-`drush sql-cli < /assets/labp-2016-04-25T18-51-09.sql`
+`drush sql-cli < /assets/labp-2016-04-26T02-44-47.sql`
 
 ### Step 3. Enable stage file proxy
 `drush en stage_file_proxy -y`
@@ -87,5 +87,9 @@ All steps below are assumed to be run from the command line
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Default node index` 
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Resources & Incentives` 
 
-### Step 8. Clear cache
+### Step 8. Switch theme back to profile theme
+- `drush dis labusinessportaltheme -y`
+- `drush vset theme_default lasbptheme`
+
+### Step 9. Clear cache
 `drush cc all`
