@@ -386,11 +386,11 @@ wiz.views.Nav = Backbone.View.extend({
   },
 
   forwardEnabled: function() {
-    this.$el.find(".wizard__arrow-down").addClass("wizard__arrow-down--enabled");
+    this.$el.find(".wizard__arrow-down").addClass("enabled");
   },
 
   forwardDisabled: function() {
-    this.$el.find(".wizard__arrow-down").removeClass("wizard__arrow-down--enabled");
+    this.$el.find(".wizard__arrow-down").removeClass("enabled");
   },
 
   events:  {

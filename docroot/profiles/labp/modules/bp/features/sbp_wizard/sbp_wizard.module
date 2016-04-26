@@ -92,32 +92,23 @@ function sbp_wizard_block() {
   </script>
 
   <script type="text/template" id="wizard-nav-start-template">
-    <div class="wizard__arrow-down">
-      <a href="#" class="wizard__arrow-down"><img src="../images/wizard/arrow_down_enabled.png"></a>
-      <p class="wizard__nav_label">Next</p>
-   </div>
+    <a href="#" class="wizard__arrow-down enabled">Next</a>
   </script>
 
   <script type="text/template" id="wizard-nav-section-template">
-    <div class="wizard__arrow-down-wrapper">
-     <a href="#" class="wizard__arrow-down--enabled"><img class="wizard__arrow-down" src="../images/wizard/arrow_down_enabled_desktop.png"></a>
-      <p class="wizard__nav_label">Next</p>
-   </div>
+    <a href="#" class="wizard__arrow-up">Previous</a>
+    <a href="#" class="wizard__arrow-down enabled">Next</a>
   </script>
 
 
   <script type="text/template" id="wizard-nav-question-template">
-      <a href="#" class="wizard__arrow-up"></a>
-      <div class="wizard__arrow-down-wrapper">
-        <a href="#" class="wizard__arrow-down"></a>
-      </div>
+    <a href="#" class="wizard__arrow-up">Previous</a>
+    <a href="#" class="wizard__arrow-down">Next</a>
   </script>
 
   <script type="text/template" id="wizard-nav-contextual-help-template">
-    <div class="wizard__arrow-down-wrapper">
-       <a href="#" class="wizard__arrow-up wizard__arrow-left--enabled_help"><img src="../images/wizard/arrow_left_enabled_desktop.png"></a>
-      <p class="wizard__nav_label_help">Back to the question</p>
-    </div>
+       <a href="#" class="wizard__arrow-up left enabled">Previous</a>
+      <span class="wizard__nav_label_help">Back to the question</span>
   </script>
 
   <script type="text/template" id="wizard-nav-start-over-template">
@@ -131,7 +122,7 @@ function sbp_wizard_block() {
       <div class="wizard__tip">
         <div class="wizard__tip_icon"></div>
         <div class="wizard__tip_content">
-          <p class="wizard__tip_copy">{{tip}}</p>
+          <div class="wizard__tip_copy">{{tip}}</div>
         </div>
       </div>
   </script>

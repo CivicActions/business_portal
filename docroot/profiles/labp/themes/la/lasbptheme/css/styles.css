@@ -687,7 +687,7 @@ table {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 90%;
+  height: 100%;
   transition-duration: 0.5s;
   transform: translate3D(100%, 0, 0);
   /* X value must be same as Nav width */
@@ -2657,7 +2657,6 @@ a.wizard__button--selected {
 /* line 200, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
-  width: 70%;
   margin: 15px 60px 20px 20px;
   font-size: 0.929em;
   border: 0px solid red;
@@ -2678,7 +2677,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 220, ../sass/components/wizard/_wizard.scss */
+/* line 219, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
   width: 40px;
   height: 40px;
@@ -2686,7 +2685,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 231, ../sass/components/wizard/_wizard.scss */
+/* line 230, ../sass/components/wizard/_wizard.scss */
 .wizard__icon_help {
   width: 40px;
   height: 40px;
@@ -2694,7 +2693,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 242, ../sass/components/wizard/_wizard.scss */
+/* line 241, ../sass/components/wizard/_wizard.scss */
 .wizard__header_block--help {
   border: 0px solid red;
   margin: 0;
@@ -2702,46 +2701,46 @@ a.wizard__button--selected {
   overflow: hidden;
 }
 
-/* line 250, ../sass/components/wizard/_wizard.scss */
+/* line 249, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   margin: 0 0 0 0;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 250, ../sass/components/wizard/_wizard.scss */
+  /* line 249, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
     width: 95%;
   }
 }
 
-/* line 259, ../sass/components/wizard/_wizard.scss */
+/* line 258, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 259, ../sass/components/wizard/_wizard.scss */
+  /* line 258, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 270, ../sass/components/wizard/_wizard.scss */
+/* line 269, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 270, ../sass/components/wizard/_wizard.scss */
+  /* line 269, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
 
-/* line 279, ../sass/components/wizard/_wizard.scss */
+/* line 278, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -3119,10 +3118,9 @@ a.wizard__button--selected {
 .wizard__nav {
   display: inline-block;
   width: 100%;
-  height: 20%;
   z-index: 10;
   position: fixed;
-  bottom: 0;
+  bottom: 100px;
   left: 0;
   margin: 0 0 0 0;
   border: 0px solid red;
@@ -3142,7 +3140,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 25, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 23, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav--full_width {
   display: inline-block;
   width: 100%;
@@ -3151,8 +3149,8 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 43, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-up {
+/* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-up {
   background-image: url('../images/wizard/arrow_up.png?1461492462');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -3162,17 +3160,17 @@ a.wizard__button--selected {
   height: 25px;
   display: block;
   border⨪bottom: 2px solid white;
-  text-indent: -100000px;
+  text-indent: -10000px;
 }
 @media all and (min-width: 720px) {
-  /* line 43, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-up {
+  /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  a.wizard__arrow-up {
     margin: 0 10px 10px 0;
   }
 }
 
-/* line 60, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down {
+/* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-down {
   background-image: url('../images/wizard/arrow_down.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -3180,144 +3178,30 @@ a.wizard__button--selected {
   width: 24px;
   height: 25px;
   display: block;
-  text-indent: -100000px;
+  text-indent: -10000px;
 }
 @media all and (min-width: 720px) {
-  /* line 60, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down {
+  /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  a.wizard__arrow-down {
     margin: 0 0 24px 0;
   }
 }
 
-/* line 76, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down-wrapper {
-  border: 0px solid white;
-  padding: 0;
-  border: 0;
-  background-color: #fff;
-  overflow: hidden;
-}
-@media all and (min-width: 720px) {
-  /* line 76, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down-wrapper {
-    background-color: transparent;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
-    background-position: 0 0;
-    background-repeat: repeat-x;
-    border-bottom: 2px solid white;
-  }
+/* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-down.enabled {
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461563616');
 }
 
-/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down-wrapper--disabled {
-  border: 0px solid white;
-  padding: 10px 10px 0 0;
-  background-image: url('../images/wizard/nav_hr_bar.png?1461563616');
-  background-repeat: no-repeat;
-  background-position: 23px 0;
-}
-@media all and (min-width: 720px) {
-  /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down-wrapper--disabled {
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
-    background-position: 0 0;
-    background-repeat: repeat-x;
-  }
-}
-
-/* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down.png?1461563616');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  width: 58px;
-  height: 47px;
-  border: 0px solid red;
-  background-color: transparent;
-  display: block;
-  float: left;
-}
-
-/* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down--desktop {
-  display: none;
-  width: 24px;
-  height: 25px;
-  margin: 12px 0 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down--desktop {
-    display: block;
-  }
-}
-
-/* line 138, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down--enabled img, .wizard__arrow-left--enabled img, .wizard__arrow-left--enabled_help img {
-  display: none;
-  width: 24px;
-  height: 25px;
-  margin: 12px 0 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 138, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down--enabled img, .wizard__arrow-left--enabled img, .wizard__arrow-left--enabled_help img {
-    display: block;
-  }
-}
-
-/* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-left--enabled_help img {
-  display: none;
-  width: 24px;
-  height: 25px;
-  margin: 12px 0 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-left--enabled_help img {
-    display: block;
-    float: right;
-  }
-}
-@media all and (min-width: 960px) {
-  /* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-left--enabled_help img {
-    display: block;
-    float: right;
-  }
-}
-
-/* line 164, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-left--enabled {
-  background-image: url('../images/wizard/arrow_left_enabled.png?1461563616');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  width: 58px;
-  height: 47px;
-  background-color: #fbb040;
-  display: block;
-  float: left;
-}
-
-/* line 178, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-left--enabled_help {
-  background-image: url('../images/wizard/arrow_left_enabled_help.png?1461563616');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  width: 43px;
-  height: 47px;
-  border: 0px solid red;
+/* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__arrow-up.enabled.left {
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461563616');
   background-color: #99d5f5;
   display: block;
   float: right;
 }
 @media all and (min-width: 720px) {
-  /* line 178, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-left--enabled_help {
+  /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__arrow-up.enabled.left {
     border: 0px solid red;
     background-image: none;
     background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
@@ -3327,7 +3211,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 204, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
   background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
   background-repeat: no-repeat;
@@ -3339,13 +3223,13 @@ a.wizard__button--selected {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 204, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 223, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 108, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -3356,13 +3240,13 @@ a.wizard__button--selected {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 223, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 108, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 236, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
   color: #0f2940;
   font-weight: 700;
@@ -3370,10 +3254,10 @@ a.wizard__button--selected {
   font-size: 1em;
   border: 0px solid red;
   margin: 0;
-  padding: 15px 4px 0 4px;
+  padding: 5px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 236, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label_help {
     color: white;
     padding: 15px 0 0 4px;
