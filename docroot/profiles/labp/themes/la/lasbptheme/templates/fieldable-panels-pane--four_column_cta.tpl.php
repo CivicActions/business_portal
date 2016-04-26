@@ -30,6 +30,9 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
           if (!empty($cta_field_collection->field_icon)) {
             $cta_icon = file_create_url($cta_field_collection->field_icon[LANGUAGE_NONE][0]['uri']);
           }
+          if (!empty($cta_field_collection->field_link)) {
+            $cta_link = $cta_field_collection->field_link[LANGUAGE_NONE];
+          }
       ?>
           <div class="panel__section">
           <?php if (!empty($cta_icon)): ?>
@@ -45,6 +48,17 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
               }
               ?>
             </p>
+            <?php if (!empty($cta_link)) { ?>
+            <div class="panel__buttons">
+            <?php
+            foreach ($cta_link as $link) {
+              ?>
+              <a class="panel__button" href="<?php print $link['url']; ?>"><?php print $link['title']; ?></a>
+              <?php
+            }
+            ?>
+            </div>
+            <?php } ?>
 
           </div>
       <?php
