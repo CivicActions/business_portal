@@ -2420,14 +2420,13 @@ hr.hero__line {
   }
 }
 
-/* line 12, ../sass/components/_search.scss */
+/* line 2, ../sass/components/_search.scss */
 .pane-sbp-resource-incentives-panel-pane-1 {
   margin: 0;
   padding: 0;
-  border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 12, ../sass/components/_search.scss */
+  /* line 2, ../sass/components/_search.scss */
   .pane-sbp-resource-incentives-panel-pane-1 {
     width: 80%;
     margin-left: auto;
@@ -2436,7 +2435,7 @@ hr.hero__line {
   }
 }
 
-/* line 27, ../sass/components/_search.scss */
+/* line 16, ../sass/components/_search.scss */
 .pane-sbp-resource-incentives-panel-pane-1 h2 {
   font-family: Merriweather, serif;
   font-weight: normal;
@@ -2447,13 +2446,13 @@ hr.hero__line {
   padding: 0px 10px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 27, ../sass/components/_search.scss */
+  /* line 16, ../sass/components/_search.scss */
   .pane-sbp-resource-incentives-panel-pane-1 h2 {
     font-size: 2em;
   }
 }
 
-/* line 41, ../sass/components/_search.scss */
+/* line 30, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-title {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -2464,19 +2463,19 @@ hr.hero__line {
   line-height: 1.2em;
 }
 @media all and (min-width: 960px) {
-  /* line 41, ../sass/components/_search.scss */
+  /* line 30, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-title {
     font-size: 1.571em;
   }
 }
 
-/* line 55, ../sass/components/_search.scss */
+/* line 44, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node {
   width: 20%;
   display: inline-block;
 }
 
-/* line 60, ../sass/components/_search.scss */
+/* line 49, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node a {
   text-indent: -9999px;
   background-image: url("../images/icon_view.png");
@@ -2489,14 +2488,122 @@ hr.hero__line {
   margin: 0 0 0 6px;
 }
 
-/* line 65, ../sass/components/_search.scss */
+/* line 54, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-body {
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 65, ../sass/components/_search.scss */
+  /* line 54, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-body {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+/* line 2, ../sass/components/_landing_page_views.scss */
+.pane-bp-featured-sub-page,
+.pane-bp-featured-resource-page {
+  margin: 0;
+  padding: 0;
+}
+@media all and (min-width: 960px) {
+  /* line 2, ../sass/components/_landing_page_views.scss */
+  .pane-bp-featured-sub-page,
+  .pane-bp-featured-resource-page {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+}
+
+/* line 17, ../sass/components/_landing_page_views.scss */
+.pane-bp-featured-sub-page h2,
+.pane-bp-featured-resource-page h2 {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 1.429em;
+  font-weight: 900;
+  color: #0f2940;
+  border-bottom: 1px solid #6bc3f3;
+  padding: 0px 10px 0 0;
+}
+@media all and (min-width: 960px) {
+  /* line 17, ../sass/components/_landing_page_views.scss */
+  .pane-bp-featured-sub-page h2,
+  .pane-bp-featured-resource-page h2 {
+    font-size: 2em;
+  }
+}
+
+/* line 32, ../sass/components/_landing_page_views.scss */
+.view-id-bp_featured_sub_page .views-field-title,
+.view-bp-featured-resource-page .views-field-title {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 5px 0px 5px 0;
+  width: 70%;
+  display: inline-block;
+  line-height: 1.2em;
+}
+@media all and (min-width: 960px) {
+  /* line 32, ../sass/components/_landing_page_views.scss */
+  .view-id-bp_featured_sub_page .views-field-title,
+  .view-bp-featured-resource-page .views-field-title {
+    font-size: 1.571em;
+  }
+}
+
+/* line 49, ../sass/components/_landing_page_views.scss */
+.view-id-bp_featured_sub_page .views-field-view-node,
+.view-id-bp_featured_sub_page .views-field-field-document,
+.view-bp-featured-resource-page .views-field-view-node,
+.view-bp-featured-resource-page .views-field-field-document {
+  width: 10%;
+  display: inline-block;
+}
+
+/* line 55, ../sass/components/_landing_page_views.scss */
+.view-id-bp_featured_sub_page .views-field-view-node a,
+.view-bp-featured-resource-page .views-field-view-node a {
+  text-indent: -9999px;
+  background-image: url("../images/icon_view.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: right;
+  margin: 0 0 0 6px;
+}
+
+/* line 61, ../sass/components/_landing_page_views.scss */
+.view-id-bp_featured_sub_page .views-field-field-document a,
+.view-bp-featured-resource-page .views-field-field-document a {
+  text-indent: -9999px;
+  background-image: url("../images/icon_download.png");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: right;
+  margin: 0 0 0 6px;
+}
+
+/* line 67, ../sass/components/_landing_page_views.scss */
+.view-id-bp_featured_sub_page .views-field-body
+.view-bp-featured-resource-page .views-field-body {
+  line-height: 1.25em;
+  width: 90%;
+}
+@media all and (min-width: 960px) {
+  /* line 67, ../sass/components/_landing_page_views.scss */
+  .view-id-bp_featured_sub_page .views-field-body
+  .view-bp-featured-resource-page .views-field-body {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;

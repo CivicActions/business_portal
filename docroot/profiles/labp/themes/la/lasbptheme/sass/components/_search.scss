@@ -1,18 +1,7 @@
-@mixin page__icon_base($url: "../images/icon_view.png"){
-  background-image: url($url);
-  background-repeat: no-repeat;
-  background-size: 32px 32px;
-  width:32px;
-  height:32px;
-  display: inline-block;
-  float: right;
-  margin: 0 0 0 6px;
-}
 
 .pane-sbp-resource-incentives-panel-pane-1 {
   margin: 0;
   padding: 0;
-  border:0px solid red;
 
 
   @include window_size(desktop){
