@@ -2066,6 +2066,7 @@ h2 {
 h3 {
   font-family: Merriweather, serif;
   font-weight: 400;
+  color: #0F2940 !important;
   padding: 0;
   margin: 5px 0px 5px 0;
   width: 70%;
@@ -2347,7 +2348,7 @@ h3 {
 .hero__photo {
   background-color: #88cff5;
   height: 550px;
-  background-image: url("../images/hero/hero_homepage.jpg");
+  background-image: url("../images/hero/hero_home.jpg");
   background-size: auto 100%;
   background-position: 60%;
   border: 0px solid red;
@@ -2415,18 +2416,13 @@ h3 {
   }
 }
 
-/* line 79, ../sass/components/hero/_hero.scss */
-.hero__photo {
-  border: 0px solid red;
-}
-
-/* line 85, ../sass/components/hero/_hero.scss */
+/* line 82, ../sass/components/hero/_hero.scss */
 .hero__content_wrapper--subsection {
   margin: 0 25px 25px 25px;
   position: relative;
 }
 @media all and (min-width: 960px) {
-  /* line 85, ../sass/components/hero/_hero.scss */
+  /* line 82, ../sass/components/hero/_hero.scss */
   .hero__content_wrapper--subsection {
     width: 960px;
     margin-left: auto;
@@ -2440,7 +2436,7 @@ h3 {
 }
 
 @media all and (min-width: 960px) {
-  /* line 105, ../sass/components/hero/_hero.scss */
+  /* line 102, ../sass/components/hero/_hero.scss */
   .hero__copy--subsection {
     border: 0px solid blue;
     /*margin-left: 250px;*/
@@ -2452,7 +2448,7 @@ h3 {
   }
 }
 
-/* line 119, ../sass/components/hero/_hero.scss */
+/* line 116, ../sass/components/hero/_hero.scss */
 .hero__copy--col_1 {
   display: none;
   border: 1px solid red;
@@ -2460,7 +2456,7 @@ h3 {
   *zoom: 1;
 }
 @media all and (min-width: 960px) {
-  /* line 119, ../sass/components/hero/_hero.scss */
+  /* line 116, ../sass/components/hero/_hero.scss */
   .hero__copy--col_1 {
     width: 250px;
     float: left;
@@ -2470,7 +2466,7 @@ h3 {
   }
 }
 
-/* line 134, ../sass/components/hero/_hero.scss */
+/* line 131, ../sass/components/hero/_hero.scss */
 .hero__business__name--subsection {
   font-weight: 700;
   color: white;
@@ -2480,14 +2476,14 @@ h3 {
   margin: 0px;
 }
 @media all and (min-width: 960px) {
-  /* line 134, ../sass/components/hero/_hero.scss */
+  /* line 131, ../sass/components/hero/_hero.scss */
   .hero__business__name--subsection {
     margin: 85px 0 3px 0;
     margin: 0 0 3px 0;
   }
 }
 
-/* line 147, ../sass/components/hero/_hero.scss */
+/* line 144, ../sass/components/hero/_hero.scss */
 .hero__business__description--subsection {
   color: white;
   width: 160px;
@@ -2495,7 +2491,7 @@ h3 {
   margin: 0;
 }
 
-/* line 155, ../sass/components/hero/_hero.scss */
+/* line 152, ../sass/components/hero/_hero.scss */
 .hero__overlay {
   background-color: rgba(0, 0, 0, 0.3);
   border: 0px solid red;
@@ -2505,7 +2501,7 @@ h3 {
   height: 550px;
 }
 @media all and (min-width: 960px) {
-  /* line 155, ../sass/components/hero/_hero.scss */
+  /* line 152, ../sass/components/hero/_hero.scss */
   .hero__overlay {
     width: 100%;
     height: 0;
@@ -2515,7 +2511,7 @@ h3 {
 }
 
 @media all and (min-width: 960px) {
-  /* line 170, ../sass/components/hero/_hero.scss */
+  /* line 167, ../sass/components/hero/_hero.scss */
   .hero__bottom_align {
     border: 0px solid red;
     padding: 30px;
@@ -2524,7 +2520,7 @@ h3 {
   }
 }
 
-/* line 179, ../sass/components/hero/_hero.scss */
+/* line 176, ../sass/components/hero/_hero.scss */
 .hero__bottom_align--bn {
   border: 0px solid red;
   padding: 30px 30px 50px 0;
@@ -2532,12 +2528,12 @@ h3 {
   bottom: 0;
 }
 
-/* line 187, ../sass/components/hero/_hero.scss */
+/* line 184, ../sass/components/hero/_hero.scss */
 .hero__bottom_align_detail {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 187, ../sass/components/hero/_hero.scss */
+  /* line 184, ../sass/components/hero/_hero.scss */
   .hero__bottom_align_detail {
     border: 0px solid red;
     padding: 30px 30px 20px 30px;
@@ -2546,7 +2542,7 @@ h3 {
   }
 }
 
-/* line 198, ../sass/components/hero/_hero.scss */
+/* line 195, ../sass/components/hero/_hero.scss */
 .hero__overlay_partial {
   background-color: rgba(0, 0, 0, 0.3);
   height: 250px;
@@ -2555,14 +2551,14 @@ h3 {
   top: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 198, ../sass/components/hero/_hero.scss */
+  /* line 195, ../sass/components/hero/_hero.scss */
   .hero__overlay_partial {
     height: 550px;
     width: 50%;
   }
 }
 
-/* line 210, ../sass/components/hero/_hero.scss */
+/* line 207, ../sass/components/hero/_hero.scss */
 .hero__overlay_partial_photo {
   width: 100%;
   height: 250px;
@@ -2572,8 +2568,14 @@ h3 {
   background-repeat: no-repeat;
   border: 0px solid red;
 }
+@media all and (min-width: 720px) {
+  /* line 207, ../sass/components/hero/_hero.scss */
+  .hero__overlay_partial_photo {
+    background-size: 100% auto;
+  }
+}
 @media all and (min-width: 960px) {
-  /* line 210, ../sass/components/hero/_hero.scss */
+  /* line 207, ../sass/components/hero/_hero.scss */
   .hero__overlay_partial_photo {
     position: absolute;
     top: 0;
@@ -2886,7 +2888,7 @@ h3 {
 /* line 91, ../sass/components/_sub_nav.scss */
 fieldset {
   padding: 25px 25px 0 0;
-  margin: 25px 25px 0 25px;
+  margin: 0 25px 0 25px;
   border: 0px solid red;
   border-top: 1px solid #6BC3F3;
 }
@@ -2899,7 +2901,7 @@ fieldset {
   }
 }
 
-/* line 109, ../sass/components/_sub_nav.scss */
+/* line 110, ../sass/components/_sub_nav.scss */
 .sub_nav__form input[type="search"] {
   border: 0px solid red;
   padding: 0 10px 0 10px;
@@ -2913,20 +2915,20 @@ fieldset {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 109, ../sass/components/_sub_nav.scss */
+  /* line 110, ../sass/components/_sub_nav.scss */
   .sub_nav__form input[type="search"] {
     margin: 0;
     display: block;
   }
 }
 
-/* line 126, ../sass/components/_sub_nav.scss */
+/* line 127, ../sass/components/_sub_nav.scss */
 .sub_nav__menu_item--checkbox {
   position: relative;
   border: 0px solid red;
 }
 
-/* line 134, ../sass/components/_sub_nav.scss */
+/* line 135, ../sass/components/_sub_nav.scss */
 .sub_nav__form input[type="checkbox"] {
   -webkit-appearance: none;
   border: 1px solid #DDDDDD;
@@ -2941,14 +2943,14 @@ fieldset {
   border-radius: 2px;
 }
 
-/* line 146, ../sass/components/_sub_nav.scss */
+/* line 147, ../sass/components/_sub_nav.scss */
 .sub_nav__form input[type=checkbox]:checked {
   background-color: #6BC3F3;
   border: 1px solid #6BC3F3;
   color: white;
 }
 
-/* line 154, ../sass/components/_sub_nav.scss */
+/* line 155, ../sass/components/_sub_nav.scss */
 .sub_nav__menu_item--checkbox label {
   font-weight: 400;
   padding: 0;
@@ -2958,7 +2960,7 @@ fieldset {
   position: absolute;
 }
 
-/* line 169, ../sass/components/_sub_nav.scss */
+/* line 170, ../sass/components/_sub_nav.scss */
 .sub_nav__menu_item--checkbox input[type="checkbox"]:before {
   content: '\e800';
   font-family: "fontello";
@@ -2969,7 +2971,7 @@ fieldset {
   color: white;
 }
 
-/* line 180, ../sass/components/_sub_nav.scss */
+/* line 181, ../sass/components/_sub_nav.scss */
 .sub_nav__menu_item--checkbox input[type="checkbox"]:checked:before {
   content: '\e800';
   font-family: "fontello";
@@ -2979,7 +2981,7 @@ fieldset {
   display: block;
 }
 
-/* line 191, ../sass/components/_sub_nav.scss */
+/* line 192, ../sass/components/_sub_nav.scss */
 .sub_nav__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -2992,18 +2994,18 @@ fieldset {
   cursor: pointer;
 }
 @media all and (min-width: 960px) {
-  /* line 191, ../sass/components/_sub_nav.scss */
+  /* line 192, ../sass/components/_sub_nav.scss */
   .sub_nav__button {
     display: none;
   }
 }
 
-/* line 208, ../sass/components/_sub_nav.scss */
+/* line 209, ../sass/components/_sub_nav.scss */
 .sub_nav__button a {
   color: #0F2940;
 }
 
-/* line 213, ../sass/components/_sub_nav.scss */
+/* line 214, ../sass/components/_sub_nav.scss */
 .sub_nav__header {
   font-weight: 700;
   border-top: 1px solid #6BC3F3;
@@ -3013,7 +3015,7 @@ fieldset {
   margin: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 213, ../sass/components/_sub_nav.scss */
+  /* line 214, ../sass/components/_sub_nav.scss */
   .sub_nav__header {
     width: 90%;
     margin: 0;
@@ -3510,6 +3512,11 @@ fieldset {
     font-size: 1.143em;
     padding: 10px 20px 10px 20px;
   }
+}
+
+/* line 299, ../sass/components/_homepage_panels.scss */
+.panel__button--yellow a {
+  color: #0F2940 !important;
 }
 
 /* Wizard */

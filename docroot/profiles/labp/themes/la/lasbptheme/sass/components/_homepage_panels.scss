@@ -50,7 +50,7 @@
     @include window_size(desktop){
         @include border-radius(25px);
         font-size: 1.143em;
-            padding: 10px 20px 10px 20px;
+        padding: 10px 20px 10px 20px;
 
     }
       @include clearfix;
@@ -294,4 +294,8 @@
 
 .panel__button--yellow {
   @include panel__button--base;
+}
+
+.panel__button--yellow a {
+    color:$dark_blue !important;
 }

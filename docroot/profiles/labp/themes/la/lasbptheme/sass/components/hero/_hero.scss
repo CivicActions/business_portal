@@ -16,7 +16,7 @@
 .hero__photo{
   background-color: #88cff5;
   height: 550px;
-  background-image:url("../images/hero/hero_homepage.jpg");
+  background-image:url("../images/hero/hero_home.jpg");
   background-size:auto 100%;
   background-position: 60%;
   border:0px solid red;
@@ -76,10 +76,7 @@
 
 }
 
-.hero__photo{
-    border:0px solid red;
 
-}
 
 
 .hero__content_wrapper--subsection{
@@ -216,7 +213,10 @@
     background-position: 60%;
     background-repeat: no-repeat;
     border: 0px solid red;
+  @include window_size(tab-wide-up){
+      background-size: 100% auto;
 
+  }
   @include window_size(desktop){
       position: absolute;
       top:0;
