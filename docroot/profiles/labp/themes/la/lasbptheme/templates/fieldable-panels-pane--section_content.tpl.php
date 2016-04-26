@@ -20,7 +20,7 @@ if (!empty($field_background_image)) {
 }
 
 ?>
-  <div class="panel__intro style_variant_<?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?> >
+  <div class="panel__intro style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?> >
     <?php if (!empty($background_image)): ?>
     <div class="panel__background_image">
       <img src="<?php print $background_image; ?>"/>
