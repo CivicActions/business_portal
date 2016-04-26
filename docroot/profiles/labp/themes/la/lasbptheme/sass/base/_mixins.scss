@@ -56,12 +56,83 @@
   margin: 0 auto;
 }
 
-/* ========= Style Variants ========= */
+/************************************
+            Style Variants
+ ************************************/
+
+@mixin hr-thin {
+  height: 2px;
+  max-width: 40px;
+}
+
+@mixin hr-thick {
+  height: 4px;
+  max-width: 80px;
+}
+
 @mixin style-variant($variant-color) {
   background-color: $variant-color;
+  color: $white;
+
+  .panel__intro_header { color: $white; }
+
   hr {
     background-color: $variant-color;
-    width: 80px;
+    border: none;
+    &.panel__header-line_thin {
+      margin: 0.5em 0 2em;
+      background: $navy;
+    }
+    &.panel__header-line {
+      margin-bottom: 2em;
+      background: $white;
+    }
+  }
+}
+
+.style_variant {
+  &.light_blue {
+    @include style-variant( $light-blue );
+  }
+  &.light_green {
+    @include style-variant( $light-green );
+    color: $navy;
+  }
+  &.blue {
+    @include style-variant( $navy );
+    hr.panel__header-line_thin { background: $white; }
+  }
+  &.white {
+    @include style-variant ( $white );
+    color: $navy;
+    .panel__intro_header { color: $light-blue; }
+    hr.panel__header-line { background: $navy; }
+  }
+  &.light_grey {
+    @include style-variant ( $grayscale_light );
+    color: $navy;
+  }
+}
+
+/******************************
+*      Buttons
+*******************************/
+
+@mixin panel__button--base($bgcolor, $text-color: $white) {
+  @include border-radius(50px);
+  background-color:$bgcolor;
+  color: $text-color;
+  padding: 1em 2em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em 0;
+  cursor: pointer;
+  a { color: $text-color; }
+
+  @include window_size(desktop){
+    //@include border-radius(25px);
+    font-size: 1.143em;
+
   }
 }
 
