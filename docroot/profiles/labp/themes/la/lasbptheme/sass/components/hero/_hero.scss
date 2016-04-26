@@ -116,6 +116,7 @@ $zen-gutter-width:  20px;
 .hero__content-wrapper {
   @include zen-grid-container();
   @include wrapper(80%);
+  padding-left: 20px;
 }
 
 .hero__layout--full,

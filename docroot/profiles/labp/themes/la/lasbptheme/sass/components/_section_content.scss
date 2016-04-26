@@ -86,7 +86,7 @@
 .panel__content_col_1 {
   width:100%;
   @include window_size(desktop) {
-    padding: 75px 0 0 0;
+    padding: 75px 0 0 20px;
   }
 }
 

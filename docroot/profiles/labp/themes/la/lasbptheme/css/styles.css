@@ -2593,6 +2593,7 @@ hr.hero__line {
 .hero__content-wrapper {
   width: 80%;
   margin: 0 auto;
+  padding-left: 20px;
 }
 /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 .hero__content-wrapper:before, .hero__content-wrapper:after {
@@ -2605,14 +2606,14 @@ hr.hero__line {
 }
 
 @media all and (min-width: 720px) {
-  /* line 129, ../sass/components/hero/_hero.scss */
+  /* line 130, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 26.66667%;
     margin-left: 0%;
     margin-right: -26.66667%;
   }
-  /* line 130, ../sass/components/hero/_hero.scss */
+  /* line 131, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 53.33333%;
@@ -2621,14 +2622,14 @@ hr.hero__line {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 134, ../sass/components/hero/_hero.scss */
+  /* line 135, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 135, ../sass/components/hero/_hero.scss */
+  /* line 136, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 60%;
@@ -4145,9 +4146,9 @@ body.node-type-sbp-starter-kit .node-teaser {
 **************************************/
 /* line 70, ../sass/components/_four_column_cta.scss */
 .four-col-wrapper {
-  width: 90%;
-  margin: 0 0 0 auto;
-  padding: 2.5em 0 5em;
+  width: 80%;
+  margin: auto;
+  padding: 1em 0 3em;
 }
 /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 .four-col-wrapper:before, .four-col-wrapper:after {
@@ -4161,7 +4162,7 @@ body.node-type-sbp-starter-kit .node-teaser {
 @media all and (min-width: 960px) {
   /* line 70, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper {
-    padding: 3em 0 10em;
+    padding: 1em 0 6em;
   }
 }
 /* line 80, ../sass/components/_four_column_cta.scss */
@@ -4180,8 +4181,9 @@ body.node-type-sbp-starter-kit .node-teaser {
     word-wrap: break-word;
     width: 40%;
     padding-left: 0;
+    margin-left: 20px;
     padding-right: 10px;
-    margin-right: 10px;
+    margin-right: -10px;
     float: left;
     margin-top: 0;
   }
@@ -4202,6 +4204,7 @@ body.node-type-sbp-starter-kit .node-teaser {
     margin-right: 5px;
     float: left;
     margin-top: 0;
+    width: 22%;
   }
 }
 
@@ -4344,7 +4347,7 @@ body.node-type-sbp-starter-kit .node-teaser {
 @media all and (min-width: 960px) {
   /* line 86, ../sass/components/_section_content.scss */
   .panel__content_col_1 {
-    padding: 75px 0 0 0;
+    padding: 75px 0 0 20px;
   }
 }
 

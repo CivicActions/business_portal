@@ -68,19 +68,19 @@
 **************************************/
 
 .four-col-wrapper {
-  $zen-column-count: 4;
+  $zen-column-count: 4 !global;
   @include zen-grid-container;
-  width: 90%;
-  margin: 0 0 0 auto;
-  padding: 2.5em 0 5em;
+  width: 80%;
+  margin: auto;
+  padding: 1em 0 3em;
   @include window_size(desktop) {
-    padding: 3em 0 10em;
+    padding: 1em 0 6em;
   }
 
   .panel__section {
     margin-top: 2em;
     @include window_size(tab-wide-up) {
-      @include zen-grid-flow-item(2, 4, false, true);
+      @include zen-grid-flow-item(2, 4, true, false);
       @include zen-float(left);
       margin-top: 0;
     }
@@ -88,6 +88,7 @@
       @include zen-grid-flow-item(1, 4, false, true);
       @include zen-float(left);
       margin-top: 0;
+      width: 22%;
     }
   }
 }
