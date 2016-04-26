@@ -84,7 +84,6 @@ wiz.collections.Screens = Backbone.Collection.extend({
         var icon = m.get("icon");
         var id = name.charAt(0);
         var re = /^\d+/i;
-        console.log(id);
         if (id.match(re)) {
           return {
             id: id,
