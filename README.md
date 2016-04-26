@@ -16,6 +16,8 @@ http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip
 1. `vagrant plugin install vagrant-auto_network`
 1. `vagrant plugin install vagrant-hostsupdater`
 1. `sudo ansible-galaxy install -r provisioning/requirements.yml --force`
+Note: If you are running Ubuntu with an encrypted hard drive, you will need to update `config.yml` to use rsync instead of nsf.
+run `vagrant rsync-auto` to automatically sync file changes.
 1. `vagrant up`
 1. `vagrant ssh`
 1. Install the profile with `drush @labp.dev si labp --account-name=admin --account-pass=admin` or `bash ~/Projects/business_portal/assets/install-local-drupalvm.sh`
