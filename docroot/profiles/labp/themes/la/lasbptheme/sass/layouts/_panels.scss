@@ -58,6 +58,7 @@
 }
 
 /* LEFT PANE */
-.panel-2col-stacked .panel-col-top .panel-col-first .inside {
+.panel-2col-stacked .panel-col-top .panel-col-first .inside,
+.panel-2col-stacked .panel-col-top .panel-col-last .inside {
   padding: 0px;
 }
