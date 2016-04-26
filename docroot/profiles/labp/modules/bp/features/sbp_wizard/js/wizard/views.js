@@ -103,9 +103,6 @@ wiz.views.App = wiz.extensions.View.extend({
         // Clean up dom elements and events.// @TODO needed now we remove the whole view?
         // $(".wizard__buttons").find("a").remove();
 
-        // var drawer = new wiz.views.ProgressDrawer({model: this.model});
-        // this.$el.append(drawer.render().el);
-
         // Styles for all sections:
         this.$el.css("background", "#" + this.model.get("Primary Color"));
 
@@ -122,10 +119,6 @@ wiz.views.App = wiz.extensions.View.extend({
 
           var nav = new wiz.views.Nav({model: this.model});
           this.$el.append(nav.render().el);
-
-          var bar = new wiz.views.ProgressBar();
-          this.$el.append(bar.render().el);
-
           break;
         case "section":
           console.log("APP: Section");
@@ -194,6 +187,14 @@ wiz.views.App = wiz.extensions.View.extend({
           console.log("APP: No screen type defined");
           break;
         }
+
+        var bar = new wiz.views.ProgressBar({model: this.model});
+        this.$el.append(bar.render().el);
+
+        // var drawer = new wiz.views.ProgressDrawer({
+        //   model: this.model,
+        // });
+        // this.$el.append(drawer.render().el);
 
         return wiz.extensions.View.prototype.render.apply(this, arguments);
       }
@@ -547,7 +548,6 @@ wiz.views.Result = Backbone.View.extend({
     return this;
   }
 
-
 });
 
 
@@ -557,27 +557,25 @@ wiz.views.Result = Backbone.View.extend({
 
 wiz.views.ProgressBar = Backbone.View.extend({
 
-  template: _.template($('#progress-template').html()),
-  className: ".wizard__progress-bar",
-
-  initialize: function() {
-    this.$el.addClass("section-1");
-    Backbone.on("current:update", this.changeIndicator, this);
-  },
-
-  changeIndicator: function() {
-    this.$el.removeClass(function(index, css) {
-      return (css.match (/\bsection-\S+/g) || []).join(' ');
-    });
-    this.$el.addClass("section-" + wiz.views.wizard.model.get("section").tid);
-  },
+  template: _.template($('#progress-bar-section-template').html()),
+  templateWithIcon: _.template($('#progress-bar-section-with-icon-template').html()),
+  className: "wizard__progress-bar--simple wizard__col_2",
 
   render: function() {
-    this.$el.html(this.template());
+    var currentSection = this.model.get("section").tid;
+    var sections = wiz.collections.screens.getSections();
+    _.each(sections, function(section) {
+      if (currentSection === section.tid) {
+        this.$el.append(this.templateWithIcon({icon: section.icon}));
+      } else {
+        this.$el.append(this.template());
+      }
+    }, this);
     return this;
   }
 
 });
+
 
 
 /////////////////////
@@ -586,7 +584,7 @@ wiz.views.ProgressBar = Backbone.View.extend({
 
 wiz.views.ProgressDrawer = Backbone.View.extend({
 
-  el: "wizard__progress-drawer",
+  className: "wizard__progress-drawer",
 
   initialize: function() {
     Backbone.on("screen:add", this.render, this);

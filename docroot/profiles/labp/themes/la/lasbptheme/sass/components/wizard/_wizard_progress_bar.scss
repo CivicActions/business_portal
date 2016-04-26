@@ -5,83 +5,20 @@
   width: 270px;
   display: inline-block;
   float: right;
-
   background-image: image-url("wizard/progress_bar.png");
   background-repeat: no-repeat;
   background-size:12px;
   background-position: 24px 12px;
   background-color:$color;
+  min-height: 550px;
   @include window_size(desktop){
-            margin: 40px 0 0 0;
-
+    margin: 40px 0 0 0;
   }
 }
 
-@mixin wizard__progress-bar-drawer-root($color:'transparent') {
-     @include wizard__progress-bar-root($color);
-     position: absolute;
-     top:0;
-     right:0;
-
-
-}
-
-
-@mixin wizard__progress-bar_icon {
-  width:15px;
-  height:15px;
-  margin:0 4px 0 0;
-  padding: 0;
-  display: inline-block;
-  background-size: 100% 100%;
-  float: left;
-
-
-
-}
-
-@mixin wizard__progress-large_icon {
-  width:40px;
-  height:100px;
-  float: left;
-  background-image: image-url("wizard/icon_bulb.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 5px 0 0 10px;
-}
-
-
-// wizard drawers
-
-
-
-// mobile drawer root containers
-.wizard__progress-bar--section_1 {
-  @include wizard__progress-bar-drawer-root($wizard__drawer_city-registration);
-}
-
-.wizard__progress-bar--section_2 {
-  @include wizard__progress-bar-drawer-root($wizard__drawer_name);
-}
-
-.wizard__progress-bar--section_3{
-  @include wizard__progress-bar-drawer-root($wizard__drawer_sellers-permit);
-}
-
-.wizard__progress-bar--section_4 {
-  @include wizard__progress-bar-drawer-root($wizard__drawer_employeer-identification-number);
-
-}
-
-
-.wizard__progress-bar--section_5 {
-  @include wizard__progress-bar-drawer-root($wizard__drawer_your-business_registration-guide);
-
-}
-
-
 //  desktop version root container
 .wizard__progress-bar--simple{
+  border: 1px solid red !important;
   @include wizard__progress-bar-root();
   width: 60px;
   @include clearfix;
@@ -90,7 +27,6 @@
 
   }
 }
-
 
 .wizard__progress-bar-section{
     margin:0;
@@ -116,6 +52,31 @@
   float: left;
 
 }
+
+
+/* @mixin wizard__progress-bar_icon { */
+/*   width:15px; */
+/*   height:15px; */
+/*   margin:0 4px 0 0; */
+/*   padding: 0; */
+/*   display: inline-block; */
+/*   background-size: 100% 100%; */
+/*   float: left; */
+/* } */
+
+/* @mixin wizard__progress-large_icon { */
+/*   width:40px; */
+/*   height:100px; */
+/*   float: left; */
+/*   background-image: image-url("wizard/icon_bulb.png"); */
+/*   background-size: 100%; */
+/*   background-repeat: no-repeat; */
+/*   margin: 5px 0 0 10px; */
+/* } */
+
+
+
+
 
 
 // use when the user completes the first section
@@ -267,9 +228,22 @@
 .wizard__progress-bar_icon--selected{
   @include wizard__progress-bar_icon;
   background-image: image-url("wizard/progress_bar_circle_selected.png");
-
-
 }
+
+
+
+/**********/
+/* Drawer */
+/**********/
+
+
+@mixin wizard__progress-bar-drawer-root($color:'transparent') {
+     @include wizard__progress-bar-root($color);
+     position: absolute;
+     top:0;
+     right:0;
+}
+
 
 // button for the drawer
 .wizard__button--close{
@@ -283,3 +257,30 @@
   float:right;
   margin: 15px 15px 0 0;
 }
+
+
+// wizard drawers
+
+/* // mobile drawer root containers */
+/* .wizard__progress-bar--section_1 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_city-registration); */
+/* } */
+
+/* .wizard__progress-bar--section_2 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_name); */
+/* } */
+
+/* .wizard__progress-bar--section_3{ */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_sellers-permit); */
+/* } */
+
+/* .wizard__progress-bar--section_4 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_employeer-identification-number); */
+
+/* } */
+
+
+/* .wizard__progress-bar--section_5 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_your-business_registration-guide); */
+
+/* } */

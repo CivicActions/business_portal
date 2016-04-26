@@ -35,15 +35,16 @@ $wizard_left_margin: 25px;
 }
 
 .wizard__col_2{
-  border: 0px solid blue;
+  border: 1px solid blue;
   width: 30%;
   float: left;
   position: absolute;
+  top: 0;
   right:0;
   @include window_size(desktop){
       width: 250px;
-      border: 0px solid blue;
-      position: relative;
+      border: 1px solid blue;
+     // position: relative;
 
   }
 }
