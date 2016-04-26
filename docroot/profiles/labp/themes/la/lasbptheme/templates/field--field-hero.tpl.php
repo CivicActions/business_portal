@@ -46,8 +46,10 @@
 $heros = $items[0]['entity']['field_collection_item'];
 foreach($heros as $hero){
   $width = strtolower($hero['field_width'][0]['#markup']);
-  $background_image = $hero['field_background_image']['#items']['0']['uri'];
-  $background_image_path = file_create_url($background_image);
+  if (!empty($hero['field_background_image'])) {
+    $background_image = $hero['field_background_image']['#items']['0']['uri'];
+    $background_image_path = file_create_url($background_image);
+  }
 
   $pane_style = $hero['field_pane_style']['#items'][0]['taxonomy_term'];
   $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
@@ -57,8 +59,12 @@ foreach($heros as $hero){
     $icon = $hero['field_icon']['#items']['0']['uri'];
     $icon_path = file_create_url($icon);
   }
-  $hero_subtitle = $hero['field_subtitle_long']['#items'][0]['value'];
-  $hero_subtitle_long = $hero['field_subtitle_2']['#items'][0]['value'];
+  if (!empty($hero['field_subtitle_long'])) {
+    $hero_subtitle = $hero['field_subtitle_long']['#items'][0]['value'];
+  }
+  if (!empty($hero['field_subtitle_2'])) {
+    $hero_subtitle_long = $hero['field_subtitle_2']['#items'][0]['value'];
+  }
   if (!empty($hero['field_description'])) {
     $hero_description = $hero['field_description']['#items'][0]['value'];
   }
@@ -74,12 +80,12 @@ foreach($heros as $hero){
                 <div class="hero__headline"><?php print $hero_title; ?></div>
                 <hr class = "hero__line">
               </div>
-              <?php if($hero_subtitle || $hero_subtitle_long): ?>
+              <?php if(!empty($hero_subtitle) || !empty($hero_subtitle_long)): ?>
                 <div class="hero__bottom_align--bn">
                   <?php if($hero_subtitle): ?>
                     <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
                   <?php endif; ?>
-                  <?php if($hero_subtitle_long): ?>
+                  <?php if(!empty($hero_subtitle_long)): ?>
                     <p class="hero__business__description">
                       <?php print $hero_subtitle_long; ?>
                     </p>
@@ -92,11 +98,11 @@ foreach($heros as $hero){
 
 <!-- Half width starts -->
     <?php } else{ ?>
-        <div class = "hero__image--bg hero__layout--<?php print $width; ?> " style = "background-image: url('<?php print $background_image_path;?>')">
+        <div class = "hero__image--bg hero__layout--<?php print $width; ?> " <?php if (!empty($background_image_path)): ?> style = "background-image: url('<?php print $background_image_path;?>')" <?php endif; ?>>
             <div class = "hero__image--overlay">
                 <div class = "hero__content-wrapper">
                     <div class = "left">
-                      <?php if ($icon): ?>
+                      <?php if (!empty($icon)): ?>
                         <div class = "hero__icon">
                            <img src = "<?php print $icon_path; ?>" />
                         </div>
@@ -105,7 +111,7 @@ foreach($heros as $hero){
                     <div class = "right">
                       <div class="hero__headline"><?php print $hero_title; ?></div>
                         <hr class = "hero__line">
-                        <?php if($hero_description): ?>
+                        <?php if(!empty($hero_description)): ?>
                           <p class="hero__description">
                              <?php print $hero_description; ?>
                           </p>
