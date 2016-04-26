@@ -11,7 +11,6 @@ function sbp_content_defaultconfig_features() {
   return array(
     'sbp_content' => array(
       'field_default_fields' => 'field_default_fields',
-      'user_default_permissions' => 'user_default_permissions',
     ),
   );
 }
@@ -298,6 +297,12 @@ function sbp_content_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -390,6 +395,12 @@ function sbp_content_defaultconfig_field_default_fields() {
           'weight' => 3,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'json' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -491,6 +502,12 @@ function sbp_content_defaultconfig_field_default_fields() {
           'weight' => 2,
         ),
         'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'json' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -599,6 +616,12 @@ function sbp_content_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -685,6 +708,12 @@ function sbp_content_defaultconfig_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'json' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -730,97 +759,4 @@ function sbp_content_defaultconfig_field_default_fields() {
   t('Title');
 
   return $fields;
-}
-
-/**
- * Implements hook_defaultconfig_user_default_permissions().
- */
-function sbp_content_defaultconfig_user_default_permissions() {
-  $permissions = array();
-
-  // Exported permission: 'administer panelizer comment comment_node_sbp_content defaults'.
-  $permissions['administer panelizer comment comment_node_sbp_content defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_sbp_content defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content content'.
-  $permissions['administer panelizer node sbp_content content'] = array(
-    'name' => 'administer panelizer node sbp_content content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content context'.
-  $permissions['administer panelizer node sbp_content context'] = array(
-    'name' => 'administer panelizer node sbp_content context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content defaults'.
-  $permissions['administer panelizer node sbp_content defaults'] = array(
-    'name' => 'administer panelizer node sbp_content defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content layout'.
-  $permissions['administer panelizer node sbp_content layout'] = array(
-    'name' => 'administer panelizer node sbp_content layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content overview'.
-  $permissions['administer panelizer node sbp_content overview'] = array(
-    'name' => 'administer panelizer node sbp_content overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content settings'.
-  $permissions['administer panelizer node sbp_content settings'] = array(
-    'name' => 'administer panelizer node sbp_content settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'create sbp_content content'.
-  $permissions['create sbp_content content'] = array(
-    'name' => 'create sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any sbp_content content'.
-  $permissions['delete any sbp_content content'] = array(
-    'name' => 'delete any sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own sbp_content content'.
-  $permissions['delete own sbp_content content'] = array(
-    'name' => 'delete own sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any sbp_content content'.
-  $permissions['edit any sbp_content content'] = array(
-    'name' => 'edit any sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own sbp_content content'.
-  $permissions['edit own sbp_content content'] = array(
-    'name' => 'edit own sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  return $permissions;
 }

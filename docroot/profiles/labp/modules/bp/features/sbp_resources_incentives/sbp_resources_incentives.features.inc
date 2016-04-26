@@ -42,7 +42,7 @@ function sbp_resources_incentives_default_search_api_index() {
       "index_directly" : 1,
       "cron_limit" : "50",
       "fields" : {
-        "field_business_need" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_business_need" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "field_business_ownership" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_content" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
         "field_description" : { "type" : "text" },
