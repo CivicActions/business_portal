@@ -4,17 +4,66 @@
  * Styles for the bottom region containing the footer menu.
 */
 
-.region-bottom {
+.region--bottom {
   background: $navy;
   color: $white;
-  padding: 0 3%;
 
-  // All blocks in the footer will align left next to each other.
-  .block {
-    padding: 0 0.4em;
-    display: inline-block;
-    width: auto;
+  @include window_size(tab-narrow-up) {
+    .region-bottom {
+      width:100%;
+    }
+    .footer__copyright {
+      width: 30%
+    }
+    .footer__credits {
+      width: auto;
+      float: right;
+      padding-right: 1em;
+    }
+
   }
+
+  @include window_size(tab-wide-up) {
+    .region-bottom {
+      width:32%;
+    }
+    .footer__copyright {
+      width: 23%
+    }
+    .footer__credits {
+      width: auto;
+      float: right;
+    }
+
+  }
+  @include window_size(desktop) {
+    .region-bottom {
+      width: 30%;
+    }
+    .footer__copyright {
+      width: 30%
+    }
+    .footer__credits {
+      width: auto;
+      float: right;
+    }
+  }
+
+
+
+  .footer__copyright,
+  .footer__credits {
+    padding: 1em;
+  }
+
+  .footer__copyright,
+  .footer__credits,
+  .region-bottom {
+    display: inline-block;
+  }
+
+
+
 
   //Lists
   ul { padding: 0 2%;}
