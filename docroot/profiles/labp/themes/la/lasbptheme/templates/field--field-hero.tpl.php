@@ -82,12 +82,12 @@ foreach($heros as $hero){
               </div>
               <?php if(!empty($hero_subtitle) || !empty($hero_subtitle_long)): ?>
                 <div class="hero__bottom_align--bn">
-                  <?php if($hero_subtitle): ?>
-                    <h5 class="hero__business__name"><?php print $hero_subtitle; ?></h5>
-                  <?php endif; ?>
                   <?php if(!empty($hero_subtitle_long)): ?>
+                    <h5 class="hero__business__name"><?php print $hero_subtitle_long; ?></h5>
+                  <?php endif; ?>
+                  <?php if(!empty($hero_subtitle)): ?>
                     <p class="hero__business__description">
-                      <?php print $hero_subtitle_long; ?>
+                      <?php print $hero_subtitle; ?>
                     </p>
                   <?php endif; ?>
                 </div>
