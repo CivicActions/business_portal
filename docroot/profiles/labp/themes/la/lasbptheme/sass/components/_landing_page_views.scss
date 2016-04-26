@@ -1,0 +1,75 @@
+.pane-bp-featured-sub-page,
+.pane-bp-featured-resource-page {
+  margin: 0;
+  padding: 0;
+
+
+  @include window_size(desktop){
+    width: $zen-grid-width;
+    margin-left: auto;
+    margin-right: auto;
+    @include clearfix;
+  }
+
+}
+
+.pane-bp-featured-sub-page h2,
+.pane-bp-featured-resource-page h2 {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 1.429em;
+  font-weight: 900;
+  color: $dark_blue;
+  @include window_size(desktop){
+    font-size:2em;
+  }
+
+  border-bottom:1px solid $light-blue;
+  padding: 0px 10px 0 0;
+}
+
+.view-id-bp_featured_sub_page .views-field-title,
+.view-bp-featured-resource-page .views-field-title{
+  font-family: Merriweather, serif;
+  font-weight: 400;
+
+  padding:0;
+  margin: 5px 0px 5px 0;
+  width: 70%;
+  display: inline-block;
+  line-height: 1.2em;
+  @include window_size(desktop){
+    font-size:1.571em;
+  }
+}
+
+.view-id-bp_featured_sub_page .views-field-view-node,
+.view-id-bp_featured_sub_page .views-field-field-document,
+.view-bp-featured-resource-page .views-field-view-node,
+.view-bp-featured-resource-page .views-field-field-document {
+  width: 10%;
+  display: inline-block;
+}
+
+.view-id-bp_featured_sub_page .views-field-view-node a,
+.view-bp-featured-resource-page .views-field-view-node a {
+  text-indent: -9999px;
+  @include page__icon_base;
+}
+
+.view-id-bp_featured_sub_page .views-field-field-document a,
+.view-bp-featured-resource-page .views-field-field-document a{
+  text-indent: -9999px;
+  @include page__icon_base("../images/icon_download.png");
+}
+
+.view-id-bp_featured_sub_page .views-field-body
+.view-bp-featured-resource-page .views-field-body{
+  line-height: 1.25em;
+  width: 90%;
+  @include window_size(desktop){
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
