@@ -3233,15 +3233,9 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-<<<<<<< e1e8dab3c6885d8735559c58c537cbc4c4182e6d
 /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461492462');
-=======
-/* line 43, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-up {
   background-image: url('../images/wizard/arrow_up.png?1459798895');
->>>>>>> LA-103 - Partial styling for search results listing
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -3259,15 +3253,9 @@ a.wizard__arrow-up {
   }
 }
 
-<<<<<<< e1e8dab3c6885d8735559c58c537cbc4c4182e6d
 /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461563616');
-=======
-/* line 60, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down {
   background-image: url('../images/wizard/arrow_down.png?1461530233');
->>>>>>> LA-103 - Partial styling for search results listing
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3283,139 +3271,14 @@ a.wizard__arrow-down {
   }
 }
 
-<<<<<<< e1e8dab3c6885d8735559c58c537cbc4c4182e6d
 /* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461563616');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
 }
 
 /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461563616');
-=======
-/* line 76, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down-wrapper {
-  border: 0px solid white;
-  padding: 0;
-  border: 0;
-  background-color: #fff;
-  overflow: hidden;
-}
-@media all and (min-width: 720px) {
-  /* line 76, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down-wrapper {
-    background-color: transparent;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
-    background-position: 0 0;
-    background-repeat: repeat-x;
-    border-bottom: 2px solid white;
-  }
-}
-
-/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down-wrapper--disabled {
-  border: 0px solid white;
-  padding: 10px 10px 0 0;
-  background-image: url('../images/wizard/nav_hr_bar.png?1461530233');
-  background-repeat: no-repeat;
-  background-position: 23px 0;
-}
-@media all and (min-width: 720px) {
-  /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down-wrapper--disabled {
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
-    background-position: 0 0;
-    background-repeat: repeat-x;
-  }
-}
-
-/* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  width: 58px;
-  height: 47px;
-  border: 0px solid red;
-  background-color: transparent;
-  display: block;
-  float: left;
-}
-
-/* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down--desktop {
-  display: none;
-  width: 24px;
-  height: 25px;
-  margin: 12px 0 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down--desktop {
-    display: block;
-  }
-}
-
-/* line 138, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-down--enabled img, .wizard__arrow-left--enabled img, .wizard__arrow-left--enabled_help img {
-  display: none;
-  width: 24px;
-  height: 25px;
-  margin: 12px 0 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 138, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-down--enabled img, .wizard__arrow-left--enabled img, .wizard__arrow-left--enabled_help img {
-    display: block;
-  }
-}
-
-/* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-left--enabled_help img {
-  display: none;
-  width: 24px;
-  height: 25px;
-  margin: 12px 0 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-left--enabled_help img {
-    display: block;
-    float: right;
-  }
-}
-@media all and (min-width: 960px) {
-  /* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-left--enabled_help img {
-    display: block;
-    float: right;
-  }
-}
-
-/* line 164, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-left--enabled {
-  background-image: url('../images/wizard/arrow_left_enabled.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  width: 58px;
-  height: 47px;
-  background-color: #fbb040;
-  display: block;
-  float: left;
-}
-
-/* line 178, ../sass/components/wizard/_wizard_bottom_nav.scss */
-.wizard__arrow-left--enabled_help {
-  background-image: url('../images/wizard/arrow_left_enabled_help.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-  width: 43px;
-  height: 47px;
-  border: 0px solid red;
->>>>>>> LA-103 - Partial styling for search results listing
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
   background-color: #99d5f5;
   display: block;
   float: right;
