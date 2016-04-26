@@ -35,7 +35,7 @@ function sbp_resources_incentives_default_search_api_index() {
     "name" : "Resources \\u0026 Incentives",
     "machine_name" : "resources_incentives",
     "description" : null,
-    "server" : "labp_vm",
+    "server" : "acquia_search",
     "item_type" : "node",
     "options" : {
       "datasource" : { "bundles" : [ "incentives", "online_resource" ] },

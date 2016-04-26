@@ -47,7 +47,7 @@ function sbp_document_defaultconfig_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'document_business_need',
+            'vocabulary' => 'business_needs',
             'parent' => 0,
           ),
         ),

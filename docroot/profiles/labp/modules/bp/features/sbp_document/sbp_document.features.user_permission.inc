@@ -14,6 +14,7 @@ function sbp_document_user_default_permissions() {
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'reviewer' => 'reviewer',
     ),
@@ -24,6 +25,7 @@ function sbp_document_user_default_permissions() {
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -33,21 +35,27 @@ function sbp_document_user_default_permissions() {
   // Exported permission: 'delete terms in document_business_need'.
   $permissions['delete terms in document_business_need'] = array(
     'name' => 'delete terms in document_business_need',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in document_business_stage'.
   $permissions['delete terms in document_business_stage'] = array(
     'name' => 'delete terms in document_business_stage',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in document_type'.
   $permissions['delete terms in document_type'] = array(
     'name' => 'delete terms in document_type',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -55,6 +63,7 @@ function sbp_document_user_default_permissions() {
   $permissions['download any document files'] = array(
     'name' => 'download any document files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -65,6 +74,7 @@ function sbp_document_user_default_permissions() {
   $permissions['download own document files'] = array(
     'name' => 'download own document files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -75,6 +85,7 @@ function sbp_document_user_default_permissions() {
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -85,6 +96,7 @@ function sbp_document_user_default_permissions() {
   $permissions['edit own document files'] = array(
     'name' => 'edit own document files',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
     ),
@@ -94,21 +106,27 @@ function sbp_document_user_default_permissions() {
   // Exported permission: 'edit terms in document_business_need'.
   $permissions['edit terms in document_business_need'] = array(
     'name' => 'edit terms in document_business_need',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in document_business_stage'.
   $permissions['edit terms in document_business_stage'] = array(
     'name' => 'edit terms in document_business_stage',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in document_type'.
   $permissions['edit terms in document_type'] = array(
     'name' => 'edit terms in document_type',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'taxonomy',
   );
 
