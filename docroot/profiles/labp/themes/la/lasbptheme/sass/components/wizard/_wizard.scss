@@ -1,13 +1,22 @@
 $wizard_left_margin: 25px;
 
-.wizard {
+#wizard {
   color: $wizard-text;
   font-family: Roboto, sans-serif;
   margin:55px 0 0 0;
   border: 0px solid green;
   @include clearfix;
-  font-size: 120%; // re-adjust depending on site font
+  .constrained {
+    width: 90%;
+  }
 }
+
+
+// Where the wizard gets loaded.
+.wiz {
+  z-index: 9;
+}
+
 .wizard a{
   color: $wizard-text;
   font-size: 1em;
@@ -20,31 +29,6 @@ $wizard_left_margin: 25px;
     width: $zen-grid-width;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-.wizard__col_1{
-  border: 0px solid red;
-  width: 100%;
-  float: left;
-
-  @include window_size(desktop){
-      width: 700px;
-      border: 0px solid red;
-  }
-}
-
-.wizard__col_2{
-  border: 0px solid blue;
-  width: 30%;
-  float: left;
-  position: absolute;
-  right:0;
-  @include window_size(desktop){
-      width: 250px;
-      border: 0px solid blue;
-      position: relative;
-
   }
 }
 
@@ -85,10 +69,6 @@ $wizard_left_margin: 25px;
   }
 
 }
-
-
-
-
 
 
 .wizard__header {
@@ -238,18 +218,18 @@ a.wizard__button--selected {
 
 
 .wizard__icon{
-    float: right;
+//    float: right;
     width:40px;
     height:40px;
     margin: 15px 20px 20px 0;
     border: 0px solid red;
     @include window_size(desktop){
-        float: left;
+  //      float: left;
     }
 }
 
 .wizard__icon_help{
-    float: right;
+//    float: right;
     width:40px;
     height:40px;
     margin: 15px 0 20px 0;

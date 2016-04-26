@@ -682,18 +682,18 @@ table {
 
 /* line 2, ../sass/base/_transitions.scss */
 .page {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 95px;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 900px;
+  height: 90%;
   transition-duration: 0.5s;
-  transform: translate3D(95%, 0, 0);
+  transform: translate3D(100%, 0, 0);
   /* X value must be same as Nav width */
-  -moz-transform: translate3D(95%, 0, 0);
+  -moz-transform: translate3D(100%, 0, 0);
   /* X value must be same as Nav width */
-  -webkit-transform: translate3D(95%, 0, 0);
+  -webkit-transform: translate3D(100%, 0, 0);
   /* X value must be same as Nav width */
 }
 
@@ -1834,7 +1834,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459798895');
+  background-image: url('../images/progress.gif?1459349360');
 }
 
 /**
@@ -2421,23 +2421,31 @@ hr.hero__line {
 
 /* Wizard */
 /* line 3, ../sass/components/wizard/_wizard.scss */
-.wizard {
+#wizard {
   color: #0f2940;
   font-family: Roboto, sans-serif;
   margin: 55px 0 0 0;
   border: 0px solid green;
   overflow: hidden;
-  font-size: 120%;
+}
+/* line 9, ../sass/components/wizard/_wizard.scss */
+#wizard .constrained {
+  width: 90%;
 }
 
-/* line 11, ../sass/components/wizard/_wizard.scss */
+/* line 16, ../sass/components/wizard/_wizard.scss */
+.wiz {
+  z-index: 9;
+}
+
+/* line 20, ../sass/components/wizard/_wizard.scss */
 .wizard a {
   color: #0f2940;
   font-size: 1em;
 }
 
 @media all and (min-width: 960px) {
-  /* line 17, ../sass/components/wizard/_wizard.scss */
+  /* line 26, ../sass/components/wizard/_wizard.scss */
   .homepage_panel__content_wrapper {
     width: 80%;
     margin-left: auto;
@@ -2445,44 +2453,13 @@ hr.hero__line {
   }
 }
 
-/* line 26, ../sass/components/wizard/_wizard.scss */
-.wizard__col_1 {
-  border: 0px solid red;
-  width: 100%;
-  float: left;
-}
-@media all and (min-width: 960px) {
-  /* line 26, ../sass/components/wizard/_wizard.scss */
-  .wizard__col_1 {
-    width: 700px;
-    border: 0px solid red;
-  }
-}
-
-/* line 37, ../sass/components/wizard/_wizard.scss */
-.wizard__col_2 {
-  border: 0px solid blue;
-  width: 30%;
-  float: left;
-  position: absolute;
-  right: 0;
-}
-@media all and (min-width: 960px) {
-  /* line 37, ../sass/components/wizard/_wizard.scss */
-  .wizard__col_2 {
-    width: 250px;
-    border: 0px solid blue;
-    position: relative;
-  }
-}
-
-/* line 51, ../sass/components/wizard/_wizard.scss */
+/* line 35, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-screen--register-business {
   background-color: #89d5c4;
   height: 900px;
 }
 
-/* line 56, ../sass/components/wizard/_wizard.scss */
+/* line 40, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block {
   display: inline-block;
   border: 0px solid black;
@@ -2490,13 +2467,13 @@ hr.hero__line {
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 56, ../sass/components/wizard/_wizard.scss */
+  /* line 40, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block {
     padding: 0;
   }
 }
 
-/* line 67, ../sass/components/wizard/_wizard.scss */
+/* line 51, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-block {
   display: inline-block;
   border: 0px solid black;
@@ -2504,26 +2481,26 @@ hr.hero__line {
   margin: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 67, ../sass/components/wizard/_wizard.scss */
+  /* line 51, ../sass/components/wizard/_wizard.scss */
   .wizard__intro-block {
     margin: 0;
   }
 }
 
-/* line 78, ../sass/components/wizard/_wizard.scss */
+/* line 62, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block--help {
   display: inline-block;
   border: 0px solid black;
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 78, ../sass/components/wizard/_wizard.scss */
+  /* line 62, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block--help {
     padding: 0;
   }
 }
 
-/* line 94, ../sass/components/wizard/_wizard.scss */
+/* line 74, ../sass/components/wizard/_wizard.scss */
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
@@ -2533,13 +2510,13 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 94, ../sass/components/wizard/_wizard.scss */
+  /* line 74, ../sass/components/wizard/_wizard.scss */
   .wizard__header {
     padding: 35px 25px 0 0;
   }
 }
 
-/* line 107, ../sass/components/wizard/_wizard.scss */
+/* line 87, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title {
   font-weight: 700;
   font-size: 1em;
@@ -2549,13 +2526,13 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 107, ../sass/components/wizard/_wizard.scss */
+  /* line 87, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title {
     font-size: 1.357em;
   }
 }
 
-/* line 123, ../sass/components/wizard/_wizard.scss */
+/* line 103, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-government {
   font-size: 0.857em;
   text-transform: uppercase;
@@ -2564,13 +2541,13 @@ hr.hero__line {
   padding: 0px;
 }
 @media all and (min-width: 960px) {
-  /* line 123, ../sass/components/wizard/_wizard.scss */
+  /* line 103, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-government {
     font-size: 1.071em;
   }
 }
 
-/* line 136, ../sass/components/wizard/_wizard.scss */
+/* line 116, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-intro {
   font-weight: 700;
   font-size: 1em;
@@ -2581,13 +2558,13 @@ hr.hero__line {
   font-size: 1.357em;
 }
 @media all and (min-width: 960px) {
-  /* line 136, ../sass/components/wizard/_wizard.scss */
+  /* line 116, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-intro {
     font-size: 2.571em;
   }
 }
 
-/* line 152, ../sass/components/wizard/_wizard.scss */
+/* line 132, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -2597,7 +2574,7 @@ hr.hero__line {
   margin: 0;
 }
 
-/* line 160, ../sass/components/wizard/_wizard.scss */
+/* line 140, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -2608,14 +2585,14 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 160, ../sass/components/wizard/_wizard.scss */
+  /* line 140, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
 
-/* line 174, ../sass/components/wizard/_wizard.scss */
+/* line 154, ../sass/components/wizard/_wizard.scss */
 .wizard__question--help {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -2626,20 +2603,20 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 174, ../sass/components/wizard/_wizard.scss */
+  /* line 154, ../sass/components/wizard/_wizard.scss */
   .wizard__question--help {
     font-size: 2em;
     width: 70%;
   }
 }
 
-/* line 191, ../sass/components/wizard/_wizard.scss */
+/* line 171, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0px solid white;
   margin: 30px 0 30px 0;
 }
 
-/* line 196, ../sass/components/wizard/_wizard.scss */
+/* line 176, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -2654,30 +2631,30 @@ hr.hero__line {
   cursor: pointer;
 }
 
-/* line 199, ../sass/components/wizard/_wizard.scss */
+/* line 179, ../sass/components/wizard/_wizard.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
 
-/* line 203, ../sass/components/wizard/_wizard.scss */
+/* line 183, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   background-color: #0f2940;
 }
 
-/* line 206, ../sass/components/wizard/_wizard.scss */
+/* line 186, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   text-decoration: none;
   color: white;
 }
 
-/* line 210, ../sass/components/wizard/_wizard.scss */
+/* line 190, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 220, ../sass/components/wizard/_wizard.scss */
+/* line 200, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   width: 70%;
@@ -2686,14 +2663,14 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 220, ../sass/components/wizard/_wizard.scss */
+  /* line 200, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 220, ../sass/components/wizard/_wizard.scss */
+  /* line 200, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 80%;
     font-size: 1.357em;
@@ -2701,31 +2678,23 @@ a.wizard__button--selected {
   }
 }
 
-/* line 240, ../sass/components/wizard/_wizard.scss */
+/* line 220, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
-  float: right;
   width: 40px;
   height: 40px;
   margin: 15px 20px 20px 0;
   border: 0px solid red;
 }
-@media all and (min-width: 960px) {
-  /* line 240, ../sass/components/wizard/_wizard.scss */
-  .wizard__icon {
-    float: left;
-  }
-}
 
-/* line 251, ../sass/components/wizard/_wizard.scss */
+/* line 231, ../sass/components/wizard/_wizard.scss */
 .wizard__icon_help {
-  float: right;
   width: 40px;
   height: 40px;
   margin: 15px 0 20px 0;
   border: 0px solid red;
 }
 
-/* line 262, ../sass/components/wizard/_wizard.scss */
+/* line 242, ../sass/components/wizard/_wizard.scss */
 .wizard__header_block--help {
   border: 0px solid red;
   margin: 0;
@@ -2733,46 +2702,46 @@ a.wizard__button--selected {
   overflow: hidden;
 }
 
-/* line 270, ../sass/components/wizard/_wizard.scss */
+/* line 250, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   margin: 0 0 0 0;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 270, ../sass/components/wizard/_wizard.scss */
+  /* line 250, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
     width: 95%;
   }
 }
 
-/* line 279, ../sass/components/wizard/_wizard.scss */
+/* line 259, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 279, ../sass/components/wizard/_wizard.scss */
+  /* line 259, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 290, ../sass/components/wizard/_wizard.scss */
+/* line 270, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 290, ../sass/components/wizard/_wizard.scss */
+  /* line 270, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
 
-/* line 299, ../sass/components/wizard/_wizard.scss */
+/* line 279, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -2905,138 +2874,37 @@ a.wizard__button--selected {
   }
 }
 
-/* line 59, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar--section_1 {
-  width: 270px;
-  display: inline-block;
-  float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: 24px 12px;
-  background-color: #82caba;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media all and (min-width: 960px) {
-  /* line 59, ../sass/components/wizard/_wizard_progress_bar.scss */
-  .wizard__progress-bar--section_1 {
-    margin: 40px 0 0 0;
-  }
-}
-
-/* line 63, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar--section_2 {
-  width: 270px;
-  display: inline-block;
-  float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: 24px 12px;
-  background-color: #abc468;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media all and (min-width: 960px) {
-  /* line 63, ../sass/components/wizard/_wizard_progress_bar.scss */
-  .wizard__progress-bar--section_2 {
-    margin: 40px 0 0 0;
-  }
-}
-
-/* line 67, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar--section_3 {
-  width: 270px;
-  display: inline-block;
-  float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: 24px 12px;
-  background-color: #ddbc54;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media all and (min-width: 960px) {
-  /* line 67, ../sass/components/wizard/_wizard_progress_bar.scss */
-  .wizard__progress-bar--section_3 {
-    margin: 40px 0 0 0;
-  }
-}
-
-/* line 71, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar--section_4 {
-  width: 270px;
-  display: inline-block;
-  float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: 24px 12px;
-  background-color: #65b9e6;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media all and (min-width: 960px) {
-  /* line 71, ../sass/components/wizard/_wizard_progress_bar.scss */
-  .wizard__progress-bar--section_4 {
-    margin: 40px 0 0 0;
-  }
-}
-
-/* line 77, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar--section_5 {
-  width: 270px;
-  display: inline-block;
-  float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: 24px 12px;
-  background-color: #eea73c;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media all and (min-width: 960px) {
-  /* line 77, ../sass/components/wizard/_wizard_progress_bar.scss */
-  .wizard__progress-bar--section_5 {
-    margin: 40px 0 0 0;
-  }
-}
-
-/* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 33, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar--simple {
-  width: 270px;
+  width: 10%;
   display: inline-block;
-  float: right;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   background-color: "transparent";
+  min-height: 550px;
   width: 60px;
   overflow: hidden;
 }
 @media all and (min-width: 960px) {
-  /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 33, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--simple {
     margin: 40px 0 0 0;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 33, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar--simple {
     width: 270px;
   }
 }
 
-/* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 43, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar-section {
   margin: 0;
   padding: 0;
@@ -3044,7 +2912,7 @@ a.wizard__button--selected {
   overflow: hidden;
 }
 
-/* line 104, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 52, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar-section--selected {
   margin: 0;
   padding: 0;
@@ -3052,121 +2920,85 @@ a.wizard__button--selected {
   overflow: hidden;
 }
 
-/* line 113, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 61, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar {
   width: 58px;
   height: 100px;
-  float: left;
 }
 
-/* line 122, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* @mixin wizard__progress-large_icon { */
+/*   width:40px; */
+/*   height:100px; */
+/*   float: left; */
+/*   background-image: image-url("wizard/icon_bulb.png"); */
+/*   background-size: 100%; */
+/*   background-repeat: no-repeat; */
+/*   margin: 5px 0 0 10px; */
+/* } */
+/* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
   height: 100%;
 }
 
-/* line 133, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  float: left;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
   height: 100%;
 }
 
-/* line 145, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  float: left;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
   height: 100%;
 }
 
-/* line 161, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar_location_icon--city {
-  width: 40px;
-  height: 100px;
-  float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
-  display: none;
-}
-
-/* line 168, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar_location_icon--county {
-  width: 40px;
-  height: 100px;
-  float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 5px 0 0 10px;
-  width: 45px;
-  margin: 5px 0 0 5px;
-  background-image: url('../images/wizard/icon_pencil.png?1461530233');
-  display: none;
-}
-
-/* line 177, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar_location_icon--state {
-  width: 40px;
-  height: 100px;
-  float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_percentage.png?1461530233');
-}
-
-/* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar_location_icon--federal {
-  width: 40px;
-  height: 100px;
-  float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_pound.png?1461530233');
-  display: none;
-}
-
-/* line 189, ../sass/components/wizard/_wizard_progress_bar.scss */
-.wizard__progress-bar_location_icon--registration {
-  width: 40px;
-  height: 100px;
-  float: left;
-  background-image: url('../images/wizard/icon_bulb.png?1459798895');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin: 5px 0 0 10px;
-  background-image: url('../images/wizard/icon_map.png?1461530233');
-  display: none;
-}
-
-/* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* .wizard__progress-bar_location_icon--city{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_bulb.png"); */
+/*   display: none; */
+/* } */
+/* .wizard__progress-bar_location_icon--county{ */
+/*   @include wizard__progress-large_icon; */
+/*   width:45px; */
+/*   margin: 5px 0 0 5px; */
+/*   background-image: image-url("wizard/icon_pencil.png"); */
+/*   display: none; */
+/* } */
+/* .wizard__progress-bar_location_icon--state{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_percentage.png"); */
+/* } */
+/* .wizard__progress-bar_location_icon--federal{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_pound.png"); */
+/*   display: none; */
+/* } */
+/* .wizard__progress-bar_location_icon--registration{ */
+/*   @include wizard__progress-large_icon; */
+/*   background-image: image-url("wizard/icon_map.png"); */
+/*   display: none; */
+/* } */
+/* line 159, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents {
-  float: left;
   padding: 0 0 0 10px;
   color: #0f2940;
   width: 155px;
 }
 
-/* line 205, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 167, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--deselected {
   float: left;
   padding: 0 0 0 10px;
@@ -3175,13 +3007,13 @@ a.wizard__button--selected {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 205, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 167, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--deselected {
     display: block;
   }
 }
 
-/* line 217, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 179, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_contents--selected {
   float: left;
   padding: 0 0 0 10px;
@@ -3190,13 +3022,13 @@ a.wizard__button--selected {
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 217, ../sass/components/wizard/_wizard_progress_bar.scss */
+  /* line 179, ../sass/components/wizard/_wizard_progress_bar.scss */
   .wizard__progress-bar_contents--selected {
     display: block;
   }
 }
 
-/* line 230, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 192, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_government {
   font-weight: 900;
   text-transform: uppercase;
@@ -3206,19 +3038,19 @@ a.wizard__button--selected {
   letter-spacing: 0.1px;
 }
 
-/* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 203, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_section_title {
   font-weight: 700;
   margin: 0 0 7px 0;
   padding: 0;
 }
 
-/* line 249, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 211, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_status_icons {
   overflow: hidden;
 }
 
-/* line 253, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 215, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--incomplete {
   width: 15px;
   height: 15px;
@@ -3226,11 +3058,10 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  float: left;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461563616');
 }
 
-/* line 260, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 222, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--completed {
   width: 15px;
   height: 15px;
@@ -3238,11 +3069,10 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  float: left;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461563616');
 }
 
-/* line 267, ../sass/components/wizard/_wizard_progress_bar.scss */
+/* line 229, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_icon--selected {
   width: 15px;
   height: 15px;
@@ -3250,14 +3080,16 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  float: left;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461563616');
 }
 
-/* line 275, ../sass/components/wizard/_wizard_progress_bar.scss */
+/**********/
+/* Drawer */
+/**********/
+/* line 250, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461530233');
+  background-image: url('../images/wizard/icon_close.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -3267,12 +3099,32 @@ a.wizard__button--selected {
   margin: 15px 15px 0 0;
 }
 
+/* // mobile drawer root containers */
+/* .wizard__progress-bar--section_1 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_city-registration); */
+/* } */
+/* .wizard__progress-bar--section_2 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_name); */
+/* } */
+/* .wizard__progress-bar--section_3{ */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_sellers-permit); */
+/* } */
+/* .wizard__progress-bar--section_4 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_employeer-identification-number); */
+/* } */
+/* .wizard__progress-bar--section_5 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_your-business_registration-guide); */
+/* } */
 /* line 3, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav {
   display: inline-block;
   width: 100%;
-  float: left;
-  margin: 10px 0 0 0;
+  height: 20%;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 0 0;
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
@@ -3290,7 +3142,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 21, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 25, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav--full_width {
   display: inline-block;
   width: 100%;
@@ -3299,9 +3151,9 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 39, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 43, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1461492462');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -3313,15 +3165,15 @@ a.wizard__button--selected {
   text-indent: -100000px;
 }
 @media all and (min-width: 720px) {
-  /* line 39, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 43, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-up {
     margin: 0 10px 10px 0;
   }
 }
 
-/* line 56, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 60, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
+  background-image: url('../images/wizard/arrow_down.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3331,13 +3183,13 @@ a.wizard__button--selected {
   text-indent: -100000px;
 }
 @media all and (min-width: 720px) {
-  /* line 56, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 60, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down {
     margin: 0 0 24px 0;
   }
 }
 
-/* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 76, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down-wrapper {
   border: 0px solid white;
   padding: 0;
@@ -3346,36 +3198,36 @@ a.wizard__button--selected {
   overflow: hidden;
 }
 @media all and (min-width: 720px) {
-  /* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 76, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down-wrapper {
     background-color: transparent;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     background-position: 0 0;
     background-repeat: repeat-x;
     border-bottom: 2px solid white;
   }
 }
 
-/* line 89, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down-wrapper--disabled {
   border: 0px solid white;
   padding: 10px 10px 0 0;
-  background-image: url('../images/wizard/nav_hr_bar.png?1461530233');
+  background-image: url('../images/wizard/nav_hr_bar.png?1461563616');
   background-repeat: no-repeat;
   background-position: 23px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 89, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down-wrapper--disabled {
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     background-position: 0 0;
     background-repeat: repeat-x;
   }
 }
 
-/* line 119, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
+  background-image: url('../images/wizard/arrow_down.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3387,7 +3239,7 @@ a.wizard__button--selected {
   float: left;
 }
 
-/* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--desktop {
   display: none;
   width: 24px;
@@ -3395,13 +3247,13 @@ a.wizard__button--selected {
   margin: 12px 0 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--desktop {
     display: block;
   }
 }
 
-/* line 134, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 138, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--enabled img, .wizard__arrow-left--enabled img, .wizard__arrow-left--enabled_help img {
   display: none;
   width: 24px;
@@ -3409,13 +3261,13 @@ a.wizard__button--selected {
   margin: 12px 0 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 134, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 138, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--enabled img, .wizard__arrow-left--enabled img, .wizard__arrow-left--enabled_help img {
     display: block;
   }
 }
 
-/* line 144, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-left--enabled_help img {
   display: none;
   width: 24px;
@@ -3423,23 +3275,23 @@ a.wizard__button--selected {
   margin: 12px 0 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 144, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-left--enabled_help img {
     display: block;
     float: right;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 144, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-left--enabled_help img {
     display: block;
     float: right;
   }
 }
 
-/* line 160, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 164, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-left--enabled {
-  background-image: url('../images/wizard/arrow_left_enabled.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3450,9 +3302,9 @@ a.wizard__button--selected {
   float: left;
 }
 
-/* line 174, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 178, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-left--enabled_help {
-  background-image: url('../images/wizard/arrow_left_enabled_help.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled_help.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
@@ -3464,20 +3316,20 @@ a.wizard__button--selected {
   float: right;
 }
 @media all and (min-width: 720px) {
-  /* line 174, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 178, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-left--enabled_help {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
   }
 }
 
-/* line 200, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 204, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
+  background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -3487,13 +3339,13 @@ a.wizard__button--selected {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 200, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 204, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 219, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 223, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -3504,13 +3356,13 @@ a.wizard__button--selected {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 219, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 223, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 232, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 236, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
   color: #0f2940;
   font-weight: 700;
@@ -3521,7 +3373,7 @@ a.wizard__button--selected {
   padding: 15px 4px 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 232, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 236, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label_help {
     color: white;
     padding: 15px 0 0 4px;
@@ -3539,7 +3391,7 @@ a.wizard__button--selected {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461530233');
+  background-image: url('../images/wizard/icon_info.png?1461563616');
   background-size: 100%;
 }
 

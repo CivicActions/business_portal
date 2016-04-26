@@ -96,15 +96,12 @@ wiz.views.App = wiz.extensions.View.extend({
 
     wiz.views.Wizard = wiz.extensions.View.extend({
 
-      className: "wizard",
+      className: "wiz",
 
       render: function() {
 
         // Clean up dom elements and events.// @TODO needed now we remove the whole view?
         // $(".wizard__buttons").find("a").remove();
-
-        // var drawer = new wiz.views.ProgressDrawer({model: this.model});
-        // this.$el.append(drawer.render().el);
 
         // Styles for all sections:
         this.$el.css("background", "#" + this.model.get("Primary Color"));
@@ -122,10 +119,6 @@ wiz.views.App = wiz.extensions.View.extend({
 
           var nav = new wiz.views.Nav({model: this.model});
           this.$el.append(nav.render().el);
-
-          var bar = new wiz.views.ProgressBar();
-          this.$el.append(bar.render().el);
-
           break;
         case "section":
           console.log("APP: Section");
@@ -195,6 +188,14 @@ wiz.views.App = wiz.extensions.View.extend({
           break;
         }
 
+        var bar = new wiz.views.ProgressBar({model: this.model});
+        this.$el.append(bar.render().el);
+
+        // var drawer = new wiz.views.ProgressDrawer({
+        //   model: this.model,
+        // });
+        // this.$el.append(drawer.render().el);
+
         return wiz.extensions.View.prototype.render.apply(this, arguments);
       }
     });
@@ -204,7 +205,7 @@ wiz.views.App = wiz.extensions.View.extend({
 ////////////
 
 wiz.views.Header = Backbone.View.extend({
-  className: ".wizard__header",
+  className: ".wizard__header constrained",
   template: _.template($('#header-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -217,7 +218,7 @@ wiz.views.Header = Backbone.View.extend({
 /////////////////////////
 
 wiz.views.HeaderForQuestion = Backbone.View.extend({
-  className: ".wizard__header",
+  className: ".wizard__header constrained",
   template: _.template($('#header-for-question-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -230,7 +231,7 @@ wiz.views.HeaderForQuestion = Backbone.View.extend({
 ///////////
 
 wiz.views.Intro = Backbone.View.extend({
-  className: ".wizard__intro-block",
+  className: ".wizard__intro-block constrained",
   template: _.template($('#intro-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -243,7 +244,7 @@ wiz.views.Intro = Backbone.View.extend({
 /////////////////////////////
 
 wiz.views.IntroWithIllustration = Backbone.View.extend({
-  className: ".wizard__intro-block",
+  className: ".wizard__intro-block constrained",
   template: _.template($('#intro-with-illustration-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -269,7 +270,7 @@ wiz.views.Question = Backbone.View.extend({
 /////////////
 
 wiz.views.Buttons = Backbone.View.extend({
-  className: "wizard__buttons",
+  className: "wizard__buttons constrained",
   template: _.template($('#buttons-template').html()),
 
   render: function() {
@@ -362,7 +363,6 @@ wiz.views.Button = Backbone.View.extend({
 /////////
 
 wiz.views.Tip = Backbone.View.extend({
-//  className: ".wizard__intro-block",
   template: _.template($('#tip-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -547,7 +547,6 @@ wiz.views.Result = Backbone.View.extend({
     return this;
   }
 
-
 });
 
 
@@ -557,27 +556,25 @@ wiz.views.Result = Backbone.View.extend({
 
 wiz.views.ProgressBar = Backbone.View.extend({
 
-  template: _.template($('#progress-template').html()),
-  className: ".wizard__progress-bar",
-
-  initialize: function() {
-    this.$el.addClass("section-1");
-    Backbone.on("current:update", this.changeIndicator, this);
-  },
-
-  changeIndicator: function() {
-    this.$el.removeClass(function(index, css) {
-      return (css.match (/\bsection-\S+/g) || []).join(' ');
-    });
-    this.$el.addClass("section-" + wiz.views.wizard.model.get("section").tid);
-  },
+  template: _.template($('#progress-bar-section-template').html()),
+  templateWithIcon: _.template($('#progress-bar-section-with-icon-template').html()),
+  className: "wizard__progress-bar--simple",
 
   render: function() {
-    this.$el.html(this.template());
+    var currentSection = this.model.get("section").tid;
+    var sections = wiz.collections.screens.getSections();
+    _.each(sections, function(section) {
+      if (currentSection === section.tid) {
+        this.$el.append(this.templateWithIcon({icon: section.icon}));
+      } else {
+        this.$el.append(this.template());
+      }
+    }, this);
     return this;
   }
 
 });
+
 
 
 /////////////////////
@@ -586,7 +583,7 @@ wiz.views.ProgressBar = Backbone.View.extend({
 
 wiz.views.ProgressDrawer = Backbone.View.extend({
 
-  el: "wizard__progress-drawer",
+  className: "wizard__progress-drawer",
 
   initialize: function() {
     Backbone.on("screen:add", this.render, this);
