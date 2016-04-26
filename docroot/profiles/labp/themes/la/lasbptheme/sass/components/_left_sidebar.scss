@@ -21,7 +21,62 @@
 
 .panel-2col-stacked .menu-block-1 .menu__item{
   list-style: none;
-  color: blue;
+  color:$dark-blue;
   font-size: 1.143em;
+  margin:0 0 10px 0;
+}
+
+/* SEARCH BAR */
+.panel-2col-stacked .views-widget-filter-search_api_views_fulltext {
+  border-top: 1px solid $light-blue;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form-item-search-api-views-fulltext input[type=text]{
+  padding: 0 10px 0 10px;
+  @include border-radius(4px);
+  height: 32px;
+  margin-top: 20px;
+  outline: 0;
+  width:200px;
+  display: none;
+  @include window_size(desktop){
+    display: block;
+  }
+}
+
+.views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
+#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/* FILTERS */
+.pane-facetapi h2.pane-title {
+  list-style: none;
+  color:$dark_blue;
+  font-size: 1.143em;
+  margin:20px 0 10px 0;
+  padding: 0px 0 0 25px;
+  font-weight: 700;
+  //background-image: url('../images/subsections/arrow_down.png');
+  background-repeat: no-repeat;
+  background-size: 17px 10px;
+  background-position: 0px 5px;
+}
+
+ul.facetapi-facet-field-business-need li,
+ul.facetapi-facet-field-business-ownership li,
+ul.facetapi-facet-field-industry-tag li,
+ul.facetapi-facet-field-resource-type li {
+  list-style: none;
+  color:$dark_blue;
+  font-size: 0.929em;
   margin:0 0 10px 0;
 }
