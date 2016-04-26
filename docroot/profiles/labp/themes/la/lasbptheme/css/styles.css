@@ -2117,7 +2117,11 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/progress.gif?1459349360');
+=======
+  background-image: url('../images/progress.gif?1459798895');
+>>>>>>> New database
 }
 
 /**
@@ -3289,7 +3293,11 @@ a.wizard__button--selected {
   overflow: hidden;
   top: 0;
   right: 0;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/progress_bar.png?1461563616');
+=======
+  background-image: url('../images/wizard/progress_bar.png?1461530233');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3345,7 +3353,11 @@ a.wizard__button--selected {
 /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+=======
+  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3355,7 +3367,11 @@ a.wizard__button--selected {
 /* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+=======
+  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3365,7 +3381,11 @@ a.wizard__button--selected {
 /* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461563616');
+=======
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3465,7 +3485,11 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461563616');
+=======
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
+>>>>>>> New database
 }
 
 /* line 222, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3476,7 +3500,11 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/progress_bar_circle_completed.png?1461563616');
+=======
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
+>>>>>>> New database
 }
 
 /* line 229, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3487,7 +3515,11 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/progress_bar_circle_selected.png?1461563616');
+=======
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
+>>>>>>> New database
 }
 
 /**********/
@@ -3496,7 +3528,11 @@ a.wizard__button--selected {
 /* line 250, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/icon_close.png?1461563616');
+=======
+  background-image: url('../images/wizard/icon_close.png?1461530233');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -3559,7 +3595,11 @@ a.wizard__button--selected {
 
 /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/arrow_up.png?1461492462');
+=======
+  background-image: url('../images/wizard/arrow_up.png?1459798895');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -3579,7 +3619,11 @@ a.wizard__arrow-up {
 
 /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/arrow_down.png?1461563616');
+=======
+  background-image: url('../images/wizard/arrow_down.png?1461530233');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3597,12 +3641,20 @@ a.wizard__arrow-down {
 
 /* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461563616');
+=======
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
+>>>>>>> New database
 }
 
 /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461563616');
+=======
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
+>>>>>>> New database
   background-color: #99d5f5;
   display: block;
   float: right;
@@ -3612,7 +3664,11 @@ a.wizard__arrow-down.enabled {
   .wizard__arrow-up.enabled.left {
     border: 0px solid red;
     background-image: none;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
     background-image: url('../images/wizard/nav_hr_bar_white.png?1461563616');
+=======
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+>>>>>>> New database
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3621,7 +3677,11 @@ a.wizard__arrow-down.enabled {
 
 /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
+=======
+  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
+>>>>>>> New database
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -3683,7 +3743,11 @@ a.wizard__arrow-down.enabled {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
   background-image: url('../images/wizard/icon_info.png?1461563616');
+=======
+  background-image: url('../images/wizard/icon_info.png?1461530233');
+>>>>>>> New database
   background-size: 100%;
 }
 
@@ -4337,8 +4401,9 @@ body.node-type-sbp-starter-kit .node-teaser {
 }
 
 /* FILTERS */
-/* line 61, ../sass/components/_left_sidebar.scss */
-.pane-facetapi h2.pane-title {
+/* line 63, ../sass/components/_left_sidebar.scss */
+.pane-facetapi h2.pane-title,
+.pane-sbp-terms-definitions h2.pane-title {
   list-style: none;
   color: #0f2940;
   font-size: 1.143em;
@@ -4350,11 +4415,16 @@ body.node-type-sbp-starter-kit .node-teaser {
   background-position: 0px 5px;
 }
 
+<<<<<<< 4fd047258683a0a1606a28ad0de268f9be09e5f2
 /* line 77, ../sass/components/_left_sidebar.scss */
+=======
+/* line 80, ../sass/components/_left_sidebar.scss */
+>>>>>>> New database
 ul.facetapi-facet-field-business-need li,
 ul.facetapi-facet-field-business-ownership li,
 ul.facetapi-facet-field-industry-tag li,
-ul.facetapi-facet-field-resource-type li {
+ul.facetapi-facet-field-resource-type li,
+.pane-sbp-terms-definitions ul li {
   list-style: none;
   color: #0f2940;
   font-size: 0.929em;
