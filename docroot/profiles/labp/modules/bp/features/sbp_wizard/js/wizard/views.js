@@ -183,8 +183,26 @@ wiz.views.App = wiz.extensions.View.extend({
           this.$el.append(nav.render().el);
           break;
 
+        case "address lookup":
+          console.log("APP: address lookup");
+          console.log(this.model);
+
+          var headerForQuestion = new wiz.views.HeaderForQuestion({model: this.model});
+          this.$el.append(headerForQuestion.render().el);
+
+          var question = new wiz.views.Question({model: this.model});
+          this.$el.append(question.render().el);
+
+          var intro = new wiz.views.Intro({ model: this.model });
+          this.$el.append(intro.render().el);
+
+          var nav = new wiz.views.Nav({model: this.model});
+          this.$el.append(nav.render().el);
+
+          break;
+
         default:
-          console.log("APP: No screen type defined");
+          console.log("APP: No screen type defined", this.model.get("screen-type") );
           break;
         }
 
