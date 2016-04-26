@@ -100,9 +100,6 @@ wiz.views.App = wiz.extensions.View.extend({
 
       render: function() {
 
-        // Clean up dom elements and events.// @TODO needed now we remove the whole view?
-        // $(".wizard__buttons").find("a").remove();
-
         // Styles for all sections:
         this.$el.css("background", "#" + this.model.get("Primary Color"));
 
@@ -147,6 +144,9 @@ wiz.views.App = wiz.extensions.View.extend({
 
           var tip = new wiz.views.Tip({model: this.model});
           this.$el.append(tip.render().el);
+
+          var linkButton = new wiz.views.ButtonLink({ model: this.model });
+          this.$el.append(linkButton.render().el);
 
           var nav = new wiz.views.Nav({model: this.model});
           this.$el.append(nav.render().el);
@@ -287,6 +287,25 @@ wiz.views.Buttons = Backbone.View.extend({
             });
             this.$el.append(button.render().el);
           }
+        }, this);
+      }
+    return this;
+  }
+});
+
+/////////////////
+// Button Link //
+/////////////////
+
+wiz.views.ButtonLink = Backbone.View.extend({
+  className: "wizard__buttons constrained",
+  template: _.template($('#buttons-template').html()),
+
+  render: function() {
+    var buttons = this.model.get("buttons");
+      if (buttons.length > 0) {
+        _.each(buttons, function(b, index) {
+          console.log("style", b.Style);
           if (b.Style["#markup"] === "Link") {
             var button =  new wiz.views.Button({
               button: b,
@@ -301,6 +320,8 @@ wiz.views.Buttons = Backbone.View.extend({
     return this;
   }
 });
+
+
 
 //////////////
 // A Button //
