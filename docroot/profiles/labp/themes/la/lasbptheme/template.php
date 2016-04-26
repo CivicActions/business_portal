@@ -59,6 +59,25 @@ function lasbptheme_preprocess_page(&$variables, $hook) {
   drupal_add_library('system', 'ui.accordion');
 }
 
+
+/**
+ * Implements preprocess_panels_pane().
+ */
+function lasbptheme_preprocess_panels_pane(&$vars) {
+  if ($vars['title'] == 'Filter by business need:') {
+    $vars['title'] = 'Business Need';
+  }
+  if ($vars['title'] == 'Filter by business ownership:') {
+  $vars['title'] = 'Business Ownership';
+  }
+  if ($vars['title'] == 'Filter by industry tag:') {
+    $vars['title'] = 'Industry';
+  }
+  if ($vars['title'] == 'Filter by resource type:') {
+    $vars['title'] = 'Resource Type';
+  }
+}
+
 /**
  * Override or insert variables into the node templates.
  *

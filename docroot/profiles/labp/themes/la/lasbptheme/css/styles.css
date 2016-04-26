@@ -3908,8 +3908,74 @@ body.node-type-sbp-starter-kit .node-teaser {
 /* line 22, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked .menu-block-1 .menu__item {
   list-style: none;
-  color: blue;
+  color: #0f2940;
   font-size: 1.143em;
+  margin: 0 0 10px 0;
+}
+
+/* SEARCH BAR */
+/* line 30, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .views-widget-filter-search_api_views_fulltext {
+  border-top: 1px solid #6bc3f3;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 37, ../sass/components/_left_sidebar.scss */
+.form-item-search-api-views-fulltext input[type=text] {
+  padding: 0 10px 0 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  height: 32px;
+  margin-top: 20px;
+  outline: 0;
+  width: 200px;
+  display: none;
+}
+@media all and (min-width: 960px) {
+  /* line 37, ../sass/components/_left_sidebar.scss */
+  .form-item-search-api-views-fulltext input[type=text] {
+    display: block;
+  }
+}
+
+/* line 51, ../sass/components/_left_sidebar.scss */
+.views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
+#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* FILTERS */
+/* line 61, ../sass/components/_left_sidebar.scss */
+.pane-facetapi h2.pane-title {
+  list-style: none;
+  color: #0f2940;
+  font-size: 1.143em;
+  margin: 20px 0 10px 0;
+  padding: 0px 0 0 25px;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: 17px 10px;
+  background-position: 0px 5px;
+}
+
+/* line 77, ../sass/components/_left_sidebar.scss */
+ul.facetapi-facet-field-business-need li,
+ul.facetapi-facet-field-business-ownership li,
+ul.facetapi-facet-field-industry-tag li,
+ul.facetapi-facet-field-resource-type li {
+  list-style: none;
+  color: #0f2940;
+  font-size: 0.929em;
   margin: 0 0 10px 0;
 }
 
