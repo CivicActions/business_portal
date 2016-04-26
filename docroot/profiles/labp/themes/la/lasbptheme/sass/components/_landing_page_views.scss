@@ -1,5 +1,6 @@
 .pane-bp-featured-sub-page,
-.pane-bp-featured-resource-page {
+.pane-bp-featured-resource-page,
+.pane-terms-definitions {
   margin: 0;
   padding: 0;
 
@@ -14,7 +15,9 @@
 }
 
 .pane-bp-featured-sub-page h2,
-.pane-bp-featured-resource-page h2 {
+.pane-bp-featured-resource-page h2,
+.pane-terms-definitions h3,
+.pane-labp-service-center h2 {
   font-family: Merriweather, serif;
   font-weight: normal;
   font-size: 1.429em;
@@ -29,7 +32,10 @@
 }
 
 .view-id-bp_featured_sub_page .views-field-title,
-.view-bp-featured-resource-page .views-field-title{
+.view-bp-featured-resource-page .views-field-title,
+.view-id-terms_definitions .views-field-name,
+.view-id-departments .views-field-title,
+.view-id-labp_service_center .views-field-title{
   font-family: Merriweather, serif;
   font-weight: 400;
 
@@ -46,13 +52,15 @@
 .view-id-bp_featured_sub_page .views-field-view-node,
 .view-id-bp_featured_sub_page .views-field-field-document,
 .view-bp-featured-resource-page .views-field-view-node,
-.view-bp-featured-resource-page .views-field-field-document {
+.view-bp-featured-resource-page .views-field-field-document,
+.view-id-departments .views-field-view-node {
   width: 10%;
   display: inline-block;
 }
 
 .view-id-bp_featured_sub_page .views-field-view-node a,
-.view-bp-featured-resource-page .views-field-view-node a {
+.view-bp-featured-resource-page .views-field-view-node a,
+.view-id-departments .views-field-view-node a {
   text-indent: -9999px;
   @include page__icon_base;
 }
@@ -63,10 +71,62 @@
   @include page__icon_base("../images/icon_download.png");
 }
 
-.view-id-bp_featured_sub_page .views-field-body
-.view-bp-featured-resource-page .views-field-body{
+.view-id-bp_featured_sub_page .views-field-body,
+.view-bp-featured-resource-page .views-field-body,
+.view-id-terms_definitions .views-field-description,
+.view-id-departments .views-field-field-description,
+.view-id-labp_service_center .views-field-body {
   line-height: 1.25em;
   width: 90%;
+  @include window_size(desktop){
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+/** Business source center stuff only **/
+
+.view-id-labp_service_center .views-field-field-map,
+.view-id-labp_service_center .views-field-field-services,
+.view-id-labp_service_center .views-field-field-languages {
+  width:45%;
+  display: inline;
+  float: left;
+}
+.view-id-labp_service_center .views-field-field-map img {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.view-id-labp_service_center .views-field-field-address,
+.view-id-labp_service_center .views-field-field-email,
+.view-id-labp_service_center .views-field-field-phone
+{
+  width:45%;
+  display: inline;
+  float: right;
+}
+
+.view-id-labp_service_center .views-field-field-address .field-content,
+.view-id-labp_service_center .views-field-field-email .field-content,
+.view-id-labp_service_center .views-field-field-phone .field-content,
+.view-id-labp_service_center .views-field-field-services .field-content,
+.view-id-labp_service_center .views-field-field-languages .field-content {
+  line-height: 1.25em;
+  width: 90%;
+  margin: 0 0 20px 0;
+  padding: 0;
+  @include window_size(desktop){
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+.view-id-labp_service_center .views-label {
+  font-weight: 700;
+  margin:20px 0 0 0;
+  padding: 0;
   @include window_size(desktop){
     width: 85%;
     font-size: 1.143em;
