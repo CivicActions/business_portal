@@ -310,62 +310,6 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'administer panelizer comment comment_node_incentives defaults'.
-  $permissions['administer panelizer comment comment_node_incentives defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_incentives defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer comment comment_node_labp_service_center defaults'.
-  $permissions['administer panelizer comment comment_node_labp_service_center defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_labp_service_center defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer comment comment_node_online_resource defaults'.
-  $permissions['administer panelizer comment comment_node_online_resource defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_online_resource defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer comment comment_node_sbp_content defaults'.
-  $permissions['administer panelizer comment comment_node_sbp_content defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_sbp_content defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer comment comment_node_sbp_department defaults'.
-  $permissions['administer panelizer comment comment_node_sbp_department defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_sbp_department defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer comment comment_node_sbp_guide defaults'.
-  $permissions['administer panelizer comment comment_node_sbp_guide defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_sbp_guide defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer comment comment_node_sbp_landing_page defaults'.
-  $permissions['administer panelizer comment comment_node_sbp_landing_page defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_sbp_landing_page defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer comment comment_node_sbp_permit defaults'.
-  $permissions['administer panelizer comment comment_node_sbp_permit defaults'] = array(
-    'name' => 'administer panelizer comment comment_node_sbp_permit defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node faq defaults'.
   $permissions['administer panelizer node faq defaults'] = array(
     'name' => 'administer panelizer node faq defaults',
