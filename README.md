@@ -34,11 +34,11 @@ in the VM, run `vagrant ssh` from the box directory after set up
 
 Note: The directories below assume you are running gem from your local computer. 
 
-If running from DrupalVM, please substitute `/var/www/labp` for `~/Projects/business_portal/docroot`.
+If running from Outside DrupalVM, please substitute `/var/www/labp` with `~/Projects/business_portal/docroot`.
 
 ### Step 1. Install bundler
 ```bash
-cd ~/Projects/business_portal/docroot/profiles/labp/themes/la/lasbptheme
+cd /var/www/labp/docroot/profiles/labp/themes/la/lasbptheme
 gem install bundler
 ```
 Please use `sudo gem install bundler` when running on DrupalVM
@@ -57,6 +57,8 @@ bundle exec compass clean
 ``` bash
 bundle exec compass compile
 ```
+### Step 5. Configure Solr
+- `bash /var/www/labp/assets/configure-solr.sh`
 
 ## Bundler and Zen Grids known compile issues
 
@@ -99,7 +101,6 @@ All steps below are assumed to be run from the command line
 - Enter `sites/g/files/wph521/f` for the directory
 
 ### Step 7. Change back to the development solr server
-- `bash ~/Projects/business_portal/assets/configure-solr.sh`
 - Go to `admin/config/search/search_api`
 - Enable `LABP VM` by clicking `Enable` under `Operations`
 - Disable `Acquia Search` by clicking `Disable` under `Operations`
