@@ -17,29 +17,28 @@
   .field-collection-container { margin-bottom: 0;}
 
   /***************************
-  *     Views & Search
-  ****************************/
-
-  /***************************
   *        Layout
   ***************************/
 
-  .panel-col-first {
-    width: 30%;
-    @media all and (max-width: 720px) {
-      float: none;
-      width: 100%;
-    }
+  $zen-grid-width: 100%;
+  $zen-column-count:  10!global;
+
+  .center-wrapper {
+    @include zen-grid-container();
+    @include zen-grid-item-base();
+    width: 100%;
+    padding-left: 0;
   }
 
-  .panel-col-last {
-    width: 70%;
-    margin-left: -3px;
-
-    .inside { padding-left: 30px; }
-    @media all and (max-width: 720px) {
-      float: none;
-      width: 100%;
+  @include window_size(tab-wide-up) {
+    .panel-col-first  { @include zen-grid-item (3, 1); }
+    .panel-col-last { @include zen-grid-item (7, 4); }
+  }
+  @include window_size(desktop){
+    .panel-col-first { @include zen-grid-item (3, 1); }
+    .panel-col-last {
+      @include zen-grid-item (7, 4);
+      .inside { padding: 1.5em 0 2em 30px; }
     }
   }
 }

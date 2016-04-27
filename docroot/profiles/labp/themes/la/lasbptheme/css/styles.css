@@ -183,6 +183,17 @@
   margin-bottom: 2em;
   background: white;
 }
+/* line 137, ../sass/base/_mixins.scss */
+.style_variant.light_grey .panel__intro_header,
+.style_variant.light_grey .hero__headline,
+.style_variant.light_grey .hero__description {
+  color: #163549;
+}
+/* line 141, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line_thin,
+.style_variant.light_grey hr.hero__line {
+  background: white;
+}
 
 /******************************
 *      Buttons
@@ -204,6 +215,7 @@ the fonts are being added.
 /* line 26, ../sass/base/_typography.scss */
 body {
   color: #0F2940;
+  line-height: 1.3;
 }
 
 /* Wrapper width mixin for containers */
@@ -378,6 +390,17 @@ body {
 /* line 88, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line {
   margin-bottom: 2em;
+  background: white;
+}
+/* line 137, ../sass/base/_mixins.scss */
+.style_variant.light_grey .panel__intro_header,
+.style_variant.light_grey .hero__headline,
+.style_variant.light_grey .hero__description {
+  color: #163549;
+}
+/* line 141, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line_thin,
+.style_variant.light_grey hr.hero__line {
   background: white;
 }
 
@@ -1361,9 +1384,6 @@ table {
 .panel-2col-stacked {
   background: #f2f2f2;
   /***************************
-  *     Views & Search
-  ****************************/
-  /***************************
   *        Layout
   ***************************/
 }
@@ -1383,38 +1403,68 @@ table {
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 27, ../sass/layouts/_panels.scss */
-.panel-2col-stacked .panel-col-first {
-  width: 30%;
+/* line 26, ../sass/layouts/_panels.scss */
+.panel-2col-stacked .center-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  width: 100%;
+  padding-left: 0;
 }
-@media all and (max-width: 720px) {
-  /* line 27, ../sass/layouts/_panels.scss */
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.panel-2col-stacked .center-wrapper:before, .panel-2col-stacked .center-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.panel-2col-stacked .center-wrapper:after {
+  clear: both;
+}
+@media all and (min-width: 720px) {
+  /* line 34, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
-    float: none;
-    width: 100%;
+    float: left;
+    width: 30%;
+    margin-left: 0%;
+    margin-right: -30%;
   }
-}
-/* line 35, ../sass/layouts/_panels.scss */
-.panel-2col-stacked .panel-col-last {
-  width: 70%;
-  margin-left: -3px;
-}
-/* line 39, ../sass/layouts/_panels.scss */
-.panel-2col-stacked .panel-col-last .inside {
-  padding-left: 30px;
-}
-@media all and (max-width: 720px) {
   /* line 35, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
-    float: none;
-    width: 100%;
+    float: left;
+    width: 70%;
+    margin-left: 30%;
+    margin-right: -100%;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 38, ../sass/layouts/_panels.scss */
+  .panel-2col-stacked .panel-col-first {
+    float: left;
+    width: 30%;
+    margin-left: 0%;
+    margin-right: -30%;
+  }
+  /* line 39, ../sass/layouts/_panels.scss */
+  .panel-2col-stacked .panel-col-last {
+    float: left;
+    width: 70%;
+    margin-left: 30%;
+    margin-right: -100%;
+  }
+  /* line 41, ../sass/layouts/_panels.scss */
+  .panel-2col-stacked .panel-col-last .inside {
+    padding: 1.5em 0 2em 30px;
   }
 }
 
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 50, ../sass/layouts/_panels.scss */
+/* line 49, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -2683,50 +2733,50 @@ hr.hero__line {
   /*========== Layout ======== */
 }
 /* line 7, ../sass/components/hero/_hero__half-width.scss */
-.hero__layout--half .hero__icon {
+.hero__layout--half .hero__header--inner {
   margin: 6em 0 0;
 }
-/* line 10, ../sass/components/hero/_hero__half-width.scss */
+/* line 13, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__icon img {
   width: 100%;
   max-width: 100px;
 }
-/* line 16, ../sass/components/hero/_hero__half-width.scss */
+/* line 19, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__bottom_align--bn {
   padding: 400px 0 0 100px;
   max-width: 250px;
 }
-/* line 20, ../sass/components/hero/_hero__half-width.scss */
+/* line 23, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .right {
   padding-left: 30px;
 }
-/* line 23, ../sass/components/hero/_hero__half-width.scss */
+/* line 26, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline {
   font-size: 1.8em;
   margin: 1em 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 23, ../sass/components/hero/_hero__half-width.scss */
+  /* line 26, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline {
     font-size: 2.143em;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 23, ../sass/components/hero/_hero__half-width.scss */
+  /* line 26, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline {
     font-size: 2.6em;
   }
 }
-/* line 34, ../sass/components/hero/_hero__half-width.scss */
+/* line 37, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
-/* line 39, ../sass/components/hero/_hero__half-width.scss */
+/* line 42, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay {
   padding-bottom: 4em;
 }
-/* line 51, ../sass/components/hero/_hero__half-width.scss */
+/* line 54, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   padding-left: 10px;
   padding-right: 10px;
@@ -2748,14 +2798,14 @@ hr.hero__line {
   clear: both;
 }
 @media all and (min-width: 720px) {
-  /* line 60, ../sass/components/hero/_hero__half-width.scss */
+  /* line 63, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 61, ../sass/components/hero/_hero__half-width.scss */
+  /* line 64, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 50%;
@@ -2764,14 +2814,14 @@ hr.hero__line {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 64, ../sass/components/hero/_hero__half-width.scss */
+  /* line 67, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 65, ../sass/components/hero/_hero__half-width.scss */
+  /* line 68, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 50%;
@@ -2863,11 +2913,17 @@ hr.hero__line {
   }
 }
 
-/* line 5, ../sass/components/_landing_page_views.scss */
+/* line 8, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-name,
 .view-id-bp_featured_sub_page .views-field-title,
 .view-bp-featured-resource-page .views-field-name,
-.view-bp-featured-resource-page .views-field-title {
+.view-bp-featured-resource-page .views-field-title,
+.view-departments .views-field-name,
+.view-departments .views-field-title,
+.view-labp-service-center .views-field-name,
+.view-labp-service-center .views-field-title,
+.view-sbp-resource-incentives .views-field-name,
+.view-sbp-resource-incentives .views-field-title {
   font-family: "Merriweather", serif;
   font-weight: 400;
   width: 70%;
@@ -2876,23 +2932,39 @@ hr.hero__line {
   display: inline-block;
 }
 @media all and (min-width: 960px) {
-  /* line 5, ../sass/components/_landing_page_views.scss */
+  /* line 8, ../sass/components/_landing_page_views.scss */
   .view-id-bp_featured_sub_page .views-field-name,
   .view-id-bp_featured_sub_page .views-field-title,
   .view-bp-featured-resource-page .views-field-name,
-  .view-bp-featured-resource-page .views-field-title {
+  .view-bp-featured-resource-page .views-field-title,
+  .view-departments .views-field-name,
+  .view-departments .views-field-title,
+  .view-labp-service-center .views-field-name,
+  .view-labp-service-center .views-field-title,
+  .view-sbp-resource-incentives .views-field-name,
+  .view-sbp-resource-incentives .views-field-title {
     font-size: 1.571em;
   }
 }
-/* line 18, ../sass/components/_landing_page_views.scss */
+/* line 21, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-row,
-.view-bp-featured-resource-page .views-row {
+.view-bp-featured-resource-page .views-row,
+.view-departments .views-row,
+.view-labp-service-center .views-row,
+.view-sbp-resource-incentives .views-row {
   padding: 1em 0 2em;
-  border-bottom: solid 1px;
+  border-bottom: solid 1px #6BC3F3;
+}
+/* line 24, ../sass/components/_landing_page_views.scss */
+.view-id-bp_featured_sub_page .views-row:last-child,
+.view-bp-featured-resource-page .views-row:last-child,
+.view-departments .views-row:last-child,
+.view-labp-service-center .views-row:last-child,
+.view-sbp-resource-incentives .views-row:last-child {
+  border-bottom: none;
 }
 
-/**********************************/
-/* line 28, ../sass/components/_landing_page_views.scss */
+/* line 32, ../sass/components/_landing_page_views.scss */
 .pane-bp-featured-sub-page,
 .pane-bp-featured-resource-page,
 .pane-terms-definitions {
@@ -2900,7 +2972,7 @@ hr.hero__line {
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 28, ../sass/components/_landing_page_views.scss */
+  /* line 32, ../sass/components/_landing_page_views.scss */
   .pane-bp-featured-sub-page,
   .pane-bp-featured-resource-page,
   .pane-terms-definitions {
@@ -2909,12 +2981,13 @@ hr.hero__line {
     *zoom: 1;
   }
 }
-
-/* line 42, ../sass/components/_landing_page_views.scss */
+/* line 43, ../sass/components/_landing_page_views.scss */
 .pane-bp-featured-sub-page h2,
+.pane-bp-featured-sub-page h3,
 .pane-bp-featured-resource-page h2,
-.pane-terms-definitions h3,
-.pane-labp-service-center h2 {
+.pane-bp-featured-resource-page h3,
+.pane-terms-definitions h2,
+.pane-terms-definitions h3 {
   font-family: Merriweather, serif;
   font-weight: normal;
   font-size: 1.429em;
@@ -2924,26 +2997,28 @@ hr.hero__line {
   padding: 0px 10px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 42, ../sass/components/_landing_page_views.scss */
+  /* line 43, ../sass/components/_landing_page_views.scss */
   .pane-bp-featured-sub-page h2,
+  .pane-bp-featured-sub-page h3,
   .pane-bp-featured-resource-page h2,
-  .pane-terms-definitions h3,
-  .pane-labp-service-center h2 {
+  .pane-bp-featured-resource-page h3,
+  .pane-terms-definitions h2,
+  .pane-terms-definitions h3 {
     font-size: 2em;
   }
 }
 
-/* line 61, ../sass/components/_landing_page_views.scss */
+/* line 63, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node,
 .view-id-bp_featured_sub_page .views-field-field-document,
 .view-bp-featured-resource-page .views-field-view-node,
 .view-bp-featured-resource-page .views-field-field-document,
-.view-id-departments .views-field-view-node {
-  width: 10%;
+.view-id-departments .views-field-view-node,
+.view-id-departments .views-field-field-document {
+  width: 20%;
   display: inline-block;
 }
-
-/* line 70, ../sass/components/_landing_page_views.scss */
+/* line 68, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node a,
 .view-bp-featured-resource-page .views-field-view-node a,
 .view-id-departments .views-field-view-node a {
@@ -2957,10 +3032,10 @@ hr.hero__line {
   float: right;
   margin: 0 0 0 6px;
 }
-
-/* line 77, ../sass/components/_landing_page_views.scss */
+/* line 72, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-field-document a,
-.view-bp-featured-resource-page .views-field-field-document a {
+.view-bp-featured-resource-page .views-field-field-document a,
+.view-id-departments .views-field-field-document a {
   text-indent: -9999px;
   background-image: url("../images/icon_download.png");
   background-repeat: no-repeat;
@@ -2971,25 +3046,24 @@ hr.hero__line {
   float: right;
   margin: 0 0 0 6px;
 }
-
-/* line 83, ../sass/components/_landing_page_views.scss */
+/* line 77, ../sass/components/_landing_page_views.scss */
 .view-id-bp_featured_sub_page .views-field-body,
+.view-id-bp_featured_sub_page .views-field-field-description,
 .view-bp-featured-resource-page .views-field-body,
 .view-bp-featured-resource-page .views-field-field-description,
-.view-id-terms_definitions .views-field-description,
-.view-id-departments .views-field-field-description,
-.view-id-labp_service_center .views-field-body {
+.view-id-departments .views-field-body,
+.view-id-departments .views-field-field-description {
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 83, ../sass/components/_landing_page_views.scss */
+  /* line 77, ../sass/components/_landing_page_views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
+  .view-id-bp_featured_sub_page .views-field-field-description,
   .view-bp-featured-resource-page .views-field-body,
   .view-bp-featured-resource-page .views-field-field-description,
-  .view-id-terms_definitions .views-field-description,
-  .view-id-departments .views-field-field-description,
-  .view-id-labp_service_center .views-field-body {
+  .view-id-departments .views-field-body,
+  .view-id-departments .views-field-field-description {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
@@ -2997,68 +3071,63 @@ hr.hero__line {
 }
 
 /** Business source center stuff only **/
-/* line 100, ../sass/components/_landing_page_views.scss */
-.view-id-labp_service_center .views-field-field-map,
-.view-id-labp_service_center .views-field-field-services,
-.view-id-labp_service_center .views-field-field-languages {
-  width: 45%;
-  display: inline;
-  float: left;
+/* line 94, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-label {
+  font-weight: 700;
+  margin: 20px 0 0 0;
+  padding: 0 0 1em;
+  width: 85%;
+  font-size: 1.143em;
+  line-height: 1.35em;
 }
-
-/* line 107, ../sass/components/_landing_page_views.scss */
-.view-id-labp_service_center .views-field-field-map img {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-/* line 111, ../sass/components/_landing_page_views.scss */
-.view-id-labp_service_center .views-field-field-address,
-.view-id-labp_service_center .views-field-field-email,
-.view-id-labp_service_center .views-field-field-phone {
-  width: 45%;
-  display: inline;
-  float: right;
-}
-
-/* line 120, ../sass/components/_landing_page_views.scss */
-.view-id-labp_service_center .views-field-field-address .field-content,
-.view-id-labp_service_center .views-field-field-email .field-content,
-.view-id-labp_service_center .views-field-field-phone .field-content,
-.view-id-labp_service_center .views-field-field-services .field-content,
-.view-id-labp_service_center .views-field-field-languages .field-content {
+/* line 102, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .field-content {
   line-height: 1.25em;
   width: 90%;
   margin: 0 0 20px 0;
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 120, ../sass/components/_landing_page_views.scss */
-  .view-id-labp_service_center .views-field-field-address .field-content,
-  .view-id-labp_service_center .views-field-field-email .field-content,
-  .view-id-labp_service_center .views-field-field-phone .field-content,
-  .view-id-labp_service_center .views-field-field-services .field-content,
-  .view-id-labp_service_center .views-field-field-languages .field-content {
+  /* line 102, ../sass/components/_landing_page_views.scss */
+  .view-id-labp_service_center .field-content {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
   }
 }
-
-/* line 136, ../sass/components/_landing_page_views.scss */
-.view-id-labp_service_center .views-label {
-  font-weight: 700;
-  margin: 20px 0 0 0;
-  padding: 0;
+/* line 115, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-services,
+.view-id-labp_service_center .views-field-field-languages {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
 }
-@media all and (min-width: 960px) {
-  /* line 136, ../sass/components/_landing_page_views.scss */
-  .view-id-labp_service_center .views-label {
-    width: 85%;
-    font-size: 1.143em;
-    line-height: 1.35em;
-  }
+/* line 122, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-map {
+  width: 45%;
+  float: left;
+}
+/* line 125, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-map img {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* line 130, ../sass/components/_landing_page_views.scss */
+.view-id-labp_service_center .views-field-field-address,
+.view-id-labp_service_center .views-field-field-email,
+.view-id-labp_service_center .views-field-field-phone {
+  width: 45%;
+  display: inline-block;
 }
 
+/* line 141, ../sass/components/_landing_page_views.scss */
+.node-type-sbp-department .field-items {
+  width: 65%;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.143em;
+  line-height: 1.35em;
+}
+
+/***********************************************************/
 /**
  *@file
  *
@@ -4530,7 +4599,7 @@ body.node-type-sbp-starter-kit .node-teaser {
   margin: 1em 0;
   cursor: pointer;
 }
-/* line 153, ../sass/base/_mixins.scss */
+/* line 159, ../sass/base/_mixins.scss */
 .panel__button a {
   color: #163549;
 }
