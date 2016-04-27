@@ -1,14 +1,9 @@
 <?php
 /**
  * @file
- * Code for the LABP Search feature.
+ * Code for the LABP Search.
  */
 
-include_once 'labp_search.features.inc';
-
-/* This code should go inside a custom module, changing "MYMODULE" to the 
- * module's name.
- */
 function labp_search_search_api_index_load($indexes) {
   // Assume that we need to override and force read-only mode.
   $set_read_only = TRUE;
