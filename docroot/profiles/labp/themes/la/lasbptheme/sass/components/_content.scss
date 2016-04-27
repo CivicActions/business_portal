@@ -7,14 +7,8 @@
  */
 
 #content {
-
-    @include window_size(desktop){
-        border: 0px solid red;
-        background-image: url("../images/sublevel_left_menu_bg.png");
-        background-repeat: repeat-y;
-        margin:0;
-        padding: 0;
-   }
+    background-image: url("../images/sublevel_left_menu_bg_long.png");
+    background-repeat: repeat-y;
 }
 
 

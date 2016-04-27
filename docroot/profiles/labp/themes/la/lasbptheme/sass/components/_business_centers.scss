@@ -35,6 +35,9 @@
 
 .business_source__map_image{
     border: 1px solid rgba(0,0,0,0.3);
+    @include window_size(desktop){
+        width: 300px;
+    }
 
 }
 .business_source__map_block{
@@ -64,6 +67,9 @@
     margin:20px 0 0 0;
     @include window_size(tab-wide-up){
         margin:0 0 0 20px;
+    }
+    @include window_size(desktop){
+        margin:0 0 0 0;
     }
 }
 

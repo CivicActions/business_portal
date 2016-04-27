@@ -2003,32 +2003,27 @@ tr.selected td {
  * Content component.
  *
  */
-@media all and (min-width: 960px) {
-  /* line 9, ../sass/components/_content.scss */
-  #content {
-    border: 0px solid red;
-    background-image: url("../images/sublevel_left_menu_bg.png");
-    background-repeat: repeat-y;
-    margin: 0;
-    padding: 0;
-  }
+/* line 9, ../sass/components/_content.scss */
+#content {
+  background-image: url("../images/sublevel_left_menu_bg_long.png");
+  background-repeat: repeat-y;
 }
 
-/* line 21, ../sass/components/_content.scss */
+/* line 15, ../sass/components/_content.scss */
 .page__title {
   font-family: Merriweather, serif;
   font-weight: 900;
   font-size: 2.250em;
 }
 
-/* line 28, ../sass/components/_content.scss */
+/* line 22, ../sass/components/_content.scss */
 .page__content_wrapper {
   margin: 0;
   padding: 0;
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 28, ../sass/components/_content.scss */
+  /* line 22, ../sass/components/_content.scss */
   .page__content_wrapper {
     width: 960px;
     margin-left: auto;
@@ -2039,7 +2034,7 @@ tr.selected td {
   }
 }
 
-/* line 44, ../sass/components/_content.scss */
+/* line 38, ../sass/components/_content.scss */
 h2 {
   font-family: Merriweather, serif;
   font-weight: normal;
@@ -2048,13 +2043,13 @@ h2 {
   color: #0F2940;
 }
 @media all and (min-width: 960px) {
-  /* line 44, ../sass/components/_content.scss */
+  /* line 38, ../sass/components/_content.scss */
   h2 {
     font-size: 2em;
   }
 }
 
-/* line 56, ../sass/components/_content.scss */
+/* line 50, ../sass/components/_content.scss */
 .page__resource_header {
   border-top: 1px solid #6BC3F3;
   padding: 10px 0 0 0;
@@ -2062,7 +2057,7 @@ h2 {
   *zoom: 1;
 }
 
-/* line 62, ../sass/components/_content.scss */
+/* line 56, ../sass/components/_content.scss */
 h3 {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -2074,20 +2069,20 @@ h3 {
   line-height: 1.2em;
 }
 @media all and (min-width: 960px) {
-  /* line 62, ../sass/components/_content.scss */
+  /* line 56, ../sass/components/_content.scss */
   h3 {
     font-size: 1.571em;
   }
 }
 
-/* line 81, ../sass/components/_content.scss */
+/* line 75, ../sass/components/_content.scss */
 .page__content_col_1 {
   border: 0px solid red;
   padding: 0 25px 0 25px 0;
   background-color: #f2f2f2;
 }
 @media all and (min-width: 960px) {
-  /* line 81, ../sass/components/_content.scss */
+  /* line 75, ../sass/components/_content.scss */
   .page__content_col_1 {
     width: 250px;
     float: left;
@@ -2095,33 +2090,33 @@ h3 {
   }
 }
 
-/* line 95, ../sass/components/_content.scss */
+/* line 89, ../sass/components/_content.scss */
 .page__content_col_2 {
   border: 0px solid red;
   padding: 0 0 300px 0;
   background-color: white;
 }
 @media all and (min-width: 960px) {
-  /* line 95, ../sass/components/_content.scss */
+  /* line 89, ../sass/components/_content.scss */
   .page__content_col_2 {
     float: left;
     width: 700px;
   }
 }
 
-/* line 110, ../sass/components/_content.scss */
+/* line 104, ../sass/components/_content.scss */
 .page__content_col_2_wrapper {
   padding: 10px 30px 0 30px;
 }
 
-/* line 115, ../sass/components/_content.scss */
+/* line 109, ../sass/components/_content.scss */
 .page__content_paragraph {
   border: 0px solid red;
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 115, ../sass/components/_content.scss */
+  /* line 109, ../sass/components/_content.scss */
   .page__content_paragraph {
     width: 85%;
     font-size: 1.143em;
@@ -2129,7 +2124,7 @@ h3 {
   }
 }
 
-/* line 126, ../sass/components/_content.scss */
+/* line 120, ../sass/components/_content.scss */
 .page__content_paragraph--detail_page {
   border: 0px solid red;
   line-height: 1.25em;
@@ -2137,7 +2132,7 @@ h3 {
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 126, ../sass/components/_content.scss */
+  /* line 120, ../sass/components/_content.scss */
   .page__content_paragraph--detail_page {
     width: 85%;
     font-size: 1.143em;
@@ -2145,7 +2140,7 @@ h3 {
   }
 }
 
-/* line 139, ../sass/components/_content.scss */
+/* line 133, ../sass/components/_content.scss */
 .page__content_paragraph_strong--detail_page {
   border: 0px solid red;
   line-height: 1.25em;
@@ -2154,7 +2149,7 @@ h3 {
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 139, ../sass/components/_content.scss */
+  /* line 133, ../sass/components/_content.scss */
   .page__content_paragraph_strong--detail_page {
     width: 85%;
     font-size: 1.143em;
@@ -2162,7 +2157,7 @@ h3 {
   }
 }
 
-/* line 153, ../sass/components/_content.scss */
+/* line 147, ../sass/components/_content.scss */
 .page__content_ul--detail_page {
   border: 0px solid red;
   line-height: 1.25em;
@@ -2170,7 +2165,7 @@ h3 {
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 153, ../sass/components/_content.scss */
+  /* line 147, ../sass/components/_content.scss */
   .page__content_ul--detail_page {
     width: 85%;
     font-size: 1.143em;
@@ -2178,13 +2173,13 @@ h3 {
   }
 }
 
-/* line 167, ../sass/components/_content.scss */
+/* line 161, ../sass/components/_content.scss */
 .page__content_ul--detail_page li {
   margin: 0;
   padding: 0;
 }
 
-/* line 183, ../sass/components/_content.scss */
+/* line 177, ../sass/components/_content.scss */
 .page__icon--view {
   background-image: url("../images/subsections/icon_view.png");
   background-repeat: no-repeat;
@@ -2196,7 +2191,7 @@ h3 {
   margin: 0 0 0 6px;
 }
 
-/* line 187, ../sass/components/_content.scss */
+/* line 181, ../sass/components/_content.scss */
 .page__icon--download {
   background-image: url("../images/subsections/icon_download.png");
   background-repeat: no-repeat;
@@ -3065,51 +3060,63 @@ fieldset {
 .business_source__map_image {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
+@media all and (min-width: 960px) {
+  /* line 36, ../sass/components/_business_centers.scss */
+  .business_source__map_image {
+    width: 300px;
+  }
+}
 
-/* line 40, ../sass/components/_business_centers.scss */
+/* line 43, ../sass/components/_business_centers.scss */
 .business_source__map_block {
   border: 0px solid red;
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 45, ../sass/components/_business_centers.scss */
+/* line 48, ../sass/components/_business_centers.scss */
 .business_source__services_block {
   border-top: 1px solid #6BC3F3;
   overflow: hidden;
   *zoom: 1;
 }
 @media all and (min-width: 720px) {
-  /* line 45, ../sass/components/_business_centers.scss */
+  /* line 48, ../sass/components/_business_centers.scss */
   .business_source__services_block {
     border: 0;
   }
 }
 
-/* line 56, ../sass/components/_business_centers.scss */
+/* line 59, ../sass/components/_business_centers.scss */
 .business_source__wrapper_50 {
   width: 99%;
 }
 @media all and (min-width: 720px) {
-  /* line 56, ../sass/components/_business_centers.scss */
+  /* line 59, ../sass/components/_business_centers.scss */
   .business_source__wrapper_50 {
     width: 50%;
     float: left;
   }
 }
 
-/* line 63, ../sass/components/_business_centers.scss */
+/* line 66, ../sass/components/_business_centers.scss */
 .business_source__margin_wrapper {
   margin: 20px 0 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 63, ../sass/components/_business_centers.scss */
+  /* line 66, ../sass/components/_business_centers.scss */
   .business_source__margin_wrapper {
     margin: 0 0 0 20px;
   }
 }
+@media all and (min-width: 960px) {
+  /* line 66, ../sass/components/_business_centers.scss */
+  .business_source__margin_wrapper {
+    margin: 0 0 0 0;
+  }
+}
 
-/* line 70, ../sass/components/_business_centers.scss */
+/* line 76, ../sass/components/_business_centers.scss */
 .business_source__address_paragraph {
   border: 0px solid red;
   line-height: 1.25em;
@@ -3118,7 +3125,7 @@ fieldset {
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 70, ../sass/components/_business_centers.scss */
+  /* line 76, ../sass/components/_business_centers.scss */
   .business_source__address_paragraph {
     width: 85%;
     font-size: 1.143em;
