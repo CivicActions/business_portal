@@ -633,7 +633,7 @@ wiz.views.NavForContext = Backbone.View.extend({
   className: "wizard__nav_context",
   template: _.template($('#wizard-nav-contextual-help-template').html()),
   events:  {
-    "click .wizard__address_back_button": "backArrowClick"
+    "click .wizard__arrow-up": "backArrowClick"
   },
   backArrowClick: function() {
 
