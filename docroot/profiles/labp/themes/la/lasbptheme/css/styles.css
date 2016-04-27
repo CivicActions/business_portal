@@ -2135,7 +2135,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1461165606');
+  background-image: url('../images/progress.gif?1459798895');
 }
 
 /**
@@ -3140,6 +3140,7 @@ hr.hero__line {
   border: 0px solid red;
   margin: 0 0 4px 0;
   padding: 0px;
+  font-weight: 700;
 }
 @media all and (min-width: 960px) {
   /* line 103, ../sass/components/wizard/_wizard.scss */
@@ -3148,7 +3149,7 @@ hr.hero__line {
   }
 }
 
-/* line 116, ../sass/components/wizard/_wizard.scss */
+/* line 117, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-intro {
   font-weight: 700;
   font-size: 1em;
@@ -3159,13 +3160,13 @@ hr.hero__line {
   font-size: 1.357em;
 }
 @media all and (min-width: 960px) {
-  /* line 116, ../sass/components/wizard/_wizard.scss */
+  /* line 117, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-intro {
     font-size: 2.571em;
   }
 }
 
-/* line 132, ../sass/components/wizard/_wizard.scss */
+/* line 133, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -3175,7 +3176,7 @@ hr.hero__line {
   margin: 0;
 }
 
-/* line 140, ../sass/components/wizard/_wizard.scss */
+/* line 141, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3186,14 +3187,14 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 140, ../sass/components/wizard/_wizard.scss */
+  /* line 141, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
 
-/* line 154, ../sass/components/wizard/_wizard.scss */
+/* line 155, ../sass/components/wizard/_wizard.scss */
 .wizard__question--help {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3204,20 +3205,20 @@ hr.hero__line {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 154, ../sass/components/wizard/_wizard.scss */
+  /* line 155, ../sass/components/wizard/_wizard.scss */
   .wizard__question--help {
     font-size: 2em;
     width: 70%;
   }
 }
 
-/* line 171, ../sass/components/wizard/_wizard.scss */
+/* line 172, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0px solid white;
   margin: 30px 0 30px 0;
 }
 
-/* line 176, ../sass/components/wizard/_wizard.scss */
+/* line 177, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -3232,30 +3233,30 @@ hr.hero__line {
   cursor: pointer;
 }
 
-/* line 179, ../sass/components/wizard/_wizard.scss */
+/* line 180, ../sass/components/wizard/_wizard.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
 
-/* line 183, ../sass/components/wizard/_wizard.scss */
+/* line 184, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   background-color: #0f2940;
 }
 
-/* line 186, ../sass/components/wizard/_wizard.scss */
+/* line 187, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   text-decoration: none;
   color: white;
 }
 
-/* line 190, ../sass/components/wizard/_wizard.scss */
+/* line 191, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 200, ../sass/components/wizard/_wizard.scss */
+/* line 201, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   margin: 15px 60px 20px 20px;
@@ -3263,14 +3264,14 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 200, ../sass/components/wizard/_wizard.scss */
+  /* line 201, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 200, ../sass/components/wizard/_wizard.scss */
+  /* line 201, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 80%;
     font-size: 1.357em;
@@ -3278,7 +3279,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 219, ../sass/components/wizard/_wizard.scss */
+/* line 220, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
   width: 40px;
   height: 40px;
@@ -3286,7 +3287,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 230, ../sass/components/wizard/_wizard.scss */
+/* line 231, ../sass/components/wizard/_wizard.scss */
 .wizard__icon_help {
   width: 40px;
   height: 40px;
@@ -3294,7 +3295,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 241, ../sass/components/wizard/_wizard.scss */
+/* line 242, ../sass/components/wizard/_wizard.scss */
 .wizard__header_block--help {
   border: 0px solid red;
   margin: 0;
@@ -3302,46 +3303,46 @@ a.wizard__button--selected {
   overflow: hidden;
 }
 
-/* line 249, ../sass/components/wizard/_wizard.scss */
+/* line 250, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   margin: 0 0 0 0;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 249, ../sass/components/wizard/_wizard.scss */
+  /* line 250, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
     width: 95%;
   }
 }
 
-/* line 258, ../sass/components/wizard/_wizard.scss */
+/* line 259, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 258, ../sass/components/wizard/_wizard.scss */
+  /* line 259, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 269, ../sass/components/wizard/_wizard.scss */
+/* line 270, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 269, ../sass/components/wizard/_wizard.scss */
+  /* line 270, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
 
-/* line 278, ../sass/components/wizard/_wizard.scss */
+/* line 279, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -3351,7 +3352,7 @@ a.wizard__button--selected {
   margin: 0;
 }
 
-/* line 3, ../sass/components/wizard/_wizard_start.scss */
+/* line 2, ../sass/components/wizard/_wizard_start.scss */
 .wizard__header--start {
   font-weight: 700;
   font-size: 1em;
@@ -3365,14 +3366,14 @@ a.wizard__button--selected {
   background-position: 150px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 3, ../sass/components/wizard/_wizard_start.scss */
+  /* line 2, ../sass/components/wizard/_wizard_start.scss */
   .wizard__header--start {
     padding: 35px 25px 0 0;
     margin: 60px 0 10px 0;
   }
 }
 
-/* line 20, ../sass/components/wizard/_wizard_start.scss */
+/* line 19, ../sass/components/wizard/_wizard_start.scss */
 .wizard__start-block {
   display: inline-block;
   border: 0px solid black;
@@ -3380,13 +3381,13 @@ a.wizard__button--selected {
   margin: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 20, ../sass/components/wizard/_wizard_start.scss */
+  /* line 19, ../sass/components/wizard/_wizard_start.scss */
   .wizard__start-block {
     margin: 0;
   }
 }
 
-/* line 33, ../sass/components/wizard/_wizard_start.scss */
+/* line 32, ../sass/components/wizard/_wizard_start.scss */
 .wizard__header--title-start-super {
   border: 0px solid white;
   color: white;
@@ -3395,7 +3396,7 @@ a.wizard__button--selected {
   padding: 0;
 }
 
-/* line 42, ../sass/components/wizard/_wizard_start.scss */
+/* line 41, ../sass/components/wizard/_wizard_start.scss */
 .wizard__header--title-start {
   border: 0px solid white;
   font-size: 2.429em;
@@ -3404,13 +3405,13 @@ a.wizard__button--selected {
   margin: 0 0 18px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 42, ../sass/components/wizard/_wizard_start.scss */
+  /* line 41, ../sass/components/wizard/_wizard_start.scss */
   .wizard__header--title-start {
     font-size: 3em;
   }
 }
 
-/* line 53, ../sass/components/wizard/_wizard_start.scss */
+/* line 52, ../sass/components/wizard/_wizard_start.scss */
 .wizard__copy--section_start {
   padding: 0;
   width: 85%;
@@ -3419,14 +3420,14 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 53, ../sass/components/wizard/_wizard_start.scss */
+  /* line 52, ../sass/components/wizard/_wizard_start.scss */
   .wizard__copy--section_start {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 53, ../sass/components/wizard/_wizard_start.scss */
+  /* line 52, ../sass/components/wizard/_wizard_start.scss */
   .wizard__copy--section_start {
     width: 80%;
     font-size: 1.357em;
@@ -3434,7 +3435,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 73, ../sass/components/wizard/_wizard_start.scss */
+/* line 72, ../sass/components/wizard/_wizard_start.scss */
 .wizard__start_table_of_contents {
   font-size: 0.929em;
   font-weight: 700;
@@ -3444,7 +3445,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 73, ../sass/components/wizard/_wizard_start.scss */
+  /* line 72, ../sass/components/wizard/_wizard_start.scss */
   .wizard__start_table_of_contents {
     border: 0px solid red;
     margin: 0;
@@ -3452,14 +3453,14 @@ a.wizard__button--selected {
   }
 }
 
-/* line 89, ../sass/components/wizard/_wizard_start.scss */
+/* line 88, ../sass/components/wizard/_wizard_start.scss */
 .wizard__start_table_of_contents_item {
   margin: 0;
   padding: 0;
   margin: 2px 0 2px 0;
 }
 
-/* line 95, ../sass/components/wizard/_wizard_start.scss */
+/* line 94, ../sass/components/wizard/_wizard_start.scss */
 .wizard__copy--time-estimate {
   border: 0px solid red;
   width: 80%;
@@ -3468,7 +3469,7 @@ a.wizard__button--selected {
   font-size: 0.857em;
 }
 @media all and (min-width: 720px) {
-  /* line 95, ../sass/components/wizard/_wizard_start.scss */
+  /* line 94, ../sass/components/wizard/_wizard_start.scss */
   .wizard__copy--time-estimate {
     font-size: 1.2em;
   }
@@ -3482,7 +3483,7 @@ a.wizard__button--selected {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461525799');
+  background-image: url('../images/wizard/progress_bar.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3538,7 +3539,7 @@ a.wizard__button--selected {
 /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3548,7 +3549,7 @@ a.wizard__button--selected {
 /* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3558,7 +3559,7 @@ a.wizard__button--selected {
 /* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3658,7 +3659,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
 }
 
 /* line 222, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3669,7 +3670,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
 }
 
 /* line 229, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3680,7 +3681,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
 }
 
 /**********/
@@ -3689,7 +3690,7 @@ a.wizard__button--selected {
 /* line 250, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461525799');
+  background-image: url('../images/wizard/icon_close.png?1461530233');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -3752,7 +3753,7 @@ a.wizard__button--selected {
 
 /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461165606');
+  background-image: url('../images/wizard/arrow_up.png?1459798895');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -3772,7 +3773,7 @@ a.wizard__arrow-up {
 
 /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461525799');
+  background-image: url('../images/wizard/arrow_down.png?1461530233');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3790,12 +3791,12 @@ a.wizard__arrow-down {
 
 /* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
 }
 
 /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
   background-color: #99d5f5;
   display: block;
   float: right;
@@ -3805,7 +3806,7 @@ a.wizard__arrow-down.enabled {
   .wizard__arrow-up.enabled.left {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461525799');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3814,7 +3815,7 @@ a.wizard__arrow-down.enabled {
 
 /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
+  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -3876,7 +3877,7 @@ a.wizard__arrow-down.enabled {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461525799');
+  background-image: url('../images/wizard/icon_info.png?1461530233');
   background-size: 100%;
 }
 

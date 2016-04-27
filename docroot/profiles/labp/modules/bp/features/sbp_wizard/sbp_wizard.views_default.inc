@@ -234,6 +234,13 @@ function sbp_wizard_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
+  /* Field: Taxonomy term: Jurisdiction */
+  $handler->display->display_options['fields']['field_jurisdiction']['id'] = 'field_jurisdiction';
+  $handler->display->display_options['fields']['field_jurisdiction']['table'] = 'field_data_field_jurisdiction';
+  $handler->display->display_options['fields']['field_jurisdiction']['field'] = 'field_jurisdiction';
+  $handler->display->display_options['fields']['field_jurisdiction']['relationship'] = 'field_section_tid';
+  $handler->display->display_options['fields']['field_jurisdiction']['label'] = 'jurisdiction';
+  $handler->display->display_options['fields']['field_jurisdiction']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'business-portal-wizard';
   $export['sbp_wizard'] = $view;
 

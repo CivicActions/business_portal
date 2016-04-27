@@ -106,6 +106,7 @@ $wizard_left_margin: 25px;
   border: 0px solid red;
   margin:0 0 4px 0;
   padding: 0px;
+  font-weight: 700;
 
   @include window_size(desktop){
           font-size: 1.071em
