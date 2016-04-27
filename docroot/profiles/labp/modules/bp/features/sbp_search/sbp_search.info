@@ -16,7 +16,6 @@ features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[search_api_index][] = default_node_index
-features[search_api_server][] = labp_vm
 features[user_permission][] = administer search
 features[user_permission][] = administer search_api
 features[user_permission][] = search content
