@@ -154,7 +154,7 @@ wiz.views.App = wiz.extensions.View.extend({
           var header = new wiz.views.HeaderForContextual({model: this.model});
           this.$el.append(header.render().el);
 
-          var nav = new wiz.views.Nav({model: this.model});
+          var nav = new wiz.views.NavForContext({model: this.model});
           this.$el.append(nav.render().el);
           break;
 
@@ -454,7 +454,7 @@ wiz.views.Tip = Backbone.View.extend({
 
 wiz.views.Nav = Backbone.View.extend({
 
- className: "wizard__nav",
+  className: "wizard__nav",
 
   initialize: function() {
     Backbone.on("button:selected", this.forwardEnabled, this);
@@ -602,6 +602,36 @@ wiz.views.AddressForm = Backbone.View.extend({
 
 wiz.views.NavForAddress = Backbone.View.extend({
   template: _.template($('#wizard-nav-address-template').html()),
+  events:  {
+    "click .wizard__address_back_button": "backArrowClick"
+  },
+  backArrowClick: function() {
+
+    if (wiz.collections.chosen.length > 1) {
+      var last = wiz.collections.chosen.last();
+      wiz.collections.chosen.remove(last);
+
+      var view = new wiz.views.Wizard({
+        model:  wiz.collections.chosen.last()
+      });
+      wiz.instance.goto(view);
+    }
+
+    event.preventDefault();
+  },
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
+});
+
+/////////////////
+// NAV CONTEXT //
+/////////////////
+
+wiz.views.NavForContext = Backbone.View.extend({
+  className: "wizard__nav_context",
+  template: _.template($('#wizard-nav-contextual-help-template').html()),
   events:  {
     "click .wizard__address_back_button": "backArrowClick"
   },

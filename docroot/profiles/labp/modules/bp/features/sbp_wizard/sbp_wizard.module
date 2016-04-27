@@ -130,7 +130,7 @@ function sbp_wizard_block() {
 
   <script type="text/template" id="wizard-nav-contextual-help-template">
        <a href="#" class="wizard__arrow-up left enabled">Previous</a>
-      <span class="wizard__nav_label_help">Back to the question</span>
+      <div class="wizard__nav_label_help">Back to the question</div>
   </script>
   
   <script type="text/template" id="wizard-address-form-template">

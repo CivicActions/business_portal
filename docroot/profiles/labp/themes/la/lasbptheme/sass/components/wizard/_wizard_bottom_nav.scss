@@ -20,6 +20,27 @@
   }
 }
 
+.wizard__nav_context {
+  display: inline-block;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  margin:0 0 0 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  @include window_size(tab-wide-up){
+    width:85%;
+    margin: 10px 25px 0 25px;
+  }
+  @include window_size(desktop){
+    margin: 10px 0 0 0;
+    width:  95%;
+
+  }
+}
+
 .wizard__nav--full_width {
   display: inline-block;
   width: 100%;
@@ -76,18 +97,9 @@ a.wizard__arrow-down.enabled {
 
 .wizard__arrow-up.enabled.left {
   background-image: image-url("wizard/arrow_left_enabled_desktop.png");
-  background-color: $background-contextual-employeer-identification-number;
-  display: block;
+  display: inline;
   float: right;
-
-  @include window_size(tab-wide-up){
-    border: 0px solid red;
-    background-image:none;
-    background-image: image-url("wizard/nav_hr_bar_white.png");
-    width: 40px;
-    background-size: 42px 2px;
-    background-repeat:repeat-x;
-  }
+  margin-top: 7px;
 }
 
 .wizard__arrow-down--filled {
@@ -119,15 +131,13 @@ a.wizard__arrow-down.enabled {
 }
 // Copy next to the arrow on contextual help screens
 .wizard__nav_label_help{
-  color:$dark_blue;
+  color:$white;
   font-weight: 700;
-  float: right;
   font-size: 1em;
   border: 0px solid red;
-  margin: 0;
-  padding: 5px 0;
-  @include window_size(tab-wide-up){
-    color:$white;
-    padding: 15px 0 0 4px;
-  }
+  margin: 10px 10px 10px 10px;
+  width: 30%;
+  text-align: right;
+  float: right;
+  display: inline;
 }

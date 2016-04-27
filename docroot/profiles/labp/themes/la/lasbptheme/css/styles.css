@@ -4011,6 +4011,33 @@ a.wizard__button--selected {
 }
 
 /* line 23, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__nav_context {
+  display: inline-block;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  margin: 0 0 0 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+@media all and (min-width: 720px) {
+  /* line 23, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav_context {
+    width: 85%;
+    margin: 10px 25px 0 25px;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 23, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav_context {
+    margin: 10px 0 0 0;
+    width: 95%;
+  }
+}
+
+/* line 44, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav--full_width {
   display: inline-block;
   width: 100%;
@@ -4019,7 +4046,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 62, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
   background-image: url('../images/wizard/arrow_up.png?1459798895');
   background-repeat: no-repeat;
@@ -4033,13 +4060,13 @@ a.wizard__arrow-up {
   text-indent: -10000px;
 }
 @media all and (min-width: 720px) {
-  /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 62, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-up {
     margin: 0 10px 10px 0;
   }
 }
 
-/* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 79, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
   background-image: url('../images/wizard/arrow_down.png?1461530233');
   background-repeat: no-repeat;
@@ -4051,37 +4078,26 @@ a.wizard__arrow-down {
   text-indent: -10000px;
 }
 @media all and (min-width: 720px) {
-  /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 79, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down {
     margin: 0 0 24px 0;
   }
 }
 
-/* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
   background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
 }
 
-/* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 98, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
   background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
-  background-color: #99d5f5;
-  display: block;
+  display: inline;
   float: right;
-}
-@media all and (min-width: 720px) {
-  /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__arrow-up.enabled.left {
-    border: 0px solid red;
-    background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
-    width: 40px;
-    background-size: 42px 2px;
-    background-repeat: repeat-x;
-  }
+  margin-top: 7px;
 }
 
-/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 105, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
   background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
   background-repeat: no-repeat;
@@ -4093,13 +4109,13 @@ a.wizard__arrow-down.enabled {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 105, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 108, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -4110,28 +4126,23 @@ a.wizard__arrow-down.enabled {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 108, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 133, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
-  color: #0f2940;
+  color: white;
   font-weight: 700;
-  float: right;
   font-size: 1em;
   border: 0px solid red;
-  margin: 0;
-  padding: 5px 0;
-}
-@media all and (min-width: 720px) {
-  /* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
-  .wizard__nav_label_help {
-    color: white;
-    padding: 15px 0 0 4px;
-  }
+  margin: 10px 10px 10px 10px;
+  width: 30%;
+  text-align: right;
+  float: right;
+  display: inline;
 }
 
 /* line 2, ../sass/components/wizard/wizard_tip.scss */
