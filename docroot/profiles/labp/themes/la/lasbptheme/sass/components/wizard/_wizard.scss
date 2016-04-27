@@ -160,16 +160,12 @@ $wizard_left_margin: 25px;
   margin: 0px 10px 10px 0;
   padding: 0;
   min-height: 50px;
-  width: 80%;
+  width: 100%;
   border: 0px solid red;
   background-image: image-url("wizard/icon_context_help.png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
-  @include window_size(tab-wide-up){
-          font-size: 2em;
-          width: 70%;
-  }
 }
 
 
