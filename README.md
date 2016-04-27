@@ -58,6 +58,22 @@ bundle exec compass clean
 bundle exec compass compile
 ```
 
+## Bundler and Zen Grids known compile issues
+
+There is an ongoing issue with compiling Zen grids into CSS using Compass. It should have been fixed
+in this issue https://www.drupal.org/node/2346291 by following the above instructions but it still has problems.
+We need to compile the SASS using our global gem versions. Update to the following versions of Compass and Sass
+
+* Compass 1.0.3 
+* SASS 3.4.20
+
+From your theme folder, run
+``` bash
+compass watch
+```
+
+
+
 ## Using the example database
 
 All steps below are assumed to be run from the command line
