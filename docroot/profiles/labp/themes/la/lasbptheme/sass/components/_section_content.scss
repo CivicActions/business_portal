@@ -48,7 +48,7 @@
   line-height: 1.4em;
 
   @include window_size(tab-wide-up){
-    font-size:1.571em;
+    font-size: 1.429em;
     width: 90%;
   }
 
@@ -59,12 +59,16 @@
 }
 
 .panel__button {
-  @include panel__button--base(navy);
+  @include panel__button--base($yellow, $navy);
 }
 
 .panel__background_image {
-  width: 25%;
-  float: right;
+  display: none;
+  @include window_size(desktop) {
+    display: block;
+    width: 45%;
+    float: right;
+  }
 }
 
 .pane-bundle-section-content > .pane-title {
@@ -86,7 +90,7 @@
 .panel__content_col_1 {
   width:100%;
   @include window_size(desktop) {
-    padding: 75px 0 0 0;
+    padding: 75px 0 0 20px;
   }
 }
 

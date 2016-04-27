@@ -37,7 +37,15 @@
   margin-bottom: 2em;
   background: white;
 }
+/* line 96, ../sass/base/_mixins.scss */
+.style_variant.light_blue .panel__intro_header {
+  color: #163549;
+}
 /* line 97, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line_thin {
+  background: white;
+}
+/* line 99, ../sass/base/_mixins.scss */
 .style_variant.light_green {
   background-color: #acc863;
   color: white;
@@ -62,7 +70,7 @@
   margin-bottom: 2em;
   background: white;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 103, ../sass/base/_mixins.scss */
 .style_variant.blue {
   background-color: #163549;
   color: white;
@@ -86,11 +94,11 @@
   margin-bottom: 2em;
   background: white;
 }
-/* line 103, ../sass/base/_mixins.scss */
+/* line 105, ../sass/base/_mixins.scss */
 .style_variant.blue hr.panel__header-line_thin {
   background: white;
 }
-/* line 105, ../sass/base/_mixins.scss */
+/* line 107, ../sass/base/_mixins.scss */
 .style_variant.white {
   background-color: white;
   color: white;
@@ -115,15 +123,16 @@
   margin-bottom: 2em;
   background: white;
 }
-/* line 108, ../sass/base/_mixins.scss */
+/* line 110, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
-  color: #6bc3f3;
+  color: #163549;
 }
-/* line 109, ../sass/base/_mixins.scss */
-.style_variant.white hr.panel__header-line {
-  background: #163549;
+/* line 112, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line,
+.style_variant.white hr.panel__header-line_thin {
+  background: #6bc3f3;
 }
-/* line 111, ../sass/base/_mixins.scss */
+/* line 114, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
   background-color: #e6e6e6;
   color: white;
@@ -194,7 +203,15 @@ the fonts are being added.
   margin-bottom: 2em;
   background: white;
 }
+/* line 96, ../sass/base/_mixins.scss */
+.style_variant.light_blue .panel__intro_header {
+  color: #163549;
+}
 /* line 97, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line_thin {
+  background: white;
+}
+/* line 99, ../sass/base/_mixins.scss */
 .style_variant.light_green {
   background-color: #acc863;
   color: white;
@@ -219,7 +236,7 @@ the fonts are being added.
   margin-bottom: 2em;
   background: white;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 103, ../sass/base/_mixins.scss */
 .style_variant.blue {
   background-color: #163549;
   color: white;
@@ -243,11 +260,11 @@ the fonts are being added.
   margin-bottom: 2em;
   background: white;
 }
-/* line 103, ../sass/base/_mixins.scss */
+/* line 105, ../sass/base/_mixins.scss */
 .style_variant.blue hr.panel__header-line_thin {
   background: white;
 }
-/* line 105, ../sass/base/_mixins.scss */
+/* line 107, ../sass/base/_mixins.scss */
 .style_variant.white {
   background-color: white;
   color: white;
@@ -272,15 +289,16 @@ the fonts are being added.
   margin-bottom: 2em;
   background: white;
 }
-/* line 108, ../sass/base/_mixins.scss */
+/* line 110, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
-  color: #6bc3f3;
+  color: #163549;
 }
-/* line 109, ../sass/base/_mixins.scss */
-.style_variant.white hr.panel__header-line {
-  background: #163549;
+/* line 112, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line,
+.style_variant.white hr.panel__header-line_thin {
+  background: #6bc3f3;
 }
-/* line 111, ../sass/base/_mixins.scss */
+/* line 114, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
   background-color: #e6e6e6;
   color: white;
@@ -2117,7 +2135,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459798895');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /**
@@ -2591,8 +2609,9 @@ hr.hero__line {
 /*========== Layout ======== */
 /* line 116, ../sass/components/hero/_hero.scss */
 .hero__content-wrapper {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
+  padding-left: 20px;
 }
 /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 .hero__content-wrapper:before, .hero__content-wrapper:after {
@@ -2605,14 +2624,14 @@ hr.hero__line {
 }
 
 @media all and (min-width: 720px) {
-  /* line 129, ../sass/components/hero/_hero.scss */
+  /* line 130, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 26.66667%;
     margin-left: 0%;
     margin-right: -26.66667%;
   }
-  /* line 130, ../sass/components/hero/_hero.scss */
+  /* line 131, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 53.33333%;
@@ -2621,14 +2640,14 @@ hr.hero__line {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 134, ../sass/components/hero/_hero.scss */
+  /* line 135, ../sass/components/hero/_hero.scss */
   .hero__layout--half .left {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 135, ../sass/components/hero/_hero.scss */
+  /* line 136, ../sass/components/hero/_hero.scss */
   .hero__layout--half .right {
     float: left;
     width: 60%;
@@ -2918,36 +2937,86 @@ hr.hero__line {
  * Styles for the bottom region containing the footer menu.
 */
 /* line 7, ../sass/components/_bottom-region.scss */
-.region-bottom {
+.region--bottom {
   background: #163549;
   color: white;
-  padding: 0 3%;
 }
-/* line 13, ../sass/components/_bottom-region.scss */
-.region-bottom .block {
-  padding: 0 0.4em;
+@media all and (min-width: 480px) {
+  /* line 12, ../sass/components/_bottom-region.scss */
+  .region--bottom .region-bottom {
+    width: 100%;
+  }
+  /* line 15, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__copyright {
+    width: 30%;
+  }
+  /* line 18, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__credits {
+    width: auto;
+    float: right;
+    padding-right: 1em;
+  }
+}
+@media all and (min-width: 720px) {
+  /* line 27, ../sass/components/_bottom-region.scss */
+  .region--bottom .region-bottom {
+    width: 32%;
+  }
+  /* line 30, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__copyright {
+    width: 23%;
+  }
+  /* line 33, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__credits {
+    width: auto;
+    float: right;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 40, ../sass/components/_bottom-region.scss */
+  .region--bottom .region-bottom {
+    width: 30%;
+  }
+  /* line 43, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__copyright {
+    width: 30%;
+  }
+  /* line 46, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__credits {
+    width: auto;
+    float: right;
+  }
+}
+/* line 55, ../sass/components/_bottom-region.scss */
+.region--bottom .footer__copyright,
+.region--bottom .footer__credits {
+  padding: 1em;
+}
+/* line 61, ../sass/components/_bottom-region.scss */
+.region--bottom .footer__copyright,
+.region--bottom .footer__credits,
+.region--bottom .region-bottom {
   display: inline-block;
-  width: auto;
 }
-/* line 20, ../sass/components/_bottom-region.scss */
-.region-bottom ul {
+/* line 69, ../sass/components/_bottom-region.scss */
+.region--bottom ul {
   padding: 0 2%;
 }
-/* line 21, ../sass/components/_bottom-region.scss */
-.region-bottom li {
+/* line 70, ../sass/components/_bottom-region.scss */
+.region--bottom li {
   display: inline-block;
   padding: 1em;
   list-style: none;
 }
-/* line 28, ../sass/components/_bottom-region.scss */
-.region-bottom a {
+/* line 77, ../sass/components/_bottom-region.scss */
+.region--bottom a {
   color: #6bc3f3;
   font-weight: bold;
 }
-/* line 35, ../sass/components/_bottom-region.scss */
-.region-bottom ul.menu,
-.region-bottom ol.menu,
-.region-bottom menu.menu {
+/* line 84, ../sass/components/_bottom-region.scss */
+.region--bottom ul.menu,
+.region--bottom ol.menu,
+.region--bottom menu.menu {
   margin: 0;
 }
 
@@ -3413,7 +3482,7 @@ a.wizard__button--selected {
   overflow: hidden;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3469,7 +3538,7 @@ a.wizard__button--selected {
 /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3479,7 +3548,7 @@ a.wizard__button--selected {
 /* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3489,7 +3558,7 @@ a.wizard__button--selected {
 /* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3589,7 +3658,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 222, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3600,7 +3669,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 229, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3611,7 +3680,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -3620,7 +3689,7 @@ a.wizard__button--selected {
 /* line 250, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461530233');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -3683,7 +3752,7 @@ a.wizard__button--selected {
 
 /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -3703,7 +3772,7 @@ a.wizard__arrow-up {
 
 /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 0 24px;
@@ -3721,12 +3790,12 @@ a.wizard__arrow-down {
 
 /* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   background-color: #99d5f5;
   display: block;
   float: right;
@@ -3736,7 +3805,7 @@ a.wizard__arrow-down.enabled {
   .wizard__arrow-up.enabled.left {
     border: 0px solid red;
     background-image: none;
-    background-image: url('../images/wizard/nav_hr_bar_white.png?1461530233');
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461525799');
     width: 40px;
     background-size: 42px 2px;
     background-repeat: repeat-x;
@@ -3745,7 +3814,7 @@ a.wizard__arrow-down.enabled {
 
 /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
+  background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -3807,7 +3876,7 @@ a.wizard__arrow-down.enabled {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461530233');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 
@@ -4184,9 +4253,9 @@ body.node-type-sbp-starter-kit .node-teaser {
 **************************************/
 /* line 70, ../sass/components/_four_column_cta.scss */
 .four-col-wrapper {
-  width: 90%;
-  margin: 0 0 0 auto;
-  padding: 2.5em 0 5em;
+  width: 80%;
+  margin: auto;
+  padding: 1em 0 3em;
 }
 /* line 46, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 .four-col-wrapper:before, .four-col-wrapper:after {
@@ -4200,7 +4269,7 @@ body.node-type-sbp-starter-kit .node-teaser {
 @media all and (min-width: 960px) {
   /* line 70, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper {
-    padding: 3em 0 10em;
+    padding: 1em 0 6em;
   }
 }
 /* line 80, ../sass/components/_four_column_cta.scss */
@@ -4238,11 +4307,11 @@ body.node-type-sbp-starter-kit .node-teaser {
     word-wrap: break-word;
     width: 20%;
     padding-left: 0;
-    margin-left: 20px;
     padding-right: 15px;
-    margin-right: -15px;
+    margin-right: 5px;
     float: left;
     margin-top: 0;
+    width: 22%;
   }
 }
 
@@ -4309,7 +4378,7 @@ body.node-type-sbp-starter-kit .node-teaser {
 @media all and (min-width: 720px) {
   /* line 46, ../sass/components/_section_content.scss */
   .panel__intro_paragraph {
-    font-size: 1.571em;
+    font-size: 1.429em;
     width: 90%;
   }
 }
@@ -4327,17 +4396,17 @@ body.node-type-sbp-starter-kit .node-teaser {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
-  background-color: navy;
-  color: white;
-  padding: 1em 2em;
+  background-color: #ffd65c;
+  color: #163549;
+  padding: 0.5em 1.2em;
   font-weight: bold;
   display: inline-block;
   margin: 1em 0;
   cursor: pointer;
 }
-/* line 130, ../sass/base/_mixins.scss */
+/* line 133, ../sass/base/_mixins.scss */
 .panel__button a {
-  color: white;
+  color: #163549;
 }
 @media all and (min-width: 960px) {
   /* line 61, ../sass/components/_section_content.scss */
@@ -4348,11 +4417,18 @@ body.node-type-sbp-starter-kit .node-teaser {
 
 /* line 65, ../sass/components/_section_content.scss */
 .panel__background_image {
-  width: 25%;
-  float: right;
+  display: none;
+}
+@media all and (min-width: 960px) {
+  /* line 65, ../sass/components/_section_content.scss */
+  .panel__background_image {
+    display: block;
+    width: 45%;
+    float: right;
+  }
 }
 
-/* line 70, ../sass/components/_section_content.scss */
+/* line 74, ../sass/components/_section_content.scss */
 .pane-bundle-section-content > .pane-title {
   display: none;
 }
@@ -4370,7 +4446,7 @@ body.node-type-sbp-starter-kit .node-teaser {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 78, ../sass/components/_section_content.scss */
+  /* line 82, ../sass/components/_section_content.scss */
   .panel__content_wrapper {
     width: 80%;
     margin-left: auto;
@@ -4378,14 +4454,14 @@ body.node-type-sbp-starter-kit .node-teaser {
   }
 }
 
-/* line 86, ../sass/components/_section_content.scss */
+/* line 90, ../sass/components/_section_content.scss */
 .panel__content_col_1 {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 86, ../sass/components/_section_content.scss */
+  /* line 90, ../sass/components/_section_content.scss */
   .panel__content_col_1 {
-    padding: 75px 0 0 0;
+    padding: 75px 0 0 20px;
   }
 }
 

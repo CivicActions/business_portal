@@ -93,6 +93,8 @@
 .style_variant {
   &.light_blue {
     @include style-variant( $light-blue );
+    .panel__intro_header { color: $navy; }
+    hr.panel__header-line_thin { background: $white; }
   }
   &.light_green {
     @include style-variant( $light-green );
@@ -105,8 +107,9 @@
   &.white {
     @include style-variant ( $white );
     color: $navy;
-    .panel__intro_header { color: $light-blue; }
-    hr.panel__header-line { background: $navy; }
+    .panel__intro_header { color: $navy; }
+    hr.panel__header-line,
+    hr.panel__header-line_thin { background: $light-blue; }
   }
   &.light_grey {
     @include style-variant ( $grayscale_light );
@@ -122,7 +125,7 @@
   @include border-radius(50px);
   background-color:$bgcolor;
   color: $text-color;
-  padding: 1em 2em;
+  padding: 0.5em 1.2em;
   font-weight: bold;
   display: inline-block;
   margin: 1em 0;
