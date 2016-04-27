@@ -454,7 +454,6 @@ wiz.views.Nav = Backbone.View.extend({
 
   events:  {
     "click .wizard__arrow-up": "backArrowClick",
-    "click .wizard__address_back_button": "backArrowClick",
     "click .wizard__arrow-down": "forwardArrowClick"
   },
 
@@ -518,12 +517,29 @@ wiz.views.NavStart = Backbone.View.extend({
   }
 });
 
-///////////////
-// NAV START //
-///////////////
+/////////////////
+// NAV ADDRESS //
+/////////////////
 
 wiz.views.NavForAddress = Backbone.View.extend({
   template: _.template($('#wizard-nav-address-template').html()),
+  events:  {
+    "click .wizard__address_back_button": "backArrowClick"
+  },
+  backArrowClick: function() {
+
+    if (wiz.collections.chosen.length > 1) {
+      var last = wiz.collections.chosen.last();
+      wiz.collections.chosen.remove(last);
+
+      var view = new wiz.views.Wizard({
+        model:  wiz.collections.chosen.last()
+      });
+      wiz.instance.goto(view);
+    }
+
+    event.preventDefault();
+  },
   render: function() {
     this.$el.html(this.template());
     return this;
