@@ -134,6 +134,12 @@
   &.light_grey {
     @include style-variant ( $grayscale_light );
     color: $navy;
+    .panel__intro_header,
+    .hero__headline,
+    .hero__description { color: $navy; }
+
+    hr.panel__header-line_thin,
+    hr.hero__line { background: $white; }
   }
 }
 
