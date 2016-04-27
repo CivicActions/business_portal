@@ -125,11 +125,7 @@
 }
 /* line 110, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
-<<<<<<< 96ce8265ffd0b8db1d1546168fd219ced0af4676
   color: #163549;
-=======
-  color: #6bc3f3;
->>>>>>> Various wizard enhancements
 }
 /* line 112, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line,
@@ -295,11 +291,7 @@ the fonts are being added.
 }
 /* line 110, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
-<<<<<<< 96ce8265ffd0b8db1d1546168fd219ced0af4676
   color: #163549;
-=======
-  color: #6bc3f3;
->>>>>>> Various wizard enhancements
 }
 /* line 112, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line,
@@ -3016,7 +3008,6 @@ hr.hero__line {
   padding: 1em;
   list-style: none;
 }
-<<<<<<< 96ce8265ffd0b8db1d1546168fd219ced0af4676
 /* line 77, ../sass/components/_bottom-region.scss */
 .region--bottom a {
   color: #6bc3f3;
@@ -3026,17 +3017,6 @@ hr.hero__line {
 .region--bottom ul.menu,
 .region--bottom ol.menu,
 .region--bottom menu.menu {
-=======
-/* line 28, ../sass/components/_bottom-region.scss */
-.region-bottom a {
-  color: #6bc3f3;
-  font-weight: bold;
-}
-/* line 35, ../sass/components/_bottom-region.scss */
-.region-bottom ul.menu,
-.region-bottom ol.menu,
-.region-bottom menu.menu {
->>>>>>> Various wizard enhancements
   margin: 0;
 }
 
