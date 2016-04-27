@@ -2975,7 +2975,7 @@ hr.hero__line {
 @media all and (min-width: 960px) {
   /* line 40, ../sass/components/_bottom-region.scss */
   .region--bottom .region-bottom {
-    width: 30%;
+    width: 230px;
   }
   /* line 43, ../sass/components/_bottom-region.scss */
   .region--bottom .footer__copyright {
