@@ -67,38 +67,3 @@ function sbp_search_default_search_api_index() {
   }');
   return $items;
 }
-
-/**
- * Implements hook_default_search_api_server().
- */
-function sbp_search_default_search_api_server() {
-  $items = array();
-  $items['labp_vm'] = entity_import('search_api_server', '{
-    "name" : "LABP VM",
-    "machine_name" : "labp_vm",
-    "description" : "LA Business Portal Drupal Virtual Machine Solr instance",
-    "class" : "search_api_solr_service",
-    "options" : {
-      "clean_ids" : true,
-      "site_hash" : true,
-      "scheme" : "http",
-      "host" : "labp.dev",
-      "port" : "8983",
-      "path" : "\\/solr",
-      "http_user" : "",
-      "http_pass" : "",
-      "excerpt" : 0,
-      "retrieve_data" : 0,
-      "highlight_data" : 0,
-      "skip_schema_check" : 0,
-      "solr_version" : "",
-      "http_method" : "AUTO",
-      "log_query" : 0,
-      "log_response" : 0,
-      "autocorrect_spell" : 1,
-      "autocorrect_suggest_words" : 1
-    },
-    "enabled" : "1"
-  }');
-  return $items;
-}

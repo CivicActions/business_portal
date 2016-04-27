@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Code for the LABP Search feature.
+ */
+
+include_once 'labp_search.features.inc';
+
+/* This code should go inside a custom module, changing "MYMODULE" to the 
+ * module's name.
+ */
+function labp_search_search_api_index_load($indexes) {
+  // Assume that we need to override and force read-only mode.
+  $set_read_only = TRUE;
+
+  // Avoid forcing index read-only mode, if on Acquia Hosting + in a production environment
+  if (isset($_ENV["AH_SITE_ENVIRONMENT"]) && isset($_ENV["AH_PRODUCTION"])) {
+    return;
+  }
+
+  // Cycle through all Search API Solr indexes and force to read_only mode.
+  if ($set_read_only) {
+    foreach ($indexes as &$index) {
+      $index->read_only = "1";
+    }
+  }
+}
