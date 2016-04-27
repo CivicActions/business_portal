@@ -21,6 +21,7 @@ run `vagrant rsync-auto` to automatically sync file changes.
 1. `vagrant up`
 1. `vagrant ssh`
 1. Install the profile with `drush @labp.dev si labp --account-name=admin --account-pass=admin` or `bash ~/Projects/business_portal/assets/install-local-drupalvm.sh`
+1. Configure Solr `bash ~/Projects/business_portal/assets/configure-solr.sh`
 1. Visit labp.dev on your browser
 
 ## DrupalVM usage
