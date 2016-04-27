@@ -161,7 +161,7 @@ wiz.views.App = wiz.extensions.View.extend({
         case "confirmation":
           console.log("APP: confirmation");
 
-          var header = new wiz.views.Header({model: this.model});
+          var header = new wiz.views.HeaderForConfirm({model: this.model});
           this.$el.append(header.render().el);
 
           var question = new wiz.views.Question({model: this.model});
@@ -248,6 +248,19 @@ wiz.views.HeaderForQuestion = Backbone.View.extend({
 wiz.views.HeaderForContextual = Backbone.View.extend({
   className: ".wizard__header constrained",
   template: _.template($('#header-for-contextual-template').html()),
+  render: function() {
+    this.$el.html(this.template(this.model.toJSON()));
+    return this;
+  }
+});
+
+/////////////////////////
+// Header for confirm //
+/////////////////////////
+
+wiz.views.HeaderForConfirm = Backbone.View.extend({
+  className: ".wizard__header constrained",
+  template: _.template($('#header-for-confirm-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
     return this;

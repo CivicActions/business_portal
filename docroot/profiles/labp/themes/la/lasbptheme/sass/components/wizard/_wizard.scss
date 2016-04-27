@@ -3,7 +3,8 @@ $wizard_left_margin: 25px;
 #wizard {
   color: $wizard-text;
   font-family: Roboto, sans-serif;
-  margin:55px 0 0 0;
+  //margin:55px 0 0 0;
+  padding: 50px 50px 50px 50px;
   border: 0px solid green;
   @include clearfix;
   .constrained {
@@ -34,7 +35,7 @@ $wizard_left_margin: 25px;
 
 .wizard__intro-screen--register-business {
   background-color: $background-city-registration;
-  height: 900px;
+  //height: 900px;
 }
 
 .wizard__content-block {
