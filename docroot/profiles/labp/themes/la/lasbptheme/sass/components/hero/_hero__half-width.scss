@@ -48,7 +48,7 @@
   /*========== Layout ======== */
   //Mobile-first layout
   $zen-grid-width: 100%;
-  $zen-column-count:  16;
+  $zen-column-count:  16!global;
   //$zen-gutter-width:  20px;
 
   .hero__content-wrapper {
