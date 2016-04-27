@@ -3,7 +3,8 @@
 .view-bp-featured-resource-page,
 .view-departments,
 .view-labp-service-center,
-.view-sbp-resource-incentives {
+.view-sbp-resource-incentives,
+.view-terms-definitions {
 
   .views-field-name,
   .views-field-title {
@@ -24,9 +25,16 @@
     &:last-child {
       border-bottom: none;
     }
+
+    @include window_size(desktop) {
+      width: 90%;
+    }
   }
 
+
+
 }
+
 
 
 .pane-bp-featured-sub-page,
@@ -59,7 +67,8 @@
 
 .view-id-bp_featured_sub_page,
 .view-bp-featured-resource-page,
-.view-id-departments {
+.view-id-departments,
+.view-terms-definitions {
   .views-field-view-node,
   .views-field-field-document {
     width: 20%;
