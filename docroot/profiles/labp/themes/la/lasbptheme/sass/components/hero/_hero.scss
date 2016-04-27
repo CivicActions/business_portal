@@ -43,7 +43,6 @@ hr.hero__line {
 }
 
 .hero__description {
-  color: #fff;
   font-size: 1.4em;
   line-height: 1.4;
   margin: 2em 0 4em;
@@ -81,32 +80,6 @@ hr.hero__line {
 }
 
 
-/*****************************
-*     Half Width
-******************************/
-
-.hero__layout--half {
-  .hero__icon {
-    margin: 9em 0 0;
-
-    img {
-      width: 100%;
-      max-width: 150px;
-    }
-  }
-  .hero__headline {
-    font-size: 1.8em ;
-    margin: 4em 0 0;
-
-    @include window_size(tab-wide-up){
-      font-size: 2.143em;
-    }
-    @include window_size(desktop){
-      font-size: 2.6em;
-    }
-  }
-}
-
 /*========== Layout ======== */
 //Mobile-first layout
 $zen-grid-width: 80%;
@@ -136,3 +109,4 @@ $zen-gutter-width:  20px;
     .right { @include zen-grid-item (3, 2); }
   }
 }
+
