@@ -204,8 +204,9 @@ wiz.views.App = wiz.extensions.View.extend({
         }
 
         var bar = new wiz.views.ProgressBar({model: this.model});
-        this.$el.append(bar.render().el);
-
+        if (this.model.get("screen-type") != "contextual help") {
+          this.$el.append(bar.render().el);
+        }
         // var drawer = new wiz.views.ProgressDrawer({
         //   model: this.model,
         // });
