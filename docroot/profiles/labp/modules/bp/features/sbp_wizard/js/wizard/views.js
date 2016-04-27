@@ -189,6 +189,9 @@ wiz.views.App = wiz.extensions.View.extend({
 
           var intro = new wiz.views.Intro({ model: this.model });
           this.$el.append(intro.render().el);
+          
+          var addressForm = new wiz.views.AddressForm({ model: this.model });
+          this.$el.append(addressForm.render().el);
 
           var nav = new wiz.views.NavForAddress({model: this.model});
           this.$el.append(nav.render().el);
@@ -511,6 +514,35 @@ wiz.views.Nav = Backbone.View.extend({
 
 wiz.views.NavStart = Backbone.View.extend({
   template: _.template($('#wizard-nav-start-template').html()),
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
+});
+
+/////////////////
+// ADDRESS FORM //
+/////////////////
+wiz.views.AddressForm = Backbone.View.extend({
+  template: _.template($('#wizard-address-form-template').html()),
+  events:  {
+    "click #form-address-lookup": "addressSubmit"
+  },
+  
+  addressSubmit: function(event) {
+    event.preventDefault();
+    var address = $( "input[name='streetAddress']" ).val();
+    var laAddressAPI = "/labp/address-lookup/" + address;
+    $.getJSON( laAddressAPI, function( json ) {
+      if(json.inLA == '1'){
+        console.log('Address is in LA');
+      }
+      if(json.inLA == '0'){
+        console.log('Address is NOT in LA');
+      }
+     });
+  },
+  
   render: function() {
     this.$el.html(this.template());
     return this;
