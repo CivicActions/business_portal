@@ -58,7 +58,7 @@ bundle exec compass clean
 bundle exec compass compile
 ```
 ### Step 5. Configure Solr
-- `bash /var/www/labp/assets/configure-solr.sh`
+- `bash /assets/configure-solr.sh`
 
 ## Bundler and Zen Grids known compile issues
 
