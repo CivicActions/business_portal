@@ -4362,6 +4362,37 @@ body.node-type-sbp-starter-kit .node-teaser {
   color: #00BED5;
 }
 
+/* line 1, ../sass/components/_detail_pages.scss */
+.panel-col-last .field-name-body {
+  line-height: 1.25em;
+  color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+}
+@media all and (min-width: 960px) {
+  /* line 1, ../sass/components/_detail_pages.scss */
+  .panel-col-last .field-name-body {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+/* line 12, ../sass/components/_detail_pages.scss */
+.panel-col-last .field-label {
+  line-height: 1.25em;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  width: 90%;
+}
+@media all and (min-width: 960px) {
+  /* line 12, ../sass/components/_detail_pages.scss */
+  .panel-col-last .field-label {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
 /* Panels */
 /* line 1, ../sass/components/_four_column_cta.scss */
 .panel__header,
