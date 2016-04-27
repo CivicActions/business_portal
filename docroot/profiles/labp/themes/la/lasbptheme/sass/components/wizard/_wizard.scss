@@ -173,6 +173,7 @@ $wizard_left_margin: 25px;
 .wizard__buttons {
   border: 0px solid white;
   margin: 30px 0 30px 0;
+  @include clearfix;
 }
 
 .wizard__button {

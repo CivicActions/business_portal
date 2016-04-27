@@ -220,7 +220,7 @@ wiz.views.App = wiz.extensions.View.extend({
 ////////////
 
 wiz.views.Header = Backbone.View.extend({
-  className: ".wizard__header constrained",
+  className: "wizard__header constrained",
   template: _.template($('#header-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -233,7 +233,7 @@ wiz.views.Header = Backbone.View.extend({
 /////////////////////////
 
 wiz.views.HeaderForQuestion = Backbone.View.extend({
-  className: ".wizard__header constrained",
+  className: "wizard__header constrained",
   template: _.template($('#header-for-question-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -246,7 +246,7 @@ wiz.views.HeaderForQuestion = Backbone.View.extend({
 /////////////////////////
 
 wiz.views.HeaderForContextual = Backbone.View.extend({
-  className: ".wizard__header constrained",
+  className: "wizard__header constrained",
   template: _.template($('#header-for-contextual-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -259,7 +259,7 @@ wiz.views.HeaderForContextual = Backbone.View.extend({
 /////////////////////////
 
 wiz.views.HeaderForConfirm = Backbone.View.extend({
-  className: ".wizard__header constrained",
+  className: "wizard__header constrained",
   template: _.template($('#header-for-confirm-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -272,7 +272,7 @@ wiz.views.HeaderForConfirm = Backbone.View.extend({
 ///////////
 
 wiz.views.Intro = Backbone.View.extend({
-  className: ".wizard__intro-block constrained",
+  className: "wizard__intro-block constrained",
   template: _.template($('#intro-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -285,7 +285,7 @@ wiz.views.Intro = Backbone.View.extend({
 ///////////
 
 wiz.views.Start = Backbone.View.extend({
-  className: ".wizard__intro-block constrained",
+  className: "wizard__intro-block constrained",
   template: _.template($('#start-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -298,7 +298,7 @@ wiz.views.Start = Backbone.View.extend({
 /////////////////////////////
 
 wiz.views.IntroWithIllustration = Backbone.View.extend({
-  className: ".wizard__intro-block constrained",
+  className: "wizard__intro-block constrained",
   template: _.template($('#intro-with-illustration-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
@@ -438,6 +438,7 @@ wiz.views.Button = Backbone.View.extend({
 /////////
 
 wiz.views.Tip = Backbone.View.extend({
+  className: "wizard__tip",
   template: _.template($('#tip-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
