@@ -62,9 +62,9 @@
     @include panel__icons--default();
     @include window_size(desktop){
       padding: 0;
-  background-repeat: no-repeat;
-  background-position: top right;
-}
+      background-repeat: no-repeat;
+      background-position: top right;
+  }
 }
 
 
@@ -109,10 +109,10 @@
         border: 0px solid green;
         width:420px;
         height: 698px;
-          float:right;
-          display: block;
-          background-image: url("../images/panels/illustration_top_panel.png");
-
+        float:right;
+        display: block;
+        background-image: url("../images/panels/illustration_top_panel_3.png");
+        background-size:100%;
       }
 
 }
@@ -138,9 +138,11 @@
   border: 0px solid red;
 
     @include window_size(desktop){
-  background-image: url("../images/panels/illustration_bottom_panel.png");
+  background-image: url("../images/panels/illustration_bottom_panel_2.png");
+  background-size: 352px 247px;
   background-repeat: no-repeat;
   background-position: top right;
+
 }
 
 }

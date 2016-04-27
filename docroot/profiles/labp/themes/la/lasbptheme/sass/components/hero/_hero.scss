@@ -20,12 +20,10 @@
   background-size:auto 100%;
   background-position: 60%;
   border:0px solid red;
-
   @include clearfix;
   @include window_size(desktop){
     @include maintain-ratio(1440 550);
     border:0px solid red;
-
     background-size:100% auto;
   }
 }
