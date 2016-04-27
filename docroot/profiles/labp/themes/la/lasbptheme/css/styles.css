@@ -1,7 +1,624 @@
+@charset "UTF-8";
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+/* Import Sass mixins, variables, Compass modules, etc. */
+/* Wrapper width mixin for containers */
+/************************************
+            Style Variants
+ ************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
+/* line 95, ../sass/base/_mixins.scss */
+.style_variant {
+  /****** Light Blue ******/
+  /****** Light Green******/
+  /****** Blue ******/
+  /****** White ******/
+  /****** Light Grey ******/
+}
+/* line 98, ../sass/base/_mixins.scss */
+.style_variant.light_blue {
+  background-color: #6BC3F3;
+  color: white;
+  border-color: #6BC3F3;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr {
+  background-color: #6BC3F3;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 101, ../sass/base/_mixins.scss */
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__headline--half,
+.style_variant.light_blue .hero__description {
+  color: #163549;
+}
+/* line 105, ../sass/base/_mixins.scss */
+.style_variant.light_blue .hero__headline {
+  color: white;
+}
+/* line 107, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line_thin,
+.style_variant.light_blue hr.hero__line--half {
+  background: white;
+}
+/* line 114, ../sass/base/_mixins.scss */
+.style_variant.light_green {
+  background-color: #ACC863;
+  color: white;
+  border-color: #ACC863;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.light_green .panel__intro_header,
+.style_variant.light_green .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.light_green hr {
+  background-color: #ACC863;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.light_green hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.light_green hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 120, ../sass/base/_mixins.scss */
+.style_variant.blue {
+  background-color: #163549;
+  color: white;
+  border-color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.blue .panel__intro_header,
+.style_variant.blue .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.blue hr {
+  background-color: #163549;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.blue hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.blue hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 122, ../sass/base/_mixins.scss */
+.style_variant.blue hr.panel__header-line_thin {
+  background: white;
+}
+/* line 123, ../sass/base/_mixins.scss */
+.style_variant.blue hr.hero__line--half {
+  background: #6BC3F3;
+}
+/* line 127, ../sass/base/_mixins.scss */
+.style_variant.white {
+  background-color: white;
+  color: white;
+  border-color: white;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.white .panel__intro_header,
+.style_variant.white .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.white hr {
+  background-color: white;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 130, ../sass/base/_mixins.scss */
+.style_variant.white .panel__intro_header {
+  color: #163549;
+}
+/* line 131, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line,
+.style_variant.white hr.panel__header-line_thin {
+  background: #6BC3F3;
+}
+/* line 136, ../sass/base/_mixins.scss */
+.style_variant.light_grey {
+  background-color: #e6e6e6;
+  color: white;
+  border-color: #e6e6e6;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.light_grey .panel__intro_header,
+.style_variant.light_grey .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr {
+  background-color: #e6e6e6;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 139, ../sass/base/_mixins.scss */
+.style_variant.light_grey .panel__intro_header,
+.style_variant.light_grey .hero__headline--half,
+.style_variant.light_grey .hero__description {
+  color: #163549;
+}
+/* line 143, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line_thin,
+.style_variant.light_grey hr.hero__line--half {
+  background: white;
+}
+
+/******************************
+*      Buttons
+*******************************/
+/* HTML element (SMACSS base) rules */
+/**
+ * @file
+ * SMACSS Modules: Base Typography
+ *
+ *
+ */
+/* @TODO Find out if Merriweather and Roboto should be linked to or downloaded into theme
+*
+* Notes: Merriweather & Roboto are being declared in styles but I can not
+* see it imported anywhere. Will add a links to google fonts until we decide if we
+* want to serve the font from google or download it in the theme. Or until I confirm where
+the fonts are being added.
+*/
+/* line 26, ../sass/base/_typography.scss */
+body {
+  color: #0F2940;
+  line-height: 1.3;
+}
+
+/* Wrapper width mixin for containers */
+/************************************
+            Style Variants
+ ************************************/
+/* line 95, ../sass/base/_mixins.scss */
+.style_variant {
+  /****** Light Blue ******/
+  /****** Light Green******/
+  /****** Blue ******/
+  /****** White ******/
+  /****** Light Grey ******/
+}
+/* line 98, ../sass/base/_mixins.scss */
+.style_variant.light_blue {
+  background-color: #6BC3F3;
+  color: white;
+  border-color: #6BC3F3;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr {
+  background-color: #6BC3F3;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 101, ../sass/base/_mixins.scss */
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__headline--half,
+.style_variant.light_blue .hero__description {
+  color: #163549;
+}
+/* line 105, ../sass/base/_mixins.scss */
+.style_variant.light_blue .hero__headline {
+  color: white;
+}
+/* line 107, ../sass/base/_mixins.scss */
+.style_variant.light_blue hr.panel__header-line_thin,
+.style_variant.light_blue hr.hero__line--half {
+  background: white;
+}
+/* line 114, ../sass/base/_mixins.scss */
+.style_variant.light_green {
+  background-color: #ACC863;
+  color: white;
+  border-color: #ACC863;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.light_green .panel__intro_header,
+.style_variant.light_green .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.light_green hr {
+  background-color: #ACC863;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.light_green hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.light_green hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 120, ../sass/base/_mixins.scss */
+.style_variant.blue {
+  background-color: #163549;
+  color: white;
+  border-color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.blue .panel__intro_header,
+.style_variant.blue .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.blue hr {
+  background-color: #163549;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.blue hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.blue hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 122, ../sass/base/_mixins.scss */
+.style_variant.blue hr.panel__header-line_thin {
+  background: white;
+}
+/* line 123, ../sass/base/_mixins.scss */
+.style_variant.blue hr.hero__line--half {
+  background: #6BC3F3;
+}
+/* line 127, ../sass/base/_mixins.scss */
+.style_variant.white {
+  background-color: white;
+  color: white;
+  border-color: white;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.white .panel__intro_header,
+.style_variant.white .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.white hr {
+  background-color: white;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 130, ../sass/base/_mixins.scss */
+.style_variant.white .panel__intro_header {
+  color: #163549;
+}
+/* line 131, ../sass/base/_mixins.scss */
+.style_variant.white hr.panel__header-line,
+.style_variant.white hr.panel__header-line_thin {
+  background: #6BC3F3;
+}
+/* line 136, ../sass/base/_mixins.scss */
+.style_variant.light_grey {
+  background-color: #e6e6e6;
+  color: white;
+  border-color: #e6e6e6;
+  color: #163549;
+}
+/* line 78, ../sass/base/_mixins.scss */
+.style_variant.light_grey .panel__intro_header,
+.style_variant.light_grey .hero__description {
+  color: white;
+}
+/* line 81, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr {
+  background-color: #e6e6e6;
+  border: none;
+}
+/* line 84, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line_thin {
+  margin: 0.5em 0 2em;
+  background: #163549;
+}
+/* line 88, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 139, ../sass/base/_mixins.scss */
+.style_variant.light_grey .panel__intro_header,
+.style_variant.light_grey .hero__headline--half,
+.style_variant.light_grey .hero__description {
+  color: #163549;
+}
+/* line 143, ../sass/base/_mixins.scss */
+.style_variant.light_grey hr.panel__header-line_thin,
+.style_variant.light_grey hr.hero__line--half {
+  background: white;
+}
+
+/******************************
+*      Buttons
+*******************************/
+/**
+ * @file
+ * Print styling
+ *
+ * We provide some sane print styling for Drupal using Zen's layout method.
+ */
+/**
+ * By importing this CSS file as media "all", we allow this print file to be
+ * aggregated with other stylesheets, for improved front-end performance.
+ */
+@media print {
+  /* Underline all links. */
+  /* line 15, ../sass/base/_print.scss */
+  a:link,
+  a:visited {
+    text-decoration: underline !important;
+    /* Don't underline header. */
+  }
+  /* line 20, ../sass/base/_print.scss */
+  a:link.header__site-link,
+  a:visited.header__site-link {
+    text-decoration: none !important;
+  }
+
+  /* line 25, ../sass/base/_print.scss */
+  #content {
+    /* Add visible URL after links. */
+    /* Only display useful links. */
+    /* Add visible title after abbreviations. */
+  }
+  /* line 27, ../sass/base/_print.scss */
+  #content a[href]:after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+    font-size: 14px;
+  }
+  /* line 34, ../sass/base/_print.scss */
+  #content a[href^="javascript:"]:after,
+  #content a[href^="#"]:after {
+    content: "";
+  }
+  /* line 40, ../sass/base/_print.scss */
+  #content abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Un-float the content. */
+  /* line 46, ../sass/base/_print.scss */
+  #content {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Turn off any background colors or images. */
+  /* line 54, ../sass/base/_print.scss */
+  body,
+  #page,
+  #main,
+  #content {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  /* Hide sidebars and nav elements. */
+  /* line 64, ../sass/base/_print.scss */
+  #skip-link,
+  #toolbar,
+  #navigation,
+  .region-sidebar-first,
+  .region-sidebar-second,
+  #footer,
+  .breadcrumb,
+  .tabs,
+  .action-links,
+  .links,
+  .book-navigation,
+  .forum-topic-navigation,
+  .pager,
+  .feed-icons {
+    visibility: hidden;
+    display: none;
+  }
+}
+/**
+ * @file
+ * Normalize.css is intended to be used as an alternative to CSS resets.
+ *
+ * This file is a slight fork of these original sources:
+ * - normalize.css v2.1.2 | MIT License | git.io/normalize
+ * - normalize.scss v2.1.2 | MIT/GPLv2 License | bit.ly/normalize-scss
+ *
+ * It's suggested that you read the normalize.scss file and customise it to meet
+ * your needs, rather then including the file in your project and overriding the
+ * defaults later in your CSS.
+ * @see http://nicolasgallagher.com/about-normalize-css/
+ *
+ * Also: @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
+ *       @see http://snook.ca/archives/html_and_css/no_css_reset/
+ */
+/**
+ * HTML5 display definitions
+ */
+/* Correct `block` display not defined in IE 8/9. */
+/* line 23, ../sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Correct `inline-block` display not defined in IE 8/9. */
+/* line 38, ../sass/base/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 52, ../sass/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Address styling not present in IE 8/9. */
+/* line 58, ../sass/base/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/**
+ * Base
+ *
+ * Instead of relying on the fonts that are available on a user's computer, you
+ * can use web fonts which, like images, are resources downloaded to the user's
+ * browser. Because of the bandwidth and rendering resources required, web fonts
+ * should be used with care.
+ *
+ * Numerous resources for web fonts can be found on Google. Here are a few
+ * websites where you can find Open Source fonts to download:
+ * - http://www.fontsquirrel.com/fontface
+ * - http://www.theleagueofmoveabletype.com
+ *
+ * In order to use these fonts, you will need to convert them into formats
+ * suitable for web fonts. We recommend the free-to-use Font Squirrel's
+ * Font-Face Generator:
+ *   http://www.fontsquirrel.com/fontface/generator
+ *
+ * The following is an example @font-face declaration. This font can then be
+ * used in any ruleset using a property like this:  font-family: Example, serif;
+ *
+ * Since we're using Sass, you'll need to declare your font faces here, then you
+ * can add them to the font variables in the _init.scss partial.
+ */
 /*
-Syntax error: Invalid CSS after "...lumn-count:  10": expected "}", was "!global;"
-        on line 24 of /home/alex/workspace/business_portal_fork/docroot/profiles/labp/themes/la/lasbptheme/sass/layouts/_panels.scss
-        from line 22 of /home/alex/workspace/business_portal_fork/docroot/profiles/labp/themes/la/lasbptheme/sass/styles.scss
+@font-face {
+  font-family: 'Example';
+  src: url('../fonts/example.eot');
+  src: url('../fonts/example.eot?iefix') format('eot'),
+    url('../fonts/example.woff') format('woff'),
+    url('../fonts/example.ttf') format('truetype'),
+    url('../fonts/example.svg#webfontOkOndcij') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+/* line 106, ../sass/base/_normalize.scss */
+html {
+  font-family: "Roboto", sans-serif;
+  /* 1 */
+  font-size: 87.5%;
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  /*
+    @include window_size(desktop) {
+        font-size: 100% * ($base-font-size-desktop / 14px);
+    }
+  */
+  color: #888888;
+}
 
 /* Remove default margin. */
 /* line 132, ../sass/base/_normalize.scss */
@@ -2558,7 +3175,1755 @@ hr.hero__line--half {
  *
  * Styles for the bottom region containing the footer menu.
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...lumn-count:  10\": expected \"}\", was \"!global;\"\A         on line 24 of /home/alex/workspace/business_portal_fork/docroot/profiles/labp/themes/la/lasbptheme/sass/layouts/_panels.scss\A         from line 22 of /home/alex/workspace/business_portal_fork/docroot/profiles/labp/themes/la/lasbptheme/sass/styles.scss"; }
+/* line 7, ../sass/components/_bottom-region.scss */
+.region--bottom {
+  background: #163549;
+  color: white;
+}
+@media all and (min-width: 480px) {
+  /* line 12, ../sass/components/_bottom-region.scss */
+  .region--bottom .region-bottom {
+    width: 100%;
+  }
+  /* line 15, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__copyright {
+    width: 30%;
+  }
+  /* line 18, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__credits {
+    width: auto;
+    float: right;
+    padding-right: 1em;
+  }
+}
+@media all and (min-width: 720px) {
+  /* line 27, ../sass/components/_bottom-region.scss */
+  .region--bottom .region-bottom {
+    width: 32%;
+  }
+  /* line 30, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__copyright {
+    width: 23%;
+  }
+  /* line 33, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__credits {
+    width: auto;
+    float: right;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 40, ../sass/components/_bottom-region.scss */
+  .region--bottom .region-bottom {
+    width: 230px;
+  }
+  /* line 43, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__copyright {
+    width: 30%;
+  }
+  /* line 46, ../sass/components/_bottom-region.scss */
+  .region--bottom .footer__credits {
+    width: auto;
+    float: right;
+  }
+}
+/* line 54, ../sass/components/_bottom-region.scss */
+.region--bottom .footer__copyright,
+.region--bottom .footer__credits {
+  padding: 1em;
+}
+/* line 59, ../sass/components/_bottom-region.scss */
+.region--bottom .footer__copyright,
+.region--bottom .footer__credits,
+.region--bottom .region-bottom {
+  display: inline-block;
+}
+/* line 69, ../sass/components/_bottom-region.scss */
+.region--bottom ul {
+  padding: 0 2%;
+}
+/* line 70, ../sass/components/_bottom-region.scss */
+.region--bottom li {
+  display: inline-block;
+  padding: 1em;
+  list-style: none;
+}
+/* line 77, ../sass/components/_bottom-region.scss */
+.region--bottom a {
+  color: #6BC3F3;
+  font-weight: bold;
+}
+/* line 82, ../sass/components/_bottom-region.scss */
+.region--bottom ul.menu,
+.region--bottom ol.menu,
+.region--bottom menu.menu {
+  margin: 0;
+}
+
+/* Wizard */
+/* line 3, ../sass/components/wizard/_wizard.scss */
+#wizard {
+  color: #0F2940;
+  font-family: Roboto, sans-serif;
+  margin: 55px 0 0 0;
+  border: 0px solid green;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 9, ../sass/components/wizard/_wizard.scss */
+#wizard .constrained {
+  width: 90%;
+}
+
+/* line 16, ../sass/components/wizard/_wizard.scss */
+.wiz {
+  z-index: 9;
+}
+
+/* line 20, ../sass/components/wizard/_wizard.scss */
+.wizard a {
+  color: #0F2940;
+  font-size: 1em;
+}
+
+@media all and (min-width: 960px) {
+  /* line 26, ../sass/components/wizard/_wizard.scss */
+  .homepage_panel__content_wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 35, ../sass/components/wizard/_wizard.scss */
+.wizard__intro-screen--register-business {
+  background-color: #89D5C4;
+  height: 900px;
+}
+
+/* line 40, ../sass/components/wizard/_wizard.scss */
+.wizard__content-block {
+  display: inline-block;
+  border: 0px solid black;
+  width: 95%;
+  padding: 0 25px 0 25px;
+}
+@media all and (min-width: 960px) {
+  /* line 40, ../sass/components/wizard/_wizard.scss */
+  .wizard__content-block {
+    padding: 0;
+  }
+}
+
+/* line 51, ../sass/components/wizard/_wizard.scss */
+.wizard__intro-block {
+  display: inline-block;
+  border: 0px solid black;
+  padding: 0;
+  margin: 0;
+}
+@media all and (min-width: 960px) {
+  /* line 51, ../sass/components/wizard/_wizard.scss */
+  .wizard__intro-block {
+    margin: 0;
+  }
+}
+
+/* line 62, ../sass/components/wizard/_wizard.scss */
+.wizard__content-block--help {
+  display: inline-block;
+  border: 0px solid black;
+  padding: 0 25px 0 25px;
+}
+@media all and (min-width: 960px) {
+  /* line 62, ../sass/components/wizard/_wizard.scss */
+  .wizard__content-block--help {
+    padding: 0;
+  }
+}
+
+/* line 74, ../sass/components/wizard/_wizard.scss */
+.wizard__header {
+  font-weight: 700;
+  font-size: 1em;
+  padding: 0;
+  margin: 0 0 20px 0;
+  padding: 10px 25px 0 25px;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 74, ../sass/components/wizard/_wizard.scss */
+  .wizard__header {
+    padding: 35px 25px 0 0;
+  }
+}
+
+/* line 87, ../sass/components/wizard/_wizard.scss */
+.wizard__header--title {
+  font-weight: 700;
+  font-size: 1em;
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 87, ../sass/components/wizard/_wizard.scss */
+  .wizard__header--title {
+    font-size: 1.357em;
+  }
+}
+
+/* line 103, ../sass/components/wizard/_wizard.scss */
+.wizard__header--title-government {
+  font-size: 0.857em;
+  text-transform: uppercase;
+  border: 0px solid red;
+  margin: 0 0 4px 0;
+  padding: 0px;
+  font-weight: 700;
+}
+@media all and (min-width: 960px) {
+  /* line 103, ../sass/components/wizard/_wizard.scss */
+  .wizard__header--title-government {
+    font-size: 1.071em;
+  }
+}
+
+/* line 117, ../sass/components/wizard/_wizard.scss */
+.wizard__header--title-intro {
+  font-weight: 700;
+  font-size: 1em;
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px 0;
+  border: 0px solid pink;
+  font-size: 1.357em;
+}
+@media all and (min-width: 960px) {
+  /* line 117, ../sass/components/wizard/_wizard.scss */
+  .wizard__header--title-intro {
+    font-size: 2.571em;
+  }
+}
+
+/* line 133, ../sass/components/wizard/_wizard.scss */
+.wizard__header-line {
+  height: 4px;
+  max-width: 80px;
+  background: #0F2940;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 141, ../sass/components/wizard/_wizard.scss */
+.wizard__question {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1.667em;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 141, ../sass/components/wizard/_wizard.scss */
+  .wizard__question {
+    font-size: 2.571em;
+    font-size: 2.4em;
+  }
+}
+
+/* line 155, ../sass/components/wizard/_wizard.scss */
+.wizard__question--help {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 15px 0 20px 0;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 155, ../sass/components/wizard/_wizard.scss */
+  .wizard__question--help {
+    font-size: 2em;
+    width: 70%;
+  }
+}
+
+/* line 172, ../sass/components/wizard/_wizard.scss */
+.wizard__buttons {
+  border: 0px solid white;
+  margin: 30px 0 30px 0;
+}
+
+/* line 177, ../sass/components/wizard/_wizard.scss */
+.wizard__button {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 8px 35px 8px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+/* line 180, ../sass/components/wizard/_wizard.scss */
+a.wizard__button {
+  color: #0F2940;
+  text-decoration: none;
+}
+
+/* line 184, ../sass/components/wizard/_wizard.scss */
+a.wizard__button--selected {
+  background-color: #0F2940;
+}
+
+/* line 187, ../sass/components/wizard/_wizard.scss */
+a.wizard__button--selected {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 191, ../sass/components/wizard/_wizard.scss */
+.wizard__button--selected-icon {
+  height: 10px;
+  margin: 0 0 0 3px;
+}
+
+/* line 201, ../sass/components/wizard/_wizard.scss */
+.wizard__copy--section_intro {
+  padding: 0;
+  margin: 15px 60px 20px 20px;
+  font-size: 0.929em;
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 201, ../sass/components/wizard/_wizard.scss */
+  .wizard__copy--section_intro {
+    font-size: 1.357em;
+    width: 80%;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 201, ../sass/components/wizard/_wizard.scss */
+  .wizard__copy--section_intro {
+    width: 80%;
+    font-size: 1.357em;
+    margin: 30px 20px 30px 0;
+  }
+}
+
+/* line 220, ../sass/components/wizard/_wizard.scss */
+.wizard__icon {
+  width: 40px;
+  height: 40px;
+  margin: 15px 20px 20px 0;
+  border: 0px solid red;
+}
+
+/* line 231, ../sass/components/wizard/_wizard.scss */
+.wizard__icon_help {
+  width: 40px;
+  height: 40px;
+  margin: 15px 0 20px 0;
+  border: 0px solid red;
+}
+
+/* line 242, ../sass/components/wizard/_wizard.scss */
+.wizard__header_block--help {
+  border: 0px solid red;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 250, ../sass/components/wizard/_wizard.scss */
+.wizard__illustration {
+  border: 0px solid blue;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+@media all and (min-width: 960px) {
+  /* line 250, ../sass/components/wizard/_wizard.scss */
+  .wizard__illustration {
+    width: 95%;
+  }
+}
+
+/* line 259, ../sass/components/wizard/_wizard.scss */
+.wizard__illustration img {
+  width: 100%;
+  height: 100%;
+}
+@media all and (min-width: 960px) {
+  /* line 259, ../sass/components/wizard/_wizard.scss */
+  .wizard__illustration img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* line 270, ../sass/components/wizard/_wizard.scss */
+.wizard__help_content {
+  border: 0px solid red;
+  width: 90%;
+  margin: 20px 0 20px 0;
+}
+@media all and (min-width: 960px) {
+  /* line 270, ../sass/components/wizard/_wizard.scss */
+  .wizard__help_content {
+    width: 60%;
+  }
+}
+
+/* line 279, ../sass/components/wizard/_wizard.scss */
+.wizard__help_hr {
+  height: 2px;
+  max-width: 80px;
+  background: #0F2940;
+  display: block;
+  border: 0 none;
+  margin: 0;
+}
+
+/* line 2, ../sass/components/wizard/_wizard_start.scss */
+.wizard__header--start {
+  font-weight: 700;
+  font-size: 1em;
+  margin: 10px 0 10px 0;
+  padding: 35px 25px 0 25px;
+  width: 100%;
+  border: 0px solid red;
+  background-image: url("../images/wizard/illustrations/illustration_clouds.png");
+  background-size: 112px 48px;
+  background-repeat: no-repeat;
+  background-position: 150px 0;
+}
+@media all and (min-width: 720px) {
+  /* line 2, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__header--start {
+    padding: 35px 25px 0 0;
+    margin: 60px 0 10px 0;
+  }
+}
+
+/* line 19, ../sass/components/wizard/_wizard_start.scss */
+.wizard__start-block {
+  display: inline-block;
+  border: 0px solid black;
+  padding: 0;
+  margin: 0 25px 0 25px;
+}
+@media all and (min-width: 960px) {
+  /* line 19, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__start-block {
+    margin: 0;
+  }
+}
+
+/* line 32, ../sass/components/wizard/_wizard_start.scss */
+.wizard__header--title-start-super {
+  border: 0px solid white;
+  color: white;
+  font-size: 1.357em;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 41, ../sass/components/wizard/_wizard_start.scss */
+.wizard__header--title-start {
+  border: 0px solid white;
+  font-size: 2.429em;
+  color: white;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+@media all and (min-width: 720px) {
+  /* line 41, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__header--title-start {
+    font-size: 3em;
+  }
+}
+
+/* line 52, ../sass/components/wizard/_wizard_start.scss */
+.wizard__copy--section_start {
+  padding: 0;
+  width: 85%;
+  margin: 0px 0 22px 0;
+  font-size: 0.929em;
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 52, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__copy--section_start {
+    font-size: 1.357em;
+    width: 80%;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 52, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__copy--section_start {
+    width: 80%;
+    font-size: 1.357em;
+    margin: 0px 0 22px 0;
+  }
+}
+
+/* line 72, ../sass/components/wizard/_wizard_start.scss */
+.wizard__start_table_of_contents {
+  font-size: 0.929em;
+  font-weight: 700;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 72, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__start_table_of_contents {
+    border: 0px solid red;
+    margin: 0;
+    font-size: 1.071em;
+  }
+}
+
+/* line 88, ../sass/components/wizard/_wizard_start.scss */
+.wizard__start_table_of_contents_item {
+  margin: 0;
+  padding: 0;
+  margin: 2px 0 2px 0;
+}
+
+/* line 94, ../sass/components/wizard/_wizard_start.scss */
+.wizard__copy--time-estimate {
+  border: 0px solid red;
+  width: 80%;
+  font-weight: 700;
+  color: white;
+  font-size: 0.857em;
+}
+@media all and (min-width: 720px) {
+  /* line 94, ../sass/components/wizard/_wizard_start.scss */
+  .wizard__copy--time-estimate {
+    font-size: 1.2em;
+  }
+}
+
+/* line 33, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar--simple {
+  width: 10%;
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  *zoom: 1;
+  top: 0;
+  right: 0;
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 24px 12px;
+  background-color: "transparent";
+  min-height: 550px;
+  width: 60px;
+  overflow: hidden;
+  *zoom: 1;
+}
+@media all and (min-width: 960px) {
+  /* line 33, ../sass/components/wizard/_wizard_progress_bar.scss */
+  .wizard__progress-bar--simple {
+    margin: 40px 0 0 0;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 33, ../sass/components/wizard/_wizard_progress_bar.scss */
+  .wizard__progress-bar--simple {
+    width: 270px;
+  }
+}
+
+/* line 43, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar-section {
+  margin: 0;
+  padding: 0;
+  height: 103px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 52, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar-section--selected {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 61, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_location_bar {
+  width: 58px;
+  height: 100px;
+}
+
+/* @mixin wizard__progress-large_icon { */
+/*   width:40px; */
+/*   height:100px; */
+/*   float: left; */
+/*   background-image: image-url("wizard/icon_bulb.png"); */
+/*   background-size: 100%; */
+/*   background-repeat: no-repeat; */
+/*   margin: 5px 0 0 10px; */
+/* } */
+/* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_location_bar--completed_first_section {
+  width: 58px;
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 24px 12px;
+  height: 100%;
+}
+
+/* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_location_bar--completed {
+  width: 58px;
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 24px 0;
+  height: 100%;
+}
+
+/* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_location_bar--selected {
+  width: 58px;
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 24px 0;
+  height: 100%;
+}
+
+/* line 119, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_contents {
+  padding: 0 0 0 10px;
+  color: #0F2940;
+  width: 155px;
+}
+
+/* line 127, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_contents--deselected {
+  float: left;
+  padding: 0 0 0 10px;
+  width: 155px;
+  color: rgba(15, 41, 64, 0.3);
+  display: none;
+}
+@media all and (min-width: 720px) {
+  /* line 127, ../sass/components/wizard/_wizard_progress_bar.scss */
+  .wizard__progress-bar_contents--deselected {
+    display: block;
+  }
+}
+
+/* line 139, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_contents--selected {
+  float: left;
+  padding: 0 0 0 10px;
+  color: #0F2940;
+  width: 155px;
+  display: none;
+}
+@media all and (min-width: 720px) {
+  /* line 139, ../sass/components/wizard/_wizard_progress_bar.scss */
+  .wizard__progress-bar_contents--selected {
+    display: block;
+  }
+}
+
+/* line 152, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_government {
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 10px 0 4px 0;
+  font-size: 0.857em;
+  letter-spacing: 0.1px;
+}
+
+/* line 163, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_section_title {
+  font-weight: 700;
+  margin: 0 0 7px 0;
+  padding: 0;
+}
+
+/* line 171, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_status_icons {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 175, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_icon--incomplete {
+  width: 15px;
+  height: 15px;
+  margin: 0 4px 0 0;
+  padding: 0;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
+}
+
+/* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_icon--completed {
+  width: 15px;
+  height: 15px;
+  margin: 0 4px 0 0;
+  padding: 0;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
+}
+
+/* line 189, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-bar_icon--selected {
+  width: 15px;
+  height: 15px;
+  margin: 0 4px 0 0;
+  padding: 0;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
+}
+
+/**********/
+/* Drawer */
+/**********/
+/* line 200, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-drawer {
+  display: none;
+  border: 0 solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 270px;
+  min-height: 570px;
+}
+/* line 208, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__progress-drawer .wizard__progress-bar--simple {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 215, ../sass/components/wizard/_wizard_progress_bar.scss */
+.progress-drawer_contents {
+  border: 0px solid red;
+  width: 220px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 221, ../sass/components/wizard/_wizard_progress_bar.scss */
+.progress-drawer_contents .wizard__progress-drawer-contents-section {
+  height: 105px;
+}
+
+/* line 227, ../sass/components/wizard/_wizard_progress_bar.scss */
+.current {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* line 232, ../sass/components/wizard/_wizard_progress_bar.scss */
+.wizard__button--close {
+  border: 0px solid white;
+  background-image: url('../images/wizard/icon_close.png?1461525799');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  float: right;
+  margin: 15px 15px 0 0;
+}
+
+/* // mobile drawer root containers */
+/* .wizard__progress-bar--section_1 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_city-registration); */
+/* } */
+/* .wizard__progress-bar--section_2 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_name); */
+/* } */
+/* .wizard__progress-bar--section_3{ */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_sellers-permit); */
+/* } */
+/* .wizard__progress-bar--section_4 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_employeer-identification-number); */
+/* } */
+/* .wizard__progress-bar--section_5 { */
+/*   @include wizard__progress-bar-drawer-root($wizard__drawer_your-business_registration-guide); */
+/* } */
+/* line 3, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__nav {
+  display: inline-block;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  margin: 0 0 0 0;
+  border: 0px solid red;
+}
+@media all and (min-width: 720px) {
+  /* line 3, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav {
+    width: 85%;
+    margin: 10px 25px 0 25px;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 3, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav {
+    margin: 10px 0 0 0;
+    width: 95%;
+  }
+}
+
+/* line 23, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__nav--full_width {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin: 10px 0 0 0;
+  border: 0px solid red;
+}
+
+/* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-up {
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 10px 10px 24px;
+  border: 0px solid red;
+  width: 24px;
+  height: 25px;
+  display: block;
+  border⨪bottom: 2px solid white;
+  text-indent: -10000px;
+}
+@media all and (min-width: 720px) {
+  /* line 41, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  a.wizard__arrow-up {
+    margin: 0 10px 10px 0;
+  }
+}
+
+/* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-down {
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 0 0 24px;
+  width: 24px;
+  height: 25px;
+  display: block;
+  text-indent: -10000px;
+}
+@media all and (min-width: 720px) {
+  /* line 58, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  a.wizard__arrow-down {
+    margin: 0 0 24px 0;
+  }
+}
+
+/* line 72, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-down.enabled {
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
+}
+
+/* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__arrow-up.enabled.left {
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
+  background-color: #99d5f5;
+  display: block;
+  float: right;
+}
+@media all and (min-width: 720px) {
+  /* line 77, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__arrow-up.enabled.left {
+    border: 0px solid red;
+    background-image: none;
+    background-image: url('../images/wizard/nav_hr_bar_white.png?1461525799');
+    width: 40px;
+    background-size: 42px 2px;
+    background-repeat: repeat-x;
+  }
+}
+
+/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__arrow-down--filled {
+  background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 320px;
+  height: 94px;
+  margin-top: 5px;
+  display: block;
+  border: 0px solid white;
+}
+@media all and (min-width: 720px) {
+  /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__arrow-down--filled {
+    border: 0px solid red;
+  }
+}
+
+/* line 108, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__nav_label {
+  color: #0F2940;
+  font-weight: 700;
+  float: left;
+  font-size: 1em;
+  border: 0px solid red;
+  margin: 0;
+  padding: 15px 0 0 4px;
+}
+@media all and (min-width: 720px) {
+  /* line 108, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav_label {
+    color: white;
+  }
+}
+
+/* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__nav_label_help {
+  color: #0F2940;
+  font-weight: 700;
+  float: right;
+  font-size: 1em;
+  border: 0px solid red;
+  margin: 0;
+  padding: 5px 0;
+}
+@media all and (min-width: 720px) {
+  /* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  .wizard__nav_label_help {
+    color: white;
+    padding: 15px 0 0 4px;
+  }
+}
+
+/* line 2, ../sass/components/wizard/wizard_tip.scss */
+.wizard__tip {
+  margin: 20px 0 20px 0;
+}
+
+/* line 8, ../sass/components/wizard/wizard_tip.scss */
+.wizard__tip_icon {
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px 0 0;
+  background-image: url('../images/wizard/icon_info.png?1461525799');
+  background-size: 100%;
+}
+
+/* line 17, ../sass/components/wizard/wizard_tip.scss */
+.wizard__tip_content {
+  float: left;
+  margin: 0 0 0 6px;
+  width: 70%;
+}
+
+/* line 23, ../sass/components/wizard/wizard_tip.scss */
+.wizard__tip_copy {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 0.929em;
+}
+@media all and (min-width: 960px) {
+  /* line 23, ../sass/components/wizard/wizard_tip.scss */
+  .wizard__tip_copy {
+    font-size: 1.333em;
+    font-size: 1.2em;
+  }
+}
+
+/* line 34, ../sass/components/wizard/wizard_tip.scss */
+.wizard__tip_button {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid #0F2940;
+  font-size: 0.85em !important;
+  padding: 6px 15px;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  display: inline-block;
+  color: #0F2940 !important;
+}
+
+/* line 46, ../sass/components/wizard/wizard_tip.scss */
+.wizard__tip_button.wizard__button--selected {
+  color: white !important;
+}
+
+/* line 2, ../sass/components/wizard/_wizard_address.scss */
+.wizard__address {
+  margin: 20px 0 20px 0;
+}
+
+/* line 7, ../sass/components/wizard/_wizard_address.scss */
+.wizard__address_content {
+  float: left;
+  margin: 0 0 0 0;
+  width: 70%;
+}
+
+/* line 15, ../sass/components/wizard/_wizard_address.scss */
+.wizard__address_copy {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 0.929em;
+}
+@media all and (min-width: 960px) {
+  /* line 15, ../sass/components/wizard/_wizard_address.scss */
+  .wizard__address_copy {
+    font-size: 1.333em;
+    font-size: 1.2em;
+  }
+}
+
+/* line 28, ../sass/components/wizard/_wizard_address.scss */
+.wizard__address_input {
+  border: 0px solid red;
+  padding: 0 10px 0 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  height: 32px;
+  margin: 0 0 10px 0;
+  outline: 0;
+  width: 270px;
+}
+@media all and (min-width: 960px) {
+  /* line 28, ../sass/components/wizard/_wizard_address.scss */
+  .wizard__address_input {
+    display: block;
+    width: 400px;
+  }
+}
+
+/* line 44, ../sass/components/wizard/_wizard_address.scss */
+.wizard__address_buttons {
+  border: 0px solid white;
+  margin: 10px 0 20px 0;
+}
+
+/* line 49, ../sass/components/wizard/_wizard_address.scss */
+.wizard__tip_button {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 2px solid #0F2940;
+  font-size: 0.85em !important;
+  padding: 6px 15px;
+  margin: 0 0 20px 0;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  display: inline-block;
+  color: #0F2940 !important;
+}
+
+/* line 3, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__question--checklist {
+  font-family: Merriweather, serif;
+  font-weight: 400;
+  font-size: 1.667em;
+  margin: 0 0 20px 25px;
+  padding: 0;
+  width: 80%;
+  border: 0px solid red;
+}
+@media all and (min-width: 960px) {
+  /* line 3, ../sass/components/wizard/_wizard_checklist.scss */
+  .wizard__question--checklist {
+    font-size: 2.571em;
+    margin: 0 0 20px 0;
+  }
+}
+
+/* line 18, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__checklist_content {
+  border: 0px solid red;
+  width: 75%;
+  margin: 4px 0 20px 0;
+}
+@media all and (min-width: 960px) {
+  /* line 18, ../sass/components/wizard/_wizard_checklist.scss */
+  .wizard__checklist_content {
+    margin: 4px 0 20px 0;
+    font-size: 1.143em;
+  }
+}
+
+/* line 28, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__checklist_content--strong {
+  border: 0px solid red;
+  width: 75%;
+  margin: 4px 0 20px 0;
+  font-weight: 700;
+}
+@media all and (min-width: 960px) {
+  /* line 28, ../sass/components/wizard/_wizard_checklist.scss */
+  .wizard__checklist_content--strong {
+    margin: 4px 0 20px 0;
+    font-size: 1.143em;
+  }
+}
+
+/* line 41, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__checklist_column_1_wrapper {
+  border: 0px solid green;
+  margin: 0px 25px 20px 25px;
+}
+@media all and (min-width: 960px) {
+  /* line 41, ../sass/components/wizard/_wizard_checklist.scss */
+  .wizard__checklist_column_1_wrapper {
+    margin: 4px 0 20px 0;
+  }
+}
+
+/* line 51, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__button--checklist {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 8px 35px 8px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  margin: 0 0 20px 0px;
+}
+
+/* line 59, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__step {
+  border-top: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.857em;
+  margin: 4px 0 10px 0;
+  padding: 10px 0 0 0;
+}
+@media all and (min-width: 960px) {
+  /* line 59, ../sass/components/wizard/_wizard_checklist.scss */
+  .wizard__step {
+    margin: 0 0 20px 0px;
+  }
+}
+
+/* line 72, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__step_header {
+  border: 0px solid pink;
+  color: #0F2940;
+  padding: 0;
+  margin: 0 0 20px 0px;
+  color: #0F2940;
+  font-weight: 400;
+  font-size: 1.429em;
+}
+@media all and (min-width: 960px) {
+  /* line 72, ../sass/components/wizard/_wizard_checklist.scss */
+  .wizard__step_header {
+    margin: 0 0 20px 0px;
+  }
+}
+
+/* line 85, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__cheklist_ol {
+  border: 0px solid red;
+  margin: 4px 25px 20px 0;
+  padding: 0 0 0 20px;
+}
+@media all and (min-width: 960px) {
+  /* line 85, ../sass/components/wizard/_wizard_checklist.scss */
+  .wizard__cheklist_ol {
+    margin: 0 0 20px 0px;
+  }
+}
+
+/* line 95, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__cheklist_li {
+  border: 0px solid pink;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+/* Nodes */
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * node__teaser component.
+ *
+ */
+/* Sub-component: guide__teaser  */
+/**
+ * @file
+ * SMACSS Modules
+ *
+ * bp_starter_kit component.
+ *
+ */
+/* Sub-component:  bp_starter_kit__key_points  */
+/* line 11, ../sass/components/_bp_starter_kit.scss */
+body.node-type-sbp-starter-kit .node-teaser {
+  background: #F7F7F7;
+  margin-bottom: 30px;
+}
+@media all and (min-width: 480px) {
+  /* line 11, ../sass/components/_bp_starter_kit.scss */
+  body.node-type-sbp-starter-kit .node-teaser {
+    display: inline-block;
+    width: 49%;
+  }
+}
+
+/* Colors */
+/* line 25, ../sass/components/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit .button--link {
+  background: #00BED5;
+}
+/* line 27, ../sass/components/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit .button--link a {
+  color: white;
+}
+/* line 32, ../sass/components/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit a {
+  color: #00BED5;
+}
+
+/* line 1, ../sass/components/_detail_pages.scss */
+.panel-col-last .field-name-body {
+  line-height: 1.25em;
+  color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+}
+@media all and (min-width: 960px) {
+  /* line 1, ../sass/components/_detail_pages.scss */
+  .panel-col-last .field-name-body {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+/* line 12, ../sass/components/_detail_pages.scss */
+.panel-col-last .field-label {
+  line-height: 1.25em;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  width: 90%;
+}
+@media all and (min-width: 960px) {
+  /* line 12, ../sass/components/_detail_pages.scss */
+  .panel-col-last .field-label {
+    width: 85%;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+/* Panels */
+/* line 1, ../sass/components/_four_column_cta.scss */
+.panel__header,
+.panel__icon_header {
+  font-family: "Merriweather", serif;
+  margin: 0 0 1em 0;
+  padding: 0;
+  font-size: 1.714em;
+}
+@media all and (min-width: 720px) {
+  /* line 1, ../sass/components/_four_column_cta.scss */
+  .panel__header,
+  .panel__icon_header {
+    font-size: 2.571em;
+    margin: 0 0 2em 0;
+  }
+}
+
+/* line 13, ../sass/components/_four_column_cta.scss */
+.panel__icon_header {
+  font-size: 1.286em;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+@media all and (min-width: 720px) {
+  /* line 13, ../sass/components/_four_column_cta.scss */
+  .panel__icon_header {
+    font-size: 1.429em;
+    min-height: 60px;
+  }
+}
+
+/* line 24, ../sass/components/_four_column_cta.scss */
+.panel__header-line {
+  height: 4px;
+  max-width: 80px;
+}
+
+/* line 28, ../sass/components/_four_column_cta.scss */
+.panel__header-line_thin {
+  height: 2px;
+  max-width: 40px;
+}
+
+/* line 32, ../sass/components/_four_column_cta.scss */
+.panel__icons {
+  display: block;
+}
+
+/* line 37, ../sass/components/_four_column_cta.scss */
+.panel__icon {
+  max-width: 65px;
+  width: 100%;
+  float: right;
+  margin: 0 0 2em;
+}
+@media all and (min-width: 720px) {
+  /* line 37, ../sass/components/_four_column_cta.scss */
+  .panel__icon {
+    max-width: 134px;
+    width: 100%;
+    float: none;
+  }
+}
+
+/* line 50, ../sass/components/_four_column_cta.scss */
+.panel__paragraph {
+  color: navy;
+  margin: 0;
+}
+
+/* line 58, ../sass/components/_four_column_cta.scss */
+.pane-bundle-four-column-cta > .pane-title {
+  display: none;
+}
+
+/* line 62, ../sass/components/_four_column_cta.scss */
+.panel__section {
+  line-height: 1.3em;
+}
+
+/*************************************
+*         Layout
+**************************************/
+/* line 70, ../sass/components/_four_column_cta.scss */
+.four-col-wrapper {
+  width: 80%;
+  margin: auto;
+  padding: 1em 0 3em;
+}
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.four-col-wrapper:before, .four-col-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.four-col-wrapper:after {
+  clear: both;
+}
+@media all and (min-width: 960px) {
+  /* line 70, ../sass/components/_four_column_cta.scss */
+  .four-col-wrapper {
+    padding: 1em 0 6em;
+  }
+}
+/* line 80, ../sass/components/_four_column_cta.scss */
+.four-col-wrapper .panel__section {
+  margin-top: 2em;
+}
+@media all and (min-width: 720px) {
+  /* line 80, ../sass/components/_four_column_cta.scss */
+  .four-col-wrapper .panel__section {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: 40%;
+    padding-left: 0;
+    margin-left: 20px;
+    padding-right: 10px;
+    margin-right: -10px;
+    float: left;
+    margin-top: 0;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 80, ../sass/components/_four_column_cta.scss */
+  .four-col-wrapper .panel__section {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: 20%;
+    padding-left: 0;
+    padding-right: 15px;
+    margin-right: 5px;
+    float: left;
+    margin-top: 0;
+    width: 22%;
+  }
+}
+
+/*
+
+.panel__button--yellow {
+  @include panel__button--base(yellow);
+}
+
+
+*/
+/* line 21, ../sass/components/_section_content.scss */
+.panel__intro {
+  background-color: "transparent";
+  padding: 20px 25px 20px 25px;
+  display: block;
+  width: 100%;
+}
+@media all and (min-width: 720px) {
+  /* line 21, ../sass/components/_section_content.scss */
+  .panel__intro {
+    padding: 50px 35px 50px 35px;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 21, ../sass/components/_section_content.scss */
+  .panel__intro {
+    padding: 75px 0 75px 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 21, ../sass/components/_section_content.scss */
+  .panel__intro {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+/* line 32, ../sass/components/_section_content.scss */
+.panel__intro_header {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  padding: 0;
+  font-size: 1.714em;
+  width: 100%;
+}
+@media all and (min-width: 720px) {
+  /* line 32, ../sass/components/_section_content.scss */
+  .panel__intro_header {
+    font-size: 2.571em;
+    margin: 0 0 30px 0;
+  }
+}
+
+/* line 46, ../sass/components/_section_content.scss */
+.panel__intro_paragraph {
+  font-size: 1.286em;
+  line-height: 1.4em;
+}
+@media all and (min-width: 720px) {
+  /* line 46, ../sass/components/_section_content.scss */
+  .panel__intro_paragraph {
+    font-size: 1.429em;
+    width: 90%;
+  }
+}
+
+/* line 57, ../sass/components/_section_content.scss */
+.panel__header-line {
+  height: 4px;
+  max-width: 80px;
+}
+
+/* line 61, ../sass/components/_section_content.scss */
+.panel__button {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #FFD65C;
+  color: #163549;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em 0;
+  cursor: pointer;
+}
+/* line 161, ../sass/base/_mixins.scss */
+.panel__button a {
+  color: #163549;
+}
+@media all and (min-width: 960px) {
+  /* line 61, ../sass/components/_section_content.scss */
+  .panel__button {
+    font-size: 1.143em;
+  }
+}
+
+/* line 65, ../sass/components/_section_content.scss */
+.panel__background_image {
+  display: none;
+}
+@media all and (min-width: 960px) {
+  /* line 65, ../sass/components/_section_content.scss */
+  .panel__background_image {
+    display: block;
+    width: 45%;
+    float: right;
+  }
+}
+
+/* line 74, ../sass/components/_section_content.scss */
+.pane-bundle-section-content > .pane-title {
+  display: none;
+}
+
+/************************************************
+*              LAYOUT
+*************************************************/
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.panel__content_wrapper:before, .panel__content_wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.panel__content_wrapper:after {
+  clear: both;
+}
+@media all and (min-width: 960px) {
+  /* line 82, ../sass/components/_section_content.scss */
+  .panel__content_wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 90, ../sass/components/_section_content.scss */
+.panel__content_col_1 {
+  width: 100%;
+}
+@media all and (min-width: 960px) {
+  /* line 90, ../sass/components/_section_content.scss */
+  .panel__content_col_1 {
+    padding: 75px 0 0 20px;
+  }
+}
+
+/* NAVIGATION MENU */
+/* line 3, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .pane-menu-block-1 h2 {
+  display: none;
+}
+
+/* line 7, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-1 {
+  margin: 0;
+  padding: 0;
+  /*padding:30px 0px 20px 25px;
+  @include window_size(desktop){
+    padding:30px 0px 20px 0px;
+  }*/
+}
+
+/* line 17, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-1 .menu a.active-trail {
+  color: navy;
+  font-weight: 700;
+}
+
+/* line 22, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-1 .menu__item {
+  list-style: none;
+  color: #0F2940;
+  font-size: 1.143em;
+  margin: 0 0 10px 0;
+}
+
+/* SEARCH BAR */
+/* line 30, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .views-widget-filter-search_api_views_fulltext {
+  border-top: 1px solid #6BC3F3;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 37, ../sass/components/_left_sidebar.scss */
+.form-item-search-api-views-fulltext input[type=text] {
+  padding: 0 10px 0 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  height: 32px;
+  margin-top: 20px;
+  outline: 0;
+  width: 200px;
+  display: none;
+}
+@media all and (min-width: 960px) {
+  /* line 37, ../sass/components/_left_sidebar.scss */
+  .form-item-search-api-views-fulltext input[type=text] {
+    display: block;
+  }
+}
+
+/* line 50, ../sass/components/_left_sidebar.scss */
+.views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
+#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* FILTERS */
+/* line 61, ../sass/components/_left_sidebar.scss */
+.pane-facetapi h2.pane-title,
+.pane-sbp-terms-definitions h2.pane-title {
+  list-style: none;
+  color: #0F2940;
+  font-size: 1.143em;
+  margin: 20px 0 10px 0;
+  padding: 0px 0 0 25px;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: 17px 10px;
+  background-position: 0px 5px;
+}
+
+/* line 76, ../sass/components/_left_sidebar.scss */
+ul.facetapi-facet-field-business-need li,
+ul.facetapi-facet-field-business-ownership li,
+ul.facetapi-facet-field-industry-tag li,
+ul.facetapi-facet-field-resource-type li,
+.pane-sbp-terms-definitions ul li {
+  list-style: none;
+  color: #0F2940;
+  font-size: 0.929em;
+  margin: 0 0 10px 0;
+}
+
+/**
+ * @file
+ * Print styling
+ *
+ * We provide some sane print styling for Drupal using Zen's layout method.
+ */
+/**
+ * By importing this CSS file as media "all", we allow this print file to be
+ * aggregated with other stylesheets, for improved front-end performance.
+ */
+@media print {
+  /* Underline all links. */
+  /* line 15, ../sass/base/_print.scss */
+  a:link,
+  a:visited {
+    text-decoration: underline !important;
+    /* Don't underline header. */
+  }
+  /* line 20, ../sass/base/_print.scss */
+  a:link.header__site-link,
+  a:visited.header__site-link {
+    text-decoration: none !important;
+  }
+
+  /* line 25, ../sass/base/_print.scss */
+  #content {
+    /* Add visible URL after links. */
+    /* Only display useful links. */
+    /* Add visible title after abbreviations. */
+  }
+  /* line 27, ../sass/base/_print.scss */
+  #content a[href]:after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+    font-size: 14px;
+  }
+  /* line 34, ../sass/base/_print.scss */
+  #content a[href^="javascript:"]:after,
+  #content a[href^="#"]:after {
+    content: "";
+  }
+  /* line 40, ../sass/base/_print.scss */
+  #content abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Un-float the content. */
+  /* line 46, ../sass/base/_print.scss */
+  #content {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Turn off any background colors or images. */
+  /* line 54, ../sass/base/_print.scss */
+  body,
+  #page,
+  #main,
+  #content {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  /* Hide sidebars and nav elements. */
+  /* line 64, ../sass/base/_print.scss */
+  #skip-link,
+  #toolbar,
+  #navigation,
+  .region-sidebar-first,
+  .region-sidebar-second,
+  #footer,
+  .breadcrumb,
+  .tabs,
+  .action-links,
+  .links,
+  .book-navigation,
+  .forum-topic-navigation,
+  .pager,
+  .feed-icons {
+    visibility: hidden;
+    display: none;
+  }
+}
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */
