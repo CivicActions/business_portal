@@ -6,8 +6,6 @@
 
   @include window_size(desktop){
     width: $zen-grid-width;
-    margin-left: auto;
-    margin-right: auto;
     @include clearfix;
   }
 
