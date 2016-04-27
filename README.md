@@ -34,11 +34,11 @@ in the VM, run `vagrant ssh` from the box directory after set up
 
 Note: The directories below assume you are running gem from your local computer. 
 
-If running from DrupalVM, please substitute `/var/www/labp` for `~/Projects/business_portal/docroot`.
+If running from Outside DrupalVM, please substitute `/var/www/labp` with `~/Projects/business_portal/docroot`.
 
 ### Step 1. Install bundler
 ```bash
-cd ~/Projects/business_portal/docroot/profiles/labp/themes/la/lasbptheme
+cd /var/www/labp/docroot/profiles/labp/themes/la/lasbptheme
 gem install bundler
 ```
 Please use `sudo gem install bundler` when running on DrupalVM
@@ -57,6 +57,8 @@ bundle exec compass clean
 ``` bash
 bundle exec compass compile
 ```
+### Step 5. Configure Solr
+- `bash /assets/configure-solr.sh`
 
 ## Bundler and Zen Grids known compile issues
 
