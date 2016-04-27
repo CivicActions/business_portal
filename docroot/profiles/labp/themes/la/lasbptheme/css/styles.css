@@ -4193,29 +4193,52 @@ a.wizard__arrow-down.enabled {
   margin: 20px 0 20px 0;
 }
 
-/* line 7, ../sass/components/wizard/_wizard_address.scss */
+/* line 6, ../sass/components/wizard/_wizard_address.scss */
+.form-item-streetAddress label[for="edit-streetaddress"] {
+  display: none;
+}
+
+/* line 11, ../sass/components/wizard/_wizard_address.scss */
 .wizard__address_content {
   float: left;
   margin: 0 0 0 0;
   width: 70%;
 }
 
-/* line 15, ../sass/components/wizard/_wizard_address.scss */
-.wizard__address_copy {
+/* line 19, ../sass/components/wizard/_wizard_address.scss */
+.wizard__address_copy,
+.form-item-streetAddress .description {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 0.929em;
 }
 @media all and (min-width: 960px) {
-  /* line 15, ../sass/components/wizard/_wizard_address.scss */
-  .wizard__address_copy {
+  /* line 19, ../sass/components/wizard/_wizard_address.scss */
+  .wizard__address_copy,
+  .form-item-streetAddress .description {
     font-size: 1.333em;
     font-size: 1.2em;
   }
 }
 
-/* line 28, ../sass/components/wizard/_wizard_address.scss */
-.wizard__address_input {
+/* line 32, ../sass/components/wizard/_wizard_address.scss */
+#form-address-lookup {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 8px 35px 8px 35px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  color: #0f2940;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+/* line 41, ../sass/components/wizard/_wizard_address.scss */
+.form-item-streetAddress input {
   border: 0px solid red;
   padding: 0 10px 0 10px;
   -moz-border-radius: 4px;
@@ -4227,20 +4250,20 @@ a.wizard__arrow-down.enabled {
   width: 270px;
 }
 @media all and (min-width: 960px) {
-  /* line 28, ../sass/components/wizard/_wizard_address.scss */
-  .wizard__address_input {
+  /* line 41, ../sass/components/wizard/_wizard_address.scss */
+  .form-item-streetAddress input {
     display: block;
     width: 400px;
   }
 }
 
-/* line 44, ../sass/components/wizard/_wizard_address.scss */
+/* line 57, ../sass/components/wizard/_wizard_address.scss */
 .wizard__address_buttons {
   border: 0px solid white;
   margin: 10px 0 20px 0;
 }
 
-/* line 49, ../sass/components/wizard/_wizard_address.scss */
+/* line 62, ../sass/components/wizard/_wizard_address.scss */
 .wizard__tip_button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;

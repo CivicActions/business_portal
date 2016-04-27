@@ -10,17 +10,20 @@
 function labp_address_wizard_address_input($form, &$form_state) {
   $form['streetAddress'] = array(
     '#type' => 'textfield',
-    '#title' => t('Enter an address or intersection.'),
+    '#title' => t(''),
     '#required' => TRUE,
-    '#default_value' => "1000 Sunset Blvd",
-    '#description' => '"14410 Sylvan St" or "Sunset Blvd / Vermont Ave" ',
+    '#description' => 'Example: "14410 Sylvan St" or "Sunset Blvd / Vermont Ave"',
     '#size' => 20,
     '#maxlength' => 20,
+    '#attributes' => array('placeholder'=>"Enter your address..."),
   );
   $form['lookup'] = array(
     '#type' => 'item',
-    '#markup' => 'Lookup',
+    '#markup' => 'Search',
     '#id' => 'form-address-lookup',
+    '#attributes' => array('class'=>array('wizard__address_button')),
+    //'#field_prefix' => '<div class="wizard__address_buttons">',
+    //'#field_suffix' => '</div>',
   );
   $form['#attributes'] = array('onsubmit' => 'return false');
   return $form;

@@ -187,8 +187,8 @@ wiz.views.App = wiz.extensions.View.extend({
           var question = new wiz.views.Question({model: this.model});
           this.$el.append(question.render().el);
 
-          var intro = new wiz.views.Intro({ model: this.model });
-          this.$el.append(intro.render().el);
+          //var intro = new wiz.views.Intro({ model: this.model });
+          //this.$el.append(intro.render().el);
           
           var addressForm = new wiz.views.AddressForm({ model: this.model });
           this.$el.append(addressForm.render().el);
