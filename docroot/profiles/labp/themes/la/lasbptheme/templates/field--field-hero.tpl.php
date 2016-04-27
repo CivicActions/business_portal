@@ -120,6 +120,7 @@ foreach($heros as $hero){
                         </div>
 
                     <div class = "right">
+                      <div class = "hero__header--inner">
                         <?php if (!empty($icon)): ?>
                             <div class = "hero__icon">
                                 <img src = "<?php print $icon_path; ?>" />
@@ -133,6 +134,7 @@ foreach($heros as $hero){
                           </p>
                         <?php endif; ?>
                     </div>
+                  </div>
                 </div>
             </div>
 
