@@ -139,5 +139,5 @@ foreach($heros as $hero){
             </div>
 
     <?php } ?>
-
+</div>
 
