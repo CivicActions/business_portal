@@ -126,8 +126,8 @@ foreach($heros as $hero){
                                 <img src = "<?php print $icon_path; ?>" />
                             </div>
                         <?php endif; ?>
-                      <div class="hero__headline"><?php print $hero_title; ?></div>
-                        <hr class = "hero__line">
+                      <div class="hero__headline--half"><?php print $hero_title; ?></div>
+                        <hr class = "hero__line--half">
                         <?php if(!empty($hero_description)): ?>
                           <p class="hero__description">
                              <?php print $hero_description; ?>

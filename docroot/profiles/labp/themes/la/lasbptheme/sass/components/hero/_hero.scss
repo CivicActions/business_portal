@@ -18,13 +18,15 @@
 
 }
 
-.hero__headline {
+.hero__headline,
+.hero__headline--half {
   font-family: $heading-font;
   font-weight: bold;
   color:#fff;
 }
 
-hr.hero__line {
+hr.hero__line,
+hr.hero__line--half {
   @include hr-thick;
   margin: 2em 0 0;
 }
