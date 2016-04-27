@@ -115,46 +115,6 @@
 }
 
 
-
-// icons
-
-// change the display property to make them appear
-
-/* .wizard__progress-bar_location_icon--city{ */
-/*   @include wizard__progress-large_icon; */
-/*   background-image: image-url("wizard/icon_bulb.png"); */
-/*   display: none; */
-
-/* } */
-
-/* .wizard__progress-bar_location_icon--county{ */
-/*   @include wizard__progress-large_icon; */
-/*   width:45px; */
-/*   margin: 5px 0 0 5px; */
-/*   background-image: image-url("wizard/icon_pencil.png"); */
-/*   display: none; */
-
-/* } */
-
-/* .wizard__progress-bar_location_icon--state{ */
-/*   @include wizard__progress-large_icon; */
-/*   background-image: image-url("wizard/icon_percentage.png"); */
-/* } */
-
-/* .wizard__progress-bar_location_icon--federal{ */
-/*   @include wizard__progress-large_icon; */
-/*   background-image: image-url("wizard/icon_pound.png"); */
-/*   display: none; */
-/* } */
-
-
-/* .wizard__progress-bar_location_icon--registration{ */
-/*   @include wizard__progress-large_icon; */
-/*   background-image: image-url("wizard/icon_map.png"); */
-/*   display: none; */
-/* } */
-
-
 // middle section
 .wizard__progress-bar_contents{
 //  float: left;
@@ -237,14 +197,36 @@
 /* Drawer */
 /**********/
 
-
-@mixin wizard__progress-bar-drawer-root($color:'transparent') {
-     @include wizard__progress-bar-root($color);
-     position: absolute;
-     top:0;
-     right:0;
+.wizard__progress-drawer {
+  display: none;
+  border: 0 solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 270px;
+  min-height: 570px;
+  .wizard__progress-bar--simple{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
+.progress-drawer_contents {
+  border: 0px solid red;
+  width: 220px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  .wizard__progress-drawer-contents-section {
+    height: 105px;
+  }
+}
+
+// Fix class to be more specific.
+.current {
+  background: rgba(255, 255, 255, 0.4);
+}
 
 // button for the drawer
 .wizard__button--close{
