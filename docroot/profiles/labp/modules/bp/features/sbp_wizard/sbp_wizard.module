@@ -126,7 +126,9 @@ function sbp_wizard_block() {
        <a href="#" class="wizard__arrow-up left enabled">Previous</a>
       <span class="wizard__nav_label_help">Back to the question</span>
   </script>
-  
+  <script type="text/template" id="wizard-address-form-template">
+       ' . drupal_render(drupal_get_form('labp_address_wizard_address_input')) . '
+  </script>
   <script type="text/template" id="wizard-nav-address-template">
        <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
   </script>

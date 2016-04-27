@@ -8,26 +8,50 @@
 
 include_once 'inc/address_form.inc';
 
-/**
- * Implements hook_views_pre_render().
- *
- * Add the address form to the sbp_wizard view
- *
+/** 
+ * Impliments hook_menu()
+ * 
+ * Adds an address lookup callback
  */
-function labp_address_wizard_views_pre_render(&$view) {
-  $results = $view->result;
-  foreach ($results as $key => $result) {
-    if ($view->name == 'sbp_wizard') {
-      if($result->field_field_screen_type){
-        if($result->field_field_screen_type[0]['raw']['value'] == 'address_lookup'){
-          if($result->field_field_description[0]['rendered']['#markup']){
-            $output = $result->field_field_description[0]['rendered']['#markup'];
-          }
-          $output .= drupal_render(drupal_get_form('labp_address_wizard_address_input'));
-          $result->field_field_description[0]['rendered']['#markup'] = $output;
-        }
-      }
-    }    
+
+function labp_address_wizard_menu(){
+  $items['labp/address-lookup/%'] = array(
+    'title' => 'Address Lookup Callback',
+    'page callback' => 'la_neighborhoodinfo_callback',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+  return $items;
+}
+
+/**
+ * Neighborhood Info Callback
+ * Passes address to Neighborhood Info and returns page content
+ * 
+ * @param type $address
+ * @return type
+ */
+function la_neighborhoodinfo_callback($address){
+  $base_url = 'http://neighborhoodinfo.lacity.org/index.cfm';
+  $data = array(
+    'fuseaction' => 'processAddress',
+    'streetAddress' => $address
+  );
+  $query = '?' . http_build_query($data);
+  $path = $base_url . $query;
+  $result = file_get_contents($path);
+  $inLA = la_neighborhoodinfo_check($result);
+  print drupal_json_output(array('inLA' => $inLA));
+  exit();
+}
+
+
+function la_neighborhoodinfo_check($result){  
+  if(strpos( $result , '<div id="resultBox">')){
+    return 1;
   }
-  return $view;
+  else {
+    return 0;
+  }
 }
