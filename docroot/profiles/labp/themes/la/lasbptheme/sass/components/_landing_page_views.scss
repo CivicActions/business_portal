@@ -1,3 +1,30 @@
+
+.view-id-bp_featured_sub_page,
+.view-bp-featured-resource-page {
+
+  .views-field-name,
+  .views-field-title {
+    font-family: $heading-font;
+    font-weight: 400;
+    width: 70%;
+    line-height: 1.2em;
+    padding-bottom: 1em;
+    display: inline-block;
+    @include window_size(desktop) {
+      font-size: 1.571em;
+    }
+  }
+
+  .views-row{
+    padding: 1em 0 2em;
+    border-bottom: solid 1px;
+
+  }
+
+}
+
+/**********************************/
+
 .pane-bp-featured-sub-page,
 .pane-bp-featured-resource-page,
 .pane-terms-definitions {
@@ -7,8 +34,6 @@
 
   @include window_size(desktop){
     width: $zen-grid-width;
-    margin-left: auto;
-    margin-right: auto;
     @include clearfix;
   }
 
@@ -31,23 +56,7 @@
   padding: 0px 10px 0 0;
 }
 
-.view-id-bp_featured_sub_page .views-field-title,
-.view-bp-featured-resource-page .views-field-title,
-.view-id-terms_definitions .views-field-name,
-.view-id-departments .views-field-title,
-.view-id-labp_service_center .views-field-title{
-  font-family: Merriweather, serif;
-  font-weight: 400;
 
-  padding:0;
-  margin: 5px 0px 5px 0;
-  width: 70%;
-  display: inline-block;
-  line-height: 1.2em;
-  @include window_size(desktop){
-    font-size:1.571em;
-  }
-}
 
 .view-id-bp_featured_sub_page .views-field-view-node,
 .view-id-bp_featured_sub_page .views-field-field-document,

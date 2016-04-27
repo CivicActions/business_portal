@@ -1,0 +1,68 @@
+
+/*****************************
+*     Half Width
+******************************/
+
+.hero__layout--half {
+  .hero__icon {
+    margin: 6em 0 0;
+
+    img {
+      width: 100%;
+      max-width: 100px;
+    }
+  }
+
+  .hero__bottom_align--bn {
+    padding: 400px 0 0 100px;
+    max-width: 250px;
+  }
+  .right {
+    padding-left: 30px;
+  }
+  .hero__headline {
+    font-size: 1.8em ;
+    margin: 1em 0 0;
+
+    @include window_size(tab-wide-up){
+      font-size: 2.143em;
+    }
+    @include window_size(desktop){
+      font-size: 2.6em;
+    }
+  }
+  .hero__background-image {
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  .hero__image--overlay {
+    padding-bottom: 4em;
+  }
+
+
+
+  /*========== Layout ======== */
+  //Mobile-first layout
+  $zen-grid-width: 100%;
+  $zen-column-count:  16!global;
+  //$zen-gutter-width:  20px;
+
+  .hero__content-wrapper {
+    @include zen-grid-container();
+    @include zen-grid-item-base();
+    width: 100%;
+    padding-left: 0;
+  }
+
+
+    @include window_size(tab-wide-up) {
+      .left  { @include zen-grid-item (6, 1); }
+      .right { @include zen-grid-item (10, 7); }
+    }
+    @include window_size(desktop){
+      .left  { @include zen-grid-item (6, 1); }
+      .right { @include zen-grid-item (10, 7); }
+    }
+  }
+

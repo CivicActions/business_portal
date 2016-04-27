@@ -98,17 +98,33 @@ foreach($heros as $hero){
 
 <!-- Half width starts -->
     <?php } else{ ?>
-        <div class = "hero__image--bg hero__layout--<?php print $width; ?> " <?php if (!empty($background_image_path)): ?> style = "background-image: url('<?php print $background_image_path;?>')" <?php endif; ?>>
-            <div class = "hero__image--overlay">
+        <div class = "hero__image--bg hero__layout--<?php print $width; ?> ">
                 <div class = "hero__content-wrapper">
-                    <div class = "left">
-                      <?php if (!empty($icon)): ?>
-                        <div class = "hero__icon">
-                           <img src = "<?php print $icon_path; ?>" />
+                    <div class = "left" >
+                        <div class = "hero__background-image"  <?php if (!empty($background_image_path)): ?> style = "background-image: url('<?php print $background_image_path;?>')" <?php endif; ?>>
+                          <div class = "hero__image--overlay">
+                        <?php if(!empty($hero_subtitle) || !empty($hero_subtitle_long)): ?>
+                            <div class="hero__bottom_align--bn">
+                                <?php if(!empty($hero_subtitle_long)): ?>
+                                    <h5 class="hero__business__name"><?php print $hero_subtitle_long; ?></h5>
+                                <?php endif; ?>
+                                <?php if(!empty($hero_subtitle)): ?>
+                                    <p class="hero__business__description">
+                                        <?php print $hero_subtitle; ?>
+                                    </p>
+                                <?php endif; ?>
+                            </div>
+                        <?php endif; ?>
+                      </div>
+                            </div>
                         </div>
-                      <?php endif; ?>
-                    </div>
+
                     <div class = "right">
+                        <?php if (!empty($icon)): ?>
+                            <div class = "hero__icon">
+                                <img src = "<?php print $icon_path; ?>" />
+                            </div>
+                        <?php endif; ?>
                       <div class="hero__headline"><?php print $hero_title; ?></div>
                         <hr class = "hero__line">
                         <?php if(!empty($hero_description)): ?>
@@ -119,7 +135,7 @@ foreach($heros as $hero){
                     </div>
                 </div>
             </div>
-        </div>
+
     <?php } ?>
 
 

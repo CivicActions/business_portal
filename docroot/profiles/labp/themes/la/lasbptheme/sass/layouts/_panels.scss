@@ -5,60 +5,53 @@
  *
  */
 
-.panel-2col-stacked .panel-col-top {
-  background: $sec1_light;
-  color: $grayscale_dark;
-  .outer {
-    margin: 0 auto 0 auto;
-    max-width: 1074px;
-    .inside {
-      padding: 20px;
-    }
-    @media all and (min-width: 720px) {
-      .inside {
-        padding: 8% 5% 8% calc(25% + 20px);
-      }
-    }
-  }
-}
-
 .panel-2col-stacked {
-  .center-wrapper {
-    margin: 0 auto 0 auto;
-    max-width: 1074px;
+  background: $light-grey;
+
+  .panel-col-top {
+    h2.pane-title { display: none;}
+    .inside { margin-bottom: 0;}
+  }
+  .panel-col-last { background: $white; }
+
+  .field-collection-container { margin-bottom: 0;}
+
+  /***************************
+  *     Views & Search
+  ****************************/
+
+  /***************************
+  *        Layout
+  ***************************/
+
+  .panel-col-first {
+    width: 30%;
+    @media all and (max-width: 720px) {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .panel-col-last {
+    width: 70%;
+    margin-left: -3px;
+
+    .inside { padding-left: 30px; }
+    @media all and (max-width: 720px) {
+      float: none;
+      width: 100%;
+    }
   }
 }
 
-.panel-2col-stacked .panel-col-first {
-  width: 25%;
-  background-color: #f2f2f2;
-  @media all and (max-width: 720px) {
-    float: none;
-    width: 100%;
-  }
-}
-
-.panel-2col-stacked .panel-col-last {
-  width: 75%;
-  @media all and (max-width: 720px) {
-    float: none;
-    width: 100%;
-  }
-}
-
-/* Flexible panel */
+/*************************************************
+  @TODO Refactor code
+* Flexible panel */
 .panels-flexible-region-2-center {
   width: 100%;
   > .inside > .panel-pane:not(.pane-node-field-image) {
-    max-width: 1024px;
-    margin: 0 auto;
-    text-align: center;
+
   }
-  margin: 0 auto 40px auto;
+
 }
 
-/* LEFT PANE */
-.panel-2col-stacked .panel-col-top .panel-col-first .inside,
-.panel-2col-stacked .panel-col-top .panel-col-last .inside {
-  padding: 0px;
-}

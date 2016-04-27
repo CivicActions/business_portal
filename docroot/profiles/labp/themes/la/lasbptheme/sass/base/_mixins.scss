@@ -51,7 +51,7 @@
 
 
 /* Wrapper width mixin for containers */
-@mixin wrapper($wrapper-width: 75%){
+@mixin wrapper($wrapper-width: 80%){
   width: $wrapper-width;
   margin: 0 auto;
 }
@@ -73,8 +73,10 @@
 @mixin style-variant($variant-color) {
   background-color: $variant-color;
   color: $white;
+  border-color: $variant-color;
 
-  .panel__intro_header { color: $white; }
+  .panel__intro_header,
+  .hero__description { color: $white; }
 
   hr {
     background-color: $variant-color;
@@ -91,19 +93,35 @@
 }
 
 .style_variant {
+
+  /****** Light Blue ******/
   &.light_blue {
     @include style-variant( $light-blue );
-    .panel__intro_header { color: $navy; }
-    hr.panel__header-line_thin { background: $white; }
+
+    .panel__intro_header,
+    .hero__headline,
+    .hero__description { color: $navy; }
+
+    hr.panel__header-line_thin,
+    hr.hero__line { background: $white; }
+
+    color: $navy;
   }
+
+  /****** Light Green******/
   &.light_green {
     @include style-variant( $light-green );
     color: $navy;
   }
+
+  /****** Blue ******/
   &.blue {
     @include style-variant( $navy );
     hr.panel__header-line_thin { background: $white; }
+    hr.hero__line { background: $light-blue; }
   }
+
+  /****** White ******/
   &.white {
     @include style-variant ( $white );
     color: $navy;
@@ -111,6 +129,8 @@
     hr.panel__header-line,
     hr.panel__header-line_thin { background: $light-blue; }
   }
+
+  /****** Light Grey ******/
   &.light_grey {
     @include style-variant ( $grayscale_light );
     color: $navy;
