@@ -1,0 +1,18 @@
+body.node-type-sbp-landing-page {
+
+
+  /********* Layout *************/
+
+  .panel__content_wrapper {
+    $zen-grid-width: 80%;
+    @include zen-grid-container();
+    @include zen-grid-item-base();
+    width: $zen-grid-width;
+    margin: 0 auto;
+  }
+
+  .panel__content_col_1 {
+    padding-top: 4em;
+  }
+
+}

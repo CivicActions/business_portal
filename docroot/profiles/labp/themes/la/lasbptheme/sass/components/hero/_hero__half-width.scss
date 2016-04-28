@@ -49,7 +49,7 @@
   /*========== Layout ======== */
   //Mobile-first layout
   $zen-grid-width: 100%;
-  $zen-column-count:  16!global;
+  $zen-column-count:  10;
   //$zen-gutter-width:  20px;
 
   .hero__content-wrapper {
@@ -61,12 +61,12 @@
 
 
     @include window_size(tab-wide-up) {
-      .left  { @include zen-grid-item (6, 1); }
-      .right { @include zen-grid-item (10, 7); }
+      .left  { @include zen-grid-item (3, 1); }
+      .right { @include zen-grid-item (7, 4); }
     }
     @include window_size(desktop){
-      .left  { @include zen-grid-item (6, 1); }
-      .right { @include zen-grid-item (10, 7); }
+      .left  { @include zen-grid-item (3, 1); }
+      .right { @include zen-grid-item (7, 4); }
     }
   }
 
