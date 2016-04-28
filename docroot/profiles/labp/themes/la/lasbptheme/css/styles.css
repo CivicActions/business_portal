@@ -2606,7 +2606,7 @@ tr.selected td {
 
 /* line 9, ../sass/components/hero/_hero.scss */
 .hero__image--bg {
-  background-size: auto 100%;
+  background-size: cover;
   background-position: 60%;
   min-height: 300px;
 }
