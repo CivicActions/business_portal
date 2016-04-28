@@ -102,7 +102,8 @@
     .hero__headline--half,
     .hero__description { color: $navy; }
 
-    .hero__headline { color: $white; }
+    .hero__headline,
+    .hero__headline--half--mobile { color: $white; }
 
     hr.panel__header-line_thin,
     hr.hero__line--half { background: $white; }

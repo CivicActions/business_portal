@@ -25,7 +25,6 @@
 
   .center-wrapper {
     @include zen-grid-container();
-    @include zen-grid-item-base();
     width: 100%;
     padding-left: 0;
   }

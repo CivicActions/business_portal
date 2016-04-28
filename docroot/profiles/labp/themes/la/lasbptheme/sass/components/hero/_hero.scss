@@ -3,20 +3,26 @@
 ******************************/
 
 .pane__hero {
-  margin-top: -55px;
 }
 
 .hero__image--bg {
   background-size: cover;
   background-position: 60%;
-  min-height: 300px;
 }
 
 .hero__image--overlay {
   background-color: rgba(0, 0, 0, 0.3);
-  min-height: 300px;
+}
+
+.hero__image--bg,
+.hero__image--overlay {
+  @include window_size(desktop){
+    min-height: 400px;
+  }
 
 }
+
+
 
 .hero__headline,
 .hero__headline--half {
@@ -44,11 +50,13 @@ hr.hero__line--half {
   font-weight: 300;
 }
 
-.hero__description {
-  font-size: 1.4em;
-  line-height: 1.4;
-  margin: 2em 0 4em;
+.hero__business__description {
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
 }
+
+
 
 .hero__bottom_align--bn{
   margin-bottom: 2em;
@@ -65,11 +73,21 @@ hr.hero__line--half {
 ******************************/
 
 .hero__layout--full {
+
+  .hero__content-wrapper {
+    @include wrapper(95%);
+
+    @include window_size(tab-wide-up) {
+      @include wrapper(80%);
+    }
+  }
   .hero__headline {
     font-size: 2.143em;
+    margin: 2.4em 0 0;
 
     @include window_size(tab-wide-up) {
       font-size: 3em;
+      margin: 2.4em 0 0;
     }
     @include window_size(desktop) {
       font-size: 4em;
@@ -90,7 +108,6 @@ $zen-gutter-width:  20px;
 
 .hero__content-wrapper {
   @include zen-grid-container();
-  @include wrapper(80%);
   padding-left: 20px;
 }
 
@@ -99,16 +116,5 @@ $zen-gutter-width:  20px;
 
 }
 
-.hero__layout--half {
-  @include window_size(tab-wide-up) {
-    $zen-column-count: 3;
-    .left  { @include zen-grid-item (1, 1); }
-    .right { @include zen-grid-item (2, 2); }
-  }
-  @include window_size(desktop){
-    $zen-column-count: 4;
-    .left  { @include zen-grid-item (1, 1); }
-    .right { @include zen-grid-item (3, 2); }
-  }
-}
+
 
