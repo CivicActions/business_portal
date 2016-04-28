@@ -59,6 +59,21 @@ function lasbptheme_preprocess_page(&$variables, $hook) {
   drupal_add_library('system', 'ui.accordion');
 }
 
+/**
+ * Implements preprocess_block().
+ *
+ * @param $variables
+ */
+function lasbptheme_preprocess_block(&$variables) {
+  //dpm($variables);
+  drupal_add_js('profiles/labp/libraries/underscore/underscore-min.js');
+  drupal_add_js('profiles/labp/libraries/backbone/backbone-min.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/models.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/collections.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/views.js');
+  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/app.js');
+}
+
 
 /**
  * Implements preprocess_panels_pane().

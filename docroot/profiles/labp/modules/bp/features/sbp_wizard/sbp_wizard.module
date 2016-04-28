@@ -17,6 +17,18 @@ function sbp_wizard_entity_info_alter(&$entity_info) {
 }
 
 /**
+ * Implements hook_theme().
+ */
+function sbp_wizard_theme() {
+  return array(
+    'sbp_wizard_block' => array(
+      'variables' => array('address_form' => NULL),
+      'template' => 'sbp-wizard-block',
+    ),
+  );
+}
+
+/**
  * Implements hook_block_info().
  */
 function sbp_wizard_block_info() {
@@ -29,50 +41,17 @@ function sbp_wizard_block_info() {
 }
 
 /**
- * Implements hook_theme().
- */
-function sbp_wizard_theme() {
-  $blocks = array();
-  $blocks['wizard'] = array(
-    'info' => t('Wizard Block'),
-    'cache' => DRUPAL_CACHE_PER_ROLE,
-  );
-  return $blocks;
-}
-
-
-/**
  * Implements hook_block_view().
  */
 function sbp_wizard_block_view($delta = '') {
+  $address_form = drupal_get_form('labp_address_wizard_address_input');
+  $address_form = drupal_render($address_form);
   $block = array();
   switch ($delta) {
     case 'wizard':
       $block['subject'] = NULL;
-      $block['content'] = array(
-        '#markup' => sbp_wizard_block(),
-
-      );
+      $block['content'] = theme('sbp_wizard_block', array('address_form'=>$address_form));
       break;
   };
   return $block;
-}
-
-/**
- * Custom block for wizard HTML, and loading JS assets.
- */
-function sbp_wizard_block() {
-
-  drupal_add_js('profiles/labp/libraries/underscore/underscore-min.js');
-  drupal_add_js('profiles/labp/libraries/backbone/backbone-min.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/models.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/collections.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/views.js');
-  drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/app.js');
-
-  $address_form = drupal_get_form('labp_address_wizard_address_input');
-  return
-
-  '
-';
 }
