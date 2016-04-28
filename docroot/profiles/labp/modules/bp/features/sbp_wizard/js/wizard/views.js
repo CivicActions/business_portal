@@ -192,6 +192,7 @@ wiz.views.App = wiz.extensions.View.extend({
           this.$el.append(wiz.nav.render().el);
           break;
 
+        case "start":
         case "confirmation":
           console.log("APP: confirmation");
 
