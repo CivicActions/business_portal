@@ -6,7 +6,7 @@
   display: inline-block;
   position: absolute;
   @include clearfix;
-  top: 0;
+  top: 30px;
   right: 0;
   background-image: image-url("wizard/progress_bar.png");
   background-repeat: no-repeat;
@@ -16,6 +16,9 @@
   min-height: 550px;
   @include window_size(desktop){
     margin: 40px 0 0 0;
+  }
+  img {
+    width: 80%;
   }
 }
 
