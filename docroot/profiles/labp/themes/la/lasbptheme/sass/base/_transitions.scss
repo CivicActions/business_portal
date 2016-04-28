@@ -7,9 +7,12 @@
   left: 0;
   height: 100%;
   transition-duration: 0.5s;
-  transform: translate3D(100%,0,0); /* X value must be same as Nav width */
-  -moz-transform: translate3D(100%,0,0); /* X value must be same as Nav width */
-  -webkit-transform: translate3D(100%,0,0); /* X value must be same as Nav width */
+  transform: none;
+  -moz-transform: none;
+  -webkit-transform: none;
+  //transform: translate3D(100%,0,0); /* X value must be same as Nav width */
+  //-moz-transform: translate3D(100%,0,0); /* X value must be same as Nav width */
+  //-webkit-transform: translate3D(100%,0,0); /* X value must be same as Nav width */
 }
 
 .page.is-visible {

@@ -36,7 +36,7 @@ _.templateSettings = {
 
         var transitionIn = function () {
           view.$el.addClass('is-visible');
-          //console.log("transition", callback);
+          console.log("transition", callback);
           view.$el.one('transitionend', function () {
             if (_.isFunction(callback)) {
               callback();
