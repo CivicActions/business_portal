@@ -41,14 +41,12 @@ wiz.collections.chosen.on("add", function(m) {
    var model = this.find({
      Nid: m.get("Nid")
    });
-  var view = new wiz.views.Wizard({
+  wiz.wizard = new wiz.views.Wizard({
     model: model
   });
 
-  wiz.instance.goto(view);
+  wiz.instance.goto(wiz.wizard);
 
-  // Let others know about it.
-  // Backbone.on("screen:add", this.render, this);
 
 });
 

@@ -3,6 +3,10 @@
   margin: 20px 0 20px 0;
 }
 
+.form-item-streetAddress label[for="edit-streetaddress"] {
+  display: none;
+}
+
 
 .wizard__address_content {
   float: left;
@@ -12,7 +16,8 @@
 
 }
 
-.wizard__address_copy {
+.wizard__address_copy,
+.form-item-streetAddress .description {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 0.929em;
@@ -23,9 +28,18 @@
   }
 }
 
+//styling of search button
+#form-address-lookup {
+  @include wizard__button--base;
+  color: $wizard_text;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
 //styling of the input field
 
-.wizard__address_input{
+.form-item-streetAddress input{
   border: 0px solid red;
   padding: 0 10px 0 10px;
   @include border-radius(4px);

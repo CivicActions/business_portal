@@ -58,7 +58,7 @@ function sbp_wizard_block() {
   drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/views.js');
   drupal_add_js('profiles/labp/modules/bp/features/sbp_wizard/js/wizard/app.js');
 
-
+  $address_form = drupal_get_form('labp_address_wizard_address_input');
   return
 
   '<div id="wizard" class="wizard"></div>
@@ -89,6 +89,12 @@ function sbp_wizard_block() {
     <hr class="wizard__help_hr"/>
     <div class="wizard__help_content">{{Description}}</div>
   </script>
+  
+  <script type="text/template" id="header-for-confirm-template">
+    <div class="wizard__header--title-government">{{jurisdiction}}</div>
+    <div class="wizard__header--title">{{Name}}</div>
+    <div class="wizard__header-line"></div>
+  </script>
 
   <script type="text/template" id="intro-template">
     <div class="wizard__copy--section_intro">{{Description}}</div>
@@ -112,25 +118,32 @@ function sbp_wizard_block() {
   </script>
 
   <script type="text/template" id="wizard-nav-section-template">
-    <a href="#" class="wizard__arrow-up">Previous</a>
-    <a href="#" class="wizard__arrow-down enabled">Next</a>
+    <hr class="wizard__arrow-line"/>
+    <a href="#" class="wizard__arrow-down enabled section">Next</a> 
+    <hr class="wizard__arrow-line"/>
   </script>
 
 
   <script type="text/template" id="wizard-nav-question-template">
     <a href="#" class="wizard__arrow-up">Previous</a>
+    <hr class="wizard__arrow-line"/>
     <a href="#" class="wizard__arrow-down">Next</a>
   </script>
 
   <script type="text/template" id="wizard-nav-contextual-help-template">
        <a href="#" class="wizard__arrow-up left enabled">Previous</a>
-      <span class="wizard__nav_label_help">Back to the question</span>
+      <div class="wizard__nav_label_help">Back to the question</div>
   </script>
+  
   <script type="text/template" id="wizard-address-form-template">
-       ' . drupal_render(drupal_get_form('labp_address_wizard_address_input')) . '
+       ' . drupal_render($address_form) . '
   </script>
+  
   <script type="text/template" id="wizard-nav-address-template">
-       <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
+     <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
+     <a href="#" class="wizard__arrow-up">Previous</a>
+    <hr class="wizard__arrow-line"/>
+    <a href="#" class="wizard__arrow-down">Next</a>
   </script>
 
   <script type="text/template" id="wizard-nav-start-over-template">
@@ -141,11 +154,9 @@ function sbp_wizard_block() {
   </script>
 
   <script type="text/template" id="tip-template">
-      <div class="wizard__tip">
-        <div class="wizard__tip_icon"></div>
-        <div class="wizard__tip_content">
-          <div class="wizard__tip_copy">{{tip}}</div>
-        </div>
+      <div class="wizard__tip_icon"></div>
+      <div class="wizard__tip_content">
+        <div class="wizard__tip_copy">{{tip}}</div>
       </div>
   </script>
 
