@@ -54,7 +54,7 @@ $wizard_left_margin: 25px;
 .wizard__intro-block {
   display: inline-block;
   border: 0px solid black;
-
+  min-height: 360px;
   padding: 0;
   margin: 0;
   @include window_size(desktop){
