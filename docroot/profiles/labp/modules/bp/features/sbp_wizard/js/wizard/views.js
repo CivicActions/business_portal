@@ -532,15 +532,48 @@ wiz.views.AddressForm = Backbone.View.extend({
   addressSubmit: function(event) {
     event.preventDefault();
     var address = $( "input[name='streetAddress']" ).val();
-    var laAddressAPI = "/labp/address-lookup/" + address;
-    $.getJSON( laAddressAPI, function( json ) {
-      if(json.inLA == '1'){
-        console.log('Address is in LA');
+      if (address === '') {
+        alert('Please provide an address or intersection.');
+        $("#streetAddress").focus();
+        return false;
       }
-      if(json.inLA == '0'){
-        console.log('Address is NOT in LA');
+      // Check the address to make sure it follows the rules for addresses or intersections
+      // Setup the regular expression.
+      addressRegex = /^(\d{1,6}\s+\w{1,30}.{0,10})|(\w{1,30}\s{0,5}(\b[Aa][Nn][Dd]\b|\b[Aa][Tt]\b|\/|&|\\|\|)\s{0,5}\w{1,30})/;
+      // Trim whitespace.
+      trimmedAddress = address.replace(/^\s+|\s+$/g, '') ;
+      // Strip out fractional addresses such as 1/2 and 1/4, etc.
+      trimmedAddress = trimmedAddress.replace(/\b\d{1}\/\d{1}\b/g,'');
+      // Strip out all characters other than digits, alpha, or intersection delimiters
+      // The acceptable delimiters are: / \ | AND AT and &
+      trimmedAddress = trimmedAddress.replace(/[^\w\s&\|\/\\]/g,'');
+      // Strip out zip codes and state codes - these are not needed and can cause mismatches.
+      trimmedAddress = trimmedAddress.replace(/(\d{5}$|\b[Cc][Aa]\b)/g,'');
+      $("#streetAddress").val(trimmedAddress); // Update address field with formatted address.
+      if (trimmedAddress.match(addressRegex) === null) {
+        alert('Please provide a house number and street name or an intersection.');
+        $("#streetAddress").focus();
+        return false;
       }
-     });
+      // Now check the address to see if they mixed an address with an intersection which is invalid.
+      if (trimmedAddress.match(/^(\d{1,6}\s+\w{1,30}.{0,10})/) !== null) {
+      // Check for intersection delimiters.
+        if (trimmedAddress.match(/(\b[Aa][Nn][Dd]\b|\b[Aa][Tt]\b|\/|&|\\|\|)/) !==null) {
+          alert('Please enter either an address or an intersection, not both.');
+          $("#streetAddress").focus();
+          return false;
+        }
+      }
+
+      var laAddressAPI = "/labp/address-lookup/" + address;
+      $.getJSON( laAddressAPI, function( json ) {
+        if(json.inLA == '1'){
+          console.log('Address is in LA');
+        }
+        if(json.inLA == '0'){
+          console.log('Address is NOT in LA');
+        }
+      });
   },
   
   render: function() {
