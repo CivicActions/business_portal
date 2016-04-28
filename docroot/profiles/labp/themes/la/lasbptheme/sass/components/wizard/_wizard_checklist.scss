@@ -56,17 +56,61 @@
   }
 }
 
+.wizard__content--results-list ul li {
+  list-style: none;
+}
+
+.wizard__result {
+  font-family: Roboto, sans-serif;
+  color: #0F2940;
+  font-size: 1.143em;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.wizard__result p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.wizard__result h3 {
+  font-weight: 400;
+  font-size: 1.429em;
+  font-family: Merriweather, serif;
+}
+
+.wizard__result ul li,
+.wizard__result ol li {
+  display: list-item;
+  font-size: 87.5%;
+}
+
+.wizard__result ol {
+  list-style-type: decimal;
+}
+
+.wizard__result a {
+  color: #0F2940;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 8px 35px 8px 35px;
+  cursor: pointer;
+  margin: 0 0 20px 0px;
+}
+
 .wizard__step{
-    border-top: 2px solid white;
-    color:$white;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 0.857em;
-    margin:4px 0 10px 0;
-    padding: 10px 0 0 0;
-    @include window_size(desktop){
-        margin: 0 0 20px 0px;
-    }
+  border-top: 2px solid white;
+  color:$white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.857em;
+  margin-top: 25px;
+  padding: 10px 0 0 0;
 }
 
 .wizard__step_header{
