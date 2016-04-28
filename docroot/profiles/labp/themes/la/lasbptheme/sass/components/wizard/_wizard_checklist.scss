@@ -61,7 +61,7 @@
 }
 
 .wizard__result {
-  font-family: Roboto, sans-serif;
+  font-family: $roboto;
   color: #0F2940;
   font-size: 1.143em;
   font-weight: 400;
@@ -95,7 +95,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Roboto, sans-serif;
+  font-family: $roboto;
   border-radius: 20px;
   background-color: #fff;
   padding: 8px 35px 8px 35px;
