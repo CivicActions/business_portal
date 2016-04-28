@@ -1375,23 +1375,33 @@ table {
   *        Layout
   ***************************/
 }
-/* line 12, ../sass/layouts/_panels.scss */
+/* line 10, ../sass/layouts/_panels.scss */
+.panel-2col-stacked .panel-col-last .inside {
+  margin: 0 2em 1em 2em;
+}
+@media all and (min-width: 960px) {
+  /* line 10, ../sass/layouts/_panels.scss */
+  .panel-2col-stacked .panel-col-last .inside {
+    margin: 0 0 1em 0.5em;
+  }
+}
+/* line 21, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 13, ../sass/layouts/_panels.scss */
+/* line 22, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 15, ../sass/layouts/_panels.scss */
+/* line 24, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last {
   background: white;
 }
-/* line 17, ../sass/layouts/_panels.scss */
+/* line 26, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 26, ../sass/layouts/_panels.scss */
+/* line 35, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
@@ -1405,38 +1415,29 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-@media all and (min-width: 720px) {
-  /* line 33, ../sass/layouts/_panels.scss */
-  .panel-2col-stacked .panel-col-first {
-    float: left;
-    width: 30%;
-    margin-left: 0%;
-    margin-right: -30%;
-  }
-  /* line 34, ../sass/layouts/_panels.scss */
-  .panel-2col-stacked .panel-col-last {
-    float: left;
-    width: 70%;
-    margin-left: 30%;
-    margin-right: -100%;
-  }
+/* line 40, ../sass/layouts/_panels.scss */
+.panel-2col-stacked .panel-col-first,
+.panel-2col-stacked .panel-col-last {
+  float: none;
+  margin: 0;
+  width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 37, ../sass/layouts/_panels.scss */
+  /* line 48, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 38, ../sass/layouts/_panels.scss */
+  /* line 49, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
     width: 70%;
     margin-left: 30%;
     margin-right: -100%;
   }
-  /* line 40, ../sass/layouts/_panels.scss */
+  /* line 51, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding: 1.5em 0 2em 30px;
   }
@@ -1445,7 +1446,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 48, ../sass/layouts/_panels.scss */
+/* line 59, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -2212,7 +2213,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459349360');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /**
@@ -3447,7 +3448,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461563616');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -3726,7 +3727,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 30px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461563616');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3789,7 +3790,7 @@ a.wizard__button--selected {
 /* line 87, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3799,7 +3800,7 @@ a.wizard__button--selected {
 /* line 98, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3809,7 +3810,7 @@ a.wizard__button--selected {
 /* line 110, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3884,7 +3885,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 185, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3895,7 +3896,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 192, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3906,7 +3907,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -3950,7 +3951,7 @@ a.wizard__button--selected {
 /* line 235, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461563616');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4037,7 +4038,7 @@ hr.wizard__arrow-line {
 
 /* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461492462');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -4057,7 +4058,7 @@ a.wizard__arrow-up {
 
 /* line 85, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461563616');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   margin: 0 0 0 24px;
@@ -4075,7 +4076,7 @@ a.wizard__arrow-down {
 
 /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461563616');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 104, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4089,7 +4090,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 113, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461563616');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   display: inline;
   float: right;
   padding-top: 7px;
@@ -4109,7 +4110,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 131, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
+  background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4166,7 +4167,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461563616');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 
@@ -4834,45 +4835,82 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 
 /* NAVIGATION MENU */
-/* line 3, ../sass/components/_left_sidebar.scss */
+/* line 4, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked .pane-menu-block-1 h2 {
   display: none;
 }
-
 /* line 7, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked .menu-block-1 {
+.panel-2col-stacked .menu-block-wrapper,
+.panel-2col-stacked .pane-facetapi {
   margin: 0;
   padding: 0;
-  /*padding:30px 0px 20px 25px;
-  @include window_size(desktop){
-    padding:30px 0px 20px 0px;
-  }*/
 }
-
-/* line 17, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked .menu-block-1 .menu a.active-trail {
+/* line 12, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-wrapper .menu a.active-trail,
+.panel-2col-stacked .pane-facetapi .menu a.active-trail {
   color: navy;
   font-weight: 700;
 }
-
-/* line 22, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked .menu-block-1 .menu__item {
+/* line 16, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-wrapper ul.menu,
+.panel-2col-stacked .menu-block-wrapper ul.facetapi-facetapi-links,
+.panel-2col-stacked .pane-facetapi ul.menu,
+.panel-2col-stacked .pane-facetapi ul.facetapi-facetapi-links {
+  padding: 0 0 1em 2em;
+}
+@media all and (min-width: 960px) {
+  /* line 16, ../sass/components/_left_sidebar.scss */
+  .panel-2col-stacked .menu-block-wrapper ul.menu,
+  .panel-2col-stacked .menu-block-wrapper ul.facetapi-facetapi-links,
+  .panel-2col-stacked .pane-facetapi ul.menu,
+  .panel-2col-stacked .pane-facetapi ul.facetapi-facetapi-links {
+    padding: 0 0 0 100px;
+  }
+}
+/* line 23, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-wrapper ul.menu,
+.panel-2col-stacked .pane-facetapi ul.menu {
+  padding-top: 30px;
+}
+/* line 28, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-wrapper .menu__item,
+.panel-2col-stacked .pane-facetapi .menu__item {
   list-style: none;
-  color: #0f2940;
   font-size: 1.143em;
   margin: 0 0 10px 0;
 }
-
-/* SEARCH BAR */
-/* line 30, ../sass/components/_left_sidebar.scss */
+/* line 32, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-wrapper .menu__item:last-child,
+.panel-2col-stacked .pane-facetapi .menu__item:last-child {
+  border-bottom: 1px solid #6bc3f3;
+  padding-bottom: 2em;
+  width: 80%;
+}
+/* line 37, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked .menu-block-wrapper .menu__item a,
+.panel-2col-stacked .pane-facetapi .menu__item a {
+  color: #0f2940;
+}
+/* line 43, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked .views-widget-filter-search_api_views_fulltext {
-  border-top: 1px solid #6bc3f3;
-  margin-left: 20px;
+  margin-left: 100px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
+/* line 49, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 {
+  display: none;
+}
+@media all and (min-width: 960px) {
+  /* line 49, ../sass/components/_left_sidebar.scss */
+  .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 {
+    display: block;
+  }
+}
 
-/* line 37, ../sass/components/_left_sidebar.scss */
+/* SEARCH BAR */
+/* line 60, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked
 .form-item-search-api-views-fulltext input[type=text] {
   padding: 0 10px 0 10px;
   -moz-border-radius: 4px;
@@ -4882,16 +4920,16 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   margin-top: 20px;
   outline: 0;
   width: 200px;
-  display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 37, ../sass/components/_left_sidebar.scss */
+  /* line 60, ../sass/components/_left_sidebar.scss */
+  .panel-2col-stacked
   .form-item-search-api-views-fulltext input[type=text] {
     display: block;
   }
 }
 
-/* line 50, ../sass/components/_left_sidebar.scss */
+/* line 73, ../sass/components/_left_sidebar.scss */
 .views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
 #views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
   position: absolute;
@@ -4903,30 +4941,41 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 
 /* FILTERS */
-/* line 61, ../sass/components/_left_sidebar.scss */
+/* line 84, ../sass/components/_left_sidebar.scss */
 .pane-facetapi h2.pane-title,
 .pane-sbp-terms-definitions h2.pane-title {
   list-style: none;
   color: #0f2940;
   font-size: 1.143em;
-  margin: 20px 0 10px 0;
-  padding: 0px 0 0 25px;
   font-weight: 700;
-  background-repeat: no-repeat;
-  background-size: 17px 10px;
-  background-position: 0px 5px;
+  margin: 10px 0 5px 2em;
+}
+@media all and (min-width: 960px) {
+  /* line 84, ../sass/components/_left_sidebar.scss */
+  .pane-facetapi h2.pane-title,
+  .pane-sbp-terms-definitions h2.pane-title {
+    margin: 20px 0 10px 100px;
+    padding: 0px 0 0 0px;
+  }
 }
 
-/* line 76, ../sass/components/_left_sidebar.scss */
+/* line 98, ../sass/components/_left_sidebar.scss */
 ul.facetapi-facet-field-business-need li,
 ul.facetapi-facet-field-business-ownership li,
 ul.facetapi-facet-field-industry-tag li,
 ul.facetapi-facet-field-resource-type li,
 .pane-sbp-terms-definitions ul li {
   list-style: none;
-  color: #0f2940;
   font-size: 0.929em;
   margin: 0 0 10px 0;
+}
+/* line 106, ../sass/components/_left_sidebar.scss */
+ul.facetapi-facet-field-business-need li a,
+ul.facetapi-facet-field-business-ownership li a,
+ul.facetapi-facet-field-industry-tag li a,
+ul.facetapi-facet-field-resource-type li a,
+.pane-sbp-terms-definitions ul li a {
+  color: #0f2940;
 }
 
 /**

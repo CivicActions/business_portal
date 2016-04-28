@@ -7,6 +7,15 @@
 
 .panel-2col-stacked {
   background: $light-grey;
+  .panel-col-last .inside {
+    margin: 0 2em 1em 2em;
+
+    @include window_size(desktop){
+      margin: 0 0 1em 0.5em;
+    }
+
+  }
+
 
   .panel-col-top {
     h2.pane-title { display: none;}
@@ -28,11 +37,13 @@
     width: 100%;
     padding-left: 0;
   }
-
-  @include window_size(tab-wide-up) {
-    .panel-col-first  { @include zen-grid-item (3, 1); }
-    .panel-col-last { @include zen-grid-item (7, 4); }
+  .panel-col-first ,
+  .panel-col-last{
+    float: none;
+    margin: 0;
+    width: 100%;
   }
+
   @include window_size(desktop){
     .panel-col-first { @include zen-grid-item (3, 1); }
     .panel-col-last {
