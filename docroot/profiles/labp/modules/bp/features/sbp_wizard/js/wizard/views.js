@@ -531,7 +531,7 @@ wiz.views.Nav = Backbone.View.extend({
   render: function() {
     switch (this.model.get("screen-type")) {
     case "start":
-      wiz.arrows = new wiz.views.NavStart();
+      wiz.arrows = new wiz.views.NavSection();
       this.$el.append(wiz.arrows.render().el);
       break;
     case "section":
