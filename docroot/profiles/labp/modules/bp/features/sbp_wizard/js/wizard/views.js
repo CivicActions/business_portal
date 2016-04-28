@@ -740,16 +740,19 @@ wiz.views.NavStartOver = Backbone.View.extend({
 
 wiz.views.ResultsView = Backbone.View.extend({
   className: ".wizard__content--results-list",
-
+  events: {"click .wizard__button.print": "callPrint"},
+  buttonTemplate: _.template('<p><a class="wizard__button print">Print</a></p>'),
   initialize: function() {
-    this.$el.append("<h5>Results</h5>");
-    var results = [];
+    var results = [],
     results = wiz.collections.chosen.getResults();
-    console.log("res:", results);
     _.each(results, function(r, index) {
       wiz.result = new wiz.views.Result({result: r, index: index});
       this.$el.append(wiz.result.render().el);
     }, this);
+    this.$el.append(this.buttonTemplate());
+  },
+  callPrint: function() {
+    window.print();
   }
 });
 
