@@ -24,8 +24,9 @@ $font-body: $roboto;
 $base-font-family: $roboto;
 
 body {
+  font-family: $roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: $dark_blue;
   line-height: 1.3;
 }
-
-
