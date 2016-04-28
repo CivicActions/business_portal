@@ -1,0 +1,118 @@
+<div id="wizard" class="wizard"></div>
+
+<script type="text/template" id="start-template">
+  <div class="wizard__header--start">
+    <div class="wizard__header--title-start-super">Welcome to the</div>
+    <div class="wizard__header--title-start">Startup Guide</div>
+    <div class="wizard__header-line"></div>
+  </div>
+  <div class="wizard__copy--section_intro">{{Description}}</div>
+  <div class="wizard__copy--time-estimate">This guide is estimated to take 10 to 15 minutes.</div>
+</script>
+
+<script type="text/template" id="header-template">
+  <div class="wizard__header--title-government">{{jurisdiction}}</div>
+  <div class="wizard__header--title-intro">{{Name}}</div>
+  <div class="wizard__header-line"></div>
+</script>
+
+<script type="text/template" id="header-for-question-template">
+  <div class="wizard__header--title">{{Name}}</div>
+  <div class="wizard__header-line"></div>
+</script>
+
+<script type="text/template" id="header-for-contextual-template">
+  <div class="wizard__question--help">{{title}}</div>
+  <hr class="wizard__help_hr"/>
+  <div class="wizard__help_content">{{Description}}</div>
+</script>
+
+<script type="text/template" id="header-for-confirm-template">
+  <div class="wizard__header--title-government">{{jurisdiction}}</div>
+  <div class="wizard__header--title">{{Name}}</div>
+  <div class="wizard__header-line"></div>
+</script>
+
+<script type="text/template" id="intro-template">
+  <div class="wizard__copy--section_intro">{{Description}}</div>
+</script>
+
+<script type="text/template" id="intro-with-illustration-template">
+  <div class="wizard__illustration"><img src="{{illustration}}"></div>
+  <div class="wizard__copy--section_intro">{{Description}}</div>
+</script>
+
+<script type="text/template" id="question-template">
+  <div class="wizard__question">{{title}}</div>
+</script>
+
+<script type="text/template" id="buttons-template">
+  <div class="wizard__buttons"></div>
+</script>
+
+<script type="text/template" id="wizard-nav-start-template">
+  <a href="#" class="wizard__arrow-down enabled">Next</a>
+</script>
+
+<script type="text/template" id="wizard-nav-section-template">
+  <hr class="wizard__arrow-line"/>
+  <a href="#" class="wizard__arrow-down enabled section">Next</a>
+  <hr class="wizard__arrow-line"/>
+</script>
+
+
+<script type="text/template" id="wizard-nav-question-template">
+  <a href="#" class="wizard__arrow-up">Previous</a>
+  <hr class="wizard__arrow-line"/>
+  <a href="#" class="wizard__arrow-down">Next</a>
+</script>
+
+<script type="text/template" id="wizard-nav-contextual-help-template">
+  <a href="#" class="wizard__arrow-up left enabled">Previous</a>
+  <div class="wizard__nav_label_help">Back to the question</div>
+</script>
+
+<script type="text/template" id="wizard-address-form-template">
+  <?php print $address_form; ?>
+</script>
+
+<script type="text/template" id="wizard-nav-address-template">
+  <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
+  <a href="#" class="wizard__arrow-up">Previous</a>
+  <hr class="wizard__arrow-line"/>
+  <a href="#" class="wizard__arrow-down">Next</a>
+</script>
+
+<script type="text/template" id="wizard-nav-start-over-template">
+  <div class="wizard__arrow-down-wrapper">
+    <a href="#" class="wizard__arrow-up"><img src="../images/wizard/arrow_left_enabled_desktop.png"></a>
+    <p class="wizard__nav_label_help">Start Over</p>
+  </div>
+</script>
+
+<script type="text/template" id="tip-template">
+  <div class="wizard__tip_icon"></div>
+  <div class="wizard__tip_content">
+    <div class="wizard__tip_copy">{{tip}}</div>
+  </div>
+</script>
+
+<script type="text/template" id="results-template">
+  <div class="wizard__step"> step {{index}}<div>
+      <div class="wizard__result">{{result}}<div>
+</script>
+
+
+<script type="text/template" id="progress-bar-section-template">
+  <div class="wizard__progress-bar-section"></div>
+</script>
+
+<script type="text/template" id="progress-bar-section-with-icon-template">
+  <div class="wizard__progress-bar-section">
+    <img src="{{icon}}" />
+  </div>
+</script>
+
+<script type="text/template" id="progress">
+  <div class="wizard__nav"></div>
+</script>
