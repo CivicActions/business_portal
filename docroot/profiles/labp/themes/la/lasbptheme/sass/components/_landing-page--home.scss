@@ -9,7 +9,9 @@ body.node-type-sbp-landing-page {
     @include zen-grid-container();
 
     width: $zen-grid-width;
+    ;
     @include window-size(desktop){
+      @include wrapper (80%);
     }
 
     margin: 0 auto;
