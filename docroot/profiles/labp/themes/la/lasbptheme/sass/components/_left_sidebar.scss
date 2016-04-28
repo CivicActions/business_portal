@@ -1,85 +1,107 @@
 
 /* NAVIGATION MENU */
-.panel-2col-stacked .pane-menu-block-1 h2 {
-  display: none;
-}
-
-.panel-2col-stacked .menu-block-1{
-  margin:0;
-  padding: 0;
-
-  /*padding:30px 0px 20px 25px;
-  @include window_size(desktop){
-    padding:30px 0px 20px 0px;
-  }*/
-}
-
-.panel-2col-stacked .menu-block-1 .menu a.active-trail {
-  color: navy;
-  font-weight: 700;
-}
-
-.panel-2col-stacked .menu-block-1 .menu__item{
-  list-style: none;
-  color:$dark-blue;
-  font-size: 1.143em;
-  margin:0 0 10px 0;
-}
-
-/* SEARCH BAR */
-.panel-2col-stacked .views-widget-filter-search_api_views_fulltext {
-  border-top: 1px solid $light-blue;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.form-item-search-api-views-fulltext input[type=text]{
-  padding: 0 10px 0 10px;
-  @include border-radius(4px);
-  height: 32px;
-  margin-top: 20px;
-  outline: 0;
-  width:200px;
-  display: none;
-  @include window_size(desktop){
-    display: block;
+.panel-2col-stacked {
+  .pane-menu-block-1 h2 {
+    display: none;
   }
+  .menu-block-wrapper,
+  .pane-facetapi {
+    margin: 0;
+    padding: 0;
+
+    .menu a.active-trail {
+      color: navy;
+      font-weight: 700;
+    }
+    ul.menu,
+    ul.facetapi-facetapi-links {
+      padding: 0 0 1em 2em;
+      @include window_size(desktop){
+        padding: 0 0 0 100px;
+      }
+    }
+    ul.menu {
+      padding-top: 30px;
+
+
+    }
+    .menu__item {
+      list-style: none;
+      font-size: 1.143em;
+      margin: 0 0 10px 0;
+      &:last-child {
+        border-bottom: 1px solid $light-blue;
+        padding-bottom: 2em;
+        width: 80%;
+      }
+      a {
+        color: $dark-blue;
+      }
+    }
+
+  }
+  .views-widget-filter-search_api_views_fulltext {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  form#views-exposed-form-sbp-resource-incentives-panel-pane-1 {
+    display: none;
+    @include window_size(desktop) {
+      display: block;
+    }
+  }
+
 }
 
-.views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
-#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-}
 
-/* FILTERS */
-.pane-facetapi h2.pane-title,
-.pane-sbp-terms-definitions h2.pane-title
-{
-  list-style: none;
-  color:$dark_blue;
-  font-size: 1.143em;
-  margin:20px 0 10px 0;
-  padding: 0px 0 0 25px;
-  font-weight: 700;
-  //background-image: url('../images/subsections/arrow_down.png');
-  background-repeat: no-repeat;
-  background-size: 17px 10px;
-  background-position: 0px 5px;
-}
+  /* SEARCH BAR */
+  .panel-2col-stacked
+  .form-item-search-api-views-fulltext input[type=text]{
+    padding: 0 10px 0 10px;
+    @include border-radius(4px);
+    height: 32px;
+    margin-top: 20px;
+    outline: 0;
+    width:200px;
+    @include window_size(desktop){
+      display: block;
+    }
+  }
 
-ul.facetapi-facet-field-business-need li,
-ul.facetapi-facet-field-business-ownership li,
-ul.facetapi-facet-field-industry-tag li,
-ul.facetapi-facet-field-resource-type li,
-.pane-sbp-terms-definitions ul li {
-  list-style: none;
-  color:$dark_blue;
-  font-size: 0.929em;
-  margin:0 0 10px 0;
-}
+  .views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
+  #views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+  }
+
+  /* FILTERS */
+  .pane-facetapi h2.pane-title,
+  .pane-sbp-terms-definitions h2.pane-title
+  {
+    list-style: none;
+    color:$dark_blue;
+    font-size: 1.143em;
+    font-weight: 700;
+    margin:10px 0 5px 2em;
+    @include window_size(desktop) {
+      margin:20px 0 10px 100px;
+      padding: 0px 0 0 0px;
+    }
+  }
+
+  ul.facetapi-facet-field-business-need li,
+  ul.facetapi-facet-field-business-ownership li,
+  ul.facetapi-facet-field-industry-tag li,
+  ul.facetapi-facet-field-resource-type li,
+  .pane-sbp-terms-definitions ul li {
+    list-style: none;
+    font-size: 0.929em;
+    margin:0 0 10px 0;
+    a { color:$dark_blue;}
+  }
