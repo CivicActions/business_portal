@@ -1,12 +1,14 @@
 # LA Business Portal
 Business Portal Drupal Distro
 
+
 ## DrupalVM dependencies
 1. Ansible - This is an automation tool that can be installed from pip with the following instructions:
 http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip . Make sure you have version 2.0.2.0 or later.
 1. Vagrant - This is a VM operations tool that can be downloaded: https://www.vagrantup.com/downloads.html
 1. VirtualBox - This is a VM hypervisor that can be downloaded: https://www.virtualbox.org/wiki/Downloads
 1. If you're not on a Mac: your BIOS must have Virtualization enabled.  [Here's a guide for Lenovo](http://amiduos.com/support/knowledge-base/article/enabling-virtualization-in-lenovo-systems)
+
 
 ## DrupalVM set up
 
@@ -32,10 +34,12 @@ Later on, you'll need to run `vagrant rsync-auto` to automatically sync file cha
 in the VM, run `vagrant ssh` from the box directory after set up
 
 
-
 ## Using the example database
 
 All steps below are assumed to be run from the command line
+
+### Step 0. While inside your VM (vagrant ssh), move to the labp directory
+`cd /var/www/labp`
 
 ### Step 1. Clear out your database
 `drush sql-drop -y`
@@ -56,10 +60,11 @@ All steps below are assumed to be run from the command line
 - Go to `admin/config/system/stage_file_proxy`  
 - Enter `http://labp.cityofla.acsitefactory.com` for origin
 - Enter `sites/g/files/wph521/f` for the directory
+- Save configuration.
 
 ### Step 7. Change back to the development solr server
 - Go to `admin/config/search/search_api`
-- Enable `LABP VM` by clicking `Enable` under `Operations`
+- Enable `LABP VM` by clicking `Enable` under `Operations` (might already be enabled)
 - Disable `Acquia Search` by clicking `Disable` under `Operations`
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Default node index`
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Resources & Incentives`
@@ -101,6 +106,7 @@ bundle exec compass compile
 ```
 ### Step 5. Configure Solr
 - `bash /assets/configure-solr.sh`
+
 
 ## Bundler and Zen Grids known compile issues
 
