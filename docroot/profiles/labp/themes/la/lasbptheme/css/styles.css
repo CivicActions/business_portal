@@ -1071,7 +1071,7 @@ table {
 /* line 2, ../sass/base/_transitions.scss */
 .page {
   position: fixed;
-  top: 95px;
+  top: 105px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -3274,7 +3274,6 @@ hr.hero__line--half {
 #wizard {
   color: #0f2940;
   font-family: Roboto, sans-serif;
-  padding: 50px 50px 50px 50px;
   border: 0px solid green;
   overflow: hidden;
   *zoom: 1;
