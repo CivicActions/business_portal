@@ -109,6 +109,10 @@ function sbp_views_views_default_views() {
   $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
   $handler->display->display_options['fields']['field_description']['label'] = '';
   $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['field_description']['settings'] = array(
+    'trim_length' => '300',
+  );
   $handler->display->display_options['block_description'] = 'Resources Page Featured Departments';
 
   /* Display: Resources Featured Resources and Incentives */

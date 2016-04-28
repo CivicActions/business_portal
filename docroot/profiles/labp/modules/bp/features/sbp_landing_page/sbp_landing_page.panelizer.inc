@@ -727,6 +727,37 @@ function sbp_landing_page_panelizer_defaults() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-c09e4c99-c8bc-465f-9e6b-482dada43c99';
+    $pane->panel = 'bottom';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'sbp_resource_incentives-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'php',
+          'settings' => array(
+            'description' => 'Search Filters',
+            'php' => '// Check that there is no facet query.
+return (empty($_GET[\'f\']) && empty($_GET[\'search_api_views_fulltext\']));',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+    );
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'c09e4c99-c8bc-465f-9e6b-482dada43c99';
+    $display->content['new-c09e4c99-c8bc-465f-9e6b-482dada43c99'] = $pane;
+    $display->panels['bottom'][0] = 'new-c09e4c99-c8bc-465f-9e6b-482dada43c99';
+    $pane = new stdClass();
     $pane->pid = 'new-c95504f2-9ac7-4556-bde4-77cbd142e562';
     $pane->panel = 'left';
     $pane->type = 'block';
@@ -902,7 +933,19 @@ function sbp_landing_page_panelizer_defaults() {
     $pane->type = 'views_panes';
     $pane->subtype = 'sbp_resource_incentives-panel_pane_1';
     $pane->shown = TRUE;
-    $pane->access = array();
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'php',
+          'settings' => array(
+            'description' => 'Search Filters',
+            'php' => '// Check if there is a facet query.
+return (!empty($_GET[\'f\']) || !empty($_GET[\'search_api_views_fulltext\']));',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+    );
     $pane->configuration = array(
       'view_settings' => 'fields',
       'header_type' => 'none',
@@ -919,6 +962,41 @@ function sbp_landing_page_panelizer_defaults() {
     $pane->uuid = '042d420f-6bb5-4218-90da-bd74cd51d060';
     $display->content['new-042d420f-6bb5-4218-90da-bd74cd51d060'] = $pane;
     $display->panels['right'][1] = 'new-042d420f-6bb5-4218-90da-bd74cd51d060';
+    $pane = new stdClass();
+    $pane->pid = 'new-4cc8b5c1-27c0-4fa7-8a5d-64e0ae35b0d9';
+    $pane->panel = 'right';
+    $pane->type = 'views';
+    $pane->subtype = 'bp_featured_sub_page';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '0',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block_main_featured_r_and_i',
+      'override_title' => 1,
+      'override_title_text' => 'Featured Resources and Incentives',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '4cc8b5c1-27c0-4fa7-8a5d-64e0ae35b0d9';
+    $display->content['new-4cc8b5c1-27c0-4fa7-8a5d-64e0ae35b0d9'] = $pane;
+    $display->panels['right'][2] = 'new-4cc8b5c1-27c0-4fa7-8a5d-64e0ae35b0d9';
     $pane = new stdClass();
     $pane->pid = 'new-66f03279-bce1-4da7-a3d4-daabad4cd970';
     $pane->panel = 'top';

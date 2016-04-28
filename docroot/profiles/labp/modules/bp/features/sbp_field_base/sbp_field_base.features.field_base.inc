@@ -245,6 +245,21 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
+  // Exported field_base: 'field_button_result_order'.
+  $field_bases['field_button_result_order'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_button_result_order',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_button_style'.
   $field_bases['field_button_style'] = array(
     'active' => 1,

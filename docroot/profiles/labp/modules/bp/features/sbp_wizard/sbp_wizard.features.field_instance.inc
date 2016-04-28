@@ -49,6 +49,50 @@ function sbp_wizard_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'field_collection_item-field_button-field_button_result_order'.
+  $field_instances['field_collection_item-field_button-field_button_result_order'] = array(
+    'bundle' => 'field_button',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Ordering is from lowest to highest',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_button_result_order',
+    'label' => 'Button Result Order',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => 1,
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
   // 'field_collection_item-field_button-field_button_style'.
   $field_instances['field_collection_item-field_button-field_button_style'] = array(
     'bundle' => 'field_button',
@@ -80,7 +124,7 @@ function sbp_wizard_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 7,
+      'weight' => 3,
     ),
   );
 
@@ -119,7 +163,7 @@ function sbp_wizard_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 1,
     ),
   );
 
@@ -157,7 +201,7 @@ function sbp_wizard_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 0,
     ),
   );
 
@@ -208,7 +252,7 @@ function sbp_wizard_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 8,
+      'weight' => 4,
     ),
   );
 
@@ -849,6 +893,7 @@ function sbp_wizard_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Button Result Order');
   t('Button Result Text');
   t('Button Title');
   t('Button(s)');
@@ -861,6 +906,7 @@ function sbp_wizard_field_default_field_instances() {
   t('Icon');
   t('Illustration');
   t('Jurisdiction');
+  t('Ordering is from lowest to highest');
   t('Please enter the hexadecimal code for the contextual slide background color');
   t('Please select the type of screen');
   t('Primary Color');
