@@ -765,14 +765,15 @@ wiz.views.ResultsCTA = Backbone.View.extend({
 ////////////////////////
 
 wiz.views.ResultsView = Backbone.View.extend({
-  className: ".wizard__content--results-list",
-  initialize: function() {
+  className: "wizard__content--results-list",
+  render: function() {
     var results = [],
     results = wiz.collections.chosen.getResults();
     _.each(results, function(r, index) {
       wiz.result = new wiz.views.Result({result: r, index: index});
       this.$el.append(wiz.result.render().el);
     }, this);
+    return this;
   }
 });
 
@@ -782,8 +783,8 @@ wiz.views.ResultsView = Backbone.View.extend({
 
 wiz.views.Result = Backbone.View.extend({
 
-  tagName: "li",
-
+  tagName: "div",
+  //className: "wizard__step",
   template: _.template($('#results-template').html()),
 
   initialize: function(options) {
