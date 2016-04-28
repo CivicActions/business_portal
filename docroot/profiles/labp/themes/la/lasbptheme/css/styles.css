@@ -3268,18 +3268,18 @@ hr.hero__line--half {
 #wizard {
   color: #0f2940;
   font-family: Roboto, sans-serif;
-  border: 0px solid green;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 10, ../sass/components/wizard/_wizard.scss */
+/* line 9, ../sass/components/wizard/_wizard.scss */
 #wizard .constrained {
   width: 90%;
 }
 
-/* line 17, ../sass/components/wizard/_wizard.scss */
+/* line 16, ../sass/components/wizard/_wizard.scss */
 .wiz {
   z-index: 9;
+  padding-top: 30px;
 }
 
 /* line 21, ../sass/components/wizard/_wizard.scss */
