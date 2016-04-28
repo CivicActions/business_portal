@@ -4136,10 +4136,22 @@ a.wizard__arrow-down.enabled.section {
 >>>>>>> Styling of the confirmation results
   display: inline;
   float: right;
-  margin-top: 7px;
+  padding-top: 7px;
 }
 
 /* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__arrow-up.enabled.left.start-over {
+  padding-left: 40px;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  float: none;
+  background-repeat: no-repeat;
+  -webkit-background-size: 24px 25px;
+  background-size: 24px 25px;
+}
+
+/* line 131, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
 <<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
   background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
@@ -4155,13 +4167,13 @@ a.wizard__arrow-down.enabled.section {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 131, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 135, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 146, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -4172,13 +4184,13 @@ a.wizard__arrow-down.enabled.section {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 135, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 146, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 159, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
   color: white;
   font-weight: 700;

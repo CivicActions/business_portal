@@ -730,6 +730,7 @@ wiz.views.NavContextualHelp = Backbone.View.extend({
 ////////////////////
 
 wiz.views.NavStartOver = Backbone.View.extend({
+  className: "wizard__content--results-cta",
   template: _.template($('#wizard-nav-start-over-template').html()),
   render: function() {
     this.$el.html(this.template());
@@ -742,7 +743,7 @@ wiz.views.NavStartOver = Backbone.View.extend({
 //////////////////////////
 
 wiz.views.ResultsCTA = Backbone.View.extend({
-  className: ".wizard__content--results-cta",
+  className: "wizard__content--results-cta",
   events: {
     "click .wizard__button.print": "callPrint",
     "click .wizard__button.email": "callEmail"

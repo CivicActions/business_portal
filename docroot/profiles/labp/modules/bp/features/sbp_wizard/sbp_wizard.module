@@ -144,17 +144,16 @@ function sbp_wizard_block() {
   </script>
   
   <script type="text/template" id="wizard-nav-address-template">
-     <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
-     <a href="#" class="wizard__arrow-up">Previous</a>
+    <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
+    <a href="#" class="wizard__arrow-up">Previous</a>
     <hr class="wizard__arrow-line"/>
     <a href="#" class="wizard__arrow-down">Next</a>
   </script>
 
   <script type="text/template" id="wizard-nav-start-over-template">
-    <div class="wizard__arrow-down-wrapper">
-       <a href="#" class="wizard__arrow-up"><img src="../images/wizard/arrow_left_enabled_desktop.png"></a>
-      <p class="wizard__nav_label_help">Start Over</p>
-    </div>
+     <hr class="wizard__arrow-line"/>
+     <a href="#" class="wizard__arrow-up enabled left start-over">Start over</a>
+     <hr class="wizard__arrow-line"/>
   </script>
 
   <script type="text/template" id="tip-template">

@@ -114,7 +114,18 @@ a.wizard__arrow-down.enabled.section {
   background-image: image-url("wizard/arrow_left_enabled_desktop.png");
   display: inline;
   float: right;
-  margin-top: 7px;
+  padding-top: 7px;
+}
+
+.wizard__arrow-up.enabled.left.start-over {
+  padding-left: 40px;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  float: none;
+  background-repeat: no-repeat;
+  -webkit-background-size:24px 25px;
+  background-size:24px 25px;
 }
 
 .wizard__arrow-down--filled {
