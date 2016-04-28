@@ -779,6 +779,23 @@ wiz.views.NavContextualHelp = Backbone.View.extend({
 
 wiz.views.NavStartOver = Backbone.View.extend({
   className: "wizard__content--results-cta",
+  events:  {
+    "click .wizard__arrow-up": "startOverClick"
+  },
+  startOverClick: function() {
+
+    if (wiz.collections.chosen.length > 1) {
+      var first = wiz.collections.chosen.first();
+      wiz.collections.chosen.remove(first);
+
+      wiz.wizard = new wiz.views.Wizard({
+        model:  wiz.collections.chosen.first()
+      });
+      wiz.instance.goto(wiz.wizard);
+    }
+
+    event.preventDefault();
+  },
   template: _.template($('#wizard-nav-start-over-template').html()),
   render: function() {
     this.$el.html(this.template());
