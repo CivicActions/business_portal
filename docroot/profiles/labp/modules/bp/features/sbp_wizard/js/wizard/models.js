@@ -36,7 +36,8 @@ wiz.models.Screen = Backbone.Model.extend({
       }
       break;
     }
-  }
+  },
+
 });
 
 })(jQuery);

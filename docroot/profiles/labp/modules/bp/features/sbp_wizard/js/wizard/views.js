@@ -204,6 +204,9 @@ wiz.views.App = wiz.extensions.View.extend({
           wiz.intro = new wiz.views.IntroWithIllustration({ model: this.model });
           this.$el.append(wiz.intro.render().el);
 
+          wiz.cta = new wiz.views.ResultsCTA({model: this.model});
+          this.$el.append(wiz.cta.render().el);
+
           wiz.results = new wiz.views.ResultsView({model: this.model});
           this.$el.append(wiz.results.render().el);
 
@@ -489,6 +492,7 @@ wiz.views.Nav = Backbone.View.extend({
   },
 
   forwardEnabled: function() {
+    wiz.collections.chosen.selected = true;
     this.$el.find(".wizard__arrow-down").addClass("enabled");
   },
 
@@ -527,7 +531,7 @@ wiz.views.Nav = Backbone.View.extend({
   render: function() {
     switch (this.model.get("screen-type")) {
     case "start":
-      wiz.arrows = new wiz.views.NavStart();
+      wiz.arrows = new wiz.views.NavSection();
       this.$el.append(wiz.arrows.render().el);
       break;
     case "section":
@@ -571,6 +575,7 @@ wiz.views.AddressForm = Backbone.View.extend({
   },
 
   addressSubmit: function(event) {
+    var that = this;
     event.preventDefault();
     var address = $( "input[name='streetAddress']" ).val();
       if (address === '') {
@@ -609,12 +614,24 @@ wiz.views.AddressForm = Backbone.View.extend({
       var laAddressAPI = "/labp/address-lookup/" + address;
       $.getJSON( laAddressAPI, function( json ) {
         if(json.inLA == '1'){
-          console.log('Address is in LA');
+          that.hasAddressRender();
         }
         if(json.inLA == '0'){
-          console.log('Address is NOT in LA');
+          that.noAddressRender();
         }
       });
+  },
+
+  hasAddressRender: function() {
+    var text = Drupal.t("<p>Your business is in the city of Los Angeles.</p><br />");
+    this.$el.find(".address-result").html(text);
+    Backbone.trigger("button:selected");
+  },
+
+  noAddressRender: function() {
+    var text = Drupal.t("<p>Your business is not in the city of Los Angeles.</p><br/><p>You can continue to get your guide to register as a business with the County, State and Federal government. Be sure to check with your local municipality to complete your business registration there.</p><br />");
+    this.$el.find(".address-result").html(text);
+    Backbone.trigger("button:selected");
   },
 
   render: function() {
@@ -629,13 +646,29 @@ wiz.views.AddressForm = Backbone.View.extend({
 
 wiz.views.NavForAddress = Backbone.View.extend({
   template: _.template($('#wizard-nav-address-template').html()),
+
+  initialize: function() {
+    Backbone.on("button:selected", this.forwardEnabled, this);
+    Backbone.on("button:deselected", this.forwardDisabled, this);
+  },
+
+  forwardEnabled: function() {
+    wiz.collections.chosen.selected = true;
+    this.$el.find(".wizard__arrow-down").addClass("enabled");
+  },
+
+  forwardDisabled: function() {
+    wiz.collections.chosen.selected = false;
+    this.$el.find(".wizard__arrow-down").removeClass("enabled");
+  },
+
   events:  {
     "click .wizard__address_back_button": "backArrowClick",
     "click .wizard__arrow-up": "backArrowClick",
     "click .wizard__arrow-down": "forwardArrowClick"
   },
-  backArrowClick: function() {
 
+  backArrowClick: function() {
     if (wiz.collections.chosen.length > 1) {
       var last = wiz.collections.chosen.last();
       wiz.collections.chosen.remove(last);
@@ -645,8 +678,26 @@ wiz.views.NavForAddress = Backbone.View.extend({
       });
       wiz.instance.goto(wiz.wizard);
     }
-
     event.preventDefault();
+  },
+
+  forwardArrowClick: function(event) {
+    var m =  wiz.collections.screens.find({
+      "Nid": this.getNextScreen()
+    });
+    wiz.collections.chosen.add(m);
+    event.preventDefault();
+  },
+
+  getNextScreen: function() {
+    var bid = 0, nid = undefined; // next screen button id. could check for Yes text. this method could live in the model for DRY purposes.
+    if (this.model.get("buttons")[bid]["Destination Screen"] !== undefined) {
+      nid = this.model.get("buttons")[bid]["Destination Screen"]["target_id"];
+    } else {
+      console.log("APP: Destination screen not defined: ", m.get("buttons"));
+      return;
+    }
+    return nid;
   },
   render: function() {
     this.$el.html(this.template());
@@ -727,10 +778,51 @@ wiz.views.NavContextualHelp = Backbone.View.extend({
 ////////////////////
 
 wiz.views.NavStartOver = Backbone.View.extend({
+  className: "wizard__content--results-cta",
+  events:  {
+    "click .wizard__arrow-up": "startOverClick"
+  },
+  startOverClick: function() {
+
+    if (wiz.collections.chosen.length > 1) {
+      var first = wiz.collections.chosen.first();
+      wiz.collections.chosen.remove(first);
+
+      wiz.wizard = new wiz.views.Wizard({
+        model:  wiz.collections.chosen.first()
+      });
+      wiz.instance.goto(wiz.wizard);
+    }
+
+    event.preventDefault();
+  },
   template: _.template($('#wizard-nav-start-over-template').html()),
   render: function() {
     this.$el.html(this.template());
     return this;
+  }
+});
+
+//////////////////////////
+// // Results CTA /////
+//////////////////////////
+
+wiz.views.ResultsCTA = Backbone.View.extend({
+  className: "wizard__content--results-cta",
+  events: {
+    "click .wizard__button.print": "callPrint",
+    "click .wizard__button.email": "callEmail"
+  },
+  template: _.template($('#wizard-results-cta-template').html()),
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  },
+  callPrint: function() {
+    window.print();
+  },
+  callEmail: function() {
+    window.print();
   }
 });
 
@@ -739,20 +831,15 @@ wiz.views.NavStartOver = Backbone.View.extend({
 ////////////////////////
 
 wiz.views.ResultsView = Backbone.View.extend({
-  className: ".wizard__content--results-list",
-  events: {"click .wizard__button.print": "callPrint"},
-  buttonTemplate: _.template('<p><a class="wizard__button print">Print</a></p>'),
-  initialize: function() {
+  className: "wizard__content--results-list",
+  render: function() {
     var results = [],
     results = wiz.collections.chosen.getResults();
     _.each(results, function(r, index) {
       wiz.result = new wiz.views.Result({result: r, index: index});
       this.$el.append(wiz.result.render().el);
     }, this);
-    this.$el.append(this.buttonTemplate());
-  },
-  callPrint: function() {
-    window.print();
+    return this;
   }
 });
 
@@ -762,8 +849,8 @@ wiz.views.ResultsView = Backbone.View.extend({
 
 wiz.views.Result = Backbone.View.extend({
 
-  tagName: "li",
-
+  tagName: "div",
+  //className: "wizard__step",
   template: _.template($('#results-template').html()),
 
   initialize: function(options) {
