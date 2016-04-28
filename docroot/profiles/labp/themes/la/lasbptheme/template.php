@@ -76,8 +76,9 @@ function lasbptheme_preprocess_panels_pane(&$vars) {
   }
   if ($vars['pane']->subtype == 'sbp_wizard-wizard') {
     $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
-    drupal_add_js('profiles/labp/libraries/underscore/underscore-min.js');
-    drupal_add_js('profiles/labp/libraries/backbone/backbone-min.js');
+    $profile_path = drupal_get_path('profile', 'labp');
+    drupal_add_js($profile_path . '/libraries/underscore/underscore-min.js');
+    drupal_add_js($profile_path . '/libraries/backbone/backbone-min.js');
     drupal_add_js($theme_path . '/js/wizard/models.js');
     drupal_add_js($theme_path . '/js/wizard/collections.js');
     drupal_add_js($theme_path . '/js/wizard/views.js');
