@@ -575,6 +575,7 @@ wiz.views.AddressForm = Backbone.View.extend({
   },
 
   addressSubmit: function(event) {
+    var that = this;
     event.preventDefault();
     var address = $( "input[name='streetAddress']" ).val();
       if (address === '') {
@@ -613,12 +614,22 @@ wiz.views.AddressForm = Backbone.View.extend({
       var laAddressAPI = "/labp/address-lookup/" + address;
       $.getJSON( laAddressAPI, function( json ) {
         if(json.inLA == '1'){
-          console.log('Address is in LA');
+          that.hasAddressRender();
         }
         if(json.inLA == '0'){
-          console.log('Address is NOT in LA');
+          that.noAddressRender();
         }
       });
+  },
+
+  hasAddressRender: function() {
+    var text = Drupal.t("<p>Your business is in the city of Los Angeles.</p><br />");
+    this.$el.find(".address-result").html(text);
+  },
+
+  noAddressRender: function() {
+    var text = Drupal.t("<p>Your business is not in the city of Los Angeles.</p><br/><p>You can continue to get your guide to register as a business with the County, State and Federal government. Be sure to check with your local municipality to complete your business registration there.</p><br />");
+    this.$el.find(".address-result").html(text);
   },
 
   render: function() {
