@@ -44,6 +44,7 @@ features[defaultconfig][] = field_default_fields:taxonomy_term-business_portal_w
 features[defaultconfig][] = user_default_permissions:administer services
 features[features_api][] = api:2
 features[field_instance][] = comment-comment_node_sbp_wizard_screen-comment_body
+features[field_instance][] = field_collection_item-field_button-field_button_result_order
 features[field_instance][] = field_collection_item-field_button-field_button_style
 features[field_instance][] = field_collection_item-field_button-field_information_text
 features[field_instance][] = field_collection_item-field_button-field_title

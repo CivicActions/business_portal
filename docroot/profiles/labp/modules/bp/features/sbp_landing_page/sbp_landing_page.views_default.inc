@@ -52,7 +52,7 @@ function sbp_landing_page_views_default_views() {
   /* Display: Landing Page Featured Content */
   $handler = $view->new_display('panel_pane', 'Landing Page Featured Content', 'panel_pane_1');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Field: Featured Content */
+  /* Field: Field: Content */
   $handler->display->display_options['fields']['field_content']['id'] = 'field_content';
   $handler->display->display_options['fields']['field_content']['table'] = 'field_data_field_content';
   $handler->display->display_options['fields']['field_content']['field'] = 'field_content';
