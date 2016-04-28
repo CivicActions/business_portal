@@ -59,6 +59,12 @@
   }
 }
 
+hr.wizard__arrow-line {
+  border: 0;
+  height: 2px;
+  background: white;
+}
+
 a.wizard__arrow-up {
   background-image: image-url("wizard/arrow_up.png");
   background-repeat: no-repeat;
@@ -79,12 +85,13 @@ a.wizard__arrow-up {
 a.wizard__arrow-down {
   background-image: image-url("wizard/arrow_down.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 24px 25px;
   margin: 0 0 0 24px;
   width: 24px;
   height: 25px;
   display: block;
-  text-indent: -10000px;
+  text-indent: -100000px;
+
   @include window_size(tab-wide-up){
     margin: 0 0 24px 0;
   }
@@ -92,6 +99,14 @@ a.wizard__arrow-down {
 
 a.wizard__arrow-down.enabled {
   background-image: image-url("wizard/arrow_down_enabled_desktop.png");
+}
+
+a.wizard__arrow-down.enabled.section {
+  text-indent: 40px;
+  color: white;
+  width: 100px;
+  margin-bottom: 5px;
+  padding-top: 3px;
 }
 
 

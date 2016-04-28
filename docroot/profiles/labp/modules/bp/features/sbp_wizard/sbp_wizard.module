@@ -118,13 +118,15 @@ function sbp_wizard_block() {
   </script>
 
   <script type="text/template" id="wizard-nav-section-template">
-    <a href="#" class="wizard__arrow-up">Previous</a>
-    <a href="#" class="wizard__arrow-down enabled">Next</a>
+    <hr class="wizard__arrow-line"/>
+    <a href="#" class="wizard__arrow-down enabled section">Next</a> 
+    <hr class="wizard__arrow-line"/>
   </script>
 
 
   <script type="text/template" id="wizard-nav-question-template">
     <a href="#" class="wizard__arrow-up">Previous</a>
+    <hr class="wizard__arrow-line"/>
     <a href="#" class="wizard__arrow-down">Next</a>
   </script>
 

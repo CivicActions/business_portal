@@ -4030,6 +4030,13 @@ a.wizard__button--selected {
 }
 
 /* line 62, ../sass/components/wizard/_wizard_bottom_nav.scss */
+hr.wizard__arrow-line {
+  border: 0;
+  height: 2px;
+  background: white;
+}
+
+/* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
   background-image: url('../images/wizard/arrow_up.png?1459798895');
   background-repeat: no-repeat;
@@ -4043,36 +4050,45 @@ a.wizard__arrow-up {
   text-indent: -10000px;
 }
 @media all and (min-width: 720px) {
-  /* line 62, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-up {
     margin: 0 10px 10px 0;
   }
 }
 
-/* line 79, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 85, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
   background-image: url('../images/wizard/arrow_down.png?1461530233');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 24px 25px;
   margin: 0 0 0 24px;
   width: 24px;
   height: 25px;
   display: block;
-  text-indent: -10000px;
+  text-indent: -100000px;
 }
 @media all and (min-width: 720px) {
-  /* line 79, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 85, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down {
     margin: 0 0 24px 0;
   }
 }
 
-/* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
   background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
 }
 
-/* line 98, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 104, ../sass/components/wizard/_wizard_bottom_nav.scss */
+a.wizard__arrow-down.enabled.section {
+  text-indent: 40px;
+  color: white;
+  width: 100px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+}
+
+/* line 113, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
   background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
   display: inline;
@@ -4080,7 +4096,7 @@ a.wizard__arrow-down.enabled {
   margin-top: 7px;
 }
 
-/* line 105, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
   background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
   background-repeat: no-repeat;
@@ -4092,13 +4108,13 @@ a.wizard__arrow-down.enabled {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 105, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 135, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -4109,13 +4125,13 @@ a.wizard__arrow-down.enabled {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 135, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 133, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 148, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
   color: white;
   font-weight: 700;
