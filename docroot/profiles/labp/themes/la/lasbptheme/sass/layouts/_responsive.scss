@@ -61,21 +61,9 @@ $zen-auto-include-item-base: false;
   @include zen-grid-container();
 }
 
+
 /* Navigation bar */
-@media all and (min-width: 480px) {
-  #main {
-    /* Move all the children of #main down to make room. */
-    //padding-top: $nav-height;
-    position: relative;
-  }
-  #navigation {
-    /* Move the navbar up inside #main's padding. */
-    position: absolute;
-    top: 0;
-    height: $nav-height;
-    width: $zen-grid-width;
-  }
-}
+
 
 } // End of @if $zen-reverse-all-floats == false
 
