@@ -2648,24 +2648,31 @@ hr.hero__line--half {
   width: 90%;
   margin: 0 auto;
 }
-/* line 73, ../sass/components/hero/_hero.scss */
+@media all and (min-width: 960px) {
+  /* line 70, ../sass/components/hero/_hero.scss */
+  .hero__layout--full .hero__content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* line 76, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__headline {
   font-size: 2em;
   margin: 320px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 73, ../sass/components/hero/_hero.scss */
+  /* line 76, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__headline {
     font-size: 3em;
     margin: 3em 0 0;
   }
 }
-/* line 82, ../sass/components/hero/_hero.scss */
+/* line 85, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__bottom_align--bn {
   margin: 3em 0 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 82, ../sass/components/hero/_hero.scss */
+  /* line 85, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__bottom_align--bn {
     margin: 5em 0 3em;
   }
@@ -4563,7 +4570,14 @@ body.node-type-sbp-landing-page .panel__content_wrapper:before, body.node-type-s
 body.node-type-sbp-landing-page .panel__content_wrapper:after {
   clear: both;
 }
-/* line 18, ../sass/components/_landing-page--home.scss */
+@media all and (min-width: 960px) {
+  /* line 6, ../sass/components/_landing-page--home.scss */
+  body.node-type-sbp-landing-page .panel__content_wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/* line 20, ../sass/components/_landing-page--home.scss */
 body.node-type-sbp-landing-page .panel__content_col_1 {
   padding-top: 4em;
 }
@@ -4690,32 +4704,12 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    width: 45%;
-    padding-left: 0;
-    margin-left: 20px;
-    padding-right: 10px;
-    margin-right: -10px;
-    float: left;
-    margin-top: 0;
-  }
-}
-@media all and (min-width: 960px) {
-  /* line 81, ../sass/components/_four_column_cta.scss */
-  .four-col-wrapper .panel__section {
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
     width: 22.5%;
     padding-left: 0;
     padding-right: 15px;
     margin-right: 5px;
     float: left;
     margin-top: 0;
-    width: 22%;
   }
 }
 
