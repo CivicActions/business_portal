@@ -103,21 +103,29 @@ foreach($heros as $hero){
                     <div class = "left" >
                         <div class = "hero__background-image"  <?php if (!empty($background_image_path)): ?> style = "background-image: url('<?php print $background_image_path;?>')" <?php endif; ?>>
                           <div class = "hero__image--overlay">
-                        <?php if(!empty($hero_subtitle) || !empty($hero_subtitle_long)): ?>
-                            <div class="hero__bottom_align--bn">
-                                <?php if(!empty($hero_subtitle_long)): ?>
-                                    <h5 class="hero__business__name"><?php print $hero_subtitle_long; ?></h5>
-                                <?php endif; ?>
-                                <?php if(!empty($hero_subtitle)): ?>
-                                    <p class="hero__business__description">
-                                        <?php print $hero_subtitle; ?>
-                                    </p>
-                                <?php endif; ?>
+                            <div class = "hero__header--inner">
+                              <?php if (!empty($icon)): ?>
+                                  <div class = "hero__icon--mobile">
+                                      <img src = "<?php print $icon_path; ?>" />
+                                  </div>
+                              <?php endif; ?>
+                              <div class="hero__headline--half--mobile"><?php print $hero_title; ?></div>
+                              <?php if(!empty($hero_subtitle) || !empty($hero_subtitle_long)): ?>
+                                  <div class="hero__bottom_align--bn">
+                                      <?php if(!empty($hero_subtitle_long)): ?>
+                                          <h5 class="hero__business__name"><?php print $hero_subtitle_long; ?></h5>
+                                      <?php endif; ?>
+                                      <?php if(!empty($hero_subtitle)): ?>
+                                          <p class="hero__business__description">
+                                              <?php print $hero_subtitle; ?>
+                                          </p>
+                                      <?php endif; ?>
+                                  </div>
+                              <?php endif; ?>
                             </div>
-                        <?php endif; ?>
-                      </div>
-                            </div>
+                          </div>
                         </div>
+                    </div>
 
                     <div class = "right">
                       <div class = "hero__header--inner">
