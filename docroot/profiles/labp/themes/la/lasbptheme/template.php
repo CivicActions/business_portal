@@ -55,10 +55,8 @@ function lasbptheme_preprocess_html(&$variables, $hook) {
 
 function lasbptheme_preprocess_page(&$variables, $hook) {
   drupal_add_js('https://globalnav.lacity.org/global_nav_2.0.js', 'external');
-  $variables['sample_variable'] = t('Lorem ipsum.');
   drupal_add_library('system', 'ui.accordion');
 }
-
 
 /**
  * Implements preprocess_panels_pane().
@@ -75,6 +73,16 @@ function lasbptheme_preprocess_panels_pane(&$vars) {
   }
   if ($vars['title'] == 'Filter by resource type:') {
     $vars['title'] = 'Resource Type';
+  }
+  if ($vars['pane']->subtype == 'sbp_wizard-wizard') {
+    $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
+    $profile_path = drupal_get_path('profile', 'labp');
+    drupal_add_js($profile_path . '/libraries/underscore/underscore-min.js');
+    drupal_add_js($profile_path . '/libraries/backbone/backbone-min.js');
+    drupal_add_js($theme_path . '/js/wizard/models.js');
+    drupal_add_js($theme_path . '/js/wizard/collections.js');
+    drupal_add_js($theme_path . '/js/wizard/views.js');
+    drupal_add_js($theme_path . '/js/wizard/app.js');
   }
 }
 
