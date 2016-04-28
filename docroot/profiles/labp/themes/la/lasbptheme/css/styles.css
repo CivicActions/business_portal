@@ -1070,8 +1070,6 @@ table {
 
 /* line 2, ../sass/base/_transitions.scss */
 .page {
-  position: fixed;
-  top: 105px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1165,7 +1163,6 @@ table {
   /* line 66, ../sass/layouts/_responsive.scss */
   #main {
     /* Move all the children of #main down to make room. */
-    padding-top: 3em;
     position: relative;
   }
 
