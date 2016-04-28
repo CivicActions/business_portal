@@ -154,7 +154,6 @@
   top:0;
   width: 100%;
   height: 550px;
-
   @include window_size(desktop){
     @include maintain-ratio(1440 550);
     border:0px solid red;
@@ -191,7 +190,7 @@
 
 // subsection
 .hero__overlay_partial{
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0,0,0,0);
   height:250px;
   width:100%;
   position: absolute;
