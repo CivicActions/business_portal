@@ -112,6 +112,10 @@ function sbp_wizard_block() {
   <script type="text/template" id="buttons-template">
     <div class="wizard__buttons"></div>
   </script>
+  
+  <script type="text/template" id="wizard-results-cta-template">
+    <p><a class="wizard__button print">Print</a><a class="wizard__button email">Email</a></p>
+  </script>
 
   <script type="text/template" id="wizard-nav-start-template">
     <a href="#" class="wizard__arrow-down enabled">Next</a>

@@ -204,6 +204,9 @@ wiz.views.App = wiz.extensions.View.extend({
           wiz.intro = new wiz.views.IntroWithIllustration({ model: this.model });
           this.$el.append(wiz.intro.render().el);
 
+          wiz.cta = new wiz.views.ResultsCTA({model: this.model});
+          this.$el.append(wiz.cta.render().el);
+
           wiz.results = new wiz.views.ResultsView({model: this.model});
           this.$el.append(wiz.results.render().el);
 
@@ -734,14 +737,35 @@ wiz.views.NavStartOver = Backbone.View.extend({
   }
 });
 
+//////////////////////////
+// // Results CTA /////
+//////////////////////////
+
+wiz.views.ResultsCTA = Backbone.View.extend({
+  className: ".wizard__content--results-cta",
+  events: {
+    "click .wizard__button.print": "callPrint",
+    "click .wizard__button.email": "callEmail"
+  },
+  template: _.template($('#wizard-results-cta-template').html()),
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  },
+  callPrint: function() {
+    window.print();
+  },
+  callEmail: function() {
+    window.print();
+  }
+});
+
 ////////////////////////
 // // Results View /////
 ////////////////////////
 
 wiz.views.ResultsView = Backbone.View.extend({
   className: ".wizard__content--results-list",
-  events: {"click .wizard__button.print": "callPrint"},
-  buttonTemplate: _.template('<p><a class="wizard__button print">Print</a></p>'),
   initialize: function() {
     var results = [],
     results = wiz.collections.chosen.getResults();
@@ -749,10 +773,6 @@ wiz.views.ResultsView = Backbone.View.extend({
       wiz.result = new wiz.views.Result({result: r, index: index});
       this.$el.append(wiz.result.render().el);
     }, this);
-    this.$el.append(this.buttonTemplate());
-  },
-  callPrint: function() {
-    window.print();
   }
 });
 
