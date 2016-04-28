@@ -1074,7 +1074,7 @@ table {
   bottom: 0;
   left: 0;
   height: 100%;
-  transition-duration: 0.5s;
+  transition-duration: 0.00000001s;
   transform: none;
   -moz-transform: none;
   -webkit-transform: none;
