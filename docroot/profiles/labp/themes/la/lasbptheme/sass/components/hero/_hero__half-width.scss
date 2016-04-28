@@ -4,35 +4,98 @@
 ******************************/
 
 .hero__layout--half {
+
   .hero__header--inner {
-     margin: 6em 0 0;
+     padding: 6em 30px 0;
+    position: relative;
+    @include window_size(desktop) {
+      padding: 6em 0 0;
+    }
   }
 
-  .hero__icon {
-
+  .hero__icon,
+  .hero__icon--mobile {
     img {
       width: 100%;
       max-width: 100px;
     }
   }
+  // Mobile and Desktop headers & icons displayed in different regions
+  .hero__icon,
+  .hero__headline--half{ display: none;}
+  .hero__icon--mobile {}
+
+  @include window_size(desktop) {
+    .hero__icon,
+    .hero__headline--half { display: block;}
+    .hero__icon--mobile,
+    .hero__headline--half--mobile { display: none;}
+  }
+
 
   .hero__bottom_align--bn {
-    padding: 400px 0 0 100px;
     max-width: 250px;
+    padding: 20px 0 0;
+    margin-bottom: 0;
+    @include window_size(desktop){
+      padding: 250px 1em 5em 100px;
+    }
   }
+
+  .hero__business__name {
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  .hero__business__description {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+  }
+
+  // Hide business name and description in mobile screens
+  .hero__business__name,
+  .hero__business__description,
+  .hero__line--half {
+    display: none;
+    @include window_size(desktop) {
+      display: block;
+    }
+  }
+
+  // Left and right columns for half-width layout
   .right {
-    padding-left: 30px;
+
+  .hero__header--inner {
+    padding: 1em 0 30px;
+    @include window_size(desktop) {
+      padding: 6em 30px 0;
+      }
+    }
+  }
+  .hero__description {
+    margin: 0.8em 1em 0;
+    font-size: 1.143em;
+
+    @include window-size(desktop) {
+      font-size: 1.4em;
+      line-height: 1.4;
+      margin: 30px 0;
+    }
   }
   .hero__headline,
-  .hero__headline--half {
+  .hero__headline--half,
+  .hero__headline--half--mobile {
     font-size: 1.8em ;
-    margin: 1em 0 0;
 
     @include window_size(tab-wide-up){
       font-size: 2.143em;
     }
     @include window_size(desktop){
       font-size: 2.6em;
+      margin: 1em 0 0;
     }
   }
   .hero__background-image {
@@ -41,7 +104,9 @@
   }
 
   .hero__image--overlay {
-    padding-bottom: 4em;
+
+    @include window_size(desktop){
+    }
   }
 
 
@@ -54,16 +119,10 @@
 
   .hero__content-wrapper {
     @include zen-grid-container();
-    @include zen-grid-item-base();
     width: 100%;
     padding-left: 0;
   }
 
-
-    @include window_size(tab-wide-up) {
-      .left  { @include zen-grid-item (3, 1); }
-      .right { @include zen-grid-item (7, 4); }
-    }
     @include window_size(desktop){
       .left  { @include zen-grid-item (3, 1); }
       .right { @include zen-grid-item (7, 4); }

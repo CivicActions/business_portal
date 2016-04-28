@@ -24,7 +24,11 @@
 }
 
 .header--wrapper {
-  @include wrapper();
+  @include wrapper(100%);
+  @include window_size(desktop) {
+    @include wrapper();
+  }
+
 }
 /* Wrapping link for logo. */
 .header__logo {
@@ -39,7 +43,6 @@
   @include window_size(tab-wide-up){
     width: 213px;
     height: 39px;
-    margin: 7px 0 0 0;
   }
 
   /*
