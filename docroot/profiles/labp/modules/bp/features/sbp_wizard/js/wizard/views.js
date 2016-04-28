@@ -493,6 +493,7 @@ wiz.views.Nav = Backbone.View.extend({
   },
 
   forwardEnabled: function() {
+    wiz.collections.chosen.selected = true;
     this.$el.find(".wizard__arrow-down").addClass("enabled");
   },
 
@@ -625,11 +626,13 @@ wiz.views.AddressForm = Backbone.View.extend({
   hasAddressRender: function() {
     var text = Drupal.t("<p>Your business is in the city of Los Angeles.</p><br />");
     this.$el.find(".address-result").html(text);
+    Backbone.trigger("button:selected");
   },
 
   noAddressRender: function() {
     var text = Drupal.t("<p>Your business is not in the city of Los Angeles.</p><br/><p>You can continue to get your guide to register as a business with the County, State and Federal government. Be sure to check with your local municipality to complete your business registration there.</p><br />");
     this.$el.find(".address-result").html(text);
+    Backbone.trigger("button:selected");
   },
 
   render: function() {
@@ -644,13 +647,29 @@ wiz.views.AddressForm = Backbone.View.extend({
 
 wiz.views.NavForAddress = Backbone.View.extend({
   template: _.template($('#wizard-nav-address-template').html()),
+
+  initialize: function() {
+    Backbone.on("button:selected", this.forwardEnabled, this);
+    Backbone.on("button:deselected", this.forwardDisabled, this);
+  },
+
+  forwardEnabled: function() {
+    wiz.collections.chosen.selected = true;
+    this.$el.find(".wizard__arrow-down").addClass("enabled");
+  },
+
+  forwardDisabled: function() {
+    wiz.collections.chosen.selected = false;
+    this.$el.find(".wizard__arrow-down").removeClass("enabled");
+  },
+
   events:  {
     "click .wizard__address_back_button": "backArrowClick",
     "click .wizard__arrow-up": "backArrowClick",
     "click .wizard__arrow-down": "forwardArrowClick"
   },
-  backArrowClick: function() {
 
+  backArrowClick: function() {
     if (wiz.collections.chosen.length > 1) {
       var last = wiz.collections.chosen.last();
       wiz.collections.chosen.remove(last);
@@ -660,8 +679,26 @@ wiz.views.NavForAddress = Backbone.View.extend({
       });
       wiz.instance.goto(wiz.wizard);
     }
-
     event.preventDefault();
+  },
+
+  forwardArrowClick: function(event) {
+    var m =  wiz.collections.screens.find({
+      "Nid": this.getNextScreen()
+    });
+    wiz.collections.chosen.add(m);
+    event.preventDefault();
+  },
+
+  getNextScreen: function() {
+    var bid = 0, nid = undefined; // next screen button id. could check for Yes text. this method could live in the model for DRY purposes.
+    if (this.model.get("buttons")[bid]["Destination Screen"] !== undefined) {
+      nid = this.model.get("buttons")[bid]["Destination Screen"]["target_id"];
+    } else {
+      console.log("APP: Destination screen not defined: ", m.get("buttons"));
+      return;
+    }
+    return nid;
   },
   render: function() {
     this.$el.html(this.template());
