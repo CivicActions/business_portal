@@ -4,10 +4,14 @@ body.node-type-sbp-landing-page {
   /********* Layout *************/
 
   .panel__content_wrapper {
-    $zen-grid-width: 80%;
+
+    $zen-grid-width: 90%;
     @include zen-grid-container();
-    @include zen-grid-item-base();
+
     width: $zen-grid-width;
+    @include window-size(desktop){
+    }
+
     margin: 0 auto;
   }
 
