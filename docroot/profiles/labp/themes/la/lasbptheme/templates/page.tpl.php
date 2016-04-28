@@ -98,6 +98,6 @@
 <div class = "region--bottom" >
   <?php print render($page['bottom']); ?>
   <div class="footer__copyright">&copy; 2016 All rights reserved</div>
-  <div class="footer__credits">Site by <a href="http://www.tomorrowpartners.com/">Tomorrow Partners</a> + <a href="https://civicactions.com/">Civic Actions</a>
+  <div class="footer__credits">Site by <a href="http://www.tomorrowpartners.com/">Tomorrow Partners</a> + <a href="https://civicactions.com/">CivicActions</a>
 
   </div>
