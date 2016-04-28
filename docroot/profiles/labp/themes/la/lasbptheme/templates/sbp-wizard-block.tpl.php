@@ -1,3 +1,6 @@
+<?php
+//dpm(get_defined_vars());
+?>
 <div id="wizard" class="wizard"></div>
 
 <script type="text/template" id="start-template">
