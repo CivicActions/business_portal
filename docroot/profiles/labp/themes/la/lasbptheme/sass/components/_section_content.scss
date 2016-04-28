@@ -19,7 +19,6 @@
 
 //root container of all the panels
 .panel__intro{
-  @include panel__icons--default();
   @include window_size(desktop){
     padding: 0;
     background-repeat: no-repeat;
