@@ -2233,7 +2233,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459798895');
+  background-image: url('../images/progress.gif?1459349360');
 }
 
 /**
@@ -2814,20 +2814,15 @@ hr.hero__line--half {
   /* line 64, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
-    width: 37.5%;
+    width: 30%;
     margin-left: 0%;
-    margin-right: -37.5%;
+    margin-right: -30%;
   }
   /* line 65, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
-<<<<<<< HEAD
     width: 70%;
     margin-left: 30%;
-=======
-    width: 62.5%;
-    margin-left: 37.5%;
->>>>>>> Header on the confirm screen
     margin-right: -100%;
   }
 }
@@ -2835,20 +2830,15 @@ hr.hero__line--half {
   /* line 68, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
-    width: 37.5%;
+    width: 30%;
     margin-left: 0%;
-    margin-right: -37.5%;
+    margin-right: -30%;
   }
   /* line 69, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
-<<<<<<< HEAD
     width: 70%;
     margin-left: 30%;
-=======
-    width: 62.5%;
-    margin-left: 37.5%;
->>>>>>> Header on the confirm screen
     margin-right: -100%;
   }
 }
@@ -3302,10 +3292,6 @@ hr.hero__line--half {
 /* line 38, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-screen--register-business {
   background-color: #89d5c4;
-<<<<<<< HEAD
-  height: 900px;
-=======
->>>>>>> Header on the confirm screen
 }
 
 /* line 43, ../sass/components/wizard/_wizard.scss */
@@ -3452,7 +3438,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461530233');
+  background-image: url('../images/wizard/icon_context_help.png?1461563616');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -3731,7 +3717,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3790,7 +3776,7 @@ a.wizard__button--selected {
 /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3800,7 +3786,7 @@ a.wizard__button--selected {
 /* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3810,7 +3796,7 @@ a.wizard__button--selected {
 /* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3885,7 +3871,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461563616');
 }
 
 /* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3896,7 +3882,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461563616');
 }
 
 /* line 189, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3907,7 +3893,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461563616');
 }
 
 /**********/
@@ -3951,7 +3937,7 @@ a.wizard__button--selected {
 /* line 232, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461530233');
+  background-image: url('../images/wizard/icon_close.png?1461563616');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4038,7 +4024,7 @@ hr.wizard__arrow-line {
 
 /* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1461492462');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -4058,7 +4044,7 @@ a.wizard__arrow-up {
 
 /* line 85, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
+  background-image: url('../images/wizard/arrow_down.png?1461563616');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   margin: 0 0 0 24px;
@@ -4076,7 +4062,7 @@ a.wizard__arrow-down {
 
 /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461563616');
 }
 
 /* line 104, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4090,7 +4076,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 113, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461563616');
   display: inline;
   float: right;
   margin-top: 7px;
@@ -4098,7 +4084,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 120, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
+  background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4155,7 +4141,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461530233');
+  background-image: url('../images/wizard/icon_info.png?1461563616');
   background-size: 100%;
 }
 
@@ -4642,7 +4628,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    width: 50%;
+    width: 40%;
     padding-left: 0;
     margin-left: 20px;
     padding-right: 10px;
@@ -4661,7 +4647,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    width: 25%;
+    width: 20%;
     padding-left: 0;
     padding-right: 15px;
     margin-right: 5px;
@@ -4804,10 +4790,6 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 @media all and (min-width: 960px) {
   /* line 82, ../sass/components/_section_content.scss */
   .panel__content_wrapper {
-<<<<<<< HEAD
-=======
-    width: 100%;
->>>>>>> Header on the confirm screen
     margin-left: auto;
     margin-right: auto;
   }
