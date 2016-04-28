@@ -14,7 +14,7 @@ function labp_address_wizard_address_input($form, &$form_state) {
     '#required' => TRUE,
     '#description' => 'Example: "14410 Sylvan St" or "Sunset Blvd / Vermont Ave"',
     '#size' => 20,
-    '#maxlength' => 20,
+    '#maxlength' => 150,
     '#attributes' => array('placeholder'=>"Enter your address..."),
   );
   $form['lookup'] = array(
