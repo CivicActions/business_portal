@@ -140,7 +140,10 @@ function sbp_wizard_block() {
   </script>
   
   <script type="text/template" id="wizard-nav-address-template">
-       <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
+     <a href="#" class="wizard__tip_button wizard__address_back_button left enabled">BACK TO ANSWERS</a>
+     <a href="#" class="wizard__arrow-up">Previous</a>
+    <hr class="wizard__arrow-line"/>
+    <a href="#" class="wizard__arrow-down">Next</a>
   </script>
 
   <script type="text/template" id="wizard-nav-start-over-template">

@@ -604,7 +604,9 @@ wiz.views.AddressForm = Backbone.View.extend({
 wiz.views.NavForAddress = Backbone.View.extend({
   template: _.template($('#wizard-nav-address-template').html()),
   events:  {
-    "click .wizard__address_back_button": "backArrowClick"
+    "click .wizard__address_back_button": "backArrowClick",
+    "click .wizard__arrow-up": "backArrowClick",
+    "click .wizard__arrow-down": "forwardArrowClick"
   },
   backArrowClick: function() {
 
