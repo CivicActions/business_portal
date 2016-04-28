@@ -2212,11 +2212,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/progress.gif?1461165606');
-=======
   background-image: url('../images/progress.gif?1459798895');
->>>>>>> Styling of the confirmation results
 }
 
 /**
@@ -3443,11 +3439,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/icon_context_help.png?1461525799');
-=======
   background-image: url('../images/wizard/icon_context_help.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -3726,11 +3718,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 0;
   right: 0;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/progress_bar.png?1461525799');
-=======
   background-image: url('../images/wizard/progress_bar.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3789,11 +3777,7 @@ a.wizard__button--selected {
 /* line 84, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
-=======
   background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3803,11 +3787,7 @@ a.wizard__button--selected {
 /* line 95, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
-=======
   background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3817,11 +3797,7 @@ a.wizard__button--selected {
 /* line 107, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
-=======
   background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3896,11 +3872,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
-=======
   background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
->>>>>>> Styling of the confirmation results
 }
 
 /* line 182, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3911,11 +3883,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
-=======
   background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
->>>>>>> Styling of the confirmation results
 }
 
 /* line 189, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3926,11 +3894,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
-=======
   background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
->>>>>>> Styling of the confirmation results
 }
 
 /**********/
@@ -3974,11 +3938,7 @@ a.wizard__button--selected {
 /* line 232, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/icon_close.png?1461525799');
-=======
   background-image: url('../images/wizard/icon_close.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4065,11 +4025,7 @@ hr.wizard__arrow-line {
 
 /* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/arrow_up.png?1461165606');
-=======
   background-image: url('../images/wizard/arrow_up.png?1459798895');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 24px;
@@ -4089,11 +4045,7 @@ a.wizard__arrow-up {
 
 /* line 85, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/arrow_down.png?1461525799');
-=======
   background-image: url('../images/wizard/arrow_down.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 24px 25px;
   margin: 0 0 0 24px;
@@ -4111,11 +4063,7 @@ a.wizard__arrow-down {
 
 /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
-=======
   background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
->>>>>>> Styling of the confirmation results
 }
 
 /* line 104, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4129,11 +4077,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 113, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
-=======
   background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
->>>>>>> Styling of the confirmation results
   display: inline;
   float: right;
   padding-top: 7px;
@@ -4153,11 +4097,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 131, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
-=======
   background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
->>>>>>> Styling of the confirmation results
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4214,11 +4154,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-<<<<<<< e5085378723f9697cf3180950bd76a96cdfbf841
-  background-image: url('../images/wizard/icon_info.png?1461525799');
-=======
   background-image: url('../images/wizard/icon_info.png?1461530233');
->>>>>>> Styling of the confirmation results
   background-size: 100%;
 }
 
