@@ -17,23 +17,16 @@
     ul.facetapi-facetapi-links {
       padding: 0 0 0 2em;
       @include window_size(desktop){
-        padding: 0 0 0 100px;
+        padding: 0 0 0 10px;
       }
     }
     ul.menu {
       padding-top: 30px;
-
-
     }
     .menu__item {
       list-style: none;
       font-size: 1.143em;
       margin: 0 0 10px 0;
-      &:last-child {
-        border-bottom: 1px solid $light-blue;
-        padding-bottom: 2em;
-        width: 80%;
-      }
       a {
         color: $dark-blue;
       }
@@ -41,15 +34,23 @@
 
   }
   .views-widget-filter-search_api_views_fulltext {
-    margin: 10px 0 10px 100px;
-
+    margin: 10px 0 10px 10px;
   }
 
-  form#views-exposed-form-sbp-resource-incentives-panel-pane-1  {
+  form#views-exposed-form-sbp-resource-incentives-panel-pane-1,
+  .pane-sbp-terms-definitions {
+    border-top: 1px solid $light-blue;
+    width: 70%;
+    margin-top: 2em;
+    padding-top: 0.8em;
+    @include window_size(desktop) {
+      width: 100%;
+    }
+
     button {
       @extend .panel__button;
       border: 0px;
-      margin-left: 2em;
+      margin-left: 1em;
       outline: none;
       &:focus {
         background: darken($yellow, 10%);
@@ -106,7 +107,7 @@
     font-weight: 700;
     margin:10px 0 5px 2em;
     @include window_size(desktop) {
-      margin:20px 0 10px 100px;
+      margin:20px 0 10px 10px;
       padding: 0px 0 0 0px;
     }
   }
