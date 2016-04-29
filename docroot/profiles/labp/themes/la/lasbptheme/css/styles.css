@@ -1385,6 +1385,7 @@ table {
 /* line 12, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0 2em 1em 2em;
+  padding-top: 1em;
 }
 @media all and (min-width: 960px) {
   /* line 12, ../sass/layouts/_panels.scss */
@@ -2225,7 +2226,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459349360');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /**
@@ -2238,7 +2239,7 @@ tr.selected td {
 /* line 8, ../sass/components/_header.scss */
 #header {
   color: white;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
   padding: 0;
   height: 47px;
   position: fixed;
@@ -2265,7 +2266,7 @@ tr.selected td {
 @media all and (min-width: 960px) {
   /* line 26, ../sass/components/_header.scss */
   .header--wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -2359,7 +2360,7 @@ tr.selected td {
 /* line 102, ../sass/components/_header.scss */
 #header .menu {
   float: left;
-  margin: 0 0 0 66px;
+  margin: 0 0 0 100px;
   padding: 0;
   height: 100%;
   height: 55px;
@@ -2603,20 +2604,15 @@ tr.selected td {
   background-position: 60%;
 }
 
-/* line 13, ../sass/components/hero/_hero.scss */
-.hero__image--overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 @media all and (min-width: 960px) {
-  /* line 17, ../sass/components/hero/_hero.scss */
+  /* line 14, ../sass/components/hero/_hero.scss */
   .hero__image--bg,
   .hero__image--overlay {
     min-height: 400px;
   }
 }
 
-/* line 27, ../sass/components/hero/_hero.scss */
+/* line 24, ../sass/components/hero/_hero.scss */
 .hero__headline,
 .hero__headline--half,
 .hero__headline--half--mobile {
@@ -2625,7 +2621,7 @@ tr.selected td {
   color: #fff;
 }
 
-/* line 35, ../sass/components/hero/_hero.scss */
+/* line 32, ../sass/components/hero/_hero.scss */
 hr.hero__line,
 hr.hero__line--half {
   height: 4px;
@@ -2633,7 +2629,7 @@ hr.hero__line--half {
   margin: 2em 0 0;
 }
 
-/* line 41, ../sass/components/hero/_hero.scss */
+/* line 38, ../sass/components/hero/_hero.scss */
 .hero__business__name {
   color: #fff;
   font-size: 1.1em;
@@ -2641,7 +2637,7 @@ hr.hero__line--half {
   font-weight: normal;
 }
 
-/* line 48, ../sass/components/hero/_hero.scss */
+/* line 45, ../sass/components/hero/_hero.scss */
 .hero__business__description {
   color: #fff;
   font-size: 1.1em;
@@ -2649,44 +2645,49 @@ hr.hero__line--half {
   max-width: 600px;
 }
 
-/* line 55, ../sass/components/hero/_hero.scss */
+/* line 52, ../sass/components/hero/_hero.scss */
 .hero__bottom_align--bn {
   margin-bottom: 2em;
+}
+
+/* line 58, ../sass/components/hero/_hero.scss */
+.hero__layout--full .hero__image--overlay {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /*****************************
 *     Full Width
 ******************************/
-/* line 71, ../sass/components/hero/_hero.scss */
+/* line 69, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__content-wrapper {
   width: 90%;
   margin: 0 auto;
 }
 @media all and (min-width: 960px) {
-  /* line 71, ../sass/components/hero/_hero.scss */
+  /* line 69, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__content-wrapper {
     width: 80%;
     margin: 0 auto;
   }
 }
-/* line 77, ../sass/components/hero/_hero.scss */
+/* line 75, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__headline {
   font-size: 2em;
   margin: 320px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 77, ../sass/components/hero/_hero.scss */
+  /* line 75, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__headline {
     font-size: 3em;
     margin: 3em 0 0;
   }
 }
-/* line 86, ../sass/components/hero/_hero.scss */
+/* line 84, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__bottom_align--bn {
   margin: 3em 0 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 86, ../sass/components/hero/_hero.scss */
+  /* line 84, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__bottom_align--bn {
     margin: 5em 0 3em;
   }
@@ -2832,7 +2833,7 @@ hr.hero__line--half {
 /* line 101, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
-  background-size: auto 130%;
+  background-size: cover;
 }
 @media all and (min-width: 960px) {
   /* line 101, ../sass/components/hero/_hero__half-width.scss */
@@ -2840,7 +2841,7 @@ hr.hero__line--half {
     background-size: auto 100%;
   }
 }
-/* line 123, ../sass/components/hero/_hero__half-width.scss */
+/* line 122, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   width: 100%;
   padding-left: 0;
@@ -2855,14 +2856,14 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 130, ../sass/components/hero/_hero__half-width.scss */
+  /* line 129, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 131, ../sass/components/hero/_hero__half-width.scss */
+  /* line 130, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 70%;
@@ -3481,7 +3482,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461563616');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -3761,7 +3762,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461563616');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -3825,7 +3826,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -3835,7 +3836,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3845,7 +3846,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -3920,7 +3921,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3931,7 +3932,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -3942,7 +3943,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461563616');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -3986,7 +3987,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461563616');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4073,7 +4074,7 @@ hr.wizard__arrow-line {
 
 /* line 67, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461492462');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4093,7 +4094,7 @@ a.wizard__arrow-up {
 
 /* line 84, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461563616');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   margin: 0 0 0 0px;
@@ -4111,7 +4112,7 @@ a.wizard__arrow-down {
 
 /* line 99, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461563616');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 103, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4125,7 +4126,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 112, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461563616');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   display: inline;
   float: right;
   padding-top: 7px;
@@ -4145,7 +4146,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 130, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459349360');
+  background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4202,7 +4203,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461563616');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 

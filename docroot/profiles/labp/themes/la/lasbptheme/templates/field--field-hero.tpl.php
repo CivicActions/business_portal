@@ -69,6 +69,7 @@ foreach($heros as $hero){
     $hero_description = $hero['field_description']['#items'][0]['value'];
   }
 }
+  $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 ?>
 <!-- hero start -->
 <div class="pane__hero pane__hero_<?php print $width; ?> style_variant <?php print $pane_style; ?> <?php print $classes; ?>">
@@ -101,7 +102,12 @@ foreach($heros as $hero){
         <div class = "hero__image--bg hero__layout--<?php print $width; ?> ">
                 <div class = "hero__content-wrapper">
                     <div class = "left" >
-                        <div class = "hero__background-image"  <?php if (!empty($background_image_path)): ?> style = "background-image: url('<?php print $background_image_path;?>')" <?php endif; ?>>
+                        <div class = "hero__background-image"
+                            <?php if (!empty($background_image_path)){ ?>
+                                style = "background-image: url('<?php print $background_image_path;?>')"
+                             <?php } else { ?>
+                                style = "background-image: url('../<?php print $theme_path;?>/images/hero/default-bg--<?php print $pane_style; ?>.jpg")"
+                             <?php } ?> >
                           <div class = "hero__image--overlay">
                             <div class = "hero__header--inner">
                               <?php if (!empty($icon)): ?>
