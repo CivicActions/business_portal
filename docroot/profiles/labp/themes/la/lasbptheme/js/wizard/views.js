@@ -341,8 +341,6 @@ wiz.views.Email = Backbone.View.extend({
     e.preventDefault();
     var email = 'email=' + $( "input[name='emailResults']" ).val();
     var message = 'message=' + JSON.stringify($(".wizard__content--results-list" ).html());
-    console.log(message);
-    console.log(email);
     $.ajax({
         url: '/labp/wizard-email',
         dataType: 'text',

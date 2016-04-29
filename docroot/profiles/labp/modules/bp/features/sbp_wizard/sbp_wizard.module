@@ -12,13 +12,6 @@ include_once 'inc/sbp_wizard_email_form.inc';
 */
 function sbp_wizard_menu(){
   $items = array();
-  $items['examples/form_example/tutorial/1'] = array(
-    'title' => '#1',
-    'page callback' => 'drupal_get_form',
-    'page arguments' => array('sbp_wizard_email_form'),
-    'access callback' => TRUE,
-    'type' => MENU_DEFAULT_LOCAL_TASK,
-  );
   $items['labp/wizard-email'] = array(
     'title' => 'Email callback',
     'page callback' => 'sbp_email_process',
@@ -35,15 +28,15 @@ function sbp_email_process(){
   $module = 'email_example';
   $key = 'contact_message';
   $to = $_POST['email'];
-  $from = 'april.rose@civicactions';//variable_get('site_mail', '');
+  $from = variable_get('site_mail', '');
   $params = $_POST;
   $language = language_default();
   $send = TRUE;
   $result =  drupal_mail(
-    'sbp_wizard', //Module
-    'wizard_results', //Key
+    'sbp_wizard',
+    'wizard_results',
     $to,
-    user_preferred_language($account), //Lang
+    user_preferred_language($account),
     $params,
     $from, //
     $send
@@ -93,7 +86,7 @@ function sbp_wizard_entity_info_alter(&$entity_info) {
 function sbp_wizard_theme() {
   return array(
     'sbp_wizard_block' => array(
-      'variables' => array('address_form' => NULL),
+      'variables' => array('address_form' => NULL, 'email_form' => NULL),
       'template' => 'sbp-wizard-block',
     ),
   );
@@ -121,11 +114,15 @@ function sbp_wizard_block_view($delta = '') {
   } else {
     $address_form = '';
   }
+  
+  $email_form = drupal_get_form('sbp_wizard_email_form');
+  $email_form = drupal_render($email_form);
+  
   $block = array();
   switch ($delta) {
     case 'wizard':
       $block['subject'] = NULL;
-      $block['content'] = theme('sbp_wizard_block', array('address_form'=>$address_form));
+      $block['content'] = theme('sbp_wizard_block', array('address_form'=>$address_form, 'email_form'=>$email_form));
       break;
   };
   return $block;
