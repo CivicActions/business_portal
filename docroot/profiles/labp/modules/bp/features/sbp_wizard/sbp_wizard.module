@@ -44,8 +44,12 @@ function sbp_wizard_block_info() {
  * Implements hook_block_view().
  */
 function sbp_wizard_block_view($delta = '') {
-  $address_form = drupal_get_form('labp_address_wizard_address_input');
-  $address_form = drupal_render($address_form);
+  if (module_exists('labp_address_wizard')) {
+    $address_form = drupal_get_form('labp_address_wizard_address_input');
+    $address_form = drupal_render($address_form);
+  } else {
+    $address_form = '';
+  }
   $block = array();
   switch ($delta) {
     case 'wizard':
