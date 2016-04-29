@@ -352,12 +352,12 @@ wiz.views.Email = Backbone.View.extend({
         success: function( data, textStatus, jQxhr ){
           console.log(data);
           $("#wizard-email").addClass("element-invisible");
-          $( "#message-response" ).append( "You're message has been sent" );
+          $( "#message-response" ).html( "You're message has been sent" );
         },
         error: function( jqXhr, textStatus, errorThrown ){
           console.log( errorThrown );
           $("#wizard-email").addClass("element-invisible");
-          $( "#message-response" ).append( "There was an error sending your message. If you continue to experience problems, please contact the site administrator." );
+          $( "#message-response" ).html( "There was an error sending your message. If you continue to experience problems, please contact the site administrator." );
         }
     });
 
