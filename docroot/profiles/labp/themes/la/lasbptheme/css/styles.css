@@ -3368,7 +3368,7 @@ hr.hero__line--half {
   font-size: 1em;
   padding: 0;
   margin: 0 0 20px 0;
-  padding: 10px 25px 0 25px;
+  padding: 10px 25px 0 0;
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
@@ -3518,7 +3518,7 @@ a.wizard__button--selected {
 /* line 206, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
-  margin: 15px 60px 20px 20px;
+  margin: 15px 0px 20px 0;
   font-size: 0.929em;
   border: 0px solid red;
 }
@@ -3617,7 +3617,7 @@ a.wizard__button--selected {
   font-weight: 700;
   font-size: 1em;
   margin: 10px 0 10px 0;
-  padding: 35px 25px 0 25px;
+  padding: 35px 25px 0 0px;
   width: 100%;
   border: 0px solid red;
   background-image: url("../images/wizard/illustrations/illustration_clouds.png");
