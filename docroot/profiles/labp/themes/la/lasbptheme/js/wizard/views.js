@@ -101,7 +101,7 @@ wiz.views.App = wiz.extensions.View.extend({
       render: function() {
 
         // Styles for all sections:
-        this.$el.css("background", "#" + this.model.get("Primary Color"));
+       $("body").css("background", "#" + this.model.get("Primary Color"));
 
 
        /*
