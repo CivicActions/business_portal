@@ -71,7 +71,7 @@
   $zen-column-count: 4;
   @include zen-grid-container;
   margin: auto;
-  max-width: 960px;
+  max-width: $max-site-width;
   @include wrapper(90%);
   padding: 1em 0 3em;
   @include window_size(desktop) {

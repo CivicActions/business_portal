@@ -6,7 +6,7 @@ body.node-type-sbp-landing-page {
   .panel__content_wrapper {
     $zen-grid-width: 90%;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: $max-site-width;
     @include zen-grid-container();
     width: $zen-grid-width;
 
