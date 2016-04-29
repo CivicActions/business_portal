@@ -36,6 +36,17 @@
   }
 }
 
+/********************************************
+*           LAYOUT RULES
+*********************************************/
+$max-site-width: 960px;
+$max-content-width: 700px;
+$max-sidebar-width: 300px;
+
+@mixin max-width($max-site-width) {
+  max-width: $max-site-width;
+}
+
 // min-width rules
 @mixin window_size($width) {
   @if $width == desktop {

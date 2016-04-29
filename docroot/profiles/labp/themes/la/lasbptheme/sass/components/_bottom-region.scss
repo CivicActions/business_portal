@@ -8,6 +8,12 @@
   background: $navy;
   color: $white;
 
+  .region--bottom--wrapper {
+    @include wrapper(100%);
+    padding: 0 1em;
+    //max-width: 960px;
+  }
+
   @include window_size(tab-narrow-up) {
     .region-bottom {
       width:100%;

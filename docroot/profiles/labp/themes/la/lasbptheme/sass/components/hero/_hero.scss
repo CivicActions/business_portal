@@ -68,6 +68,7 @@ hr.hero__line--half {
 
   .hero__content-wrapper {
     @include wrapper(90%);
+    max-width: $max-site-width;
     @include window_size(desktop) {
       @include wrapper(80%);
     }
