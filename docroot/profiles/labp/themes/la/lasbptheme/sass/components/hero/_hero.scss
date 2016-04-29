@@ -10,9 +10,6 @@
   background-position: 60%;
 }
 
-.hero__image--overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-}
 
 .hero__image--bg,
 .hero__image--overlay {
@@ -57,9 +54,10 @@ hr.hero__line--half {
 }
 
 
-.hero__layout--full,
-.hero__layout--half {
-
+.hero__layout--full {
+  .hero__image--overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 /*****************************

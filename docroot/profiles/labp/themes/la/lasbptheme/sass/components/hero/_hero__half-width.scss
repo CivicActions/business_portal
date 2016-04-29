@@ -100,14 +100,13 @@
   }
   .hero__background-image {
     background-position: 50%;
-    background-size: auto 130%;
+    background-size: cover;
     @include window_size(desktop) {
       background-size: auto 100%;
     }
   }
 
   .hero__image--overlay {
-
     @include window_size(desktop){
     }
   }
