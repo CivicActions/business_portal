@@ -10,12 +10,12 @@
     padding: 0;
 
     .menu a.active-trail {
-      color: navy;
+      color: $navy;
       font-weight: 700;
     }
     ul.menu,
     ul.facetapi-facetapi-links {
-      padding: 0 0 1em 2em;
+      padding: 0 0 0 2em;
       @include window_size(desktop){
         padding: 0 0 0 100px;
       }
@@ -41,30 +41,46 @@
 
   }
   .views-widget-filter-search_api_views_fulltext {
-    margin-left: 100px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 10px 0 10px 100px;
+
   }
 
-  form#views-exposed-form-sbp-resource-incentives-panel-pane-1 {
-    display: none;
-    @include window_size(desktop) {
-      display: block;
+  form#views-exposed-form-sbp-resource-incentives-panel-pane-1  {
+    button {
+      @extend .panel__button;
+      border: 0px;
+      margin-left: 2em;
+      outline: none;
+      &:focus {
+        background: darken($yellow, 10%);
+      }
     }
+    .views-exposed-form {
+      display: none;
+      @include window_size(desktop) {
+        display: block;
+      }
+    }
+
   }
 
 }
+
 
 
   /* SEARCH BAR */
   .panel-2col-stacked
   .form-item-search-api-views-fulltext input[type=text]{
     padding: 0 10px 0 10px;
-    @include border-radius(4px);
     height: 32px;
-    margin-top: 20px;
     outline: 0;
-    width:200px;
+    max-width:200px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border:none;
+    display: none;
+
     @include window_size(desktop){
       display: block;
     }

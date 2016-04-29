@@ -93,6 +93,30 @@ Drupal.behaviors.rotator = {
   }
 };
 
+  Drupal.behaviors.toggleFacets = {
+    attach: function(context, settings) {
+      var width = $(window).width();
+      var buttonWrapper = $("form#views-exposed-form-sbp-resource-incentives-panel-pane-1");
+      var toggleButton = $("<button>Search or filter documents</button>");
+
+      if(width < 960) {
+        // Create the toggle button.
+        $(".pane-facetapi").hide();
+        // Use jquery.once to prevent multiple button creation.
+        buttonWrapper.once('createtoggle').append(toggleButton);
+
+        //Add class to button.
+        toggleButton.addClass("facetapi__toggle");
+
+        //Toggle function.
+        $(toggleButton).click(function() {
+          $('.pane-facetapi').toggle("slow");
+          return false;
+        });
+
+      }
+    }
+  }
 
 
 })(jQuery, Drupal, this, this.document);
