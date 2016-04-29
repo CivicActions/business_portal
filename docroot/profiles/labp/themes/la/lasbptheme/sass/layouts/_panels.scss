@@ -25,9 +25,10 @@
   .panel-col-first {
     .inside {
       padding: 1.5em 1em 2em 2em;
-      @include window_size(desktop);
-      max-width: 300px;
-      float: right;
+      @include window_size(desktop){
+        max-width: 300px;
+        float: right;
+      }
     }
   }
 
