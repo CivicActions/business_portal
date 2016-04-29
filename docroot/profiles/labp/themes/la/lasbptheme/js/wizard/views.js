@@ -352,7 +352,7 @@ wiz.views.Email = Backbone.View.extend({
         success: function( data, textStatus, jQxhr ){
           console.log(data);
           $("#wizard-email").addClass("element-invisible");
-          $( "#message-response" ).html( "You're message has been sent" );
+          $( "#message-response" ).html( "Your message has been sent" );
         },
         error: function( jqXhr, textStatus, errorThrown ){
           console.log( errorThrown );
