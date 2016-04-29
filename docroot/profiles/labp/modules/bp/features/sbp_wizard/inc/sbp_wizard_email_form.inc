@@ -1,16 +1,22 @@
 <?php
 
 function sbp_wizard_email_form() {
-  $form['intro'] = array(
-    '#markup' => t('Use this form to send a message to an e-mail address. No spamming!'),
+  $form['emailIntro'] = array(
+    '#markup' => t('Please fill out your e-mail address to receive the checklist.'),
   );
   $form['emailResults'] = array(
     '#type' => 'textfield',
-    '#title' => t('E-mail address of recipeint'),
+    '#title' => t('E-mail address'),
     '#required' => TRUE,
-    '#id' => 'wizard-results-submit'
   );
-  $form['submit'] = array(
+  $form['emailCheck'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Validate e-mail address'),
+    //'#attributes' => array('class' => array('element-hidden')),
+    '#prefix' => '<div class="element-hidden">',
+    '#suffix' => '</div>',
+  );
+  $form['emailSubmit'] = array(
     '#type' => 'submit',
     '#value' => t('Send'),
     '#id' => 'wizard-results-submit'

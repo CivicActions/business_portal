@@ -28,15 +28,24 @@ function sbp_email_process(){
   $module = 'email_example';
   $key = 'contact_message';
   $to = $_POST['email'];
-  $from = variable_get('site_mail', '');
+  $from = variable_get('site_mail', 'no-reply@lacity.org');
   $params = $_POST;
   $language = language_default();
   $send = TRUE;
+
+  // Check the form token and check the honeypot we put in.
+  if (drupal_valid_token($_POST['form_token'])
+    and !$_POST['emailCheck']) {
+    print t('Good bye.');
+    exit();
+  }
+
   $result =  drupal_mail(
     'sbp_wizard',
     'wizard_results',
     $to,
-    user_preferred_language($account),
+    //user_preferred_language($account),
+    language_default(),
     $params,
     $from, //
     $send
