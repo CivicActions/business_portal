@@ -1452,14 +1452,14 @@ table {
   }
   /* line 66, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
-    padding: 1.5em 0 2em 30px;
+    padding: 0.3em 0 2em 30px;
   }
 }
 
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 74, ../sass/layouts/_panels.scss */
+/* line 76, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
