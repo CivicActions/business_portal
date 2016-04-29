@@ -340,13 +340,15 @@ wiz.views.Email = Backbone.View.extend({
   onSubmit : function(e) {
     e.preventDefault();
     var email = 'email=' + $( "input[name='emailResults']" ).val();
-    var message = 'message=' + JSON.stringify($(".wizard__content--results-list" ).html());
+    var emailValidate = '&emailvalidate=' + $( "input[name='emailCheck']" ).val();
+    var emailToken = '&emailtoken=' + $( "input[name='form_token']" ).val();
+    var message = '&message=' + JSON.stringify($(".wizard__content--results-list" ).html());
     $.ajax({
         url: '/labp/wizard-email',
         dataType: 'text',
         type: 'post',
         contentType: 'application/x-www-form-urlencoded',
-        data: email + '&' + message,
+        data: email + emailValidate + emailToken + message,
         success: function( data, textStatus, jQxhr ){
           console.log(data);
           $("#wizard-email").addClass("element-invisible");

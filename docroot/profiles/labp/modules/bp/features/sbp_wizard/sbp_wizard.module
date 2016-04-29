@@ -34,8 +34,8 @@ function sbp_email_process(){
   $send = TRUE;
 
   // Check the form token and check the honeypot we put in.
-  if (drupal_valid_token($_POST['form_token'])
-    and !$_POST['emailCheck']) {
+  if (drupal_valid_token($_POST['emailtoken'])
+    and !empty($_POST['emailvalidate'])) {
     print t('Good bye.');
     exit();
   }
