@@ -56,6 +56,12 @@
 <script type="text/template" id="wizard-results-cta-template">
   <p><a class="wizard__button print">Print</a><a class="wizard__button email">Email</a></p>
 </script>
+<script type="text/template" id="wizard-results-email-template">
+  <div id="wizard-email" class="element-invisible">
+    <?php print $email_form; ?>
+  </div>
+  <div id="message-response"></div>
+</script>
 
 <script type="text/template" id="wizard-nav-start-template">
   <a href="#" class="wizard__arrow-down enabled">Next</a>

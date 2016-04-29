@@ -129,6 +129,7 @@ wiz.views.App = wiz.extensions.View.extend({
                  "sectionSteps",
                  "sectionStepsItem",
                  "result",
+                 "email",
                 ];
 
         _.each(views, function(v) {
@@ -206,6 +207,9 @@ wiz.views.App = wiz.extensions.View.extend({
 
           wiz.cta = new wiz.views.ResultsCTA({model: this.model});
           this.$el.append(wiz.cta.render().el);
+
+          wiz.email = new wiz.views.Email({model: this.model});
+          this.$el.append(wiz.email.render().el);
 
           wiz.results = new wiz.views.ResultsView({model: this.model});
           this.$el.append(wiz.results.render().el);
@@ -319,6 +323,47 @@ wiz.views.Start = Backbone.View.extend({
   template: _.template($('#start-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
+    return this;
+  }
+});
+
+///////////
+// Email //
+///////////
+
+wiz.views.Email = Backbone.View.extend({
+  template: _.template($('#wizard-results-email-template').html()),
+  events:  {
+    "click #wizard-email-placeholder": "emailSubmit",
+    "submit" : "onSubmit"
+  },
+  onSubmit : function(e) {
+    e.preventDefault();
+    var email = 'email=' + $( "input[name='emailResults']" ).val();
+    var emailValidate = '&emailvalidate=' + $( "input[name='emailCheck']" ).val();
+    var emailToken = '&emailtoken=' + $( "input[name='form_token']" ).val();
+    var message = '&message=' + JSON.stringify($(".wizard__content--results-list" ).html());
+    $.ajax({
+        url: '/labp/wizard-email',
+        dataType: 'text',
+        type: 'post',
+        contentType: 'application/x-www-form-urlencoded',
+        data: email + emailValidate + emailToken + message,
+        success: function( data, textStatus, jQxhr ){
+          console.log(data);
+          $("#wizard-email").addClass("element-invisible");
+          $( "#message-response" ).html( "You're message has been sent" );
+        },
+        error: function( jqXhr, textStatus, errorThrown ){
+          console.log( errorThrown );
+          $("#wizard-email").addClass("element-invisible");
+          $( "#message-response" ).html( "There was an error sending your message. If you continue to experience problems, please contact the site administrator." );
+        }
+    });
+
+  },
+  render: function() {
+    this.$el.html(this.template());
     return this;
   }
 });
@@ -822,7 +867,7 @@ wiz.views.ResultsCTA = Backbone.View.extend({
     window.print();
   },
   callEmail: function() {
-    window.print();
+    $("#wizard-email").removeClass("element-invisible");
   }
 });
 

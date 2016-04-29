@@ -26,6 +26,7 @@ dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = views
+files[] = inc/sbp_wizard_email_form.inc
 features[ctools][] = services:services:3
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
