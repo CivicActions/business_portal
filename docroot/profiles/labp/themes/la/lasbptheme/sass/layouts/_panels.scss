@@ -12,6 +12,7 @@
     .inside {
       margin: 0 2em 0 2em;
       padding-top: 1em;
+      max-width: 700px;
       @include window_size(desktop) {
         margin: 0 0 0 0.5em;
         width: 90%;
@@ -24,6 +25,9 @@
   .panel-col-first {
     .inside {
       padding: 1.5em 1em 2em 2em;
+      @include window_size(desktop);
+      max-width: 300px;
+      float: right;
     }
   }
 

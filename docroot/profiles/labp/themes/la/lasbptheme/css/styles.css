@@ -1386,6 +1386,7 @@ table {
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0 2em 0 2em;
   padding-top: 1em;
+  max-width: 700px;
 }
 @media all and (min-width: 960px) {
   /* line 12, ../sass/layouts/_panels.scss */
@@ -1394,23 +1395,25 @@ table {
     width: 90%;
   }
 }
-/* line 25, ../sass/layouts/_panels.scss */
+/* line 26, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first .inside {
   padding: 1.5em 1em 2em 2em;
+  max-width: 300px;
+  float: right;
 }
-/* line 31, ../sass/layouts/_panels.scss */
+/* line 35, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 32, ../sass/layouts/_panels.scss */
+/* line 36, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 35, ../sass/layouts/_panels.scss */
+/* line 39, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 44, ../sass/layouts/_panels.scss */
+/* line 48, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
@@ -1424,7 +1427,7 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-/* line 49, ../sass/layouts/_panels.scss */
+/* line 53, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first,
 .panel-2col-stacked .panel-col-last {
   float: none;
@@ -1432,25 +1435,25 @@ table {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 57, ../sass/layouts/_panels.scss */
+  /* line 61, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 59, ../sass/layouts/_panels.scss */
+  /* line 63, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first .inside {
     padding: 0 1em 2em 100px;
   }
-  /* line 64, ../sass/layouts/_panels.scss */
+  /* line 68, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
     width: 70%;
     margin-left: 30%;
     margin-right: -100%;
   }
-  /* line 66, ../sass/layouts/_panels.scss */
+  /* line 70, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding: 0.3em 0 2em 30px;
   }
@@ -1459,7 +1462,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 76, ../sass/layouts/_panels.scss */
+/* line 80, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -2662,6 +2665,7 @@ hr.hero__line--half {
 .hero__layout--full .hero__content-wrapper {
   width: 90%;
   margin: 0 auto;
+  max-width: 960px;
 }
 @media all and (min-width: 960px) {
   /* line 69, ../sass/components/hero/_hero.scss */
@@ -2670,24 +2674,24 @@ hr.hero__line--half {
     margin: 0 auto;
   }
 }
-/* line 75, ../sass/components/hero/_hero.scss */
+/* line 76, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__headline {
   font-size: 2em;
   margin: 320px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 75, ../sass/components/hero/_hero.scss */
+  /* line 76, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__headline {
     font-size: 3em;
     margin: 3em 0 0;
   }
 }
-/* line 84, ../sass/components/hero/_hero.scss */
+/* line 85, ../sass/components/hero/_hero.scss */
 .hero__layout--full .hero__bottom_align--bn {
   margin: 3em 0 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 84, ../sass/components/hero/_hero.scss */
+  /* line 85, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__bottom_align--bn {
     margin: 5em 0 3em;
   }
@@ -2754,67 +2758,69 @@ hr.hero__line--half {
 @media all and (min-width: 960px) {
   /* line 36, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__bottom_align--bn {
-    padding: 250px 1em 5em 100px;
+    padding: 250px 4.5em 5em 0;
+    float: right;
   }
 }
-/* line 45, ../sass/components/hero/_hero__half-width.scss */
+/* line 46, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name {
   color: #fff;
   font-size: 1.1em;
   margin-bottom: 0;
   font-weight: normal;
 }
-/* line 52, ../sass/components/hero/_hero__half-width.scss */
+/* line 53, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__description {
   color: #fff;
   font-size: 1.1em;
   font-weight: 300;
 }
-/* line 59, ../sass/components/hero/_hero__half-width.scss */
+/* line 60, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name,
 .hero__layout--half .hero__business__description,
 .hero__layout--half .hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 59, ../sass/components/hero/_hero__half-width.scss */
+  /* line 60, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__name,
   .hero__layout--half .hero__business__description,
   .hero__layout--half .hero__line--half {
     display: block;
   }
 }
-/* line 71, ../sass/components/hero/_hero__half-width.scss */
+/* line 72, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .right .hero__header--inner {
   padding: 1em 0 30px;
 }
 @media all and (min-width: 960px) {
-  /* line 71, ../sass/components/hero/_hero__half-width.scss */
+  /* line 72, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right .hero__header--inner {
     padding: 6em 30px 0;
+    max-width: 700px;
   }
 }
-/* line 78, ../sass/components/hero/_hero__half-width.scss */
+/* line 80, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
   margin: 0.8em 1em 0 2em;
   font-size: 1.143em;
 }
 @media all and (min-width: 960px) {
-  /* line 78, ../sass/components/hero/_hero__half-width.scss */
+  /* line 80, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
     font-size: 1.4em;
     line-height: 1.4;
     margin: 30px 0;
   }
 }
-/* line 88, ../sass/components/hero/_hero__half-width.scss */
+/* line 90, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline,
 .hero__layout--half .hero__headline--half,
 .hero__layout--half .hero__headline--half--mobile {
   font-size: 1.8em;
 }
 @media all and (min-width: 720px) {
-  /* line 88, ../sass/components/hero/_hero__half-width.scss */
+  /* line 90, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -2822,7 +2828,7 @@ hr.hero__line--half {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 88, ../sass/components/hero/_hero__half-width.scss */
+  /* line 90, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -2830,18 +2836,23 @@ hr.hero__line--half {
     margin: 1em 0 0;
   }
 }
-/* line 101, ../sass/components/hero/_hero__half-width.scss */
+/* line 103, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
 @media all and (min-width: 960px) {
-  /* line 101, ../sass/components/hero/_hero__half-width.scss */
+  /* line 103, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__background-image {
     background-size: auto 100%;
   }
 }
-/* line 122, ../sass/components/hero/_hero__half-width.scss */
+/* line 111, ../sass/components/hero/_hero__half-width.scss */
+.hero__layout--half .hero__image--overlay {
+  position: relative;
+  overflow: hidden;
+}
+/* line 127, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   width: 100%;
   padding-left: 0;
@@ -2856,14 +2867,14 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 129, ../sass/components/hero/_hero__half-width.scss */
+  /* line 135, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 130, ../sass/components/hero/_hero__half-width.scss */
+  /* line 136, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 70%;
@@ -3209,16 +3220,22 @@ hr.hero__line--half {
   background: #163549;
   color: white;
 }
+/* line 11, ../sass/components/_bottom-region.scss */
+.region--bottom .region--bottom--wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+}
 @media all and (min-width: 480px) {
-  /* line 12, ../sass/components/_bottom-region.scss */
+  /* line 18, ../sass/components/_bottom-region.scss */
   .region--bottom .region-bottom {
     width: 100%;
   }
-  /* line 15, ../sass/components/_bottom-region.scss */
+  /* line 21, ../sass/components/_bottom-region.scss */
   .region--bottom .footer__copyright {
     width: 30%;
   }
-  /* line 18, ../sass/components/_bottom-region.scss */
+  /* line 24, ../sass/components/_bottom-region.scss */
   .region--bottom .footer__credits {
     width: auto;
     float: right;
@@ -3226,62 +3243,62 @@ hr.hero__line--half {
   }
 }
 @media all and (min-width: 720px) {
-  /* line 27, ../sass/components/_bottom-region.scss */
+  /* line 33, ../sass/components/_bottom-region.scss */
   .region--bottom .region-bottom {
     width: 32%;
   }
-  /* line 30, ../sass/components/_bottom-region.scss */
+  /* line 36, ../sass/components/_bottom-region.scss */
   .region--bottom .footer__copyright {
     width: 23%;
   }
-  /* line 33, ../sass/components/_bottom-region.scss */
+  /* line 39, ../sass/components/_bottom-region.scss */
   .region--bottom .footer__credits {
     width: auto;
     float: right;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 40, ../sass/components/_bottom-region.scss */
+  /* line 46, ../sass/components/_bottom-region.scss */
   .region--bottom .region-bottom {
     width: 230px;
   }
-  /* line 43, ../sass/components/_bottom-region.scss */
+  /* line 49, ../sass/components/_bottom-region.scss */
   .region--bottom .footer__copyright {
     width: 30%;
   }
-  /* line 46, ../sass/components/_bottom-region.scss */
+  /* line 52, ../sass/components/_bottom-region.scss */
   .region--bottom .footer__credits {
     width: auto;
     float: right;
   }
 }
-/* line 54, ../sass/components/_bottom-region.scss */
+/* line 60, ../sass/components/_bottom-region.scss */
 .region--bottom .footer__copyright,
 .region--bottom .footer__credits {
   padding: 1em;
 }
-/* line 59, ../sass/components/_bottom-region.scss */
+/* line 65, ../sass/components/_bottom-region.scss */
 .region--bottom .footer__copyright,
 .region--bottom .footer__credits,
 .region--bottom .region-bottom {
   display: inline-block;
 }
-/* line 69, ../sass/components/_bottom-region.scss */
+/* line 75, ../sass/components/_bottom-region.scss */
 .region--bottom ul {
   padding: 0 2%;
 }
-/* line 70, ../sass/components/_bottom-region.scss */
+/* line 76, ../sass/components/_bottom-region.scss */
 .region--bottom li {
   display: inline-block;
   padding: 1em;
   list-style: none;
 }
-/* line 77, ../sass/components/_bottom-region.scss */
+/* line 83, ../sass/components/_bottom-region.scss */
 .region--bottom a {
   color: #88cff5;
   font-weight: bold;
 }
-/* line 82, ../sass/components/_bottom-region.scss */
+/* line 88, ../sass/components/_bottom-region.scss */
 .region--bottom ul.menu,
 .region--bottom ol.menu,
 .region--bottom menu.menu {
@@ -4595,8 +4612,9 @@ body.node-type-sbp-landing-page {
 }
 /* line 6, ../sass/components/_landing-page--home.scss */
 body.node-type-sbp-landing-page .panel__content_wrapper {
-  width: 90%;
   margin: 0 auto;
+  max-width: 960px;
+  width: 90%;
 }
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 body.node-type-sbp-landing-page .panel__content_wrapper:before, body.node-type-sbp-landing-page .panel__content_wrapper:after {
@@ -4614,7 +4632,7 @@ body.node-type-sbp-landing-page .panel__content_wrapper:after {
     margin: 0 auto;
   }
 }
-/* line 20, ../sass/components/_landing-page--home.scss */
+/* line 18, ../sass/components/_landing-page--home.scss */
 body.node-type-sbp-landing-page .panel__content_col_1 {
   padding-top: 4em;
 }
@@ -4706,6 +4724,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 /* line 70, ../sass/components/_four_column_cta.scss */
 .four-col-wrapper {
   margin: auto;
+  max-width: 960px;
   width: 90%;
   margin: 0 auto;
   padding: 1em 0 3em;
@@ -4727,12 +4746,12 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     padding: 1em 0 6em;
   }
 }
-/* line 81, ../sass/components/_four_column_cta.scss */
+/* line 82, ../sass/components/_four_column_cta.scss */
 .four-col-wrapper .panel__section {
   margin-top: 2em;
 }
 @media all and (min-width: 720px) {
-  /* line 81, ../sass/components/_four_column_cta.scss */
+  /* line 82, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper .panel__section {
     padding-left: 10px;
     padding-right: 10px;
@@ -4750,14 +4769,6 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   }
 }
 
-/*
-
-.panel__button--yellow {
-  @include panel__button--base(yellow);
-}
-
-
-*/
 /* line 21, ../sass/components/_section_content.scss */
 .panel__intro {
   display: block;
