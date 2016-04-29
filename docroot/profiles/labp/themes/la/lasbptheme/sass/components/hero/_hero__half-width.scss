@@ -76,7 +76,7 @@
     }
   }
   .hero__description {
-    margin: 0.8em 1em 0;
+    margin: 0.8em 1em 0 2em;
     font-size: 1.143em;
 
     @include window-size(desktop) {
@@ -100,7 +100,10 @@
   }
   .hero__background-image {
     background-position: 50%;
-    background-size: cover;
+    background-size: auto 130%;
+    @include window_size(desktop) {
+      background-size: auto 100%;
+    }
   }
 
   .hero__image--overlay {
