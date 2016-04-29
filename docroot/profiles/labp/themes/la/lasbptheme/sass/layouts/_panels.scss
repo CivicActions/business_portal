@@ -10,10 +10,10 @@
   .panel-col-last {
     background: $white;
     .inside {
-      margin: 0 2em 1em 2em;
+      margin: 0 2em 0 2em;
       padding-top: 1em;
       @include window_size(desktop) {
-        margin: 0 0 1em 0.5em;
+        margin: 0 0 0 0.5em;
         width: 90%;
       }
 
@@ -63,7 +63,9 @@
 
     .panel-col-last {
       @include zen-grid-item (7, 4);
-      .inside { padding: 1.5em 0 2em 30px; }
+      .inside {
+        padding: 0.3em 0 2em 30px;
+      }
     }
   }
 }
