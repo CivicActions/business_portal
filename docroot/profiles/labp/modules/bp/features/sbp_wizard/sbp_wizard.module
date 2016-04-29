@@ -96,7 +96,6 @@ function sbp_email_process(){
 
   if ($result['result'] == TRUE) {
     print t('Your message has been sent.');
-    print_r($result);
   }
   else {
     print t('There was a problem sending your message and it was not sent.');
