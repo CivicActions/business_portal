@@ -5,6 +5,77 @@
  */
 
 include_once 'sbp_wizard.features.inc';
+include_once 'inc/sbp_wizard_email_form.inc';
+
+/**
+* Implements hook_menu().
+*/
+function sbp_wizard_menu(){
+  $items = array();
+  $items['examples/form_example/tutorial/1'] = array(
+    'title' => '#1',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('sbp_wizard_email_form'),
+    'access callback' => TRUE,
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+  $items['labp/wizard-email'] = array(
+    'title' => 'Email callback',
+    'page callback' => 'sbp_email_process',
+    'access arguments' => array('access content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+  return $items;
+}
+
+/**
+ * Callback for processing ajax form
+ */
+function sbp_email_process(){
+  $module = 'email_example';
+  $key = 'contact_message';
+  $to = $_POST['email'];
+  $from = 'april.rose@civicactions';//variable_get('site_mail', '');
+  $params = $_POST;
+  $language = language_default();
+  $send = TRUE;
+  $result =  drupal_mail(
+    'sbp_wizard', //Module
+    'wizard_results', //Key
+    $to,
+    user_preferred_language($account), //Lang
+    $params,
+    $from, //
+    $send
+  );
+  if ($result['result'] == TRUE) {
+    print t('Your message has been sent.');
+  }
+  else {
+    print t('There was a problem sending your message and it was not sent.');
+  }
+  exit();
+}
+
+/**
+ * Impliments hook_mail()
+ */
+function sbp_wizard_mail($key, &$message, $params) {
+  global $user;
+
+  $options = array(
+    'langcode' => $message['language']->language,
+  );
+
+  switch ($key) {
+    // Send a simple message from the contact form.
+    case 'wizard_results':
+      $message['subject'] = t('E-mail sent from @site-name', array('@site-name' => variable_get('site_name', 'Drupal')), $options);
+      // Note that the message body is an array, not a string.
+      $message['body'][] = check_plain($params['message']);
+      break;
+  }
+}
 
 /**
  * Implements hook_entity_info_alter().
