@@ -17,9 +17,6 @@
   @include window_size(desktop){
     margin: 40px 0 0 0;
   }
-  img {
-    width: 80%;
-  }
 }
 
 @mixin wizard__progress-bar_icon {
@@ -47,6 +44,10 @@
     margin:0;
     padding: 0;
     height:103px;
+    text-align: center;
+    img {
+      width: 40px;
+    }
     @include clearfix;
 }
 
