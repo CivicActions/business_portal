@@ -3,21 +3,26 @@ $wizard_left_margin: 25px;
 #wizard {
   color: $wizard-text;
   font-family: $roboto;
-  //margin:55px 0 0 0;
-  //padding: 50px 50px 50px 50px;
+  margin-top: 55px;
   @include clearfix;
   .constrained {
     width: 90%;
   }
+  padding: 0;
+  @include window_size(desktop){
+      margin-top: 60px;
+  }
+
 }
 
 
 // Where the wizard gets loaded.
 .wiz {
   z-index: 9;
-  padding: 10%;
-  padding-top: 30px;
+  padding-left: 10%;
+  padding-right:  10%;
   padding-bottom: 20px;
+
 }
 
 .wizard a{

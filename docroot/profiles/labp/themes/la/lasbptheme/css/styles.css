@@ -3284,30 +3284,38 @@ hr.hero__line--half {
 #wizard {
   color: #0f2940;
   font-family: "Roboto", sans-serif;
+  margin-top: 55px;
   overflow: hidden;
   *zoom: 1;
+  padding: 0;
 }
-/* line 9, ../sass/components/wizard/_wizard.scss */
+/* line 8, ../sass/components/wizard/_wizard.scss */
 #wizard .constrained {
   width: 90%;
 }
+@media all and (min-width: 960px) {
+  /* line 3, ../sass/components/wizard/_wizard.scss */
+  #wizard {
+    margin-top: 60px;
+  }
+}
 
-/* line 16, ../sass/components/wizard/_wizard.scss */
+/* line 20, ../sass/components/wizard/_wizard.scss */
 .wiz {
   z-index: 9;
-  padding: 10%;
-  padding-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 20px;
 }
 
-/* line 23, ../sass/components/wizard/_wizard.scss */
+/* line 28, ../sass/components/wizard/_wizard.scss */
 .wizard a {
   color: #0f2940;
   font-size: 1em;
 }
 
 @media all and (min-width: 960px) {
-  /* line 29, ../sass/components/wizard/_wizard.scss */
+  /* line 34, ../sass/components/wizard/_wizard.scss */
   .homepage_panel__content_wrapper {
     width: 100%;
     margin-left: auto;
@@ -3315,12 +3323,12 @@ hr.hero__line--half {
   }
 }
 
-/* line 38, ../sass/components/wizard/_wizard.scss */
+/* line 43, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-screen--register-business {
   background-color: #89d5c4;
 }
 
-/* line 43, ../sass/components/wizard/_wizard.scss */
+/* line 48, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block {
   display: inline-block;
   border: 0px solid black;
@@ -3328,13 +3336,13 @@ hr.hero__line--half {
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 43, ../sass/components/wizard/_wizard.scss */
+  /* line 48, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block {
     padding: 0;
   }
 }
 
-/* line 54, ../sass/components/wizard/_wizard.scss */
+/* line 59, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-block {
   display: inline-block;
   border: 0px solid black;
@@ -3343,26 +3351,26 @@ hr.hero__line--half {
   margin: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 54, ../sass/components/wizard/_wizard.scss */
+  /* line 59, ../sass/components/wizard/_wizard.scss */
   .wizard__intro-block {
     margin: 0;
   }
 }
 
-/* line 65, ../sass/components/wizard/_wizard.scss */
+/* line 70, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block--help {
   display: inline-block;
   border: 0px solid black;
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 65, ../sass/components/wizard/_wizard.scss */
+  /* line 70, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block--help {
     padding: 0;
   }
 }
 
-/* line 77, ../sass/components/wizard/_wizard.scss */
+/* line 82, ../sass/components/wizard/_wizard.scss */
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
@@ -3372,13 +3380,13 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 77, ../sass/components/wizard/_wizard.scss */
+  /* line 82, ../sass/components/wizard/_wizard.scss */
   .wizard__header {
     padding: 35px 25px 0 0;
   }
 }
 
-/* line 90, ../sass/components/wizard/_wizard.scss */
+/* line 95, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title {
   font-weight: 700;
   font-size: 1em;
@@ -3388,13 +3396,13 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 90, ../sass/components/wizard/_wizard.scss */
+  /* line 95, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title {
     font-size: 1.357em;
   }
 }
 
-/* line 106, ../sass/components/wizard/_wizard.scss */
+/* line 111, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-government {
   font-size: 0.857em;
   text-transform: uppercase;
@@ -3404,13 +3412,13 @@ hr.hero__line--half {
   font-weight: 700;
 }
 @media all and (min-width: 960px) {
-  /* line 106, ../sass/components/wizard/_wizard.scss */
+  /* line 111, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-government {
     font-size: 1.071em;
   }
 }
 
-/* line 120, ../sass/components/wizard/_wizard.scss */
+/* line 125, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-intro {
   font-weight: 700;
   font-size: 1em;
@@ -3421,13 +3429,13 @@ hr.hero__line--half {
   font-size: 1.357em;
 }
 @media all and (min-width: 960px) {
-  /* line 120, ../sass/components/wizard/_wizard.scss */
+  /* line 125, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-intro {
     font-size: 2.571em;
   }
 }
 
-/* line 136, ../sass/components/wizard/_wizard.scss */
+/* line 141, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -3437,7 +3445,7 @@ hr.hero__line--half {
   margin: 0;
 }
 
-/* line 144, ../sass/components/wizard/_wizard.scss */
+/* line 149, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3448,14 +3456,14 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 144, ../sass/components/wizard/_wizard.scss */
+  /* line 149, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
 
-/* line 158, ../sass/components/wizard/_wizard.scss */
+/* line 163, ../sass/components/wizard/_wizard.scss */
 .wizard__question--help {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3471,7 +3479,7 @@ hr.hero__line--half {
   background-size: 40px 40px;
 }
 
-/* line 176, ../sass/components/wizard/_wizard.scss */
+/* line 181, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0px solid white;
   margin: 30px 0 30px 0;
@@ -3479,7 +3487,7 @@ hr.hero__line--half {
   *zoom: 1;
 }
 
-/* line 182, ../sass/components/wizard/_wizard.scss */
+/* line 187, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3492,30 +3500,30 @@ hr.hero__line--half {
   cursor: pointer;
 }
 
-/* line 185, ../sass/components/wizard/_wizard.scss */
+/* line 190, ../sass/components/wizard/_wizard.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
 
-/* line 189, ../sass/components/wizard/_wizard.scss */
+/* line 194, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   background-color: #0f2940;
 }
 
-/* line 192, ../sass/components/wizard/_wizard.scss */
+/* line 197, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   text-decoration: none;
   color: white;
 }
 
-/* line 196, ../sass/components/wizard/_wizard.scss */
+/* line 201, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 206, ../sass/components/wizard/_wizard.scss */
+/* line 211, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   margin: 15px 0px 20px 0;
@@ -3523,14 +3531,14 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 206, ../sass/components/wizard/_wizard.scss */
+  /* line 211, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 206, ../sass/components/wizard/_wizard.scss */
+  /* line 211, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 80%;
     font-size: 1.357em;
@@ -3538,7 +3546,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 225, ../sass/components/wizard/_wizard.scss */
+/* line 230, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
   width: 40px;
   height: 40px;
@@ -3546,7 +3554,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 236, ../sass/components/wizard/_wizard.scss */
+/* line 241, ../sass/components/wizard/_wizard.scss */
 .wizard__icon_help {
   width: 40px;
   height: 40px;
@@ -3554,7 +3562,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 247, ../sass/components/wizard/_wizard.scss */
+/* line 252, ../sass/components/wizard/_wizard.scss */
 .wizard__header_block--help {
   border: 0px solid red;
   margin: 0;
@@ -3563,46 +3571,46 @@ a.wizard__button--selected {
   *zoom: 1;
 }
 
-/* line 255, ../sass/components/wizard/_wizard.scss */
+/* line 260, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   margin: 0 0 0 0;
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 255, ../sass/components/wizard/_wizard.scss */
+  /* line 260, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
     width: 95%;
   }
 }
 
-/* line 264, ../sass/components/wizard/_wizard.scss */
+/* line 269, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 264, ../sass/components/wizard/_wizard.scss */
+  /* line 269, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 275, ../sass/components/wizard/_wizard.scss */
+/* line 280, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 275, ../sass/components/wizard/_wizard.scss */
+  /* line 280, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
 
-/* line 284, ../sass/components/wizard/_wizard.scss */
+/* line 289, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -3617,7 +3625,7 @@ a.wizard__button--selected {
   font-weight: 700;
   font-size: 1em;
   margin: 10px 0 10px 0;
-  padding: 35px 25px 0 0px;
+  padding: 0 25px 0 0px;
   width: 100%;
   border: 0px solid red;
   background-image: url("../images/wizard/illustrations/illustration_clouds.png");
@@ -3742,12 +3750,12 @@ a.wizard__button--selected {
   position: absolute;
   overflow: hidden;
   *zoom: 1;
-  top: 30px;
+  top: 8px;
   right: 0;
   background-image: url('../images/wizard/progress_bar.png?1461563616');
   background-repeat: no-repeat;
   background-size: 12px;
-  background-position: 24px 12px;
+  background-position: center 24px;
   background-color: "transparent";
   min-height: 550px;
   width: 60px;

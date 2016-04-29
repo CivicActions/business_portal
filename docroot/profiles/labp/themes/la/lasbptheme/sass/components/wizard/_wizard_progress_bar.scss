@@ -6,12 +6,12 @@
   display: inline-block;
   position: absolute;
   @include clearfix;
-  top: 30px;
+  top: 8px;
   right: 0;
   background-image: image-url("wizard/progress_bar.png");
   background-repeat: no-repeat;
   background-size:12px;
-  background-position: 24px 12px;
+  background-position: center 24px;
   background-color:$color;
   min-height: 550px;
   @include window_size(desktop){
