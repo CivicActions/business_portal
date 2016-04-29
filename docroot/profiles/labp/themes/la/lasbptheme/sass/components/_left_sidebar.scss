@@ -43,7 +43,7 @@
     width: 70%;
     margin-top: 2em;
     padding-top: 0.8em;
-    @include window_size(desktop) {
+    @include window_size(tab-narrow-up) {
       width: 100%;
     }
 

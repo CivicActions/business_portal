@@ -1384,13 +1384,13 @@ table {
 }
 /* line 12, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last .inside {
-  margin: 0 2em 1em 2em;
+  margin: 0 2em 0 2em;
   padding-top: 1em;
 }
 @media all and (min-width: 960px) {
   /* line 12, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
-    margin: 0 0 1em 0.5em;
+    margin: 0 0 0 0.5em;
     width: 90%;
   }
 }
@@ -4935,7 +4935,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   margin-top: 2em;
   padding-top: 0.8em;
 }
-@media all and (min-width: 960px) {
+@media all and (min-width: 480px) {
   /* line 40, ../sass/components/_left_sidebar.scss */
   .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1,
   .panel-2col-stacked .pane-sbp-terms-definitions {
