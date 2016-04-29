@@ -261,6 +261,7 @@ a.wizard__button--selected {
   border: 0px solid blue;
   margin:0 0 0 0;
   width: 100%;
+  max-width: 665px;
   @include window_size(desktop){
       width: 95%;
   }

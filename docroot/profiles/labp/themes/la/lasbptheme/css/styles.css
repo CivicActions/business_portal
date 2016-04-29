@@ -3576,6 +3576,7 @@ a.wizard__button--selected {
   border: 0px solid blue;
   margin: 0 0 0 0;
   width: 100%;
+  max-width: 665px;
 }
 @media all and (min-width: 960px) {
   /* line 260, ../sass/components/wizard/_wizard.scss */
@@ -3584,33 +3585,33 @@ a.wizard__button--selected {
   }
 }
 
-/* line 269, ../sass/components/wizard/_wizard.scss */
+/* line 270, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 269, ../sass/components/wizard/_wizard.scss */
+  /* line 270, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 280, ../sass/components/wizard/_wizard.scss */
+/* line 281, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 280, ../sass/components/wizard/_wizard.scss */
+  /* line 281, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
 
-/* line 289, ../sass/components/wizard/_wizard.scss */
+/* line 290, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
