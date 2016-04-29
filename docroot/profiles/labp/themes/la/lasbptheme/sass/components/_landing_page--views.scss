@@ -100,19 +100,25 @@
 /** Business source center stuff only **/
 
 .view-id-labp_service_center {
+  .view-content {
+    h3 {
+      text-transform: uppercase;
+    }
+  }
   .views-label {
     font-weight: 700;
     margin: 20px 0 0 0;
     padding: 0 0 1em;
     width: 85%;
+    display: block;
     font-size: 1.143em;
     line-height: 1.35em;
   }
   .field-content {
     line-height: 1.25em;
-    width: 90%;
-    margin: 0 0 20px 0;
-    padding: 0;
+    //width: 90%;
+    //margin: 0 0 20px 0;
+    padding-bottom: 1.5em;
     @include window_size(desktop){
       width: 85%;
       font-size: 1.143em;
@@ -120,31 +126,42 @@
     }
   }
 
-
-  .views-field-field-services,
-  .views-field-field-languages {
-    width:45%;
-    display: inline-block;
-    vertical-align: top;
-  }
-
   .views-field-field-map {
-    width: 45%;
-    float: left ;
     img {
+      width: 100%;
       border: 1px solid rgba(0, 0, 0, 0.3);
     }
   }
+  .views-field-title {
+    font-size: 1.571em;
+    font-weight: 700;
+    font-family: $font-body;
+    width: 100%;
+    margin: 1em 0;
+  }
 
-  .views-field-field-address,
-  .views-field-field-email,
+  .views-field-field-email {
+    .field-content {
+      padding-bottom: 0;
+    }
+  }
+
   .views-field-field-phone {
-    width:45%;
-    display: inline-block;
+    border-bottom: solid 1px $light-blue;
+  }
+
+  .views-field-field-services {
+    padding-top: 1.5em;
+  }
+  .views-row {
+    padding: 1em 0;
+    border-top: solid 1px $light-blue;
+    &:last-child {
+      border-top: none;
+    }
   }
 
 }
-
 .node-type-sbp-department {
 
   .field-items {
@@ -155,7 +172,54 @@
   }
 }
 
-/***********************************************************/
+
+
+/*******************************
+         LAYOUT
+*******************************/
+//Layout for the maps + address area
+.view-id-labp_service_center {
+  $zen-column-count: 12;
+
+  .views-row { @include zen-grid-container(); }
+  .views-field-title,
+  .views-field-body,
+  .views-field-field-map,
+  .views-field-field-address,
+  .views-field-field-email,
+  .views-field-field-phone,
+  .views-field-field-services,
+  .views-field-field-languages {
+    @include zen-grid-item-base();
+  }
+
+  @include window_size(tab-wide-up) {
+    .views-field-field-map {
+      @include zen-grid-item (6, 1);
+    }
+    .views-field-field-address,
+    .views-field-field-email,
+    .views-field-field-phone {
+      @include zen-grid-item (6, 1, right);
+    }
+    .views-field-field-email,
+    .views-field-field-phone {
+      @include zen-clear(right);
+      border-bottom: none;
+    }
+    .views-field-field-services {
+      @include zen-clear(both);
+      @include zen-grid-item (6, 1);
+      .views-label {
+        margin-top: 0;
+      }
+    }
+    .views-field-field-languages {
+      @include zen-grid-item (6, 7);
+    }
+  }
+}
+
 
 
 
