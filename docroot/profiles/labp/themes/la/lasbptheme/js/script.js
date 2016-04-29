@@ -99,17 +99,18 @@ Drupal.behaviors.rotator = {
       var buttonWrapper = $("form#views-exposed-form-sbp-resource-incentives-panel-pane-1");
       var toggleButton = $("<button>Search or filter documents</button>");
 
-      if(width <= 960) {
-        // Create the toggle button
-        buttonWrapper.append(toggleButton);
+      if(width < 960) {
+        // Create the toggle button.
+        $(".pane-facetapi").hide();
+        // Use jquery.once to prevent multiple button creation.
+        buttonWrapper.once('createtoggle').append(toggleButton);
 
-        //Add class to button
+        //Add class to button.
         toggleButton.addClass("facetapi__toggle");
 
-
-        //Toggle function
+        //Toggle function.
         $(toggleButton).click(function() {
-          $('.pane-facetapi').toggle();
+          $('.pane-facetapi').toggle("slow");
           return false;
         });
 
