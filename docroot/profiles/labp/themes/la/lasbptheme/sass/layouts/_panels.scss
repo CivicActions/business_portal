@@ -7,22 +7,30 @@
 
 .panel-2col-stacked {
   background: $light-grey;
-  .panel-col-last .inside {
-    margin: 0 2em 1em 2em;
+  .panel-col-last {
+    background: $white;
+    .inside {
+      margin: 0 2em 1em 2em;
 
-    @include window_size(desktop){
-      margin: 0 0 1em 0.5em;
-      width: 90%;
+      @include window_size(desktop) {
+        margin: 0 0 1em 0.5em;
+        width: 90%;
+      }
+
     }
-
   }
 
+  // Panels first sidebar padding
+  .panel-col-first {
+    .inside {
+      padding: 1.5em 1em 2em 2em;
+    }
+  }
 
   .panel-col-top {
     h2.pane-title { display: none;}
     .inside { margin-bottom: 0;}
   }
-  .panel-col-last { background: $white; }
 
   .field-collection-container { margin-bottom: 0;}
 
@@ -46,7 +54,13 @@
   }
 
   @include window_size(desktop){
-    .panel-col-first { @include zen-grid-item (3, 1); }
+    .panel-col-first {
+      @include zen-grid-item (3, 1);
+      .inside {
+        padding: 0 1em 2em 100px;
+      }
+    }
+
     .panel-col-last {
       @include zen-grid-item (7, 4);
       .inside { padding: 1.5em 0 2em 30px; }
