@@ -46,14 +46,24 @@
     margin-top: 20px;
   }
 
-  form#views-exposed-form-sbp-resource-incentives-panel-pane-1 {
-    display: none;
-    @include window_size(desktop) {
-      display: block;
+  form#views-exposed-form-sbp-resource-incentives-panel-pane-1  {
+
+    button {
+      @extend .panel__button;
+      border: 0px;
+      margin-left: 2em;
     }
+    .views-exposed-form {
+      display: none;
+      @include window_size(desktop) {
+        display: block;
+      }
+    }
+
   }
 
 }
+//.facetapi__blocks--toggle {display: none;}
 
 
   /* SEARCH BAR */

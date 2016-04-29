@@ -4776,7 +4776,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 
 /* line 60, ../sass/components/_section_content.scss */
-.panel__button {
+.panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -4789,12 +4789,12 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   cursor: pointer;
 }
 /* line 162, ../sass/base/_mixins.scss */
-.panel__button a {
+.panel__button a, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button a {
   color: #163549;
 }
 @media all and (min-width: 960px) {
   /* line 60, ../sass/components/_section_content.scss */
-  .panel__button {
+  .panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button {
     font-size: 1.143em;
   }
 }
@@ -4900,19 +4900,24 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* line 49, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 {
+/* line 51, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button {
+  border: 0px;
+  margin-left: 2em;
+}
+/* line 56, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-exposed-form {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 49, ../sass/components/_left_sidebar.scss */
-  .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 {
+  /* line 56, ../sass/components/_left_sidebar.scss */
+  .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-exposed-form {
     display: block;
   }
 }
 
 /* SEARCH BAR */
-/* line 60, ../sass/components/_left_sidebar.scss */
+/* line 70, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked
 .form-item-search-api-views-fulltext input[type=text] {
   padding: 0 10px 0 10px;
@@ -4925,14 +4930,14 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   width: 200px;
 }
 @media all and (min-width: 960px) {
-  /* line 60, ../sass/components/_left_sidebar.scss */
+  /* line 70, ../sass/components/_left_sidebar.scss */
   .panel-2col-stacked
   .form-item-search-api-views-fulltext input[type=text] {
     display: block;
   }
 }
 
-/* line 73, ../sass/components/_left_sidebar.scss */
+/* line 83, ../sass/components/_left_sidebar.scss */
 .views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
 #views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
   position: absolute;
@@ -4944,7 +4949,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 
 /* FILTERS */
-/* line 84, ../sass/components/_left_sidebar.scss */
+/* line 94, ../sass/components/_left_sidebar.scss */
 .pane-facetapi h2.pane-title,
 .pane-sbp-terms-definitions h2.pane-title {
   list-style: none;
@@ -4954,7 +4959,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   margin: 10px 0 5px 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 84, ../sass/components/_left_sidebar.scss */
+  /* line 94, ../sass/components/_left_sidebar.scss */
   .pane-facetapi h2.pane-title,
   .pane-sbp-terms-definitions h2.pane-title {
     margin: 20px 0 10px 100px;
@@ -4962,7 +4967,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   }
 }
 
-/* line 98, ../sass/components/_left_sidebar.scss */
+/* line 108, ../sass/components/_left_sidebar.scss */
 ul.facetapi-facet-field-business-need li,
 ul.facetapi-facet-field-business-ownership li,
 ul.facetapi-facet-field-industry-tag li,
@@ -4972,7 +4977,7 @@ ul.facetapi-facet-field-resource-type li,
   font-size: 0.929em;
   margin: 0 0 10px 0;
 }
-/* line 106, ../sass/components/_left_sidebar.scss */
+/* line 116, ../sass/components/_left_sidebar.scss */
 ul.facetapi-facet-field-business-need li a,
 ul.facetapi-facet-field-business-ownership li a,
 ul.facetapi-facet-field-industry-tag li a,
