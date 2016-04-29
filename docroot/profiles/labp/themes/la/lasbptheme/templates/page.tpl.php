@@ -101,3 +101,4 @@
   <div class="footer__credits">Site by <a href="http://www.tomorrowpartners.com/">Tomorrow Partners</a> + <a href="https://civicactions.com/">CivicActions</a>
 
   </div>
+</div>
