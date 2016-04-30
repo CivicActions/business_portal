@@ -576,7 +576,7 @@ wiz.views.Nav = Backbone.View.extend({
   render: function() {
     switch (this.model.get("screen-type")) {
     case "start":
-      wiz.arrows = new wiz.views.NavSection();
+      wiz.arrows = new wiz.views.NavStart();
       this.$el.append(wiz.arrows.render().el);
       break;
     case "section":
@@ -774,6 +774,18 @@ wiz.views.NavForContext = Backbone.View.extend({
 
     event.preventDefault();
   },
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
+});
+
+/////////////////
+// NAV START   //
+/////////////////
+
+wiz.views.NavStart = Backbone.View.extend({
+  template: _.template($('#wizard-nav-start-template').html()),
   render: function() {
     this.$el.html(this.template());
     return this;

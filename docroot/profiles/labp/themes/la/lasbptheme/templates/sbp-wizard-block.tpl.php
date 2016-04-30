@@ -67,7 +67,14 @@
   <a href="#" class="wizard__arrow-down enabled">Next</a>
 </script>
 
+<script type="text/template" id="wizard-nav-start-template">
+  <hr class="wizard__arrow-line"/>
+  <a href="#" class="wizard__arrow-down enabled section">Next</a>
+  <hr class="wizard__arrow-line"/>
+</script>
+
 <script type="text/template" id="wizard-nav-section-template">
+  <a href="#" class="wizard__arrow-up">Previous</a>
   <hr class="wizard__arrow-line"/>
   <a href="#" class="wizard__arrow-down enabled section">Next</a>
   <hr class="wizard__arrow-line"/>
