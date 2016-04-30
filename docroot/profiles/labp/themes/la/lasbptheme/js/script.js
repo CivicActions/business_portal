@@ -118,5 +118,27 @@ Drupal.behaviors.rotator = {
     }
   }
 
+  /**
+    * LA-166: jQuery to support responsive menu.
+    */
+  $(document).ready(function() {
+    $( "#menu__hamburger" ).click(function() {
+      var classList = $('#menu__hamburger').attr('class').split(/\s+/);
+      $.each(classList, function(index, item) {
+        if (item === 'open') {
+          $( "#header" ).addClass( "burger-visible" );
+          $( "#header" ).removeClass( "burger-hidden" );
+          $( "#menu__hamburger" ).addClass( "close" );
+          $( "#menu__hamburger" ).removeClass( "open" );
+        }
+        if (item === 'close') {
+          $( "#header" ).addClass( "burger-hidden" );
+          $( "#header" ).removeClass( "burger-visible" );
+          $( "#menu__hamburger" ).addClass( "open" );
+          $( "#menu__hamburger" ).removeClass( "close" );
+        }
+      });
+    });
+  });
 
 })(jQuery, Drupal, this, this.document);
