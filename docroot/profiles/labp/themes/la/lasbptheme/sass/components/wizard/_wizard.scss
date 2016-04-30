@@ -185,6 +185,7 @@ $wizard_left_margin: 25px;
   width: 80%;
   border: 0px solid red;
   @include window_size(tab-wide-up){
+         margin: 25px 0 20px 0;
           font-size: 2em;
           width: 70%;
   }
@@ -295,12 +296,18 @@ $wizard_left_margin: 25px;
 }
 
 .wizard__help_content{
-    border: 0px solid red;
     width: 90%;
     margin:20px 0 20px 0;
     @include window_size(desktop){
         width: 60%;
     }
+
+
+}
+
+.wizard__help_content a{
+    text-decoration: underline;
+
 }
 
 .wizard__help_hr{
