@@ -3705,7 +3705,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461855791');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -3737,25 +3737,26 @@ a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
-
-/* line 194, ../sass/components/wizard/_wizard.scss */
-a.wizard__button--selected {
-  background-color: #0f2940;
+/* line 193, ../sass/components/wizard/_wizard.scss */
+a.wizard__button:focus {
+  outline: none;
 }
 
-/* line 197, ../sass/components/wizard/_wizard.scss */
+/* line 198, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   text-decoration: none;
+  padding: 8px 40px 8px 30px;
   color: white;
+  background: url("../images/wizard/icon_checkmark--small.png") #0f2940 no-repeat 80% 50%;
 }
 
-/* line 201, ../sass/components/wizard/_wizard.scss */
+/* line 205, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 211, ../sass/components/wizard/_wizard.scss */
+/* line 215, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   margin: 15px 0px 20px 0;
@@ -3763,14 +3764,14 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 211, ../sass/components/wizard/_wizard.scss */
+  /* line 215, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 1.357em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 211, ../sass/components/wizard/_wizard.scss */
+  /* line 215, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 80%;
     font-size: 1.357em;
@@ -3778,7 +3779,7 @@ a.wizard__button--selected {
   }
 }
 
-/* line 230, ../sass/components/wizard/_wizard.scss */
+/* line 234, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
   width: 40px;
   height: 40px;
@@ -3786,7 +3787,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 241, ../sass/components/wizard/_wizard.scss */
+/* line 245, ../sass/components/wizard/_wizard.scss */
 .wizard__icon_help {
   width: 40px;
   height: 40px;
@@ -3794,7 +3795,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 252, ../sass/components/wizard/_wizard.scss */
+/* line 256, ../sass/components/wizard/_wizard.scss */
 .wizard__header_block--help {
   border: 0px solid red;
   margin: 0;
@@ -3803,7 +3804,7 @@ a.wizard__button--selected {
   *zoom: 1;
 }
 
-/* line 260, ../sass/components/wizard/_wizard.scss */
+/* line 264, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   margin: 0 0 0 0;
@@ -3811,47 +3812,47 @@ a.wizard__button--selected {
   max-width: 665px;
 }
 @media all and (min-width: 960px) {
-  /* line 260, ../sass/components/wizard/_wizard.scss */
+  /* line 264, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
     width: 95%;
   }
 }
 
-/* line 270, ../sass/components/wizard/_wizard.scss */
+/* line 274, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 270, ../sass/components/wizard/_wizard.scss */
+  /* line 274, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 281, ../sass/components/wizard/_wizard.scss */
+/* line 285, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 281, ../sass/components/wizard/_wizard.scss */
+  /* line 285, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
-/* line 288, ../sass/components/wizard/_wizard.scss */
+/* line 292, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content a {
   text-decoration: underline;
 }
-/* line 291, ../sass/components/wizard/_wizard.scss */
+/* line 295, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content p {
   margin: 1em 0;
 }
 
-/* line 296, ../sass/components/wizard/_wizard.scss */
+/* line 300, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -4284,10 +4285,11 @@ a.wizard__button--selected {
   .wizard__nav_context {
     margin: 10px 0 0 0;
     width: 95%;
+    padding: 5px 0;
   }
 }
 
-/* line 43, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 44, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav--full_width {
   display: inline-block;
   width: 100%;
@@ -4296,14 +4298,14 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 61, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 62, ../sass/components/wizard/_wizard_bottom_nav.scss */
 hr.wizard__arrow-line {
   border: 0;
   height: 2px;
   background: white;
 }
 
-/* line 67, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
   background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
@@ -4317,13 +4319,13 @@ a.wizard__arrow-up {
   text-indent: -10000px;
 }
 @media all and (min-width: 720px) {
-  /* line 67, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-up {
     margin: 0 10px 10px 0;
   }
 }
 
-/* line 84, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 85, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
   background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
@@ -4336,30 +4338,32 @@ a.wizard__arrow-back {
   text-indent: -150px;
 }
 
-/* line 96, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 97, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
   background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
-  margin: 0 0 0 0px;
+  background-position-y: 50%;
+  margin: 0;
   width: 24px;
   height: 25px;
   display: block;
   text-indent: -100000px;
+  padding: 3px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 96, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 97, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down {
     margin: 0 0 24px 0;
   }
 }
 
-/* line 111, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 114, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
   background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
-/* line 115, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 118, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled.section {
   text-indent: 40px;
   color: white;
@@ -4368,16 +4372,17 @@ a.wizard__arrow-down.enabled.section {
   padding-top: 3px;
 }
 
-/* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
   background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
-  display: inline;
+  display: inline-block;
+  background-position-y: 50%;
   float: right;
   padding-top: 7px;
 }
 
-/* line 132, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 136, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left.start-over {
   padding-left: 40px;
   color: white;
@@ -4389,7 +4394,7 @@ a.wizard__arrow-down.enabled.section {
   background-size: 24px 25px;
 }
 
-/* line 143, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 147, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
   background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
   background-repeat: no-repeat;
@@ -4401,13 +4406,13 @@ a.wizard__arrow-down.enabled.section {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 143, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 147, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 158, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 162, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -4418,13 +4423,13 @@ a.wizard__arrow-down.enabled.section {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 158, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 162, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 171, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 175, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
   color: white;
   font-weight: 700;

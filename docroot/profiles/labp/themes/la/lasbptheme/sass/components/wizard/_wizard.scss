@@ -190,14 +190,18 @@ $wizard_left_margin: 25px;
 a.wizard__button {
   color: $wizard_text;
   text-decoration: none;
+  &:focus{
+    outline: none;
+  }
 }
-a.wizard__button--selected {
-  background-color: $wizard__button--selected;
-}
+
 a.wizard__button--selected {
   text-decoration: none;
+  padding: 8px 40px 8px 30px;
   color: $wizard__button_text--selected;
+  background: url("../images/wizard/icon_checkmark--small.png") $wizard__button--selected no-repeat 80% 50%;
 }
+
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;

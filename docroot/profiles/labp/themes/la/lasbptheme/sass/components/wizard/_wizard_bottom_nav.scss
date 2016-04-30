@@ -36,6 +36,7 @@
   @include window_size(desktop){
     margin: 10px 0 0 0;
     width:  95%;
+    padding: 5px 0;
 
   }
 }
@@ -97,11 +98,13 @@ a.wizard__arrow-down {
   background-image: image-url("wizard/arrow_down.png");
   background-repeat: no-repeat;
   background-size: 24px 25px;
-  margin: 0 0 0 0px;
+  background-position-y: 50%;
+  margin: 0;
   width: 24px;
   height: 25px;
   display: block;
   text-indent: -100000px;
+  padding: 3px 0;
 
   @include window_size(tab-wide-up){
     margin: 0 0 24px 0;
@@ -124,7 +127,8 @@ a.wizard__arrow-down.enabled.section {
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
   background-image: image-url("wizard/arrow_left_enabled_desktop.png");
-  display: inline;
+  display: inline-block;
+  background-position-y: 50%;
   float: right;
   padding-top: 7px;
 }
