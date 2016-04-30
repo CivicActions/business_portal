@@ -122,6 +122,7 @@ wiz.views.App = wiz.extensions.View.extend({
                  "bar",
                  "button",
                  "buttonLink",
+                 "selectableButton",
                  "wizard",
                  "arrows",
                  "section",
@@ -191,7 +192,7 @@ wiz.views.App = wiz.extensions.View.extend({
           wiz.desc = new wiz.views.DescriptionForContextual({model: this.model});
           this.$el.append(wiz.desc.render().el);
 
-          wiz.nav = new wiz.views.NavForContext({model: this.model});
+           wiz.nav = new wiz.views.NavForContext({model: this.model});
           this.$el.append(wiz.nav.render().el);
           break;
 
@@ -421,16 +422,35 @@ wiz.views.Buttons = Backbone.View.extend({
   className: "wizard__buttons constrained",
   template: _.template($('#buttons-template').html()),
 
+  events: {
+    "click .wizard__button": "markSelected"
+  },
+
+  markSelected: function(e) {
+    e.preventDefault();
+    var bidString =  $(e.currentTarget).attr("id");
+    this.model.controlSelected(bidString);
+    if (this.model.get("selected")) {
+      $(".wizard__button").removeClass("wizard__button--selected");
+      $(e.currentTarget).addClass("wizard__button--selected");
+      Backbone.trigger("button:selected");
+    } else {
+      $(".wizard__button").removeClass("wizard__button--selected");
+      Backbone.trigger("button:deselected");
+    }
+    var m = wiz.collections.chosen.last();
+    m.setNext(bidString);
+  },
+
   render: function() {
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
           if (b.Style["#markup"] === "Button") {
-            wiz.button =  new wiz.views.Button({
+            wiz.button =  new wiz.views.SelectableButton({
               button: b,
               model: this.model,
-              index: index,
-              className: "wizard__button"
+              index: index
             });
             this.$el.append(wiz.button.render().el);
           }
@@ -480,6 +500,30 @@ wiz.views.ButtonLink = Backbone.View.extend({
 
 
 
+///////////////////////
+// Selectable Button //
+///////////////////////
+
+wiz.views.SelectableButton = Backbone.View.extend({
+
+  className: "wizard__button",
+  tagName: "a",
+
+  initialize: function(options) {
+    this.options = options || {};
+    this.button = this.options.button;
+    this.index = this.options.index;
+  },
+
+  render: function() {
+    this.$el.attr("href", "#");
+    this.$el.attr("id", "button-id-" + this.index);
+    this.$el.text(this.button["Button Title"]["#markup"]);
+    return this;
+  }
+});
+
+
 //////////////
 // A Button //
 //////////////
@@ -494,30 +538,6 @@ wiz.views.Button = Backbone.View.extend({
     this.index = this.options.index;
   },
 
-  events: {
-    "click": "markSelected"
-  },
-
-  markSelected: function(event) {
-    event.preventDefault();
-    var resultText;
-
-    wiz.collections.chosen.toggleSelected();
-     if (wiz.collections.chosen.selected) {
-       this.$el.addClass("wizard__button--selected");
-       Backbone.trigger("button:selected");
-
-     } else {
-      $(".wizard__button").removeClass("wizard__button--selected");
-       Backbone.trigger("button:deselected");
-    }
-
-    // Call method on the model to set the next screen.
-    var bidString =  $(event.currentTarget).attr("id");
-    var m = wiz.collections.chosen.last();
-    m.setNext(bidString);
-},
-
   render: function() {
     this.$el.attr("href", "#");
     this.$el.attr("id", "button-id-" + this.index);
@@ -525,6 +545,7 @@ wiz.views.Button = Backbone.View.extend({
     return this;
   }
 });
+
 
 /////////
 // TIP //
