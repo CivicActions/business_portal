@@ -576,7 +576,7 @@ wiz.views.Nav = Backbone.View.extend({
   render: function() {
     switch (this.model.get("screen-type")) {
     case "start":
-      wiz.arrows = new wiz.views.NavSection();
+      wiz.arrows = new wiz.views.NavStart();
       this.$el.append(wiz.arrows.render().el);
       break;
     case "section":
@@ -781,6 +781,18 @@ wiz.views.NavForContext = Backbone.View.extend({
 });
 
 /////////////////
+// NAV START   //
+/////////////////
+
+wiz.views.NavStart = Backbone.View.extend({
+  template: _.template($('#wizard-nav-start-template').html()),
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
+});
+
+/////////////////
 // NAV SECTION //
 /////////////////
 
@@ -878,10 +890,32 @@ wiz.views.ResultsCTA = Backbone.View.extend({
 wiz.views.ResultsView = Backbone.View.extend({
   className: "wizard__content--results-list",
   render: function() {
+    var nodes = [];
     var results = [],
     results = wiz.collections.chosen.getResults();
     _.each(results, function(r, index) {
-      wiz.result = new wiz.views.Result({result: r, index: index});
+      console.log(r);
+      var resulttext = r["Button Result Text"];
+      if (resulttext !== undefined) {
+        resulttext = resulttext["#markup"];
+      }
+      var link1 = r["CTA Link 1"];
+      var link2 = r["CTA Link 2"];
+      var link3 = r["CTA Link 3"];
+      var buttontext = '';
+      if (link1 !== undefined) {
+        buttontext = '<a target="_blank" href="' + link1['#element']['url'] + '">' + link1['#element']['title'] + '</a>';
+      }
+      if (link2 !== undefined) {
+        buttontext = buttontext + '<a target="_blank" href="' + link2['#element']['url'] + '">' + link2['#element']['title'] + '</a>';
+      }
+      if (link3 !== undefined) {
+        buttontext = buttontext + '<a target="_blank" href="' + link3['#element']['url'] + '">' + link3['#element']['title'] + '</a>';
+      }
+
+      if (resulttext !== undefined) {
+        wiz.result = new wiz.views.Result({result: resulttext, index: index, buttons: buttontext});
+      }
       this.$el.append(wiz.result.render().el);
     }, this);
     return this;
@@ -901,10 +935,11 @@ wiz.views.Result = Backbone.View.extend({
   initialize: function(options) {
     this.result = options.result;
     this.index = options.index + 1;
+    this.buttons = options.buttons;
   },
 
   render: function() {
-    this.$el.append(this.template({result: this.result, index: this.index}));
+    this.$el.append(this.template({result: this.result, index: this.index, buttons: this.buttons}));
     return this;
   }
 
