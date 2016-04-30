@@ -26,7 +26,8 @@
     .inside {
       padding: 1.5em 1em 2em 2em;
       @include window_size(desktop){
-        max-width: 300px;
+        padding: 1.5em 1em 2em 0;
+        max-width: 200px;
         float: right;
       }
     }
@@ -62,7 +63,7 @@
     .panel-col-first {
       @include zen-grid-item (3, 1);
       .inside {
-        padding: 0 1em 2em 100px;
+       // padding: 0 1em 2em 0;
       }
     }
 

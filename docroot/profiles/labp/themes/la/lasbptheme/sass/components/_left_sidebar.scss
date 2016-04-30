@@ -13,13 +13,13 @@
       color: $navy;
       font-weight: 700;
     }
-    ul.menu,
-    ul.facetapi-facetapi-links {
-      padding: 0 0 0 2em;
-      @include window_size(desktop){
-        padding: 0 0 0 10px;
-      }
+
     }
+  ul.menu,
+  ul.facetapi-facetapi-links,
+  ul#terms-definitions-grouping {
+    padding: 0;
+
     ul.menu {
       padding-top: 30px;
     }
@@ -34,7 +34,7 @@
 
   }
   .views-widget-filter-search_api_views_fulltext {
-    margin: 10px 0 10px 10px;
+    margin: 10px 0;
   }
 
   form#views-exposed-form-sbp-resource-incentives-panel-pane-1,
@@ -103,12 +103,13 @@
   {
     list-style: none;
     color:$dark_blue;
-    font-size: 1.143em;
+    font-size: 1em;
     font-weight: 700;
-    margin:10px 0 5px 2em;
+    margin:10px 0 5px 0;
+    text-transform: uppercase;
     @include window_size(desktop) {
-      margin:20px 0 10px 10px;
-      padding: 0px 0 0 0px;
+      margin:20px 0 10px 0px;
+      padding: 0;
     }
   }
 
@@ -122,3 +123,7 @@
     margin:0 0 10px 0;
     a { color:$dark_blue;}
   }
+
+.pane-sbp-terms-definitions ul li {
+  font-size: 1.143em;
+}

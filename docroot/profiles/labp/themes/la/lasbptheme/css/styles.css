@@ -1409,23 +1409,24 @@ table {
 @media all and (min-width: 960px) {
   /* line 26, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first .inside {
-    max-width: 300px;
+    padding: 1.5em 1em 2em 0;
+    max-width: 200px;
     float: right;
   }
 }
-/* line 36, ../sass/layouts/_panels.scss */
+/* line 37, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 37, ../sass/layouts/_panels.scss */
+/* line 38, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 40, ../sass/layouts/_panels.scss */
+/* line 41, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 49, ../sass/layouts/_panels.scss */
+/* line 50, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
@@ -1439,7 +1440,7 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-/* line 54, ../sass/layouts/_panels.scss */
+/* line 55, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first,
 .panel-2col-stacked .panel-col-last {
   float: none;
@@ -1447,25 +1448,21 @@ table {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 62, ../sass/layouts/_panels.scss */
+  /* line 63, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 64, ../sass/layouts/_panels.scss */
-  .panel-2col-stacked .panel-col-first .inside {
-    padding: 0 1em 2em 100px;
-  }
-  /* line 69, ../sass/layouts/_panels.scss */
+  /* line 70, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
     width: 70%;
     margin-left: 30%;
     margin-right: -100%;
   }
-  /* line 71, ../sass/layouts/_panels.scss */
+  /* line 72, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding: 0.3em 0 2em 30px;
   }
@@ -1474,7 +1471,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 81, ../sass/layouts/_panels.scss */
+/* line 82, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -2814,8 +2811,8 @@ hr.hero__line--half {
 @media all and (min-width: 960px) {
   /* line 75, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__headline {
-    font-size: 3em;
-    padding: 3em 0 0;
+    font-size: 4em;
+    padding: 240px 0 0;
   }
 }
 /* line 83, ../sass/components/hero/_hero.scss */
@@ -2826,7 +2823,7 @@ hr.hero__line--half {
 @media all and (min-width: 960px) {
   /* line 83, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__bottom_align--bn {
-    margin: 5em 0 3em;
+    margin: 5em 0 0;
     padding-bottom: 3em;
   }
 }
@@ -2881,77 +2878,70 @@ hr.hero__line--half {
 @media all and (min-width: 960px) {
   /* line 36, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__bottom_align--bn {
-    padding: 250px 4.5em 5em 0;
+    padding: 250px .5em 5em 0;
     float: right;
+    max-width: 200px;
   }
 }
-/* line 46, ../sass/components/hero/_hero__half-width.scss */
+/* line 47, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name {
   color: #fff;
   font-size: 1.1em;
   margin-bottom: 0;
   font-weight: normal;
 }
-/* line 53, ../sass/components/hero/_hero__half-width.scss */
+/* line 54, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__description {
   color: #fff;
   font-size: 1.1em;
   font-weight: 300;
 }
-/* line 60, ../sass/components/hero/_hero__half-width.scss */
+/* line 61, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name,
 .hero__layout--half .hero__business__description,
 .hero__layout--half .hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 60, ../sass/components/hero/_hero__half-width.scss */
+  /* line 61, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__name,
   .hero__layout--half .hero__business__description,
   .hero__layout--half .hero__line--half {
     display: block;
   }
 }
-/* line 72, ../sass/components/hero/_hero__half-width.scss */
+/* line 73, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .right .hero__header--inner {
   padding: 1em 0 30px;
 }
 @media all and (min-width: 960px) {
-  /* line 72, ../sass/components/hero/_hero__half-width.scss */
+  /* line 73, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right .hero__header--inner {
     padding: 6em 30px 0;
     max-width: 700px;
   }
 }
-/* line 80, ../sass/components/hero/_hero__half-width.scss */
+/* line 81, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
   margin: 0.8em 1em 0 2em;
   font-size: 1.143em;
 }
 @media all and (min-width: 960px) {
-  /* line 80, ../sass/components/hero/_hero__half-width.scss */
+  /* line 81, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
     font-size: 1.4em;
     line-height: 1.4;
     margin: 30px 0;
   }
 }
-/* line 90, ../sass/components/hero/_hero__half-width.scss */
+/* line 91, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline,
 .hero__layout--half .hero__headline--half,
 .hero__layout--half .hero__headline--half--mobile {
   font-size: 1.8em;
 }
-@media all and (min-width: 720px) {
-  /* line 90, ../sass/components/hero/_hero__half-width.scss */
-  .hero__layout--half .hero__headline,
-  .hero__layout--half .hero__headline--half,
-  .hero__layout--half .hero__headline--half--mobile {
-    font-size: 2.143em;
-  }
-}
 @media all and (min-width: 960px) {
-  /* line 90, ../sass/components/hero/_hero__half-width.scss */
+  /* line 91, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -2959,23 +2949,23 @@ hr.hero__line--half {
     margin: 1em 0 0;
   }
 }
-/* line 103, ../sass/components/hero/_hero__half-width.scss */
+/* line 101, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
 @media all and (min-width: 960px) {
-  /* line 103, ../sass/components/hero/_hero__half-width.scss */
+  /* line 101, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__background-image {
     background-size: auto 100%;
   }
 }
-/* line 111, ../sass/components/hero/_hero__half-width.scss */
+/* line 109, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay {
   position: relative;
   overflow: hidden;
 }
-/* line 127, ../sass/components/hero/_hero__half-width.scss */
+/* line 125, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   width: 100%;
   padding-left: 0;
@@ -2990,14 +2980,14 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 135, ../sass/components/hero/_hero__half-width.scss */
+  /* line 133, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 136, ../sass/components/hero/_hero__half-width.scss */
+  /* line 134, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 70%;
@@ -3377,13 +3367,17 @@ hr.hero__line--half {
 }
 @media all and (min-width: 720px) {
   /* line 197, ../sass/components/_landing_page--views.scss */
+  .view-id-labp_service_center .views-field-title {
+    margin: 0;
+  }
+  /* line 200, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-map {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 200, ../sass/components/_landing_page--views.scss */
+  /* line 203, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-address,
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-phone {
@@ -3392,13 +3386,13 @@ hr.hero__line--half {
     margin-right: 0%;
     margin-left: -50%;
   }
-  /* line 205, ../sass/components/_landing_page--views.scss */
+  /* line 208, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-phone {
     clear: right;
     border-bottom: none;
   }
-  /* line 210, ../sass/components/_landing_page--views.scss */
+  /* line 213, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-services {
     clear: both;
     float: left;
@@ -3406,11 +3400,11 @@ hr.hero__line--half {
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 213, ../sass/components/_landing_page--views.scss */
+  /* line 216, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-services .views-label {
     margin-top: 0;
   }
-  /* line 217, ../sass/components/_landing_page--views.scss */
+  /* line 220, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-languages {
     float: left;
     width: 50%;
@@ -5131,42 +5125,35 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   color: #163549;
   font-weight: 700;
 }
-/* line 16, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked .menu-block-wrapper ul.menu,
-.panel-2col-stacked .menu-block-wrapper ul.facetapi-facetapi-links,
-.panel-2col-stacked .pane-facetapi ul.menu,
-.panel-2col-stacked .pane-facetapi ul.facetapi-facetapi-links {
-  padding: 0 0 0 2em;
-}
-@media all and (min-width: 960px) {
-  /* line 16, ../sass/components/_left_sidebar.scss */
-  .panel-2col-stacked .menu-block-wrapper ul.menu,
-  .panel-2col-stacked .menu-block-wrapper ul.facetapi-facetapi-links,
-  .panel-2col-stacked .pane-facetapi ul.menu,
-  .panel-2col-stacked .pane-facetapi ul.facetapi-facetapi-links {
-    padding: 0 0 0 10px;
-  }
+/* line 18, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked ul.menu,
+.panel-2col-stacked ul.facetapi-facetapi-links,
+.panel-2col-stacked ul#terms-definitions-grouping {
+  padding: 0;
 }
 /* line 23, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked .menu-block-wrapper ul.menu,
-.panel-2col-stacked .pane-facetapi ul.menu {
+.panel-2col-stacked ul.menu ul.menu,
+.panel-2col-stacked ul.facetapi-facetapi-links ul.menu,
+.panel-2col-stacked ul#terms-definitions-grouping ul.menu {
   padding-top: 30px;
 }
 /* line 26, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked .menu-block-wrapper .menu__item,
-.panel-2col-stacked .pane-facetapi .menu__item {
+.panel-2col-stacked ul.menu .menu__item,
+.panel-2col-stacked ul.facetapi-facetapi-links .menu__item,
+.panel-2col-stacked ul#terms-definitions-grouping .menu__item {
   list-style: none;
   font-size: 1.143em;
   margin: 0 0 10px 0;
 }
 /* line 30, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked .menu-block-wrapper .menu__item a,
-.panel-2col-stacked .pane-facetapi .menu__item a {
+.panel-2col-stacked ul.menu .menu__item a,
+.panel-2col-stacked ul.facetapi-facetapi-links .menu__item a,
+.panel-2col-stacked ul#terms-definitions-grouping .menu__item a {
   color: #0f2940;
 }
 /* line 36, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked .views-widget-filter-search_api_views_fulltext {
-  margin: 10px 0 10px 10px;
+  margin: 10px 0;
 }
 /* line 40, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1,
@@ -5247,20 +5234,21 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 .pane-sbp-terms-definitions h2.pane-title {
   list-style: none;
   color: #0f2940;
-  font-size: 1.143em;
+  font-size: 1em;
   font-weight: 700;
-  margin: 10px 0 5px 2em;
+  margin: 10px 0 5px 0;
+  text-transform: uppercase;
 }
 @media all and (min-width: 960px) {
   /* line 101, ../sass/components/_left_sidebar.scss */
   .pane-facetapi h2.pane-title,
   .pane-sbp-terms-definitions h2.pane-title {
-    margin: 20px 0 10px 10px;
-    padding: 0px 0 0 0px;
+    margin: 20px 0 10px 0px;
+    padding: 0;
   }
 }
 
-/* line 115, ../sass/components/_left_sidebar.scss */
+/* line 116, ../sass/components/_left_sidebar.scss */
 ul.facetapi-facet-field-business-need li,
 ul.facetapi-facet-field-business-ownership li,
 ul.facetapi-facet-field-industry-tag li,
@@ -5270,13 +5258,18 @@ ul.facetapi-facet-field-resource-type li,
   font-size: 0.929em;
   margin: 0 0 10px 0;
 }
-/* line 123, ../sass/components/_left_sidebar.scss */
+/* line 124, ../sass/components/_left_sidebar.scss */
 ul.facetapi-facet-field-business-need li a,
 ul.facetapi-facet-field-business-ownership li a,
 ul.facetapi-facet-field-industry-tag li a,
 ul.facetapi-facet-field-resource-type li a,
 .pane-sbp-terms-definitions ul li a {
   color: #0f2940;
+}
+
+/* line 127, ../sass/components/_left_sidebar.scss */
+.pane-sbp-terms-definitions ul li {
+  font-size: 1.143em;
 }
 
 /**
