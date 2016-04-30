@@ -91,19 +91,6 @@ hr.hero__line--half {
 }
 
 
-/*========== Layout ======== */
-//Mobile-first layout
-$zen-grid-width: 80%;
-$zen-column-count:  1;
-
-.hero__content-wrapper {
-  @include zen-grid-container();
-}
-
-.hero__layout--full,
-.hero__layout--half {
-
-}
 
 
 
