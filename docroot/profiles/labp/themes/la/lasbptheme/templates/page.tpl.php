@@ -47,6 +47,7 @@
       <?php endif; ?>
       <?php print render($page['header']); ?>
     </div>
+    <a id="menu__hamburger" class="open">menu</a>
   </header>
 
   <div id="main">

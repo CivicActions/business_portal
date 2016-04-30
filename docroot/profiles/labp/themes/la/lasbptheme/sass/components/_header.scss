@@ -28,6 +28,7 @@
   @include window_size(desktop) {
     @include wrapper(80%);
   }
+  max-width: 960px;
 }
 
 /* Wrapping link for logo. */

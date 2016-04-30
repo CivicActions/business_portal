@@ -36,10 +36,10 @@
         }
       }
     }
-    &.burger-visible {
+    .burger-visible & {
       display: block;
     }
-    &.burger-hidden {
+    .burger-hidden & {
       display: none;
     }
   }
@@ -52,3 +52,27 @@
     }
   }
 }
+
+a#menu__hamburger {
+  display: block;
+  width: 18px;
+  height: 16px;
+  overflow: hidden;
+  margin: 15px 19px 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  float: right;
+  text-indent: -1000px;
+  &.open {
+    background-image: url(../images/icon_hamburger.png);
+  }
+  &.close {
+    background-image: url(../images/icon_close.png);
+  }
+  @media (min-width: 720px) {
+    display: none;
+  }
+}
+
+      
