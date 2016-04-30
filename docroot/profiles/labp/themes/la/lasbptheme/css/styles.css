@@ -3377,13 +3377,17 @@ hr.hero__line--half {
 }
 @media all and (min-width: 720px) {
   /* line 197, ../sass/components/_landing_page--views.scss */
+  .view-id-labp_service_center .views-field-title {
+    margin: 0;
+  }
+  /* line 200, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-map {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 200, ../sass/components/_landing_page--views.scss */
+  /* line 203, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-address,
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-phone {
@@ -3392,13 +3396,13 @@ hr.hero__line--half {
     margin-right: 0%;
     margin-left: -50%;
   }
-  /* line 205, ../sass/components/_landing_page--views.scss */
+  /* line 208, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-phone {
     clear: right;
     border-bottom: none;
   }
-  /* line 210, ../sass/components/_landing_page--views.scss */
+  /* line 213, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-services {
     clear: both;
     float: left;
@@ -3406,11 +3410,11 @@ hr.hero__line--half {
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 213, ../sass/components/_landing_page--views.scss */
+  /* line 216, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-services .views-label {
     margin-top: 0;
   }
-  /* line 217, ../sass/components/_landing_page--views.scss */
+  /* line 220, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-languages {
     float: left;
     width: 50%;
