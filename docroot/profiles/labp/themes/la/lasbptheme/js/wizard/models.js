@@ -16,7 +16,6 @@ wiz.models.Screen = Backbone.Model.extend({
     description: "",
     buttons: [],
     Color: "#EEEEEE",
-    order: null,
     next: undefined,
     chosenResultText: ""
   },

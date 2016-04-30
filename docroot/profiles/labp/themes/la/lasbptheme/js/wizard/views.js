@@ -908,10 +908,16 @@ wiz.views.ResultsView = Backbone.View.extend({
   className: "wizard__content--results-list",
   render: function() {
     var nodes = [];
-    var results = [],
-    results = wiz.collections.chosen.getResults();
+    var results = [];
+    var unsorted_results = [];
+    unsorted_results = wiz.collections.chosen.getResults();
+    var results = _.sortBy(unsorted_results, function(res){
+      if (res["Button Result Order"] !== undefined) {
+        return res["Button Result Order"]["#markup"];
+      }
+    })
     _.each(results, function(r, index) {
-      console.log(r);
+      //console.log(r);
       var resulttext = r["Button Result Text"];
       if (resulttext !== undefined) {
         resulttext = resulttext["#markup"];

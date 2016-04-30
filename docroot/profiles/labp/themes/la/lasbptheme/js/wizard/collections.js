@@ -23,8 +23,7 @@ wiz.collections.Chosen = Backbone.Collection.extend ({
             if (m.get("buttons") !== undefined) {
                 if (m.get("chosenBid") !== undefined) {
                     if (m.get("buttons")[m.get("chosenBid")]["Button Result Text"] !== undefined) {
-                        //return m.get("buttons")[m.get("chosenBid")]["Button Result Text"]["#markup"];
-                        return m.get("buttons")[m.get("chosenBid")];
+                      return m.get("buttons")[m.get("chosenBid")];
                     }
                 }
             }
