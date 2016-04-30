@@ -447,6 +447,17 @@ wiz.views.Buttons = Backbone.View.extend({
 wiz.views.ButtonLink = Backbone.View.extend({
   className: "wizard__buttons constrained",
   template: _.template($('#buttons-template').html()),
+  events: {"click .wizard__tip_button": "goToScreen" },
+
+  goToScreen: function(event) {
+    var bidString =  $(event.currentTarget).attr("id");
+    this.model.setNext(bidString);
+    var nm = wiz.collections.screens.find({
+      Nid: this.model.get("next")
+    });
+    wiz.collections.chosen.add(nm);
+    event.preventDefault();
+  },
 
   render: function() {
     var buttons = this.model.get("buttons");
@@ -488,6 +499,7 @@ wiz.views.Button = Backbone.View.extend({
   },
 
   markSelected: function(event) {
+    event.preventDefault();
     var resultText;
 
     wiz.collections.chosen.toggleSelected();
@@ -499,22 +511,11 @@ wiz.views.Button = Backbone.View.extend({
       $(".wizard__button").removeClass("wizard__button--selected");
        Backbone.trigger("button:deselected");
     }
-    var m = wiz.collections.chosen.last();
+
+    // Call method on the model to set the next screen.
     var bidString =  $(event.currentTarget).attr("id");
-    var bid = bidString.charAt(bidString.length -1);
-    if (m.get("buttons")[bid]["Destination Screen"] !== undefined) {
-      var nid = m.get("buttons")[bid]["Destination Screen"]["target_id"];
-    } else {
-      console.log("APP: Destination screen not defined: ", m.get("buttons"));
-      return;
-    }
-
-    m.set({
-      next: nid,
-      chosenBid: bid,
-    });
-
-    event.preventDefault();
+    var m = wiz.collections.chosen.last();
+    m.setNext(bidString);
 },
 
   render: function() {
