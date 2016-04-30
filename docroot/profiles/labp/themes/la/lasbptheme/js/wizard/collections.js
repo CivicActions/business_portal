@@ -12,23 +12,24 @@ wiz.collections = {}
 
 wiz.collections.Chosen = Backbone.Collection.extend ({
 
-  model: wiz.models.Screen,
-  selected: false,
-  toggleSelected: function() {
-    this.selected = !this.selected;
-  },
+    model: wiz.models.Screen,
+    selected: false,
+    toggleSelected: function () {
+        this.selected = !this.selected;
+    },
 
-  getResults: function() {
-    return _.chain(this.models).map(function(m) {
-      if (m.get("buttons") !== undefined) {
-        if (m.get("chosenBid") !== undefined) {
-          if (m.get("buttons")[m.get("chosenBid")]["Button Result Text"] !== undefined) {
-            return m.get("buttons")[m.get("chosenBid")]["Button Result Text"]["#markup"];
-          }
-        }
-      }
-    }, this).filter(_.identity).value();
-  }
+    getResults: function () {
+        return _.chain(this.models).map(function (m) {
+            if (m.get("buttons") !== undefined) {
+                if (m.get("chosenBid") !== undefined) {
+                    if (m.get("buttons")[m.get("chosenBid")]["Button Result Text"] !== undefined) {
+                        //return m.get("buttons")[m.get("chosenBid")]["Button Result Text"]["#markup"];
+                        return m.get("buttons")[m.get("chosenBid")];
+                    }
+                }
+            }
+        }, this).filter(_.identity).value();
+    }
 });
 
 wiz.collections.chosen = new wiz.collections.Chosen({});

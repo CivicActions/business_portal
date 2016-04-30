@@ -120,6 +120,7 @@
 <script type="text/template" id="results-template">
   <div class="wizard__step"> step {{index}}</div>
   <div class="wizard__result">{{result}}</div>
+  <div class="wizard__buttons">{{buttons}}</div>
 </script>
 
 
