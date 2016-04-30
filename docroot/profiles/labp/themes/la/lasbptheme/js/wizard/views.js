@@ -36,7 +36,6 @@ _.templateSettings = {
 
         var transitionIn = function () {
           view.$el.addClass('is-visible');
-          console.log("transition", callback);
           view.$el.one('transitionend', function () {
             if (_.isFunction(callback)) {
               callback();
@@ -426,7 +425,6 @@ wiz.views.Buttons = Backbone.View.extend({
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
-          console.log("style", b.Style);
           if (b.Style["#markup"] === "Button") {
             wiz.button =  new wiz.views.Button({
               button: b,
@@ -454,7 +452,6 @@ wiz.views.ButtonLink = Backbone.View.extend({
     var buttons = this.model.get("buttons");
       if (buttons.length > 0) {
         _.each(buttons, function(b, index) {
-          console.log("style", b.Style);
           if (b.Style["#markup"] === "Link") {
             wiz.buttonLink =  new wiz.views.Button({
               button: b,
