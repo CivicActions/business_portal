@@ -428,15 +428,16 @@ wiz.views.Buttons = Backbone.View.extend({
 
   markSelected: function(e) {
     e.preventDefault();
-    wiz.collections.chosen.toggleSelected();
-    if (wiz.collections.chosen.selected) {
+    var bidString =  $(e.currentTarget).attr("id");
+    this.model.controlSelected(bidString);
+    if (this.model.get("selected")) {
+      $(".wizard__button").removeClass("wizard__button--selected");
       $(e.currentTarget).addClass("wizard__button--selected");
       Backbone.trigger("button:selected");
     } else {
-      $(e.currentTarget).removeClass("wizard__button--selected");
+      $(".wizard__button").removeClass("wizard__button--selected");
       Backbone.trigger("button:deselected");
     }
-    var bidString =  $(e.currentTarget).attr("id");
     var m = wiz.collections.chosen.last();
     m.setNext(bidString);
   },

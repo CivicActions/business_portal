@@ -17,11 +17,23 @@ wiz.models.Screen = Backbone.Model.extend({
     buttons: [],
     Color: "#EEEEEE",
     next: undefined,
-    chosenResultText: ""
+    chosenResultText: "",
+    selected: false
   },
 
   initialize: function() {
     this.setNextScreen();
+  },
+
+  controlSelected: function (bidString) {
+    var storedBid = this.get("chosenBid");
+    var bid = bidString.charAt(bidString.length -1);
+    if (bid !== storedBid) {
+      this.set({selected: true});
+    }
+    if (bid === storedBid) {
+      this.set({selected: !this.get("selected")});
+    }
   },
 
   // This is called when a button is clicked on.

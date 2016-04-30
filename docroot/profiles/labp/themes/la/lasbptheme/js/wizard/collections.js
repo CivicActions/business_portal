@@ -13,10 +13,6 @@ wiz.collections = {}
 wiz.collections.Chosen = Backbone.Collection.extend ({
 
     model: wiz.models.Screen,
-    selected: false,
-    toggleSelected: function () {
-        this.selected = !this.selected;
-    },
 
     getResults: function () {
         return _.chain(this.models).map(function (m) {
