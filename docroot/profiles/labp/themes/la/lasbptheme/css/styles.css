@@ -4379,13 +4379,7 @@ a.wizard__arrow-down.enabled.section {
   padding-top: 7px;
 }
 
-/*.wizard__arrow-back.enabled.left {
-  background-image: image-url("wizard/arrow_left_enabled_desktop.png");
-  display: inline;
-  float: right;
-  padding-top: 7px;
-}*/
-/* line 139, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 132, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left.start-over {
   padding-left: 40px;
   color: white;
@@ -4397,7 +4391,7 @@ a.wizard__arrow-down.enabled.section {
   background-size: 24px 25px;
 }
 
-/* line 150, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 143, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
   background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
   background-repeat: no-repeat;
@@ -4409,13 +4403,13 @@ a.wizard__arrow-down.enabled.section {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 150, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 143, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 165, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 158, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -4426,13 +4420,13 @@ a.wizard__arrow-down.enabled.section {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 165, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 158, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 178, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 171, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
   color: white;
   font-weight: 700;
