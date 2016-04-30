@@ -7,6 +7,7 @@
 
 .panel-2col-stacked {
   background: $light-grey;
+
   .panel-col-last {
     background: $white;
     .inside {
@@ -23,11 +24,14 @@
 
   // Panels first sidebar padding
   .panel-col-first {
+    h2 {
+      font-family: $font-body;
+    }
     .inside {
       padding: 1.5em 1em 2em 2em;
       @include window_size(desktop){
         padding: 1.5em 1em 2em 0;
-        max-width: 200px;
+        max-width: 220px;
         float: right;
       }
     }
