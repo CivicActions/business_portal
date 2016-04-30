@@ -2303,12 +2303,6 @@ body.not-logged-in.page-user #main {
   width: 171px;
   height: 32px;
   margin: 8px 0 0 0;
-  /*
-  @include breakpoint($medium-and-large) {
-    width: 213px;
-    height: 39px;
-  }
-  */
 }
 @media all and (min-width: 720px) {
   /* line 35, ../sass/components/_header.scss */
@@ -2319,19 +2313,19 @@ body.not-logged-in.page-user #main {
   }
 }
 
-/* line 58, ../sass/components/_header.scss */
+/* line 52, ../sass/components/_header.scss */
 .front #header a.header__logo.icon-egg {
   color: #0D84E9;
 }
 
 /* Logo image. */
-/* line 63, ../sass/components/_header.scss */
+/* line 57, ../sass/components/_header.scss */
 .header__logo-image {
   vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 68, ../sass/components/_header.scss */
+/* line 62, ../sass/components/_header.scss */
 .header__name-and-slogan {
   display: inline-block;
   vertical-align: middle;
@@ -2340,48 +2334,48 @@ body.not-logged-in.page-user #main {
 }
 
 /* The name of the website. */
-/* line 76, ../sass/components/_header.scss */
+/* line 70, ../sass/components/_header.scss */
 .header__site-name {
   margin: 0;
   font-size: 12px;
 }
 
 /* The link around the name of the website. */
-/* line 83, ../sass/components/_header.scss */
+/* line 77, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 88, ../sass/components/_header.scss */
+/* line 82, ../sass/components/_header.scss */
 .header__site-link:focus, .header__site-link:hover {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 95, ../sass/components/_header.scss */
+/* line 89, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 100, ../sass/components/_header.scss */
+/* line 94, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 105, ../sass/components/_header.scss */
+/* line 99, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
   position: relative;
 }
 
-/* line 111, ../sass/components/_header.scss */
+/* line 105, ../sass/components/_header.scss */
 .block__title {
   display: none;
 }
 
-/* line 115, ../sass/components/_header.scss */
+/* line 109, ../sass/components/_header.scss */
 #header .menu {
   float: left;
   margin: 0 0 0 66px;
@@ -2389,17 +2383,17 @@ body.not-logged-in.page-user #main {
   height: 100%;
   height: 55px;
 }
-/* line 121, ../sass/components/_header.scss */
+/* line 115, ../sass/components/_header.scss */
 #header .menu .menu {
   display: none;
 }
 
-/* line 126, ../sass/components/_header.scss */
+/* line 120, ../sass/components/_header.scss */
 #header .menu__item {
   height: 100%;
 }
 @media all and (min-width: 720px) {
-  /* line 126, ../sass/components/_header.scss */
+  /* line 120, ../sass/components/_header.scss */
   #header .menu__item {
     margin: 0 15px 0 0;
     padding: 0;
@@ -2409,20 +2403,20 @@ body.not-logged-in.page-user #main {
     display: inline-block;
   }
 }
-/* line 136, ../sass/components/_header.scss */
+/* line 130, ../sass/components/_header.scss */
 #header .menu__item.active-trail {
   background-image: url("../images/hero/menu_selector.png");
   background-position: 50% 88%;
   background-repeat: repeat-x;
 }
 
-/* line 143, ../sass/components/_header.scss */
+/* line 137, ../sass/components/_header.scss */
 #header .menu__item--selected {
   height: 100%;
   display: none;
 }
 @media all and (min-width: 720px) {
-  /* line 143, ../sass/components/_header.scss */
+  /* line 137, ../sass/components/_header.scss */
   #header .menu__item--selected {
     margin: 0 15px 0 0;
     border: 0px solid pink;
@@ -2437,20 +2431,20 @@ body.not-logged-in.page-user #main {
   }
 }
 
-/* line 162, ../sass/components/_header.scss */
+/* line 156, ../sass/components/_header.scss */
 #header .menu__item a {
   display: block;
   font-weight: bold;
 }
 
-/* line 169, ../sass/components/_header.scss */
+/* line 163, ../sass/components/_header.scss */
 #header .menu__link {
   border: 0px solid red;
   margin: 8px 0 0 0;
   display: block;
 }
 
-/* line 175, ../sass/components/_header.scss */
+/* line 169, ../sass/components/_header.scss */
 .menu__hamburger {
   width: 18px;
   height: 15px;
@@ -2458,13 +2452,13 @@ body.not-logged-in.page-user #main {
   margin: 16px 16px 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 175, ../sass/components/_header.scss */
+  /* line 169, ../sass/components/_header.scss */
   .menu__hamburger {
     display: none;
   }
 }
 
-/* line 185, ../sass/components/_header.scss */
+/* line 179, ../sass/components/_header.scss */
 .menu__hamburger--close {
   width: 16px;
   height: 16px;
@@ -2472,13 +2466,13 @@ body.not-logged-in.page-user #main {
   margin: 16px 16px 0 0;
 }
 @media all and (min-width: 720px) {
-  /* line 185, ../sass/components/_header.scss */
+  /* line 179, ../sass/components/_header.scss */
   .menu__hamburger--close {
     display: none;
   }
 }
 
-/* line 195, ../sass/components/_header.scss */
+/* line 189, ../sass/components/_header.scss */
 .menu__hamburger_contents {
   background-color: #47aee6;
   position: absolute;
@@ -2489,20 +2483,20 @@ body.not-logged-in.page-user #main {
   width: 100%;
 }
 @media all and (min-width: 720px) {
-  /* line 195, ../sass/components/_header.scss */
+  /* line 189, ../sass/components/_header.scss */
   .menu__hamburger_contents {
     display: none;
   }
 }
 
-/* line 208, ../sass/components/_header.scss */
+/* line 202, ../sass/components/_header.scss */
 .menu__hamburger_items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 213, ../sass/components/_header.scss */
+/* line 207, ../sass/components/_header.scss */
 .menu__item_hamburger {
   margin: 20px 25px 20px 25px;
   padding: 0 0 20px 0;
@@ -2513,7 +2507,7 @@ body.not-logged-in.page-user #main {
   list-style: none;
 }
 
-/* line 223, ../sass/components/_header.scss */
+/* line 217, ../sass/components/_header.scss */
 .menu__item_hamburger--last {
   margin: 20px 25px 0 25px;
   padding: 0 0 20px 0;
@@ -2524,6 +2518,33 @@ body.not-logged-in.page-user #main {
   list-style: none;
 }
 
+/* Special styles to line header elements up ion the resources section */
+@media (min-width: 960px) {
+  /* line 230, ../sass/components/_header.scss */
+  body.section-resources #header .header--wrapper {
+    width: auto;
+    margin: 0;
+    max-width: none;
+  }
+  /* line 235, ../sass/components/_header.scss */
+  body.section-resources #header .header__logo {
+    width: 30%;
+  }
+  /* line 238, ../sass/components/_header.scss */
+  body.section-resources #header .header__logo-image {
+    height: 38px;
+    float: right;
+    padding-right: 35px;
+  }
+  /* line 243, ../sass/components/_header.scss */
+  body.section-resources #header .header__region {
+    width: 70%;
+  }
+  /* line 246, ../sass/components/_header.scss */
+  body.section-resources #header .menu {
+    margin-left: 28px;
+  }
+}
 @media (min-width: 0px) and (max-width: 719px) {
   /* line 2, ../sass/components/_menu__main.scss */
   #block-system-main-menu {
