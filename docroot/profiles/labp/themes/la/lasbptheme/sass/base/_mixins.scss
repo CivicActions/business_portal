@@ -184,11 +184,11 @@ $max-sidebar-width: 300px;
 
 @mixin wizard__button--base{
     @include border-radius(20px);
-    background-color: $wizard__button--deafult;
+    background-color: $wizard__button--default;
     padding: 8px 35px 8px 35px;
     font-weight: bold;
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 2px 10px 2px 0;
     cursor: pointer;
 
 }
