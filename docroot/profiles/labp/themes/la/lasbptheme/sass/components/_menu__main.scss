@@ -1,0 +1,54 @@
+@media (min-width: 0px) and (max-width: 719px) {
+  #block-system-main-menu {
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: $medium-blue;
+    position: fixed;
+    right: 0;
+    top: 94px;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    .menu {
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+      float: none;
+      width: 90%;
+      .menu__item {
+        background: none;
+        list-style-image: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid $medium-blue-dim;
+        &.last {
+          border-bottom-width: 0;
+        }
+        a.menu__link {
+          margin: 0;
+          line-height: 1;
+          display: block;
+          padding: 21px 0;
+          font-size: 1.3em;
+        }
+      }
+    }
+    &.burger-visible {
+      display: block;
+    }
+    &.burger-hidden {
+      display: none;
+    }
+  }
+  #header {
+    &.burger-visible {
+      background-color: $medium-blue-dim;
+    }
+    &.burger-hidden {
+      background: rgba(0,0,0,.25);
+    }
+  }
+}

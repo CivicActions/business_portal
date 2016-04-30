@@ -39,10 +39,11 @@
   display: inline-block;
   width: 171px;
   height: 32px;
-  margin: 1px 0 0 0;
+  margin: 8px 0 0 0;
   @include window_size(tab-wide-up){
     width: 213px;
     height: 39px;
+    margin: 2px 0 0 0;
   }
   /*
   @include breakpoint($medium-and-large) {
@@ -103,6 +104,7 @@
 .header__region {
   /* Clear the logo. */
   //  clear: both;
+  position: relative;
 }
 
 .block__title {
@@ -135,7 +137,6 @@
     background-position: 50% 88%;
     background-repeat: repeat-x;
   }
-  display: none;
 }
 
 #header .menu__item--selected {
