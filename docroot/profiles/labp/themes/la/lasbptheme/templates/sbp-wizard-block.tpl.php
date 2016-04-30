@@ -27,6 +27,9 @@
 <script type="text/template" id="header-for-contextual-template">
   <div class="wizard__question--help">{{title}}</div>
   <hr class="wizard__help_hr"/>
+</script>
+
+<script type="text/template" id="description-for-contextual-template">
   <div class="wizard__help_content">{{Description}}</div>
 </script>
 
@@ -54,8 +57,9 @@
 </script>
 
 <script type="text/template" id="wizard-results-cta-template">
-  <p><a class="wizard__button print">Print</a><a class="wizard__button email">Email</a></p>
+  <p><a class="wizard__button print">PRINT</a><a class="wizard__button email">EMAIL</a></p>
 </script>
+
 <script type="text/template" id="wizard-results-email-template">
   <div id="wizard-email" class="element-invisible">
     <?php print $email_form; ?>

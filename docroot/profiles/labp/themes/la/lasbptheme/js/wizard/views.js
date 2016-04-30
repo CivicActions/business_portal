@@ -189,6 +189,9 @@ wiz.views.App = wiz.extensions.View.extend({
           wiz.header = new wiz.views.HeaderForContextual({model: this.model});
           this.$el.append(wiz.header.render().el);
 
+          wiz.desc = new wiz.views.DescriptionForContextual({model: this.model});
+          this.$el.append(wiz.desc.render().el);
+
           wiz.nav = new wiz.views.NavForContext({model: this.model});
           this.$el.append(wiz.nav.render().el);
           break;
@@ -288,6 +291,18 @@ wiz.views.HeaderForContextual = Backbone.View.extend({
   }
 });
 
+//////////////////////////////
+// Description for context  //
+//////////////////////////////
+
+wiz.views.DescriptionForContextual = Backbone.View.extend({
+  template: _.template($('#description-for-contextual-template').html()),
+  render: function() {
+    this.$el.html(this.template(this.model.toJSON()));
+    return this;
+  }
+});
+
 /////////////////////////
 // Header for confirm //
 /////////////////////////
@@ -343,6 +358,11 @@ wiz.views.Email = Backbone.View.extend({
     var emailValidate = '&emailvalidate=' + $( "input[name='emailCheck']" ).val();
     var emailToken = '&emailtoken=' + $( "input[name='form_token']" ).val();
     var message = '&message=' + JSON.stringify($(".wizard__content--results-list" ).html());
+    var strip = ['&nbsp;'];
+    for (var ind = 0; ind < strip.length; ind++) {
+      message = message.replace(strip[ind], '');
+    }
+    console.log(message);
     $.ajax({
         url: '/labp/wizard-email',
         dataType: 'text',
