@@ -5,6 +5,7 @@
  * header component.
  *
  */
+
 #header {
   color: $white;
   background: rgba(0,0,0,.25);
@@ -16,7 +17,6 @@
   @include window_size(tab-wide-up){
     height: 55px;
   }
-
   position:fixed;
   top:47px;
   z-index:5;
@@ -24,41 +24,44 @@
 }
 
 .header--wrapper {
-  @include wrapper(100%);
+  @include wrapper(90%);
   @include window_size(desktop) {
-    @include wrapper(90%);
+    @include wrapper(80%);
   }
-
 }
+
 /* Wrapping link for logo. */
 .header__logo {
   display: inline-block;
   vertical-align: middle;
-  margin: 7px 0 0 25px;
   padding: 0;
   float: left;
   display: inline-block;
   width: 171px;
   height: 32px;
+  margin: 1px 0 0 0;
   @include window_size(tab-wide-up){
     width: 213px;
     height: 39px;
   }
-
   /*
-@include breakpoint($medium-and-large) {
-  width: 213px;
-  height: 39px;
-}*/
+  @include breakpoint($medium-and-large) {
+    width: 213px;
+    height: 39px;
+  }
+  */
 }
+
 // Logo.
 .front #header a.header__logo.icon-egg {
   color: $egg_blue;
 }
+
 /* Logo image. */
 .header__logo-image {
   vertical-align: middle;
 }
+
 /* Wrapper for website name and slogan. */
 .header__name-and-slogan {
   display: inline-block;
@@ -66,11 +69,13 @@
   padding: 0 0 0 20px;
   display: none;
 }
+
 /* The name of the website. */
 .header__site-name {
   margin: 0; //  @include adjust-font-size-to( $h1-font-size * 1.22);
   font-size: 12px;
 }
+
 /* The link around the name of the website. */
 .header__site-link {
   &:link,
@@ -83,25 +88,30 @@
     text-decoration: underline;
   }
 }
+
 /* The slogan (or tagline) of a website. */
 .header__site-slogan {
   margin: 0;
 }
+
 /* The secondary menu (login, etc.) */
 .header__secondary-menu {
   float: right;
 }
+
 /* Wrapper for any blocks placed in the header region. */
 .header__region {
   /* Clear the logo. */
   //  clear: both;
 }
+
 .block__title {
   display: none;
 }
+
 #header .menu {
   float: left;
-  margin:0 0 0 100px;
+  margin:0 0 0 66px;
   padding: 0;
   height:100%;
   height: 55px;
@@ -109,10 +119,10 @@
     display: none;
   }
 }
+
 #header .menu__item {
   height: 100%;
-  @include window_size(tab-wide-up){
-
+  @include window_size(tab-wide-up) {
     margin: 0 15px 0 0;
     padding: 0;
     color: $white;
@@ -128,15 +138,11 @@
   display: none;
 }
 
-
 #header .menu__item--selected {
   height: 100%;
-
-
   @include window_size(tab-wide-up){
     //background-image: url("../images/sublevel_left_menu_bg.png");
     margin: 0 15px 0 0;
-
     //padding: 15px 0 0 0;
     border: 0px solid pink;
     color: $white;
@@ -149,28 +155,27 @@
     background-repeat:repeat-x;
   };
   display: none;
-
 }
 
-#header .menu__item a{
+#header .menu__item a {
   //border:1px solid red;
   //margin: 15px 0 0 0;
   display: block;
+  font-weight: bold;
 }
 
-#header .menu__link{
+#header .menu__link {
   border:0px solid red;
-  margin: 14px 0 0 0;
+  margin: 8px 0 0 0;
   display: block;
 }
-
 
 .menu__hamburger {
   width: 18px;
   height: 15px;
   float: right;
   margin: 16px 16px 0 0;
-  @include window_size(tab-wide-up){
+  @include window_size(tab-wide-up) {
     display: none;
   }
 }
@@ -180,14 +185,12 @@
   height: 16px;
   float: right;
   margin: 16px 16px 0 0;
-  @include window_size(tab-wide-up){
+  @include window_size(tab-wide-up) {
     display: none;
   }
 }
 
-
-
-.menu__hamburger_contents{
+.menu__hamburger_contents {
   background-color: #47aee6;
   position: absolute;
   top:0px;
@@ -195,50 +198,32 @@
   margin: 0px 16px 0 0;
   padding: 47px 0 0 0;
   width: 100%;
-  @include window_size(tab-wide-up){
+  @include window_size(tab-wide-up) {
     display: none;
   }
-
 }
 
-
-
-.menu__hamburger_items{
+.menu__hamburger_items {
   list-style: none;
   margin:0;
   padding: 0;
-
 }
 .menu__item_hamburger {
-
-
   margin: 20px 25px 20px 25px;
   padding: 0 0 20px 0;
-
   color: $white;
   font-size: 1.286em;
   border-bottom: 1px solid #398bb8;
   font-weight: 700;
   list-style: none;
-
-
-
-
 }
 
-.menu__item_hamburger--last{
-
-
+.menu__item_hamburger--last {
   margin: 20px 25px 0 25px;
   padding: 0 0 20px 0;
-
   color: $white;
   font-size: 1.286em;
   border-bottom: 0px solid #398bb8;
   font-weight: 700;
   list-style: none;
-
-
-
-
 }
