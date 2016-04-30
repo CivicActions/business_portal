@@ -54,7 +54,7 @@
 </script>
 
 <script type="text/template" id="wizard-results-cta-template">
-  <p><a class="wizard__button print">Print</a><a class="wizard__button email">Email</a></p>
+  <p><a class="wizard__button print">PRINT</a><a class="wizard__button email">EMAIL</a></p>
 </script>
 <script type="text/template" id="wizard-results-email-template">
   <div id="wizard-email" class="element-invisible">

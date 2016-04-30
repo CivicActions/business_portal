@@ -343,6 +343,11 @@ wiz.views.Email = Backbone.View.extend({
     var emailValidate = '&emailvalidate=' + $( "input[name='emailCheck']" ).val();
     var emailToken = '&emailtoken=' + $( "input[name='form_token']" ).val();
     var message = '&message=' + JSON.stringify($(".wizard__content--results-list" ).html());
+    var strip = ['&nbsp;'];
+    for (var ind = 0; ind < strip.length; ind++) {
+      message = message.replace(strip[ind], '');
+    }
+    console.log(message);
     $.ajax({
         url: '/labp/wizard-email',
         dataType: 'text',
