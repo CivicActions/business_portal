@@ -189,6 +189,9 @@ wiz.views.App = wiz.extensions.View.extend({
           wiz.header = new wiz.views.HeaderForContextual({model: this.model});
           this.$el.append(wiz.header.render().el);
 
+          wiz.desc = new wiz.views.DescriptionForContextual({model: this.model});
+          this.$el.append(wiz.desc.render().el);
+
           wiz.nav = new wiz.views.NavForContext({model: this.model});
           this.$el.append(wiz.nav.render().el);
           break;
@@ -282,6 +285,18 @@ wiz.views.HeaderForQuestion = Backbone.View.extend({
 wiz.views.HeaderForContextual = Backbone.View.extend({
   className: "wizard__header constrained",
   template: _.template($('#header-for-contextual-template').html()),
+  render: function() {
+    this.$el.html(this.template(this.model.toJSON()));
+    return this;
+  }
+});
+
+//////////////////////////////
+// Description for context  //
+//////////////////////////////
+
+wiz.views.DescriptionForContextual = Backbone.View.extend({
+  template: _.template($('#description-for-contextual-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
     return this;
