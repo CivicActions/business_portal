@@ -81,6 +81,18 @@ a.wizard__arrow-up {
 
 }
 
+a.wizard__arrow-back {
+  background-image: image-url("wizard/arrow_up.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  height: 25px;
+  display: block;
+  border⨪bottom: 2px solid white;
+  color: white;
+  text-indent: -150px;
+}
+
 a.wizard__arrow-down {
   background-image: image-url("wizard/arrow_down.png");
   background-repeat: no-repeat;
@@ -109,7 +121,8 @@ a.wizard__arrow-down.enabled.section {
 }
 
 
-.wizard__arrow-up.enabled.left {
+.wizard__arrow-up.enabled.left,
+.wizard__arrow-back.enabled.left {
   background-image: image-url("wizard/arrow_left_enabled_desktop.png");
   display: inline;
   float: right;

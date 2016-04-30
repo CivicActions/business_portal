@@ -92,8 +92,7 @@
 </script>
 
 <script type="text/template" id="wizard-nav-contextual-help-template">
-  <a href="#" class="wizard__arrow-up left enabled">Previous</a>
-  <div class="wizard__nav_label_help">Back to the question</div>
+  <a href="#" class="wizard__arrow-back left enabled">Back to the question</a>
 </script>
 
 <script type="text/template" id="wizard-address-form-template">
