@@ -750,3 +750,7 @@ tr.selected td {
     background-image: image-url("progress.gif");
   }
 }
+
+body.not-logged-in.page-user #main {
+  padding: 100px 100px 50px;
+}
