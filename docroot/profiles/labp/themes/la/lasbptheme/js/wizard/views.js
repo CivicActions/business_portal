@@ -192,7 +192,7 @@ wiz.views.App = wiz.extensions.View.extend({
           wiz.desc = new wiz.views.DescriptionForContextual({model: this.model});
           this.$el.append(wiz.desc.render().el);
 
-          wiz.nav = new wiz.views.NavForContext({model: this.model});
+           wiz.nav = new wiz.views.NavForContext({model: this.model});
           this.$el.append(wiz.nav.render().el);
           break;
 
@@ -797,7 +797,7 @@ wiz.views.NavForContext = Backbone.View.extend({
   className: "wizard__nav_context",
   template: _.template($('#wizard-nav-contextual-help-template').html()),
   events:  {
-    "click .wizard__arrow-up": "backArrowClick"
+    "click .wizard__arrow-back": "backArrowClick"
   },
   backArrowClick: function() {
 
