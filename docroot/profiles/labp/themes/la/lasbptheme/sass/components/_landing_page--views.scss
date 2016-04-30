@@ -179,7 +179,7 @@
 *******************************/
 //Layout for the maps + address area
 .view-id-labp_service_center {
-  $zen-column-count: 12!global;
+  $zen-column-count: 12;
 
   .views-row { @include zen-grid-container(); }
   .views-field-title,
