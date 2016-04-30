@@ -4890,8 +4890,13 @@ fieldset {
     font-size: 1.143em;
   }
 }
+/* line 27, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__checklist_content a {
+  border: 0px solid red;
+  text-decoration: underline;
+}
 
-/* line 28, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 35, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__checklist_content--strong {
   border: 0px solid red;
   width: 75%;
@@ -4899,26 +4904,26 @@ fieldset {
   font-weight: 700;
 }
 @media all and (min-width: 960px) {
-  /* line 28, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 35, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__checklist_content--strong {
     margin: 4px 0 20px 0;
     font-size: 1.143em;
   }
 }
 
-/* line 41, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 48, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__checklist_column_1_wrapper {
   border: 0px solid green;
   margin: 0px 25px 20px 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 41, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 48, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__checklist_column_1_wrapper {
     margin: 4px 0 20px 0;
   }
 }
 
-/* line 51, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 58, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__button--checklist {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -4932,7 +4937,7 @@ fieldset {
   margin: 0 0 20px 0px;
 }
 
-/* line 59, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 66, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__step {
   border-top: 2px solid white;
   color: white;
@@ -4943,13 +4948,13 @@ fieldset {
   padding: 10px 0 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 59, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 66, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__step {
     margin: 0 0 20px 0px;
   }
 }
 
-/* line 72, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 79, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__step_header {
   border: 0px solid pink;
   color: #0F2940;
@@ -4960,26 +4965,27 @@ fieldset {
   font-size: 1.429em;
 }
 @media all and (min-width: 960px) {
-  /* line 72, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 79, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__step_header {
     margin: 0 0 20px 0px;
   }
 }
 
-/* line 85, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 92, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__cheklist_ol {
   border: 0px solid red;
   margin: 4px 25px 20px 0;
   padding: 0 0 0 20px;
 }
 @media all and (min-width: 960px) {
-  /* line 85, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 92, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__cheklist_ol {
     margin: 0 0 20px 0px;
+    font-size: 1.143em;
   }
 }
 
-/* line 95, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 104, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__cheklist_li {
   border: 0px solid pink;
   margin: 10px 0 10px 0;

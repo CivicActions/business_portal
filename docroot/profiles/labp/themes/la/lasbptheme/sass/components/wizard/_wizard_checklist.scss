@@ -24,7 +24,14 @@
         font-size: 1.143em;
 
     }
+    a{
+        border: 0px solid red;
+        text-decoration: underline;
+    }
 }
+
+
+
 .wizard__checklist_content--strong{
     border: 0px solid red;
     width: 75%;
@@ -88,7 +95,9 @@
     padding: 0 0 0 20px;
     @include window_size(desktop){
         margin: 0 0 20px 0px;
+        font-size: 1.143em;
 
+        
     }
 }
 
