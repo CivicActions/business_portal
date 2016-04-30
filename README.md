@@ -78,6 +78,8 @@ All steps below are assumed to be run from the command line
 
 
 ## Compass and SASS installation with Bundler
+Since Zen grids requires a specific set of versions for Compass/SASS/Zen grids gems, it is advisable to compile the SASS files with bundler.
+Using `compass watch` results in unreliable zen grids width calculations.
 
 Note: The directories below assume you are running gem from your local computer.
 
@@ -104,20 +106,14 @@ bundle exec compass clean
 ``` bash
 bundle exec compass compile
 ```
-### Step 5. Configure Solr
+
+### Step 5. Start a compass watch task
+``` bash
+bundle exec compass watch
+```
+
+### Step 6. Configure Solr
 - `bash /assets/configure-solr.sh`
 
 
-## Bundler and Zen Grids known compile issues
 
-There is an ongoing issue with compiling Zen grids into CSS using Compass. It should have been fixed
-in this issue https://www.drupal.org/node/2346291 by following the above instructions but it still has problems.
-We need to compile the SASS using our global gem versions. Update to the following versions of Compass and Sass
-
-* Compass 1.0.3
-* SASS 3.4.20
-
-From your theme folder, run
-``` bash
-compass watch
-```
