@@ -46,12 +46,6 @@
     height: 39px;
     margin: 2px 0 0 0;
   }
-  /*
-  @include breakpoint($medium-and-large) {
-    width: 213px;
-    height: 39px;
-  }
-  */
 }
 
 // Logo.
@@ -228,4 +222,29 @@
   border-bottom: 0px solid #398bb8;
   font-weight: 700;
   list-style: none;
+}
+
+/* Special styles to line header elements up ion the resources section */
+@media (min-width: 960px) {
+  body.section-resources #header {
+    .header--wrapper {
+      width: auto;
+      margin: 0;
+      max-width: none;
+    }
+    .header__logo {
+      width: 30%;
+    }
+    .header__logo-image {
+      height: 38px;
+      float: right;
+      padding-right: 35px;
+    }
+    .header__region {
+      width: 70%;
+    }
+    .menu {
+      margin-left: 28px;
+    }
+  }
 }
