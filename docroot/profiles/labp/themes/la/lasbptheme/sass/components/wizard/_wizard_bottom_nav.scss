@@ -8,14 +8,17 @@
   //bottom: 100px;
   //left: 0;
   //border: 0px solid red;
+    
   @include window_size(tab-wide-up){
-    width:85%;
-    margin: 10px 25px 0 0;
+    width: 85%;
+    margin: 25px 25px 0 0;
+    // border-color: #FFF;
+    // border-width: 2px 0;
+    // border-style: solid;
   }
   @include window_size(desktop){
-    margin: 10px 0 0 0;
-    width:  95%;
-
+    margin: 25px 0 0 0;
+    width: 95%;
   }
 }
 

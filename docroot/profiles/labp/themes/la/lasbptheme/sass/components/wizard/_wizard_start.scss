@@ -3,16 +3,17 @@
   font-weight: 700;
   font-size: 1em;
   margin: 10px 0 10px 0;
-  padding: 0 25px 0 0px;
+  padding: 35px 25px 0 0px;
   width: 100%;
   border: 0px solid red;
   background-image: url("../images/wizard/illustrations/illustration_clouds.png");
   background-size: 112px 48px;
   background-repeat: no-repeat;
-  background-position: 150px 0;
+  background-position: 120px 0;
   @include window_size(tab-wide-up){
     padding: 35px 25px 0 0;
     margin: 60px 0 10px 0;
+    background-position: 150px 0;
   }
 }
 
@@ -26,16 +27,13 @@
   }
 }
 
-
-
-
-.wizard__header--title-start-super{
+.wizard__header--title-start-super {
   border: 0px solid white;
   color: $white;
   font-size: 1.357em;
   margin: 0;
   padding: 0;
-
+  line-height: 1;
 }
 
 .wizard__header--title-start{
