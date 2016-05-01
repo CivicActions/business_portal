@@ -82,10 +82,16 @@
       }
     }
 
-    .panel-col-first,
-    .panel-col-last {
-      padding-bottom: 212px;
-    }
+
+  }
+}
+
+// LA-163 Adding bottom panel to 2-col panel layouts in resource and content pages.
+.section-resources,
+.section-content {
+  .panel-2col-stacked .panel-col-first,
+  .panel-2col-stacked .panel-col-last {
+    padding-bottom: 212px;
   }
 }
 
