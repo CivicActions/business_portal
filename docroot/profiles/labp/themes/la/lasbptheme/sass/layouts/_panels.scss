@@ -36,6 +36,7 @@
         padding: 1.5em 1em 2em 0;
         max-width: 220px;
         float: right;
+        width: 300px;
       }
     }
   }
@@ -79,6 +80,19 @@
       .inside {
         padding: 0.3em 0 2em 30px;
       }
+    }
+
+
+  }
+}
+
+// LA-163 Adding bottom panel to 2-col panel layouts in resource and content pages.
+.section-resources,
+.section-content {
+  .panel-2col-stacked .panel-col-first,
+  .panel-2col-stacked .panel-col-last {
+    @include window_size(desktop) {
+      padding-bottom: 212px;
     }
   }
 }

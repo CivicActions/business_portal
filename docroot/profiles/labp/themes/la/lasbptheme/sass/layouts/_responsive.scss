@@ -43,6 +43,13 @@ $zen-auto-include-item-base: false;
   padding-bottom: 212px;
 }
 
+.section-resources,
+.section-content {
+  #page {
+    padding-bottom: 0px;
+  }
+}
+
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
 #header,
 #content,

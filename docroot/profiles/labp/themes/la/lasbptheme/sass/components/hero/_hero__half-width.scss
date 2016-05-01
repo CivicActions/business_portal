@@ -48,13 +48,16 @@
     color: #fff;
     font-size: 1.1em;
     margin-bottom: 0;
-    font-weight: normal;
+    font-weight: bold;
+    width: 160px;
   }
 
   .hero__business__description {
     color: #fff;
-    font-size: 1.1em;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight: 400;
+    width: 160px;
+    padding-right: 5em;
   }
 
   // Hide business name and description in mobile screens
