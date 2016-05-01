@@ -40,12 +40,12 @@ wiz.models.Screen = Backbone.Model.extend({
   },
 
   // This is called when a button is clicked on.
-  setNext(bidString) {
+  setNext: function(bidString) {
     var bid = bidString.charAt(bidString.length -1);
     if (this.get("buttons")[bid]["Destination Screen"] !== undefined) {
       var nid = this.get("buttons")[bid]["Destination Screen"]["target_id"];
     } else {
-      console.log("APP: Destination screen not defined: ", this.get("buttons"));
+      //console.log("APP: Destination screen not defined: ", this.get("buttons"));
       return;
     }
     this.set({

@@ -143,7 +143,7 @@ wiz.views.App = wiz.extensions.View.extend({
         switch (this.model.get("screen-type")) {
 
         case "start":
-          console.log("APP: Start");
+          //console.log("APP: Start");
           wiz.start = new wiz.views.Start({model: this.model});
           this.$el.append(wiz.start.render().el);
 
@@ -152,7 +152,7 @@ wiz.views.App = wiz.extensions.View.extend({
           break;
 
         case "section":
-          console.log("APP: Section");
+          //console.log("APP: Section");
           wiz.header = new wiz.views.Header({model: this.model});
           this.$el.append(wiz.header.render().el);
 
@@ -164,7 +164,7 @@ wiz.views.App = wiz.extensions.View.extend({
           break;
 
         case "question":
-          console.log("APP: question");
+          //console.log("APP: question");
           wiz.headerForQuestion = new wiz.views.HeaderForQuestion({model: this.model});
           this.$el.append(wiz.headerForQuestion.render().el);
 
@@ -185,7 +185,7 @@ wiz.views.App = wiz.extensions.View.extend({
           break;
 
         case "contextual help":
-          console.log("APP: contextual help");
+          //console.log("APP: contextual help");
           wiz.header = new wiz.views.HeaderForContextual({model: this.model});
           this.$el.append(wiz.header.render().el);
 
@@ -197,7 +197,7 @@ wiz.views.App = wiz.extensions.View.extend({
           break;
 
         case "confirmation":
-          console.log("APP: confirmation");
+          //console.log("APP: confirmation");
 
           wiz.header = new wiz.views.HeaderForConfirm({model: this.model});
           this.$el.append(wiz.header.render().el);
@@ -222,8 +222,8 @@ wiz.views.App = wiz.extensions.View.extend({
           break;
 
         case "address lookup":
-          console.log("APP: address lookup");
-          console.log(this.model);
+          //console.log("APP: address lookup");
+          //console.log(this.model);
 
           wiz.headerForQuestion = new wiz.views.HeaderForQuestion({model: this.model});
           this.$el.append(wiz.headerForQuestion.render().el);
@@ -239,7 +239,7 @@ wiz.views.App = wiz.extensions.View.extend({
           break;
 
         default:
-          console.log("APP: No screen type defined", this.model.get("screen-type") );
+          //console.log("APP: No screen type defined", this.model.get("screen-type") );
           break;
         }
 
@@ -366,7 +366,8 @@ wiz.views.Email = Backbone.View.extend({
     for (var ind = 0; ind < strip.length; ind++) {
       message = message.replace(strip[ind], '');
     }
-    console.log(message);
+    message = message.replace(/(\r\n|\n|\r)/gm, '');
+    //console.log(message);
     $.ajax({
         url: '/labp/wizard-email',
         dataType: 'text',
@@ -374,12 +375,12 @@ wiz.views.Email = Backbone.View.extend({
         contentType: 'application/x-www-form-urlencoded',
         data: email + emailValidate + emailToken + message,
         success: function( data, textStatus, jQxhr ){
-          console.log(data);
+          //console.log(data);
           $("#wizard-email").addClass("element-invisible");
           $( "#message-response" ).html( "Your message has been sent" );
         },
         error: function( jqXhr, textStatus, errorThrown ){
-          console.log( errorThrown );
+          //console.log( errorThrown );
           $("#wizard-email").addClass("element-invisible");
           $( "#message-response" ).html( "There was an error sending your message. If you continue to experience problems, please contact the site administrator." );
         }
@@ -799,7 +800,7 @@ wiz.views.NavForAddress = Backbone.View.extend({
     if (this.model.get("buttons")[bid]["Destination Screen"] !== undefined) {
       nid = this.model.get("buttons")[bid]["Destination Screen"]["target_id"];
     } else {
-      console.log("APP: Destination screen not defined: ", m.get("buttons"));
+      //console.log("APP: Destination screen not defined: ", m.get("buttons"));
       return;
     }
     return nid;
