@@ -91,7 +91,9 @@
 .section-content {
   .panel-2col-stacked .panel-col-first,
   .panel-2col-stacked .panel-col-last {
-    padding-bottom: 212px;
+    @include window_size(desktop) {
+      padding-bottom: 212px;
+    }
   }
 }
 
