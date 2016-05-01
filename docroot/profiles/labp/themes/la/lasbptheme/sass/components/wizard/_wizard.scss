@@ -15,14 +15,15 @@ $wizard_left_margin: 25px;
 
 }
 
-
 // Where the wizard gets loaded.
 .wiz {
   z-index: 9;
-  padding-left: 10%;
+  padding-left: 5%;
   padding-right:  10%;
   padding-bottom: 20px;
-
+  @media (min-width: 720px) {
+    padding-left: 10%;
+  }
 }
 
 .wizard a{

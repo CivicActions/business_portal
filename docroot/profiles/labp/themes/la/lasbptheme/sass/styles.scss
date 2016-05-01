@@ -9,14 +9,12 @@
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
 
-
 /* HTML element (SMACSS base) rules */
 @import "base/typography";
 @import "base/mixins";
 @import "base/print";
 @import "base/normalize";
 @import "base/transitions";
-
 
 /* Layout rules */
 @import "layouts/responsive";
@@ -38,16 +36,14 @@
 @import "components/bottom-region";
 
 /* Wizard */
-
 @import "components/wizard/wizard";
+@import "components/wizard/wizard_header";
 @import "components/wizard/wizard_start";
 @import "components/wizard/wizard_progress_bar";
 @import "components/wizard/wizard_bottom_nav";
 @import "components/wizard/wizard_tip";
 @import "components/wizard/wizard_address";
 @import "components/wizard/wizard_checklist";
-
-
 
 /* Nodes */
 @import "components/node__teaser";
