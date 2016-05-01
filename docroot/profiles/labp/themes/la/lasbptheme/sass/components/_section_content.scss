@@ -61,6 +61,12 @@
   @include panel__button--base($yellow, $navy);
 }
 
+.panel__buttons {
+  a:link, a:visited {
+    color: $navy;
+  }
+}
+
 .panel__background_image {
   display: none;
   @include window_size(desktop) {

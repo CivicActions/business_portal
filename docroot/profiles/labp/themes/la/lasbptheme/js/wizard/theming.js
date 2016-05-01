@@ -1,0 +1,1 @@
+document.get('body').addClass('wizard-page'); 
