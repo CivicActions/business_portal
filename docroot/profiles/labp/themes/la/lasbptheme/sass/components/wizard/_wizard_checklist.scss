@@ -56,8 +56,13 @@
   }
 }
 
-.wizard__content--results-list ul li {
-  list-style: none;
+.wizard__content--results-list {
+  ul li {
+    list-style: none;
+  }
+  a {
+    text-decoration: underline;
+  }
 }
 
 .wizard__result {
