@@ -40,15 +40,15 @@
   form#views-exposed-form-sbp-resource-incentives-panel-pane-1,
   .pane-sbp-terms-definitions {
     border-top: 1px solid $light-blue;
-    width: 70%;
+    width: 100%;
     margin-top: 2em;
     padding-top: 0.8em;
     @include window_size(tab-narrow-up) {
       width: 100%;
     }
 
-    button,
-    a {
+
+    a.facetapi__toggle {
       @extend .panel__button;
       border: 0px;
       margin-left: 1em;

@@ -36,6 +36,7 @@
         padding: 1.5em 1em 2em 0;
         max-width: 220px;
         float: right;
+        width: 300px;
       }
     }
   }
@@ -79,6 +80,11 @@
       .inside {
         padding: 0.3em 0 2em 30px;
       }
+    }
+
+    .panel-col-first,
+    .panel-col-last {
+      padding-bottom: 212px;
     }
   }
 }
