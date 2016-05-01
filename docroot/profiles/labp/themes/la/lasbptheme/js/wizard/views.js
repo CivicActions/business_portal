@@ -102,6 +102,8 @@ wiz.views.App = wiz.extensions.View.extend({
         // Styles for all sections:
        $("body").css("background", "#" + this.model.get("Primary Color"));
 
+        // Clear all the listening events we might have set up on backbone.
+        Backbone.off();
 
        /*
         * Array of views that we have loaded, that will be removed each
@@ -116,7 +118,6 @@ wiz.views.App = wiz.extensions.View.extend({
                  "buttons",
                  "tip",
                  "linkButton",
-                 "header",
                  "results",
                  "addressForm",
                  "bar",
@@ -529,10 +530,8 @@ wiz.views.SelectableButton = Backbone.View.extend({
       console.log(this.model.get("chosenBid"));
       if (this.$el.attr("id") === "button-id-" + this.model.get("chosenBid")) {
         this.$el.addClass("wizard__button--selected");
-        Backbone.trigger("button:selected");
       } else {
         this.$el.removeClass("wizard__button--selected");
-        Backbone.trigger("button:deselected");
       }
     }
   },
@@ -594,7 +593,6 @@ wiz.views.Nav = Backbone.View.extend({
 
   forwardEnabled: function() {
     this.model.set({"selected": true});
-    console.log("trigger fired", this.$el);
     this.$el.find(".wizard__arrow-down").addClass("enabled");
   },
 
@@ -648,6 +646,10 @@ wiz.views.Nav = Backbone.View.extend({
       wiz.arrows = new wiz.views.NavContextualHelp();
       this.$el.append(wiz.arrows.render().el);
       break;
+    }
+
+    if (this.model.get("selected")) {
+      this.forwardEnabled();
     }
     return this;
   }
