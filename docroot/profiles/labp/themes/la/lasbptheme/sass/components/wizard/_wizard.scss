@@ -26,9 +26,15 @@ $wizard_left_margin: 25px;
   }
 }
 
-.wizard a{
-  color: $wizard-text;
-  font-size: 1em;
+.wizard {
+  a {
+    color: $wizard-text;
+    font-size: 1em;
+    text-decoration: underline;
+  }
+  p {
+    padding: 0.7em 0 0;
+  }
 }
 
 
@@ -200,7 +206,7 @@ a.wizard__button--selected {
   text-decoration: none;
   padding: 8px 40px 8px 30px;
   color: $wizard__button_text--selected;
-  background: url("../images/wizard/icon_checkmark--small.png") $wizard__button--selected no-repeat 80% 50%;
+  background: url("../images/wizard/icon_checkmark--small.png") $wizard__button--selected no-repeat 87% 50%;
 }
 
 .wizard__button--selected-icon {
@@ -219,12 +225,12 @@ a.wizard__button--selected {
   font-size: 0.929em;
   border:0px solid red;
   @include window_size(tab-wide-up){
-        font-size: 1.357em;
+        font-size: 0.929em;
         width: 80%;
   }
   @include window_size(desktop){
-      width: 80%;
-      font-size: 1.357em;
+      width: 60%;
+      font-size: 1.187em;
       margin: 10px 20px 15px 0;
   }
 }
