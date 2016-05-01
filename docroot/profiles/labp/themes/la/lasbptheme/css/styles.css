@@ -1130,8 +1130,14 @@ table {
   /* max-width: 1200px; */
 }
 
-/* Apply the shared properties of grid items in a single, efficient ruleset. */
+/* LA-183: adding 212px padding to bottom of page element (160px + 52x fixed footer) */
 /* line 42, ../sass/layouts/_responsive.scss */
+#page {
+  padding-bottom: 212px;
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+/* line 47, ../sass/layouts/_responsive.scss */
 #header,
 #content,
 #navigation,
@@ -1147,7 +1153,7 @@ table {
   word-wrap: break-word;
 }
 
-/* line 52, ../sass/layouts/_responsive.scss */
+/* line 57, ../sass/layouts/_responsive.scss */
 #content {
   padding-left: 0;
   padding-right: 0;
@@ -1178,19 +1184,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 80, ../sass/layouts/_responsive.scss */
+  /* line 85, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 82, ../sass/layouts/_responsive.scss */
+  /* line 87, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 87, ../sass/layouts/_responsive.scss */
+  /* line 92, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1201,19 +1207,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 95, ../sass/layouts/_responsive.scss */
+  /* line 100, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 97, ../sass/layouts/_responsive.scss */
+  /* line 102, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-  /* line 102, ../sass/layouts/_responsive.scss */
+  /* line 107, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -1224,27 +1230,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 110, ../sass/layouts/_responsive.scss */
+  /* line 115, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 112, ../sass/layouts/_responsive.scss */
+  /* line 117, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 117, ../sass/layouts/_responsive.scss */
+  /* line 122, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-  /* line 122, ../sass/layouts/_responsive.scss */
+  /* line 127, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -1258,7 +1264,7 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 128, ../sass/layouts/_responsive.scss */
+  /* line 133, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -1268,7 +1274,7 @@ table {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 132, ../sass/layouts/_responsive.scss */
+  /* line 137, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -1276,14 +1282,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-  /* line 137, ../sass/layouts/_responsive.scss */
+  /* line 142, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-  /* line 141, ../sass/layouts/_responsive.scss */
+  /* line 146, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -1298,19 +1304,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 158, ../sass/layouts/_responsive.scss */
+  /* line 163, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 160, ../sass/layouts/_responsive.scss */
+  /* line 165, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 165, ../sass/layouts/_responsive.scss */
+  /* line 170, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1321,19 +1327,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 173, ../sass/layouts/_responsive.scss */
+  /* line 178, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 175, ../sass/layouts/_responsive.scss */
+  /* line 180, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 180, ../sass/layouts/_responsive.scss */
+  /* line 185, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1344,27 +1350,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 188, ../sass/layouts/_responsive.scss */
+  /* line 193, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 190, ../sass/layouts/_responsive.scss */
+  /* line 195, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 195, ../sass/layouts/_responsive.scss */
+  /* line 200, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 200, ../sass/layouts/_responsive.scss */
+  /* line 205, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -3573,15 +3579,14 @@ hr.hero__line--half {
 .wizard a {
   color: #0f2940;
   font-size: 1em;
-  text-decoration: underline;
 }
-/* line 44, ../sass/components/wizard/_wizard.scss */
+/* line 43, ../sass/components/wizard/_wizard.scss */
 .wizard p {
   padding: 0.7em 0 0;
 }
 
 @media all and (min-width: 960px) {
-  /* line 50, ../sass/components/wizard/_wizard.scss */
+  /* line 49, ../sass/components/wizard/_wizard.scss */
   .homepage_panel__content_wrapper {
     width: 100%;
     margin-left: auto;
@@ -3589,12 +3594,12 @@ hr.hero__line--half {
   }
 }
 
-/* line 59, ../sass/components/wizard/_wizard.scss */
+/* line 58, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-screen--register-business {
   background-color: #89d5c4;
 }
 
-/* line 64, ../sass/components/wizard/_wizard.scss */
+/* line 63, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block {
   display: inline-block;
   border: 0px solid black;
@@ -3602,13 +3607,13 @@ hr.hero__line--half {
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 64, ../sass/components/wizard/_wizard.scss */
+  /* line 63, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block {
     padding: 0;
   }
 }
 
-/* line 75, ../sass/components/wizard/_wizard.scss */
+/* line 74, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-block {
   display: inline-block;
   border: 0px solid black;
@@ -3617,26 +3622,26 @@ hr.hero__line--half {
   margin: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 75, ../sass/components/wizard/_wizard.scss */
+  /* line 74, ../sass/components/wizard/_wizard.scss */
   .wizard__intro-block {
     margin: 0;
   }
 }
 
-/* line 86, ../sass/components/wizard/_wizard.scss */
+/* line 85, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block--help {
   display: inline-block;
   border: 0px solid black;
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 86, ../sass/components/wizard/_wizard.scss */
+  /* line 85, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block--help {
     padding: 0;
   }
 }
 
-/* line 98, ../sass/components/wizard/_wizard.scss */
+/* line 97, ../sass/components/wizard/_wizard.scss */
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
@@ -3646,13 +3651,13 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 98, ../sass/components/wizard/_wizard.scss */
+  /* line 97, ../sass/components/wizard/_wizard.scss */
   .wizard__header {
     padding: 35px 25px 0 0;
   }
 }
 
-/* line 111, ../sass/components/wizard/_wizard.scss */
+/* line 110, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title {
   font-weight: 700;
   font-size: 1em;
@@ -3662,13 +3667,13 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 111, ../sass/components/wizard/_wizard.scss */
+  /* line 110, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title {
     font-size: 1.357em;
   }
 }
 
-/* line 127, ../sass/components/wizard/_wizard.scss */
+/* line 126, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-government {
   font-size: 0.857em;
   text-transform: uppercase;
@@ -3678,13 +3683,13 @@ hr.hero__line--half {
   font-weight: 700;
 }
 @media all and (min-width: 960px) {
-  /* line 127, ../sass/components/wizard/_wizard.scss */
+  /* line 126, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-government {
     font-size: 1.071em;
   }
 }
 
-/* line 141, ../sass/components/wizard/_wizard.scss */
+/* line 140, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-intro {
   font-weight: 700;
   font-size: 1em;
@@ -3695,13 +3700,13 @@ hr.hero__line--half {
   font-size: 1.357em;
 }
 @media all and (min-width: 960px) {
-  /* line 141, ../sass/components/wizard/_wizard.scss */
+  /* line 140, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-intro {
     font-size: 2.571em;
   }
 }
 
-/* line 157, ../sass/components/wizard/_wizard.scss */
+/* line 156, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -3711,7 +3716,7 @@ hr.hero__line--half {
   margin: 0;
 }
 
-/* line 165, ../sass/components/wizard/_wizard.scss */
+/* line 164, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3722,14 +3727,14 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 165, ../sass/components/wizard/_wizard.scss */
+  /* line 164, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
 
-/* line 179, ../sass/components/wizard/_wizard.scss */
+/* line 178, ../sass/components/wizard/_wizard.scss */
 .wizard__question--help {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3745,7 +3750,7 @@ hr.hero__line--half {
   background-size: 40px 40px;
 }
 
-/* line 197, ../sass/components/wizard/_wizard.scss */
+/* line 196, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0px solid white;
   margin: 28px 0 28px 0;
@@ -3753,7 +3758,7 @@ hr.hero__line--half {
   *zoom: 1;
 }
 
-/* line 203, ../sass/components/wizard/_wizard.scss */
+/* line 202, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3766,17 +3771,17 @@ hr.hero__line--half {
   cursor: pointer;
 }
 
-/* line 206, ../sass/components/wizard/_wizard.scss */
+/* line 205, ../sass/components/wizard/_wizard.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
-/* line 209, ../sass/components/wizard/_wizard.scss */
+/* line 208, ../sass/components/wizard/_wizard.scss */
 a.wizard__button:focus {
   outline: none;
 }
 
-/* line 214, ../sass/components/wizard/_wizard.scss */
+/* line 213, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   text-decoration: none;
   padding: 8px 40px 8px 30px;
@@ -3784,28 +3789,32 @@ a.wizard__button--selected {
   background: url("../images/wizard/icon_checkmark--small.png") #0f2940 no-repeat 87% 50%;
 }
 
-/* line 221, ../sass/components/wizard/_wizard.scss */
+/* line 220, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 231, ../sass/components/wizard/_wizard.scss */
+/* line 230, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   margin: 15px 0px 20px 0;
   font-size: 0.929em;
   border: 0px solid red;
 }
+/* line 235, ../sass/components/wizard/_wizard.scss */
+.wizard__copy--section_intro a {
+  text-decoration: underline;
+}
 @media all and (min-width: 720px) {
-  /* line 231, ../sass/components/wizard/_wizard.scss */
+  /* line 230, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     font-size: 0.929em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 231, ../sass/components/wizard/_wizard.scss */
+  /* line 230, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
     width: 60%;
     font-size: 1.187em;
@@ -3851,42 +3860,52 @@ a.wizard__button--selected {
     width: 95%;
   }
 }
+@media (min-width: 0px) and (max-width: 719px) {
+  /* line 280, ../sass/components/wizard/_wizard.scss */
+  .wizard__illustration {
+    margin: 0;
+    padding: 0;
+    width: 131%;
+    max-width: none;
+    margin-left: -7%;
+  }
+}
 
-/* line 290, ../sass/components/wizard/_wizard.scss */
+/* line 297, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 290, ../sass/components/wizard/_wizard.scss */
+  /* line 297, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 301, ../sass/components/wizard/_wizard.scss */
+/* line 308, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 301, ../sass/components/wizard/_wizard.scss */
+  /* line 308, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
-/* line 308, ../sass/components/wizard/_wizard.scss */
+/* line 315, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content a {
   text-decoration: underline;
 }
-/* line 311, ../sass/components/wizard/_wizard.scss */
+/* line 318, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content p {
   margin: 1em 0;
 }
 
-/* line 316, ../sass/components/wizard/_wizard.scss */
+/* line 323, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -3898,7 +3917,7 @@ a.wizard__button--selected {
 
 /* Special styles to line header elements up in the startup guide (wizard) section */
 @media (min-width: 720px) {
-  /* line 5, ../sass/components/wizard/_wizard_header.scss */
+  /* line 7, ../sass/components/wizard/_wizard_header.scss */
   body.section-start #header .header--wrapper {
     width: auto;
     max-width: none;
@@ -3923,6 +3942,7 @@ a.wizard__button--selected {
     margin-left: 28px;
   }
 }
+
 /* line 2, ../sass/components/wizard/_wizard_start.scss */
 .wizard__header--start {
   font-weight: 700;
@@ -4725,12 +4745,16 @@ a.wizard__arrow-down.enabled.section {
   margin: 0 0 20px 0px;
 }
 
-/* line 59, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 60, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__content--results-list ul li {
   list-style: none;
 }
-
 /* line 63, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__content--results-list a {
+  text-decoration: underline;
+}
+
+/* line 68, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__result {
   font-family: "Roboto", sans-serif;
   color: #0F2940;
@@ -4739,32 +4763,32 @@ a.wizard__arrow-down.enabled.section {
   text-transform: none;
 }
 
-/* line 71, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 76, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__result p {
   margin-top: 18px;
   margin-bottom: 18px;
 }
 
-/* line 76, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 81, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__result h3 {
   font-weight: 400;
   font-size: 1.429em;
   font-family: Merriweather, serif;
 }
 
-/* line 82, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 87, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__result ul li,
 .wizard__result ol li {
   display: list-item;
   font-size: 87.5%;
 }
 
-/* line 88, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 93, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__result ol {
   list-style-type: decimal;
 }
 
-/* line 92, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 97, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__result_buttons a {
   color: #0F2940;
   font-size: 1em;
@@ -4780,7 +4804,7 @@ a.wizard__arrow-down.enabled.section {
   display: inline-block;
 }
 
-/* line 107, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 112, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__step {
   border-top: 2px solid white;
   color: white;
@@ -4791,7 +4815,7 @@ a.wizard__arrow-down.enabled.section {
   padding: 10px 0 0 0;
 }
 
-/* line 117, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 122, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__step_header {
   border: 0px solid pink;
   color: #0f2940;
@@ -4802,35 +4826,47 @@ a.wizard__arrow-down.enabled.section {
   font-size: 1.429em;
 }
 @media all and (min-width: 960px) {
-  /* line 117, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 122, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__step_header {
     margin: 0 0 20px 0px;
   }
 }
 
-/* line 130, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 135, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__cheklist_ol {
   border: 0px solid red;
   margin: 4px 25px 20px 0;
   padding: 0 0 0 20px;
 }
 @media all and (min-width: 960px) {
-  /* line 130, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 135, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__cheklist_ol {
     margin: 0 0 20px 0px;
   }
 }
 
-/* line 140, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 145, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__cheklist_li {
   border: 0px solid pink;
   margin: 10px 0 10px 0;
   padding: 0;
 }
 
-/* line 146, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 151, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__content--results-cta {
   margin-top: 1.5em;
+}
+
+/* LA-183: hiding the footer in wizard on mobile */
+@media (min-width: 0px) and (max-width: 719px) {
+  /* line 7, ../sass/components/wizard/_wizard_footer.scss */
+  body.section-start #page {
+    padding-bottom: 10px;
+  }
+  /* line 11, ../sass/components/wizard/_wizard_footer.scss */
+  body.section-start .region--bottom {
+    display: none;
+  }
 }
 
 /* Nodes */
@@ -5156,24 +5192,29 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   }
 }
 
-/* line 64, ../sass/components/_section_content.scss */
+/* line 65, ../sass/components/_section_content.scss */
+.panel__buttons a:link, .panel__buttons a:visited {
+  color: #163549;
+}
+
+/* line 70, ../sass/components/_section_content.scss */
 .panel__background_image {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 64, ../sass/components/_section_content.scss */
+  /* line 70, ../sass/components/_section_content.scss */
   .panel__background_image {
     display: block;
     width: 45%;
     float: right;
   }
-  /* line 70, ../sass/components/_section_content.scss */
+  /* line 76, ../sass/components/_section_content.scss */
   .panel__background_image img {
     vertical-align: bottom;
   }
 }
 
-/* line 76, ../sass/components/_section_content.scss */
+/* line 82, ../sass/components/_section_content.scss */
 .pane-bundle-section-content > .pane-title {
   display: none;
 }
@@ -5191,7 +5232,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 83, ../sass/components/_section_content.scss */
+  /* line 89, ../sass/components/_section_content.scss */
   .panel__content_wrapper {
     margin-left: auto;
     margin-right: auto;
