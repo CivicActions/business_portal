@@ -29,7 +29,10 @@ wiz.models.Screen = Backbone.Model.extend({
     var storedBid = this.get("chosenBid");
     var bid = bidString.charAt(bidString.length -1);
     if (bid !== storedBid) {
-      this.set({selected: true});
+      this.set({
+        selected: true,
+        storedBid: bid
+      });
     }
     if (bid === storedBid) {
       this.set({selected: !this.get("selected")});

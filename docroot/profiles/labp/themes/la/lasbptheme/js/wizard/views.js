@@ -144,7 +144,6 @@ wiz.views.App = wiz.extensions.View.extend({
 
         case "start":
           console.log("APP: Start");
-
           wiz.start = new wiz.views.Start({model: this.model});
           this.$el.append(wiz.start.render().el);
 
@@ -337,6 +336,9 @@ wiz.views.Intro = Backbone.View.extend({
 wiz.views.Start = Backbone.View.extend({
   className: "wizard__intro-block constrained",
   template: _.template($('#start-template').html()),
+  initialize: function() {
+
+  },
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
     return this;
@@ -527,7 +529,6 @@ wiz.views.SelectableButton = Backbone.View.extend({
 
   updateSelectedClass: function() {
     if (this.model.get("selected")) {
-      console.log(this.model.get("chosenBid"));
       if (this.$el.attr("id") === "button-id-" + this.model.get("chosenBid")) {
         this.$el.addClass("wizard__button--selected");
       } else {
