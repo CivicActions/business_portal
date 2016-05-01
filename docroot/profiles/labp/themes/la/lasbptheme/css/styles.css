@@ -1136,8 +1136,14 @@ table {
   padding-bottom: 212px;
 }
 
+/* line 48, ../sass/layouts/_responsive.scss */
+.section-resources #page,
+.section-content #page {
+  padding-bottom: 0px;
+}
+
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-/* line 47, ../sass/layouts/_responsive.scss */
+/* line 54, ../sass/layouts/_responsive.scss */
 #header,
 #content,
 #navigation,
@@ -1153,7 +1159,7 @@ table {
   word-wrap: break-word;
 }
 
-/* line 57, ../sass/layouts/_responsive.scss */
+/* line 64, ../sass/layouts/_responsive.scss */
 #content {
   padding-left: 0;
   padding-right: 0;
@@ -1184,19 +1190,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 85, ../sass/layouts/_responsive.scss */
+  /* line 92, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 87, ../sass/layouts/_responsive.scss */
+  /* line 94, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 92, ../sass/layouts/_responsive.scss */
+  /* line 99, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1207,19 +1213,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 100, ../sass/layouts/_responsive.scss */
+  /* line 107, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 102, ../sass/layouts/_responsive.scss */
+  /* line 109, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-  /* line 107, ../sass/layouts/_responsive.scss */
+  /* line 114, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -1230,27 +1236,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 115, ../sass/layouts/_responsive.scss */
+  /* line 122, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 117, ../sass/layouts/_responsive.scss */
+  /* line 124, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 122, ../sass/layouts/_responsive.scss */
+  /* line 129, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-  /* line 127, ../sass/layouts/_responsive.scss */
+  /* line 134, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -1264,7 +1270,7 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 133, ../sass/layouts/_responsive.scss */
+  /* line 140, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -1274,7 +1280,7 @@ table {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 137, ../sass/layouts/_responsive.scss */
+  /* line 144, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -1282,14 +1288,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-  /* line 142, ../sass/layouts/_responsive.scss */
+  /* line 149, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-  /* line 146, ../sass/layouts/_responsive.scss */
+  /* line 153, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -1304,19 +1310,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 163, ../sass/layouts/_responsive.scss */
+  /* line 170, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 165, ../sass/layouts/_responsive.scss */
+  /* line 172, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 170, ../sass/layouts/_responsive.scss */
+  /* line 177, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1327,19 +1333,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 178, ../sass/layouts/_responsive.scss */
+  /* line 185, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 180, ../sass/layouts/_responsive.scss */
+  /* line 187, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 185, ../sass/layouts/_responsive.scss */
+  /* line 192, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1350,27 +1356,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 193, ../sass/layouts/_responsive.scss */
+  /* line 200, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 195, ../sass/layouts/_responsive.scss */
+  /* line 202, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 200, ../sass/layouts/_responsive.scss */
+  /* line 207, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 205, ../sass/layouts/_responsive.scss */
+  /* line 212, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1428,21 +1434,22 @@ table {
     padding: 1.5em 1em 2em 0;
     max-width: 220px;
     float: right;
+    width: 300px;
   }
 }
-/* line 44, ../sass/layouts/_panels.scss */
+/* line 45, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 45, ../sass/layouts/_panels.scss */
+/* line 46, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 48, ../sass/layouts/_panels.scss */
+/* line 49, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 57, ../sass/layouts/_panels.scss */
+/* line 58, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
@@ -1456,7 +1463,7 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-/* line 62, ../sass/layouts/_panels.scss */
+/* line 63, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first,
 .panel-2col-stacked .panel-col-last {
   float: none;
@@ -1464,30 +1471,35 @@ table {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 70, ../sass/layouts/_panels.scss */
+  /* line 71, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 77, ../sass/layouts/_panels.scss */
+  /* line 78, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
     width: 70%;
     margin-left: 30%;
     margin-right: -100%;
   }
-  /* line 79, ../sass/layouts/_panels.scss */
+  /* line 80, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding: 0.3em 0 2em 30px;
+  }
+  /* line 85, ../sass/layouts/_panels.scss */
+  .panel-2col-stacked .panel-col-first,
+  .panel-2col-stacked .panel-col-last {
+    padding-bottom: 212px;
   }
 }
 
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 89, ../sass/layouts/_panels.scss */
+/* line 95, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -2254,7 +2266,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1461855791');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -2904,60 +2916,63 @@ hr.hero__line--half {
   color: #fff;
   font-size: 1.1em;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: bold;
+  width: 160px;
 }
-/* line 54, ../sass/components/hero/_hero__half-width.scss */
+/* line 55, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__description {
   color: #fff;
-  font-size: 1.1em;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 400;
+  width: 160px;
+  padding-right: 5em;
 }
-/* line 61, ../sass/components/hero/_hero__half-width.scss */
+/* line 64, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name,
 .hero__layout--half .hero__business__description,
 .hero__layout--half .hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 61, ../sass/components/hero/_hero__half-width.scss */
+  /* line 64, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__name,
   .hero__layout--half .hero__business__description,
   .hero__layout--half .hero__line--half {
     display: block;
   }
 }
-/* line 73, ../sass/components/hero/_hero__half-width.scss */
+/* line 76, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .right .hero__header--inner {
   padding: 1em 0 30px;
 }
 @media all and (min-width: 960px) {
-  /* line 73, ../sass/components/hero/_hero__half-width.scss */
+  /* line 76, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right .hero__header--inner {
     padding: 6em 30px 0;
     max-width: 700px;
   }
 }
-/* line 81, ../sass/components/hero/_hero__half-width.scss */
+/* line 84, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
   margin: 0.8em 1em 0 2em;
   font-size: 1.143em;
 }
 @media all and (min-width: 960px) {
-  /* line 81, ../sass/components/hero/_hero__half-width.scss */
+  /* line 84, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
     font-size: 1.4em;
     line-height: 1.4;
     margin: 30px 0;
   }
 }
-/* line 91, ../sass/components/hero/_hero__half-width.scss */
+/* line 94, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline,
 .hero__layout--half .hero__headline--half,
 .hero__layout--half .hero__headline--half--mobile {
   font-size: 1.8em;
 }
 @media all and (min-width: 960px) {
-  /* line 91, ../sass/components/hero/_hero__half-width.scss */
+  /* line 94, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -2965,23 +2980,23 @@ hr.hero__line--half {
     margin: 1em 0 0;
   }
 }
-/* line 101, ../sass/components/hero/_hero__half-width.scss */
+/* line 104, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
 @media all and (min-width: 960px) {
-  /* line 101, ../sass/components/hero/_hero__half-width.scss */
+  /* line 104, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__background-image {
     background-size: auto 100%;
   }
 }
-/* line 109, ../sass/components/hero/_hero__half-width.scss */
+/* line 112, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay {
   position: relative;
   overflow: hidden;
 }
-/* line 125, ../sass/components/hero/_hero__half-width.scss */
+/* line 128, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   width: 100%;
   padding-left: 0;
@@ -2996,14 +3011,14 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 133, ../sass/components/hero/_hero__half-width.scss */
+  /* line 136, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 134, ../sass/components/hero/_hero__half-width.scss */
+  /* line 137, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 70%;
@@ -3744,7 +3759,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461855791');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4079,7 +4094,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461855791');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -4143,7 +4158,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4153,7 +4168,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4163,7 +4178,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4238,7 +4253,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4249,7 +4264,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4260,7 +4275,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -4304,7 +4319,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461855791');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4392,7 +4407,7 @@ hr.wizard__arrow-line {
 
 /* line 71, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461855791');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4412,7 +4427,7 @@ a.wizard__arrow-up {
 
 /* line 88, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_up.png?1461855791');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 24px;
@@ -4425,7 +4440,7 @@ a.wizard__arrow-back {
 
 /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461855791');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position-y: 50%;
@@ -4445,7 +4460,7 @@ a.wizard__arrow-down {
 
 /* line 117, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461855791');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4460,7 +4475,7 @@ a.wizard__arrow-down.enabled.section {
 /* line 130, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461855791');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   display: inline-block;
   background-position-y: 50%;
   float: right;
@@ -4481,7 +4496,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 150, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1461855791');
+  background-image: url('../images/wizard/arrow_down_filled.png?1462127234');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4538,7 +4553,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461855791');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 
@@ -5166,10 +5181,8 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 
 /* line 60, ../sass/components/_section_content.scss */
-.panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button,
-.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a,
-.panel-2col-stacked .pane-sbp-terms-definitions button,
-.panel-2col-stacked .pane-sbp-terms-definitions a {
+.panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle,
+.panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -5182,18 +5195,14 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   cursor: pointer;
 }
 /* line 173, ../sass/base/_mixins.scss */
-.panel__button a, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button a,
-.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a a,
-.panel-2col-stacked .pane-sbp-terms-definitions button a,
-.panel-2col-stacked .pane-sbp-terms-definitions a a {
+.panel__button a, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle a,
+.panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle a {
   color: #163549;
 }
 @media all and (min-width: 960px) {
   /* line 60, ../sass/components/_section_content.scss */
-  .panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button,
-  .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a,
-  .panel-2col-stacked .pane-sbp-terms-definitions button,
-  .panel-2col-stacked .pane-sbp-terms-definitions a {
+  .panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle,
+  .panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle {
     font-size: 1.143em;
   }
 }
@@ -5296,7 +5305,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1,
 .panel-2col-stacked .pane-sbp-terms-definitions {
   border-top: 1px solid #88cff5;
-  width: 70%;
+  width: 100%;
   margin-top: 2em;
   padding-top: 0.8em;
 }
@@ -5307,20 +5316,16 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     width: 100%;
   }
 }
-/* line 50, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button,
-.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a,
-.panel-2col-stacked .pane-sbp-terms-definitions button,
-.panel-2col-stacked .pane-sbp-terms-definitions a {
+/* line 51, ../sass/components/_left_sidebar.scss */
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle,
+.panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle {
   border: 0px;
   margin-left: 1em;
   outline: none;
 }
 /* line 56, ../sass/components/_left_sidebar.scss */
-.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button:focus,
-.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a:focus,
-.panel-2col-stacked .pane-sbp-terms-definitions button:focus,
-.panel-2col-stacked .pane-sbp-terms-definitions a:focus {
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle:focus,
+.panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle:focus {
   background: #ffc929;
 }
 /* line 60, ../sass/components/_left_sidebar.scss */
