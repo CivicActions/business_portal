@@ -190,9 +190,6 @@ $wizard_left_margin: 25px;
   background-size: 40px 40px;
 }
 
-
-
-
 .wizard__buttons {
   border: 0px solid white;
   margin: 28px 0 28px 0;
@@ -222,11 +219,7 @@ a.wizard__button--selected {
   margin: 0 0 0 3px;
 }
 
-
-
-
 // used on the intro screen
-
 .wizard__copy--section_intro {
   padding: 0;
   margin: 15px 0px 20px 0;
@@ -243,9 +236,6 @@ a.wizard__button--selected {
       margin: 10px 20px 15px 0;
   }
 }
-
-
-
 
 .wizard__icon{
 //    float: right;
@@ -276,7 +266,6 @@ a.wizard__button--selected {
     @include clearfix;
 }
 
-
 .wizard__illustration {
   border: 0px solid blue;
   margin:0 0 0 0;
@@ -295,37 +284,34 @@ a.wizard__button--selected {
 }
 
 .wizard__illustration img{
+  width: 100%;
+  height:100%;
+  @include window_size(desktop){
     width: 100%;
     height:100%;
-    @include window_size(desktop){
-        width: 100%;
-        height:100%;
-    }
-
-
+  }
 }
 
 .wizard__help_content{
-    border: 0px solid red;
-    width: 90%;
-    margin:20px 0 20px 0;
-    @include window_size(desktop){
-        width: 60%;
-    }
-    a {
-      text-decoration: underline;
-    }
-    p {
-      margin: 1em 0;
-    }
+  border: 0px solid red;
+  width: 90%;
+  margin:20px 0 20px 0;
+  @include window_size(desktop){
+    width: 60%;
+  }
+  a {
+    text-decoration: underline;
+  }
+  p {
+    margin: 1em 0;
+  }
 }
 
 .wizard__help_hr{
-    height: 2px;
-    max-width: 80px;
-    background: $dark_blue;
-    display: block;
-    border: 0 none;
-    margin: 0;
-
+  height: 2px;
+  max-width: 80px;
+  background: $dark_blue;
+  display: block;
+  border: 0 none;
+  margin: 0;
 }
