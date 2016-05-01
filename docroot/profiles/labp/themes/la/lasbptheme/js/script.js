@@ -97,7 +97,7 @@ Drupal.behaviors.rotator = {
     attach: function(context, settings) {
       var width = $(window).width();
       var buttonWrapper = $("form#views-exposed-form-sbp-resource-incentives-panel-pane-1");
-      var toggleButton = $("<button>Search or filter documents</button>");
+      var toggleButton = $("<a>Search or filter documents</a>");
 
       if(width < 960) {
         // Create the toggle button.
