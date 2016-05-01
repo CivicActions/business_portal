@@ -12,7 +12,16 @@ $wizard_left_margin: 25px;
   @include window_size(desktop){
       margin-top: 60px;
   }
+}
 
+.page-node-6 .region--bottom {
+  margin-top: 2em;
+  @media all and (min-width: 720px) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 // Where the wizard gets loaded.
