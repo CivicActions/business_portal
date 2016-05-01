@@ -645,7 +645,7 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 /* line 143, ../sass/base/_normalize.scss */
-a:link {
+a:link, a:visited {
   color: #50b0e5;
   text-decoration: none;
 }
