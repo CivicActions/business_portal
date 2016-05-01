@@ -346,6 +346,7 @@ wiz.views.Start = Backbone.View.extend({
 // Email //
 ///////////
 
+
 wiz.views.Email = Backbone.View.extend({
   template: _.template($('#wizard-results-email-template').html()),
   events:  {
@@ -519,8 +520,23 @@ wiz.views.SelectableButton = Backbone.View.extend({
     this.$el.attr("href", "#");
     this.$el.attr("id", "button-id-" + this.index);
     this.$el.text(this.button["Button Title"]["#markup"]);
+    this.updateSelectedClass();
     return this;
-  }
+  },
+
+  updateSelectedClass: function() {
+    if (this.model.get("selected")) {
+      console.log(this.model.get("chosenBid"));
+      if (this.$el.attr("id") === "button-id-" + this.model.get("chosenBid")) {
+        this.$el.addClass("wizard__button--selected");
+        Backbone.trigger("button:selected");
+      } else {
+        this.$el.removeClass("wizard__button--selected");
+        Backbone.trigger("button:deselected");
+      }
+    }
+  },
+
 });
 
 
@@ -543,7 +559,8 @@ wiz.views.Button = Backbone.View.extend({
     this.$el.attr("id", "button-id-" + this.index);
     this.$el.text(this.button["Button Title"]["#markup"]);
     return this;
-  }
+  },
+
 });
 
 
@@ -576,12 +593,13 @@ wiz.views.Nav = Backbone.View.extend({
   },
 
   forwardEnabled: function() {
-    wiz.collections.chosen.selected = true;
+    this.model.set({"selected": true});
+    console.log("trigger fired", this.$el);
     this.$el.find(".wizard__arrow-down").addClass("enabled");
   },
 
   forwardDisabled: function() {
-    this.$el.find(".wizard__arrow-down").removeClass("enabled");
+   this.$el.find(".wizard__arrow-down").removeClass("enabled");
   },
 
   events:  {
@@ -737,12 +755,12 @@ wiz.views.NavForAddress = Backbone.View.extend({
   },
 
   forwardEnabled: function() {
-    wiz.collections.chosen.selected = true;
+    this.model.set({selected: true});
     this.$el.find(".wizard__arrow-down").addClass("enabled");
   },
 
   forwardDisabled: function() {
-    wiz.collections.chosen.selected = false;
+    this.model.set({selected: true});
     this.$el.find(".wizard__arrow-down").removeClass("enabled");
   },
 
