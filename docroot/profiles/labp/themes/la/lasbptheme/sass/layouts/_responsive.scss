@@ -38,6 +38,11 @@ $zen-auto-include-item-base: false;
   /* max-width: 1200px; */
 }
 
+/* LA-183: adding 212px padding to bottom of page element (160px + 52x fixed footer) */
+#page {
+  padding-bottom: 212px;
+}
+
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
 #header,
 #content,
