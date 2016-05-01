@@ -100,7 +100,8 @@
   background-color: #fff;
   padding: 8px 35px 8px 35px;
   cursor: pointer;
-  margin: 0 0 20px 0px;
+  margin: 0;
+  display: inline-block;
 }
 
 .wizard__step{
@@ -140,4 +141,8 @@
     border:0px solid pink;
     margin:10px 0 10px 0;
     padding: 0;
+}
+
+.wizard__content--results-cta {
+    margin-top: 1.5em;
 }

@@ -2242,7 +2242,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1461957891');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -3545,14 +3545,19 @@ hr.hero__line--half {
   }
 }
 
-/* line 29, ../sass/components/wizard/_wizard.scss */
+/* line 30, ../sass/components/wizard/_wizard.scss */
 .wizard a {
   color: #0f2940;
   font-size: 1em;
+  text-decoration: underline;
+}
+/* line 35, ../sass/components/wizard/_wizard.scss */
+.wizard p {
+  padding: 0.7em 0 0;
 }
 
 @media all and (min-width: 960px) {
-  /* line 35, ../sass/components/wizard/_wizard.scss */
+  /* line 41, ../sass/components/wizard/_wizard.scss */
   .homepage_panel__content_wrapper {
     width: 100%;
     margin-left: auto;
@@ -3560,12 +3565,12 @@ hr.hero__line--half {
   }
 }
 
-/* line 44, ../sass/components/wizard/_wizard.scss */
+/* line 50, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-screen--register-business {
   background-color: #89d5c4;
 }
 
-/* line 49, ../sass/components/wizard/_wizard.scss */
+/* line 55, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block {
   display: inline-block;
   border: 0px solid black;
@@ -3573,13 +3578,13 @@ hr.hero__line--half {
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 49, ../sass/components/wizard/_wizard.scss */
+  /* line 55, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block {
     padding: 0;
   }
 }
 
-/* line 60, ../sass/components/wizard/_wizard.scss */
+/* line 66, ../sass/components/wizard/_wizard.scss */
 .wizard__intro-block {
   display: inline-block;
   border: 0px solid black;
@@ -3588,26 +3593,26 @@ hr.hero__line--half {
   margin: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 60, ../sass/components/wizard/_wizard.scss */
+  /* line 66, ../sass/components/wizard/_wizard.scss */
   .wizard__intro-block {
     margin: 0;
   }
 }
 
-/* line 71, ../sass/components/wizard/_wizard.scss */
+/* line 77, ../sass/components/wizard/_wizard.scss */
 .wizard__content-block--help {
   display: inline-block;
   border: 0px solid black;
   padding: 0 25px 0 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 71, ../sass/components/wizard/_wizard.scss */
+  /* line 77, ../sass/components/wizard/_wizard.scss */
   .wizard__content-block--help {
     padding: 0;
   }
 }
 
-/* line 83, ../sass/components/wizard/_wizard.scss */
+/* line 89, ../sass/components/wizard/_wizard.scss */
 .wizard__header {
   font-weight: 700;
   font-size: 1em;
@@ -3617,13 +3622,13 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 83, ../sass/components/wizard/_wizard.scss */
+  /* line 89, ../sass/components/wizard/_wizard.scss */
   .wizard__header {
     padding: 35px 25px 0 0;
   }
 }
 
-/* line 96, ../sass/components/wizard/_wizard.scss */
+/* line 102, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title {
   font-weight: 700;
   font-size: 1em;
@@ -3633,13 +3638,13 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 96, ../sass/components/wizard/_wizard.scss */
+  /* line 102, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title {
     font-size: 1.357em;
   }
 }
 
-/* line 112, ../sass/components/wizard/_wizard.scss */
+/* line 118, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-government {
   font-size: 0.857em;
   text-transform: uppercase;
@@ -3649,13 +3654,13 @@ hr.hero__line--half {
   font-weight: 700;
 }
 @media all and (min-width: 960px) {
-  /* line 112, ../sass/components/wizard/_wizard.scss */
+  /* line 118, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-government {
     font-size: 1.071em;
   }
 }
 
-/* line 126, ../sass/components/wizard/_wizard.scss */
+/* line 132, ../sass/components/wizard/_wizard.scss */
 .wizard__header--title-intro {
   font-weight: 700;
   font-size: 1em;
@@ -3666,13 +3671,13 @@ hr.hero__line--half {
   font-size: 1.357em;
 }
 @media all and (min-width: 960px) {
-  /* line 126, ../sass/components/wizard/_wizard.scss */
+  /* line 132, ../sass/components/wizard/_wizard.scss */
   .wizard__header--title-intro {
     font-size: 2.571em;
   }
 }
 
-/* line 142, ../sass/components/wizard/_wizard.scss */
+/* line 148, ../sass/components/wizard/_wizard.scss */
 .wizard__header-line {
   height: 4px;
   max-width: 80px;
@@ -3682,7 +3687,7 @@ hr.hero__line--half {
   margin: 0;
 }
 
-/* line 150, ../sass/components/wizard/_wizard.scss */
+/* line 156, ../sass/components/wizard/_wizard.scss */
 .wizard__question {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3693,14 +3698,14 @@ hr.hero__line--half {
   border: 0px solid red;
 }
 @media all and (min-width: 960px) {
-  /* line 150, ../sass/components/wizard/_wizard.scss */
+  /* line 156, ../sass/components/wizard/_wizard.scss */
   .wizard__question {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
 
-/* line 164, ../sass/components/wizard/_wizard.scss */
+/* line 170, ../sass/components/wizard/_wizard.scss */
 .wizard__question--help {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3710,13 +3715,13 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461957891');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
 
-/* line 182, ../sass/components/wizard/_wizard.scss */
+/* line 188, ../sass/components/wizard/_wizard.scss */
 .wizard__buttons {
   border: 0px solid white;
   margin: 28px 0 28px 0;
@@ -3724,7 +3729,7 @@ hr.hero__line--half {
   *zoom: 1;
 }
 
-/* line 188, ../sass/components/wizard/_wizard.scss */
+/* line 194, ../sass/components/wizard/_wizard.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3737,31 +3742,31 @@ hr.hero__line--half {
   cursor: pointer;
 }
 
-/* line 191, ../sass/components/wizard/_wizard.scss */
+/* line 197, ../sass/components/wizard/_wizard.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
-/* line 194, ../sass/components/wizard/_wizard.scss */
+/* line 200, ../sass/components/wizard/_wizard.scss */
 a.wizard__button:focus {
   outline: none;
 }
 
-/* line 199, ../sass/components/wizard/_wizard.scss */
+/* line 205, ../sass/components/wizard/_wizard.scss */
 a.wizard__button--selected {
   text-decoration: none;
   padding: 8px 40px 8px 30px;
   color: white;
-  background: url("../images/wizard/icon_checkmark--small.png") #0f2940 no-repeat 80% 50%;
+  background: url("../images/wizard/icon_checkmark--small.png") #0f2940 no-repeat 87% 50%;
 }
 
-/* line 206, ../sass/components/wizard/_wizard.scss */
+/* line 212, ../sass/components/wizard/_wizard.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 216, ../sass/components/wizard/_wizard.scss */
+/* line 222, ../sass/components/wizard/_wizard.scss */
 .wizard__copy--section_intro {
   padding: 0;
   margin: 15px 0px 20px 0;
@@ -3769,22 +3774,22 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 @media all and (min-width: 720px) {
-  /* line 216, ../sass/components/wizard/_wizard.scss */
+  /* line 222, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
-    font-size: 1.357em;
+    font-size: 0.929em;
     width: 80%;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 216, ../sass/components/wizard/_wizard.scss */
+  /* line 222, ../sass/components/wizard/_wizard.scss */
   .wizard__copy--section_intro {
-    width: 80%;
-    font-size: 1.357em;
+    width: 60%;
+    font-size: 1.187em;
     margin: 10px 20px 15px 0;
   }
 }
 
-/* line 235, ../sass/components/wizard/_wizard.scss */
+/* line 241, ../sass/components/wizard/_wizard.scss */
 .wizard__icon {
   width: 40px;
   height: 40px;
@@ -3792,7 +3797,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 246, ../sass/components/wizard/_wizard.scss */
+/* line 252, ../sass/components/wizard/_wizard.scss */
 .wizard__icon_help {
   width: 40px;
   height: 40px;
@@ -3800,7 +3805,7 @@ a.wizard__button--selected {
   border: 0px solid red;
 }
 
-/* line 257, ../sass/components/wizard/_wizard.scss */
+/* line 263, ../sass/components/wizard/_wizard.scss */
 .wizard__header_block--help {
   border: 0px solid red;
   margin: 0;
@@ -3809,7 +3814,7 @@ a.wizard__button--selected {
   *zoom: 1;
 }
 
-/* line 265, ../sass/components/wizard/_wizard.scss */
+/* line 271, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration {
   border: 0px solid blue;
   margin: 0 0 0 0;
@@ -3817,47 +3822,47 @@ a.wizard__button--selected {
   max-width: 665px;
 }
 @media all and (min-width: 960px) {
-  /* line 265, ../sass/components/wizard/_wizard.scss */
+  /* line 271, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration {
     width: 95%;
   }
 }
 
-/* line 275, ../sass/components/wizard/_wizard.scss */
+/* line 281, ../sass/components/wizard/_wizard.scss */
 .wizard__illustration img {
   width: 100%;
   height: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 275, ../sass/components/wizard/_wizard.scss */
+  /* line 281, ../sass/components/wizard/_wizard.scss */
   .wizard__illustration img {
     width: 100%;
     height: 100%;
   }
 }
 
-/* line 286, ../sass/components/wizard/_wizard.scss */
+/* line 292, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content {
   border: 0px solid red;
   width: 90%;
   margin: 20px 0 20px 0;
 }
 @media all and (min-width: 960px) {
-  /* line 286, ../sass/components/wizard/_wizard.scss */
+  /* line 292, ../sass/components/wizard/_wizard.scss */
   .wizard__help_content {
     width: 60%;
   }
 }
-/* line 293, ../sass/components/wizard/_wizard.scss */
+/* line 299, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content a {
   text-decoration: underline;
 }
-/* line 296, ../sass/components/wizard/_wizard.scss */
+/* line 302, ../sass/components/wizard/_wizard.scss */
 .wizard__help_content p {
   margin: 1em 0;
 }
 
-/* line 301, ../sass/components/wizard/_wizard.scss */
+/* line 307, ../sass/components/wizard/_wizard.scss */
 .wizard__help_hr {
   height: 2px;
   max-width: 80px;
@@ -4028,7 +4033,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461957891');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -4092,7 +4097,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461957891');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4102,7 +4107,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461957891');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4112,7 +4117,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461957891');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4187,7 +4192,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461957891');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4198,7 +4203,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461957891');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4209,7 +4214,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461957891');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -4253,7 +4258,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461957891');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4341,7 +4346,7 @@ hr.wizard__arrow-line {
 
 /* line 71, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461957891');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4361,7 +4366,7 @@ a.wizard__arrow-up {
 
 /* line 88, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_up.png?1461957891');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 24px;
@@ -4374,7 +4379,7 @@ a.wizard__arrow-back {
 
 /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461957891');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position-y: 50%;
@@ -4394,7 +4399,7 @@ a.wizard__arrow-down {
 
 /* line 117, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461957891');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4409,7 +4414,7 @@ a.wizard__arrow-down.enabled.section {
 /* line 130, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461957891');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   display: inline-block;
   background-position-y: 50%;
   float: right;
@@ -4430,7 +4435,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 150, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1461957891');
+  background-image: url('../images/wizard/arrow_down_filled.png?1461690430');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4487,7 +4492,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461957891');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 
@@ -4747,10 +4752,11 @@ a.wizard__arrow-down.enabled.section {
   background-color: #fff;
   padding: 8px 35px 8px 35px;
   cursor: pointer;
-  margin: 0 0 20px 0px;
+  margin: 0;
+  display: inline-block;
 }
 
-/* line 106, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 107, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__step {
   border-top: 2px solid white;
   color: white;
@@ -4761,7 +4767,7 @@ a.wizard__arrow-down.enabled.section {
   padding: 10px 0 0 0;
 }
 
-/* line 116, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 117, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__step_header {
   border: 0px solid pink;
   color: #0f2940;
@@ -4772,30 +4778,35 @@ a.wizard__arrow-down.enabled.section {
   font-size: 1.429em;
 }
 @media all and (min-width: 960px) {
-  /* line 116, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 117, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__step_header {
     margin: 0 0 20px 0px;
   }
 }
 
-/* line 129, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 130, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__cheklist_ol {
   border: 0px solid red;
   margin: 4px 25px 20px 0;
   padding: 0 0 0 20px;
 }
 @media all and (min-width: 960px) {
-  /* line 129, ../sass/components/wizard/_wizard_checklist.scss */
+  /* line 130, ../sass/components/wizard/_wizard_checklist.scss */
   .wizard__cheklist_ol {
     margin: 0 0 20px 0px;
   }
 }
 
-/* line 139, ../sass/components/wizard/_wizard_checklist.scss */
+/* line 140, ../sass/components/wizard/_wizard_checklist.scss */
 .wizard__cheklist_li {
   border: 0px solid pink;
   margin: 10px 0 10px 0;
   padding: 0;
+}
+
+/* line 146, ../sass/components/wizard/_wizard_checklist.scss */
+.wizard__content--results-cta {
+  margin-top: 1.5em;
 }
 
 /* Nodes */
