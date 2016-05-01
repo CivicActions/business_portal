@@ -55,7 +55,6 @@ function lasbptheme_preprocess_html(&$variables, $hook) {
 
 function lasbptheme_preprocess_page(&$variables, $hook) {
   drupal_add_js('https://globalnav.lacity.org/global_nav_2.0.js', 'external');
-  $variables['sample_variable'] = t('Lorem ipsum.');
   drupal_add_library('system', 'ui.accordion');
 
 }
@@ -86,6 +85,7 @@ function lasbptheme_preprocess_panels_pane(&$vars) {
     drupal_add_js($theme_path . '/js/wizard/collections.js');
     drupal_add_js($theme_path . '/js/wizard/views.js');
     drupal_add_js($theme_path . '/js/wizard/app.js');
+    drupal_add_js($theme_path . '/js/wizard/theming.js');
   }
 }
 
