@@ -39,7 +39,6 @@ $wizard_left_margin: 25px;
   a {
     color: $wizard-text;
     font-size: 1em;
-    text-decoration: underline;
   }
   p {
     padding: 0.7em 0 0;
@@ -233,6 +232,7 @@ a.wizard__button--selected {
   margin: 15px 0px 20px 0;
   font-size: 0.929em;
   border:0px solid red;
+  a {text-decoration: underline;}
   @include window_size(tab-wide-up){
         font-size: 0.929em;
         width: 80%;
