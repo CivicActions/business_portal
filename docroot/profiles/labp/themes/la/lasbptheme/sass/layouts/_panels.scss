@@ -14,6 +14,9 @@
       margin: 0 2em 0 2em;
       padding-top: 1em;
       max-width: $max-content-width;
+      @include window_size(tab-wide-up) {
+        max-width: 100%;
+      }
       @include window_size(desktop) {
         margin: 0 0 0 0.5em;
         width: 90%;
