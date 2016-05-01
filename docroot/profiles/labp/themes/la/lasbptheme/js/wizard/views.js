@@ -902,7 +902,7 @@ wiz.views.NavStartOver = Backbone.View.extend({
   },
   startOverClick: function() {
 
-    if (wiz.collections.chosen.length > 1) {
+    /*if (wiz.collections.chosen.length > 1) {
       var first = wiz.collections.chosen.first();
       wiz.collections.chosen.remove(first);
 
@@ -910,7 +910,8 @@ wiz.views.NavStartOver = Backbone.View.extend({
         model:  wiz.collections.chosen.first()
       });
       wiz.instance.goto(wiz.wizard);
-    }
+    }*/
+    window.location.href = "/start";
 
     event.preventDefault();
   },
