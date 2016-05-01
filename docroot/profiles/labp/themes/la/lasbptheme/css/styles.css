@@ -2768,17 +2768,17 @@ hr.hero__line--half {
 /* line 38, ../sass/components/hero/_hero.scss */
 .hero__business__name {
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* line 45, ../sass/components/hero/_hero.scss */
 .hero__business__description {
   color: #fff;
-  font-size: 1.1em;
-  font-weight: 300;
-  max-width: 600px;
+  font-size: 1em;
+  font-weight: 400;
+  max-width: 550px;
 }
 
 /* line 52, ../sass/components/hero/_hero.scss */
@@ -2828,7 +2828,7 @@ hr.hero__line--half {
   /* line 83, ../sass/components/hero/_hero.scss */
   .hero__layout--full .hero__bottom_align--bn {
     margin: 5em 0 0;
-    padding-bottom: 3em;
+    padding-bottom: 1.5em;
   }
 }
 

@@ -37,16 +37,16 @@ hr.hero__line--half {
 
 .hero__business__name {
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .hero__business__description {
   color: #fff;
-  font-size: 1.1em;
-  font-weight: 300;
-  max-width: 600px;
+  font-size: 1em;
+  font-weight: 400;
+  max-width: 550px;
 }
 
 .hero__bottom_align--bn{
@@ -85,7 +85,7 @@ hr.hero__line--half {
     padding-bottom: 2em;
     @include window_size(desktop) {
       margin: 5em 0 0;
-      padding-bottom: 3em;
+      padding-bottom: 1.5em;
     }
   }
 }
