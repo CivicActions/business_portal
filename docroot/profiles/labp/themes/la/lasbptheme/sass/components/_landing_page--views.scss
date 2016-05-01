@@ -70,8 +70,7 @@
 .view-terms-definitions {
   .views-field-view-node,
   .views-field-field-document {
-    width: 20%;
-    display: inline-block;
+    float: right;
     vertical-align: top;
   }
   .views-field-view-node a {
