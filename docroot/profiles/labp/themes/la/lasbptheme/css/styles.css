@@ -2242,7 +2242,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1461855791');
+  background-image: url('../images/progress.gif?1461957891');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -3207,11 +3207,10 @@ hr.hero__line--half {
 .view-id-departments .views-field-field-document,
 .view-terms-definitions .views-field-view-node,
 .view-terms-definitions .views-field-field-document {
-  width: 20%;
-  display: inline-block;
+  float: right;
   vertical-align: top;
 }
-/* line 77, ../sass/components/_landing_page--views.scss */
+/* line 76, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node a,
 .view-bp-featured-resource-page .views-field-view-node a,
 .view-id-departments .views-field-view-node a,
@@ -3226,7 +3225,7 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 81, ../sass/components/_landing_page--views.scss */
+/* line 80, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-field-document a,
 .view-bp-featured-resource-page .views-field-field-document a,
 .view-id-departments .views-field-field-document a,
@@ -3241,7 +3240,7 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 86, ../sass/components/_landing_page--views.scss */
+/* line 85, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-body,
 .view-id-bp_featured_sub_page .views-field-field-description,
 .view-bp-featured-resource-page .views-field-body,
@@ -3254,7 +3253,7 @@ hr.hero__line--half {
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 86, ../sass/components/_landing_page--views.scss */
+  /* line 85, ../sass/components/_landing_page--views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
   .view-id-bp_featured_sub_page .views-field-field-description,
   .view-bp-featured-resource-page .views-field-body,
@@ -3270,11 +3269,11 @@ hr.hero__line--half {
 }
 
 /** Business source center stuff only **/
-/* line 104, ../sass/components/_landing_page--views.scss */
+/* line 103, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .view-content h3 {
   text-transform: uppercase;
 }
-/* line 108, ../sass/components/_landing_page--views.scss */
+/* line 107, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-label {
   font-weight: 700;
   margin: 20px 0 0 0;
@@ -3284,25 +3283,25 @@ hr.hero__line--half {
   font-size: 1.143em;
   line-height: 1.35em;
 }
-/* line 117, ../sass/components/_landing_page--views.scss */
+/* line 116, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .field-content {
   line-height: 1.25em;
   padding-bottom: 1.5em;
 }
 @media all and (min-width: 960px) {
-  /* line 117, ../sass/components/_landing_page--views.scss */
+  /* line 116, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .field-content {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
   }
 }
-/* line 130, ../sass/components/_landing_page--views.scss */
+/* line 129, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-field-field-map img {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 135, ../sass/components/_landing_page--views.scss */
+/* line 134, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-field-title {
   font-size: 1.571em;
   font-weight: 700;
@@ -3310,29 +3309,29 @@ hr.hero__line--half {
   width: 100%;
   margin: 1em 0;
 }
-/* line 144, ../sass/components/_landing_page--views.scss */
+/* line 143, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-field-field-email .field-content {
   padding-bottom: 0;
 }
-/* line 149, ../sass/components/_landing_page--views.scss */
+/* line 148, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-field-field-phone {
   border-bottom: solid 1px #88cff5;
 }
-/* line 153, ../sass/components/_landing_page--views.scss */
+/* line 152, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-field-field-services {
   padding-top: 1.5em;
 }
-/* line 156, ../sass/components/_landing_page--views.scss */
+/* line 155, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-row {
   padding: 1em 0;
   border-top: solid 1px #88cff5;
 }
-/* line 159, ../sass/components/_landing_page--views.scss */
+/* line 158, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-row:last-child {
   border-top: none;
 }
 
-/* line 167, ../sass/components/_landing_page--views.scss */
+/* line 166, ../sass/components/_landing_page--views.scss */
 .node-type-sbp-department .field-items {
   width: 65%;
   color: rgba(0, 0, 0, 0.6);
@@ -3352,7 +3351,7 @@ hr.hero__line--half {
 .view-id-labp_service_center .views-row:after {
   clear: both;
 }
-/* line 185, ../sass/components/_landing_page--views.scss */
+/* line 184, ../sass/components/_landing_page--views.scss */
 .view-id-labp_service_center .views-field-title,
 .view-id-labp_service_center .views-field-body,
 .view-id-labp_service_center .views-field-field-map,
@@ -3370,18 +3369,18 @@ hr.hero__line--half {
   word-wrap: break-word;
 }
 @media all and (min-width: 720px) {
-  /* line 197, ../sass/components/_landing_page--views.scss */
+  /* line 196, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-title {
     margin: 0;
   }
-  /* line 200, ../sass/components/_landing_page--views.scss */
+  /* line 199, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-map {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 203, ../sass/components/_landing_page--views.scss */
+  /* line 202, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-address,
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-phone {
@@ -3390,13 +3389,13 @@ hr.hero__line--half {
     margin-right: 0%;
     margin-left: -50%;
   }
-  /* line 208, ../sass/components/_landing_page--views.scss */
+  /* line 207, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-phone {
     clear: right;
     border-bottom: none;
   }
-  /* line 213, ../sass/components/_landing_page--views.scss */
+  /* line 212, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-services {
     clear: both;
     float: left;
@@ -3404,11 +3403,11 @@ hr.hero__line--half {
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 216, ../sass/components/_landing_page--views.scss */
+  /* line 215, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-services .views-label {
     margin-top: 0;
   }
-  /* line 220, ../sass/components/_landing_page--views.scss */
+  /* line 219, ../sass/components/_landing_page--views.scss */
   .view-id-labp_service_center .views-field-field-languages {
     float: left;
     width: 50%;
@@ -3711,7 +3710,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461855791');
+  background-image: url('../images/wizard/icon_context_help.png?1461957891');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4027,7 +4026,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461855791');
+  background-image: url('../images/wizard/progress_bar.png?1461957891');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -4091,7 +4090,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461957891');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4101,7 +4100,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461957891');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4111,7 +4110,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461957891');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4186,7 +4185,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461957891');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4197,7 +4196,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461957891');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4208,7 +4207,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461855791');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461957891');
 }
 
 /**********/
@@ -4252,7 +4251,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461855791');
+  background-image: url('../images/wizard/icon_close.png?1461957891');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4340,7 +4339,7 @@ hr.wizard__arrow-line {
 
 /* line 68, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461855791');
+  background-image: url('../images/wizard/arrow_up.png?1461957891');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4360,7 +4359,7 @@ a.wizard__arrow-up {
 
 /* line 85, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_up.png?1461855791');
+  background-image: url('../images/wizard/arrow_up.png?1461957891');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 24px;
@@ -4373,7 +4372,7 @@ a.wizard__arrow-back {
 
 /* line 97, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461855791');
+  background-image: url('../images/wizard/arrow_down.png?1461957891');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position-y: 50%;
@@ -4393,7 +4392,7 @@ a.wizard__arrow-down {
 
 /* line 114, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461855791');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461957891');
 }
 
 /* line 118, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4408,7 +4407,7 @@ a.wizard__arrow-down.enabled.section {
 /* line 127, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461855791');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461957891');
   display: inline-block;
   background-position-y: 50%;
   float: right;
@@ -4429,7 +4428,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 147, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1461855791');
+  background-image: url('../images/wizard/arrow_down_filled.png?1461957891');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4486,7 +4485,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461855791');
+  background-image: url('../images/wizard/icon_info.png?1461957891');
   background-size: 100%;
 }
 
