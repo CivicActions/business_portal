@@ -282,8 +282,8 @@ a.wizard__button--selected {
   margin:0 0 0 0;
   width: 100%;
   max-width: 665px;
-  @include window_size(desktop){
-      width: 95%;
+  @include window_size(desktop) {
+    width: 95%;
   }
   @media (min-width: 0px) and (max-width: 719px) {
     margin: 0;
