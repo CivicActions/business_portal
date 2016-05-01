@@ -47,7 +47,8 @@
       width: 100%;
     }
 
-    button {
+    button,
+    a {
       @extend .panel__button;
       border: 0px;
       margin-left: 1em;

@@ -5056,7 +5056,9 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 
 /* line 60, ../sass/components/_section_content.scss */
 .panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button,
-.panel-2col-stacked .pane-sbp-terms-definitions button {
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a,
+.panel-2col-stacked .pane-sbp-terms-definitions button,
+.panel-2col-stacked .pane-sbp-terms-definitions a {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -5070,13 +5072,17 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 /* line 173, ../sass/base/_mixins.scss */
 .panel__button a, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button a,
-.panel-2col-stacked .pane-sbp-terms-definitions button a {
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a a,
+.panel-2col-stacked .pane-sbp-terms-definitions button a,
+.panel-2col-stacked .pane-sbp-terms-definitions a a {
   color: #163549;
 }
 @media all and (min-width: 960px) {
   /* line 60, ../sass/components/_section_content.scss */
   .panel__button, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button,
-  .panel-2col-stacked .pane-sbp-terms-definitions button {
+  .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a,
+  .panel-2col-stacked .pane-sbp-terms-definitions button,
+  .panel-2col-stacked .pane-sbp-terms-definitions a {
     font-size: 1.143em;
   }
 }
@@ -5187,23 +5193,27 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 /* line 50, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button,
-.panel-2col-stacked .pane-sbp-terms-definitions button {
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a,
+.panel-2col-stacked .pane-sbp-terms-definitions button,
+.panel-2col-stacked .pane-sbp-terms-definitions a {
   border: 0px;
   margin-left: 1em;
   outline: none;
 }
-/* line 55, ../sass/components/_left_sidebar.scss */
+/* line 56, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 button:focus,
-.panel-2col-stacked .pane-sbp-terms-definitions button:focus {
+.panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a:focus,
+.panel-2col-stacked .pane-sbp-terms-definitions button:focus,
+.panel-2col-stacked .pane-sbp-terms-definitions a:focus {
   background: #ffc929;
 }
-/* line 59, ../sass/components/_left_sidebar.scss */
+/* line 60, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-exposed-form,
 .panel-2col-stacked .pane-sbp-terms-definitions .views-exposed-form {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 59, ../sass/components/_left_sidebar.scss */
+  /* line 60, ../sass/components/_left_sidebar.scss */
   .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-exposed-form,
   .panel-2col-stacked .pane-sbp-terms-definitions .views-exposed-form {
     display: block;
@@ -5211,7 +5221,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 
 /* SEARCH BAR */
-/* line 73, ../sass/components/_left_sidebar.scss */
+/* line 74, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked
 .form-item-search-api-views-fulltext input[type=text] {
   padding: 0 10px 0 10px;
@@ -5225,14 +5235,14 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 73, ../sass/components/_left_sidebar.scss */
+  /* line 74, ../sass/components/_left_sidebar.scss */
   .panel-2col-stacked
   .form-item-search-api-views-fulltext input[type=text] {
     display: block;
   }
 }
 
-/* line 90, ../sass/components/_left_sidebar.scss */
+/* line 91, ../sass/components/_left_sidebar.scss */
 .views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
 #views-exposed-form-sbp-resource-incentives-panel-pane-1 .views-submit-button {
   position: absolute;
@@ -5244,7 +5254,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 
 /* FILTERS */
-/* line 101, ../sass/components/_left_sidebar.scss */
+/* line 102, ../sass/components/_left_sidebar.scss */
 .pane-facetapi h2.pane-title,
 .pane-sbp-terms-definitions h2.pane-title {
   list-style: none;
@@ -5255,7 +5265,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   text-transform: uppercase;
 }
 @media all and (min-width: 960px) {
-  /* line 101, ../sass/components/_left_sidebar.scss */
+  /* line 102, ../sass/components/_left_sidebar.scss */
   .pane-facetapi h2.pane-title,
   .pane-sbp-terms-definitions h2.pane-title {
     margin: 20px 0 10px 0px;
@@ -5263,7 +5273,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   }
 }
 
-/* line 116, ../sass/components/_left_sidebar.scss */
+/* line 117, ../sass/components/_left_sidebar.scss */
 ul.facetapi-facet-field-business-need li,
 ul.facetapi-facet-field-business-ownership li,
 ul.facetapi-facet-field-industry-tag li,
@@ -5273,7 +5283,7 @@ ul.facetapi-facet-field-resource-type li,
   font-size: 0.929em;
   margin: 0 0 10px 0;
 }
-/* line 124, ../sass/components/_left_sidebar.scss */
+/* line 125, ../sass/components/_left_sidebar.scss */
 ul.facetapi-facet-field-business-need li a,
 ul.facetapi-facet-field-business-ownership li a,
 ul.facetapi-facet-field-industry-tag li a,
@@ -5282,7 +5292,7 @@ ul.facetapi-facet-field-resource-type li a,
   color: #0f2940;
 }
 
-/* line 127, ../sass/components/_left_sidebar.scss */
+/* line 128, ../sass/components/_left_sidebar.scss */
 .pane-sbp-terms-definitions ul li {
   font-size: 1.143em;
 }
