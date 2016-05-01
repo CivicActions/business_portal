@@ -277,13 +277,20 @@ a.wizard__button--selected {
 }
 
 
-.wizard__illustration{
+.wizard__illustration {
   border: 0px solid blue;
   margin:0 0 0 0;
   width: 100%;
   max-width: 665px;
-  @include window_size(desktop){
-      width: 95%;
+  @include window_size(desktop) {
+    width: 95%;
+  }
+  @media (min-width: 0px) and (max-width: 719px) {
+    margin: 0;
+    padding: 0;
+    width: 131%;
+    max-width: none;
+    margin-left: -7%;
   }
 }
 
