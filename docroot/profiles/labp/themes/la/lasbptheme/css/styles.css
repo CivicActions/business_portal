@@ -2915,7 +2915,7 @@ hr.hero__line--half {
 @media all and (min-width: 960px) {
   /* line 48, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half #default-bg-image {
-    padding-bottom: 5em;
+    padding-bottom: 8em;
     min-height: 400px;
   }
 }
