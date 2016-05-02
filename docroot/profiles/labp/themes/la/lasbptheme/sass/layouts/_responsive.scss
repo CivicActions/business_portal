@@ -39,14 +39,17 @@ $zen-auto-include-item-base: false;
 }
 
 /* LA-183: adding 212px padding to bottom of page element (160px + 52x fixed footer) */
-#page {
-  padding-bottom: 212px;
+.wizard-page {
+  #page {
+    padding-bottom: 40px;
+  }
 }
 
 .section-resources,
-.section-content {
+.section-content,
+.section-home {
   #page {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }
 
