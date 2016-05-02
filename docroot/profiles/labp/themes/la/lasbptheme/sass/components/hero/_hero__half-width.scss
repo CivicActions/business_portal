@@ -44,6 +44,14 @@
     }
   }
 
+  // Have the default image bg match the height of other sub-pages
+  #default-bg-image {
+    @include window_size(desktop) {
+      padding-bottom: 5em;
+      min-height: 400px;
+    }
+  }
+
   .hero__business__name {
     color: #fff;
     font-size: 1.1em;
