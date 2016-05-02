@@ -188,6 +188,7 @@
   .views-field-field-address,
   .views-field-field-email,
   .views-field-field-phone,
+  .views-field-field-link,
   .views-field-field-services,
   .views-field-field-languages {
     @include zen-grid-item-base();
@@ -203,10 +204,12 @@
     }
     .views-field-field-address,
     .views-field-field-email,
+    .views-field-field-link,
     .views-field-field-phone {
       @include zen-grid-item (6, 1, right);
     }
     .views-field-field-email,
+    .views-field-field-link,
     .views-field-field-phone {
       @include zen-clear(right);
       border-bottom: none;
