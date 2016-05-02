@@ -47,7 +47,7 @@
   // Have the default image bg match the height of other sub-pages
   #default-bg-image {
     @include window_size(desktop) {
-      padding-bottom: 5em;
+      padding-bottom: 8em;
       min-height: 400px;
     }
   }
