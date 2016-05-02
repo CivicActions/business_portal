@@ -2,14 +2,15 @@
   $( document ).ready(function(){
     $('body').addClass('wizard-page');
     var hostnames = ["labusinessportal.dev2-cityofla.acsitefactory.com", "business.lacity.org", "labp.cityofla.acsitefactory.com"];
-    var ishosted = false;
+    var paths = ["/sites/g/files/wph5571dev2/themes/site/", "/sites/g/files/wph521/themes/site/", "/sites/g/files/wph521/themes/site/"];
+    var hostedpath = '';
     for (var ind = 0; ind < hostnames.length; ind++) {
       if (hostnames[ind] == window.location.hostname) {
-        ishosted = true;
+        hostedpath = paths[ind];
       }
     }
-    if (ishosted) {
-      var logofilename = "/profiles/labp/themes/la/labusinessportaltheme/logo-dark.png";
+    if (hostedpath != '') {
+      var logofilename = hostedpath + "logo-dark.png";
     } else {
       var logofilename = "/profiles/labp/themes/la/lasbptheme/logo-dark.png";
     }
