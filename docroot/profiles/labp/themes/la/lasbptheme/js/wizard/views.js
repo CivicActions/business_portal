@@ -361,13 +361,28 @@ wiz.views.Email = Backbone.View.extend({
     var email = 'email=' + $( "input[name='emailResults']" ).val();
     var emailValidate = '&emailvalidate=' + $( "input[name='emailCheck']" ).val();
     var emailToken = '&emailtoken=' + $( "input[name='form_token']" ).val();
-    var message = '&message=' + JSON.stringify($(".wizard__content--results-list" ).html());
-    var strip = ['&nbsp;'];
-    for (var ind = 0; ind < strip.length; ind++) {
-      message = message.replace(strip[ind], '');
-    }
-    message = message.replace(/(\r\n|\n|\r)/gm, '');
+    var message = '';
+    //var message = $(".wizard__content--results-list").html();
+    var wizard_steps = $(".wizard__content--results-list").children('div').each(function(ind) {
+      var stepcontent =  $(this).html();
+      //console.log('SECTION');
+      //console.log(stepcontent);
+      message = message + encodeURIComponent('<div>'+stepcontent+'</div>');
+    });
+
+
+    //message = encodeURIComponent(message);
+    //console.log('MESSAGE');
     //console.log(message);
+    var strip = ['%5Cn', '%5C%22'];
+    var replacement = ['', '%22'];
+    for (var ind = 0; ind < strip.length; ind++) {
+      message = message.split(strip[ind]).join(replacement[ind]);
+    }
+    //message = message.replace(/(\r\n|\n|\r)/gm, '');
+
+    //console.log(message);
+    message = '&message=' + message;
     $.ajax({
         url: '/labp/wizard-email',
         dataType: 'text',
