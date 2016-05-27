@@ -4,8 +4,8 @@ Business Portal Drupal Distro
 
 ## DrupalVM dependencies
 1. Ansible - This is an automation tool that can be installed from pip with the following instructions:
-http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip . Make sure you have version 2.0.2.0 or later.
-1. Vagrant - This is a VM operations tool that can be downloaded: https://www.vagrantup.com/downloads.html
+http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip . *Make sure you have version 2.0.2.0 or later.*
+1. Vagrant - This is a VM operations tool that can be downloaded: https://www.vagrantup.com/downloads.html. *Make sure you have version 1.8.1* 
 1. VirtualBox - This is a VM hypervisor that can be downloaded: https://www.virtualbox.org/wiki/Downloads
 1. If you're not on a Mac: your BIOS must have Virtualization enabled.  [Here's a guide for Lenovo](http://amiduos.com/support/knowledge-base/article/enabling-virtualization-in-lenovo-systems)
 
@@ -24,6 +24,20 @@ Later on, you'll need to run `vagrant rsync-auto` to automatically sync file cha
 1. `vagrant ssh`
 1. Install the profile with `drush @labp.dev si labp --account-name=admin --account-pass=admin` or `bash ~/Projects/business_portal/assets/install-local-drupalvm.sh`
 1. Visit labp.dev on your browser
+
+If you receive a permissions error on the `.ansible_galaxy` file in your home directory on OSX, follow these steps:
+1. open a Finder window
+1. right click on the file
+1. click Get Info
+1. click the lock icon in the bottom right corner and type your OSX admin password
+1. add your user and select read & write permissions
+1. Follow steps below for rebuilding your VM
+
+## Rebuilding your VM
+
+1. Go to the `box` directory 
+1. `vagrant destroy -f` 
+1. `vagrant up`
 
 
 ## DrupalVM usage

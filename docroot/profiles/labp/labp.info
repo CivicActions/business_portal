@@ -21,7 +21,12 @@ dependencies[] = environment
 dependencies[] = taxonomy_access_fix
 
 ; Lightning
-dependencies[] = assemble
+;dependencies[] = assemble
+dependencies[] = lightning_blocks
+dependencies[] = lightning_fpp
+dependencies[] = lightning_metatags
+dependencies[] = lightning_panels
+dependencies[] = lightning_rules
 dependencies[] = curate
 
 ; BP custom modules
@@ -36,7 +41,7 @@ dependencies[] = sbp_incentives
 dependencies[] = sbp_landing_page
 dependencies[] = sbp_lexicon
 dependencies[] = sbp_menu
-dependencies[] = sbp_migrate
+;dependencies[] = sbp_migrate
 dependencies[] = sbp_online_resource
 dependencies[] = sbp_page
 dependencies[] = sbp_panels
@@ -50,7 +55,7 @@ dependencies[] = sbp_views
 dependencies[] = sbp_wizard
 
 ; LA Specific contrib Modules
-dependencies[] = acsf
+; dependencies[] = acsf
 
 ; LA custom modules
 dependencies[] = labp_service_center

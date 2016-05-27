@@ -31,11 +31,11 @@ function sbp_resources_incentives_views_api($module = NULL, $api = NULL) {
  */
 function sbp_resources_incentives_default_search_api_index() {
   $items = array();
+  //"server" : "acquia_search",
   $items['resources_incentives'] = entity_import('search_api_index', '{
     "name" : "Resources \\u0026 Incentives",
     "machine_name" : "resources_incentives",
     "description" : null,
-    "server" : "acquia_search",
     "item_type" : "node",
     "options" : {
       "datasource" : { "bundles" : [ "incentives", "online_resource" ] },
