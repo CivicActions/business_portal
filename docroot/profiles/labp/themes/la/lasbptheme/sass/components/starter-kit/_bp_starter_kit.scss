@@ -6,26 +6,75 @@
  *
  */
 
-/* Sub-component: bp_starter_kit__key_points */
-body.node-type-sbp-starter-kit .node-teaser {
-  background: #F7F7F7;
-  margin-bottom: 30px;
-  // need to go a div up.
-  @include window_size(tab-narrow-up) {
-    display: inline-block;
-    width: 49%;
-  }
+.field-name-field-guide-title {
+  font-size: 1.5em;
+  color: #313131;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/* Colors */
-.node-type-sbp-starter-kit {
-  .button--link {
-    background: $egg_starter;
-    a {
-      color: white;
-    }
-  }
-  a {
-    color: $egg_starter;
-  }
+.field-name-field-permit-pdf img.file-icon,
+.field-name-field-guide-pdf img.file-icon {
+  display: none;
+}
+
+.field-name-field-permit-pdf span.file-size,
+.field-name-field-guide-pdf span.file-size {
+  display: none;
+}
+
+.field-name-field-permit-links div.field-item {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.field-name-field-permit-links div.field-item:after {
+  content: ' > ';
+}
+
+.pane-node-field-checklist-description,
+.pane-node-field-permit-description {
+  margin-top: 10px;
+  border-top: 3px solid black;
+  padding-top: 10px;
+}
+
+.field-name-field-section-title,
+.field-name-field-agency {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.field-name-field-agency {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.field-name-field-section-tip {
+  background-color: #cccccc;
+  font-size: 1em;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.field-name-field-guide-pdf a,
+.field-name-field-permit-pdf a {
+  color: #163549;
+  text-decoration: none;
+  font-size: 1.143em;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #ffd65c;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em 0;
+  cursor: pointer;
 }
