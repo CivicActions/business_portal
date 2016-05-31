@@ -48,12 +48,13 @@
 
 /* Nodes */
 @import "components/node__teaser";
-@import "components/bp_starter_kit";
+@import "components/starter-kit/bp_starter_kit";
 @import "components/detail_pages";
 @import "components/landing-page--home";
 
 /* Panels */
 @import "components/_four_column_cta";
+@import "components/_three_column_cta";
 @import "components/_section_content";
 @import "components/_left_sidebar";
 

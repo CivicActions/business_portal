@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "ISO-8859-1";
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -4938,13 +4938,13 @@ a.wizard__arrow-down.enabled.section {
  *
  */
 /* Sub-component: bp_starter_kit__key_points */
-/* line 10, ../sass/components/_bp_starter_kit.scss */
+/* line 10, ../sass/components/starter-kit/_bp_starter_kit.scss */
 body.node-type-sbp-starter-kit .node-teaser {
   background: #F7F7F7;
   margin-bottom: 30px;
 }
 @media all and (min-width: 480px) {
-  /* line 10, ../sass/components/_bp_starter_kit.scss */
+  /* line 10, ../sass/components/starter-kit/_bp_starter_kit.scss */
   body.node-type-sbp-starter-kit .node-teaser {
     display: inline-block;
     width: 49%;
@@ -4952,15 +4952,15 @@ body.node-type-sbp-starter-kit .node-teaser {
 }
 
 /* Colors */
-/* line 22, ../sass/components/_bp_starter_kit.scss */
+/* line 22, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .button--link {
   background: #00bed5;
 }
-/* line 24, ../sass/components/_bp_starter_kit.scss */
+/* line 24, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .button--link a {
   color: white;
 }
-/* line 28, ../sass/components/_bp_starter_kit.scss */
+/* line 28, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit a {
   color: #00bed5;
 }
@@ -5156,6 +5156,57 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     padding-left: 0;
     padding-right: 15px;
     margin-right: 5px;
+    float: left;
+    margin-top: 0;
+  }
+}
+
+/*************************************
+*         Layout
+**************************************/
+/* line 5, ../sass/components/_three_column_cta.scss */
+.three-col-wrapper {
+  margin: auto;
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0 3em;
+}
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.three-col-wrapper:before, .three-col-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.three-col-wrapper:after {
+  clear: both;
+}
+@media all and (min-width: 960px) {
+  /* line 5, ../sass/components/_three_column_cta.scss */
+  .three-col-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0 6em;
+  }
+}
+/* line 17, ../sass/components/_three_column_cta.scss */
+.three-col-wrapper .panel__section {
+  margin-top: 2em;
+}
+@media all and (min-width: 720px) {
+  /* line 17, ../sass/components/_three_column_cta.scss */
+  .three-col-wrapper .panel__section {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: 30%;
+    padding-left: 0;
+    padding-right: 13.33333px;
+    margin-right: 6.66667px;
     float: left;
     margin-top: 0;
   }
