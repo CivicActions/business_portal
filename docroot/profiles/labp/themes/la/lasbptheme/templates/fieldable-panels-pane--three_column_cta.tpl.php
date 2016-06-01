@@ -10,9 +10,8 @@
 <?php
 
 $pane_title = $content['title']['#value'];
-/*$pane_style = $field_pane_style[0]['taxonomy_term'];
-$pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];*/
-$pane_style = 'white';
+$pane_style = $field_pane_style[0]['taxonomy_term'];
+$pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 
 ?>
 <div class="panel__icons style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?>>
@@ -20,7 +19,7 @@ $pane_style = 'white';
     <div class = "three-col-wrapper">
       <?php
 
-      foreach ($field_calls_to_actions as $cta_key => $cta_value) {
+      foreach ($field_three_ctas as $cta_key => $cta_value) {
         if (!empty($cta_value)) {
           $cta_id = $cta_value['value'];
           $cta_field_collection = entity_load('field_collection_item', array($cta_id));

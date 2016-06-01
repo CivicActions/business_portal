@@ -186,6 +186,30 @@ function text_hierarchical_field_formatter_settings_summary($field, $instance, $
 
 
 /**
+ * Recursive function to render children items in tree.
+ * @param $parent
+ * @param $items
+ */
+function _text_hierarchical_field_formatter_render_children($parent, $level, $items, $elements) {
+  $render_array = array();
+
+  // Loop over items and identify children.
+  foreach ($items as $delta=>$item) {
+    if ($item['parent'] == $parent) {
+      $current_index = count($render_array);
+      $render_array[] = array(
+        'data' => '<div class="field-value field-value-' . ($delta + 1) . '">' . $elements[$delta]['#markup'] . '</div>',
+        'class' => array('depth depth-' . $level),
+      );
+      $render_array[$current_index]['children'] = _text_hierarchical_field_formatter_render_children($delta, ($level+1), $items, $elements);
+    }
+  }
+
+  return $render_array;
+
+}
+
+/**
  * Implements hook_field_formatter_view().
  */
 function text_hierarchical_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
@@ -221,38 +245,18 @@ function text_hierarchical_field_formatter_view($entity_type, $entity, $field, $
       }
       break;
   }
-  $tree = array();
-  $refs = array(0 => &$tree);
-  $depth = 1;
-  $depths = array(0 => $depth);
-  foreach ($element as $delta => $item) {
-    $parent = $items[$delta]['parent'];
-    if (isset($depths[$parent])) {
-      $depth = $depths[$parent];
-    }
-    else {
-      $depths[$delta] = ++$depth;
-    }
-    $refs[$parent][] = array(
-      'data' => '<div class="field-value field-value-' . ($delta + 1) . '">' . $item['#markup'] . '</div>',
-      'children' => array(),
-      'class' => array('depth depth-' . $depth),
-    );
-    $refs[$delta + 1] = &$refs[$parent][count($refs[$parent]) - 1]['children'];
-  }
-  if ($tree) {
-    $result = array(
-      array(
-        '#markup' => theme('item_list', array(
-          'items' => $tree,
-          'attributes' => array('class' => array('depth', 'depth-0')),
-        )),
-      ),
-    );
-  }
-  else {
-    $result = FALSE;
-  }
+
+  $refs = _text_hierarchical_field_formatter_render_children('-1', '0', $items, $element);
+
+  $result = array(
+    array(
+      '#markup' => theme('item_list', array(
+        'items' => $refs,
+        'attributes' => array('class' => array('depth', 'depth-0')),
+      )),
+    ),
+  );
+
 
   return $result;
 }
@@ -431,7 +435,7 @@ function _text_hierarchical_field_form($name, $entity, &$form, $form_state) {
           $item['parent'] = array(
             '#type' => 'hidden',
             '#title' => t('Parent'),
-            '#default_value' => isset($entity->{$name}[$l][$delta]['parent']) ? $entity->{$name}[$l][$delta]['parent'] - 1 : -1,
+            '#default_value' => isset($entity->{$name}[$l][$delta]['parent']) ? $entity->{$name}[$l][$delta]['parent'] : -1,
             '#attributes' => array(
               'class' => array('parent'),
             ),
@@ -456,6 +460,11 @@ function _text_hierarchical_field_form($name, $entity, &$form, $form_state) {
  * Perform necessary operations on field data submitted by a form.
  */
 function _text_hierarchical_field_submit($name, $entity, $form, &$form_state) {
+
+  if (empty($form_state['values'][$name])) {
+    return;
+  }
+
   foreach ($form_state['values'][$name] as $l => &$items) {
     if (isset($items['add_more'])) {
       unset($items['add_more']);

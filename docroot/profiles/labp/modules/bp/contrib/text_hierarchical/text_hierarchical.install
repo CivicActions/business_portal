@@ -53,7 +53,7 @@ function text_hierarchical_field_schema($field) {
     ),
     'parent' => array(
       'type' => 'int',
-      'unsigned' => TRUE,
+      'unsigned' => FALSE,
       'not null' => FALSE,
     ),
   );
