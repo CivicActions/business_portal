@@ -90,7 +90,7 @@ function lasbptheme_preprocess_panels_pane(&$vars) {
 }
 
 /**
- * Implements drupal_add_html_head().
+ * Implements hook_preprocess_html().
  *
  * @param array &$variables
  *   Template variables.
