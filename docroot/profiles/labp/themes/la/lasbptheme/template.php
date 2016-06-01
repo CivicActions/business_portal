@@ -90,6 +90,26 @@ function lasbptheme_preprocess_panels_pane(&$vars) {
 }
 
 /**
+ * Implements drupal_add_html_head().
+ *
+ * @param array &$variables
+ *   Template variables.
+ */
+function lasbptheme_preprocess_html(&$vars) {
+  /* LA-313 Add google verification code */
+  $google_site_verification = array(
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      '#attributes' => array(
+          'name' => 'google-site-verification',
+          'content' =>  'w3jz11h8zojzXkOEgAegvWidD7Z1TCXAbmZbs32ZyNs',
+      )
+  );
+  // Add header meta tag for Google code
+  drupal_add_html_head($google_site_verification, 'meta_google_site_verification');
+}
+
+/**
  * Override or insert variables into the node templates.
  *
  * @param $variables
