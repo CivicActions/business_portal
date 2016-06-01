@@ -51,26 +51,17 @@
     a.facetapi__toggle {
       @extend .panel__button;
       border: 0px;
-      margin-left: 1em;
       outline: none;
       &:focus {
         background: darken($yellow, 10%);
       }
     }
-    .views-exposed-form {
-      display: none;
-      @include window_size(desktop) {
-        display: block;
-      }
-    }
-
   }
 
 }
 
 
-
-  /* SEARCH BAR */
+ /* SEARCH BAR */
   .panel-2col-stacked
   .form-item-search-api-views-fulltext input[type=text]{
     padding: 0 10px 0 10px;
@@ -81,11 +72,6 @@
     -webkit-border-radius: 4px;
     border-radius: 4px;
     border:none;
-    display: none;
-
-    @include window_size(desktop){
-      display: block;
-    }
   }
 
   .views-widget-filter-search_api_views_fulltext label[for="edit-search-api-views-fulltext"],
