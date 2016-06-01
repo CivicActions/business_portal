@@ -54,7 +54,12 @@ function lasbptheme_preprocess_html(&$variables, $hook) {
  */
 
 function lasbptheme_preprocess_page(&$variables, $hook) {
-  drupal_add_js('https://globalnav.lacity.org/global_nav_2.0.js', 'external');
+  global $user;
+  if (!$variables['logged_in']) {
+    drupal_add_js('https://globalnav.lacity.org/global_nav_2.0.js', 'external');
+  } else {
+    drupal_add_css('#main { margin-top: 60px; }', 'inline');
+  }
   drupal_add_library('system', 'ui.accordion');
 
 }
