@@ -1,6 +1,25 @@
 # LA Business Portal
 Business Portal Drupal Distro
 
+## Developer Workflow
+
+We are using the conventional Fork and Pull development workflow, which is common for teams working with 
+Github repositories. 
+
+Developers will have two remotes on their local repository, 1. the developer's fork, 2. the upstream repository.
+
+Pull requests will be submitted from their fork into the upstream repository. This will be reviewed by a peer, 
+any comments left on the pull request need resolved, and then the pull request can be merged. The merge will 
+stage the pull request code for the daily deployments facilitated by ITA and CivicActions.
+
+Github outlines this process well in their documentation:
+1. https://help.github.com/articles/fork-a-repo/
+2. https://help.github.com/articles/using-pull-requests/
+
+## Sandbox
+
+We have instructions below for a sandbox solution built with DrupalVM. This can be used for a local setup 
+and help affords consistency in our development operations. It's a recommendation, but not a requirement.
 
 ## DrupalVM dependencies
 1. Ansible - This is an automation tool that can be installed from pip with the following instructions:
