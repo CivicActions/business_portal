@@ -102,8 +102,9 @@ Drupal.behaviors.rotator = {
       if(width < 960) {
         // Create the toggle button.
         $(".pane-facetapi").hide();
+        $("input#edit-search-api-views-fulltext").hide();
         // Use jquery.once to prevent multiple button creation.
-        buttonWrapper.once('createtoggle').append(toggleButton);
+        buttonWrapper.once('createtoggle').prepend(toggleButton);
 
         //Add class to button.
         toggleButton.addClass("facetapi__toggle");
@@ -111,12 +112,13 @@ Drupal.behaviors.rotator = {
         //Toggle function.
         $(toggleButton).click(function() {
           $('.pane-facetapi').toggle("slow");
+          $("input#edit-search-api-views-fulltext").toggle("slow");
           return false;
         });
 
       }
     }
-  }
+  };
 
   /**
     * LA-166: jQuery to support responsive menu.
