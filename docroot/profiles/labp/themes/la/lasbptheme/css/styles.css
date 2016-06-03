@@ -3076,6 +3076,7 @@ hr.hero__line--half {
   font-size: 1.429em;
   font-weight: 900;
   color: #0f2940;
+  margin-bottom: 0;
   border-bottom: 1px solid #88cff5;
   padding: 0 10px 0.8em 0;
 }
@@ -3083,10 +3084,11 @@ hr.hero__line--half {
   /* line 14, ../sass/components/_search.scss */
   .pane-sbp-resource-incentives-panel-pane-1 h2 {
     font-size: 2em;
+    max-width: 710px;
   }
 }
 
-/* line 28, ../sass/components/_search.scss */
+/* line 30, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-title {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3097,19 +3099,19 @@ hr.hero__line--half {
   line-height: 1.2em;
 }
 @media all and (min-width: 960px) {
-  /* line 28, ../sass/components/_search.scss */
+  /* line 30, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-title {
     font-size: 1.571em;
   }
 }
 
-/* line 42, ../sass/components/_search.scss */
+/* line 44, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node {
   width: 20%;
   display: inline-block;
 }
 
-/* line 47, ../sass/components/_search.scss */
+/* line 49, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node a {
   text-indent: -9999px;
   background-image: url("../images/icon_view.png");
@@ -3122,13 +3124,13 @@ hr.hero__line--half {
   margin: 0 0 0 6px;
 }
 
-/* line 52, ../sass/components/_search.scss */
+/* line 54, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-body {
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 52, ../sass/components/_search.scss */
+  /* line 54, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-body {
     width: 85%;
     font-size: 1.143em;
@@ -3203,11 +3205,11 @@ hr.hero__line--half {
   .view-labp-service-center .views-row,
   .view-sbp-resource-incentives .views-row,
   .view-terms-definitions .views-row {
-    width: 90%;
+    max-width: 710px;
   }
 }
 
-/* line 38, ../sass/components/_landing_page--views.scss */
+/* line 39, ../sass/components/_landing_page--views.scss */
 .pane-bp-featured-sub-page,
 .pane-bp-featured-resource-page,
 .pane-terms-definitions {
@@ -3215,7 +3217,7 @@ hr.hero__line--half {
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 38, ../sass/components/_landing_page--views.scss */
+  /* line 39, ../sass/components/_landing_page--views.scss */
   .pane-bp-featured-sub-page,
   .pane-bp-featured-resource-page,
   .pane-terms-definitions {
@@ -3224,7 +3226,7 @@ hr.hero__line--half {
     *zoom: 1;
   }
 }
-/* line 49, ../sass/components/_landing_page--views.scss */
+/* line 50, ../sass/components/_landing_page--views.scss */
 .pane-bp-featured-sub-page h2,
 .pane-bp-featured-sub-page h3,
 .pane-bp-featured-resource-page h2,
@@ -3240,7 +3242,7 @@ hr.hero__line--half {
   border-bottom: 1px solid #88cff5;
 }
 @media all and (min-width: 960px) {
-  /* line 49, ../sass/components/_landing_page--views.scss */
+  /* line 50, ../sass/components/_landing_page--views.scss */
   .pane-bp-featured-sub-page h2,
   .pane-bp-featured-sub-page h3,
   .pane-bp-featured-resource-page h2,
@@ -3248,12 +3250,12 @@ hr.hero__line--half {
   .pane-terms-definitions h2,
   .pane-terms-definitions h3 {
     font-size: 2em;
-    width: 90%;
+    max-width: 710px;
     padding: 0 0 0.8em;
   }
 }
 
-/* line 71, ../sass/components/_landing_page--views.scss */
+/* line 74, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node,
 .view-id-bp_featured_sub_page .views-field-field-document,
 .view-bp-featured-resource-page .views-field-view-node,
@@ -3261,15 +3263,18 @@ hr.hero__line--half {
 .view-id-departments .views-field-view-node,
 .view-id-departments .views-field-field-document,
 .view-terms-definitions .views-field-view-node,
-.view-terms-definitions .views-field-field-document {
+.view-terms-definitions .views-field-field-document,
+.view-id-sbp_resource_incentives .views-field-view-node,
+.view-id-sbp_resource_incentives .views-field-field-document {
   float: right;
   vertical-align: top;
 }
-/* line 76, ../sass/components/_landing_page--views.scss */
+/* line 79, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node a,
 .view-bp-featured-resource-page .views-field-view-node a,
 .view-id-departments .views-field-view-node a,
-.view-terms-definitions .views-field-view-node a {
+.view-terms-definitions .views-field-view-node a,
+.view-id-sbp_resource_incentives .views-field-view-node a {
   text-indent: -9999px;
   background-image: url("../images/icon_view.png");
   background-repeat: no-repeat;
@@ -3280,11 +3285,12 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 80, ../sass/components/_landing_page--views.scss */
+/* line 83, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-field-document a,
 .view-bp-featured-resource-page .views-field-field-document a,
 .view-id-departments .views-field-field-document a,
-.view-terms-definitions .views-field-field-document a {
+.view-terms-definitions .views-field-field-document a,
+.view-id-sbp_resource_incentives .views-field-field-document a {
   text-indent: -9999px;
   background-image: url("../images/icon_download.png");
   background-repeat: no-repeat;
@@ -3295,7 +3301,7 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 85, ../sass/components/_landing_page--views.scss */
+/* line 88, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-body,
 .view-id-bp_featured_sub_page .views-field-field-description,
 .view-bp-featured-resource-page .views-field-body,
@@ -3303,12 +3309,14 @@ hr.hero__line--half {
 .view-id-departments .views-field-body,
 .view-id-departments .views-field-field-description,
 .view-terms-definitions .views-field-body,
-.view-terms-definitions .views-field-field-description {
+.view-terms-definitions .views-field-field-description,
+.view-id-sbp_resource_incentives .views-field-body,
+.view-id-sbp_resource_incentives .views-field-field-description {
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 85, ../sass/components/_landing_page--views.scss */
+  /* line 88, ../sass/components/_landing_page--views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
   .view-id-bp_featured_sub_page .views-field-field-description,
   .view-bp-featured-resource-page .views-field-body,
@@ -3316,7 +3324,9 @@ hr.hero__line--half {
   .view-id-departments .views-field-body,
   .view-id-departments .views-field-field-description,
   .view-terms-definitions .views-field-body,
-  .view-terms-definitions .views-field-field-description {
+  .view-terms-definitions .views-field-field-description,
+  .view-id-sbp_resource_incentives .views-field-body,
+  .view-id-sbp_resource_incentives .views-field-field-description {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;

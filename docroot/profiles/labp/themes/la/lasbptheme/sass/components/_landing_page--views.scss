@@ -30,7 +30,8 @@
     }
 
     @include window_size(desktop) {
-      width: 90%;
+      //width: 90%;
+      max-width: 710px;
     }
   }
 }
@@ -57,7 +58,8 @@
     border-bottom: 1px solid $light-blue;
     @include window_size(desktop) {
       font-size: 2em;
-      width: 90%;
+      //width: 90%;
+      max-width: 710px;
       padding: 0 0 0.8em;
     }
   }
@@ -67,7 +69,8 @@
 .view-id-bp_featured_sub_page,
 .view-bp-featured-resource-page,
 .view-id-departments,
-.view-terms-definitions {
+.view-terms-definitions,
+.view-id-sbp_resource_incentives {
   .views-field-view-node,
   .views-field-field-document {
     float: right;
