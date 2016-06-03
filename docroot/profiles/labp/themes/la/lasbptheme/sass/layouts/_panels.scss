@@ -89,7 +89,9 @@
 body.section-content {
    .panel-col-last {
         .inside {
-            padding-top: 26px;
+            .field-name-body{
+                padding-top: 26px;
+            }
         }
     }
 }
