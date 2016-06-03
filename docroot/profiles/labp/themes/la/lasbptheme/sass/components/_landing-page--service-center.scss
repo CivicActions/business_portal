@@ -1,0 +1,166 @@
+
+/** Isolating Business source center styles  **/
+.pane-labp-service-center {
+  max-width: 710px;
+  h2.pane-title {
+    font-family: $heading-font;
+    font-size: 1.429em;
+    font-weight: 900;
+    color: $dark-blue;
+    border-bottom: solid 1px $light-blue;
+    padding: 0 0 0.83em;
+
+
+  }
+}
+
+
+.view-id-labp_service_center {
+  .view-content {
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+  .views-label {
+    font-weight: 700;
+    margin: 20px 0 0 0;
+    padding: 0 0 1em;
+    width: 85%;
+    display: block;
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+  .field-content {
+    line-height: 1.25em;
+    padding-bottom: 1.5em;
+    @include window_size(desktop){
+      width: 85%;
+      font-size: 1.143em;
+      line-height: 1.35em;
+    }
+  }
+
+  .views-field-field-languages {
+    .views-label {
+      margin-top: 0;
+      @include window_size(desktop){
+       // margin-top: 20px;
+      }
+    }
+    .field-content {
+      padding-bottom: 0;
+    }
+  }
+
+  .views-field-field-map {
+    .field-content {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+  .views-field-title {
+    font-size: 1.571em;
+    font-weight: 700;
+    font-family: $font-body;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .views-field-field-email {
+    .field-content {
+      padding-bottom: 0;
+    }
+  }
+
+  .views-field-field-phone {
+    border-bottom: solid 1px $light-blue;
+  }
+
+  .views-field-field-services {
+    @include window_size(desktop) {
+      //padding-top: 1.5em;
+    }
+  }
+  .views-row {
+    width: 100%;
+    padding: 1em 0;
+    border-top: solid 1px $light-blue;
+    &:last-child {
+      border-top: none;
+    }
+  }
+
+}
+.node-type-sbp-department {
+
+  .field-items {
+    width: 65%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.143em;
+    line-height: 1.35em;
+  }
+}
+
+
+
+/*******************************
+         LAYOUT
+*******************************/
+//Layout for the maps + address area
+.view-id-labp_service_center {
+  $zen-column-count: 12;
+
+  .views-row { @include zen-grid-container(); }
+  .views-field-title,
+  .views-field-body,
+  .views-field-field-map,
+  .views-field-field-address,
+  .views-field-field-email,
+  .views-field-field-phone,
+  .views-field-field-link,
+  .views-field-field-services,
+  .views-field-field-languages {
+    @include zen-grid-item-base();
+    padding-left: 0;
+  }
+
+  // Desktop
+  @include window_size(tab-wide-up) {
+    .views-field-title {
+      margin: 0;
+    }
+    .views-field-field-map {
+      @include zen-grid-item (7, 1);
+    }
+    .views-field-field-address,
+    .views-field-field-email,
+    .views-field-field-link,
+    .views-field-field-phone {
+      @include zen-grid-item (6, 1, right);
+    }
+    .views-field-field-email,
+    .views-field-field-link,
+    .views-field-field-phone {
+      @include zen-clear(right);
+      border-bottom: none;
+    }
+    .views-field-field-services {
+      @include zen-clear(both);
+      @include zen-grid-item (7, 1);
+      .views-label {
+        margin-top: 0;
+      }
+    }
+    .views-field-field-languages {
+      @include zen-grid-item (5, 8);
+    }
+  }
+
+}
+
+
+
+
