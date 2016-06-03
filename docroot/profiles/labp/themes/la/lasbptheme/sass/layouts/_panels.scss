@@ -13,7 +13,7 @@
     .inside {
       margin: 0 2em 0 2em;
       padding-top: 1em;
-      padding-bottom:28px;
+      padding-bottom:30px;
       max-width: $max-content-width;
       @include window_size(tab-wide-up) {
         max-width: 100%;
@@ -79,7 +79,7 @@
     .panel-col-last {
       @include zen-grid-item (7, 4);
       .inside {
-        padding: 0.3em 0 2em 30px;
+        padding: 26px 0 2em 30px;
       }
     }
 
