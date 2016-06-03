@@ -1483,12 +1483,17 @@ table {
   }
   /* line 81, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
-    padding: 26px 0 2em 30px;
+    padding: 0.3em 0 2em 30px;
   }
 }
 
+/* line 92, ../sass/layouts/_panels.scss */
+body.section-content .panel-col-last .inside {
+  padding-top: 26px;
+}
+
 @media all and (min-width: 960px) {
-  /* line 93, ../sass/layouts/_panels.scss */
+  /* line 101, ../sass/layouts/_panels.scss */
   .section-resources .panel-2col-stacked .panel-col-first,
   .section-resources .panel-2col-stacked .panel-col-last,
   .section-content .panel-2col-stacked .panel-col-first,
@@ -1500,7 +1505,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 104, ../sass/layouts/_panels.scss */
+/* line 112, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
