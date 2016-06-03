@@ -60,4 +60,5 @@ box/*/*.retry
 box/vagrant_ansible_inventory_default
 box/Vagrantfile.local
 box/roles/
+box/provisioning/
 
