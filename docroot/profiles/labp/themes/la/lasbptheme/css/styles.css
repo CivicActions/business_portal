@@ -2962,13 +2962,13 @@ hr.hero__line--half {
 }
 /* line 92, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
-  margin: 0.8em 1em 0 2em;
+  margin: 0.8em 1em 1em 2em;
   font-size: 1.143em;
 }
 @media all and (min-width: 960px) {
   /* line 92, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
-    font-size: 1.4em;
+    font-size: 1.429em;
     line-height: 1.4;
     margin: 30px 0;
   }
@@ -3004,7 +3004,27 @@ hr.hero__line--half {
   position: relative;
   overflow: hidden;
 }
-/* line 136, ../sass/components/hero/_hero__half-width.scss */
+/* line 129, ../sass/components/hero/_hero__half-width.scss */
+.hero__layout--half .hero__call-to-action--item {
+  text-transform: uppercase;
+  background: #fff;
+  display: inline-block;
+  border-radius: 25px;
+  margin: 0 10px 20px 0;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+/* line 137, ../sass/components/hero/_hero__half-width.scss */
+.hero__layout--half .hero__call-to-action--item a {
+  color: #0f2940;
+}
+@media all and (min-width: 960px) {
+  /* line 129, ../sass/components/hero/_hero__half-width.scss */
+  .hero__layout--half .hero__call-to-action--item {
+    font-size: 1.143em;
+  }
+}
+/* line 157, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   width: 100%;
   padding-left: 0;
@@ -3019,14 +3039,14 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 144, ../sass/components/hero/_hero__half-width.scss */
+  /* line 165, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 145, ../sass/components/hero/_hero__half-width.scss */
+  /* line 166, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 70%;
