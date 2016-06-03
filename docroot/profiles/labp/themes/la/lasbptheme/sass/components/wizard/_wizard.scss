@@ -198,6 +198,7 @@ $wizard_left_margin: 25px;
 
 .wizard__button {
   @include wizard__button--base;
+  margin-bottom: 10px;
 }
 a.wizard__button {
   color: $wizard_text;
