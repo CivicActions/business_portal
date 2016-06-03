@@ -1,0 +1,26 @@
+/*************************************
+*         Layout
+**************************************/
+
+.three-col-wrapper {
+  $zen-column-count: 3;
+  @include zen-grid-container;
+  margin: auto;
+  max-width: $max-site-width;
+  @include wrapper(90%);
+  padding: 1em 0 3em;
+  @include window_size(desktop) {
+    @include wrapper(80%);
+    padding: 1em 0 6em;
+  }
+
+  .panel__section {
+    margin-top: 2em;
+    @include window_size(tab-wide-up) {
+      @include zen-grid-flow-item(1, 3, false, true);
+      @include zen-float(left);
+      margin-top: 0;
+    }
+  }
+}
+

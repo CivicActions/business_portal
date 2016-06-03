@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "ISO-8859-1";
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -4937,32 +4937,87 @@ a.wizard__arrow-down.enabled.section {
  * bp_starter_kit component.
  *
  */
-/* Sub-component: bp_starter_kit__key_points */
-/* line 10, ../sass/components/_bp_starter_kit.scss */
-body.node-type-sbp-starter-kit .node-teaser {
-  background: #F7F7F7;
-  margin-bottom: 30px;
-}
-@media all and (min-width: 480px) {
-  /* line 10, ../sass/components/_bp_starter_kit.scss */
-  body.node-type-sbp-starter-kit .node-teaser {
-    display: inline-block;
-    width: 49%;
-  }
+/* line 9, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-guide-title {
+  font-size: 1.5em;
+  color: #313131;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/* Colors */
-/* line 22, ../sass/components/_bp_starter_kit.scss */
-.node-type-sbp-starter-kit .button--link {
-  background: #00bed5;
+/* line 18, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-permit-pdf img.file-icon,
+.field-name-field-guide-pdf img.file-icon {
+  display: none;
 }
-/* line 24, ../sass/components/_bp_starter_kit.scss */
-.node-type-sbp-starter-kit .button--link a {
-  color: white;
+
+/* line 23, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-permit-pdf span.file-size,
+.field-name-field-guide-pdf span.file-size {
+  display: none;
 }
-/* line 28, ../sass/components/_bp_starter_kit.scss */
-.node-type-sbp-starter-kit a {
-  color: #00bed5;
+
+/* line 28, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-permit-links div.field-item {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* line 35, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-permit-links div.field-item:after {
+  content: ' > ';
+}
+
+/* line 39, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.pane-node-field-checklist-description,
+.pane-node-field-permit-description {
+  margin-top: 10px;
+  border-top: 3px solid black;
+  padding-top: 10px;
+}
+
+/* line 46, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-section-title,
+.field-name-field-agency {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* line 52, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-agency {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 58, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-section-tip {
+  background-color: #cccccc;
+  font-size: 1em;
+  padding: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 66, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.field-name-field-guide-pdf a,
+.field-name-field-permit-pdf a {
+  color: #163549;
+  text-decoration: none;
+  font-size: 1.143em;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #ffd65c;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em 0;
+  cursor: pointer;
 }
 
 /* line 1, ../sass/components/_detail_pages.scss */
@@ -5096,16 +5151,15 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 
 /* line 50, ../sass/components/_four_column_cta.scss */
 .panel__paragraph {
-  color: navy;
   margin: 0;
 }
 
-/* line 58, ../sass/components/_four_column_cta.scss */
+/* line 57, ../sass/components/_four_column_cta.scss */
 .pane-bundle-four-column-cta > .pane-title {
   display: none;
 }
 
-/* line 62, ../sass/components/_four_column_cta.scss */
+/* line 61, ../sass/components/_four_column_cta.scss */
 .panel__section {
   line-height: 1.3em;
 }
@@ -5113,7 +5167,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 /*************************************
 *         Layout
 **************************************/
-/* line 70, ../sass/components/_four_column_cta.scss */
+/* line 69, ../sass/components/_four_column_cta.scss */
 .four-col-wrapper {
   margin: auto;
   max-width: 960px;
@@ -5131,19 +5185,19 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 70, ../sass/components/_four_column_cta.scss */
+  /* line 69, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper {
     width: 80%;
     margin: 0 auto;
     padding: 1em 0 6em;
   }
 }
-/* line 82, ../sass/components/_four_column_cta.scss */
+/* line 81, ../sass/components/_four_column_cta.scss */
 .four-col-wrapper .panel__section {
   margin-top: 2em;
 }
 @media all and (min-width: 720px) {
-  /* line 82, ../sass/components/_four_column_cta.scss */
+  /* line 81, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper .panel__section {
     padding-left: 10px;
     padding-right: 10px;
@@ -5156,6 +5210,57 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     padding-left: 0;
     padding-right: 15px;
     margin-right: 5px;
+    float: left;
+    margin-top: 0;
+  }
+}
+
+/*************************************
+*         Layout
+**************************************/
+/* line 5, ../sass/components/_three_column_cta.scss */
+.three-col-wrapper {
+  margin: auto;
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0 3em;
+}
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.three-col-wrapper:before, .three-col-wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.three-col-wrapper:after {
+  clear: both;
+}
+@media all and (min-width: 960px) {
+  /* line 5, ../sass/components/_three_column_cta.scss */
+  .three-col-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0 6em;
+  }
+}
+/* line 17, ../sass/components/_three_column_cta.scss */
+.three-col-wrapper .panel__section {
+  margin-top: 2em;
+}
+@media all and (min-width: 720px) {
+  /* line 17, ../sass/components/_three_column_cta.scss */
+  .three-col-wrapper .panel__section {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    width: 30%;
+    padding-left: 0;
+    padding-right: 13.33333px;
+    margin-right: 6.66667px;
     float: left;
     margin-top: 0;
   }

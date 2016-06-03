@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Perform starter kit prototype cleanup.
+ */
+function sbp_base_install() {
+  /*
+  // Revert specific feature modules.
+  features_revert_module('sbp_field_base');
+  features_revert_module('sbp_starter_kit');
+  features_revert_module('sbp_panels');
+
+  // Delete unneeded field instances.
+  if ($instance = field_info_instance('node', 'body', 'sbp_starter_kit')) {
+    field_delete_instance($instance, TRUE);
+  }
+
+  // Delete unneeded field bases.
+  field_delete_field('field_guides');
+  field_delete_field('field_starter_kit_key_points');
+  field_delete_field('field_related_documents');
+  field_delete_field('field_related_permits');
+  field_delete_field('field_featured_resources');
+
+  // Delete unneeded field collections.
+
+  // Delete unneeded content types and nodes.
+  $types = array(
+    'sbp_content',
+    'sbp_guide',
+    'sbp_permits',
+  );
+  foreach($types as $type) {
+    // First, delete nodes
+    $results = db_select('node', 'n')
+      ->fields('n', array('nid'))
+      ->condition('type', $type)
+      ->execute();
+    foreach ($results as $result) {
+      $nids[] = $result->nid;
+    }
+    if (!empty($nids)) {
+      node_delete_multiple($nids);
+      drupal_set_message(t('%count nodes has been deleted.', array('%count' => count($nids))));
+    }
+    // Then, delete content type
+    if (node_type_load($type)) {
+      node_type_delete($type);
+      variable_del('node_preview_' . $type);
+      drupal_set_message(t('%type content type has been deleted.', array('%type' => $type)));
+    }
+  }
+  node_types_rebuild();
+  */
+}

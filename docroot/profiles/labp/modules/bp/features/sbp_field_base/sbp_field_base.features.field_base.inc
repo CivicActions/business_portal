@@ -47,6 +47,32 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
+  // Exported field_base: 'field_agency'.
+  $field_bases['field_agency'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_agency',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'department_type',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_anchor_name'.
   $field_bases['field_anchor_name'] = array(
     'active' => 1,
@@ -245,6 +271,35 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
+  // Exported field_base: 'field_button_links'.
+  $field_bases['field_button_links'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_button_links',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
   // Exported field_base: 'field_button_result_order'.
   $field_bases['field_button_result_order'] = array(
     'active' => 1,
@@ -322,6 +377,66 @@ function sbp_field_base_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_calls_to_actions',
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_checklist_description'.
+  $field_bases['field_checklist_description'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_checklist_description',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_checklist_hierarchy'.
+  $field_bases['field_checklist_hierarchy'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_checklist_hierarchy',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text_hierarchical',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_hierarchical_long',
+  );
+
+  // Exported field_base: 'field_checklist_items'.
+  $field_bases['field_checklist_items'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_checklist_items',
     'indexes' => array(
       'revision_id' => array(
         0 => 'revision_id',
@@ -439,6 +554,64 @@ function sbp_field_base_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_cta_link_2'.
+  $field_bases['field_cta_link_2'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cta_link_2',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_cta_link_3'.
+  $field_bases['field_cta_link_3'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_cta_link_3',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_department_organization'.
@@ -647,6 +820,7 @@ function sbp_field_base_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
+      'behaviors' => array(),
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
@@ -655,9 +829,13 @@ function sbp_field_base_field_default_field_bases() {
           ),
         ),
         'sort' => array(
-          'type' => 'none',
+          'direction' => 'ASC',
+          'property' => 'title',
+          'type' => 'property',
         ),
-        'target_bundles' => array(),
+        'target_bundles' => array(
+          'online_resource' => 'online_resource',
+        ),
       ),
       'target_type' => 'node',
     ),
@@ -717,39 +895,110 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_guides'.
-  $field_bases['field_guides'] = array(
+  // Exported field_base: 'field_guide_description'.
+  $field_bases['field_guide_description'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_guides',
+    'field_name' => 'field_guide_description',
     'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'guide' => 'guide',
-        ),
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_guide_image'.
+  $field_bases['field_guide_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_guide_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
       ),
-      'target_type' => 'node',
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'entityreference',
+    'type' => 'image',
+  );
+
+  // Exported field_base: 'field_guide_pdf'.
+  $field_bases['field_guide_pdf'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_guide_pdf',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'file',
+    'settings' => array(
+      'display_default' => 0,
+      'display_field' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'file',
+  );
+
+  // Exported field_base: 'field_guide_title'.
+  $field_bases['field_guide_title'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_guide_title',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_header'.
+  $field_bases['field_header'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_header',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_heading'.
@@ -1148,6 +1397,25 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_permit_description'.
+  $field_bases['field_permit_description'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_permit_description',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_permit_license_name'.
   $field_bases['field_permit_license_name'] = array(
     'active' => 1,
@@ -1167,6 +1435,80 @@ function sbp_field_base_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_permit_links'.
+  $field_bases['field_permit_links'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_permit_links',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
+  // Exported field_base: 'field_permit_pdf'.
+  $field_bases['field_permit_pdf'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_permit_pdf',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'file',
+    'settings' => array(
+      'display_default' => 0,
+      'display_field' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'file',
+  );
+
+  // Exported field_base: 'field_permit_section'.
+  $field_bases['field_permit_section'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_permit_section',
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
   );
 
   // Exported field_base: 'field_permit_tags'.
@@ -1216,29 +1558,6 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_related_documents'.
-  $field_bases['field_related_documents'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_related_documents',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'file',
-    'settings' => array(
-      'display_default' => 0,
-      'display_field' => 1,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'file',
-  );
-
   // Exported field_base: 'field_related_links'.
   $field_bases['field_related_links'] = array(
     'active' => 1,
@@ -1259,41 +1578,6 @@ function sbp_field_base_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'field_collection',
-  );
-
-  // Exported field_base: 'field_related_permits'.
-  $field_bases['field_related_permits'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_related_permits',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 0,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'permit' => 'permit',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
   );
 
   // Exported field_base: 'field_resource_type'.
@@ -1471,6 +1755,65 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_section_description'.
+  $field_bases['field_section_description'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_section_description',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_section_tip'.
+  $field_bases['field_section_tip'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_section_tip',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_section_title'.
+  $field_bases['field_section_title'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_section_title',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_services'.
   $field_bases['field_services'] = array(
     'active' => 1,
@@ -1490,28 +1833,6 @@ function sbp_field_base_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
-  );
-
-  // Exported field_base: 'field_starter_kit_key_points'.
-  $field_bases['field_starter_kit_key_points'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_starter_kit_key_points',
-    'indexes' => array(
-      'revision_id' => array(
-        0 => 'revision_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'field_collection',
   );
 
   // Exported field_base: 'field_style_class'.
@@ -1592,6 +1913,28 @@ function sbp_field_base_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_three_ctas'.
+  $field_bases['field_three_ctas'] = array(
+    'active' => 1,
+    'cardinality' => 3,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_three_ctas',
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
   );
 
   // Exported field_base: 'field_tip'.

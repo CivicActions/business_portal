@@ -70,10 +70,10 @@ function sbp_starter_kit_panelizer_defaults() {
     $display->content['new-66172876-ea54-4494-a827-9993bdc86518'] = $pane;
     $display->panels['left'][0] = 'new-66172876-ea54-4494-a827-9993bdc86518';
     $pane = new stdClass();
-    $pane->pid = 'new-1ecaebd6-981d-45a0-accf-66118c8442ac';
+    $pane->pid = 'new-57964b36-4e02-4b7d-bb58-fc7d932f91f1';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:body';
+    $pane->subtype = 'node:field_guide_title';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -82,12 +82,11 @@ function sbp_starter_kit_panelizer_defaults() {
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'quickedit' => array(
-          'editor' => 'plain_text',
-        ),
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -97,29 +96,27 @@ function sbp_starter_kit_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '1ecaebd6-981d-45a0-accf-66118c8442ac';
-    $display->content['new-1ecaebd6-981d-45a0-accf-66118c8442ac'] = $pane;
-    $display->panels['right'][0] = 'new-1ecaebd6-981d-45a0-accf-66118c8442ac';
+    $pane->uuid = '57964b36-4e02-4b7d-bb58-fc7d932f91f1';
+    $display->content['new-57964b36-4e02-4b7d-bb58-fc7d932f91f1'] = $pane;
+    $display->panels['right'][0] = 'new-57964b36-4e02-4b7d-bb58-fc7d932f91f1';
     $pane = new stdClass();
-    $pane->pid = 'new-37bf5917-b920-4dad-bb15-3d674d024df1';
+    $pane->pid = 'new-df2bfeff-2fa3-47e5-8cb3-39aec329beca';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_guides';
+    $pane->subtype = 'node:field_guide_description';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'entityreference_label',
+      'label' => 'hidden',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'link' => FALSE,
-        'quickedit' => array(
-          'editor' => 'form',
-        ),
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -129,28 +126,30 @@ function sbp_starter_kit_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = '37bf5917-b920-4dad-bb15-3d674d024df1';
-    $display->content['new-37bf5917-b920-4dad-bb15-3d674d024df1'] = $pane;
-    $display->panels['right'][1] = 'new-37bf5917-b920-4dad-bb15-3d674d024df1';
+    $pane->uuid = 'df2bfeff-2fa3-47e5-8cb3-39aec329beca';
+    $display->content['new-df2bfeff-2fa3-47e5-8cb3-39aec329beca'] = $pane;
+    $display->panels['right'][1] = 'new-df2bfeff-2fa3-47e5-8cb3-39aec329beca';
     $pane = new stdClass();
-    $pane->pid = 'new-28f9fbc1-7387-4204-928f-7a5d7214dee7';
+    $pane->pid = 'new-f54f217a-64b5-4dfb-9211-05847fa5f48f';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_document';
+    $pane->subtype = 'node:field_guide_image';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'file_default',
+      'label' => 'hidden',
+      'formatter' => 'image',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'quickedit' => array(
-          'editor' => 'form',
-        ),
+        'image_style' => 'medium',
+        'image_link' => '',
       ),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -160,60 +159,62 @@ function sbp_starter_kit_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '28f9fbc1-7387-4204-928f-7a5d7214dee7';
-    $display->content['new-28f9fbc1-7387-4204-928f-7a5d7214dee7'] = $pane;
-    $display->panels['right'][2] = 'new-28f9fbc1-7387-4204-928f-7a5d7214dee7';
+    $pane->uuid = 'f54f217a-64b5-4dfb-9211-05847fa5f48f';
+    $display->content['new-f54f217a-64b5-4dfb-9211-05847fa5f48f'] = $pane;
+    $display->panels['right'][2] = 'new-f54f217a-64b5-4dfb-9211-05847fa5f48f';
     $pane = new stdClass();
-    $pane->pid = 'new-18d068d6-2fe0-40ac-8da5-2ce43c913d59';
+    $pane->pid = 'new-99694f96-f75c-4ddf-9ce6-83ac1e09d3a1';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_related_documents';
+    $pane->subtype = 'node:field_guide_pdf';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'file_default',
+      'label' => 'hidden',
+      'formatter' => 'file_download_link',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(
-        'quickedit' => array(
-          'editor' => 'form',
-        ),
+        'text' => 'Download Guide',
       ),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
-    $pane->uuid = '18d068d6-2fe0-40ac-8da5-2ce43c913d59';
-    $display->content['new-18d068d6-2fe0-40ac-8da5-2ce43c913d59'] = $pane;
-    $display->panels['right'][3] = 'new-18d068d6-2fe0-40ac-8da5-2ce43c913d59';
+    $pane->uuid = '99694f96-f75c-4ddf-9ce6-83ac1e09d3a1';
+    $display->content['new-99694f96-f75c-4ddf-9ce6-83ac1e09d3a1'] = $pane;
+    $display->panels['right'][3] = 'new-99694f96-f75c-4ddf-9ce6-83ac1e09d3a1';
     $pane = new stdClass();
-    $pane->pid = 'new-c9f02573-7978-4a3b-a934-4372c83bbb08';
+    $pane->pid = 'new-14499bc3-b8d9-4ced-9ad4-62147b05c91b';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_related_permits';
+    $pane->subtype = 'node:field_checklist_description';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'entityreference_label',
+      'label' => 'hidden',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'link' => FALSE,
-        'quickedit' => array(
-          'editor' => 'form',
-        ),
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => 'Checklist',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -223,29 +224,29 @@ function sbp_starter_kit_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
-    $pane->uuid = 'c9f02573-7978-4a3b-a934-4372c83bbb08';
-    $display->content['new-c9f02573-7978-4a3b-a934-4372c83bbb08'] = $pane;
-    $display->panels['right'][4] = 'new-c9f02573-7978-4a3b-a934-4372c83bbb08';
+    $pane->uuid = '14499bc3-b8d9-4ced-9ad4-62147b05c91b';
+    $display->content['new-14499bc3-b8d9-4ced-9ad4-62147b05c91b'] = $pane;
+    $display->panels['right'][4] = 'new-14499bc3-b8d9-4ced-9ad4-62147b05c91b';
     $pane = new stdClass();
-    $pane->pid = 'new-b9516563-8c7d-4283-bcb9-5c005836e17d';
+    $pane->pid = 'new-651c3c4e-ecbd-42ff-9533-01c0981197ed';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_featured_resources';
+    $pane->subtype = 'node:field_checklist_items';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'entityreference_label',
-      'delta_limit' => 0,
+      'label' => 'hidden',
+      'formatter' => 'field_collection_fields',
+      'delta_limit' => '0',
       'delta_offset' => '0',
-      'delta_reversed' => FALSE,
+      'delta_reversed' => 0,
       'formatter_settings' => array(
-        'link' => FALSE,
-        'quickedit' => array(
-          'editor' => 'form',
-        ),
+        'view_mode' => 'full',
       ),
       'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -255,33 +256,27 @@ function sbp_starter_kit_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = array();
-    $pane->uuid = 'b9516563-8c7d-4283-bcb9-5c005836e17d';
-    $display->content['new-b9516563-8c7d-4283-bcb9-5c005836e17d'] = $pane;
-    $display->panels['right'][5] = 'new-b9516563-8c7d-4283-bcb9-5c005836e17d';
+    $pane->uuid = '651c3c4e-ecbd-42ff-9533-01c0981197ed';
+    $display->content['new-651c3c4e-ecbd-42ff-9533-01c0981197ed'] = $pane;
+    $display->panels['right'][5] = 'new-651c3c4e-ecbd-42ff-9533-01c0981197ed';
     $pane = new stdClass();
-    $pane->pid = 'new-0b61a409-3060-423b-8044-e4d537d68a73';
+    $pane->pid = 'new-b34c4e26-d452-466f-89b4-c4f79b46e66e';
     $pane->panel = 'right';
     $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_starter_kit_key_points';
+    $pane->subtype = 'node:field_permit_description';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'above',
-      'formatter' => 'field_collection_view',
+      'label' => 'hidden',
+      'formatter' => 'text_default',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'add' => 'Add',
-        'delete' => 'Delete',
-        'description' => TRUE,
-        'edit' => 'Edit',
-        'quickedit' => array(
-          'editor' => 'form',
-        ),
-        'view_mode' => 'full',
-      ),
+      'formatter_settings' => array(),
       'context' => 'panelizer',
+      'override_title' => 1,
+      'override_title_text' => 'Permits',
+      'override_title_heading' => 'h2',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -291,9 +286,76 @@ function sbp_starter_kit_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 6;
     $pane->locks = array();
-    $pane->uuid = '0b61a409-3060-423b-8044-e4d537d68a73';
-    $display->content['new-0b61a409-3060-423b-8044-e4d537d68a73'] = $pane;
-    $display->panels['right'][6] = 'new-0b61a409-3060-423b-8044-e4d537d68a73';
+    $pane->uuid = 'b34c4e26-d452-466f-89b4-c4f79b46e66e';
+    $display->content['new-b34c4e26-d452-466f-89b4-c4f79b46e66e'] = $pane;
+    $display->panels['right'][6] = 'new-b34c4e26-d452-466f-89b4-c4f79b46e66e';
+    $pane = new stdClass();
+    $pane->pid = 'new-2b7c95a2-608d-4491-a190-931b55074474';
+    $pane->panel = 'right';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_permit_pdf';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'file_download_link',
+      'delta_limit' => 0,
+      'delta_offset' => '0',
+      'delta_reversed' => FALSE,
+      'formatter_settings' => array(
+        'text' => 'Download Permit Guide',
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
+    $pane->extras = array();
+    $pane->position = 7;
+    $pane->locks = array();
+    $pane->uuid = '2b7c95a2-608d-4491-a190-931b55074474';
+    $display->content['new-2b7c95a2-608d-4491-a190-931b55074474'] = $pane;
+    $display->panels['right'][7] = 'new-2b7c95a2-608d-4491-a190-931b55074474';
+    $pane = new stdClass();
+    $pane->pid = 'new-be16bda6-825c-490e-9083-6aff037ea6f9';
+    $pane->panel = 'right';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_permit_section';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'hidden',
+      'formatter' => 'field_collection_fields',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(
+        'view_mode' => 'full',
+      ),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 8;
+    $pane->locks = array();
+    $pane->uuid = 'be16bda6-825c-490e-9083-6aff037ea6f9';
+    $display->content['new-be16bda6-825c-490e-9083-6aff037ea6f9'] = $pane;
+    $display->panels['right'][8] = 'new-be16bda6-825c-490e-9083-6aff037ea6f9';
     $pane = new stdClass();
     $pane->pid = 'new-c476ae30-69e5-466c-a102-f6fb98e76163';
     $pane->panel = 'top';
@@ -355,7 +417,7 @@ function sbp_starter_kit_panelizer_defaults() {
     $display->content['new-802d0a3d-bab2-4842-8635-997141abe67d'] = $pane;
     $display->panels['top'][1] = 'new-802d0a3d-bab2-4842-8635-997141abe67d';
   $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = 'new-1ecaebd6-981d-45a0-accf-66118c8442ac';
+  $display->title_pane = '0';
   $panelizer->display = $display;
   $export['node:sbp_starter_kit:default'] = $panelizer;
 
