@@ -77,7 +77,7 @@ a.wizard__arrow-up {
   width: 24px;
   height: 25px;
   display: block;
-  border⨪bottom: 2px solid white;
+  border-bottom: 2px solid white;
   text-indent: -10000px;
   @include window_size(tab-wide-up){
     margin: 0 10px 10px 0;
@@ -92,7 +92,7 @@ a.wizard__arrow-back {
   width: 24px;
   height: 25px;
   display: block;
-  border⨪bottom: 2px solid white;
+  border-bottom: 2px solid white;
   color: white;
   text-indent: -150px;
 }
