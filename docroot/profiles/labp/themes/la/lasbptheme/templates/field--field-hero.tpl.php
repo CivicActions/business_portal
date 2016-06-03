@@ -68,6 +68,12 @@ foreach($heros as $hero){
   if (!empty($hero['field_description'])) {
     $hero_description = $hero['field_description']['#items'][0]['value'];
   }
+  $calls_to_action = array();
+  if (!empty($hero['field_calls_to_action'])) {
+    foreach($hero['field_calls_to_action']['#items'] as $cta) {
+        $calls_to_action[]= array('url'=> $cta['url'],'title'=>$cta['title']);
+    }
+  }
 }
   $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
 ?>
@@ -97,8 +103,8 @@ foreach($heros as $hero){
           </div>
         </div>
 
-<!-- Half width starts -->
     <?php } else{ ?>
+        <!-- Half width starts -->
         <div class = "hero__image--bg hero__layout--<?php print $width; ?> ">
                 <div class = "hero__content-wrapper">
                     <div class = "left" >
@@ -140,15 +146,25 @@ foreach($heros as $hero){
                                 <img src = "<?php print $icon_path; ?>" />
                             </div>
                         <?php endif; ?>
-                      <div class="hero__headline--half"><?php print $hero_title; ?></div>
+                        <div class="hero__headline--half"><?php print $hero_title; ?></div>
                         <hr class = "hero__line--half">
                         <?php if(!empty($hero_description)): ?>
                           <p class="hero__description">
                              <?php print $hero_description; ?>
                           </p>
                         <?php endif; ?>
+
+                        <?php if(!empty($calls_to_action)): ?>
+                            <div class="hero__call-to-action--wrapper">
+                                <?php foreach($calls_to_action as $cta){ ?>
+                                    <div class="hero__call-to-action--item">
+                                        <a href="<?php print $cta['url']; ?>"><?php print $cta['title']; ?></a>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        <?php endif; ?>
+                      </div>
                     </div>
-                  </div>
                 </div>
             </div>
 
