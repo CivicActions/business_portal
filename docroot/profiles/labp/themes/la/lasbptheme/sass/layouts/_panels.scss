@@ -13,6 +13,7 @@
     .inside {
       margin: 0 2em 0 2em;
       padding-top: 1em;
+      padding-bottom:30px;
       max-width: $max-content-width;
       @include window_size(tab-wide-up) {
         max-width: 100%;

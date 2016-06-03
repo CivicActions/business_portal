@@ -1400,6 +1400,7 @@ table {
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0 2em 0 2em;
   padding-top: 1em;
+  padding-bottom: 30px;
   max-width: 700px;
 }
 @media all and (min-width: 720px) {
@@ -1415,16 +1416,16 @@ table {
     width: 90%;
   }
 }
-/* line 30, ../sass/layouts/_panels.scss */
+/* line 31, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first h2 {
   font-family: "Roboto", sans-serif;
 }
-/* line 33, ../sass/layouts/_panels.scss */
+/* line 34, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first .inside {
   padding: 1.5em 1em 2em 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 33, ../sass/layouts/_panels.scss */
+  /* line 34, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first .inside {
     padding: 1.5em 1em 2em 0;
     max-width: 220px;
@@ -1432,19 +1433,19 @@ table {
     width: 300px;
   }
 }
-/* line 45, ../sass/layouts/_panels.scss */
+/* line 46, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 46, ../sass/layouts/_panels.scss */
+/* line 47, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 49, ../sass/layouts/_panels.scss */
+/* line 50, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 58, ../sass/layouts/_panels.scss */
+/* line 59, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
@@ -1458,7 +1459,7 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-/* line 63, ../sass/layouts/_panels.scss */
+/* line 64, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first,
 .panel-2col-stacked .panel-col-last {
   float: none;
@@ -1466,28 +1467,28 @@ table {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 71, ../sass/layouts/_panels.scss */
+  /* line 72, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 78, ../sass/layouts/_panels.scss */
+  /* line 79, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
     width: 70%;
     margin-left: 30%;
     margin-right: -100%;
   }
-  /* line 80, ../sass/layouts/_panels.scss */
+  /* line 81, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding: 0.3em 0 2em 30px;
   }
 }
 
 @media all and (min-width: 960px) {
-  /* line 92, ../sass/layouts/_panels.scss */
+  /* line 93, ../sass/layouts/_panels.scss */
   .section-resources .panel-2col-stacked .panel-col-first,
   .section-resources .panel-2col-stacked .panel-col-last,
   .section-content .panel-2col-stacked .panel-col-first,
@@ -1499,7 +1500,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 103, ../sass/layouts/_panels.scss */
+/* line 104, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
