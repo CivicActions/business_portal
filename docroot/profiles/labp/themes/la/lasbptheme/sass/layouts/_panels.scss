@@ -13,6 +13,7 @@
     .inside {
       margin: 0 2em 0 2em;
       padding-top: 1em;
+      padding-bottom:30px;
       max-width: $max-content-width;
       @include window_size(tab-wide-up) {
         max-width: 100%;
@@ -84,6 +85,14 @@
 
 
   }
+}
+// LA-237 Addming padding to the body text
+body.section-content {
+    .panel-col-last {
+        .inside {
+            padding-top: 26px;
+        }
+    }
 }
 
 // LA-163 Adding bottom panel to 2-col panel layouts in resource and content pages.
