@@ -308,7 +308,7 @@ function sbp_terms_definitions_default_page_manager_pages() {
   $display->title_pane = 'new-b167c279-e120-4f4f-9645-2c2843fda4bf';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['terms_definitions'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 

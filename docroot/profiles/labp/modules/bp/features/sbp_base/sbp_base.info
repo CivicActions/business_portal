@@ -1,10 +1,6 @@
 name = Business Portal Base
-description = Basic configurations for the Business Portal
+description = Basic configurations and deployment for the Business Portal
 core = 7.x
+version = 7.x-1.0
 package = Small Business Portal
-dependencies[] = defaultconfig
-features[defaultconfig][] = strongarm:admin_theme
-features[defaultconfig][] = strongarm:node_admin_theme
-features[defaultconfig][] = strongarm:theme_default
 features[features_api][] = api:2
-features_exclude[dependencies][defaultconfig] = defaultconfig

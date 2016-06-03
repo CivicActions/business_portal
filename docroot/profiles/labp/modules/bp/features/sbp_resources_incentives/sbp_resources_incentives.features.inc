@@ -31,11 +31,11 @@ function sbp_resources_incentives_views_api($module = NULL, $api = NULL) {
  */
 function sbp_resources_incentives_default_search_api_index() {
   $items = array();
-  //"server" : "acquia_search",
   $items['resources_incentives'] = entity_import('search_api_index', '{
     "name" : "Resources \\u0026 Incentives",
     "machine_name" : "resources_incentives",
     "description" : null,
+    "server" : "labp_vm",
     "item_type" : "node",
     "options" : {
       "datasource" : { "bundles" : [ "incentives", "online_resource" ] },
@@ -45,8 +45,6 @@ function sbp_resources_incentives_default_search_api_index() {
         "field_business_need" : { "type" : "integer", "entity_type" : "taxonomy_term" },
         "field_business_ownership" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_content" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
-        "field_description" : { "type" : "text" },
-        "field_heading" : { "type" : "text" },
         "field_industry_tag" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_main_feature" : { "type" : "boolean" },
         "field_resource_type" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },

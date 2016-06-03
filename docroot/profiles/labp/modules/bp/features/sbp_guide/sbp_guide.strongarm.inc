@@ -124,16 +124,16 @@ function sbp_guide_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '6',
         ),
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '4',
         ),
         'rabbit_hole' => array(
-          'weight' => '0',
+          'weight' => '5',
         ),
       ),
       'display' => array(),
