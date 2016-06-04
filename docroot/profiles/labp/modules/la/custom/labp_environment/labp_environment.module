@@ -1,14 +1,20 @@
 <?php
 
 /**
- * Having discretional configuration by environment, including sandboxes.
- *
- * @param $target_env
- * @param $current_env
+ * Implements hook_init().
  */
-function labp_environment_environment_switch($target_env, $current_env) {
-  if ($target_env != 'production') {
-    variable_set('googleanalytics_account', 'UA-74074646-2');
-    drupal_set_message('Set SOLR environment');
+function labp_environment_init() {
+  // Change settings by environment.
+  switch ($_SERVER['SERVER_NAME']) {
+    case 'business.lacity.org':
+    case 'labp.cityofla.acsitefactory.com/':
+      variable_set('googleanalytics_account', 'UA-77528006-4');
+      break;
+    case 'labusinessportal.dev2-cityofla.acsitefactory.com':
+      variable_set('googleanalytics_account', 'UA-77528006-5');
+      break;
+    default:
+      variable_set('googleanalytics_account', 'UA-99999999-9');
+      break;
   }
 }
