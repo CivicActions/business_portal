@@ -1486,13 +1486,13 @@ table {
   }
 }
 
-/* line 92, ../sass/layouts/_panels.scss */
-body.section-content .panel-col-last .inside .field-name-body {
+/* line 91, ../sass/layouts/_panels.scss */
+.node-type-online-resource.section-content .panel-col-last .inside {
   padding-top: 26px;
 }
 
 @media all and (min-width: 960px) {
-  /* line 102, ../sass/layouts/_panels.scss */
+  /* line 100, ../sass/layouts/_panels.scss */
   .section-resources .panel-2col-stacked .panel-col-first,
   .section-resources .panel-2col-stacked .panel-col-last,
   .section-content .panel-2col-stacked .panel-col-first,
@@ -1502,7 +1502,7 @@ body.section-content .panel-col-last .inside .field-name-body {
 }
 
 @media (max-width: 720px) {
-  /* line 113, ../sass/layouts/_panels.scss */
+  /* line 111, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding-bottom: 30px !important;
   }
@@ -1510,7 +1510,7 @@ body.section-content .panel-col-last .inside .field-name-body {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 124, ../sass/layouts/_panels.scss */
+/* line 122, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
