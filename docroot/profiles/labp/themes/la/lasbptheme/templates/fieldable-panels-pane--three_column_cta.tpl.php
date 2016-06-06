@@ -15,8 +15,15 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 
 ?>
 <div class="panel__icons style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?>>
-  <div class="">
-    <div class = "three-col-wrapper">
+  <?php if (!empty($pane_title)) {
+  ?>
+    <hr class="panel__header-line_thin"/>
+  <?php
+  } ?>
+  <?php if (!empty($content['field_component_body'])) { ?>
+  <div class="three-col-body"><?php print $content['field_component_body'][0]['#markup']; ?></div>
+  <?php } ?>
+  <div class="three-col-wrapper">
       <?php
 
       foreach ($field_three_ctas as $cta_key => $cta_value) {
@@ -67,6 +74,5 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 
       ?>
 
-    </div>
   </div>
 </div>
