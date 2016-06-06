@@ -31,6 +31,10 @@ function sbp_resources_incentives_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Indexed Node: Hero */
+  $handler->display->display_options['relationships']['field_hero']['id'] = 'field_hero';
+  $handler->display->display_options['relationships']['field_hero']['table'] = 'search_api_index_resources_incentives';
+  $handler->display->display_options['relationships']['field_hero']['field'] = 'field_hero';
   /* Field: Indexed Node: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_resources_incentives';
@@ -61,16 +65,13 @@ function sbp_resources_incentives_views_default_views() {
   $handler->display->display_options['fields']['field_document']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_document']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_document']['type'] = 'file_url_plain';
-  /* Field: Indexed Node: The main body text */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'search_api_index_resources_incentives';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
-  $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '300',
-  );
+  /* Field: Field collection item: Description */
+  $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['table'] = 'entity_field_collection_item';
+  $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['relationship'] = 'field_hero';
+  $handler->display->display_options['fields']['field_description']['label'] = '';
+  $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
   /* Filter criterion: Resource &amp; Incentives Full Text Search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_resources_incentives';
