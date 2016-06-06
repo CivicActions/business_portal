@@ -32,7 +32,7 @@
   }
   .field-content {
     line-height: 1.25em;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.25em;
     @include window_size(desktop){
       width: 85%;
       font-size: 1.143em;
@@ -104,14 +104,13 @@
   }
 }
 
-
-
 /*******************************
          LAYOUT
 *******************************/
 //Layout for the maps + address area
 .view-id-labp_service_center {
   $zen-column-count: 12;
+  $zen-grid-width: 100%;
 
   .views-row { @include zen-grid-container(); }
   .views-field-title,
@@ -130,16 +129,17 @@
   // Desktop
   @include window_size(tab-wide-up) {
     .views-field-title {
-      margin: 0;
+      margin: 0 0 1em;
     }
     .views-field-field-map {
-      @include zen-grid-item (7, 1);
+      @include zen-grid-item (6, 1);
     }
     .views-field-field-address,
     .views-field-field-email,
     .views-field-field-link,
     .views-field-field-phone {
       @include zen-grid-item (6, 1, right);
+      padding-left: 10px;
     }
     .views-field-field-email,
     .views-field-field-link,
@@ -149,18 +149,15 @@
     }
     .views-field-field-services {
       @include zen-clear(both);
-      @include zen-grid-item (7, 1);
+      @include zen-grid-item (6, 1);
       .views-label {
         margin-top: 0;
       }
     }
     .views-field-field-languages {
-      @include zen-grid-item (5, 8);
+      @include zen-grid-item (6, 7);
+      padding-left: 10px;
     }
   }
 
 }
-
-
-
-

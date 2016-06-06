@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";
+@charset "UTF-8";
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
@@ -4971,7 +4971,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 /* line 33, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .field-content {
   line-height: 1.25em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.25em;
 }
 @media all and (min-width: 960px) {
   /* line 33, ../sass/components/_landing-page--service-center.scss */
@@ -5045,7 +5045,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 .view-id-labp_service_center .views-row:after {
   clear: both;
 }
-/* line 117, ../sass/components/_landing-page--service-center.scss */
+/* line 116, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-title,
 .view-id-labp_service_center .views-field-body,
 .view-id-labp_service_center .views-field-field-map,
@@ -5065,26 +5065,27 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   padding-left: 0;
 }
 @media all and (min-width: 720px) {
-  /* line 132, ../sass/components/_landing-page--service-center.scss */
+  /* line 131, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-title {
-    margin: 0;
+    margin: 0 0 1em;
   }
-  /* line 135, ../sass/components/_landing-page--service-center.scss */
+  /* line 134, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-map {
     float: left;
-    width: 52.5%;
+    width: 50%;
     margin-left: 0%;
-    margin-right: -52.5%;
+    margin-right: -50%;
   }
-  /* line 138, ../sass/components/_landing-page--service-center.scss */
+  /* line 137, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-address,
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-link,
   .view-id-labp_service_center .views-field-field-phone {
     float: right;
-    width: 45%;
+    width: 50%;
     margin-right: 0%;
-    margin-left: -45%;
+    margin-left: -50%;
+    padding-left: 10px;
   }
   /* line 144, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-email,
@@ -5097,9 +5098,9 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   .view-id-labp_service_center .views-field-field-services {
     clear: both;
     float: left;
-    width: 52.5%;
+    width: 50%;
     margin-left: 0%;
-    margin-right: -52.5%;
+    margin-right: -50%;
   }
   /* line 153, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-services .views-label {
@@ -5108,9 +5109,10 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   /* line 157, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-languages {
     float: left;
-    width: 37.5%;
-    margin-left: 52.5%;
-    margin-right: -90%;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 10px;
   }
 }
 
@@ -5236,7 +5238,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    width: 22.5%;
+    width: 25%;
     padding-left: 0;
     padding-right: 15px;
     margin-right: 5px;
@@ -5287,7 +5289,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    width: 30%;
+    width: 33.33333%;
     padding-left: 0;
     padding-right: 13.33333px;
     margin-right: 6.66667px;
@@ -5317,7 +5319,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   margin: 0 0 18px 0;
   padding: 0;
   font-size: 1.714em;
-  width: 90%;
+  width: 100%;
 }
 @media all and (min-width: 720px) {
   /* line 31, ../sass/components/_section_content.scss */
