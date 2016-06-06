@@ -588,7 +588,9 @@ wiz.views.Tip = Backbone.View.extend({
   className: "wizard__tip",
   template: _.template($('#tip-template').html()),
   render: function() {
-    this.$el.html(this.template(this.model.toJSON()));
+    if(parseInt(this.model.toJSON().tip.length) > 0) {
+        this.$el.html(this.template(this.model.toJSON()));
+    }
     return this;
   }
 });
