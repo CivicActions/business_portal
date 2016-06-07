@@ -1,7 +1,7 @@
 name = SBP Resources & Incentives
 core = 7.x
 package = Small Business Portal
-version = 7.x-1.2
+version = 7.x-1.3
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = facetapi

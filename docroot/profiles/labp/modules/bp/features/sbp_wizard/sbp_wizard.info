@@ -19,7 +19,6 @@ dependencies[] = options
 dependencies[] = panelizer
 dependencies[] = rest_server
 dependencies[] = sbp_field_base
-dependencies[] = sbp_permits
 dependencies[] = services
 dependencies[] = services_views
 dependencies[] = strongarm

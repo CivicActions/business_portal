@@ -13,7 +13,6 @@ dependencies[] = metatag
 dependencies[] = options
 dependencies[] = page_manager
 dependencies[] = panelizer
-dependencies[] = sbp_content
 dependencies[] = sbp_field_base
 dependencies[] = sbp_hero
 dependencies[] = sbp_taxonomy

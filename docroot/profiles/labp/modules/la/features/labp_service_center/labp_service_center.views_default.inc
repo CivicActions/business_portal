@@ -80,7 +80,7 @@ function labp_service_center_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Field: Address */
+  /* Field: Field: Address info */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
