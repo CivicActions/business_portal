@@ -112,7 +112,7 @@ foreach($heros as $hero){
                             <?php if (!empty($background_image_path)){ ?>
                                 style = "background-image: url('<?php print $background_image_path;?>')"
                              <?php } else { ?>
-                                id = "default-bg-image" style = "background-image: url('../<?php print $theme_path;?>/images/hero/default-bg--light_blue.jpg')"
+                                id = "hero--left-bg"
                              <?php } ?> >
                           <div class = "hero__image--overlay">
                             <div class = "hero__header--inner">

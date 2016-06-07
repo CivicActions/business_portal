@@ -45,7 +45,7 @@
   }
 
   // Have the default image bg match the height of other sub-pages
-  #default-bg-image {
+  #hero--left-bg {
     @include window_size(desktop) {
       padding-bottom: 8em;
       min-height: 400px;
