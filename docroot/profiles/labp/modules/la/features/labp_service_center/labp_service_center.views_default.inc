@@ -77,10 +77,10 @@ function labp_service_center_views_default_views() {
   $handler->display->display_options['fields']['field_map']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_map']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_map']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'medium_landscape',
     'image_link' => '',
   );
-  /* Field: Field: Address */
+  /* Field: Field: Address info */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';

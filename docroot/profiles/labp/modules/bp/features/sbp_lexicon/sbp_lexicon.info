@@ -6,7 +6,6 @@ dependencies[] = defaultconfig
 dependencies[] = features
 dependencies[] = lexicon
 dependencies[] = link
-dependencies[] = sbp_content
 dependencies[] = sbp_field_base
 dependencies[] = strongarm
 dependencies[] = taxonomy

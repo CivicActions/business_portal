@@ -310,6 +310,13 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'administer panelizer comment comment_node_sbp_starter_kit defaults'.
+  $permissions['administer panelizer comment comment_node_sbp_starter_kit defaults'] = array(
+    'name' => 'administer panelizer comment comment_node_sbp_starter_kit defaults',
+    'roles' => array(),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node faq defaults'.
   $permissions['administer panelizer node faq defaults'] = array(
     'name' => 'administer panelizer node faq defaults',
@@ -429,6 +436,16 @@ function labp_users_user_default_permissions() {
     'module' => 'panelizer',
   );
 
+  // Exported permission: 'administer panelizer node landing layout'.
+  $permissions['administer panelizer node landing layout'] = array(
+    'name' => 'administer panelizer node landing layout',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panelizer',
+  );
+
   // Exported permission: 'administer panelizer node online_resource content'.
   $permissions['administer panelizer node online_resource content'] = array(
     'name' => 'administer panelizer node online_resource content',
@@ -538,48 +555,6 @@ function labp_users_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node sbp_content content'.
-  $permissions['administer panelizer node sbp_content content'] = array(
-    'name' => 'administer panelizer node sbp_content content',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content context'.
-  $permissions['administer panelizer node sbp_content context'] = array(
-    'name' => 'administer panelizer node sbp_content context',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content defaults'.
-  $permissions['administer panelizer node sbp_content defaults'] = array(
-    'name' => 'administer panelizer node sbp_content defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content layout'.
-  $permissions['administer panelizer node sbp_content layout'] = array(
-    'name' => 'administer panelizer node sbp_content layout',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content overview'.
-  $permissions['administer panelizer node sbp_content overview'] = array(
-    'name' => 'administer panelizer node sbp_content overview',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_content settings'.
-  $permissions['administer panelizer node sbp_content settings'] = array(
-    'name' => 'administer panelizer node sbp_content settings',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node sbp_department content'.
   $permissions['administer panelizer node sbp_department content'] = array(
     'name' => 'administer panelizer node sbp_department content',
@@ -635,60 +610,6 @@ function labp_users_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node sbp_guide content'.
-  $permissions['administer panelizer node sbp_guide content'] = array(
-    'name' => 'administer panelizer node sbp_guide content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_guide context'.
-  $permissions['administer panelizer node sbp_guide context'] = array(
-    'name' => 'administer panelizer node sbp_guide context',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_guide defaults'.
-  $permissions['administer panelizer node sbp_guide defaults'] = array(
-    'name' => 'administer panelizer node sbp_guide defaults',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_guide layout'.
-  $permissions['administer panelizer node sbp_guide layout'] = array(
-    'name' => 'administer panelizer node sbp_guide layout',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_guide overview'.
-  $permissions['administer panelizer node sbp_guide overview'] = array(
-    'name' => 'administer panelizer node sbp_guide overview',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node sbp_guide settings'.
-  $permissions['administer panelizer node sbp_guide settings'] = array(
-    'name' => 'administer panelizer node sbp_guide settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node sbp_landing_page choice'.
   $permissions['administer panelizer node sbp_landing_page choice'] = array(
     'name' => 'administer panelizer node sbp_landing_page choice',
@@ -730,6 +651,7 @@ function labp_users_user_default_permissions() {
   $permissions['administer panelizer node sbp_landing_page layout'] = array(
     'name' => 'administer panelizer node sbp_landing_page layout',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
@@ -814,6 +736,17 @@ function labp_users_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'panelizer',
+  );
+
+  // Exported permission: 'administer panels layouts'.
+  $permissions['administer panels layouts'] = array(
+    'name' => 'administer panels layouts',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'panels',
   );
 
   // Exported permission: 'administer workbench'.
@@ -933,27 +866,11 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create sbp_content content'.
-  $permissions['create sbp_content content'] = array(
-    'name' => 'create sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create sbp_department content'.
   $permissions['create sbp_department content'] = array(
     'name' => 'create sbp_department content',
     'roles' => array(
       'Editor' => 'Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create sbp_guide content'.
-  $permissions['create sbp_guide content'] = array(
-    'name' => 'create sbp_guide content',
-    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1059,27 +976,11 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any sbp_content content'.
-  $permissions['delete any sbp_content content'] = array(
-    'name' => 'delete any sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any sbp_department content'.
   $permissions['delete any sbp_department content'] = array(
     'name' => 'delete any sbp_department content',
     'roles' => array(
       'Editor' => 'Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any sbp_guide content'.
-  $permissions['delete any sbp_guide content'] = array(
-    'name' => 'delete any sbp_guide content',
-    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1185,27 +1086,11 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own sbp_content content'.
-  $permissions['delete own sbp_content content'] = array(
-    'name' => 'delete own sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own sbp_department content'.
   $permissions['delete own sbp_department content'] = array(
     'name' => 'delete own sbp_department content',
     'roles' => array(
       'Editor' => 'Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own sbp_guide content'.
-  $permissions['delete own sbp_guide content'] = array(
-    'name' => 'delete own sbp_guide content',
-    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1574,27 +1459,11 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any sbp_content content'.
-  $permissions['edit any sbp_content content'] = array(
-    'name' => 'edit any sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any sbp_department content'.
   $permissions['edit any sbp_department content'] = array(
     'name' => 'edit any sbp_department content',
     'roles' => array(
       'Editor' => 'Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any sbp_guide content'.
-  $permissions['edit any sbp_guide content'] = array(
-    'name' => 'edit any sbp_guide content',
-    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1700,27 +1569,11 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own sbp_content content'.
-  $permissions['edit own sbp_content content'] = array(
-    'name' => 'edit own sbp_content content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own sbp_department content'.
   $permissions['edit own sbp_department content'] = array(
     'name' => 'edit own sbp_department content',
     'roles' => array(
       'Editor' => 'Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own sbp_guide content'.
-  $permissions['edit own sbp_guide content'] = array(
-    'name' => 'edit own sbp_guide content',
-    'roles' => array(
       'administrator' => 'administrator',
     ),
     'module' => 'node',

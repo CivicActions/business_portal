@@ -57,7 +57,7 @@ function sbp_resources_incentives_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'View';
-  /* Field: Indexed Node: Guide PDF */
+  /* Field: Indexed Node: Document */
   $handler->display->display_options['fields']['field_document']['id'] = 'field_document';
   $handler->display->display_options['fields']['field_document']['table'] = 'search_api_index_resources_incentives';
   $handler->display->display_options['fields']['field_document']['field'] = 'field_document';
