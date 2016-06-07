@@ -19,15 +19,17 @@
 .style_variant {
   /****** Light Blue ******/
   /****** Light Green******/
-  /****** Blue ******/
+  /********** Yellow ************/
+  /********** Orange ************/
+  /********** Mint ************/
   /****** White ******/
   /****** Light Grey ******/
 }
 /* line 109, ../sass/base/_mixins.scss */
 .style_variant.light_blue {
-  background-color: #88cff5;
+  background-color: #7ac7f6;
   color: white;
-  border-color: #88cff5;
+  border-color: #7ac7f6;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
@@ -37,7 +39,7 @@
 }
 /* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr {
-  background-color: #88cff5;
+  background-color: #7ac7f6;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
@@ -50,27 +52,31 @@
   margin-bottom: 2em;
   background: white;
 }
-/* line 112, ../sass/base/_mixins.scss */
+/* line 113, ../sass/base/_mixins.scss */
 .style_variant.light_blue .panel__intro_header,
 .style_variant.light_blue .hero__headline--half,
 .style_variant.light_blue .hero__description {
   color: #163549;
 }
-/* line 116, ../sass/base/_mixins.scss */
+/* line 119, ../sass/base/_mixins.scss */
 .style_variant.light_blue .hero__headline,
 .style_variant.light_blue .hero__headline--half--mobile {
   color: white;
 }
-/* line 119, ../sass/base/_mixins.scss */
+/* line 124, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line_thin,
 .style_variant.light_blue hr.hero__line--half {
   background: white;
 }
-/* line 126, ../sass/base/_mixins.scss */
+/* line 129, ../sass/base/_mixins.scss */
+.style_variant.light_blue #hero--left-bg {
+  background-color: #5dbbf5;
+}
+/* line 135, ../sass/base/_mixins.scss */
 .style_variant.light_green {
-  background-color: #acc863;
+  background-color: #b5cf6e;
   color: white;
-  border-color: #acc863;
+  border-color: #b5cf6e;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
@@ -80,7 +86,7 @@
 }
 /* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_green hr {
-  background-color: #acc863;
+  background-color: #b5cf6e;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
@@ -93,41 +99,140 @@
   margin-bottom: 2em;
   background: white;
 }
-/* line 132, ../sass/base/_mixins.scss */
-.style_variant.blue {
-  background-color: #163549;
+/* line 139, ../sass/base/_mixins.scss */
+.style_variant.light_green .hero__headline--half,
+.style_variant.light_green .hero__description {
+  color: #163549;
+}
+/* line 144, ../sass/base/_mixins.scss */
+.style_variant.light_green hr.hero__line--half {
+  background: white;
+}
+/* line 147, ../sass/base/_mixins.scss */
+.style_variant.light_green #hero--left-bg {
+  background-color: #acc863;
+}
+/* line 153, ../sass/base/_mixins.scss */
+.style_variant.yellow {
+  background-color: #f5d365;
   color: white;
-  border-color: #163549;
+  border-color: #f5d365;
+  color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
-.style_variant.blue .panel__intro_header,
-.style_variant.blue .hero__description {
+.style_variant.yellow .panel__intro_header,
+.style_variant.yellow .hero__description {
   color: white;
 }
 /* line 92, ../sass/base/_mixins.scss */
-.style_variant.blue hr {
-  background-color: #163549;
+.style_variant.yellow hr {
+  background-color: #f5d365;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin {
+.style_variant.yellow hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
 /* line 99, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line {
+.style_variant.yellow hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 134, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin {
+/* line 157, ../sass/base/_mixins.scss */
+.style_variant.yellow .hero__headline--half,
+.style_variant.yellow .hero__description {
+  color: #163549;
+}
+/* line 162, ../sass/base/_mixins.scss */
+.style_variant.yellow hr.hero__line--half {
   background: white;
 }
-/* line 135, ../sass/base/_mixins.scss */
-.style_variant.blue hr.hero__line--half {
-  background: #88cff5;
+/* line 165, ../sass/base/_mixins.scss */
+.style_variant.yellow #hero--left-bg {
+  background-color: #e9c759;
 }
-/* line 139, ../sass/base/_mixins.scss */
+/* line 171, ../sass/base/_mixins.scss */
+.style_variant.orange {
+  background-color: #fbb64f;
+  color: white;
+  border-color: #fbb64f;
+  color: #163549;
+}
+/* line 89, ../sass/base/_mixins.scss */
+.style_variant.orange .panel__intro_header,
+.style_variant.orange .hero__description {
+  color: white;
+}
+/* line 92, ../sass/base/_mixins.scss */
+.style_variant.orange hr {
+  background-color: #fbb64f;
+  border: none;
+}
+/* line 95, ../sass/base/_mixins.scss */
+.style_variant.orange hr.panel__header-line_thin {
+  margin: 0 0 1em 0;
+  background: #163549;
+}
+/* line 99, ../sass/base/_mixins.scss */
+.style_variant.orange hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 175, ../sass/base/_mixins.scss */
+.style_variant.orange .hero__headline--half,
+.style_variant.orange .hero__description {
+  color: #163549;
+}
+/* line 180, ../sass/base/_mixins.scss */
+.style_variant.orange hr.hero__line--half {
+  background: white;
+}
+/* line 183, ../sass/base/_mixins.scss */
+.style_variant.orange #hero--left-bg {
+  background-color: #eea73c;
+}
+/* line 190, ../sass/base/_mixins.scss */
+.style_variant.mint {
+  background-color: #9ce5d5;
+  color: white;
+  border-color: #9ce5d5;
+  color: #163549;
+}
+/* line 89, ../sass/base/_mixins.scss */
+.style_variant.mint .panel__intro_header,
+.style_variant.mint .hero__description {
+  color: white;
+}
+/* line 92, ../sass/base/_mixins.scss */
+.style_variant.mint hr {
+  background-color: #9ce5d5;
+  border: none;
+}
+/* line 95, ../sass/base/_mixins.scss */
+.style_variant.mint hr.panel__header-line_thin {
+  margin: 0 0 1em 0;
+  background: #163549;
+}
+/* line 99, ../sass/base/_mixins.scss */
+.style_variant.mint hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 194, ../sass/base/_mixins.scss */
+.style_variant.mint .hero__headline--half,
+.style_variant.mint .hero__description {
+  color: #163549;
+}
+/* line 199, ../sass/base/_mixins.scss */
+.style_variant.mint hr.hero__line--half {
+  background: white;
+}
+/* line 202, ../sass/base/_mixins.scss */
+.style_variant.mint #hero--left-bg {
+  background-color: #89d5c4;
+}
+/* line 209, ../sass/base/_mixins.scss */
 .style_variant.white {
   background-color: white;
   color: white;
@@ -154,16 +259,16 @@
   margin-bottom: 2em;
   background: white;
 }
-/* line 142, ../sass/base/_mixins.scss */
+/* line 212, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
   color: #163549;
 }
-/* line 143, ../sass/base/_mixins.scss */
+/* line 215, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line,
 .style_variant.white hr.panel__header-line_thin {
-  background: #88cff5;
+  background: #7ac7f6;
 }
-/* line 148, ../sass/base/_mixins.scss */
+/* line 222, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
   background-color: #e6e6e6;
   color: white;
@@ -190,13 +295,13 @@
   margin-bottom: 2em;
   background: white;
 }
-/* line 151, ../sass/base/_mixins.scss */
+/* line 225, ../sass/base/_mixins.scss */
 .style_variant.light_grey .panel__intro_header,
 .style_variant.light_grey .hero__headline--half,
 .style_variant.light_grey .hero__description {
   color: #163549;
 }
-/* line 155, ../sass/base/_mixins.scss */
+/* line 231, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line_thin,
 .style_variant.light_grey hr.hero__line--half {
   background: white;
@@ -239,15 +344,17 @@ body {
 .style_variant {
   /****** Light Blue ******/
   /****** Light Green******/
-  /****** Blue ******/
+  /********** Yellow ************/
+  /********** Orange ************/
+  /********** Mint ************/
   /****** White ******/
   /****** Light Grey ******/
 }
 /* line 109, ../sass/base/_mixins.scss */
 .style_variant.light_blue {
-  background-color: #88cff5;
+  background-color: #7ac7f6;
   color: white;
-  border-color: #88cff5;
+  border-color: #7ac7f6;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
@@ -257,7 +364,7 @@ body {
 }
 /* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr {
-  background-color: #88cff5;
+  background-color: #7ac7f6;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
@@ -270,27 +377,31 @@ body {
   margin-bottom: 2em;
   background: white;
 }
-/* line 112, ../sass/base/_mixins.scss */
+/* line 113, ../sass/base/_mixins.scss */
 .style_variant.light_blue .panel__intro_header,
 .style_variant.light_blue .hero__headline--half,
 .style_variant.light_blue .hero__description {
   color: #163549;
 }
-/* line 116, ../sass/base/_mixins.scss */
+/* line 119, ../sass/base/_mixins.scss */
 .style_variant.light_blue .hero__headline,
 .style_variant.light_blue .hero__headline--half--mobile {
   color: white;
 }
-/* line 119, ../sass/base/_mixins.scss */
+/* line 124, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line_thin,
 .style_variant.light_blue hr.hero__line--half {
   background: white;
 }
-/* line 126, ../sass/base/_mixins.scss */
+/* line 129, ../sass/base/_mixins.scss */
+.style_variant.light_blue #hero--left-bg {
+  background-color: #5dbbf5;
+}
+/* line 135, ../sass/base/_mixins.scss */
 .style_variant.light_green {
-  background-color: #acc863;
+  background-color: #b5cf6e;
   color: white;
-  border-color: #acc863;
+  border-color: #b5cf6e;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
@@ -300,7 +411,7 @@ body {
 }
 /* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_green hr {
-  background-color: #acc863;
+  background-color: #b5cf6e;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
@@ -313,41 +424,140 @@ body {
   margin-bottom: 2em;
   background: white;
 }
-/* line 132, ../sass/base/_mixins.scss */
-.style_variant.blue {
-  background-color: #163549;
+/* line 139, ../sass/base/_mixins.scss */
+.style_variant.light_green .hero__headline--half,
+.style_variant.light_green .hero__description {
+  color: #163549;
+}
+/* line 144, ../sass/base/_mixins.scss */
+.style_variant.light_green hr.hero__line--half {
+  background: white;
+}
+/* line 147, ../sass/base/_mixins.scss */
+.style_variant.light_green #hero--left-bg {
+  background-color: #acc863;
+}
+/* line 153, ../sass/base/_mixins.scss */
+.style_variant.yellow {
+  background-color: #f5d365;
   color: white;
-  border-color: #163549;
+  border-color: #f5d365;
+  color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
-.style_variant.blue .panel__intro_header,
-.style_variant.blue .hero__description {
+.style_variant.yellow .panel__intro_header,
+.style_variant.yellow .hero__description {
   color: white;
 }
 /* line 92, ../sass/base/_mixins.scss */
-.style_variant.blue hr {
-  background-color: #163549;
+.style_variant.yellow hr {
+  background-color: #f5d365;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin {
+.style_variant.yellow hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
 /* line 99, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line {
+.style_variant.yellow hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 134, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin {
+/* line 157, ../sass/base/_mixins.scss */
+.style_variant.yellow .hero__headline--half,
+.style_variant.yellow .hero__description {
+  color: #163549;
+}
+/* line 162, ../sass/base/_mixins.scss */
+.style_variant.yellow hr.hero__line--half {
   background: white;
 }
-/* line 135, ../sass/base/_mixins.scss */
-.style_variant.blue hr.hero__line--half {
-  background: #88cff5;
+/* line 165, ../sass/base/_mixins.scss */
+.style_variant.yellow #hero--left-bg {
+  background-color: #e9c759;
 }
-/* line 139, ../sass/base/_mixins.scss */
+/* line 171, ../sass/base/_mixins.scss */
+.style_variant.orange {
+  background-color: #fbb64f;
+  color: white;
+  border-color: #fbb64f;
+  color: #163549;
+}
+/* line 89, ../sass/base/_mixins.scss */
+.style_variant.orange .panel__intro_header,
+.style_variant.orange .hero__description {
+  color: white;
+}
+/* line 92, ../sass/base/_mixins.scss */
+.style_variant.orange hr {
+  background-color: #fbb64f;
+  border: none;
+}
+/* line 95, ../sass/base/_mixins.scss */
+.style_variant.orange hr.panel__header-line_thin {
+  margin: 0 0 1em 0;
+  background: #163549;
+}
+/* line 99, ../sass/base/_mixins.scss */
+.style_variant.orange hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 175, ../sass/base/_mixins.scss */
+.style_variant.orange .hero__headline--half,
+.style_variant.orange .hero__description {
+  color: #163549;
+}
+/* line 180, ../sass/base/_mixins.scss */
+.style_variant.orange hr.hero__line--half {
+  background: white;
+}
+/* line 183, ../sass/base/_mixins.scss */
+.style_variant.orange #hero--left-bg {
+  background-color: #eea73c;
+}
+/* line 190, ../sass/base/_mixins.scss */
+.style_variant.mint {
+  background-color: #9ce5d5;
+  color: white;
+  border-color: #9ce5d5;
+  color: #163549;
+}
+/* line 89, ../sass/base/_mixins.scss */
+.style_variant.mint .panel__intro_header,
+.style_variant.mint .hero__description {
+  color: white;
+}
+/* line 92, ../sass/base/_mixins.scss */
+.style_variant.mint hr {
+  background-color: #9ce5d5;
+  border: none;
+}
+/* line 95, ../sass/base/_mixins.scss */
+.style_variant.mint hr.panel__header-line_thin {
+  margin: 0 0 1em 0;
+  background: #163549;
+}
+/* line 99, ../sass/base/_mixins.scss */
+.style_variant.mint hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 194, ../sass/base/_mixins.scss */
+.style_variant.mint .hero__headline--half,
+.style_variant.mint .hero__description {
+  color: #163549;
+}
+/* line 199, ../sass/base/_mixins.scss */
+.style_variant.mint hr.hero__line--half {
+  background: white;
+}
+/* line 202, ../sass/base/_mixins.scss */
+.style_variant.mint #hero--left-bg {
+  background-color: #89d5c4;
+}
+/* line 209, ../sass/base/_mixins.scss */
 .style_variant.white {
   background-color: white;
   color: white;
@@ -374,16 +584,16 @@ body {
   margin-bottom: 2em;
   background: white;
 }
-/* line 142, ../sass/base/_mixins.scss */
+/* line 212, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
   color: #163549;
 }
-/* line 143, ../sass/base/_mixins.scss */
+/* line 215, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line,
 .style_variant.white hr.panel__header-line_thin {
-  background: #88cff5;
+  background: #7ac7f6;
 }
-/* line 148, ../sass/base/_mixins.scss */
+/* line 222, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
   background-color: #e6e6e6;
   color: white;
@@ -410,13 +620,13 @@ body {
   margin-bottom: 2em;
   background: white;
 }
-/* line 151, ../sass/base/_mixins.scss */
+/* line 225, ../sass/base/_mixins.scss */
 .style_variant.light_grey .panel__intro_header,
 .style_variant.light_grey .hero__headline--half,
 .style_variant.light_grey .hero__description {
   color: #163549;
 }
-/* line 155, ../sass/base/_mixins.scss */
+/* line 231, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line_thin,
 .style_variant.light_grey hr.hero__line--half {
   background: white;
@@ -2277,7 +2487,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1464939989');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -2913,6 +3123,7 @@ hr.hero__line--half {
   max-width: 250px;
   padding: 20px 0 0;
   margin-bottom: 0;
+  display: none;
 }
 @media all and (min-width: 960px) {
   /* line 36, ../sass/components/hero/_hero__half-width.scss */
@@ -2920,16 +3131,17 @@ hr.hero__line--half {
     padding: 250px .5em 5em 0;
     float: right;
     max-width: 235px;
+    display: block;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 48, ../sass/components/hero/_hero__half-width.scss */
-  .hero__layout--half #default-bg-image {
+  /* line 50, ../sass/components/hero/_hero__half-width.scss */
+  .hero__layout--half #hero--left-bg {
     padding-bottom: 8em;
     min-height: 400px;
   }
 }
-/* line 55, ../sass/components/hero/_hero__half-width.scss */
+/* line 57, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name {
   color: #fff;
   font-size: 1.1em;
@@ -2937,7 +3149,7 @@ hr.hero__line--half {
   font-weight: bold;
   width: 160px;
 }
-/* line 63, ../sass/components/hero/_hero__half-width.scss */
+/* line 65, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__description {
   color: #fff;
   font-size: 1em;
@@ -2945,52 +3157,52 @@ hr.hero__line--half {
   width: 160px;
   padding-right: 5em;
 }
-/* line 72, ../sass/components/hero/_hero__half-width.scss */
+/* line 74, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name,
 .hero__layout--half .hero__business__description,
 .hero__layout--half .hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 72, ../sass/components/hero/_hero__half-width.scss */
+  /* line 74, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__name,
   .hero__layout--half .hero__business__description,
   .hero__layout--half .hero__line--half {
     display: block;
   }
 }
-/* line 84, ../sass/components/hero/_hero__half-width.scss */
+/* line 86, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .right .hero__header--inner {
   padding: 1em 0 30px;
 }
 @media all and (min-width: 960px) {
-  /* line 84, ../sass/components/hero/_hero__half-width.scss */
+  /* line 86, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right .hero__header--inner {
     padding: 6em 30px 0;
     max-width: 700px;
   }
 }
-/* line 92, ../sass/components/hero/_hero__half-width.scss */
+/* line 94, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
   margin: 0.8em 1em 1em 2em;
   font-size: 1.143em;
 }
 @media all and (min-width: 960px) {
-  /* line 92, ../sass/components/hero/_hero__half-width.scss */
+  /* line 94, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
     font-size: 1.429em;
     line-height: 1.4;
     margin: 30px 0;
   }
 }
-/* line 102, ../sass/components/hero/_hero__half-width.scss */
+/* line 104, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline,
 .hero__layout--half .hero__headline--half,
 .hero__layout--half .hero__headline--half--mobile {
   font-size: 1.8em;
 }
 @media all and (min-width: 960px) {
-  /* line 102, ../sass/components/hero/_hero__half-width.scss */
+  /* line 104, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -2998,23 +3210,28 @@ hr.hero__line--half {
     margin: 1em 0 0;
   }
 }
-/* line 112, ../sass/components/hero/_hero__half-width.scss */
+/* line 114, ../sass/components/hero/_hero__half-width.scss */
+.hero__layout--half .hero__headline--half--mobile {
+  padding-bottom: 25px;
+  font-size: 1.4em;
+}
+/* line 118, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
 @media all and (min-width: 960px) {
-  /* line 112, ../sass/components/hero/_hero__half-width.scss */
+  /* line 118, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__background-image {
     background-size: auto 100%;
   }
 }
-/* line 120, ../sass/components/hero/_hero__half-width.scss */
+/* line 126, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay {
   position: relative;
   overflow: hidden;
 }
-/* line 129, ../sass/components/hero/_hero__half-width.scss */
+/* line 135, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item {
   text-transform: uppercase;
   background: #fff;
@@ -3024,17 +3241,17 @@ hr.hero__line--half {
   padding: 10px 20px;
   font-weight: bold;
 }
-/* line 137, ../sass/components/hero/_hero__half-width.scss */
+/* line 143, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item a {
   color: #0f2940;
 }
 @media all and (min-width: 960px) {
-  /* line 129, ../sass/components/hero/_hero__half-width.scss */
+  /* line 135, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__call-to-action--item {
     font-size: 1.143em;
   }
 }
-/* line 157, ../sass/components/hero/_hero__half-width.scss */
+/* line 163, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   width: 100%;
   padding-left: 0;
@@ -3049,14 +3266,14 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 165, ../sass/components/hero/_hero__half-width.scss */
+  /* line 171, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 166, ../sass/components/hero/_hero__half-width.scss */
+  /* line 172, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 70%;
@@ -3087,7 +3304,7 @@ hr.hero__line--half {
   font-weight: 900;
   color: #0f2940;
   margin-bottom: 0;
-  border-bottom: 1px solid #88cff5;
+  border-bottom: 1px solid #7ac7f6;
   padding: 0 10px 0.8em 0;
 }
 @media all and (min-width: 960px) {
@@ -3196,7 +3413,7 @@ hr.hero__line--half {
 .view-sbp-resource-incentives .views-row,
 .view-terms-definitions .views-row {
   padding: 1em 0;
-  border-bottom: solid 1px #88cff5;
+  border-bottom: solid 1px #7ac7f6;
 }
 /* line 28, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-row:last-child,
@@ -3249,7 +3466,7 @@ hr.hero__line--half {
   color: #0f2940;
   padding: 0 1em 0.8em 0;
   margin-bottom: 0;
-  border-bottom: 1px solid #88cff5;
+  border-bottom: 1px solid #7ac7f6;
 }
 @media all and (min-width: 960px) {
   /* line 50, ../sass/components/_landing_page--views.scss */
@@ -3427,7 +3644,7 @@ hr.hero__line--half {
 }
 /* line 82, ../sass/components/_bottom-region.scss */
 .region--bottom a {
-  color: #88cff5;
+  color: #7ac7f6;
   font-weight: bold;
 }
 /* line 87, ../sass/components/_bottom-region.scss */
@@ -3655,7 +3872,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1464939989');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -3991,7 +4208,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1464939989');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -4055,7 +4272,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4065,7 +4282,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4075,7 +4292,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4150,7 +4367,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4161,7 +4378,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4172,7 +4389,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -4216,7 +4433,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1464939989');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4304,7 +4521,7 @@ hr.wizard__arrow-line {
 
 /* line 71, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1464939989');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4324,7 +4541,7 @@ a.wizard__arrow-up {
 
 /* line 88, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_up.png?1464939989');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 24px;
@@ -4337,7 +4554,7 @@ a.wizard__arrow-back {
 
 /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1464939989');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position-y: 50%;
@@ -4357,7 +4574,7 @@ a.wizard__arrow-down {
 
 /* line 117, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4372,7 +4589,7 @@ a.wizard__arrow-down.enabled.section {
 /* line 130, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   display: inline-block;
   background-position-y: 50%;
   float: right;
@@ -4393,7 +4610,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 150, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1464939989');
+  background-image: url('../images/wizard/arrow_down_filled.png?1462127234');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4450,7 +4667,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1464939989');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 
@@ -4961,7 +5178,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   font-size: 1.429em;
   font-weight: 900;
   color: #0f2940;
-  border-bottom: solid 1px #88cff5;
+  border-bottom: solid 1px #7ac7f6;
   padding: 0 0 0.83em;
 }
 
@@ -5023,13 +5240,13 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 }
 /* line 78, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-phone {
-  border-bottom: solid 1px #88cff5;
+  border-bottom: solid 1px #7ac7f6;
 }
 /* line 87, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-row {
   width: 100%;
   padding: 1em 0;
-  border-top: solid 1px #88cff5;
+  border-top: solid 1px #7ac7f6;
 }
 /* line 91, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-row:last-child {
@@ -5235,12 +5452,12 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     padding: 1em 0 6em;
   }
 }
-/* line 81, ../sass/components/_four_column_cta.scss */
+/* line 82, ../sass/components/_four_column_cta.scss */
 .four-col-wrapper .panel__section {
   margin-top: 2em;
 }
 @media all and (min-width: 720px) {
-  /* line 81, ../sass/components/_four_column_cta.scss */
+  /* line 82, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper .panel__section {
     padding-left: 10px;
     padding-right: 10px;
@@ -5255,6 +5472,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     margin-right: 5px;
     float: left;
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
@@ -5391,7 +5609,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   margin: 1em 0;
   cursor: pointer;
 }
-/* line 173, ../sass/base/_mixins.scss */
+/* line 251, ../sass/base/_mixins.scss */
 .panel__button a, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle a,
 .panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle a {
   color: #163549;
@@ -5501,7 +5719,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 /* line 40, ../sass/components/_left_sidebar.scss */
 .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1,
 .panel-2col-stacked .pane-sbp-terms-definitions {
-  border-top: 1px solid #88cff5;
+  border-top: 1px solid #7ac7f6;
   width: 100%;
   margin-top: 2em;
   padding-top: 0.8em;

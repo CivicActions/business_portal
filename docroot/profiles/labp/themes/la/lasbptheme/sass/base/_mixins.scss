@@ -107,53 +107,131 @@ $max-sidebar-width: 300px;
 
   /****** Light Blue ******/
   &.light_blue {
-    @include style-variant( $light-blue );
+    @include style-variant($light-blue);
+    color: $navy;
 
     .panel__intro_header,
     .hero__headline--half,
-    .hero__description { color: $navy; }
+    .hero__description {
+      color: $navy;
+    }
 
     .hero__headline,
-    .hero__headline--half--mobile { color: $white; }
+    .hero__headline--half--mobile {
+      color: $white;
+    }
 
     hr.panel__header-line_thin,
-    hr.hero__line--half { background: $white; }
+    hr.hero__line--half {
+      background: $white;
+    }
 
-    color: $navy;
+    #hero--left-bg {
+      background-color: $blue;
+    }
   }
 
   /****** Light Green******/
   &.light_green {
-    @include style-variant( $light-green );
+    @include style-variant($green);
     color: $navy;
+
+    .hero__headline--half,
+    .hero__description {
+      color: $navy;
+    }
+
+    hr.hero__line--half {
+      background: $white;
+    }
+    #hero--left-bg {
+      background-color: $light-green;
+    }
   }
 
-  /****** Blue ******/
-  &.blue {
-    @include style-variant( $navy );
-    hr.panel__header-line_thin { background: $white; }
-    hr.hero__line--half { background: $light-blue; }
+  /********** Yellow ************/
+  &.yellow {
+    @include style-variant($light-mustard);
+    color: $navy;
+
+    .hero__headline--half,
+    .hero__description {
+      color: $navy;
+    }
+
+    hr.hero__line--half {
+      background: $white;
+    }
+    #hero--left-bg {
+      background-color: $mustard;
+    }
   }
+
+  /********** Orange ************/
+  &.orange {
+    @include style-variant($light-orange);
+    color: $navy;
+
+    .hero__headline--half,
+    .hero__description {
+      color: $navy;
+    }
+
+    hr.hero__line--half {
+      background: $white;
+    }
+    #hero--left-bg {
+      background-color: $orange;
+    }
+  }
+
+
+  /********** Mint ************/
+  &.mint {
+    @include style-variant($light-mint);
+    color: $navy;
+
+    .hero__headline--half,
+    .hero__description {
+      color: $navy;
+    }
+
+    hr.hero__line--half {
+      background: $white;
+    }
+    #hero--left-bg {
+      background-color: $mint;
+    }
+  }
+
 
   /****** White ******/
   &.white {
-    @include style-variant ( $white );
+    @include style-variant ($white);
     color: $navy;
-    .panel__intro_header { color: $navy; }
+    .panel__intro_header {
+      color: $navy;
+    }
     hr.panel__header-line,
-    hr.panel__header-line_thin { background: $light-blue; }
+    hr.panel__header-line_thin {
+      background: $light-blue;
+    }
   }
 
   /****** Light Grey ******/
   &.light_grey {
-    @include style-variant ( $grayscale_light );
+    @include style-variant ($grayscale_light);
     color: $navy;
     .panel__intro_header,
     .hero__headline--half,
-    .hero__description { color: $navy; }
+    .hero__description {
+      color: $navy;
+    }
 
     hr.panel__header-line_thin,
-    hr.hero__line--half { background: $white; }
+    hr.hero__line--half {
+      background: $white;
+    }
   }
 }
 
