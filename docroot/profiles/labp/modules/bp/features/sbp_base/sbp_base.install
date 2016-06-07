@@ -4,26 +4,44 @@
  * Perform starter kit prototype cleanup.
  */
 function sbp_base_install() {
-  /*
+
+  drupal_set_message('Reverting feature modules');
   // Revert specific feature modules.
   features_revert_module('sbp_field_base');
   features_revert_module('sbp_starter_kit');
   features_revert_module('sbp_panels');
+  features_revert_module('sbp_resources_incentives');
 
+  drupal_set_message('Disabling unused modules');
+  // Disable feature modules.
+  module_disable('sbp_content');
+  module_disable('sbp_guide');
+  module_disable('sbp_permits');
+
+  drupal_set_message('Deleting old field instances');
   // Delete unneeded field instances.
   if ($instance = field_info_instance('node', 'body', 'sbp_starter_kit')) {
     field_delete_instance($instance, TRUE);
   }
 
+  if ($instance = field_info_instance('node', 'field_featured_resources', 'sbp_starter_kit')) {
+    field_delete_instance($instance, TRUE);
+  }
+
+  if ($instance = field_info_instance('node', 'field_document', 'sbp_starter_kit')) {
+    field_delete_instance($instance, TRUE);
+  }
+
+  drupal_set_message('Deleting old field bases');
   // Delete unneeded field bases.
   field_delete_field('field_guides');
   field_delete_field('field_starter_kit_key_points');
   field_delete_field('field_related_documents');
   field_delete_field('field_related_permits');
-  field_delete_field('field_featured_resources');
 
   // Delete unneeded field collections.
 
+  drupal_set_message('Deleting old content types and their nodes');
   // Delete unneeded content types and nodes.
   $types = array(
     'sbp_content',
@@ -51,5 +69,4 @@ function sbp_base_install() {
     }
   }
   node_types_rebuild();
-  */
 }
