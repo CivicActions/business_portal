@@ -106,7 +106,7 @@ $max-sidebar-width: 300px;
 .style_variant {
 
   /****** Light Blue ******/
-  &.blue {
+  &.light_blue {
     @include style-variant($light-blue);
     color: $navy;
 
@@ -132,7 +132,7 @@ $max-sidebar-width: 300px;
   }
 
   /****** Light Green******/
-  &.green {
+  &.light_green {
     @include style-variant($green);
     color: $navy;
 
