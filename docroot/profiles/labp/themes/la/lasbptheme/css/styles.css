@@ -26,90 +26,90 @@
   /****** Light Grey ******/
 }
 /* line 109, ../sass/base/_mixins.scss */
-.style_variant.blue {
+.style_variant.light_blue {
   background-color: #7ac7f6;
   color: white;
   border-color: #7ac7f6;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
-.style_variant.blue .panel__intro_header,
-.style_variant.blue .hero__description {
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__description {
   color: white;
 }
 /* line 92, ../sass/base/_mixins.scss */
-.style_variant.blue hr {
+.style_variant.light_blue hr {
   background-color: #7ac7f6;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin {
+.style_variant.light_blue hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
 /* line 99, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line {
+.style_variant.light_blue hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
 /* line 113, ../sass/base/_mixins.scss */
-.style_variant.blue .panel__intro_header,
-.style_variant.blue .hero__headline--half,
-.style_variant.blue .hero__description {
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__headline--half,
+.style_variant.light_blue .hero__description {
   color: #163549;
 }
 /* line 119, ../sass/base/_mixins.scss */
-.style_variant.blue .hero__headline,
-.style_variant.blue .hero__headline--half--mobile {
+.style_variant.light_blue .hero__headline,
+.style_variant.light_blue .hero__headline--half--mobile {
   color: white;
 }
 /* line 124, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin,
-.style_variant.blue hr.hero__line--half {
+.style_variant.light_blue hr.panel__header-line_thin,
+.style_variant.light_blue hr.hero__line--half {
   background: white;
 }
 /* line 129, ../sass/base/_mixins.scss */
-.style_variant.blue #hero--left-bg {
+.style_variant.light_blue #hero--left-bg {
   background-color: #5dbbf5;
 }
 /* line 135, ../sass/base/_mixins.scss */
-.style_variant.green {
+.style_variant.light_green {
   background-color: #b5cf6e;
   color: white;
   border-color: #b5cf6e;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
-.style_variant.green .panel__intro_header,
-.style_variant.green .hero__description {
+.style_variant.light_green .panel__intro_header,
+.style_variant.light_green .hero__description {
   color: white;
 }
 /* line 92, ../sass/base/_mixins.scss */
-.style_variant.green hr {
+.style_variant.light_green hr {
   background-color: #b5cf6e;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
-.style_variant.green hr.panel__header-line_thin {
+.style_variant.light_green hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
 /* line 99, ../sass/base/_mixins.scss */
-.style_variant.green hr.panel__header-line {
+.style_variant.light_green hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
 /* line 139, ../sass/base/_mixins.scss */
-.style_variant.green .hero__headline--half,
-.style_variant.green .hero__description {
+.style_variant.light_green .hero__headline--half,
+.style_variant.light_green .hero__description {
   color: #163549;
 }
 /* line 144, ../sass/base/_mixins.scss */
-.style_variant.green hr.hero__line--half {
+.style_variant.light_green hr.hero__line--half {
   background: white;
 }
 /* line 147, ../sass/base/_mixins.scss */
-.style_variant.green #hero--left-bg {
+.style_variant.light_green #hero--left-bg {
   background-color: #acc863;
 }
 /* line 153, ../sass/base/_mixins.scss */
@@ -351,90 +351,90 @@ body {
   /****** Light Grey ******/
 }
 /* line 109, ../sass/base/_mixins.scss */
-.style_variant.blue {
+.style_variant.light_blue {
   background-color: #7ac7f6;
   color: white;
   border-color: #7ac7f6;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
-.style_variant.blue .panel__intro_header,
-.style_variant.blue .hero__description {
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__description {
   color: white;
 }
 /* line 92, ../sass/base/_mixins.scss */
-.style_variant.blue hr {
+.style_variant.light_blue hr {
   background-color: #7ac7f6;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin {
+.style_variant.light_blue hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
 /* line 99, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line {
+.style_variant.light_blue hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
 /* line 113, ../sass/base/_mixins.scss */
-.style_variant.blue .panel__intro_header,
-.style_variant.blue .hero__headline--half,
-.style_variant.blue .hero__description {
+.style_variant.light_blue .panel__intro_header,
+.style_variant.light_blue .hero__headline--half,
+.style_variant.light_blue .hero__description {
   color: #163549;
 }
 /* line 119, ../sass/base/_mixins.scss */
-.style_variant.blue .hero__headline,
-.style_variant.blue .hero__headline--half--mobile {
+.style_variant.light_blue .hero__headline,
+.style_variant.light_blue .hero__headline--half--mobile {
   color: white;
 }
 /* line 124, ../sass/base/_mixins.scss */
-.style_variant.blue hr.panel__header-line_thin,
-.style_variant.blue hr.hero__line--half {
+.style_variant.light_blue hr.panel__header-line_thin,
+.style_variant.light_blue hr.hero__line--half {
   background: white;
 }
 /* line 129, ../sass/base/_mixins.scss */
-.style_variant.blue #hero--left-bg {
+.style_variant.light_blue #hero--left-bg {
   background-color: #5dbbf5;
 }
 /* line 135, ../sass/base/_mixins.scss */
-.style_variant.green {
+.style_variant.light_green {
   background-color: #b5cf6e;
   color: white;
   border-color: #b5cf6e;
   color: #163549;
 }
 /* line 89, ../sass/base/_mixins.scss */
-.style_variant.green .panel__intro_header,
-.style_variant.green .hero__description {
+.style_variant.light_green .panel__intro_header,
+.style_variant.light_green .hero__description {
   color: white;
 }
 /* line 92, ../sass/base/_mixins.scss */
-.style_variant.green hr {
+.style_variant.light_green hr {
   background-color: #b5cf6e;
   border: none;
 }
 /* line 95, ../sass/base/_mixins.scss */
-.style_variant.green hr.panel__header-line_thin {
+.style_variant.light_green hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
 /* line 99, ../sass/base/_mixins.scss */
-.style_variant.green hr.panel__header-line {
+.style_variant.light_green hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
 /* line 139, ../sass/base/_mixins.scss */
-.style_variant.green .hero__headline--half,
-.style_variant.green .hero__description {
+.style_variant.light_green .hero__headline--half,
+.style_variant.light_green .hero__description {
   color: #163549;
 }
 /* line 144, ../sass/base/_mixins.scss */
-.style_variant.green hr.hero__line--half {
+.style_variant.light_green hr.hero__line--half {
   background: white;
 }
 /* line 147, ../sass/base/_mixins.scss */
-.style_variant.green #hero--left-bg {
+.style_variant.light_green #hero--left-bg {
   background-color: #acc863;
 }
 /* line 153, ../sass/base/_mixins.scss */
@@ -3123,6 +3123,7 @@ hr.hero__line--half {
   max-width: 250px;
   padding: 20px 0 0;
   margin-bottom: 0;
+  display: none;
 }
 @media all and (min-width: 960px) {
   /* line 36, ../sass/components/hero/_hero__half-width.scss */
@@ -3130,16 +3131,17 @@ hr.hero__line--half {
     padding: 250px .5em 5em 0;
     float: right;
     max-width: 235px;
+    display: block;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 48, ../sass/components/hero/_hero__half-width.scss */
+  /* line 50, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half #hero--left-bg {
     padding-bottom: 8em;
     min-height: 400px;
   }
 }
-/* line 55, ../sass/components/hero/_hero__half-width.scss */
+/* line 57, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name {
   color: #fff;
   font-size: 1.1em;
@@ -3147,7 +3149,7 @@ hr.hero__line--half {
   font-weight: bold;
   width: 160px;
 }
-/* line 63, ../sass/components/hero/_hero__half-width.scss */
+/* line 65, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__description {
   color: #fff;
   font-size: 1em;
@@ -3155,52 +3157,52 @@ hr.hero__line--half {
   width: 160px;
   padding-right: 5em;
 }
-/* line 72, ../sass/components/hero/_hero__half-width.scss */
+/* line 74, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name,
 .hero__layout--half .hero__business__description,
 .hero__layout--half .hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 72, ../sass/components/hero/_hero__half-width.scss */
+  /* line 74, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__name,
   .hero__layout--half .hero__business__description,
   .hero__layout--half .hero__line--half {
     display: block;
   }
 }
-/* line 84, ../sass/components/hero/_hero__half-width.scss */
+/* line 86, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .right .hero__header--inner {
   padding: 1em 0 30px;
 }
 @media all and (min-width: 960px) {
-  /* line 84, ../sass/components/hero/_hero__half-width.scss */
+  /* line 86, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right .hero__header--inner {
     padding: 6em 30px 0;
     max-width: 700px;
   }
 }
-/* line 92, ../sass/components/hero/_hero__half-width.scss */
+/* line 94, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
   margin: 0.8em 1em 1em 2em;
   font-size: 1.143em;
 }
 @media all and (min-width: 960px) {
-  /* line 92, ../sass/components/hero/_hero__half-width.scss */
+  /* line 94, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
     font-size: 1.429em;
     line-height: 1.4;
     margin: 30px 0;
   }
 }
-/* line 102, ../sass/components/hero/_hero__half-width.scss */
+/* line 104, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline,
 .hero__layout--half .hero__headline--half,
 .hero__layout--half .hero__headline--half--mobile {
   font-size: 1.8em;
 }
 @media all and (min-width: 960px) {
-  /* line 102, ../sass/components/hero/_hero__half-width.scss */
+  /* line 104, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -3208,23 +3210,28 @@ hr.hero__line--half {
     margin: 1em 0 0;
   }
 }
-/* line 112, ../sass/components/hero/_hero__half-width.scss */
+/* line 114, ../sass/components/hero/_hero__half-width.scss */
+.hero__layout--half .hero__headline--half--mobile {
+  padding-bottom: 25px;
+  font-size: 1.4em;
+}
+/* line 118, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
 @media all and (min-width: 960px) {
-  /* line 112, ../sass/components/hero/_hero__half-width.scss */
+  /* line 118, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__background-image {
     background-size: auto 100%;
   }
 }
-/* line 120, ../sass/components/hero/_hero__half-width.scss */
+/* line 126, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay {
   position: relative;
   overflow: hidden;
 }
-/* line 129, ../sass/components/hero/_hero__half-width.scss */
+/* line 135, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item {
   text-transform: uppercase;
   background: #fff;
@@ -3234,17 +3241,17 @@ hr.hero__line--half {
   padding: 10px 20px;
   font-weight: bold;
 }
-/* line 137, ../sass/components/hero/_hero__half-width.scss */
+/* line 143, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item a {
   color: #0f2940;
 }
 @media all and (min-width: 960px) {
-  /* line 129, ../sass/components/hero/_hero__half-width.scss */
+  /* line 135, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__call-to-action--item {
     font-size: 1.143em;
   }
 }
-/* line 157, ../sass/components/hero/_hero__half-width.scss */
+/* line 163, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
   width: 100%;
   padding-left: 0;
@@ -3259,14 +3266,14 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 165, ../sass/components/hero/_hero__half-width.scss */
+  /* line 171, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 166, ../sass/components/hero/_hero__half-width.scss */
+  /* line 172, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
     float: left;
     width: 70%;
