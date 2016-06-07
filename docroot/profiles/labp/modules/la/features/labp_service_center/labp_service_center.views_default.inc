@@ -77,7 +77,7 @@ function labp_service_center_views_default_views() {
   $handler->display->display_options['fields']['field_map']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_map']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_map']['settings'] = array(
-    'image_style' => 'medium_landscape',
+    'image_style' => '',
     'image_link' => '',
   );
   /* Field: Field: Address info */
