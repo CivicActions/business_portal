@@ -101,7 +101,15 @@ function sbp_resources_incentives_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Result summary */
+  $handler->display->display_options['header']['result']['id'] = 'result';
+  $handler->display->display_options['header']['result']['table'] = 'views';
+  $handler->display->display_options['header']['result']['field'] = 'result';
+  $handler->display->display_options['header']['result']['label'] = 'View title and results count';
+  $handler->display->display_options['header']['result']['content'] = '<h2 class = "pane-title">Results (@total)</h2>';
 
   /* Display: Hidden view to force facets */
   $handler = $view->new_display('panel_pane', 'Hidden view to force facets', 'panel_pane_2');
