@@ -99,6 +99,10 @@
       padding: 0;
     }
   }
+  
+  .pane-sbp-terms-definitions h2.pane-title {
+    margin-bottom:14px;
+  }
 
   ul.facetapi-facet-field-business-need li,
   ul.facetapi-facet-field-business-ownership li,
@@ -113,4 +117,8 @@
 
 .pane-sbp-terms-definitions ul li {
   font-size: 1.143em;
+}
+
+.pane-sbp-terms-definitions ul li {
+    .selected {font-weight: 700;}
 }
