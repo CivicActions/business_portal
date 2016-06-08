@@ -1,0 +1,16 @@
+name = SBP WYSIWYG
+description = Modifications and custom styles for the WYSIWYG editors
+core = 7.x
+package = Small Business Portal
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = defaultconfig
+dependencies[] = editor_ckeditor
+dependencies[] = editor_ckeditor_widgets
+dependencies[] = lightning_filter
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[defaultconfig][] = strongarm:lightning_wysiwyg_entity_embed_icon_fid
+features[features_api][] = api:2
+features[variable][] = lightning_wysiwyg_entity_embed_icon_fid
+project path = profiles/labp/modules/bp/features
