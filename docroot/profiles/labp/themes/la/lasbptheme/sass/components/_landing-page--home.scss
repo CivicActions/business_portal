@@ -16,7 +16,10 @@ body.node-type-sbp-landing-page {
   }
 
   .panel__content_col_1 {
-    padding-top: 4em;
+    padding-top: 2em;
+    @include window-size(desktop){
+      padding-top: 4em;
+    }
   }
 
 }

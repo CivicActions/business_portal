@@ -50,7 +50,9 @@ hr.hero__line--half {
 }
 
 .hero__bottom_align--bn{
-  margin-bottom: 2em;
+  @include window_size(desktop){
+    margin-bottom: 2em;
+  }
 }
 
 
@@ -81,7 +83,7 @@ hr.hero__line--half {
     }
   }
   .hero__bottom_align--bn {
-    margin: 3em 0 2em;
+    margin: 3em 0 0;
     padding-bottom: 2em;
     @include window_size(desktop) {
       margin: 5em 0 0;
