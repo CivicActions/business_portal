@@ -39,9 +39,9 @@
     margin-bottom: 0;
     display: none;
     @include window_size(desktop){
-      padding: 250px .5em 5em 0;
+      padding: 250px 0 5em 0;
       float: right;
-      max-width: 235px;
+      max-width: 250px;
       display: block;
     }
   }
@@ -68,6 +68,9 @@
     font-weight: 400;
     width: 160px;
     padding-right: 5em;
+    @include window_size(desktop) {
+      padding-right: 90px;
+    }
   }
 
   // Hide business name and description in mobile screens

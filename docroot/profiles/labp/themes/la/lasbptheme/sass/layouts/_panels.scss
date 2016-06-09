@@ -33,10 +33,11 @@
     .inside {
       padding: 1.5em 1em 2em 2em;
       @include window_size(desktop){
-        padding: 1.5em 1em 2em 0;
-        max-width: 220px;
+        padding: 1.5em 25px 2em 0;
+        margin: 0;
+        max-width: 225px;
         float: right;
-        width: 300px;
+        width: 225px;
       }
     }
   }
