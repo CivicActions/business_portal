@@ -3023,7 +3023,7 @@ hr.hero__line--half {
   color: #fff;
   font-size: 1em;
   font-weight: 400;
-  max-width: 550px;
+  /*max-width: 550px;*/
 }
 
 @media all and (min-width: 960px) {
