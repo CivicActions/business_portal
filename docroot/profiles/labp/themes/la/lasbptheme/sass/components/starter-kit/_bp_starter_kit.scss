@@ -19,8 +19,11 @@
   color: $dark_blue;
 
  @include window_size(tab-wide-up) {
-   padding: 0.7em 0;
-   margin: 1em 0 0;
+  // padding: 0.7em 0;
+  // margin: 1em 0 0;
+   font-size: 28px;
+   margin: 30px 0 30px 0;
+   padding: 20px 0 0 0;
  }
 }
 
@@ -142,7 +145,7 @@
     }
   }
 
-  /********* Contect Sections *********/
+  /********* Content Sections *********/
   h2.pane-title {
     font-family: $heading-font;
     font-size: 20px;
@@ -150,6 +153,11 @@
     font-weight: 400;
     margin: 25px 0 15px 0;
     padding: 15px 20px 0 0;
+    @include window_size(desktop) {
+      font-size: 28px;
+      margin: 30px 0 30px 0;
+      padding: 20px 0 0 0;
+    }
   }
 
   //Checklist sections

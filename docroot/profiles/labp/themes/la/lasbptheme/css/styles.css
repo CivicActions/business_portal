@@ -5055,12 +5055,13 @@ a.wizard__arrow-down.enabled.section {
 @media all and (min-width: 720px) {
   /* line 12, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .field-name-field-guide-title {
-    padding: 0.7em 0;
-    margin: 1em 0 0;
+    font-size: 28px;
+    margin: 30px 0 30px 0;
+    padding: 20px 0 0 0;
   }
 }
 
-/* line 28, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 31, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-permit-links a {
   font-size: 16px;
   font-weight: 700;
@@ -5074,7 +5075,7 @@ a.wizard__arrow-down.enabled.section {
   text-decoration: none;
 }
 
-/* line 43, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 46, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .tool-tip {
   background: url("../images/wizard/icon_bulb.png") #def6fe 20px center no-repeat;
   font-size: 1em;
@@ -5083,7 +5084,7 @@ a.wizard__arrow-down.enabled.section {
   background-size: 30px;
 }
 
-/* line 47, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 50, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-guide-pdf a,
 .field-name-field-permit-pdf a,
 .checklist--download a,
@@ -5107,7 +5108,7 @@ a.wizard__arrow-down.enabled.section {
   color: #163549;
 }
 @media all and (min-width: 960px) {
-  /* line 47, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 50, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .field-name-field-guide-pdf a,
   .field-name-field-permit-pdf a,
   .checklist--download a,
@@ -5117,23 +5118,23 @@ a.wizard__arrow-down.enabled.section {
 }
 
 /******** Starter Kit Specific Styles ******/
-/* line 56, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 59, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit {
   /*****Download Block*****/
-  /********* Contect Sections *********/
+  /********* Content Sections *********/
 }
-/* line 57, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 60, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit #panels-ipe-regionid-right {
   margin: auto;
 }
 @media all and (min-width: 960px) {
-  /* line 57, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 60, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit #panels-ipe-regionid-right {
     max-width: 700px;
     margin: 0;
   }
 }
-/* line 65, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 68, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit p,
 .node-type-sbp-starter-kit .field-name-field-guide-description,
 .node-type-sbp-starter-kit .field-name-field-permit-description,
@@ -5144,76 +5145,76 @@ a.wizard__arrow-down.enabled.section {
   font-size: 14px;
   line-height: 19px;
 }
-/* line 80, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 83, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__layout--half .hero__background-image {
   background-size: 200%;
   background-position: 50% 60%;
   height: 250px;
 }
 @media all and (min-width: 480px) {
-  /* line 80, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 83, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .hero__layout--half .hero__background-image {
     background-size: 150%;
   }
 }
 @media all and (min-width: 720px) {
-  /* line 80, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 83, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .hero__layout--half .hero__background-image {
     background-size: cover;
     height: auto;
   }
 }
-/* line 94, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 97, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__headline--half--mobile {
   font-size: 1.714em;
   font-weight: 700;
   color: #0f2940;
 }
-/* line 100, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 103, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__header--inner {
   padding-top: 200px;
 }
-/* line 105, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 108, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__layout--half .hero__call-to-action--item {
   margin-left: 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 105, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 108, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .hero__layout--half .hero__call-to-action--item {
     margin-left: 0;
   }
 }
-/* line 112, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 115, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .panel-2col-stacked .panel-col-first .inside {
   padding: 0;
   margin: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 119, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 122, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .page__starter-kit-download {
     display: inline-block;
     width: 45%;
   }
 }
-/* line 127, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 130, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__starter-kit--icon {
   width: 134px;
   height: 134px;
   margin: 0 auto 15px;
 }
-/* line 134, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 137, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__button {
   text-align: center;
   padding: 8px 20px;
 }
-/* line 137, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 140, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__button a {
   width: 200px;
   display: block;
   margin: 0 auto 15px;
   font-size: 1.143em;
 }
-/* line 146, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 149, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit h2.pane-title {
   font-family: "Merriweather", serif;
   font-size: 20px;
@@ -5222,7 +5223,15 @@ a.wizard__arrow-down.enabled.section {
   margin: 25px 0 15px 0;
   padding: 15px 20px 0 0;
 }
-/* line 156, ../sass/components/starter-kit/_bp_starter_kit.scss */
+@media all and (min-width: 960px) {
+  /* line 149, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  .node-type-sbp-starter-kit h2.pane-title {
+    font-size: 28px;
+    margin: 30px 0 30px 0;
+    padding: 20px 0 0 0;
+  }
+}
+/* line 164, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .field-name-field-section-title,
 .node-type-sbp-starter-kit .field-name-field-agency {
   font-family: "Roboto", sans-serif;
@@ -5237,14 +5246,14 @@ a.wizard__arrow-down.enabled.section {
   background-position: 0px 26px;
   border-top: 1px solid #dcdcdc;
 }
-/* line 172, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 180, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit ul.depth {
   margin: 10px 0 20px 0;
   padding: 0;
   font-size: 14px;
   line-height: 17px;
 }
-/* line 177, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 185, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit ul.depth li.depth {
   list-style: none;
   background-image: url("../images/subsections/icon_checkmark_red.png");
