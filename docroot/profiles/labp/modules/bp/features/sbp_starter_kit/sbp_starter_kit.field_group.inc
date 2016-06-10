@@ -21,7 +21,7 @@ function sbp_starter_kit_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Checklist',
-    'weight' => '4',
+    'weight' => '2',
     'children' => array(
       0 => 'field_checklist_description',
       1 => 'field_checklist_items',
@@ -37,7 +37,7 @@ function sbp_starter_kit_field_group_info() {
       ),
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_checklist|node|sbp_starter_kit|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -52,10 +52,10 @@ function sbp_starter_kit_field_group_info() {
     'label' => 'Guide',
     'weight' => '3',
     'children' => array(
-      0 => 'field_guide_title',
-      1 => 'field_guide_description',
-      2 => 'field_guide_image',
-      3 => 'field_guide_pdf',
+      0 => 'field_guide_description',
+      1 => 'field_guide_image',
+      2 => 'field_guide_pdf',
+      3 => 'field_guide_title',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -68,7 +68,7 @@ function sbp_starter_kit_field_group_info() {
       ),
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_guide|node|sbp_starter_kit|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -81,12 +81,12 @@ function sbp_starter_kit_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Permits',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'field_permit_description',
       1 => 'field_permit_pdf',
-      2 => 'field_permit_links',
-      3 => 'field_permit_section',
+      2 => 'field_permit_section',
+      3 => 'field_permit_image',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -99,7 +99,7 @@ function sbp_starter_kit_field_group_info() {
       ),
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_permits|node|sbp_starter_kit|form'] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.

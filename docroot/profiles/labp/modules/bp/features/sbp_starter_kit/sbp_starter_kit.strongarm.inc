@@ -130,16 +130,16 @@ function sbp_starter_kit_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '6',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '5',
         ),
         'rabbit_hole' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
       ),
       'display' => array(),
