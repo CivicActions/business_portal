@@ -1,7 +1,7 @@
 name = Service Center
 core = 7.x
 package = Los Angeles
-version = 7.x-1.3
+version = 7.x-1.4
 dependencies[] = addressfield
 dependencies[] = ctools
 dependencies[] = defaultconfig
@@ -27,7 +27,7 @@ features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[field_group][] = group_additional_contact|node|labp_service_center|form
+features[field_group][] = group_more_contact_info|node|labp_service_center|form
 features[field_instance][] = comment-comment_node_labp_service_center-comment_body
 features[field_instance][] = node-labp_service_center-body
 features[field_instance][] = node-labp_service_center-field_address

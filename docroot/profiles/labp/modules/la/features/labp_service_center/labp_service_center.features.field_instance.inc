@@ -119,7 +119,7 @@ function labp_service_center_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -201,7 +201,7 @@ function labp_service_center_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -268,7 +268,7 @@ function labp_service_center_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'email_textfield',
-      'weight' => 49,
+      'weight' => 11,
     ),
   );
 
@@ -334,7 +334,7 @@ function labp_service_center_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -487,7 +487,7 @@ function labp_service_center_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 51,
+      'weight' => 13,
     ),
   );
 
@@ -564,7 +564,7 @@ function labp_service_center_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -632,7 +632,7 @@ function labp_service_center_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 50,
+      'weight' => 12,
     ),
   );
 

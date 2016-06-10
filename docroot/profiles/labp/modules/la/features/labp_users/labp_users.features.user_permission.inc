@@ -1864,7 +1864,6 @@ function labp_users_user_default_permissions() {
   $permissions['use text format filtered_html'] = array(
     'name' => 'use text format filtered_html',
     'roles' => array(
-      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -1878,7 +1877,6 @@ function labp_users_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
-      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
       'reviewer' => 'reviewer',

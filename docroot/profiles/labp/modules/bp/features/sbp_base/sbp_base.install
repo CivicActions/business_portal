@@ -86,7 +86,36 @@ function sbp_base_update_7001() {
  * Updating field bases and new widgets.
  */
 function sbp_base_update_7002() {
+  drupal_set_message('Removing lightning filter which conflicts with SBP WYSIWYG.');
+  module_disable(array('lightning_filter'));
+
+  drupal_set_message('Removing rogue field that was created in error on prod.');
   field_delete_field('field_introductory_title');
+
+  drupal_set_message('Adding newest widget fields.');
   features_revert_module('sbp_field_base');
   features_revert_module('sbp_panels');
+  features_revert_module('sbp_wizard');
+  drupal_set_message('Restoring CTA 1 on wizard roadmap.');
+  $query = 'INSERT INTO `field_data_field_button_links` VALUES (\'field_collection_item\',\'field_button\',\'0\',\'236\',\'276\',\'und\',\'0\',\'https://latax.lacity.org/oofweb/eappreg/eappreg_criteria.cfm\',\'Apply\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'271\',\'311\',\'und\',\'0\',\'https://latax.lacity.org/oofweb/eappreg/eappreg_criteria.cfm\',\'Apply\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'281\',\'321\',\'und\',\'0\',\'https://sa.www4.irs.gov/modiein/individual/index.jsp\',\'Apply\',\'a:1:{s:6:"target";i:0;}\'),(\'field_collection_item\',\'field_button\',\'0\',\'301\',\'341\',\'und\',\'0\',\'https://www.lavote.net/home/county-clerk/fictitious-business-names/filing/fictitious-business-name-search\',\'Check availability\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'311\',\'351\',\'und\',\'0\',\'http://www.boe.ca.gov/elecsrv/esrvcont.htm\',\'Register\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'316\',\'356\',\'und\',\'0\',\'http://www.sos.ca.gov/business-programs/business-entities/forms#llc\',\'Learn more\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'326\',\'366\',\'und\',\'0\',\'http://www.boe.ca.gov/elecsrv/esrvcont.htm\',\'Register\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'336\',\'376\',\'und\',\'0\',\'http://www.boe.ca.gov/elecsrv/esrvcont.htm\',\'Register\',\'a:1:{s:6:"target";s:6:"_blank";}\')';
+  db_query($query);
+  $query = 'INSERT INTO `field_revision_field_button_links` VALUES (\'field_collection_item\',\'field_button\',\'0\',\'236\',\'276\',\'und\',\'0\',\'https://latax.lacity.org/oofweb/eappreg/eappreg_criteria.cfm\',\'Apply\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'271\',\'311\',\'und\',\'0\',\'https://latax.lacity.org/oofweb/eappreg/eappreg_criteria.cfm\',\'Apply\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'281\',\'321\',\'und\',\'0\',\'https://sa.www4.irs.gov/modiein/individual/index.jsp\',\'Apply\',\'a:1:{s:6:"target";i:0;}\'),(\'field_collection_item\',\'field_button\',\'0\',\'301\',\'341\',\'und\',\'0\',\'https://www.lavote.net/home/county-clerk/fictitious-business-names/filing/fictitious-business-name-search\',\'Check availability\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'311\',\'351\',\'und\',\'0\',\'http://www.boe.ca.gov/elecsrv/esrvcont.htm\',\'Register\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'316\',\'356\',\'und\',\'0\',\'http://www.sos.ca.gov/business-programs/business-entities/forms#llc\',\'Learn more\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'326\',\'366\',\'und\',\'0\',\'http://www.boe.ca.gov/elecsrv/esrvcont.htm\',\'Register\',\'a:1:{s:6:"target";s:6:"_blank";}\'),(\'field_collection_item\',\'field_button\',\'0\',\'336\',\'376\',\'und\',\'0\',\'http://www.boe.ca.gov/elecsrv/esrvcont.htm\',\'Register\',\'a:1:{s:6:"target";s:6:"_blank";}\')';
+  db_query($query);
+
+  drupal_set_message('Restoring CTA 2 on wizard roadmap.');
+  $query = 'INSERT INTO `field_data_field_cta_link_2` VALUES (\'field_collection_item\',\'field_button\',\'0\',\'301\',\'341\',\'und\',\'0\',\'https://apps.lavote.net/obfr/bfrmain.aspx\',\'Register name\',\'a:1:{s:6:"target";s:6:"_blank";}\')';
+  db_query($query);
+  $query = 'INSERT INTO `field_revision_field_cta_link_2` VALUES (\'field_collection_item\',\'field_button\',\'0\',\'301\',\'341\',\'und\',\'0\',\'https://apps.lavote.net/obfr/bfrmain.aspx\',\'Register name\',\'a:1:{s:6:"target";s:6:"_blank";}\')';
+  db_query($query);
+
+  drupal_set_message('Restoring CTA 3 on wizard roadmap.');
+  $query = 'INSERT INTO `field_data_field_cta_link_3` VALUES (\'field_collection_item\',\'field_button\',\'0\',\'301\',\'341\',\'und\',\'0\',\'https://www.lavote.net/home/county-clerk/fictitious-business-names/publication\',\'Advertise your name\',\'a:1:{s:6:"target";s:6:"_blank";}\')';
+  db_query($query);
+  $query = 'INSERT INTO `field_revision_field_cta_link_3` VALUES (\'field_collection_item\',\'field_button\',\'0\',\'301\',\'341\',\'und\',\'0\',\'https://www.lavote.net/home/county-clerk/fictitious-business-names/publication\',\'Advertise your name\',\'a:1:{s:6:"target";s:6:"_blank";}\')';
+  db_query($query);
+
+  drupal_set_message('Fixing field group overrides for features.');
+  module_enable('field_group_features');
+  drupal_set_message('Reverting service center field group.');
+  features_revert_module('labp_service_center');
 }
