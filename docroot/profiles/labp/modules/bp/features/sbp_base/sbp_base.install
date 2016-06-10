@@ -73,3 +73,11 @@ function sbp_base_install() {
   }
   node_types_rebuild();
 }
+
+/**
+ * Updating WYSIWYG styles.
+ */
+function sbp_base_update_7001() {
+  module_disable(array('lightning_wysiwyg'));
+  module_enable(array('sbp_wysiwyg'));
+}

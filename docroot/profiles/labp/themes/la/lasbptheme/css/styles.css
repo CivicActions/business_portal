@@ -10,12 +10,12 @@
 *           LAYOUT RULES
 *********************************************/
 /* Wrapper width mixin for containers */
-/************************************
-            Style Variants
- ************************************/
+/************************************************************
+                   STYLE VARIANTS
+ ************************************************************/
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700);
-/* line 106, ../sass/base/_mixins.scss */
+/* line 109, ../sass/base/_mixins.scss */
 .style_variant {
   /****** Light Blue ******/
   /****** Light Green******/
@@ -25,291 +25,295 @@
   /****** White ******/
   /****** Light Grey ******/
 }
-/* line 109, ../sass/base/_mixins.scss */
+/* line 112, ../sass/base/_mixins.scss */
 .style_variant.light_blue {
   background-color: #7ac7f6;
   color: white;
   border-color: #7ac7f6;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_blue .panel__intro_header,
 .style_variant.light_blue .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr {
   background-color: #7ac7f6;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 113, ../sass/base/_mixins.scss */
+/* line 116, ../sass/base/_mixins.scss */
 .style_variant.light_blue .panel__intro_header,
 .style_variant.light_blue .hero__headline--half,
 .style_variant.light_blue .hero__description {
   color: #163549;
 }
-/* line 119, ../sass/base/_mixins.scss */
+/* line 122, ../sass/base/_mixins.scss */
 .style_variant.light_blue .hero__headline,
 .style_variant.light_blue .hero__headline--half--mobile {
   color: white;
 }
-/* line 124, ../sass/base/_mixins.scss */
+/* line 127, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line_thin,
 .style_variant.light_blue hr.hero__line--half {
   background: white;
 }
-/* line 129, ../sass/base/_mixins.scss */
+/* line 132, ../sass/base/_mixins.scss */
 .style_variant.light_blue #hero--left-bg {
   background-color: #5dbbf5;
 }
-/* line 135, ../sass/base/_mixins.scss */
+/* line 138, ../sass/base/_mixins.scss */
 .style_variant.light_green {
   background-color: #b5cf6e;
   color: white;
   border-color: #b5cf6e;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_green .panel__intro_header,
 .style_variant.light_green .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.light_green hr {
   background-color: #b5cf6e;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.light_green hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.light_green hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 139, ../sass/base/_mixins.scss */
+/* line 142, ../sass/base/_mixins.scss */
 .style_variant.light_green .hero__headline--half,
 .style_variant.light_green .hero__description {
   color: #163549;
 }
-/* line 144, ../sass/base/_mixins.scss */
+/* line 147, ../sass/base/_mixins.scss */
 .style_variant.light_green hr.hero__line--half {
   background: white;
 }
-/* line 147, ../sass/base/_mixins.scss */
+/* line 150, ../sass/base/_mixins.scss */
 .style_variant.light_green #hero--left-bg {
   background-color: #acc863;
 }
-/* line 153, ../sass/base/_mixins.scss */
+/* line 156, ../sass/base/_mixins.scss */
 .style_variant.yellow {
   background-color: #f5d365;
   color: white;
   border-color: #f5d365;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.yellow .panel__intro_header,
 .style_variant.yellow .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.yellow hr {
   background-color: #f5d365;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.yellow hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.yellow hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 157, ../sass/base/_mixins.scss */
+/* line 160, ../sass/base/_mixins.scss */
 .style_variant.yellow .hero__headline--half,
 .style_variant.yellow .hero__description {
   color: #163549;
 }
-/* line 162, ../sass/base/_mixins.scss */
+/* line 165, ../sass/base/_mixins.scss */
 .style_variant.yellow hr.hero__line--half {
   background: white;
 }
-/* line 165, ../sass/base/_mixins.scss */
+/* line 168, ../sass/base/_mixins.scss */
 .style_variant.yellow #hero--left-bg {
   background-color: #e9c759;
 }
-/* line 171, ../sass/base/_mixins.scss */
+/* line 174, ../sass/base/_mixins.scss */
 .style_variant.orange {
   background-color: #fbb64f;
   color: white;
   border-color: #fbb64f;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.orange .panel__intro_header,
 .style_variant.orange .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.orange hr {
   background-color: #fbb64f;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.orange hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.orange hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 175, ../sass/base/_mixins.scss */
+/* line 178, ../sass/base/_mixins.scss */
 .style_variant.orange .hero__headline--half,
 .style_variant.orange .hero__description {
   color: #163549;
 }
-/* line 180, ../sass/base/_mixins.scss */
+/* line 183, ../sass/base/_mixins.scss */
 .style_variant.orange hr.hero__line--half {
   background: white;
 }
-/* line 183, ../sass/base/_mixins.scss */
+/* line 186, ../sass/base/_mixins.scss */
 .style_variant.orange #hero--left-bg {
   background-color: #eea73c;
 }
-/* line 190, ../sass/base/_mixins.scss */
+/* line 193, ../sass/base/_mixins.scss */
 .style_variant.mint {
   background-color: #9ce5d5;
   color: white;
   border-color: #9ce5d5;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.mint .panel__intro_header,
 .style_variant.mint .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.mint hr {
   background-color: #9ce5d5;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.mint hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.mint hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 194, ../sass/base/_mixins.scss */
+/* line 197, ../sass/base/_mixins.scss */
 .style_variant.mint .hero__headline--half,
 .style_variant.mint .hero__description {
   color: #163549;
 }
-/* line 199, ../sass/base/_mixins.scss */
+/* line 202, ../sass/base/_mixins.scss */
 .style_variant.mint hr.hero__line--half {
   background: white;
 }
-/* line 202, ../sass/base/_mixins.scss */
+/* line 205, ../sass/base/_mixins.scss */
 .style_variant.mint #hero--left-bg {
   background-color: #89d5c4;
 }
-/* line 209, ../sass/base/_mixins.scss */
+/* line 212, ../sass/base/_mixins.scss */
 .style_variant.white {
   background-color: white;
   color: white;
   border-color: white;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header,
 .style_variant.white .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.white hr {
   background-color: white;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 212, ../sass/base/_mixins.scss */
+/* line 215, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
   color: #163549;
 }
-/* line 215, ../sass/base/_mixins.scss */
+/* line 218, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line,
 .style_variant.white hr.panel__header-line_thin {
   background: #7ac7f6;
 }
-/* line 222, ../sass/base/_mixins.scss */
+/* line 225, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
   background-color: #e6e6e6;
   color: white;
   border-color: #e6e6e6;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_grey .panel__intro_header,
 .style_variant.light_grey .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr {
   background-color: #e6e6e6;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 225, ../sass/base/_mixins.scss */
+/* line 228, ../sass/base/_mixins.scss */
 .style_variant.light_grey .panel__intro_header,
 .style_variant.light_grey .hero__headline--half,
 .style_variant.light_grey .hero__description {
   color: #163549;
 }
-/* line 231, ../sass/base/_mixins.scss */
+/* line 234, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line_thin,
 .style_variant.light_grey hr.hero__line--half {
   background: white;
 }
 
-/******************************
-*      Buttons
-*******************************/
+/*****************************************************
+*                    BUTTONS
+******************************************************/
+/*************************************************
+                    WIZARD
+***************************************************/
+/*************** TOOL TIP************/
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -337,10 +341,10 @@ body {
 *           LAYOUT RULES
 *********************************************/
 /* Wrapper width mixin for containers */
-/************************************
-            Style Variants
- ************************************/
-/* line 106, ../sass/base/_mixins.scss */
+/************************************************************
+                   STYLE VARIANTS
+ ************************************************************/
+/* line 109, ../sass/base/_mixins.scss */
 .style_variant {
   /****** Light Blue ******/
   /****** Light Green******/
@@ -350,291 +354,295 @@ body {
   /****** White ******/
   /****** Light Grey ******/
 }
-/* line 109, ../sass/base/_mixins.scss */
+/* line 112, ../sass/base/_mixins.scss */
 .style_variant.light_blue {
   background-color: #7ac7f6;
   color: white;
   border-color: #7ac7f6;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_blue .panel__intro_header,
 .style_variant.light_blue .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr {
   background-color: #7ac7f6;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 113, ../sass/base/_mixins.scss */
+/* line 116, ../sass/base/_mixins.scss */
 .style_variant.light_blue .panel__intro_header,
 .style_variant.light_blue .hero__headline--half,
 .style_variant.light_blue .hero__description {
   color: #163549;
 }
-/* line 119, ../sass/base/_mixins.scss */
+/* line 122, ../sass/base/_mixins.scss */
 .style_variant.light_blue .hero__headline,
 .style_variant.light_blue .hero__headline--half--mobile {
   color: white;
 }
-/* line 124, ../sass/base/_mixins.scss */
+/* line 127, ../sass/base/_mixins.scss */
 .style_variant.light_blue hr.panel__header-line_thin,
 .style_variant.light_blue hr.hero__line--half {
   background: white;
 }
-/* line 129, ../sass/base/_mixins.scss */
+/* line 132, ../sass/base/_mixins.scss */
 .style_variant.light_blue #hero--left-bg {
   background-color: #5dbbf5;
 }
-/* line 135, ../sass/base/_mixins.scss */
+/* line 138, ../sass/base/_mixins.scss */
 .style_variant.light_green {
   background-color: #b5cf6e;
   color: white;
   border-color: #b5cf6e;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_green .panel__intro_header,
 .style_variant.light_green .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.light_green hr {
   background-color: #b5cf6e;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.light_green hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.light_green hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 139, ../sass/base/_mixins.scss */
+/* line 142, ../sass/base/_mixins.scss */
 .style_variant.light_green .hero__headline--half,
 .style_variant.light_green .hero__description {
   color: #163549;
 }
-/* line 144, ../sass/base/_mixins.scss */
+/* line 147, ../sass/base/_mixins.scss */
 .style_variant.light_green hr.hero__line--half {
   background: white;
 }
-/* line 147, ../sass/base/_mixins.scss */
+/* line 150, ../sass/base/_mixins.scss */
 .style_variant.light_green #hero--left-bg {
   background-color: #acc863;
 }
-/* line 153, ../sass/base/_mixins.scss */
+/* line 156, ../sass/base/_mixins.scss */
 .style_variant.yellow {
   background-color: #f5d365;
   color: white;
   border-color: #f5d365;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.yellow .panel__intro_header,
 .style_variant.yellow .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.yellow hr {
   background-color: #f5d365;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.yellow hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.yellow hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 157, ../sass/base/_mixins.scss */
+/* line 160, ../sass/base/_mixins.scss */
 .style_variant.yellow .hero__headline--half,
 .style_variant.yellow .hero__description {
   color: #163549;
 }
-/* line 162, ../sass/base/_mixins.scss */
+/* line 165, ../sass/base/_mixins.scss */
 .style_variant.yellow hr.hero__line--half {
   background: white;
 }
-/* line 165, ../sass/base/_mixins.scss */
+/* line 168, ../sass/base/_mixins.scss */
 .style_variant.yellow #hero--left-bg {
   background-color: #e9c759;
 }
-/* line 171, ../sass/base/_mixins.scss */
+/* line 174, ../sass/base/_mixins.scss */
 .style_variant.orange {
   background-color: #fbb64f;
   color: white;
   border-color: #fbb64f;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.orange .panel__intro_header,
 .style_variant.orange .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.orange hr {
   background-color: #fbb64f;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.orange hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.orange hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 175, ../sass/base/_mixins.scss */
+/* line 178, ../sass/base/_mixins.scss */
 .style_variant.orange .hero__headline--half,
 .style_variant.orange .hero__description {
   color: #163549;
 }
-/* line 180, ../sass/base/_mixins.scss */
+/* line 183, ../sass/base/_mixins.scss */
 .style_variant.orange hr.hero__line--half {
   background: white;
 }
-/* line 183, ../sass/base/_mixins.scss */
+/* line 186, ../sass/base/_mixins.scss */
 .style_variant.orange #hero--left-bg {
   background-color: #eea73c;
 }
-/* line 190, ../sass/base/_mixins.scss */
+/* line 193, ../sass/base/_mixins.scss */
 .style_variant.mint {
   background-color: #9ce5d5;
   color: white;
   border-color: #9ce5d5;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.mint .panel__intro_header,
 .style_variant.mint .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.mint hr {
   background-color: #9ce5d5;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.mint hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.mint hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 194, ../sass/base/_mixins.scss */
+/* line 197, ../sass/base/_mixins.scss */
 .style_variant.mint .hero__headline--half,
 .style_variant.mint .hero__description {
   color: #163549;
 }
-/* line 199, ../sass/base/_mixins.scss */
+/* line 202, ../sass/base/_mixins.scss */
 .style_variant.mint hr.hero__line--half {
   background: white;
 }
-/* line 202, ../sass/base/_mixins.scss */
+/* line 205, ../sass/base/_mixins.scss */
 .style_variant.mint #hero--left-bg {
   background-color: #89d5c4;
 }
-/* line 209, ../sass/base/_mixins.scss */
+/* line 212, ../sass/base/_mixins.scss */
 .style_variant.white {
   background-color: white;
   color: white;
   border-color: white;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header,
 .style_variant.white .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.white hr {
   background-color: white;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 212, ../sass/base/_mixins.scss */
+/* line 215, ../sass/base/_mixins.scss */
 .style_variant.white .panel__intro_header {
   color: #163549;
 }
-/* line 215, ../sass/base/_mixins.scss */
+/* line 218, ../sass/base/_mixins.scss */
 .style_variant.white hr.panel__header-line,
 .style_variant.white hr.panel__header-line_thin {
   background: #7ac7f6;
 }
-/* line 222, ../sass/base/_mixins.scss */
+/* line 225, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
   background-color: #e6e6e6;
   color: white;
   border-color: #e6e6e6;
   color: #163549;
 }
-/* line 89, ../sass/base/_mixins.scss */
+/* line 92, ../sass/base/_mixins.scss */
 .style_variant.light_grey .panel__intro_header,
 .style_variant.light_grey .hero__description {
   color: white;
 }
-/* line 92, ../sass/base/_mixins.scss */
+/* line 95, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr {
   background-color: #e6e6e6;
   border: none;
 }
-/* line 95, ../sass/base/_mixins.scss */
+/* line 98, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line_thin {
   margin: 0 0 1em 0;
   background: #163549;
 }
-/* line 99, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line {
   margin-bottom: 2em;
   background: white;
 }
-/* line 225, ../sass/base/_mixins.scss */
+/* line 228, ../sass/base/_mixins.scss */
 .style_variant.light_grey .panel__intro_header,
 .style_variant.light_grey .hero__headline--half,
 .style_variant.light_grey .hero__description {
   color: #163549;
 }
-/* line 231, ../sass/base/_mixins.scss */
+/* line 234, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr.panel__header-line_thin,
 .style_variant.light_grey hr.hero__line--half {
   background: white;
 }
 
-/******************************
-*      Buttons
-*******************************/
+/*****************************************************
+*                    BUTTONS
+******************************************************/
+/*************************************************
+                    WIZARD
+***************************************************/
+/*************** TOOL TIP************/
 /**
  * @file
  * Print styling
@@ -2488,7 +2496,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1464939989');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -3881,7 +3889,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1464939989');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4217,7 +4225,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1464939989');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -4281,7 +4289,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4291,7 +4299,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4301,7 +4309,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4376,7 +4384,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4387,7 +4395,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4398,7 +4406,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -4442,7 +4450,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1464939989');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4530,7 +4538,7 @@ hr.wizard__arrow-line {
 
 /* line 71, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1464939989');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4550,7 +4558,7 @@ a.wizard__arrow-up {
 
 /* line 88, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_up.png?1464939989');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 24px;
@@ -4563,7 +4571,7 @@ a.wizard__arrow-back {
 
 /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1464939989');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position-y: 50%;
@@ -4583,7 +4591,7 @@ a.wizard__arrow-down {
 
 /* line 117, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4598,7 +4606,7 @@ a.wizard__arrow-down.enabled.section {
 /* line 130, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   display: inline-block;
   background-position-y: 50%;
   float: right;
@@ -4623,7 +4631,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 154, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1464939989');
+  background-image: url('../images/wizard/arrow_down_filled.png?1462127234');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4680,7 +4688,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1464939989');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 
@@ -5035,40 +5043,40 @@ a.wizard__arrow-down.enabled.section {
  */
 /* line 9, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-guide-title {
-  font-size: 1.5em;
-  color: #313131;
-  font-family: 'Droid Sans', sans-serif;
+  font-size: 2em;
+  color: #0f2940;
+  font-family: "Merriweather", serif;
   font-weight: normal;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 0.7em 0;
+  margin: 1em 0 0;
+  border-top: 3px solid #0f2940;
 }
 
-/* line 18, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 19, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-permit-pdf img.file-icon,
 .field-name-field-guide-pdf img.file-icon {
   display: none;
 }
 
-/* line 23, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 24, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-permit-pdf span.file-size,
 .field-name-field-guide-pdf span.file-size {
   display: none;
 }
 
-/* line 28, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 29, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-permit-links div.field-item {
   font-weight: bold;
-  font-size: 1em;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-/* line 35, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 36, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-permit-links div.field-item:after {
   content: ' > ';
 }
 
-/* line 39, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 40, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .pane-node-field-checklist-description,
 .pane-node-field-permit-description {
   margin-top: 10px;
@@ -5076,44 +5084,60 @@ a.wizard__arrow-down.enabled.section {
   padding-top: 10px;
 }
 
-/* line 46, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 47, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-section-title,
 .field-name-field-agency {
   font-weight: bold;
   margin-top: 15px;
 }
 
-/* line 52, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 53, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-agency {
   border-top: 1px solid black;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 58, ../sass/components/starter-kit/_bp_starter_kit.scss */
-.field-name-field-section-tip {
-  background-color: #cccccc;
+/* line 60, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.tool-tip {
+  background: url("../images/wizard/icon_bulb.png") #def6fe 20px center no-repeat;
   font-size: 1em;
-  padding: 12px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 1.5em 65px;
+  margin: 1em 0;
+  background-size: 30px;
 }
 
-/* line 66, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 64, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .field-name-field-guide-pdf a,
 .field-name-field-permit-pdf a {
-  color: #163549;
-  text-decoration: none;
-  font-size: 1.143em;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
   background-color: #ffd65c;
+  color: #163549;
   padding: 0.5em 1.2em;
   font-weight: bold;
   display: inline-block;
   margin: 1em 0;
   cursor: pointer;
+}
+/* line 254, ../sass/base/_mixins.scss */
+.field-name-field-guide-pdf a a,
+.field-name-field-permit-pdf a a {
+  color: #163549;
+}
+@media all and (min-width: 960px) {
+  /* line 64, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  .field-name-field-guide-pdf a,
+  .field-name-field-permit-pdf a {
+    font-size: 1.143em;
+  }
+}
+
+/******** Starter Kit Specific Styles ******/
+/* line 71, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit #panels-ipe-regionid-right {
+  max-width: 700px;
 }
 
 /* line 1, ../sass/components/_detail_pages.scss */
@@ -5674,7 +5698,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
   margin: 1em 0;
   cursor: pointer;
 }
-/* line 251, ../sass/base/_mixins.scss */
+/* line 254, ../sass/base/_mixins.scss */
 .panel__button a, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle a,
 .panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle a {
   color: #163549;

@@ -7,12 +7,13 @@
  */
 
 .field-name-field-guide-title {
-  font-size: 1.5em;
-  color: #313131;
-  font-family: 'Droid Sans', sans-serif;
+  font-size: 2em;
+  color: $dark_blue;
+  font-family: $heading-font;
   font-weight: normal;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 0.7em 0;
+  margin: 1em 0 0;
+  border-top: $border--thick;
 }
 
 .field-name-field-permit-pdf img.file-icon,
@@ -27,7 +28,7 @@
 
 .field-name-field-permit-links div.field-item {
   font-weight: bold;
-  font-size: 1em;
+  //font-size: 1em;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -55,26 +56,19 @@
   padding-bottom: 10px;
 }
 
-.field-name-field-section-tip {
-  background-color: #cccccc;
-  font-size: 1em;
-  padding: 12px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+
+.tool-tip {
+  @include tool-tip();
 }
 
 .field-name-field-guide-pdf a,
 .field-name-field-permit-pdf a {
-  color: #163549;
-  text-decoration: none;
-  font-size: 1.143em;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  background-color: #ffd65c;
-  padding: 0.5em 1.2em;
-  font-weight: bold;
-  display: inline-block;
-  margin: 1em 0;
-  cursor: pointer;
+  @include panel__button--base($yellow, $navy);
+}
+
+/******** Starter Kit Specific Styles ******/
+.node-type-sbp-starter-kit {
+  #panels-ipe-regionid-right {
+    max-width: $max-content-width;
+  }
 }

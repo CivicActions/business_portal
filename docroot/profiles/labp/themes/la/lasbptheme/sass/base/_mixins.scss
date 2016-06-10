@@ -67,9 +67,12 @@ $max-sidebar-width: 300px;
   margin: 0 auto;
 }
 
-/************************************
-            Style Variants
- ************************************/
+$border--thick: 3px solid $dark_blue;
+
+
+/************************************************************
+                   STYLE VARIANTS
+ ************************************************************/
 
 @mixin hr-thin {
   height: 2px;
@@ -235,9 +238,9 @@ $max-sidebar-width: 300px;
   }
 }
 
-/******************************
-*      Buttons
-*******************************/
+/*****************************************************
+*                    BUTTONS
+******************************************************/
 
 @mixin panel__button--base($bgcolor, $text-color: $white) {
   @include border-radius(50px);
@@ -258,7 +261,9 @@ $max-sidebar-width: 300px;
 }
 
 
-// wizard
+/*************************************************
+                    WIZARD
+***************************************************/
 
 @mixin wizard__button--base {
   @include border-radius(20px);
@@ -294,4 +299,13 @@ $max-sidebar-width: 300px;
   display: inline-block;
   float: right;
   margin: 0 0 0 6px;
+}
+
+/*************** TOOL TIP************/
+@mixin tool-tip($tip-bg-color: $tooltip-blue, $tip-icon: "../images/wizard/icon_bulb.png") {
+  background: url($tip-icon) $tip-bg-color 20px center no-repeat;
+  font-size: 1em;
+  padding: 1.5em 65px;
+  margin: 1em 0;
+  background-size: 30px;
 }
