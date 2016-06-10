@@ -139,6 +139,113 @@ function sbp_starter_kit_views_default_views() {
   $handler->display->display_options['fields']['field_description']['relationship'] = 'field_related_permits_target_id';
   $handler->display->display_options['fields']['field_description']['label'] = '';
   $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
+
+  /* Display: Permits and Guides Download */
+  $handler = $view->new_display('panel_pane', 'Permits and Guides Download', 'panel_pane_1');
+  $handler->display->display_options['display_description'] = 'Images & Download links for the permits and guides';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'permit-guides-wrapper';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Guide Image */
+  $handler->display->display_options['fields']['field_guide_image']['id'] = 'field_guide_image';
+  $handler->display->display_options['fields']['field_guide_image']['table'] = 'field_data_field_guide_image';
+  $handler->display->display_options['fields']['field_guide_image']['field'] = 'field_guide_image';
+  $handler->display->display_options['fields']['field_guide_image']['label'] = '';
+  $handler->display->display_options['fields']['field_guide_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_guide_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_guide_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_guide_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Guide PDF */
+  $handler->display->display_options['fields']['field_guide_pdf']['id'] = 'field_guide_pdf';
+  $handler->display->display_options['fields']['field_guide_pdf']['table'] = 'field_data_field_guide_pdf';
+  $handler->display->display_options['fields']['field_guide_pdf']['field'] = 'field_guide_pdf';
+  $handler->display->display_options['fields']['field_guide_pdf']['label'] = '';
+  $handler->display->display_options['fields']['field_guide_pdf']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_guide_pdf']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_guide_pdf']['alter']['text'] = 'Download Checklist';
+  $handler->display->display_options['fields']['field_guide_pdf']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_guide_pdf']['alter']['path'] = '[field_guide_pdf]';
+  $handler->display->display_options['fields']['field_guide_pdf']['alter']['target'] = '_blank';
+  $handler->display->display_options['fields']['field_guide_pdf']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_guide_pdf']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_guide_pdf']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_guide_pdf']['type'] = 'file_url_plain';
+  $handler->display->display_options['fields']['field_guide_pdf']['settings'] = array(
+    'text' => 'Download Checklist',
+  );
+  /* Field: Content: Permit Image */
+  $handler->display->display_options['fields']['field_permit_image']['id'] = 'field_permit_image';
+  $handler->display->display_options['fields']['field_permit_image']['table'] = 'field_data_field_permit_image';
+  $handler->display->display_options['fields']['field_permit_image']['field'] = 'field_permit_image';
+  $handler->display->display_options['fields']['field_permit_image']['label'] = '';
+  $handler->display->display_options['fields']['field_permit_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_permit_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_permit_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_permit_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Permit PDF */
+  $handler->display->display_options['fields']['field_permit_pdf']['id'] = 'field_permit_pdf';
+  $handler->display->display_options['fields']['field_permit_pdf']['table'] = 'field_data_field_permit_pdf';
+  $handler->display->display_options['fields']['field_permit_pdf']['field'] = 'field_permit_pdf';
+  $handler->display->display_options['fields']['field_permit_pdf']['label'] = '';
+  $handler->display->display_options['fields']['field_permit_pdf']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_permit_pdf']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_permit_pdf']['alter']['text'] = 'Download Permit List';
+  $handler->display->display_options['fields']['field_permit_pdf']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_permit_pdf']['alter']['path'] = '[field_permit_pdf]';
+  $handler->display->display_options['fields']['field_permit_pdf']['alter']['target'] = '_blank';
+  $handler->display->display_options['fields']['field_permit_pdf']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_permit_pdf']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_permit_pdf']['type'] = 'file_url_plain';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class = "page__starter-kit-download--block>
+  <div class = "page__starter-kit-download">
+    <div class = "page__starter-kit--icon">[field_guide_image]</div>
+    <div class = "page__button">[field_guide_pdf]</div>
+  </div>
+    <div class = "page__starter-kit-download">
+    <div class = "page__starter-kit--icon">[field_permit_image]</div>
+    <div class = "page__button">[field_permit_pdf]</div>
+  </div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sbp_starter_kit' => 'sbp_starter_kit',
+  );
   $export['sbp_starter_kit'] = $view;
 
   return $export;

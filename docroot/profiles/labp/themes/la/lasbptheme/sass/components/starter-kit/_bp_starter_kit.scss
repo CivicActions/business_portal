@@ -6,54 +6,40 @@
  *
  */
 
+/* Mobile-First styles*/
+
+
 .field-name-field-guide-title {
-  font-size: 2em;
-  color: $dark_blue;
   font-family: $heading-font;
-  font-weight: normal;
-  padding: 0.7em 0;
-  margin: 1em 0 0;
+  font-size: 20px;
+  font-weight: 400;
   border-top: $border--thick;
+  margin: 10px 0 15px 0;
+  padding: 15px 20px 0 0;
+  color: $dark_blue;
+
+ @include window_size(tab-wide-up) {
+  // padding: 0.7em 0;
+  // margin: 1em 0 0;
+   font-size: 28px;
+   margin: 30px 0 30px 0;
+   padding: 20px 0 0 0;
+ }
 }
 
-.field-name-field-permit-pdf img.file-icon,
-.field-name-field-guide-pdf img.file-icon {
-  display: none;
-}
-
-.field-name-field-permit-pdf span.file-size,
-.field-name-field-guide-pdf span.file-size {
-  display: none;
-}
-
-.field-name-field-permit-links div.field-item {
-  font-weight: bold;
-  //font-size: 1em;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.field-name-field-permit-links div.field-item:after {
-  content: ' > ';
-}
-
-.pane-node-field-checklist-description,
-.pane-node-field-permit-description {
-  margin-top: 10px;
-  border-top: 3px solid black;
-  padding-top: 10px;
-}
-
-.field-name-field-section-title,
-.field-name-field-agency {
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.field-name-field-agency {
-  border-top: 1px solid black;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.field-name-field-permit-links {
+  a {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    padding: 0 20px 0 0;
+    background-image: url("../images/subsections/icon_link_arrow.png");
+    background-repeat: no-repeat;
+    background-size: 9px 16px;
+    background-position: 100% 3px;
+    display: inline-block;
+    text-decoration: none;
+  }
 }
 
 
@@ -62,13 +48,148 @@
 }
 
 .field-name-field-guide-pdf a,
-.field-name-field-permit-pdf a {
+.field-name-field-permit-pdf a,
+.checklist--download a,
+.page__button a {
   @include panel__button--base($yellow, $navy);
 }
 
 /******** Starter Kit Specific Styles ******/
+
 .node-type-sbp-starter-kit {
   #panels-ipe-regionid-right {
-    max-width: $max-content-width;
+    margin: auto;
+    @include window_size(desktop){
+      max-width: $max-content-width;
+      margin: 0;
+    }
+  }
+
+  p,
+  .field-name-field-guide-description,
+  .field-name-field-permit-description,
+  .field-name-field-section-description {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 10px 0 20px 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  //Mobile-first Styles
+
+  .hero__layout--half {
+    // Hero backround image
+    .hero__background-image {
+      background-size: 200%;
+      background-position: 50% 60%;
+      height: 250px;
+      @include window_size(tab-narrow-up) {
+        background-size: 150%;
+      }
+      @include window_size(tab-wide-up) {
+        background-size: cover;
+        height: auto;
+      }
+    }
+  }
+  // Mobile Hero title
+  .hero__headline--half--mobile {
+    font-size: 1.714em;
+    font-weight: 700;
+    color: $dark_blue;
+  }
+
+  .hero__header--inner {
+    padding-top: 200px;
+  }
+
+  //Hero CTA button
+  .hero__layout--half .hero__call-to-action--item {
+    margin-left: 2em;
+    @include window_size(desktop) {
+      margin-left: 0;
+    }
+  }
+
+  .panel-2col-stacked .panel-col-first .inside {
+    padding: 0;
+    margin: 0;
+  }
+
+  /*****Download Block*****/
+  //Wrapper
+  .page__starter-kit-download {
+    @include window_size(desktop) {
+      display: inline-block;
+      width: 45%;
+    }
+  }
+
+  //Icons
+  .page__starter-kit--icon {
+    width: 134px;
+    height: 134px;
+    margin: 0 auto 15px;
+  }
+
+  //Download Button
+  .page__button {
+    text-align: center;
+    padding: 8px 20px;
+    a {
+      width: 200px;
+      display: block;
+      margin: 0 auto 15px;
+      font-size: 1.143em;
+    }
+  }
+
+  /********* Content Sections *********/
+  h2.pane-title {
+    font-family: $heading-font;
+    font-size: 20px;
+    border-top: $border--thick;
+    font-weight: 400;
+    margin: 25px 0 15px 0;
+    padding: 15px 20px 0 0;
+    @include window_size(desktop) {
+      font-size: 28px;
+      margin: 30px 0 30px 0;
+      padding: 20px 0 0 0;
+    }
+  }
+
+  //Checklist sections
+  .field-name-field-section-title,
+  .field-name-field-agency {
+    font-family: $font-body;
+    font-weight: 700;
+    color: $dark_blue;
+    padding: 20px 0 10px 25px;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+    background-image: url("../images/subsections/arrow_down.png");
+    background-repeat: no-repeat;
+    background-size: 17px 10px;
+    background-position: 0px 26px;
+    border-top: 1px solid #dcdcdc;
+  }
+
+  // Checklist Bullets
+  ul.depth {
+    margin: 10px 0 20px 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+    li.depth {
+      list-style: none;
+      background-image: url("../images/subsections/icon_checkmark_red.png");
+      background-repeat: no-repeat;
+      background-size: 12px 9px;
+      background-position: 2px 6px;
+      padding-left: 22px;
+      margin: 0 0 20px 0;
+    }
   }
 }
