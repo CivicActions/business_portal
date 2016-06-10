@@ -423,7 +423,7 @@ function sbp_panels_field_default_field_instances() {
         ),
       ),
       'type' => 'inline_entity_form',
-      'weight' => -3,
+      'weight' => 2,
     ),
   );
 
