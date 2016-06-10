@@ -29,6 +29,22 @@ function sbp_panels_default_fieldable_panels_pane_type() {
   $fieldable_panels_pane_type = new stdClass();
   $fieldable_panels_pane_type->disabled = FALSE; /* Edit this to true to make a default fieldable_panels_pane_type disabled initially */
   $fieldable_panels_pane_type->api_version = 1;
+  $fieldable_panels_pane_type->name = 'general_content';
+  $fieldable_panels_pane_type->title = 'General Content';
+  $fieldable_panels_pane_type->description = 'General content widget for landing pages';
+  $export['general_content'] = $fieldable_panels_pane_type;
+
+  $fieldable_panels_pane_type = new stdClass();
+  $fieldable_panels_pane_type->disabled = FALSE; /* Edit this to true to make a default fieldable_panels_pane_type disabled initially */
+  $fieldable_panels_pane_type->api_version = 1;
+  $fieldable_panels_pane_type->name = 'pull_quote';
+  $fieldable_panels_pane_type->title = 'Pull Quote';
+  $fieldable_panels_pane_type->description = '';
+  $export['pull_quote'] = $fieldable_panels_pane_type;
+
+  $fieldable_panels_pane_type = new stdClass();
+  $fieldable_panels_pane_type->disabled = FALSE; /* Edit this to true to make a default fieldable_panels_pane_type disabled initially */
+  $fieldable_panels_pane_type->api_version = 1;
   $fieldable_panels_pane_type->name = 'section_content';
   $fieldable_panels_pane_type->title = 'Section Content';
   $fieldable_panels_pane_type->description = '';

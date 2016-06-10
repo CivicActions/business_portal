@@ -81,3 +81,12 @@ function sbp_base_update_7001() {
   module_disable(array('lightning_wysiwyg'));
   module_enable(array('sbp_wysiwyg'));
 }
+
+/**
+ * Updating field bases and new widgets.
+ */
+function sbp_base_update_7002() {
+  field_delete_field('field_introductory_title');
+  features_revert_module('sbp_field_base');
+  features_revert_module('sbp_panels');
+}
