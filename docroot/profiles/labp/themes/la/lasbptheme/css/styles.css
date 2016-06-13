@@ -4682,7 +4682,13 @@ a.wizard__arrow-down.enabled.section {
   margin: 20px 0 20px 0;
 }
 
-/* line 8, ../sass/components/wizard/_wizard_tip.scss */
+/* line 7, ../sass/components/wizard/_wizard_tip.scss */
+.wizard__tip_content p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 11, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_icon {
   float: left;
   height: 20px;
@@ -4692,28 +4698,28 @@ a.wizard__arrow-down.enabled.section {
   background-size: 100%;
 }
 
-/* line 17, ../sass/components/wizard/_wizard_tip.scss */
+/* line 20, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_content {
   float: left;
   margin: 0 0 0 6px;
   width: 70%;
 }
 
-/* line 23, ../sass/components/wizard/_wizard_tip.scss */
+/* line 26, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_copy {
   padding: 0;
   margin: 0 0 20px 0;
   font-size: 0.929em;
 }
 @media all and (min-width: 960px) {
-  /* line 23, ../sass/components/wizard/_wizard_tip.scss */
+  /* line 26, ../sass/components/wizard/_wizard_tip.scss */
   .wizard__tip_copy {
     font-size: 1.333em;
     font-size: 1.2em;
   }
 }
 
-/* line 34, ../sass/components/wizard/_wizard_tip.scss */
+/* line 37, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -4728,7 +4734,7 @@ a.wizard__arrow-down.enabled.section {
   color: #0f2940 !important;
 }
 
-/* line 46, ../sass/components/wizard/_wizard_tip.scss */
+/* line 49, ../sass/components/wizard/_wizard_tip.scss */
 .wizard__tip_button.wizard__button--selected {
   color: white !important;
 }
