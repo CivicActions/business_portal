@@ -302,10 +302,10 @@ $border--thick: 3px solid $dark_blue;
 }
 
 /*************** TOOL TIP************/
-@mixin tool-tip($tip-bg-color: $tooltip-blue, $tip-icon: "../images/wizard/icon_bulb.png") {
+@mixin tool-tip($tip-bg-color: $tooltip-blue, $tip-icon: "../images/wizard/icon_bulb_no_circle.png") {
   background: url($tip-icon) $tip-bg-color 20px center no-repeat;
-  font-size: 1em;
-  padding: 1.5em 65px;
-  margin: 1em 0;
+  font-size: 1em !important;
+  padding: 1.5em 65px !important;
+  margin: 1em 0 !important;
   background-size: 30px;
 }
