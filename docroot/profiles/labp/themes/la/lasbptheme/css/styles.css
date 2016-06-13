@@ -4563,13 +4563,14 @@ a.wizard__arrow-back {
   background-size: 100%;
   width: 24px;
   height: 25px;
+  line-height: 25px;
   display: block;
   border-bottom: 2px solid white;
   color: white;
   text-indent: -150px;
 }
 
-/* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 101, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
   background-image: url('../images/wizard/arrow_down.png?1464939989');
   background-repeat: no-repeat;
@@ -4580,30 +4581,31 @@ a.wizard__arrow-down {
   height: 25px;
   display: block;
   text-indent: -100000px;
+  line-height: 25px;
   padding: 3px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 100, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 101, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down {
     margin: 0 0 24px 0;
   }
 }
 
-/* line 117, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 119, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
   background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
 }
 
-/* line 121, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled.section {
   text-indent: 40px;
   color: white;
   width: 100px;
   margin-bottom: 5px;
-  padding-top: 3px;
+  /*padding-top: 3px;*/
 }
 
-/* line 130, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 132, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
   background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
@@ -4611,9 +4613,10 @@ a.wizard__arrow-down.enabled.section {
   background-position-y: 50%;
   float: right;
   padding-top: 7px;
+  /*line-height: 25px;*/
 }
 
-/* line 139, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 142, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left.start-over {
   padding-left: 40px;
   color: white;
@@ -4623,13 +4626,31 @@ a.wizard__arrow-down.enabled.section {
   background-repeat: no-repeat;
   -webkit-background-size: 24px 25px;
   background-size: 24px 25px;
+  /*line-height: 25px;*/
   width: 70px;
   border-width: 0;
   text-indent: 0;
   margin-bottom: 0;
 }
 
-/* line 154, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 158, ../sass/components/wizard/_wizard_bottom_nav.scss */
+.wizard__arrow-down.enabled.start {
+  padding-left: 40px;
+  color: white;
+  font-size: 1em;
+  float: none;
+  background-repeat: no-repeat;
+  -webkit-background-size: 24px 25px;
+  background-size: 24px 25px;
+  /*line-height: 25px;*/
+  width: 40px;
+  font-weight: 700;
+  border-width: 0;
+  text-indent: 0;
+  margin-bottom: 0;
+}
+
+/* line 175, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
   background-image: url('../images/wizard/arrow_down_filled.png?1464939989');
   background-repeat: no-repeat;
@@ -4641,13 +4662,13 @@ a.wizard__arrow-down.enabled.section {
   border: 0px solid white;
 }
 @media all and (min-width: 720px) {
-  /* line 154, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 175, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__arrow-down--filled {
     border: 0px solid red;
   }
 }
 
-/* line 169, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 190, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label {
   color: #0f2940;
   font-weight: 700;
@@ -4658,13 +4679,13 @@ a.wizard__arrow-down.enabled.section {
   padding: 15px 0 0 4px;
 }
 @media all and (min-width: 720px) {
-  /* line 169, ../sass/components/wizard/_wizard_bottom_nav.scss */
+  /* line 190, ../sass/components/wizard/_wizard_bottom_nav.scss */
   .wizard__nav_label {
     color: white;
   }
 }
 
-/* line 182, ../sass/components/wizard/_wizard_bottom_nav.scss */
+/* line 203, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__nav_label_help {
   color: white;
   font-weight: 700;

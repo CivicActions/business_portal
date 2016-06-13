@@ -68,7 +68,9 @@
 </script>
 
 <script type="text/template" id="wizard-nav-start-template">
-  <a href="#" class="wizard__arrow-down enabled">Next</a>
+  <hr class="wizard__arrow-line"/>
+  <a href="#" class="wizard__arrow-down start enabled">Next</a>
+  <hr class="wizard__arrow-line"/>
 </script>
 
 <script type="text/template" id="wizard-nav-start-template">
