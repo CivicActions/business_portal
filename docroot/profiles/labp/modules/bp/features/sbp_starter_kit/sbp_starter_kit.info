@@ -1,7 +1,7 @@
 name = SBP Starter Kit
 core = 7.x
 package = Small Business Portal
-version = 7.x-1.4
+version = 7.x-1.5
 dependencies[] = ctools
 dependencies[] = defaultconfig
 dependencies[] = entityreference

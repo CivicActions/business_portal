@@ -55,35 +55,45 @@ function sbp_starter_kit_user_default_permissions() {
   // Exported permission: 'create sbp_starter_kit content'.
   $permissions['create sbp_starter_kit content'] = array(
     'name' => 'create sbp_starter_kit content',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete any sbp_starter_kit content'.
   $permissions['delete any sbp_starter_kit content'] = array(
     'name' => 'delete any sbp_starter_kit content',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'delete own sbp_starter_kit content'.
   $permissions['delete own sbp_starter_kit content'] = array(
     'name' => 'delete own sbp_starter_kit content',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit any sbp_starter_kit content'.
   $permissions['edit any sbp_starter_kit content'] = array(
     'name' => 'edit any sbp_starter_kit content',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit own sbp_starter_kit content'.
   $permissions['edit own sbp_starter_kit content'] = array(
     'name' => 'edit own sbp_starter_kit content',
-    'roles' => array(),
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
     'module' => 'node',
   );
 
