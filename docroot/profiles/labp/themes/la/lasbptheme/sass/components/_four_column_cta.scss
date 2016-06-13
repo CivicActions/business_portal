@@ -1,6 +1,7 @@
 .panel__header,
 .panel__icon_header {
   font-family: $heading-font;
+  color: $navy;
   margin:0 0 1em 0;
   padding: 0;
   font-size:1.714em;
@@ -90,6 +91,12 @@
       @include zen-float(left);
       margin-top: 0;
       margin-right: 0;
+    }
+    
+    .panel__icon_header, p {
+      @include window_size(tab-wide-up) {
+        max-width: 150px;
+      }
     }
   }
 }
