@@ -57,6 +57,9 @@
   a {
     text-decoration: underline;
   }
+  @include window_size(desktop) {
+    max-width: 66.67%;
+  }
 }
 
 .wizard__result {
@@ -70,18 +73,22 @@
 .wizard__result p {
   margin-top: 18px;
   margin-bottom: 18px;
+  padding-top: 0;
 }
 
 .wizard__result h3 {
   font-weight: 400;
   font-size: 1.429em;
   font-family: Merriweather, serif;
+  margin: 20px 0;
+  color: $dark_blue;
 }
 
 .wizard__result ul li,
 .wizard__result ol li {
   display: list-item;
-  font-size: 87.5%;
+  margin-bottom: 10px;
+  /*font-size: 87.5%;*/
 }
 
 .wizard__result ol {
