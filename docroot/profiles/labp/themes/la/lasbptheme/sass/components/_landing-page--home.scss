@@ -8,10 +8,17 @@ body.node-type-sbp-landing-page {
     max-width: $max-site-width;
     @include zen-grid-container();
     width: $zen-grid-width;
-    padding-bottom: 25px;
+    padding-bottom: 0;
     @include window-size(desktop){
       @include wrapper (80%);
       padding-bottom: 0;
+    }
+    
+    .panel__button_wrapper {
+      margin-bottom: 15px;
+      @include window-size(desktop){
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -20,6 +27,12 @@ body.node-type-sbp-landing-page {
     @include window-size(desktop){
       padding-top: 4em;
     }
+    
+    .panel__header-line {
+      margin-bottom: 1em;
+      @include window-size(desktop){
+        margin-bottom: 2em;
+      }
+    }
   }
-
 }

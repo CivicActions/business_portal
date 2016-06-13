@@ -86,6 +86,9 @@
 
   .panel__section {
     margin-top: 2em;
+    &:first-child {
+      margin-top: 0;
+    }
     @include window_size(tab-wide-up) {
       @include zen-grid-flow-item(1, 4, false, true);
       @include zen-float(left);
@@ -94,10 +97,10 @@
     }
     
     .panel__icon_header, p {
+      max-width: 65%;
       @include window_size(tab-wide-up) {
         max-width: 150px;
       }
     }
   }
 }
-

@@ -5341,7 +5341,7 @@ body.node-type-sbp-landing-page .panel__content_wrapper {
   margin: 0 auto;
   max-width: 960px;
   width: 90%;
-  padding-bottom: 25px;
+  padding-bottom: 0;
 }
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 body.node-type-sbp-landing-page .panel__content_wrapper:before, body.node-type-sbp-landing-page .panel__content_wrapper:after {
@@ -5360,14 +5360,34 @@ body.node-type-sbp-landing-page .panel__content_wrapper:after {
     padding-bottom: 0;
   }
 }
-/* line 18, ../sass/components/_landing-page--home.scss */
+/* line 17, ../sass/components/_landing-page--home.scss */
+body.node-type-sbp-landing-page .panel__content_wrapper .panel__button_wrapper {
+  margin-bottom: 15px;
+}
+@media all and (min-width: 960px) {
+  /* line 17, ../sass/components/_landing-page--home.scss */
+  body.node-type-sbp-landing-page .panel__content_wrapper .panel__button_wrapper {
+    margin-bottom: 0;
+  }
+}
+/* line 25, ../sass/components/_landing-page--home.scss */
 body.node-type-sbp-landing-page .panel__content_col_1 {
   padding-top: 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 18, ../sass/components/_landing-page--home.scss */
+  /* line 25, ../sass/components/_landing-page--home.scss */
   body.node-type-sbp-landing-page .panel__content_col_1 {
     padding-top: 4em;
+  }
+}
+/* line 31, ../sass/components/_landing-page--home.scss */
+body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
+  margin-bottom: 1em;
+}
+@media all and (min-width: 960px) {
+  /* line 31, ../sass/components/_landing-page--home.scss */
+  body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
+    margin-bottom: 2em;
   }
 }
 
@@ -5707,6 +5727,10 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
 .four-col-wrapper .panel__section {
   margin-top: 2em;
 }
+/* line 89, ../sass/components/_four_column_cta.scss */
+.four-col-wrapper .panel__section:first-child {
+  margin-top: 0;
+}
 @media all and (min-width: 720px) {
   /* line 87, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper .panel__section {
@@ -5726,8 +5750,12 @@ body.node-type-sbp-landing-page .panel__content_col_1 {
     margin-right: 0;
   }
 }
+/* line 99, ../sass/components/_four_column_cta.scss */
+.four-col-wrapper .panel__section .panel__icon_header, .four-col-wrapper .panel__section p {
+  max-width: 65%;
+}
 @media all and (min-width: 720px) {
-  /* line 96, ../sass/components/_four_column_cta.scss */
+  /* line 99, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper .panel__section .panel__icon_header, .four-col-wrapper .panel__section p {
     max-width: 150px;
   }
