@@ -119,3 +119,11 @@ function sbp_base_update_7002() {
   drupal_set_message('Reverting service center field group.');
   features_revert_module('labp_service_center');
 }
+
+/**
+ * Updating new WYSIWYG style for small text.
+ */
+function sbp_base_update_7003() {
+  drupal_set_message('Reverting the sbp_wysiwyg feature.');
+  features_revert_module('sbp_wysiwyg');
+}
