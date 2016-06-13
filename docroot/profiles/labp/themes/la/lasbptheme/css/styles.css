@@ -2897,6 +2897,11 @@ a#menu__hamburger.close {
  * Content component.
  *
  */
+/* line 13, ../sass/components/_content.scss */
+.body-font--small {
+  font-size: 0.929em !important;
+}
+
 /**
  * @file
  * SMACSS Modules
