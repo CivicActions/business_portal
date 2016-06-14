@@ -69,9 +69,13 @@
     margin: 1em 0;
   }
 
-  .views-field-field-email {
+  .views-field-field-email,
+  .views-field-field-link {
     .field-content {
-      padding-bottom: 0;
+      padding-bottom: 4px;
+      a {
+        border-bottom: 1px solid;
+      }
     }
   }
 
