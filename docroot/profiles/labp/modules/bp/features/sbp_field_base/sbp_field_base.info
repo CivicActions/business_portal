@@ -89,6 +89,7 @@ features[field_base][] = field_permit_section
 features[field_base][] = field_permit_tags
 features[field_base][] = field_phone
 features[field_base][] = field_quote
+features[field_base][] = field_quote_image
 features[field_base][] = field_quote_subtitle
 features[field_base][] = field_resource_type
 features[field_base][] = field_sbp_permit_documents

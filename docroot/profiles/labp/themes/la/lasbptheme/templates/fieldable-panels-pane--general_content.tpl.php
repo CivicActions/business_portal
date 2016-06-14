@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Returns the HTML for a four_column_cta fieldable panels pane.
+ * Returns the HTML for a general_content fieldable panels pane.
  *
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728164
@@ -9,31 +9,45 @@
 ?>
 <?php
 
-$pane_title = $content['title']['#value'];
-$pane_style = $field_pane_style[0]['taxonomy_term'];
-$pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
-if (!empty($field_component_body)) {
-  $pane_body = $field_component_body[0]['value'];
+$pane_title = $content['field_intro_title'][0]['#markup'];
+if (!empty($content['field_pane_style']) and !empty($content['field_pane_style'][0])) {
+  $pane_style = $content['field_pane_style'][0]['taxonomy_term'];
+  $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
+} else {
+  $pane_style = '';
 }
-if (!empty($field_background_image)) {
-  $background_image = file_create_url($field_background_image[0]['uri']);
+if (!empty($content['field_description']) and !empty($content['field_description'][0])) {
+  $pane_body = $content['field_description'][0]['#markup'];
+}
+if (!empty($content['field_call_to_action']) and !empty($content['field_call_to_action'][0])) {
+  $cta = $content['field_call_to_action'][0];
+}
+if (!empty($content['field_line_separator']) and !empty($content['field_line_separator'][0])) {
+  $line_separator = $content['field_line_separator'][0]['#markup'];
 }
 
 ?>
-  <div class="panel__intro style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?> >
-    <?php if (!empty($background_image)): ?>
-    <div class="panel__background_image">
-      <img src="<?php print $background_image; ?>"/>
-    </div>
-    <?php endif; ?>
-    <div class="panel__content_wrapper">
-      <div class="panel__content_col_1">
-        <h1 class="panel__intro_header"><?php print $pane_title; ?></h1>
-        <hr class="panel__header-line"/>
-        <?php if (!empty($pane_body)) { ?>
-          <div class="panel__intro_paragraph">
+  <div class="panel__general_content style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?> >
+
+    <div class="panel__general_content__title"><?php print $pane_title; ?></div>
+        <?php
+
+        if (!empty($pane_body)) { ?>
+          <div class="panel__general_content__body">
             <?php print $pane_body; ?>
           </div>
+        <?php
+        }
+
+        if (!empty($cta)) { ?>
+          <div class="panel__button">
+            <a href="<?php print $cta['#element']['url']; ?>"><?php print $cta['#element']['title']; ?></a>
+          </div>
+          <?php
+        }
+
+        if (!empty($line_separator) and $line_separator=='yes') { ?>
+          <hr class="panel__quote-line"/>
         <?php
         }
 
@@ -43,7 +57,8 @@ if (!empty($field_background_image)) {
           <?php
           foreach ($field_calls_to_action as $key => $button) {
             ?>
-            <div class="panel__button"><a href="<?php print $button['url']; ?>"><?php print $button['title']; ?></a>
+            <div class="panel__button">
+              <a href="<?php print $button['url']; ?>"><?php print $button['title']; ?></a>
             </div>
             <?php
           }

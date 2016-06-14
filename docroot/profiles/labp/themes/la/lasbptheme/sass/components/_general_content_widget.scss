@@ -1,0 +1,21 @@
+.panel__general_content {
+  margin-top: 15px;
+
+  .panel__general_content__title {
+    @include headline($heading-font, $zen-grid-width);
+  }
+
+  .panel__general_content__body {
+    font-size:1.286em;
+    line-height: 1.4em;
+
+    @include window_size(tab-wide-up){
+      font-size: 1.429em;
+      width: 90%;
+    }
+  }
+
+  .panel__quote-line {
+    @include hr-full;
+  }
+}
