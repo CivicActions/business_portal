@@ -9,12 +9,14 @@
 ?>
 <?php
 
+dpm($content);
+
 $pane_title = $content['title']['#value'];
 $quote = $content['field_quote'][0]['#markup'];
 $author = $content['field_author'][0]['#markup'];
 $subtitle = $content['field_quote_subtitle'][0]['#markup'];
 if (!empty($content['field_pane_style']) and !empty($content['field_pane_style'][0])) {
-  $pane_style = $content['field_pane_style'][0]['taxonomy_term'];
+  $pane_style = $content['field_pane_style']['#items'][0]['taxonomy_term'];
   $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 } else {
   $pane_style = '';
@@ -23,7 +25,7 @@ if (!empty($field_component_body)) {
   $pane_body = $field_component_body[0]['value'];
 }
 if (!empty($content['field_quote_image']) and !empty($content['field_quote_image'][0])) {
-  $quote_image = file_create_url($content['field_quote_image']['uri']);
+  $quote_image = file_create_url($content['field_quote_image'][0]['#item']['uri']);
 } else {
   $quote_image = '';
 }
@@ -63,7 +65,6 @@ if (!empty($content['field_quote_image']) and !empty($content['field_quote_image
       <?php
       endif;
       ?>
-
+    </div>
   </div>
-</div>
 

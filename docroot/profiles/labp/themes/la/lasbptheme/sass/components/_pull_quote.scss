@@ -1,0 +1,46 @@
+.panel__pull_quote {
+  background-color: #f2f2f2;
+  padding: 25px 50px 25px 50px;
+  display: block;
+
+  .panel__quote_col_1 {
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+  }
+
+  .panel__quote_image {
+
+  }
+
+  .panel__quote_col_2 {
+    display: inline-block;
+  }
+
+  .panel__quote_quote {
+    font-family: $heading-font;
+    font-size:1.714em;
+    font-weight: 400;
+    color: $navy;
+  }
+
+  .panel__quote-line {
+    @include hr-full;
+    background-color: white !important;
+    border-color: white !important;
+  }
+
+  .panel__quote_attribution {
+    margin-left: 40px;
+    margin-top: 20px;
+    color: $navy;
+  }
+
+  .panel__quote_author {
+    font-weight: 700;
+  }
+
+  .panel__quote_subtitle {
+    font-size: .5em;
+  }
+}
