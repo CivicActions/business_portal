@@ -38,7 +38,7 @@ function labp_service_center_field_group_info() {
       ),
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_more_contact_info|node|labp_service_center|form'] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.
