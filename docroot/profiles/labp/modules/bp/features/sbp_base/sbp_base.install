@@ -127,3 +127,11 @@ function sbp_base_update_7003() {
   drupal_set_message('Reverting the sbp_wysiwyg feature.');
   features_revert_module('sbp_wysiwyg');
 }
+
+/**
+ * Updating new field config for new widgets in LA-350.
+ */
+function sbp_base_update_7004() {
+  drupal_set_message('Reverting the field base features.');
+  features_revert_module('sbp_field_base');
+}

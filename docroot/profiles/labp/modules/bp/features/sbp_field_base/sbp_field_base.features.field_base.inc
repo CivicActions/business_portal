@@ -857,9 +857,13 @@ function sbp_field_base_field_default_field_bases() {
           ),
         ),
         'sort' => array(
-          'type' => 'none',
+          'direction' => 'ASC',
+          'property' => 'title',
+          'type' => 'property',
         ),
-        'target_bundles' => array(),
+        'target_bundles' => array(
+          'online_resource' => 'online_resource',
+        ),
       ),
       'target_type' => 'node',
     ),
