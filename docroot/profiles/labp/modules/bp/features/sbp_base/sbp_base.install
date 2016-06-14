@@ -135,3 +135,8 @@ function sbp_base_update_7004() {
   drupal_set_message('Reverting the field base features.');
   features_revert_module('sbp_field_base');
 }
+
+function sbp_base_update_7005() {
+  drupal_set_message('Reverting the labp service center feature.');
+  features_revert_module('labp_service_center');
+}
