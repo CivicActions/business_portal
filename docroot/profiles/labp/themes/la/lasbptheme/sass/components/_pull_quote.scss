@@ -18,10 +18,7 @@
   }
 
   .panel__quote_quote {
-    font-family: $heading-font;
-    font-size:1.714em;
-    font-weight: 400;
-    color: $navy;
+    @include small-headline($heading-font, $zen-grid-width);
   }
 
   .panel__quote-line {

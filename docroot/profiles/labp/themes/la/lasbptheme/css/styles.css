@@ -315,6 +315,8 @@
 ***************************************************/
 /*************** TOOL TIP************/
 /***************TITLE************/
+/***************SMALL HEADLINE************/
+/***************SUBTITLE************/
 /* HTML element (SMACSS base) rules */
 /**
  * @file
@@ -645,6 +647,8 @@ body {
 ***************************************************/
 /*************** TOOL TIP************/
 /***************TITLE************/
+/***************SMALL HEADLINE************/
+/***************SUBTITLE************/
 /**
  * @file
  * Print styling
@@ -6170,29 +6174,68 @@ ul.facetapi-facet-field-resource-type li a,
 /* line 20, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_quote {
   font-family: "Merriweather", serif;
-  font-size: 1.714em;
   font-weight: 400;
-  color: #163549;
+  margin: 0 0 18px 0;
+  padding: 0;
+  font-size: 1.714em;
+  width: 100%;
 }
-/* line 27, ../sass/components/_pull_quote.scss */
+@media all and (min-width: 720px) {
+  /* line 20, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote {
+    font-size: 2.571em;
+    margin: 0 0 30px 0;
+  }
+}
+/* line 24, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote-line {
   height: 2px;
   background-color: white !important;
   border-color: white !important;
 }
-/* line 33, ../sass/components/_pull_quote.scss */
+/* line 30, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_attribution {
   margin-left: 40px;
   margin-top: 20px;
   color: #163549;
 }
-/* line 39, ../sass/components/_pull_quote.scss */
+/* line 36, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_author {
   font-weight: 700;
 }
-/* line 43, ../sass/components/_pull_quote.scss */
+/* line 40, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_subtitle {
   font-size: .5em;
+}
+
+/* line 1, ../sass/components/_featured_resources.scss */
+.pane-bundle-featured-resources h2.pane-title {
+  display: none;
+}
+
+/* line 7, ../sass/components/_featured_resources.scss */
+.panel__featured_resources .panel__featured_resources__resource_wrapper {
+  width: 48%;
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+/* line 15, ../sass/components/_featured_resources.scss */
+.panel__featured_resources .panel__featured_resources__resource_title {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  margin: 0 0 18px 0;
+  padding: 0;
+  font-size: 1.1em;
+  width: 100%;
+}
+@media all and (min-width: 720px) {
+  /* line 15, ../sass/components/_featured_resources.scss */
+  .panel__featured_resources .panel__featured_resources__resource_title {
+    font-size: 1.45em;
+    margin: 0 0 30px 0;
+  }
 }
 
 /**

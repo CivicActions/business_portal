@@ -327,3 +327,31 @@ $border--thick: 3px solid $dark_blue;
     margin:0 0 30px 0;
   }
 }
+
+/***************SMALL HEADLINE************/
+@mixin small-headline($heading-font, $zen-grid-width) {
+  font-family: $heading-font;
+  font-weight: 400;
+  margin:0 0 18px 0;
+  padding: 0;
+  font-size:1.714em;
+  width: $zen-grid-width;
+  @include window_size(tab-wide-up){
+    font-size: 2.571em;
+    margin:0 0 30px 0;
+  }
+}
+
+/***************SUBTITLE************/
+@mixin subtitle($heading-font, $zen-grid-width) {
+  font-family: $heading-font;
+  font-weight: 400;
+  margin:0 0 18px 0;
+  padding: 0;
+  font-size:1.1em;
+  width: $zen-grid-width;
+  @include window_size(tab-wide-up){
+    font-size: 1.45em;
+    margin:0 0 30px 0;
+  }
+}
