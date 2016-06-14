@@ -80,7 +80,7 @@ function labp_service_center_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Field: Address info */
+  /* Field: Field: Address */
   $handler->display->display_options['fields']['field_address']['id'] = 'field_address';
   $handler->display->display_options['fields']['field_address']['table'] = 'field_data_field_address';
   $handler->display->display_options['fields']['field_address']['field'] = 'field_address';
@@ -92,6 +92,17 @@ function labp_service_center_views_default_views() {
     'format_handlers' => array(
       'address' => 'address',
     ),
+  );
+  /* Field: Field: Button */
+  $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
+  $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['label'] = '';
+  $handler->display->display_options['fields']['field_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_link']['type'] = 'link_url';
+  $handler->display->display_options['fields']['field_link']['settings'] = array(
+    'strip_www' => 0,
   );
   /* Field: Content: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
