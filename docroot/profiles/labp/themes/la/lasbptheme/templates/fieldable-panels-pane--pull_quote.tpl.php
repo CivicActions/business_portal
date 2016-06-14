@@ -9,8 +9,6 @@
 ?>
 <?php
 
-dpm($content);
-
 $pane_title = $content['title']['#value'];
 $quote = $content['field_quote'][0]['#markup'];
 $author = $content['field_author'][0]['#markup'];
