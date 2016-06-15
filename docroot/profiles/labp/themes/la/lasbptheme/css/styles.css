@@ -6214,34 +6214,53 @@ ul.facetapi-facet-field-resource-type li a,
   font-size: .5em;
 }
 
-/* line 1, ../sass/components/_featured_resources.scss */
+/* line 3, ../sass/components/_featured_resources.scss */
 .pane-bundle-featured-resources h2.pane-title {
   display: none;
 }
 
 /* line 7, ../sass/components/_featured_resources.scss */
-.panel__featured_resources .panel__featured_resources__resource_wrapper {
-  width: 48%;
-  display: inline-block;
-  margin: 15px;
-  text-align: center;
-  background-color: #f2f2f2;
+.featured-resources__container {
+  margin-top: 1em;
 }
-/* line 15, ../sass/components/_featured_resources.scss */
-.panel__featured_resources .panel__featured_resources__resource_title {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  margin: 0 0 18px 0;
-  padding: 0;
-  font-size: 1.1em;
+/* line 9, ../sass/components/_featured_resources.scss */
+.featured-resources__container .featured-resources__block {
   width: 100%;
+  background-color: #f7f7f7;
+  margin: 1%;
+  border-left: 2px solid #6bc3f3;
+}
+@media all and (min-width: 960px) {
+  /* line 9, ../sass/components/_featured_resources.scss */
+  .featured-resources__container .featured-resources__block {
+    width: 279px;
+  }
+}
+/* line 18, ../sass/components/_featured_resources.scss */
+.featured-resources__container .featured-resources__block--inner {
+  padding: 10px 20px 25px;
+}
+/* line 22, ../sass/components/_featured_resources.scss */
+.featured-resources__container .featured-resources__title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 15, ../sass/components/_featured_resources.scss */
-  .panel__featured_resources .panel__featured_resources__resource_title {
-    font-size: 1.45em;
-    margin: 0 0 30px 0;
+  /* line 22, ../sass/components/_featured_resources.scss */
+  .featured-resources__container .featured-resources__title {
+    margin: 10px 0 15px;
   }
+}
+/* line 31, ../sass/components/_featured_resources.scss */
+.featured-resources__container .featured-resources__button a {
+  background: url("../images/icon_view.png") no-repeat;
+  background-size: 100%;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  text-indent: -9999px;
+  margin-top: 1em;
 }
 
 /**
