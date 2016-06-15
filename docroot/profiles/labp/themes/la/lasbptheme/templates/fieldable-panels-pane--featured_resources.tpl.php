@@ -25,23 +25,26 @@ if (!empty($content['field_featured_resources']) and !empty($content['field_feat
 
 ?>
   <div class="panel__featured_resources style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?> >
-
+    <div class = "featured-resources__container dynamic-layout--wrapper">
   <?php
   foreach ($field_featured_resources as $key => $resource) {
     $resource = $resource['entity'];
     $hero = field_collection_item_load($resource->field_hero[LANGUAGE_NONE][0]['value']);
-    //dpm($resource);
     ?>
-    <div class="panel__featured_resources__resource_wrapper">
-      <div class="panel__featured_resources__resource_title"><?php print $resource->title; ?></div>
-      <div class="panel__featured_resources__resource_description"><?php print $hero->field_description[LANGUAGE_NONE][0]['safe_value']; ?></div>
-      <div class="panel__button">
-        <a href="<?php print drupal_get_path_alias('node/' . $resource->nid); ?>">DETAILS</a>
+
+      <div class="featured-resources__block dynamic-layout--item">
+        <div class = "featured-resources__block--inner">
+          <div class="featured-resources__title"><?php print $resource->title; ?></div>
+          <div class="featured-resources__description"><?php print $hero->field_description[LANGUAGE_NONE][0]['safe_value']; ?></div>
+          <div class="featured-resources__button">
+            <a href="<?php print drupal_get_path_alias('node/' . $resource->nid); ?>">DETAILS</a>
+          </div>
+        </div>
       </div>
-    </div>
     <?php
   }
   ?>
+      </div>
 
   </div>
 
