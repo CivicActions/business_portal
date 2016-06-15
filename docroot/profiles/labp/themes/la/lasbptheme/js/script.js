@@ -143,4 +143,58 @@ Drupal.behaviors.rotator = {
     });
   });
 
+  /**
+   * LA-335: Adding a dynamic column layout for the featured resources widget.
+   * Uses the Isotope.js library
+   */
+  Drupal.behaviors.dynamicLayout = {
+    attach: function(context, settings) {
+
+      $('.dynamic-layout--wrapper').isotope({
+        // options
+        itemSelector: '.dynamic-layout--item',
+        layoutMode: 'fitRows'
+      });
+    }
+
+  };
+
+  /**
+   * LA-335: Code to make all blocks in the same row default to the height of the longest block.
+   * Assumes that each row contains 2 blocks.
+   * @type {{attach: Drupal.behaviors.equalHeightColumns.attach}}
+     */
+
+  Drupal.behaviors.equalHeightColumns = {
+    attach: function(context, settings) {
+      var windowWidth = $(window).width();
+      // Select the node block.
+      var dynamicBlock = $('.dynamic-layout--wrapper').find('.dynamic-layout--item');
+
+      //Set this behaviour to only apply in desktop widths. Smaller widths default to a stacked layout.
+      if(windowWidth > 959) {
+        $.each(dynamicBlock, function (i) {
+          // Get the height of each node block
+          var blockHeight = $(dynamicBlock[i]).outerHeight();
+
+          if (i == 0 || i % 2 == 0) {
+            // For the first block and every other block with an even index
+            function compareHeights() {
+              // Compare heights and assign the largest height to both blocks in the row.
+              var nextBlockHeight = $(dynamicBlock[i + 1]).outerHeight();
+              if (blockHeight < nextBlockHeight) {
+                $(dynamicBlock[i]).height(nextBlockHeight);
+
+              } else {
+                $(dynamicBlock[i + 1]).height(blockHeight);
+              }
+            }
+            return compareHeights();
+          }
+        });
+      }
+    }
+  }
+
+
 })(jQuery, Drupal, this, this.document);
