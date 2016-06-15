@@ -227,7 +227,7 @@ $border--thick: 3px solid $dark_blue;
 
   /****** Light Grey ******/
   &.light_grey {
-    @include style-variant ($grayscale_light);
+    @include style-variant ($homepage__panel--bg-light-grey);
     color: $navy;
     .panel__intro_header,
     .hero__headline--half,
