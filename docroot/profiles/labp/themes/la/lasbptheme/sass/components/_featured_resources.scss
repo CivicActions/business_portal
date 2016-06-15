@@ -1,18 +1,40 @@
+// Styles for the Featured Resources Widget
+
 .pane-bundle-featured-resources h2.pane-title {
   display: none;
 }
 
-.panel__featured_resources {
-
-  .panel__featured_resources__resource_wrapper {
-    width: 48%;
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
-    background-color: #f2f2f2;
+.featured-resources__container {
+  margin-top: 1em;
+  .featured-resources__block {
+    width: 100%;
+    background-color: #f7f7f7;
+    margin: 1%;
+    border-left: 2px solid $background-intro;
+    @include window_size(desktop) {
+      width: 279px;
+    }
+  }
+  .featured-resources__block--inner {
+    padding: 10px 20px 25px;
   }
 
-  .panel__featured_resources__resource_title {
-    @include subtitle($heading-font, $zen-grid-width);
+  .featured-resources__title {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
+    @include window_size(tab-wide-up){
+      margin: 10px 0 15px;
+    }
+  }
+
+  .featured-resources__button a {
+    background: url("../images/icon_view.png") no-repeat;
+    background-size: 100%;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin-top: 1em;
   }
 }
