@@ -270,9 +270,9 @@
 }
 /* line 229, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
-  background-color: #e6e6e6;
+  background-color: #f9fafa;
   color: white;
-  border-color: #e6e6e6;
+  border-color: #f9fafa;
   color: #163549;
 }
 /* line 96, ../sass/base/_mixins.scss */
@@ -282,7 +282,7 @@
 }
 /* line 99, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr {
-  background-color: #e6e6e6;
+  background-color: #f9fafa;
   border: none;
 }
 /* line 102, ../sass/base/_mixins.scss */
@@ -602,9 +602,9 @@ body {
 }
 /* line 229, ../sass/base/_mixins.scss */
 .style_variant.light_grey {
-  background-color: #e6e6e6;
+  background-color: #f9fafa;
   color: white;
-  border-color: #e6e6e6;
+  border-color: #f9fafa;
   color: #163549;
 }
 /* line 96, ../sass/base/_mixins.scss */
@@ -614,7 +614,7 @@ body {
 }
 /* line 99, ../sass/base/_mixins.scss */
 .style_variant.light_grey hr {
-  background-color: #e6e6e6;
+  background-color: #f9fafa;
   border: none;
 }
 /* line 102, ../sass/base/_mixins.scss */
