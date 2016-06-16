@@ -87,6 +87,7 @@ features[field_instance][] = fieldable_panels_pane-three_column_cta-field_compon
 features[field_instance][] = fieldable_panels_pane-three_column_cta-field_pane_style
 features[field_instance][] = fieldable_panels_pane-three_column_cta-field_three_ctas
 features[field_instance][] = fieldable_panels_pane-timeline-field_banner_image
+features[field_instance][] = fieldable_panels_pane-timeline-field_pane_style
 features[field_instance][] = file-image-field_file_image_alt_text
 features[field_instance][] = file-image-field_file_image_title_text
 features[fieldable_panels_pane_type][] = featured_resources
