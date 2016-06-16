@@ -1,0 +1,25 @@
+/*************************************
+*         Layout
+**************************************/
+
+.panel__timeline {
+  .panel__timeline__banner_image{}
+
+  .panel__timeline__items_wrapper{
+    margin-top: 15px;
+  }
+
+  .panel__timeline_item_wrapper {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+
+  .panel__timeline__item_title{
+    @include subtitle($heading-font, $zen-grid-width);
+  }
+
+  .panel__timeline__item_body{}
+
+
+}

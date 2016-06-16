@@ -136,7 +136,20 @@ function sbp_base_update_7004() {
   features_revert_module('sbp_field_base');
 }
 
+/**
+ * Reverting service centers.
+ */
 function sbp_base_update_7005() {
   drupal_set_message('Reverting the labp service center feature.');
   features_revert_module('labp_service_center');
+}
+
+/**
+ * Timeline widget.
+ */
+function sbp_base_update_7006() {
+  drupal_set_message('Reverting field base.');
+  features_revert_module('sbp_field_base');
+  drupal_set_message('Reverting panels.');
+  features_revert_module('sbp_panels');
 }
