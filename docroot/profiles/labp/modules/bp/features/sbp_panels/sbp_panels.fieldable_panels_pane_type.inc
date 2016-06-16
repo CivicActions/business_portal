@@ -58,5 +58,13 @@ function sbp_panels_default_fieldable_panels_pane_type() {
   $fieldable_panels_pane_type->description = '';
   $export['three_column_cta'] = $fieldable_panels_pane_type;
 
+  $fieldable_panels_pane_type = new stdClass();
+  $fieldable_panels_pane_type->disabled = FALSE; /* Edit this to true to make a default fieldable_panels_pane_type disabled initially */
+  $fieldable_panels_pane_type->api_version = 1;
+  $fieldable_panels_pane_type->name = 'timeline';
+  $fieldable_panels_pane_type->title = 'Timeline';
+  $fieldable_panels_pane_type->description = '';
+  $export['timeline'] = $fieldable_panels_pane_type;
+
   return $export;
 }
