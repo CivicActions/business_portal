@@ -47,10 +47,12 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
         }
         $cta = $item->field_timeline_cta[LANGUAGE_NONE][0];
       ?>
-        <div class="panel__timeline__item_title"><?php print $title; ?></div>
-        <hr class="panel__header-line_thin"/>
-        <div class="panel__timeline__item_body"><?php print $body; ?></div>
-        <div class="panel__button"><a href="<?php print $cta['url']; ?>"><?php print $cta['title']; ?></a></div>
+        <div class="panel__timeline_item_wrapper">
+          <div class="panel__timeline__item_title"><?php print $title; ?></div>
+          <hr class="panel__header-line_thin"/>
+          <div class="panel__timeline__item_body"><?php print $body; ?></div>
+          <div class="panel__button"><a href="<?php print $cta['url']; ?>"><?php print $cta['title']; ?></a></div>
+        </div>
       <?php
       }
 
