@@ -3412,7 +3412,7 @@ hr.hero__line--half {
   line-height: 1.2em;
   display: inline-block;
   color: #163549;
-  padding: 0;
+  padding: 0 0 14px;
   font-size: 1.17em;
 }
 @media all and (min-width: 960px) {
