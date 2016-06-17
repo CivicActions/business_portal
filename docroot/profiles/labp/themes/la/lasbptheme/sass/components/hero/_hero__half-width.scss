@@ -1,18 +1,59 @@
-
 /*****************************
 *     Half Width
 ******************************/
-
 .hero__layout--half {
+  box-sizing: border-box;
+  
+  /*========== Layout ======== */
+  //Mobile-first layout
+  $zen-grid-width: 100%;
+  $zen-column-count:  10;
+  //$zen-gutter-width:  20px;
 
-  .hero__header--inner {
-     padding: 6em 30px 0;
+  .hero__content-wrapper {
+    @include zen-grid-container();
+    width: 100%;
+    padding-left: 0;
     position: relative;
-    @include window_size(desktop) {
-      padding: 6em 0 0;
-    }
   }
 
+  @include window_size(desktop){
+    .left  {
+      @include zen-grid-item (3, 1);
+      height: 100%;
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+    }
+    .right {
+      @include zen-grid-item (7, 4);
+      padding: 0;
+    }
+    .left, .right {
+      box-sizing: border-box;
+    }
+  }
+  
+  .hero__header--inner {
+    padding: 25px;
+    position: relative;
+    @include window_size(desktop) {
+      max-width: $max-content-width;
+      padding: 125px 0 40px 30px;
+      box-sizing: border-box;
+    }
+  }
+  
+  .left {
+    .hero__header--inner {
+      padding-top: 90px;
+      @include window_size(desktop) {
+        padding-top: 125px;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  
   .hero__icon,
   .hero__icon--mobile {
     img {
@@ -31,7 +72,41 @@
     .hero__icon--mobile,
     .hero__headline--half--mobile { display: none;}
   }
+  
+  
+  .hero__headline,
+  .hero__headline--half,
+  .hero__headline--half--mobile {
+    font-size: 1.8em ;
+    @include window_size(desktop){
+      font-size: 2.6em;
+      margin: 15px 0 0;
+    }
+  }
+  .hero__headline--half--mobile {
+    margin: 10px 0 0 0;
+    font-size: 1.4em;
+  }
 
+
+  hr.hero__line,
+  hr.hero__line--half {
+    @include hr-thick;
+    margin: 25px 0 0;
+  }
+
+
+  .hero__description {
+    margin: 0;
+    font-size: 1.143em;
+    max-width: 90%;
+
+    @include window-size(desktop) {
+      font-size: 1.429em;
+      line-height: 1.4;
+      margin: 25px 0 0;
+    }
+  }
 
   .hero__bottom_align--bn {
     max-width: 250px;
@@ -39,18 +114,12 @@
     margin-bottom: 0;
     display: none;
     @include window_size(desktop){
-      padding: 250px 0 5em 0;
-      float: right;
+      position: absolute;
+      z-index: 999;
+      right: 0; bottom: 40px;
+      padding: 0;
       max-width: 250px;
       display: block;
-    }
-  }
-
-  // Have the default image bg match the height of other sub-pages
-  #hero--left-bg {
-    @include window_size(desktop) {
-      padding-bottom: 8em;
-      min-height: 400px;
     }
   }
 
@@ -82,56 +151,9 @@
       display: block;
     }
   }
-
-  // Left and right columns for half-width layout
-  .right {
-
-  .hero__header--inner {
-    padding: 1em 0 30px;
-    @include window_size(desktop) {
-      padding: 6em 30px 0;
-      max-width: $max-content-width;
-      }
-    }
-  }
-  .hero__description {
-    margin: 0.8em 1em 1em 2em;
-    font-size: 1.143em;
-
-    @include window-size(desktop) {
-      font-size: 1.429em;
-      line-height: 1.4;
-      margin: 30px 0;
-    }
-  }
-  .hero__headline,
-  .hero__headline--half,
-  .hero__headline--half--mobile {
-    font-size: 1.8em ;
-
-    @include window_size(desktop){
-      font-size: 2.6em;
-      margin: 1em 0 0;
-    }
-  }
-  .hero__headline--half--mobile {
-    padding-bottom: 25px;
-    font-size: 1.4em;
-  }
-  .hero__background-image {
-    background-position: 50%;
-    background-size: cover;
-    @include window_size(desktop) {
-      background-size: auto 100%;
-    }
-  }
-
-  .hero__image--overlay {
-    position: relative;
-    overflow: hidden;
-    @include window_size(desktop){
-
-    }
+  
+  .hero__call-to-action--wrapper {
+    margin-top: 20px;
   }
 
   // Call to action buttons
@@ -151,28 +173,26 @@
     }
     @include window_size(desktop) {
       font-size: 1.143em;
-
+    }
+  }
+  
+  .hero__background-image {
+    background-position: 50%;
+    background-size: cover;
+    @include window_size(desktop) {
+      background-size: auto 100%;
+      height: 100%;
     }
   }
 
-
-
-  /*========== Layout ======== */
-  //Mobile-first layout
-  $zen-grid-width: 100%;
-  $zen-column-count:  10;
-  //$zen-gutter-width:  20px;
-
-  .hero__content-wrapper {
-    @include zen-grid-container();
-    width: 100%;
-    padding-left: 0;
-
-  }
-
+  .hero__image--overlay {
+    position: relative;
+    /*overflow: hidden;*/
     @include window_size(desktop){
-      .left  { @include zen-grid-item (3, 1); }
-      .right { @include zen-grid-item (7, 4); }
+      height: 100%;
+    }
+    .hero__header--inner {
+      height: 100%;
     }
   }
-
+}
