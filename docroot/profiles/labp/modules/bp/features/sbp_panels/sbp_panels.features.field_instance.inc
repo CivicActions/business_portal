@@ -1762,6 +1762,53 @@ function sbp_panels_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'fieldable_panels_pane-timeline-field_timeline_items'.
+  $field_instances['fieldable_panels_pane-timeline-field_timeline_items'] = array(
+    'bundle' => 'timeline',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'fieldable_panels_pane',
+    'field_name' => 'field_timeline_items',
+    'label' => 'Timeline Items',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'field_collection_fieldset',
+      'settings' => array(
+        'collapsed' => 0,
+        'field_as_label' => '',
+        'last_item_collapsed' => 0,
+        'new_item_open' => 0,
+        'replace_label' => 0,
+      ),
+      'type' => 'field_collection_fieldset',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'file-image-field_file_image_alt_text'.
   $field_instances['file-image-field_file_image_alt_text'] = array(
     'bundle' => 'image',
@@ -1918,6 +1965,7 @@ function sbp_panels_field_default_field_instances() {
   t('Subtitle');
   t('Subtitle 2');
   t('Three CTAs');
+  t('Timeline Items');
   t('Title');
   t('Title Text');
   t('Title text is used in the tool tip when a user hovers their mouse over the image. Adding title text makes it easier to understand the context of an image and improves usability.');
