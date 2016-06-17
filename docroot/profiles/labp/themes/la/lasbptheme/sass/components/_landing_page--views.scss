@@ -23,15 +23,10 @@
   }
 
   .views-row{
-    padding: 1em 0;
+    padding: 20px 0;
     border-bottom: solid 1px $light-blue;
     &:last-child {
       border-bottom: none;
-    }
-
-    @include window_size(desktop) {
-      //width: 90%;
-      max-width: 710px;
     }
   }
 }
@@ -54,12 +49,10 @@
     font-weight: 900;
     color: $dark_blue;
     padding: 0 1em 0.8em 0;
-    margin-bottom: 0;
+    margin: 0;
     border-bottom: 1px solid $light-blue;
-    @include window_size(desktop) {
+    @include window_size(tab-wide-up) {
       font-size: 2em;
-      //width: 90%;
-      max-width: 710px;
       padding: 0 0 0.8em;
     }
   }
@@ -95,6 +88,10 @@
       line-height: 1.35em;
     }
   }
-
 }
 
+.view-id-departments {
+  .views-row-1 {
+    padding-top: 0;
+  }
+}

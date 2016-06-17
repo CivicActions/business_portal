@@ -1622,33 +1622,29 @@ table {
 }
 /* line 13, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last .inside {
-  margin: 0 2em 0 2em;
-  padding-top: 1em;
-  max-width: 700px;
-}
-@media all and (min-width: 720px) {
-  /* line 13, ../sass/layouts/_panels.scss */
-  .panel-2col-stacked .panel-col-last .inside {
-    max-width: 100%;
-  }
+  margin: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
 }
 @media all and (min-width: 960px) {
   /* line 13, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
-    margin: 0 0 0 0.5em;
-    width: 90%;
+    padding: 25px 30px;
+    max-width: 710px;
   }
 }
-/* line 30, ../sass/layouts/_panels.scss */
+/* line 27, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first h2 {
   font-family: "Roboto", sans-serif;
 }
-/* line 33, ../sass/layouts/_panels.scss */
+/* line 30, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first .inside {
-  padding: 1.5em 1em 2em 2em;
+  padding: 25px;
+  margin: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 33, ../sass/layouts/_panels.scss */
+  /* line 30, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first .inside {
     padding: 1.5em 25px 2em 0;
     margin: 0;
@@ -1657,19 +1653,19 @@ table {
     width: 225px;
   }
 }
-/* line 46, ../sass/layouts/_panels.scss */
+/* line 44, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 47, ../sass/layouts/_panels.scss */
+/* line 45, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 50, ../sass/layouts/_panels.scss */
+/* line 48, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 59, ../sass/layouts/_panels.scss */
+/* line 57, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
@@ -1683,7 +1679,7 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-/* line 64, ../sass/layouts/_panels.scss */
+/* line 62, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first,
 .panel-2col-stacked .panel-col-last {
   float: none;
@@ -1691,33 +1687,29 @@ table {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 72, ../sass/layouts/_panels.scss */
+  /* line 70, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 79, ../sass/layouts/_panels.scss */
+  /* line 77, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
     width: 70%;
     margin-left: 30%;
     margin-right: -100%;
   }
-  /* line 81, ../sass/layouts/_panels.scss */
-  .panel-2col-stacked .panel-col-last .inside {
-    padding: 0.3em 0 2em 30px;
-  }
 }
 
-/* line 92, ../sass/layouts/_panels.scss */
+/* line 85, ../sass/layouts/_panels.scss */
 .node-type-online-resource.section-content .panel-col-last .inside {
   padding-top: 26px;
 }
 
 @media all and (min-width: 960px) {
-  /* line 101, ../sass/layouts/_panels.scss */
+  /* line 94, ../sass/layouts/_panels.scss */
   .section-resources .panel-2col-stacked .panel-col-first,
   .section-resources .panel-2col-stacked .panel-col-last,
   .section-content .panel-2col-stacked .panel-col-first,
@@ -1727,7 +1719,7 @@ table {
 }
 
 @media (max-width: 720px) {
-  /* line 112, ../sass/layouts/_panels.scss */
+  /* line 105, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding-bottom: 30px !important;
   }
@@ -1735,7 +1727,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 123, ../sass/layouts/_panels.scss */
+/* line 116, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -3207,7 +3199,7 @@ hr.hero__line--half {
   /* line 89, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right .hero__header--inner {
     padding: 6em 30px 0;
-    max-width: 700px;
+    max-width: 710px;
   }
 }
 /* line 97, ../sass/components/hero/_hero__half-width.scss */
@@ -3339,11 +3331,10 @@ hr.hero__line--half {
   /* line 14, ../sass/components/_search.scss */
   .pane-sbp-resource-incentives-panel-pane-1 h2 {
     font-size: 2em;
-    max-width: 710px;
   }
 }
 
-/* line 30, ../sass/components/_search.scss */
+/* line 29, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-title {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3354,19 +3345,19 @@ hr.hero__line--half {
   line-height: 1.2em;
 }
 @media all and (min-width: 960px) {
-  /* line 30, ../sass/components/_search.scss */
+  /* line 29, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-title {
     font-size: 1.571em;
   }
 }
 
-/* line 44, ../sass/components/_search.scss */
+/* line 43, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node {
   width: 20%;
   display: inline-block;
 }
 
-/* line 49, ../sass/components/_search.scss */
+/* line 48, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node a {
   text-indent: -9999px;
   background-image: url("../images/icon_view.png");
@@ -3379,13 +3370,13 @@ hr.hero__line--half {
   margin: 0 0 0 6px;
 }
 
-/* line 54, ../sass/components/_search.scss */
+/* line 53, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-body {
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 54, ../sass/components/_search.scss */
+  /* line 53, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-body {
     width: 85%;
     font-size: 1.143em;
@@ -3440,7 +3431,7 @@ hr.hero__line--half {
 .view-labp-service-center .views-row,
 .view-sbp-resource-incentives .views-row,
 .view-terms-definitions .views-row {
-  padding: 1em 0;
+  padding: 20px 0;
   border-bottom: solid 1px #7ac7f6;
 }
 /* line 28, ../sass/components/_landing_page--views.scss */
@@ -3452,19 +3443,8 @@ hr.hero__line--half {
 .view-terms-definitions .views-row:last-child {
   border-bottom: none;
 }
-@media all and (min-width: 960px) {
-  /* line 25, ../sass/components/_landing_page--views.scss */
-  .view-id-bp_featured_sub_page .views-row,
-  .view-bp-featured-resource-page .views-row,
-  .view-departments .views-row,
-  .view-labp-service-center .views-row,
-  .view-sbp-resource-incentives .views-row,
-  .view-terms-definitions .views-row {
-    max-width: 710px;
-  }
-}
 
-/* line 39, ../sass/components/_landing_page--views.scss */
+/* line 34, ../sass/components/_landing_page--views.scss */
 .pane-bp-featured-sub-page,
 .pane-bp-featured-resource-page,
 .pane-terms-definitions {
@@ -3472,7 +3452,7 @@ hr.hero__line--half {
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 39, ../sass/components/_landing_page--views.scss */
+  /* line 34, ../sass/components/_landing_page--views.scss */
   .pane-bp-featured-sub-page,
   .pane-bp-featured-resource-page,
   .pane-terms-definitions {
@@ -3481,7 +3461,7 @@ hr.hero__line--half {
     *zoom: 1;
   }
 }
-/* line 50, ../sass/components/_landing_page--views.scss */
+/* line 45, ../sass/components/_landing_page--views.scss */
 .pane-bp-featured-sub-page h2,
 .pane-bp-featured-sub-page h3,
 .pane-bp-featured-resource-page h2,
@@ -3493,11 +3473,11 @@ hr.hero__line--half {
   font-weight: 900;
   color: #0f2940;
   padding: 0 1em 0.8em 0;
-  margin-bottom: 0;
+  margin: 0;
   border-bottom: 1px solid #7ac7f6;
 }
-@media all and (min-width: 960px) {
-  /* line 50, ../sass/components/_landing_page--views.scss */
+@media all and (min-width: 720px) {
+  /* line 45, ../sass/components/_landing_page--views.scss */
   .pane-bp-featured-sub-page h2,
   .pane-bp-featured-sub-page h3,
   .pane-bp-featured-resource-page h2,
@@ -3505,12 +3485,11 @@ hr.hero__line--half {
   .pane-terms-definitions h2,
   .pane-terms-definitions h3 {
     font-size: 2em;
-    max-width: 710px;
     padding: 0 0 0.8em;
   }
 }
 
-/* line 74, ../sass/components/_landing_page--views.scss */
+/* line 67, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node,
 .view-id-bp_featured_sub_page .views-field-field-document,
 .view-bp-featured-resource-page .views-field-view-node,
@@ -3524,7 +3503,7 @@ hr.hero__line--half {
   float: right;
   vertical-align: top;
 }
-/* line 79, ../sass/components/_landing_page--views.scss */
+/* line 72, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node a,
 .view-bp-featured-resource-page .views-field-view-node a,
 .view-id-departments .views-field-view-node a,
@@ -3540,7 +3519,7 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 83, ../sass/components/_landing_page--views.scss */
+/* line 76, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-field-document a,
 .view-bp-featured-resource-page .views-field-field-document a,
 .view-id-departments .views-field-field-document a,
@@ -3556,7 +3535,7 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 88, ../sass/components/_landing_page--views.scss */
+/* line 81, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-body,
 .view-id-bp_featured_sub_page .views-field-field-description,
 .view-bp-featured-resource-page .views-field-body,
@@ -3571,7 +3550,7 @@ hr.hero__line--half {
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 88, ../sass/components/_landing_page--views.scss */
+  /* line 81, ../sass/components/_landing_page--views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
   .view-id-bp_featured_sub_page .views-field-field-description,
   .view-bp-featured-resource-page .views-field-body,
@@ -3586,6 +3565,11 @@ hr.hero__line--half {
     font-size: 1.143em;
     line-height: 1.35em;
   }
+}
+
+/* line 94, ../sass/components/_landing_page--views.scss */
+.view-id-departments .views-row-1 {
+  padding-top: 0;
 }
 
 /**
@@ -5178,7 +5162,7 @@ a.wizard__arrow-down.enabled.section {
 @media all and (min-width: 960px) {
   /* line 60, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit #panels-ipe-regionid-right {
-    max-width: 700px;
+    max-width: 710px;
     margin: 0;
   }
 }
@@ -5403,11 +5387,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 }
 
 /** Isolating Business source center styles  **/
-/* line 3, ../sass/components/_landing-page--service-center.scss */
-.pane-labp-service-center {
-  max-width: 710px;
-}
-/* line 5, ../sass/components/_landing-page--service-center.scss */
+/* line 4, ../sass/components/_landing-page--service-center.scss */
 .pane-labp-service-center h2.pane-title {
   font-family: "Merriweather", serif;
   font-size: 1.429em;
@@ -5415,13 +5395,21 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
   color: #0f2940;
   border-bottom: solid 1px #7ac7f6;
   padding: 0 0 0.83em;
+  margin: 0 !important;
+}
+@media all and (min-width: 720px) {
+  /* line 4, ../sass/components/_landing-page--service-center.scss */
+  .pane-labp-service-center h2.pane-title {
+    font-size: 2em;
+  }
 }
 
-/* line 20, ../sass/components/_landing-page--service-center.scss */
+/* line 21, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .view-content h3 {
   text-transform: uppercase;
+  margin: 12px 0;
 }
-/* line 24, ../sass/components/_landing-page--service-center.scss */
+/* line 26, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-label {
   font-weight: 700;
   margin: 20px 0 0 0;
@@ -5431,65 +5419,65 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
   font-size: 1.143em;
   line-height: 1.35em;
 }
-/* line 33, ../sass/components/_landing-page--service-center.scss */
+/* line 35, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .field-content {
   line-height: 1.25em;
   padding-bottom: 1.25em;
 }
 @media all and (min-width: 960px) {
-  /* line 33, ../sass/components/_landing-page--service-center.scss */
+  /* line 35, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .field-content {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
   }
 }
-/* line 44, ../sass/components/_landing-page--service-center.scss */
+/* line 46, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-languages .views-label {
   margin-top: 0;
 }
-/* line 50, ../sass/components/_landing-page--service-center.scss */
+/* line 52, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-languages .field-content {
   padding-bottom: 0;
 }
-/* line 56, ../sass/components/_landing-page--service-center.scss */
+/* line 58, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-map .field-content {
   width: 100%;
 }
-/* line 59, ../sass/components/_landing-page--service-center.scss */
+/* line 61, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-map img {
   width: 100%;
+  box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 64, ../sass/components/_landing-page--service-center.scss */
+/* line 67, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-title {
   font-size: 1.571em;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  margin: 1em 0;
 }
-/* line 74, ../sass/components/_landing-page--service-center.scss */
+/* line 76, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-email .field-content,
 .view-id-labp_service_center .views-field-field-link .field-content {
   padding-bottom: 4px;
 }
-/* line 76, ../sass/components/_landing-page--service-center.scss */
+/* line 78, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-email .field-content a,
 .view-id-labp_service_center .views-field-field-link .field-content a {
   border-bottom: 1px solid;
 }
-/* line 82, ../sass/components/_landing-page--service-center.scss */
+/* line 84, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-field-phone {
   border-bottom: solid 1px #7ac7f6;
 }
-/* line 91, ../sass/components/_landing-page--service-center.scss */
+/* line 93, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-row {
   width: 100%;
-  padding: 1em 0;
+  padding: 20px 0 25px 0;
   border-top: solid 1px #7ac7f6;
 }
-/* line 95, ../sass/components/_landing-page--service-center.scss */
+/* line 97, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-row:last-child {
   border-top: none;
 }
@@ -5506,7 +5494,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 .view-id-labp_service_center .views-row:after {
   clear: both;
 }
-/* line 110, ../sass/components/_landing-page--service-center.scss */
+/* line 114, ../sass/components/_landing-page--service-center.scss */
 .view-id-labp_service_center .views-field-title,
 .view-id-labp_service_center .views-field-body,
 .view-id-labp_service_center .views-field-field-map,
@@ -5526,18 +5514,23 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
   padding-left: 0;
 }
 @media all and (min-width: 720px) {
-  /* line 125, ../sass/components/_landing-page--service-center.scss */
-  .view-id-labp_service_center .views-field-title {
-    margin: 0 0 1em;
+  /* line 129, ../sass/components/_landing-page--service-center.scss */
+  .view-id-labp_service_center .views-row {
+    padding-bottom: 5px;
   }
-  /* line 128, ../sass/components/_landing-page--service-center.scss */
+  /* line 133, ../sass/components/_landing-page--service-center.scss */
+  .view-id-labp_service_center .views-field-title {
+    margin: 0;
+  }
+  /* line 136, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-map {
     float: left;
     width: 50%;
     margin-left: 0%;
     margin-right: -50%;
+    padding-right: 20px;
   }
-  /* line 131, ../sass/components/_landing-page--service-center.scss */
+  /* line 140, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-address,
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-link,
@@ -5546,16 +5539,17 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
     width: 50%;
     margin-right: 0%;
     margin-left: -50%;
-    padding-left: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
-  /* line 138, ../sass/components/_landing-page--service-center.scss */
+  /* line 148, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-email,
   .view-id-labp_service_center .views-field-field-link,
   .view-id-labp_service_center .views-field-field-phone {
     clear: right;
     border-bottom: none;
   }
-  /* line 144, ../sass/components/_landing-page--service-center.scss */
+  /* line 154, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-services {
     clear: both;
     float: left;
@@ -5563,11 +5557,11 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
     margin-left: 0%;
     margin-right: -50%;
   }
-  /* line 147, ../sass/components/_landing-page--service-center.scss */
+  /* line 157, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-services .views-label {
     margin-top: 0;
   }
-  /* line 151, ../sass/components/_landing-page--service-center.scss */
+  /* line 161, ../sass/components/_landing-page--service-center.scss */
   .view-id-labp_service_center .views-field-field-languages {
     float: left;
     width: 50%;

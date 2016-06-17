@@ -1,7 +1,6 @@
 
 /** Isolating Business source center styles  **/
 .pane-labp-service-center {
-  max-width: 710px;
   h2.pane-title {
     font-family: $heading-font;
     font-size: 1.429em;
@@ -9,8 +8,10 @@
     color: $dark-blue;
     border-bottom: solid 1px $light-blue;
     padding: 0 0 0.83em;
-
-
+    margin: 0 !important;
+    @include window_size(tab-wide-up) {
+      font-size: 2em;
+    }
   }
 }
 
@@ -19,6 +20,7 @@
   .view-content {
     h3 {
       text-transform: uppercase;
+      margin: 12px 0;
     }
   }
   .views-label {
@@ -58,6 +60,7 @@
     }
     img {
       width: 100%;
+      box-sizing: border-box;
       border: 1px solid rgba(0, 0, 0, 0.3);
     }
   }
@@ -66,7 +69,6 @@
     font-weight: 700;
     font-family: $font-body;
     width: 100%;
-    margin: 1em 0;
   }
 
   .views-field-field-email,
@@ -90,7 +92,7 @@
   }
   .views-row {
     width: 100%;
-    padding: 1em 0;
+    padding: 20px 0 25px 0;
     border-top: solid 1px $light-blue;
     &:last-child {
       border-top: none;
@@ -106,7 +108,9 @@
   $zen-column-count: 12;
   $zen-grid-width: 100%;
 
-  .views-row { @include zen-grid-container(); }
+  .views-row { 
+    @include zen-grid-container();
+  }
   .views-field-title,
   .views-field-body,
   .views-field-field-map,
@@ -122,18 +126,24 @@
 
   // Desktop
   @include window_size(tab-wide-up) {
+    .views-row {
+      padding-bottom: 5px;
+    }
+    
     .views-field-title {
-      margin: 0 0 1em;
+      margin: 0;
     }
     .views-field-field-map {
       @include zen-grid-item (6, 1);
+      padding-right: 20px;
     }
     .views-field-field-address,
     .views-field-field-email,
     .views-field-field-link,
     .views-field-field-phone {
       @include zen-grid-item (6, 1, right);
-      padding-left: 10px;
+      padding-left: 0;
+      padding-right: 0;
     }
     .views-field-field-email,
     .views-field-field-link,
@@ -153,5 +163,4 @@
       padding-left: 10px;
     }
   }
-
 }
