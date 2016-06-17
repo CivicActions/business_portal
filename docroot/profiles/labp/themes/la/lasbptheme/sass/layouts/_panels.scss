@@ -11,17 +11,14 @@
   .panel-col-last {
     background: $white;
     .inside {
-      margin: 0 2em 0 2em;
-      padding-top: 1em;
-      max-width: $max-content-width;
-      @include window_size(tab-wide-up) {
-        max-width: 100%;
-      }
+      margin: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 25px;
       @include window_size(desktop) {
-        margin: 0 0 0 0.5em;
-        width: 90%;
+        padding: 25px 30px;
+        max-width: $max-content-width;
       }
-
     }
   }
 
@@ -31,7 +28,8 @@
       font-family: $font-body;
     }
     .inside {
-      padding: 1.5em 1em 2em 2em;
+      padding: 25px;
+      margin: 0;
       @include window_size(desktop){
         padding: 1.5em 25px 2em 0;
         margin: 0;
@@ -78,19 +76,14 @@
 
     .panel-col-last {
       @include zen-grid-item (7, 4);
-      .inside {
-        padding: 0.3em 0 2em 30px;
-      }
     }
-
-
   }
 }
 
 .node-type-online-resource.section-content {
    .panel-col-last {
         .inside {
-                padding-top: 26px;
+          padding-top: 26px;
         }
     }
 }
