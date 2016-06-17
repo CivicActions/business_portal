@@ -3174,39 +3174,40 @@ hr.hero__line--half {
   /* line 47, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left .hero__header--inner {
     padding-top: 125px;
+    max-width: 100%;
   }
 }
-/* line 58, ../sass/components/hero/_hero__half-width.scss */
+/* line 59, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__icon img,
 .hero__layout--half .hero__icon--mobile img {
   width: 100%;
   max-width: 100px;
 }
-/* line 64, ../sass/components/hero/_hero__half-width.scss */
+/* line 65, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__icon,
 .hero__layout--half .hero__headline--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 69, ../sass/components/hero/_hero__half-width.scss */
+  /* line 70, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__icon,
   .hero__layout--half .hero__headline--half {
     display: block;
   }
-  /* line 71, ../sass/components/hero/_hero__half-width.scss */
+  /* line 72, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__icon--mobile,
   .hero__layout--half .hero__headline--half--mobile {
     display: none;
   }
 }
-/* line 76, ../sass/components/hero/_hero__half-width.scss */
+/* line 77, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline,
 .hero__layout--half .hero__headline--half,
 .hero__layout--half .hero__headline--half--mobile {
   font-size: 1.8em;
 }
 @media all and (min-width: 960px) {
-  /* line 76, ../sass/components/hero/_hero__half-width.scss */
+  /* line 77, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -3214,33 +3215,33 @@ hr.hero__line--half {
     margin: 15px 0 0;
   }
 }
-/* line 85, ../sass/components/hero/_hero__half-width.scss */
+/* line 86, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline--half--mobile {
   margin: 10px 0 0 0;
   font-size: 1.4em;
 }
-/* line 91, ../sass/components/hero/_hero__half-width.scss */
+/* line 92, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half hr.hero__line,
 .hero__layout--half hr.hero__line--half {
   height: 4px;
   max-width: 80px;
   margin: 25px 0 0;
 }
-/* line 98, ../sass/components/hero/_hero__half-width.scss */
+/* line 99, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
   margin: 0;
   font-size: 1.143em;
   max-width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 98, ../sass/components/hero/_hero__half-width.scss */
+  /* line 99, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
     font-size: 1.429em;
     line-height: 1.4;
     margin: 25px 0 0;
   }
 }
-/* line 110, ../sass/components/hero/_hero__half-width.scss */
+/* line 111, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__bottom_align--bn {
   max-width: 250px;
   padding: 20px 0 0;
@@ -3248,7 +3249,7 @@ hr.hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 110, ../sass/components/hero/_hero__half-width.scss */
+  /* line 111, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__bottom_align--bn {
     position: absolute;
     z-index: 999;
@@ -3259,7 +3260,7 @@ hr.hero__line--half {
     display: block;
   }
 }
-/* line 125, ../sass/components/hero/_hero__half-width.scss */
+/* line 126, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name {
   color: #fff;
   font-size: 1.1em;
@@ -3267,7 +3268,7 @@ hr.hero__line--half {
   font-weight: bold;
   width: 160px;
 }
-/* line 133, ../sass/components/hero/_hero__half-width.scss */
+/* line 134, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__description {
   color: #fff;
   font-size: 1em;
@@ -3276,30 +3277,30 @@ hr.hero__line--half {
   padding-right: 5em;
 }
 @media all and (min-width: 960px) {
-  /* line 133, ../sass/components/hero/_hero__half-width.scss */
+  /* line 134, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__description {
     padding-right: 90px;
   }
 }
-/* line 145, ../sass/components/hero/_hero__half-width.scss */
+/* line 146, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name,
 .hero__layout--half .hero__business__description,
 .hero__layout--half .hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 145, ../sass/components/hero/_hero__half-width.scss */
+  /* line 146, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__name,
   .hero__layout--half .hero__business__description,
   .hero__layout--half .hero__line--half {
     display: block;
   }
 }
-/* line 154, ../sass/components/hero/_hero__half-width.scss */
+/* line 155, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--wrapper {
   margin-top: 20px;
 }
-/* line 159, ../sass/components/hero/_hero__half-width.scss */
+/* line 160, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item {
   text-transform: uppercase;
   background: #fff;
@@ -3309,40 +3310,40 @@ hr.hero__line--half {
   padding: 10px 20px;
   font-weight: bold;
 }
-/* line 167, ../sass/components/hero/_hero__half-width.scss */
+/* line 168, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item a {
   color: #0f2940;
 }
 @media all and (min-width: 960px) {
-  /* line 159, ../sass/components/hero/_hero__half-width.scss */
+  /* line 160, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__call-to-action--item {
     font-size: 1.143em;
   }
 }
-/* line 178, ../sass/components/hero/_hero__half-width.scss */
+/* line 179, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
 @media all and (min-width: 960px) {
-  /* line 178, ../sass/components/hero/_hero__half-width.scss */
+  /* line 179, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__background-image {
     background-size: auto 100%;
     height: 100%;
   }
 }
-/* line 187, ../sass/components/hero/_hero__half-width.scss */
+/* line 188, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay {
   position: relative;
   /*overflow: hidden;*/
 }
 @media all and (min-width: 960px) {
-  /* line 187, ../sass/components/hero/_hero__half-width.scss */
+  /* line 188, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__image--overlay {
     height: 100%;
   }
 }
-/* line 193, ../sass/components/hero/_hero__half-width.scss */
+/* line 194, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay .hero__header--inner {
   height: 100%;
 }
