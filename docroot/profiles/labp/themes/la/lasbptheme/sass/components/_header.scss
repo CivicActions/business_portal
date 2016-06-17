@@ -226,25 +226,28 @@
 
 /* Special styles to line header elements up in the resources section */
 @media (min-width: 960px) {
-  body.section-resources #header {
-    .header--wrapper {
-      width: auto;
-      margin: 0;
-      max-width: none;
-    }
-    .header__logo {
-      width: 30%;
-    }
-    .header__logo-image {
-      height: 38px;
-      float: right;
-      padding-right: 43px;
-    }
-    .header__region {
-      width: 70%;
-    }
-    .menu {
-      margin-left: 28px;
+  body.section-resources,
+  body.section-content {
+    #header {
+      .header--wrapper {
+        width: auto;
+        margin: 0;
+        max-width: none;
+      }
+      .header__logo {
+        width: 30%;
+      }
+      .header__logo-image {
+        height: 38px;
+        float: right;
+        padding-right: 43px;
+      }
+      .header__region {
+        width: 70%;
+      }
+      .menu {
+        margin-left: 28px;
+      }
     }
   }
 }

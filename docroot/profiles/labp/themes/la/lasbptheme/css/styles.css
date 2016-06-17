@@ -2781,28 +2781,33 @@ body.not-logged-in.page-user #main {
 
 /* Special styles to line header elements up in the resources section */
 @media (min-width: 960px) {
-  /* line 230, ../sass/components/_header.scss */
-  body.section-resources #header .header--wrapper {
+  /* line 232, ../sass/components/_header.scss */
+  body.section-resources #header .header--wrapper,
+  body.section-content #header .header--wrapper {
     width: auto;
     margin: 0;
     max-width: none;
   }
-  /* line 235, ../sass/components/_header.scss */
-  body.section-resources #header .header__logo {
+  /* line 237, ../sass/components/_header.scss */
+  body.section-resources #header .header__logo,
+  body.section-content #header .header__logo {
     width: 30%;
   }
-  /* line 238, ../sass/components/_header.scss */
-  body.section-resources #header .header__logo-image {
+  /* line 240, ../sass/components/_header.scss */
+  body.section-resources #header .header__logo-image,
+  body.section-content #header .header__logo-image {
     height: 38px;
     float: right;
     padding-right: 43px;
   }
-  /* line 243, ../sass/components/_header.scss */
-  body.section-resources #header .header__region {
+  /* line 245, ../sass/components/_header.scss */
+  body.section-resources #header .header__region,
+  body.section-content #header .header__region {
     width: 70%;
   }
-  /* line 246, ../sass/components/_header.scss */
-  body.section-resources #header .menu {
+  /* line 248, ../sass/components/_header.scss */
+  body.section-resources #header .menu,
+  body.section-content #header .menu {
     margin-left: 28px;
   }
 }
