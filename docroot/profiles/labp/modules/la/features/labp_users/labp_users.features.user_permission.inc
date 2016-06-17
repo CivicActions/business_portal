@@ -288,6 +288,17 @@ function labp_users_user_default_permissions() {
     'module' => 'nra',
   );
 
+  // Exported permission: 'administer fieldable panels panes'.
+  $permissions['administer fieldable panels panes'] = array(
+    'name' => 'administer fieldable panels panes',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',
@@ -816,6 +827,157 @@ function labp_users_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create fieldable content'.
+  $permissions['create fieldable content'] = array(
+    'name' => 'create fieldable content',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable featured_resources'.
+  $permissions['create fieldable featured_resources'] = array(
+    'name' => 'create fieldable featured_resources',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable fieldable_panels_pane'.
+  $permissions['create fieldable fieldable_panels_pane'] = array(
+    'name' => 'create fieldable fieldable_panels_pane',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable four_column_cta'.
+  $permissions['create fieldable four_column_cta'] = array(
+    'name' => 'create fieldable four_column_cta',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable general_content'.
+  $permissions['create fieldable general_content'] = array(
+    'name' => 'create fieldable general_content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable hero'.
+  $permissions['create fieldable hero'] = array(
+    'name' => 'create fieldable hero',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable map'.
+  $permissions['create fieldable map'] = array(
+    'name' => 'create fieldable map',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable media_pane'.
+  $permissions['create fieldable media_pane'] = array(
+    'name' => 'create fieldable media_pane',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable pull_quote'.
+  $permissions['create fieldable pull_quote'] = array(
+    'name' => 'create fieldable pull_quote',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable quick_links'.
+  $permissions['create fieldable quick_links'] = array(
+    'name' => 'create fieldable quick_links',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable raw_html'.
+  $permissions['create fieldable raw_html'] = array(
+    'name' => 'create fieldable raw_html',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable section_content'.
+  $permissions['create fieldable section_content'] = array(
+    'name' => 'create fieldable section_content',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable text'.
+  $permissions['create fieldable text'] = array(
+    'name' => 'create fieldable text',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable three_column_cta'.
+  $permissions['create fieldable three_column_cta'] = array(
+    'name' => 'create fieldable three_column_cta',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable timeline'.
+  $permissions['create fieldable timeline'] = array(
+    'name' => 'create fieldable timeline',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
@@ -1014,6 +1176,157 @@ function labp_users_user_default_permissions() {
       'reviewer' => 'reviewer',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete fieldable content'.
+  $permissions['delete fieldable content'] = array(
+    'name' => 'delete fieldable content',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable featured_resources'.
+  $permissions['delete fieldable featured_resources'] = array(
+    'name' => 'delete fieldable featured_resources',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable fieldable_panels_pane'.
+  $permissions['delete fieldable fieldable_panels_pane'] = array(
+    'name' => 'delete fieldable fieldable_panels_pane',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable four_column_cta'.
+  $permissions['delete fieldable four_column_cta'] = array(
+    'name' => 'delete fieldable four_column_cta',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable general_content'.
+  $permissions['delete fieldable general_content'] = array(
+    'name' => 'delete fieldable general_content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable hero'.
+  $permissions['delete fieldable hero'] = array(
+    'name' => 'delete fieldable hero',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable map'.
+  $permissions['delete fieldable map'] = array(
+    'name' => 'delete fieldable map',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable media_pane'.
+  $permissions['delete fieldable media_pane'] = array(
+    'name' => 'delete fieldable media_pane',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable pull_quote'.
+  $permissions['delete fieldable pull_quote'] = array(
+    'name' => 'delete fieldable pull_quote',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable quick_links'.
+  $permissions['delete fieldable quick_links'] = array(
+    'name' => 'delete fieldable quick_links',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable raw_html'.
+  $permissions['delete fieldable raw_html'] = array(
+    'name' => 'delete fieldable raw_html',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable section_content'.
+  $permissions['delete fieldable section_content'] = array(
+    'name' => 'delete fieldable section_content',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable text'.
+  $permissions['delete fieldable text'] = array(
+    'name' => 'delete fieldable text',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable three_column_cta'.
+  $permissions['delete fieldable three_column_cta'] = array(
+    'name' => 'delete fieldable three_column_cta',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable timeline'.
+  $permissions['delete fieldable timeline'] = array(
+    'name' => 'delete fieldable timeline',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete own audio files'.
@@ -1497,6 +1810,157 @@ function labp_users_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit fieldable content'.
+  $permissions['edit fieldable content'] = array(
+    'name' => 'edit fieldable content',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable featured_resources'.
+  $permissions['edit fieldable featured_resources'] = array(
+    'name' => 'edit fieldable featured_resources',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable fieldable_panels_pane'.
+  $permissions['edit fieldable fieldable_panels_pane'] = array(
+    'name' => 'edit fieldable fieldable_panels_pane',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable four_column_cta'.
+  $permissions['edit fieldable four_column_cta'] = array(
+    'name' => 'edit fieldable four_column_cta',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable general_content'.
+  $permissions['edit fieldable general_content'] = array(
+    'name' => 'edit fieldable general_content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable hero'.
+  $permissions['edit fieldable hero'] = array(
+    'name' => 'edit fieldable hero',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable map'.
+  $permissions['edit fieldable map'] = array(
+    'name' => 'edit fieldable map',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable media_pane'.
+  $permissions['edit fieldable media_pane'] = array(
+    'name' => 'edit fieldable media_pane',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable pull_quote'.
+  $permissions['edit fieldable pull_quote'] = array(
+    'name' => 'edit fieldable pull_quote',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable quick_links'.
+  $permissions['edit fieldable quick_links'] = array(
+    'name' => 'edit fieldable quick_links',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable raw_html'.
+  $permissions['edit fieldable raw_html'] = array(
+    'name' => 'edit fieldable raw_html',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable section_content'.
+  $permissions['edit fieldable section_content'] = array(
+    'name' => 'edit fieldable section_content',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable text'.
+  $permissions['edit fieldable text'] = array(
+    'name' => 'edit fieldable text',
+    'roles' => array(
+      'Editor' => 'Editor',
+      'administrator' => 'administrator',
+      'marketer' => 'marketer',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable three_column_cta'.
+  $permissions['edit fieldable three_column_cta'] = array(
+    'name' => 'edit fieldable three_column_cta',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable timeline'.
+  $permissions['edit fieldable timeline'] = array(
+    'name' => 'edit fieldable timeline',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit own audio files'.
