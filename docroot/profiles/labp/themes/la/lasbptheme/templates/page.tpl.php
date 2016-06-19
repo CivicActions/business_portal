@@ -96,6 +96,21 @@
 
 </div>
 
+<?php if ($footer_content1 || $footer_content2 || $footer_content3 || $footer_content4): ?>
+<div class = "region--footer-content" >
+  <div class="region--footer-content--col1"><?php print $footer_content1; ?></div>
+  <div class="region--footer-content--col2"><?php print $footer_content2; ?></div>
+  <div class="region--footer-content--col3"><?php print $footer_content3; ?></div>
+  <div class="region--footer-content--col4"><?php print $footer_content4; ?></div>
+</div>
+<?php endif; ?>
+
+<?php if ($footer_sponsors): ?>
+  <div class = "region--footer-sponsors" >
+    <?php print $footer_sponsors; ?>
+  </div>
+<?php endif; ?>
+
 <div class = "region--bottom" >
   <div class = "region--bottom--wrapper">
     <?php print render($page['bottom']); ?>

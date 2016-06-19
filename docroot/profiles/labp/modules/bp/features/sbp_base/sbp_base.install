@@ -169,3 +169,21 @@ function sbp_base_update_7008() {
   drupal_set_message('Enabling multi subs.');
   module_enable(array('acquia_search_multi_subs'));
 }
+
+/**
+ * Adding sponsors.
+ */
+function sbp_base_update_7009() {
+
+  drupal_set_message('Enabling nodequeue.');
+  module_enable(array('nodequeue', 'fe_nodequeue'));
+
+  drupal_set_message('Reverting field base.');
+  features_revert_module('sbp_field_base');
+
+  drupal_set_message('Reverting user perms.');
+  features_revert_module('labp_users');
+
+  drupal_set_message('Enabling sponsors feature.');
+  module_enable(array('sbp_sponsors'));
+}

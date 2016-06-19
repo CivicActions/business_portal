@@ -104,6 +104,11 @@ regions[bottom]         = Page bottom
 
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
+regions[footer_content1]    = Footer content column 1
+regions[footer_content2]    = Footer content column 2
+regions[footer_content3]    = Footer content column 3
+regions[footer_content4]    = Footer content column 4
+regions[footer_sponsors]    = Footer sponsor
 
 
 
