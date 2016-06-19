@@ -9,13 +9,6 @@
 ?>
 <?php
 
-// Banner image.
-if (!empty($content['field_banner_image']) and !empty($content['field_banner_image'][0])) {
-  $banner_image = file_create_url($content['field_banner_image']['#items'][0]['uri']);
-} else {
-  $banner_image = '';
-}
-
 // Pane style.
 if (!empty($content['field_pane_style']) and !empty($content['field_pane_style'][0])) {
   $pane_style = $content['field_pane_style']['#items'][0]['taxonomy_term'];
@@ -33,7 +26,6 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
 
 ?>
 <div class="panel__timeline style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?>>
-    <div class="panel__timeline__banner_image"><img src="<?php print $banner_image ?>"/></div>
     <div class="panel__timeline__items_wrapper">
     <?php
       foreach ($items as $item) {
@@ -46,8 +38,14 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
           $body = $item->field_timeline_body[LANGUAGE_NONE][0]['value'];
         }
         $cta = $item->field_timeline_cta[LANGUAGE_NONE][0];
+        // Banner image.
+        if (!empty($item->field_banner_image) and !empty($item->field_banner_image[LANGUAGE_NONE][0])) {
+          $banner_image = file_create_url($item->field_banner_image[LANGUAGE_NONE][0]['uri']);
+        } else {
+          $banner_image = '';
+        }
       ?>
-        <div class="panel__timeline_item_wrapper">
+        <div class="panel__timeline_item_wrapper" style="background-image: url('<?php print $banner_image; ?>');">
           <div class="panel__timeline__item_title"><?php print $title; ?></div>
           <hr class="panel__header-line_thin"/>
           <div class="panel__timeline__item_body"><?php print $body; ?></div>
