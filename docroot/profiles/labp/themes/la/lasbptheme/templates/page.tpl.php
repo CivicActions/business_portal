@@ -6,6 +6,16 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
  */
+
+
+// Render specific components.
+$footer_content1 = render($page['footer_content1']);
+$footer_content2 = render($page['footer_content2']);
+$footer_content3 = render($page['footer_content3']);
+$footer_content4 = render($page['footer_content4']);
+$footer_sponsors = render($page['footer_sponsors']);
+$sidebar_first  = render($page['sidebar_first']);
+$sidebar_second = render($page['sidebar_second']);
 ?>
 
 <div id="page">
@@ -76,12 +86,6 @@
         <?php print render($page['navigation']); ?>
       </div>
     <?php endif; ?>
-
-    <?php
-      // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
-      $sidebar_second = render($page['sidebar_second']);
-    ?>
 
     <?php if ($sidebar_first || $sidebar_second): ?>
       <aside class="sidebars">
