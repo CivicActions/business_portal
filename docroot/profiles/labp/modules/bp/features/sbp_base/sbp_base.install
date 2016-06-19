@@ -204,3 +204,10 @@ function sbp_base_update_7011() {
   features_revert_module('sbp_field_base');
   features_revert_module('sbp_online_resource');
 }
+
+/**
+ * Moving banner image from fpp to field collection of fpp.
+ */
+function sbp_base_update_7012() {
+  field_delete_instance('fieldable_panels_pane-timeline-field_banner_image');
+}
