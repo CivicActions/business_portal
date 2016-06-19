@@ -187,3 +187,11 @@ function sbp_base_update_7009() {
   drupal_set_message('Enabling sponsors feature.');
   module_enable(array('sbp_sponsors'));
 }
+
+/**
+ * Enabling twitter block.
+ */
+function sbp_base_update_7010() {
+  drupal_set_message('Enabling twitter block.');
+  module_enable(array('twitter_block'));
+}
