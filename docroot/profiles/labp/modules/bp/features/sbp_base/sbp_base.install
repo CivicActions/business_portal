@@ -161,3 +161,11 @@ function sbp_base_update_7007() {
   drupal_set_message('Reverting user perms.');
   features_revert_module('labp_users');
 }
+
+/**
+ * Adding multi subs module for acquia search.
+ */
+function sbp_base_update_7008() {
+  drupal_set_message('Enabling multi subs.');
+  module_enable(array('acquia_search_multi_subs'));
+}
