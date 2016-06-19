@@ -818,6 +818,15 @@ function labp_users_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'create business_portal_sponsors content'.
+  $permissions['create business_portal_sponsors content'] = array(
+    'name' => 'create business_portal_sponsors content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create faq content'.
   $permissions['create faq content'] = array(
     'name' => 'create faq content',
@@ -1079,6 +1088,15 @@ function labp_users_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any business_portal_sponsors content'.
+  $permissions['delete any business_portal_sponsors content'] = array(
+    'name' => 'delete any business_portal_sponsors content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any faq content'.
   $permissions['delete any faq content'] = array(
     'name' => 'delete any faq content',
@@ -1338,6 +1356,15 @@ function labp_users_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own business_portal_sponsors content'.
+  $permissions['delete own business_portal_sponsors content'] = array(
+    'name' => 'delete own business_portal_sponsors content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own faq content'.
@@ -1713,6 +1740,15 @@ function labp_users_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any business_portal_sponsors content'.
+  $permissions['edit any business_portal_sponsors content'] = array(
+    'name' => 'edit any business_portal_sponsors content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any faq content'.
   $permissions['edit any faq content'] = array(
     'name' => 'edit any faq content',
@@ -1972,6 +2008,15 @@ function labp_users_user_default_permissions() {
       'curator' => 'curator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own business_portal_sponsors content'.
+  $permissions['edit own business_portal_sponsors content'] = array(
+    'name' => 'edit own business_portal_sponsors content',
+    'roles' => array(
+      'Editor' => 'Editor',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own faq content'.
