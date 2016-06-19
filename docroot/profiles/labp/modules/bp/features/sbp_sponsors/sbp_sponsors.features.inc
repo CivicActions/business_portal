@@ -14,6 +14,39 @@ function sbp_sponsors_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_fe_nodequeue_export_fields().
+ */
+function sbp_sponsors_fe_nodequeue_export_fields() {
+  $nodequeues = array();
+
+  // Exported nodequeues: sponsors_list
+  $nodequeues['sponsors_list'] = array(
+    'name' => 'sponsors_list',
+    'title' => 'Sponsors List',
+    'subqueue_title' => '',
+    'size' => 0,
+    'link' => '',
+    'link_remove' => '',
+    'owner' => 'nodequeue',
+    'show_in_ui' => 1,
+    'show_in_tab' => 1,
+    'show_in_links' => 0,
+    'reference' => 0,
+    'reverse' => 0,
+    'insert_at_front' => 0,
+    'i18n' => 0,
+    'subqueues' => 1,
+    'types' => array(
+      0 => 'business_portal_sponsors',
+    ),
+    'roles' => array(),
+    'count' => 0,
+  );
+
+  return $nodequeues;
+}
+
+/**
  * Implements hook_node_info().
  */
 function sbp_sponsors_node_info() {
