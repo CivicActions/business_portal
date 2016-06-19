@@ -195,3 +195,12 @@ function sbp_base_update_7010() {
   drupal_set_message('Enabling twitter block.');
   module_enable(array('twitter_block'));
 }
+
+/**
+ * Cardinality on business need field for resources.
+ */
+function sbp_base_update_7011() {
+  drupal_set_message('Reverting resources and field base.');
+  features_revert_module('sbp_field_base');
+  features_revert_module('sbp_online_resource');
+}

@@ -217,7 +217,7 @@ function sbp_field_base_field_default_field_bases() {
   // Exported field_base: 'field_business_need'.
   $field_bases['field_business_need'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_business_need',
