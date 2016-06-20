@@ -1634,17 +1634,21 @@ table {
     max-width: 710px;
   }
 }
-/* line 27, ../sass/layouts/_panels.scss */
+/* line 26, ../sass/layouts/_panels.scss */
+.panel-2col-stacked .panel-col-first {
+  background: #f2f2f2;
+}
+/* line 28, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first h2 {
   font-family: "Roboto", sans-serif;
 }
-/* line 30, ../sass/layouts/_panels.scss */
+/* line 31, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first .inside {
   padding: 25px;
   margin: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 30, ../sass/layouts/_panels.scss */
+  /* line 31, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first .inside {
     padding: 1.5em 25px 2em 0;
     margin: 0;
@@ -1653,22 +1657,23 @@ table {
     width: 225px;
   }
 }
-/* line 44, ../sass/layouts/_panels.scss */
+/* line 45, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 45, ../sass/layouts/_panels.scss */
+/* line 46, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 48, ../sass/layouts/_panels.scss */
+/* line 49, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 57, ../sass/layouts/_panels.scss */
+/* line 58, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
+  background: white;
 }
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 .panel-2col-stacked .center-wrapper:before, .panel-2col-stacked .center-wrapper:after {
@@ -1679,7 +1684,7 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-/* line 62, ../sass/layouts/_panels.scss */
+/* line 64, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first,
 .panel-2col-stacked .panel-col-last {
   float: none;
@@ -1687,14 +1692,14 @@ table {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 70, ../sass/layouts/_panels.scss */
+  /* line 72, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
     width: 30%;
     margin-left: 0%;
     margin-right: -30%;
   }
-  /* line 77, ../sass/layouts/_panels.scss */
+  /* line 79, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
     width: 70%;
@@ -1703,13 +1708,13 @@ table {
   }
 }
 
-/* line 85, ../sass/layouts/_panels.scss */
+/* line 87, ../sass/layouts/_panels.scss */
 .node-type-online-resource.section-content .panel-col-last .inside {
   padding-top: 26px;
 }
 
 @media all and (min-width: 960px) {
-  /* line 94, ../sass/layouts/_panels.scss */
+  /* line 96, ../sass/layouts/_panels.scss */
   .section-resources .panel-2col-stacked .panel-col-first,
   .section-resources .panel-2col-stacked .panel-col-last,
   .section-content .panel-2col-stacked .panel-col-first,
@@ -1719,7 +1724,7 @@ table {
 }
 
 @media (max-width: 720px) {
-  /* line 105, ../sass/layouts/_panels.scss */
+  /* line 107, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding-bottom: 30px !important;
   }
@@ -1727,7 +1732,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 116, ../sass/layouts/_panels.scss */
+/* line 118, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -2494,7 +2499,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459798895');
+  background-image: url('../images/progress.gif?1464939989');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -3922,7 +3927,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461530233');
+  background-image: url('../images/wizard/icon_context_help.png?1464939989');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4258,7 +4263,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -4322,7 +4327,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4332,7 +4337,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4342,7 +4347,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4417,7 +4422,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1464939989');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4428,7 +4433,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1464939989');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4439,7 +4444,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1464939989');
 }
 
 /**********/
@@ -4483,7 +4488,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461530233');
+  background-image: url('../images/wizard/icon_close.png?1464939989');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4571,7 +4576,7 @@ hr.wizard__arrow-line {
 
 /* line 71, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1464939989');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4591,7 +4596,7 @@ a.wizard__arrow-up {
 
 /* line 88, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1464939989');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 24px;
@@ -4605,7 +4610,7 @@ a.wizard__arrow-back {
 
 /* line 101, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
+  background-image: url('../images/wizard/arrow_down.png?1464939989');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position-y: 50%;
@@ -4626,7 +4631,7 @@ a.wizard__arrow-down {
 
 /* line 119, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
 }
 
 /* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4641,7 +4646,7 @@ a.wizard__arrow-down.enabled.section {
 /* line 132, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
   display: inline-block;
   background-position-y: 50%;
   float: right;
@@ -4685,7 +4690,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 175, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
+  background-image: url('../images/wizard/arrow_down_filled.png?1464939989');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4748,7 +4753,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461530233');
+  background-image: url('../images/wizard/icon_info.png?1464939989');
   background-size: 100%;
 }
 

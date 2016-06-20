@@ -24,6 +24,7 @@
 
   // Panels first sidebar padding
   .panel-col-first {
+    background: $light-grey;
     h2 {
       font-family: $font-body;
     }
@@ -58,6 +59,7 @@
     @include zen-grid-container();
     width: 100%;
     padding-left: 0;
+    background: $white;
   }
   .panel-col-first ,
   .panel-col-last{
