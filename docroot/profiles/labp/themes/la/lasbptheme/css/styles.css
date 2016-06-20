@@ -2494,7 +2494,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1459798895');
+  background-image: url('../images/progress.gif?1461165606');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -3922,7 +3922,7 @@ hr.hero__line--half {
   min-height: 50px;
   width: 100%;
   border: 0px solid red;
-  background-image: url('../images/wizard/icon_context_help.png?1461530233');
+  background-image: url('../images/wizard/icon_context_help.png?1461525799');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4258,7 +4258,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 8px;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461530233');
+  background-image: url('../images/wizard/progress_bar.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: center 24px;
@@ -4322,7 +4322,7 @@ a.wizard__button--selected {
 /* line 88, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4332,7 +4332,7 @@ a.wizard__button--selected {
 /* line 99, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4342,7 +4342,7 @@ a.wizard__button--selected {
 /* line 111, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4417,7 +4417,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
 }
 
 /* line 186, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4428,7 +4428,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
 }
 
 /* line 193, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4439,7 +4439,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461530233');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
 }
 
 /**********/
@@ -4483,7 +4483,7 @@ a.wizard__button--selected {
 /* line 236, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461530233');
+  background-image: url('../images/wizard/icon_close.png?1461525799');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4571,7 +4571,7 @@ hr.wizard__arrow-line {
 
 /* line 71, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 10px 10px 0;
@@ -4591,7 +4591,7 @@ a.wizard__arrow-up {
 
 /* line 88, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_up.png?1459798895');
+  background-image: url('../images/wizard/arrow_up.png?1461165606');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 24px;
@@ -4605,7 +4605,7 @@ a.wizard__arrow-back {
 
 /* line 101, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461530233');
+  background-image: url('../images/wizard/arrow_down.png?1461525799');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position-y: 50%;
@@ -4626,7 +4626,7 @@ a.wizard__arrow-down {
 
 /* line 119, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down.enabled {
-  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
 }
 
 /* line 123, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4641,7 +4641,7 @@ a.wizard__arrow-down.enabled.section {
 /* line 132, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-up.enabled.left,
 .wizard__arrow-back.enabled.left {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461530233');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
   display: inline-block;
   background-position-y: 50%;
   float: right;
@@ -4685,7 +4685,7 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 175, ../sass/components/wizard/_wizard_bottom_nav.scss */
 .wizard__arrow-down--filled {
-  background-image: url('../images/wizard/arrow_down_filled.png?1459798895');
+  background-image: url('../images/wizard/arrow_down_filled.png?1462127234');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
@@ -4748,7 +4748,7 @@ a.wizard__arrow-down.enabled.section {
   height: 20px;
   width: 20px;
   margin: 0 5px 0 0;
-  background-image: url('../images/wizard/icon_info.png?1461530233');
+  background-image: url('../images/wizard/icon_info.png?1461525799');
   background-size: 100%;
 }
 
@@ -6295,34 +6295,248 @@ ul.facetapi-facet-field-resource-type li a,
   margin-top: 1em;
 }
 
+/* Timeline*/
+/* Slider */
+/* line 3, ../sass/components/timeline/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 17, ../sass/components/timeline/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 24, ../sass/components/timeline/_slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 28, ../sass/components/timeline/_slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 33, ../sass/components/timeline/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 42, ../sass/components/timeline/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 48, ../sass/components/timeline/_slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 54, ../sass/components/timeline/_slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 58, ../sass/components/timeline/_slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 62, ../sass/components/timeline/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 66, ../sass/components/timeline/_slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 69, ../sass/components/timeline/_slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 72, ../sass/components/timeline/_slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 78, ../sass/components/timeline/_slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 82, ../sass/components/timeline/_slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 86, ../sass/components/timeline/_slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 90, ../sass/components/timeline/_slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 96, ../sass/components/timeline/_slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 /*************************************
 *         Layout
 **************************************/
-/* line 8, ../sass/components/_timeline.scss */
-.panel__timeline .panel__timeline__items_wrapper {
-  margin-top: 15px;
+/* line 5, ../sass/components/timeline/_timeline.scss */
+.panel__timeline {
+  height: 490px;
 }
-/* line 12, ../sass/components/_timeline.scss */
-.panel__timeline .panel__timeline_item_wrapper {
-  display: inline-block;
-  margin-left: 20px;
-  vertical-align: top;
-}
-/* line 18, ../sass/components/_timeline.scss */
-.panel__timeline .panel__timeline__item_title {
+/* line 9, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__arrow {
+  font-size: 41px;
+  width: 44px;
   font-family: "Merriweather", serif;
-  font-weight: 400;
-  margin: 0 0 18px 0;
-  padding: 0;
-  font-size: 1.1em;
-  width: 100%;
+  color: rgba(255, 255, 255, 0.3);
+  display: block;
+  height: 490px;
+  z-index: 4;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  background-size: 50% !important;
 }
-@media all and (min-width: 720px) {
-  /* line 18, ../sass/components/_timeline.scss */
-  .panel__timeline .panel__timeline__item_title {
-    font-size: 1.45em;
-    margin: 0 0 30px 0;
+/* line 22, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__arrow.prev, .panel__timeline .timeline__arrow.next {
+  opacity: .5;
+}
+/* line 25, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__arrow.prev:hover, .panel__timeline .timeline__arrow.prev:focus, .panel__timeline .timeline__arrow.next:hover, .panel__timeline .timeline__arrow.next:focus {
+  opacity: 1;
+  outline: none;
+  background-color: #f0a82c;
+  color: white;
+}
+/* line 34, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__arrow.prev {
+  position: absolute;
+  background: url("../images/subsections/arrow-left.svg") no-repeat 50% transparent;
+  left: 0;
+  top: 0;
+}
+/* line 42, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__arrow.next {
+  position: absolute;
+  background: url("../images/subsections/arrow-right.svg") no-repeat 50%;
+  right: 0;
+  top: 0;
+}
+/* line 50, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item {
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 260px;
+}
+/* line 57, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item:first-child .timeline__item--inner {
+  padding-left: 50px;
+}
+/* line 69, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item:focus {
+  outline: 0;
+}
+/* line 73, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item.right-spacer {
+  width: 10px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* line 81, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item--inner {
+  padding: 11.1px 25px 44px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+/* line 88, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item__image {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 13px;
+}
+/* line 94, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item__title {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* line 100, ../sass/components/timeline/_timeline.scss */
+.panel__timeline hr.timeline__item__hr {
+  height: 2px;
+  max-width: 40px;
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+/* line 107, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item__button {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-color: white;
+  color: #0f2940;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1em 0;
+  cursor: pointer;
+}
+/* line 258, ../sass/base/_mixins.scss */
+.panel__timeline .timeline__item__button a {
+  color: #0f2940;
+}
+@media all and (min-width: 960px) {
+  /* line 107, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline .timeline__item__button {
+    font-size: 1.143em;
   }
+}
+
+/* line 114, ../sass/components/timeline/_timeline.scss */
+.draggable {
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+/* line 122, ../sass/components/timeline/_timeline.scss */
+.draggable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 /**
