@@ -26,7 +26,7 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
 
 ?>
 <div class="panel__timeline style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?>>
-    <div class="panel__timeline__items_wrapper">
+    <div class="timeline__container slick-carousel">
     <?php
       foreach ($items as $item) {
         $item = field_collection_item_load($item['value']);
@@ -45,15 +45,18 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
           $banner_image = '';
         }
       ?>
-        <div class="panel__timeline_item_wrapper" style="background-image: url('<?php print $banner_image; ?>');">
-          <div class="panel__timeline__item_title"><?php print $title; ?></div>
-          <hr class="panel__header-line_thin"/>
-          <div class="panel__timeline__item_body"><?php print $body; ?></div>
-          <div class="panel__button"><a href="<?php print $cta['url']; ?>"><?php print $cta['title']; ?></a></div>
+        <div class="timeline__item">
+          <img class = "timeline__item__image" src="<?php print $banner_image; ?>"/>
+          <div class = "timeline__item--inner">
+            <div class="timeline__item__title"><?php print $title; ?></div>
+            <hr class="timeline__item__hr"/>
+            <div class="timeline__item__body"><?php print $body; ?></div>
+            <div class="timeline__item__button"><a href="<?php print $cta['url']; ?>"><?php print $cta['title']; ?></a></div>
+          </div>
         </div>
       <?php
       }
-
     ?>
+
     </div>
-</div>
+  </div>
