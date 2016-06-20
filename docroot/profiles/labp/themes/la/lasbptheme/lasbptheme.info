@@ -68,9 +68,9 @@ stylesheets[all][] = css/fontello/css/fontello.css
 
 ; Optionally add some JavaScripts to your theme.
 
-scripts[] = js/script.js
 scripts[] = js/plugins/isotope.pkgd.min.js
-
+scripts[] = js/plugins/slick.min.js
+scripts[] = js/script.js
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and
