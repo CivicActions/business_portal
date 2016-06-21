@@ -101,11 +101,13 @@ $sidebar_second = render($page['sidebar_second']);
 </div>
 
 <?php if ($footer_content1 || $footer_content2 || $footer_content3 || $footer_content4): ?>
-<div class = "region--footer-content" >
-  <div class="region--footer-content--col1"><?php print $footer_content1; ?></div>
-  <div class="region--footer-content--col2"><?php print $footer_content2; ?></div>
-  <div class="region--footer-content--col3"><?php print $footer_content3; ?></div>
-  <div class="region--footer-content--col4"><?php print $footer_content4; ?></div>
+<div class = "region--footer" >
+  <div class = "region--footer--wrapper">
+    <div class="region--footer-col col1"><?php print $footer_content1; ?></div>
+    <div class="region--footer-col col2"><?php print $footer_content2; ?></div>
+    <div class="region--footer-col col3"><?php print $footer_content3; ?></div>
+    <div class="region--footer-col col4"><?php print $footer_content4; ?></div>
+  </div>
 </div>
 <?php endif; ?>
 
