@@ -2923,6 +2923,110 @@ a#menu__hamburger.close {
   color: #888888;
 }
 
+/****************************************
+          FOOTER 4-COLS STYLES
+*****************************************/
+/* line 23, ../sass/components/_footer.scss */
+.region--footer {
+  font-size: 14px;
+  background-color: #264057;
+  color: white;
+  position: relative;
+}
+/* line 30, ../sass/components/_footer.scss */
+.region--footer .region--footer--wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 52px;
+}
+/* line 41, ../sass/components/_footer.scss */
+.region--footer .block {
+  padding: 27px 37px 8px 25px;
+  position: relative;
+}
+/* line 48, ../sass/components/_footer.scss */
+.region--footer .region--footer-col .block__title {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+/* line 57, ../sass/components/_footer.scss */
+.region--footer .region--footer-col.col3 .labp-twitter-feed {
+  max-width: 320px;
+}
+
+/****************************************
+          FOOTER 4-COLS LAYOUT
+*****************************************/
+/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.region--footer:before, .region--footer:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
+.region--footer:after {
+  clear: both;
+}
+/* line 72, ../sass/components/_footer.scss */
+.region--footer .region--footer--col {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media all and (min-width: 720px) {
+  /* line 79, ../sass/components/_footer.scss */
+  .region--footer .col1 {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+  }
+  /* line 80, ../sass/components/_footer.scss */
+  .region--footer .col2 {
+    float: left;
+    width: 25%;
+    margin-left: 25%;
+    margin-right: -50%;
+  }
+  /* line 81, ../sass/components/_footer.scss */
+  .region--footer .col3 {
+    float: left;
+    width: 25%;
+    margin-left: 50%;
+    margin-right: -75%;
+  }
+  /* line 82, ../sass/components/_footer.scss */
+  .region--footer .col4 {
+    float: left;
+    width: 25%;
+    margin-left: 75%;
+    margin-right: -100%;
+  }
+}
+
+/****************************************
+          TWITTER BLOCK OVERRIDES
+*****************************************/
+/* line 93, ../sass/components/_footer.scss */
+.SandboxRoot.env-bp-550 .timeline-Tweet-text {
+  font-size: 14px !important;
+}
+
+/* line 98, ../sass/components/_footer.scss */
+.labp-twitter-feed .block__title {
+  background: url(../images/icon_twitter-white.svg) no-repeat;
+  background-size: 27.7px 22.9px;
+  background-position-x: 140px;
+  height: 28px;
+  padding-top: 2px;
+}
+
 /**
  * @file
  * SMACSS Modules
