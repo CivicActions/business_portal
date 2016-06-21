@@ -1,0 +1,126 @@
+/*************************************
+*         Layout
+**************************************/
+
+.panel__timeline {
+  height: 490px;
+
+  // Previous and Next buttons
+  .timeline__arrow {
+    font-size: 41px;
+    width: 44px;
+    font-family: $heading-font;
+    color: rgba(255,255,255, 0.3);
+    display: block;
+    height: 490px;
+    z-index: 4;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    background-size: 50% !important;
+
+    &.prev,
+    &.next {
+      opacity: .5;
+      &:hover,
+      &:focus {
+        opacity: 1;
+        outline: none;
+        background-color: $timeline__orange--dark;
+        color: $white;
+      }
+    }
+
+    &.prev {
+      //float: left;
+      position: absolute;
+      background: url('../images/subsections/arrow-left.svg') no-repeat 50% transparent;
+      left:0;
+      top: 0;
+    }
+
+    &.next {
+      position: absolute;
+      background: url('../images/subsections/arrow-right.svg') no-repeat 50%;
+      right:0;
+      top: 0;
+    }
+  }
+
+  .timeline__item {
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 260px;
+
+    &:first-child {
+      .timeline__item--inner{
+        padding-left: 50px;
+      }
+    }
+
+    &:last-child {
+      .timeline__item--inner{
+        //padding-right: 10px;
+        //margin-right: 0;
+        //width: 280px;
+      }
+    }
+    &:focus {
+      outline:0;
+    }
+
+    &.right-spacer {
+      width: 10px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+  }
+
+  .timeline__item--inner {
+    padding: 11.1px 25px 44px;
+    font-size: 12px;
+    line-height: 1.5;
+
+  }
+
+  .timeline__item__image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 13px;
+  }
+
+  .timeline__item__title{
+    font-family: $heading-font;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  hr.timeline__item__hr {
+    @include hr-thin;
+    background: #fff;
+    margin-top: 15px;
+    margin-bottom: 17px;
+  }
+
+  .timeline__item__button {
+    @include panel__button--base($white, $dark_blue);
+  }
+
+
+}
+
+.draggable {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.draggable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}

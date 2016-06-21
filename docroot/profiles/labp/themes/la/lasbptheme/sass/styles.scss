@@ -55,14 +55,17 @@
 @import "components/departments";
 
 /* Panels */
-@import "components/_four_column_cta";
-@import "components/_three_column_cta";
-@import "components/_section_content";
-@import "components/_left_sidebar";
-@import "components/_general_content_widget";
-@import "components/_pull_quote";
-@import "components/_featured_resources";
-@import "components/_timeline";
+@import "components/four_column_cta";
+@import "components/three_column_cta";
+@import "components/section_content";
+@import "components/left_sidebar";
+@import "components/general_content_widget";
+@import "components/pull_quote";
+@import "components/featured_resources";
+
+/* Timeline*/
+@import "components/timeline/slick";
+@import "components/timeline/timeline";
 
 @import "base/print";
 

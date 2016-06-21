@@ -194,7 +194,70 @@ Drupal.behaviors.rotator = {
         });
       }
     }
-  }
+  };
 
+  /**
+   * LA-374 building the timeline using slick carousel
+   * http://kenwheeler.github.io/slick/
+   */
+  Drupal.behaviors.timelineCarousel = {
+    attach: function(context, settings) {
+      $('.slick-carousel').slick({
+        infinite: false,
+        slidesToShow: 10,
+        slidesToScroll: 2,
+        appendArrows: '.timeline__container',
+        focusOnSelect: true,
+        easing: 'easeOutCubic',
+        swipeToSlide: true,
+        prevArrow: '<button class = "timeline__arrow prev"></button>',
+        nextArrow: '<button class = "timeline__arrow next"></button>',
+        responsive: [
+          {
+            breakpoint: 2401,
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 1801,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 961,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 721,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 481,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 361,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    }
+  };
 
 })(jQuery, Drupal, this, this.document);
