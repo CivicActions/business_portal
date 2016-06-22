@@ -214,3 +214,13 @@ function sbp_base_update_7012() {
   field_delete_instance($instance);
   features_revert_module('sbp_panels');
 }
+
+/**
+ * Updating perms for sponsors.
+ */
+function sbp_base_update_7013() {
+  drupal_set_message('Reverting user perms.');
+  features_revert_module('labp_users');
+  drupal_set_message('Reverting starter kit.');
+  features_revert_module('sbp_starter_kit');
+}
