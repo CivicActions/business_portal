@@ -224,3 +224,11 @@ function sbp_base_update_7013() {
   drupal_set_message('Reverting starter kit.');
   features_revert_module('sbp_starter_kit');
 }
+
+/**
+ * Reverting SBP sponsors feature.
+ */
+function sbp_base_update_7014() {
+  drupal_set_message('Reverting the sbp sponsors feature.');
+  features_revert_module('sbp_sponsors');
+}
