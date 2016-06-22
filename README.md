@@ -78,13 +78,15 @@ All steps below are assumed to be run from the command line
 `drush sql-drop -y`
 
 ### Step 2. Load prod database
-`drush sql-cli < /assets/LABP-FULL-2016-06-10T17-01-44.sql`
+`drush sql-cli < /assets/FULL-2016-06-22T12-28-51.sql`
 
 ### Step 3. Enable stage file proxy
 `drush en stage_file_proxy -y`
 
-### Step 4. Disable Acquia Cloud Site Factory module
+### Step 4. Disable Acquia modules
 `drush dis acsf -y`
+`drush dis acquia_spi -y`
+`drush dis acquia_search_multi_subs -y`
 
 ### Step 5. Login as admin
 `drush uli`
