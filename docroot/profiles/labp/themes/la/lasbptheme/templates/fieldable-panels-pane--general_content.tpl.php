@@ -67,8 +67,6 @@ if (!empty($content['field_line_separator']) and !empty($content['field_line_sep
         <?php
         endif;
         ?>
-      </div>
-    </div>
-
   </div>
+
 
