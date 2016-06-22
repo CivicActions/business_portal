@@ -54,6 +54,30 @@ function sbp_sponsors_fe_nodequeue_export_fields() {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function sbp_sponsors_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: sponsors_logo_70x70.
+  $styles['sponsors_logo_70x70'] = array(
+    'label' => 'Sponsors Logo(70x70)',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 70,
+          'height' => 70,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function sbp_sponsors_node_info() {
