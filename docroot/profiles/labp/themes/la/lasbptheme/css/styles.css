@@ -4840,7 +4840,11 @@ a.wizard__arrow-down {
 @media all and (max-width: 719px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
+<<<<<<< 41cbdb85b62bd480e6c187cfe426570ae2cc09a1
     background-image: url('../images/wizard/arrow_down_enabled.png?1466697296');
+=======
+    background-image: url('../images/wizard/arrow_down_enabled.png?1466697096');
+>>>>>>> Commiting style changes
   }
   /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled::before {
@@ -4886,7 +4890,11 @@ a.wizard__arrow-back {
 @media all and (max-width: 719px) {
   /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-back.enabled {
+<<<<<<< 41cbdb85b62bd480e6c187cfe426570ae2cc09a1
     background-image: url('../images/wizard/arrow_left_enabled_help.png?1466697296');
+=======
+    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466697096');
+>>>>>>> Commiting style changes
   }
 }
 
