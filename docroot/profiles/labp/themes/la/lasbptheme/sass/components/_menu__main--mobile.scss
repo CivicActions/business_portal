@@ -1,0 +1,97 @@
+@media (min-width: 0px) and (max-width: 920px) {
+  #block-system-main-menu {
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: $medium-blue;
+    position: fixed;
+    right: 0;
+    top: 94px;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    >.menu {
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+      float: none;
+      width: 90%;
+      >.menu__item {
+        background: 0;
+        list-style-image: none;
+        list-style-type: none;
+        padding-left: 2em;
+        margin: 0;
+        border-bottom: 1px solid $medium-blue-dim;
+        // Add dropdown icon to menu items with nested links
+        &.is-expanded {
+          background: url(../images/icons/icon-arrow-right-small.svg) no-repeat left 18px;
+          background-size: 13px 26px;
+        }
+        &.last {
+          border-bottom-width: 0;
+        }
+        a.menu__link {
+          margin: 0;
+          line-height: 1.25;
+          display: block;
+          padding: 21px 0;
+          font-size: 16px;
+        }
+      }
+
+      // Styling nested links
+      .menu {
+        display: none;
+        padding-left: 0 !important;
+        .menu__item {
+          list-style: none;
+          a.menu__link {
+            color: $dark_blue;
+            padding: 0 0 15px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .burger-visible & {
+      display: block;
+    }
+    .burger-hidden & {
+      display: none;
+    }
+  }
+  #header {
+    &.burger-visible {
+      background-color: $medium-blue-dim;
+    }
+    &.burger-hidden {
+      background: rgba(0,0,0,.25);
+    }
+  }
+}
+
+a#menu__hamburger {
+  display: block;
+  width: 18px;
+  height: 16px;
+  overflow: hidden;
+  margin: 15px 19px 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  float: right;
+  text-indent: -1000px;
+  &.open {
+    background-image: url(../images/icon_hamburger.png);
+  }
+  &.close {
+    background-image: url(../images/icon_close.png);
+  }
+  @media (min-width: 720px) {
+    display: none;
+  }
+}
+
+      
