@@ -243,9 +243,18 @@ function sbp_base_update_7015() {
 }
 
 /**
- * Reverting SBP sponsors feature.
+ * Enabling SBP search feature.
  */
 function sbp_base_update_7016() {
   drupal_set_message('Enabling search feature.');
   module_enable(array('sbp_search'));
+}
+
+
+/**
+ * Enabling SBP translate feature.
+ */
+function sbp_base_update_7017() {
+  drupal_set_message('Enabling translation feature.');
+  module_enable(array('sbp_translation'));
 }
