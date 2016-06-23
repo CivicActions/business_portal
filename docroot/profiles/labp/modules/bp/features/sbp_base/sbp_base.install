@@ -232,3 +232,12 @@ function sbp_base_update_7014() {
   drupal_set_message('Reverting the sbp sponsors feature.');
   features_revert_module('sbp_sponsors');
 }
+
+
+/**
+ * Reverting SBP sponsors feature.
+ */
+function sbp_base_update_7015() {
+  drupal_set_message('Reverting the sbp panels feature for gen content fix.');
+  features_revert_module('sbp_panels');
+}
