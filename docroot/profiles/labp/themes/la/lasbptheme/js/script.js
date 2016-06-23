@@ -259,5 +259,32 @@ Drupal.behaviors.rotator = {
       });
     }
   };
+  
+  
+  /**
+   * LA-245: Code to make left and right blocks in the same height.
+   */
+  $.fn.equalizeHeights = function(){
+    return this.height( Math.max.apply(this, $(this).map(function(i,e){return $(e).height();}).get() ) );
+  };
+  
+  $(document).ready(function() {
+    // Equalize columns on page load
+    var $panels = $('.center-wrapper .panel-panel');
+    $(window).load(function() {
+      if ($(window).width() > 959) {
+        $panels.equalizeHeights();
+      }
+    });
+    
+    // Equalize columns on page resize
+    $(window).resize(function() {
+      if ($(window).width() > 959) {
+        $panels.equalizeHeights();
+      } else {
+        $panels.css({'height': 'auto'});
+      }
+    });
+  });
 
 })(jQuery, Drupal, this, this.document);
