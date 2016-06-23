@@ -6,16 +6,17 @@
   display: inline-block;
   position: absolute;
   @include clearfix;
-  top: 8px;
+  top: 0;
   right: 0;
   background-image: image-url("wizard/progress_bar.png");
   background-repeat: no-repeat;
   background-size:12px;
-  background-position: center 24px;
+  background-position: 14px 14px;
   background-color:$color;
-  min-height: 550px;
-  @include window_size(desktop){
+  height: 452px;
+  @include window_size(tab-wide-up){
     margin: 40px 0 0 0;
+    right: 20px;
   }
 }
 
@@ -32,11 +33,11 @@
 //  desktop version root container
 .wizard__progress-bar--simple{
   @include wizard__progress-bar-root();
-  width: 60px;
+  width: 50px;
   @include clearfix;
   @include window_size(desktop){
-      width: 270px;
-
+    margin-left: 20px;
+    width: $wizard_progress_width;
   }
 }
 
@@ -44,7 +45,10 @@
     margin:0;
     padding: 0;
     height:103px;
-    text-align: center;
+    &:last-child {
+      height: 40px;
+    }
+    /*text-align: center;*/
     img {
       width: 40px;
     }
@@ -208,6 +212,7 @@
   top: 0;
   right: 0;
   width: 270px;
+  background: rgba(0, 0, 0, .25) !important;
   min-height: 570px;
   .wizard__progress-bar--simple{
     position: absolute;

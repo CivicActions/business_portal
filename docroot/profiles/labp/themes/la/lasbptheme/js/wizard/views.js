@@ -283,7 +283,7 @@ wiz.views.HeaderForQuestion = Backbone.View.extend({
 /////////////////////////
 
 wiz.views.HeaderForContextual = Backbone.View.extend({
-  className: "wizard__header constrained",
+  className: "wizard__header wizard__header-contextual",
   template: _.template($('#header-for-contextual-template').html()),
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));

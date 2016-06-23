@@ -6,7 +6,7 @@
   font-size: 1.667em;
   margin: 0 0 20px 25px;
   padding: 0;
-  width: 80%;
+  @include wizard__content_width();
   border: 0px solid red;
   @include window_size(desktop) {
     font-size: 2.571em;
@@ -57,9 +57,7 @@
   a {
     text-decoration: underline;
   }
-  @include window_size(desktop) {
-    max-width: 66.67%;
-  }
+  @include wizard__content_width();
 }
 
 .wizard__result {
