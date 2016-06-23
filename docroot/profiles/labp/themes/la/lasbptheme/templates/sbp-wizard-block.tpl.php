@@ -9,7 +9,7 @@
     <div class="wizard__header--title-start">Startup Guide</div>
     <div class="wizard__header-line"></div>
   </div>
-  <div class="wizard__copy--section_intro">{{Description}}</div>
+  <div class="wizard__copy--section_start">{{Description}}</div>
   <div class="wizard__copy--time-estimate">This guide is estimated to take 10 to 15 minutes.</div>
 </script>
 
@@ -25,9 +25,13 @@
 </script>
 
 <script type="text/template" id="header-for-contextual-template">
-  <div class="wizard__question--help">{{title}}</div>
+  <div class="icon-info"></div>
+  <div class="constrained">
+    <div class="wizard__question--help">{{title}}</div>
+  </div>
   <hr class="wizard__help_hr"/>
 </script>
+
 
 <script type="text/template" id="description-for-contextual-template">
   <div class="wizard__help_content">{{Description}}</div>
@@ -73,12 +77,6 @@
   <hr class="wizard__arrow-line"/>
 </script>
 
-<script type="text/template" id="wizard-nav-start-template">
-  <hr class="wizard__arrow-line"/>
-  <a href="#" class="wizard__arrow-down enabled section">Next</a>
-  <hr class="wizard__arrow-line"/>
-</script>
-
 <script type="text/template" id="wizard-nav-section-template">
   <a href="#" class="wizard__arrow-up">Previous</a>
   <hr class="wizard__arrow-line"/>
@@ -94,7 +92,10 @@
 </script>
 
 <script type="text/template" id="wizard-nav-contextual-help-template">
+  <hr class="wizard__arrow-line"/>
   <a href="#" class="wizard__arrow-back left enabled">Back to the question</a>
+  <div style="clear:both;"></div>
+  <hr class="wizard__arrow-line"/>
 </script>
 
 <script type="text/template" id="wizard-address-form-template">

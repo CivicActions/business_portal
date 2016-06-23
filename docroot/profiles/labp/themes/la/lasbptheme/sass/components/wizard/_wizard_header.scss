@@ -6,8 +6,9 @@ body.wizard-page {
     #header {
       .header--wrapper {
         width: auto;
-        max-width: none;
-        margin: 0 10%;
+        max-width: $max-site-width;
+        padding: 0 25px;
+        
       }
       .header__logo {
         width: 17.5em;
