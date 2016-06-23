@@ -193,6 +193,32 @@ Drupal.behaviors.rotator = {
           }
         });
       }
+
+      // Applying the function on window resize
+      $(window).resize(function() {
+        if(windowWidth > 959) {
+          $.each(dynamicBlock, function (i) {
+            // Get the height of each node block
+            var blockHeight = $(dynamicBlock[i]).outerHeight();
+
+            if (i == 0 || i % 2 == 0) {
+              // For the first block and every other block with an even index
+              function compareHeights() {
+                // Compare heights and assign the largest height to both blocks in the row.
+                var nextBlockHeight = $(dynamicBlock[i + 1]).outerHeight();
+                if (blockHeight < nextBlockHeight) {
+                  $(dynamicBlock[i]).height(nextBlockHeight);
+
+                } else {
+                  $(dynamicBlock[i + 1]).height(blockHeight);
+                }
+              }
+              return compareHeights();
+            }
+          });
+        }
+      });
+
     }
   };
 
