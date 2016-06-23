@@ -202,7 +202,7 @@ Drupal.behaviors.rotator = {
    */
   Drupal.behaviors.timelineCarousel = {
     attach: function(context, settings) {
-      $('.slick-carousel').slick({
+      $('.slick-carousel').not('.slick-initialized').slick({
         infinite: false,
         slidesToShow: 10,
         slidesToScroll: 2,
