@@ -2632,53 +2632,114 @@ body.not-logged-in.page-user #main {
   display: none;
 }
 
-/* line 109, ../sass/components/_header.scss */
-#header .menu {
-  float: left;
-  margin: 0 0 0 66px;
-  padding: 0;
-  height: 100%;
-  height: 55px;
+/* Special styles to line header elements up in the resources section */
+@media (min-width: 960px) {
+  /* line 114, ../sass/components/_header.scss */
+  body.section-resources #header .header--wrapper,
+  body.section-content #header .header--wrapper {
+    width: auto;
+    margin: 0;
+    max-width: none;
+  }
+  /* line 119, ../sass/components/_header.scss */
+  body.section-resources #header .header__logo,
+  body.section-content #header .header__logo {
+    width: 30%;
+  }
+  /* line 122, ../sass/components/_header.scss */
+  body.section-resources #header .header__logo-image,
+  body.section-content #header .header__logo-image {
+    height: 38px;
+    float: right;
+    padding-right: 43px;
+  }
+  /* line 127, ../sass/components/_header.scss */
+  body.section-resources #header .header__region,
+  body.section-content #header .header__region {
+    width: 70%;
+  }
+  /* line 130, ../sass/components/_header.scss */
+  body.section-resources #header .menu,
+  body.section-content #header .menu {
+    margin-left: 28px;
+  }
 }
-/* line 115, ../sass/components/_header.scss */
-#header .menu .menu {
-  display: none;
+/**
+* Styles for the MAIN MENU
+*/
+@media all and (min-width: 960px) {
+  /* line 7, ../sass/components/_menu__main.scss */
+  #header .menu {
+    float: left;
+    margin-left: 66px;
+    padding: 0;
+    height: 55px;
+    position: relative;
+  }
+  /* line 14, ../sass/components/_menu__main.scss */
+  #header .menu ul.menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    top: 43px;
+    padding: 15px 0 10px 1em;
+    width: 285px;
+    margin-left: 0 !important;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /* line 27, ../sass/components/_menu__main.scss */
+  #header .menu ul.menu .menu__item .menu__link {
+    color: #0f2940;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 0;
+  }
+  /* line 38, ../sass/components/_menu__main.scss */
+  #header .menu li:hover .menu {
+    display: block;
+    height: auto;
+  }
+  /* line 41, ../sass/components/_menu__main.scss */
+  #header .menu li:hover .menu li {
+    display: block;
+  }
+  /* line 48, ../sass/components/_menu__main.scss */
+  #header .menu > .menu__item {
+    height: 100%;
+  }
 }
-
-/* line 120, ../sass/components/_header.scss */
-#header .menu__item {
-  height: 100%;
-}
-@media all and (min-width: 720px) {
-  /* line 120, ../sass/components/_header.scss */
-  #header .menu__item {
+@media all and (min-width: 960px) and (min-width: 720px) {
+  /* line 48, ../sass/components/_menu__main.scss */
+  #header .menu > .menu__item {
     margin: 0 15px 0 0;
     padding: 0;
     color: white;
-    font-size: 1.286em;
+    font-size: 15px;
     list-style: none;
     display: inline-block;
   }
 }
-/* line 130, ../sass/components/_header.scss */
-#header .menu__item.active-trail {
-  background-image: url("../images/hero/menu_selector.png");
-  background-position: 50% 88%;
-  background-repeat: repeat-x;
+@media all and (min-width: 960px) {
+  /* line 58, ../sass/components/_menu__main.scss */
+  #header .menu > .menu__item.active-trail {
+    background-image: url("../images/hero/menu_selector.png");
+    background-position: 50% 77%;
+    background-repeat: repeat-x;
+  }
+  /* line 65, ../sass/components/_menu__main.scss */
+  #header .menu > .menu__item--selected {
+    height: 100%;
+    display: none;
+  }
 }
-
-/* line 137, ../sass/components/_header.scss */
-#header .menu__item--selected {
-  height: 100%;
-  display: none;
-}
-@media all and (min-width: 720px) {
-  /* line 137, ../sass/components/_header.scss */
-  #header .menu__item--selected {
+@media all and (min-width: 960px) and (min-width: 720px) {
+  /* line 65, ../sass/components/_menu__main.scss */
+  #header .menu > .menu__item--selected {
     margin: 0 15px 0 0;
     border: 0px solid pink;
     color: white;
-    font-size: 1.286em;
+    font-size: 15px;
     font-weight: 700;
     list-style: none;
     display: inline-block;
@@ -2688,127 +2749,21 @@ body.not-logged-in.page-user #main {
   }
 }
 
-/* line 156, ../sass/components/_header.scss */
-#header .menu__item a {
+/* line 87, ../sass/components/_menu__main.scss */
+.menu__item a {
   display: block;
   font-weight: bold;
 }
 
-/* line 163, ../sass/components/_header.scss */
-#header .menu__link {
+/* line 94, ../sass/components/_menu__main.scss */
+.menu__link {
   border: 0px solid red;
   margin: 8px 0 0 0;
   display: block;
 }
 
-/* line 169, ../sass/components/_header.scss */
-.menu__hamburger {
-  width: 18px;
-  height: 15px;
-  float: right;
-  margin: 16px 16px 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 169, ../sass/components/_header.scss */
-  .menu__hamburger {
-    display: none;
-  }
-}
-
-/* line 179, ../sass/components/_header.scss */
-.menu__hamburger--close {
-  width: 16px;
-  height: 16px;
-  float: right;
-  margin: 16px 16px 0 0;
-}
-@media all and (min-width: 720px) {
-  /* line 179, ../sass/components/_header.scss */
-  .menu__hamburger--close {
-    display: none;
-  }
-}
-
-/* line 189, ../sass/components/_header.scss */
-.menu__hamburger_contents {
-  background-color: #47aee6;
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-  margin: 0px 16px 0 0;
-  padding: 47px 0 0 0;
-  width: 100%;
-}
-@media all and (min-width: 720px) {
-  /* line 189, ../sass/components/_header.scss */
-  .menu__hamburger_contents {
-    display: none;
-  }
-}
-
-/* line 202, ../sass/components/_header.scss */
-.menu__hamburger_items {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 207, ../sass/components/_header.scss */
-.menu__item_hamburger {
-  margin: 20px 25px 20px 25px;
-  padding: 0 0 20px 0;
-  color: white;
-  font-size: 1.286em;
-  border-bottom: 1px solid #398bb8;
-  font-weight: 700;
-  list-style: none;
-}
-
-/* line 217, ../sass/components/_header.scss */
-.menu__item_hamburger--last {
-  margin: 20px 25px 0 25px;
-  padding: 0 0 20px 0;
-  color: white;
-  font-size: 1.286em;
-  border-bottom: 0px solid #398bb8;
-  font-weight: 700;
-  list-style: none;
-}
-
-/* Special styles to line header elements up in the resources section */
-@media (min-width: 960px) {
-  /* line 232, ../sass/components/_header.scss */
-  body.section-resources #header .header--wrapper,
-  body.section-content #header .header--wrapper {
-    width: auto;
-    margin: 0;
-    max-width: none;
-  }
-  /* line 237, ../sass/components/_header.scss */
-  body.section-resources #header .header__logo,
-  body.section-content #header .header__logo {
-    width: 30%;
-  }
-  /* line 240, ../sass/components/_header.scss */
-  body.section-resources #header .header__logo-image,
-  body.section-content #header .header__logo-image {
-    height: 38px;
-    float: right;
-    padding-right: 43px;
-  }
-  /* line 245, ../sass/components/_header.scss */
-  body.section-resources #header .header__region,
-  body.section-content #header .header__region {
-    width: 70%;
-  }
-  /* line 248, ../sass/components/_header.scss */
-  body.section-resources #header .menu,
-  body.section-content #header .menu {
-    margin-left: 28px;
-  }
-}
-@media (min-width: 0px) and (max-width: 719px) {
-  /* line 2, ../sass/components/_menu__main.scss */
+@media (min-width: 0px) and (max-width: 920px) {
+  /* line 2, ../sass/components/_menu__main--mobile.scss */
   #block-system-main-menu {
     display: none;
     width: 100%;
@@ -2821,8 +2776,8 @@ body.not-logged-in.page-user #main {
     padding: 0;
     margin: 0;
   }
-  /* line 13, ../sass/components/_menu__main.scss */
-  #block-system-main-menu .menu {
+  /* line 13, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu {
     height: auto;
     margin: 0 auto;
     padding: 0;
@@ -2830,46 +2785,66 @@ body.not-logged-in.page-user #main {
     float: none;
     width: 90%;
   }
-  /* line 20, ../sass/components/_menu__main.scss */
-  #block-system-main-menu .menu .menu__item {
-    background: none;
+  /* line 20, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu > .menu__item {
+    background: 0;
     list-style-image: none;
     list-style-type: none;
-    padding: 0;
+    padding-left: 2em;
     margin: 0;
     border-bottom: 1px solid #3582ac;
   }
-  /* line 27, ../sass/components/_menu__main.scss */
-  #block-system-main-menu .menu .menu__item.last {
+  /* line 28, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu > .menu__item.is-expanded {
+    background: url(../images/icons/icon-arrow-right-small.svg) no-repeat left 18px;
+    background-size: 13px 26px;
+  }
+  /* line 32, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu > .menu__item.last {
     border-bottom-width: 0;
   }
-  /* line 30, ../sass/components/_menu__main.scss */
-  #block-system-main-menu .menu .menu__item a.menu__link {
+  /* line 35, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu > .menu__item a.menu__link {
     margin: 0;
-    line-height: 1;
+    line-height: 1.25;
     display: block;
     padding: 21px 0;
-    font-size: 1.3em;
+    font-size: 16px;
   }
-  /* line 39, ../sass/components/_menu__main.scss */
+  /* line 45, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu .menu {
+    display: none;
+    padding-left: 0 !important;
+  }
+  /* line 48, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu .menu .menu__item {
+    list-style: none;
+  }
+  /* line 50, ../sass/components/_menu__main--mobile.scss */
+  #block-system-main-menu > .menu .menu .menu__item a.menu__link {
+    color: #0f2940;
+    padding: 0 0 15px;
+    font-weight: 400;
+  }
+  /* line 58, ../sass/components/_menu__main--mobile.scss */
   .burger-visible #block-system-main-menu {
     display: block;
   }
-  /* line 42, ../sass/components/_menu__main.scss */
+  /* line 61, ../sass/components/_menu__main--mobile.scss */
   .burger-hidden #block-system-main-menu {
     display: none;
   }
 
-  /* line 47, ../sass/components/_menu__main.scss */
+  /* line 66, ../sass/components/_menu__main--mobile.scss */
   #header.burger-visible {
     background-color: #3582ac;
   }
-  /* line 50, ../sass/components/_menu__main.scss */
+  /* line 69, ../sass/components/_menu__main--mobile.scss */
   #header.burger-hidden {
     background: rgba(0, 0, 0, 0.25);
   }
 }
-/* line 56, ../sass/components/_menu__main.scss */
+/* line 75, ../sass/components/_menu__main--mobile.scss */
 a#menu__hamburger {
   display: block;
   width: 18px;
@@ -2882,16 +2857,16 @@ a#menu__hamburger {
   float: right;
   text-indent: -1000px;
 }
-/* line 67, ../sass/components/_menu__main.scss */
+/* line 86, ../sass/components/_menu__main--mobile.scss */
 a#menu__hamburger.open {
   background-image: url(../images/icon_hamburger.png);
 }
-/* line 70, ../sass/components/_menu__main.scss */
+/* line 89, ../sass/components/_menu__main--mobile.scss */
 a#menu__hamburger.close {
   background-image: url(../images/icon_close.png);
 }
 @media (min-width: 720px) {
-  /* line 56, ../sass/components/_menu__main.scss */
+  /* line 75, ../sass/components/_menu__main--mobile.scss */
   a#menu__hamburger {
     display: none;
   }
