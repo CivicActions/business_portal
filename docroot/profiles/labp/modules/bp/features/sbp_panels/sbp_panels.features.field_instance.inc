@@ -761,7 +761,7 @@ function sbp_panels_field_default_field_instances() {
     'entity_type' => 'fieldable_panels_pane',
     'field_name' => 'field_call_to_action',
     'label' => 'Call To Action',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
