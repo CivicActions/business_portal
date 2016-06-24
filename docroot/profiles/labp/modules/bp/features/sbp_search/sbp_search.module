@@ -90,6 +90,11 @@ function sbp_search_box_form($form, &$form_state) {
     '#type' => 'textfield',
     '#required' => TRUE,
   );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'GO',
+    '#attributes' => array('class' => array('element-invisible')),
+  );
   return $form;
 }
 
@@ -100,6 +105,7 @@ function sbp_search_box_form($form, &$form_state) {
  * @param $form_state
  */
 function sbp_search_box_form_validate($form, &$form_state) {
+  return TRUE;
 }
 
 /**
@@ -109,5 +115,5 @@ function sbp_search_box_form_validate($form, &$form_state) {
  * @param $form_state
  */
 function sbp_search_box_form_submit($form, &$form_state) {
-  $form_state['redirect'] = 'search/node/'.urlencode($form_state['values']['search']);
+  drupal_goto('/search/node/'.urlencode($form_state['values']['search']));
 }
