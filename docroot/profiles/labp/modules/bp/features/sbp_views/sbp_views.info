@@ -10,6 +10,7 @@ dependencies[] = sbp_faq
 dependencies[] = sbp_incentives
 dependencies[] = sbp_online_resource
 dependencies[] = views
+dependencies[] = views_accordion
 dependencies[] = views_content
 features[ctools][] = views:views_default:3.0
 features[defaultconfig][] = views_default_views:departments
