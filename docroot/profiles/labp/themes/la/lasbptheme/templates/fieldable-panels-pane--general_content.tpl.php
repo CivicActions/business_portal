@@ -11,7 +11,7 @@
 
 $pane_title = $content['field_intro_title'][0]['#markup'];
 if (!empty($content['field_pane_style']) and !empty($content['field_pane_style'][0])) {
-  $pane_style = $content['field_pane_style'][0]['taxonomy_term'];
+  $pane_style = $content['field_pane_style']['#items'][0]['taxonomy_term'];
   $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
 } else {
   $pane_style = '';

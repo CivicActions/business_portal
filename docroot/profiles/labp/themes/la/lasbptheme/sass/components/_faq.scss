@@ -1,0 +1,39 @@
+.view-faq-listing {
+  background-color: white;
+  font-family: Roboto, sans-serif;
+  h3.views-accordion-faq_listing-block-header {
+    border-top: 3px solid #0F2940;
+    font-weight: 400;
+    font-family: Merriweather, serif;
+  }
+
+  .views-field-title {
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    border-top: 1px solid #dcdcdc;
+    line-height: 1.2em;
+    color: #0F2940;
+    font-family: Roboto, sans-serif;
+  }
+
+  .ui-accordion-content {
+    font-size: 1.143em;
+    line-height: 1.35em;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0px 0 25px 25px;
+    font-family: Roboto, sans-serif;
+    padding: 0;
+    padding-left: .75em;
+  }
+
+  .ui-widget-content {
+    background: white;
+    border: none;
+  }
+
+  .ui-state-default {
+    background: white;
+    color: #0F2940;
+  }
+}
