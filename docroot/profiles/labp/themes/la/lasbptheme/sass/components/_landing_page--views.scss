@@ -82,6 +82,9 @@
   .views-field-field-description {
     line-height: 1.25em;
     width: 90%;
+    @include window_size(tab-wide-up){
+      width: 70%;
+    }
     @include window_size(desktop){
       width: 85%;
       font-size: 1.143em;
