@@ -258,3 +258,13 @@ function sbp_base_update_7017() {
   drupal_set_message('Enabling translation feature.');
   module_enable(array('sbp_translation'));
 }
+
+
+/**
+ * Enabling LABP calendar feature.
+ */
+function sbp_base_update_7018() {
+  drupal_set_message('Enabling calendar feature and perms update.');
+  module_enable(array('labp_calendar'));
+  features_revert_module('labp_users');
+}
