@@ -4865,7 +4865,11 @@ a.wizard__arrow-down {
 @media all and (max-width: 719px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
+<<<<<<< 0cfdd2d6b77d1cd831863cb20c45876503664f16
     background-image: url('../images/wizard/arrow_down_enabled.png?1466763048');
+=======
+    background-image: url('../images/wizard/arrow_down_enabled.png?1466697448');
+>>>>>>> LA-105 - Calendar investigation
   }
   /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled::before {
@@ -4911,7 +4915,11 @@ a.wizard__arrow-back {
 @media all and (max-width: 719px) {
   /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-back.enabled {
+<<<<<<< 0cfdd2d6b77d1cd831863cb20c45876503664f16
     background-image: url('../images/wizard/arrow_left_enabled_help.png?1466763048');
+=======
+    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466697448');
+>>>>>>> LA-105 - Calendar investigation
   }
 }
 
@@ -6611,6 +6619,11 @@ ul.facetapi-facet-field-resource-type li a,
   display: inline-block;
   text-indent: -9999px;
   margin-top: 1em;
+}
+
+/* line 4, ../sass/components/_la_calendar.scss */
+.lacity-calendar-container .fc-toolbar .fc-center h2 {
+  color: darkblue;
 }
 
 /* Timeline*/

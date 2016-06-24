@@ -1,0 +1,11 @@
+name = LABP Calendar
+description = ITA calendar feature
+core = 7.x
+package = Los Angeles
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = fieldable_panels_panes
+features[ctools][] = fieldable_panels_panes:fieldable_panels_pane_type:1
+features[features_api][] = api:2
+features[fieldable_panels_pane_type][] = la_calendar
+project path = profiles/labp/modules/la/features

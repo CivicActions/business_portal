@@ -258,3 +258,12 @@ function sbp_base_update_7017() {
   drupal_set_message('Enabling translation feature.');
   module_enable(array('sbp_translation'));
 }
+
+
+/**
+ * Enabling SBP translate feature.
+ */
+function sbp_base_update_7018() {
+  drupal_set_message('Enabling translation feature.');
+  module_enable(array('labp_calendar'));
+}
