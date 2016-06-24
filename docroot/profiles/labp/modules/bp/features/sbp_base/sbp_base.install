@@ -273,7 +273,7 @@ function sbp_base_update_7018() {
  * FAQ permissions.
  */
 function sbp_base_update_7019() {
-  drupal_set_message('FAQ update.');
+  drupal_set_message('FAQ updates.');
   features_revert_module('sbp_faq');
   features_revert_module('sbp_views');
   features_revert_module('labp_users');

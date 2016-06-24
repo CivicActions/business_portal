@@ -450,7 +450,7 @@ function sbp_views_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'views_accordion';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
-      'field' => 'title',
+      'field' => 'field_faq_question_type',
       'rendered' => 1,
       'rendered_strip' => 0,
     ),
