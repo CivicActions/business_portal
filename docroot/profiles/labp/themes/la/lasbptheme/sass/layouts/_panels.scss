@@ -29,6 +29,9 @@
     }
     .inside {
       padding: 25px;
+      &:empty {
+        padding: 0;
+      }
       margin: 0;
       @include window_size(desktop){
         padding: 1.5em 25px 2em 0;

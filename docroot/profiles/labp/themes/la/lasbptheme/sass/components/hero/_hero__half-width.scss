@@ -3,6 +3,9 @@
 ******************************/
 .hero__layout--half {
   box-sizing: border-box;
+  @include window_size(desktop){
+    min-height: 100%;
+  }
   
   /*========== Layout ======== */
   //Mobile-first layout
