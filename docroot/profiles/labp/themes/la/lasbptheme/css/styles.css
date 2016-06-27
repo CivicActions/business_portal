@@ -2522,7 +2522,6 @@ body.not-logged-in.page-user #main {
   position: fixed;
   top: 47px;
   z-index: 5;
-  min-width: 285px;
   width: auto;
   width: -webkit-calc(100% - 35px);
   width: expression(100% - 35px);
@@ -2542,14 +2541,14 @@ body.not-logged-in.page-user #main {
   }
 }
 
-/* line 33, ../sass/components/_header.scss */
+/* line 32, ../sass/components/_header.scss */
 .header--wrapper {
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
 }
 @media all and (min-width: 960px) {
-  /* line 33, ../sass/components/_header.scss */
+  /* line 32, ../sass/components/_header.scss */
   .header--wrapper {
     width: 80%;
     margin: 0 auto;
@@ -2557,7 +2556,7 @@ body.not-logged-in.page-user #main {
 }
 
 /* Wrapping link for logo. */
-/* line 42, ../sass/components/_header.scss */
+/* line 41, ../sass/components/_header.scss */
 .header__logo {
   display: inline-block;
   vertical-align: middle;
@@ -2565,10 +2564,10 @@ body.not-logged-in.page-user #main {
   float: left;
   width: 171px;
   height: 32px;
-  margin: 8px 0 0 0;
+  margin: 0;
 }
 @media all and (min-width: 720px) {
-  /* line 42, ../sass/components/_header.scss */
+  /* line 41, ../sass/components/_header.scss */
   .header__logo {
     width: 213px;
     height: 39px;
@@ -2576,19 +2575,19 @@ body.not-logged-in.page-user #main {
   }
 }
 
-/* line 58, ../sass/components/_header.scss */
+/* line 57, ../sass/components/_header.scss */
 .front #header a.header__logo.icon-egg {
   color: #0d84e9;
 }
 
 /* Logo image. */
-/* line 63, ../sass/components/_header.scss */
+/* line 62, ../sass/components/_header.scss */
 .header__logo-image {
   vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 68, ../sass/components/_header.scss */
+/* line 67, ../sass/components/_header.scss */
 .header__name-and-slogan {
   display: inline-block;
   vertical-align: middle;
@@ -2597,74 +2596,74 @@ body.not-logged-in.page-user #main {
 }
 
 /* The name of the website. */
-/* line 76, ../sass/components/_header.scss */
+/* line 75, ../sass/components/_header.scss */
 .header__site-name {
   margin: 0;
   font-size: 12px;
 }
 
 /* The link around the name of the website. */
-/* line 83, ../sass/components/_header.scss */
+/* line 82, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 88, ../sass/components/_header.scss */
+/* line 87, ../sass/components/_header.scss */
 .header__site-link:focus, .header__site-link:hover {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 95, ../sass/components/_header.scss */
+/* line 94, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 100, ../sass/components/_header.scss */
+/* line 99, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 105, ../sass/components/_header.scss */
+/* line 104, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
   position: relative;
 }
 
-/* line 111, ../sass/components/_header.scss */
+/* line 110, ../sass/components/_header.scss */
 .block__title {
   display: none;
 }
 
 /* Special styles to line header elements up in the resources section */
 @media (min-width: 960px) {
-  /* line 120, ../sass/components/_header.scss */
+  /* line 119, ../sass/components/_header.scss */
   body.section-resources #header .header--wrapper,
   body.section-content #header .header--wrapper {
     width: auto;
     margin: 0;
     max-width: none;
   }
-  /* line 125, ../sass/components/_header.scss */
+  /* line 124, ../sass/components/_header.scss */
   body.section-resources #header .header__logo,
   body.section-content #header .header__logo {
     width: 30%;
   }
-  /* line 128, ../sass/components/_header.scss */
+  /* line 127, ../sass/components/_header.scss */
   body.section-resources #header .header__logo-image,
   body.section-content #header .header__logo-image {
     height: 38px;
     float: right;
     padding-right: 43px;
   }
-  /* line 133, ../sass/components/_header.scss */
+  /* line 132, ../sass/components/_header.scss */
   body.section-resources #header .header__region,
   body.section-content #header .header__region {
     width: 70%;
   }
-  /* line 136, ../sass/components/_header.scss */
+  /* line 135, ../sass/components/_header.scss */
   body.section-resources #header .menu,
   body.section-content #header .menu {
     margin-left: 28px;
@@ -2784,7 +2783,7 @@ a#menu__hamburger {
 
 @media (min-width: 0px) and (max-width: 720px) {
   /* line 9, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu {
+  nav.mean-nav {
     height: auto;
     background-color: #47aee6;
     overflow: visible;
@@ -2794,7 +2793,7 @@ a#menu__hamburger {
     width: 100%;
   }
   /* line 17, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu {
+  nav.mean-nav > .menu {
     height: auto;
     margin: 0 auto;
     padding: 0;
@@ -2803,7 +2802,7 @@ a#menu__hamburger {
     float: none;
   }
   /* line 24, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu > .menu__item {
+  nav.mean-nav > .menu > .menu__item {
     background: 0;
     list-style-image: none;
     list-style-type: none;
@@ -2813,15 +2812,15 @@ a#menu__hamburger {
     border-bottom: 1px solid #3582ac;
   }
   /* line 33, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu > .menu__item.is-expanded {
+  nav.mean-nav > .menu > .menu__item.is-expanded {
     background: none;
   }
   /* line 36, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu > .menu__item.last {
+  nav.mean-nav > .menu > .menu__item.last {
     border-bottom-width: 0;
   }
   /* line 39, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu > .menu__item a.menu__link {
+  nav.mean-nav > .menu > .menu__item a.menu__link {
     margin: 0;
     line-height: 1.25;
     display: block;
@@ -2830,16 +2829,16 @@ a#menu__hamburger {
     margin-left: 26px;
   }
   /* line 50, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu .menu {
+  nav.mean-nav > .menu .menu {
     display: none;
     padding-left: 0 !important;
   }
   /* line 53, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu .menu .menu__item {
+  nav.mean-nav > .menu .menu .menu__item {
     list-style: none;
   }
   /* line 55, ../sass/components/_menu__main--mobile.scss */
-  #block-system-main-menu > .menu .menu .menu__item a.menu__link {
+  nav.mean-nav > .menu .menu .menu__item a.menu__link {
     color: #0f2940;
     padding: 0 0 15px;
     font-weight: 400;
@@ -2896,7 +2895,7 @@ a#menu__hamburger {
   .mean-container .mean-nav {
     float: left;
     width: 100%;
-    margin-top: 44px;
+    margin-top: 47px;
   }
   /* line 121, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul {

@@ -6,7 +6,7 @@ a#menu__hamburger {
 
 @media (min-width: 0px) and (max-width: 720px) {
 
-  #block-system-main-menu {
+  nav.mean-nav {
     height: auto;
     background-color: $medium-blue;
     overflow: visible;
@@ -116,7 +116,7 @@ a#menu__hamburger {
     .mean-nav {
       float: left;
       width: 100%;
-      margin-top: 44px;
+      margin-top: 47px;
 
       ul {
         padding: 0;

@@ -127,7 +127,7 @@ Drupal.behaviors.rotator = {
    */
   Drupal.behaviors.mobileMenu = {
     attach: function(context, settings) {
-      $('.header__region.region.region-header').meanmenu({
+      $('#meanMenu--wrapper-block').once('revealMenu').meanmenu({
         meanScreenWidth: "720",
         meanMenuContainer: '#mean-menu--mobile',
         meanMenuCloseSize: "22px"
@@ -137,7 +137,7 @@ Drupal.behaviors.rotator = {
 
   Drupal.behaviors.changeHeaderBg = {
     attach: function(context, settings) {
-      $("a.meanmenu-reveal").click(function () {
+      $("a.meanmenu-reveal").once('addHeaderClass').click(function () {
         $("#header").toggleClass("dark-blue-bg");
       });
      }
