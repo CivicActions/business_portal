@@ -5676,8 +5676,8 @@ a.wizard__arrow-down.enabled.section {
   }
 }
 
-/* line 25, ../sass/components/_detail_pages.scss */
-.panel-col-last .inside h3 {
+/* line 26, ../sass/components/_detail_pages.scss */
+.panel-col-last .inside .pane-entity-field h3 {
   font-weight: 700;
   color: #0f2940;
   padding: 20px 0 0 0;
@@ -5685,8 +5685,8 @@ a.wizard__arrow-down.enabled.section {
   margin: 0 0 20px 0;
   position: relative;
 }
-/* line 32, ../sass/components/_detail_pages.scss */
-.panel-col-last .inside h3::before {
+/* line 33, ../sass/components/_detail_pages.scss */
+.panel-col-last .inside .pane-entity-field h3::before {
   content: '';
   position: absolute;
   top: 0;

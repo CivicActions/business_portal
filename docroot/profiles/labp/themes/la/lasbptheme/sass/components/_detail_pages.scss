@@ -22,20 +22,22 @@
 }
 
 .panel-col-last .inside {
-  h3 {
-    font-weight: 700;
-    color: $dark_blue;
-    padding: 20px 0 0 0;
-    font-size: 1.2857em;
-    margin: 0 0 20px 0;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      height: 1px;
-      background-color: $link-blue;
-      width: 80px;
+  .pane-entity-field {
+    h3 {
+      font-weight: 700;
+      color: $dark_blue;
+      padding: 20px 0 0 0;
+      font-size: 1.2857em;
+      margin: 0 0 20px 0;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0;
+        height: 1px;
+        background-color: $link-blue;
+        width: 80px;
+      }
     }
   }
 }
