@@ -383,12 +383,13 @@ span.field-label {
 /* A list of page numbers when more than 1 page of content is available. */
 .pager {
   clear: both;
-  padding: 0;
-  text-align: center;
+  padding: 15px 0 0 0;
+  text-align: left;
+  border-top: 3px solid #163D53;
 }
 %pager__item {
-  display: inline;
-  padding: 0 0.5em;
+  display: inline-block;
+  padding: 0 10px 0 0;
   list-style-type: none;
   background-image: none;
 }
@@ -400,12 +401,27 @@ span.field-label {
 .pager-last,      /* The last page's list item. */
 .pager-ellipsis { /* A concatenation of several list items using an ellipsis. */
   @extend %pager__item;
+  text-transform: capitalize;
+  font-weight: 700;
 }
+
+.pager-first,
+.pager-previous {
+  padding: 0 25px 0 0; 
+}
+.pager-next {
+  padding: 0 0 0 15px;
+}
+.pager-last {
+  padding: 0 0 0 25px;
+}
+
 
 /* The current page's list item. */
 .pager-current {
   @extend %pager__item;
   font-weight: bold;
+  color: $dark_blue;
 }
 
 /**

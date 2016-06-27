@@ -2121,24 +2121,25 @@ span.field-label {
 /* line 384, ../sass/components/_misc.scss */
 .pager {
   clear: both;
-  padding: 0;
-  text-align: center;
+  padding: 15px 0 0 0;
+  text-align: left;
+  border-top: 3px solid #163D53;
 }
 
-/* line 389, ../sass/components/_misc.scss */
+/* line 390, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
 .pager-next,
 .pager-last,
 .pager-ellipsis, .pager-current {
-  display: inline;
-  padding: 0 0.5em;
+  display: inline-block;
+  padding: 0 10px 0 0;
   list-style-type: none;
   background-image: none;
 }
 
-/* line 396, ../sass/components/_misc.scss */
+/* line 397, ../sass/components/_misc.scss */
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -2146,19 +2147,38 @@ span.field-label {
 .pager-last,
 .pager-ellipsis {
   /* A concatenation of several list items using an ellipsis. */
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* line 408, ../sass/components/_misc.scss */
+.pager-first,
+.pager-previous {
+  padding: 0 25px 0 0;
+}
+
+/* line 412, ../sass/components/_misc.scss */
+.pager-next {
+  padding: 0 0 0 15px;
+}
+
+/* line 415, ../sass/components/_misc.scss */
+.pager-last {
+  padding: 0 0 0 25px;
 }
 
 /* The current page's list item. */
-/* line 406, ../sass/components/_misc.scss */
+/* line 421, ../sass/components/_misc.scss */
 .pager-current {
   font-weight: bold;
+  color: #0f2940;
 }
 
 /**
  * Blocks.
  */
 /* Block wrapper. */
-/* line 416, ../sass/components/_misc.scss */
+/* line 432, ../sass/components/_misc.scss */
 .block {
   margin-bottom: 0.42857em;
 }
@@ -2166,26 +2186,26 @@ span.field-label {
 /**
  * Menus.
  */
-/* line 423, ../sass/components/_misc.scss */
+/* line 439, ../sass/components/_misc.scss */
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-/* line 430, ../sass/components/_misc.scss */
+/* line 446, ../sass/components/_misc.scss */
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-/* line 437, ../sass/components/_misc.scss */
+/* line 453, ../sass/components/_misc.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   list-style-type: disc;
 }
 
 /* The active item in a Drupal menu. */
-/* line 446, ../sass/components/_misc.scss */
+/* line 462, ../sass/components/_misc.scss */
 .menu a.active {
   color: #000;
 }
@@ -2194,7 +2214,7 @@ span.field-label {
  * Marker.
  */
 /* The "new" or "updated" marker. */
-/* line 455, ../sass/components/_misc.scss */
+/* line 471, ../sass/components/_misc.scss */
 .new,
 .update {
   color: #c00;
@@ -2206,7 +2226,7 @@ span.field-label {
  * Unpublished note.
  */
 /* The word "Unpublished" displayed underneath the content. */
-/* line 467, ../sass/components/_misc.scss */
+/* line 483, ../sass/components/_misc.scss */
 .unpublished {
   display: block;
   height: 0;
@@ -2228,31 +2248,31 @@ span.field-label {
  * Comments.
  */
 /* Wrapper for the list of comments and its title. */
-/* line 496, ../sass/components/_misc.scss */
+/* line 512, ../sass/components/_misc.scss */
 .comments {
   margin: 0.42857em 0;
 }
 
 /* Preview of the comment before submitting new or updated comment. */
-/* line 501, ../sass/components/_misc.scss */
+/* line 517, ../sass/components/_misc.scss */
 .comment-preview {
   /* Drupal core will use a #ffffea background. See #1110842. */
   background-color: #ffffea;
 }
 
 /* Wrapper for a single comment. */
-/* line 507, ../sass/components/_misc.scss */
+/* line 523, ../sass/components/_misc.scss */
 .comment {
   /* Comment's permalink wrapper. */
 }
-/* line 510, ../sass/components/_misc.scss */
+/* line 526, ../sass/components/_misc.scss */
 .comment .permalink {
   text-transform: uppercase;
   font-size: 75%;
 }
 
 /* Nested comments are indented. */
-/* line 517, ../sass/components/_misc.scss */
+/* line 533, ../sass/components/_misc.scss */
 .indented {
   /* Drupal core uses a 25px left margin. */
   margin-left: 30px;
@@ -2262,7 +2282,7 @@ span.field-label {
  * Forms.
  */
 /* Wrapper for a form element (or group of form elements) and its label. */
-/* line 527, ../sass/components/_misc.scss */
+/* line 543, ../sass/components/_misc.scss */
 .form-item {
   margin: 0.42857em 0;
   /* Pack groups of checkboxes and radio buttons closer together. */
@@ -2270,61 +2290,61 @@ span.field-label {
   /* Highlight the form elements that caused a form submission error. */
   /* The descriptive help text (separate from the label). */
 }
-/* line 531, ../sass/components/_misc.scss */
+/* line 547, ../sass/components/_misc.scss */
 .form-checkboxes .form-item, .form-radios .form-item {
   /* Drupal core uses "0.4em 0". */
   margin: 0;
 }
-/* line 538, ../sass/components/_misc.scss */
+/* line 554, ../sass/components/_misc.scss */
 tr.odd .form-item, tr.even .form-item {
   margin: 0;
 }
-/* line 544, ../sass/components/_misc.scss */
+/* line 560, ../sass/components/_misc.scss */
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #c00;
 }
-/* line 551, ../sass/components/_misc.scss */
+/* line 567, ../sass/components/_misc.scss */
 .form-item .description {
   font-size: 0.85em;
 }
 
-/* line 558, ../sass/components/_misc.scss */
+/* line 574, ../sass/components/_misc.scss */
 .form-type-radio .description,
 .form-type-checkbox .description {
   margin-left: 2.4em;
 }
 
 /* The part of the label that indicates a required field. */
-/* line 564, ../sass/components/_misc.scss */
+/* line 580, ../sass/components/_misc.scss */
 .form-required {
   color: #c00;
 }
 
 /* Labels for radios and checkboxes. */
-/* line 569, ../sass/components/_misc.scss */
+/* line 585, ../sass/components/_misc.scss */
 label.option {
   display: inline;
   font-weight: normal;
 }
 
 /* Buttons used by contrib modules like Media. */
-/* line 575, ../sass/components/_misc.scss */
+/* line 591, ../sass/components/_misc.scss */
 a.button {
   -moz-appearance: button;
   -webkit-appearance: button;
 }
 
 /* Password confirmation. */
-/* line 580, ../sass/components/_misc.scss */
+/* line 596, ../sass/components/_misc.scss */
 .password-parent,
 .confirm-parent {
   margin: 0;
 }
 
 /* Drupal's default login form block. */
-/* line 586, ../sass/components/_misc.scss */
+/* line 602, ../sass/components/_misc.scss */
 #user-login-form {
   text-align: left;
 }
@@ -2336,27 +2356,27 @@ a.button {
  * styling of list items.
  */
 /* OpenID creates a new ul above the login form's links. */
-/* line 598, ../sass/components/_misc.scss */
+/* line 614, ../sass/components/_misc.scss */
 .openid-links {
   /* Position OpenID's ul next to the rest of the links. */
   margin-bottom: 0;
 }
 
 /* The "Log in using OpenID" and "Cancel OpenID login" links. */
-/* line 604, ../sass/components/_misc.scss */
+/* line 620, ../sass/components/_misc.scss */
 .openid-link,
 .user-link {
   margin-top: 0.42857em;
 }
 
-/* line 608, ../sass/components/_misc.scss */
+/* line 624, ../sass/components/_misc.scss */
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
   margin-left: -20px;
 }
 
-/* line 613, ../sass/components/_misc.scss */
+/* line 629, ../sass/components/_misc.scss */
 #user-login ul {
   margin: 0.42857em 0;
 }
@@ -2364,22 +2384,22 @@ html.js #user-login-form li.openid-link,
 /**
  * Drupal admin tables.
  */
-/* line 621, ../sass/components/_misc.scss */
+/* line 637, ../sass/components/_misc.scss */
 form th {
   text-align: left;
   padding-right: 1em;
   border-bottom: 3px solid #ccc;
 }
-/* line 626, ../sass/components/_misc.scss */
+/* line 642, ../sass/components/_misc.scss */
 form tbody {
   border-top: 1px solid #ccc;
 }
-/* line 629, ../sass/components/_misc.scss */
+/* line 645, ../sass/components/_misc.scss */
 form table ul {
   margin: 0;
 }
 
-/* line 633, ../sass/components/_misc.scss */
+/* line 649, ../sass/components/_misc.scss */
 tr.even,
 tr.odd {
   background-color: #eee;
@@ -2387,26 +2407,26 @@ tr.odd {
   padding: 0.1em 0.6em;
 }
 
-/* line 639, ../sass/components/_misc.scss */
+/* line 655, ../sass/components/_misc.scss */
 tr.even {
   background-color: #fff;
 }
 
 /* Markup generated by theme_tablesort_indicator(). */
-/* line 654, ../sass/components/_misc.scss */
+/* line 670, ../sass/components/_misc.scss */
 td.active {
   background-color: #ddd;
 }
 
 /* Center checkboxes inside table cell. */
-/* line 659, ../sass/components/_misc.scss */
+/* line 675, ../sass/components/_misc.scss */
 td.checkbox,
 th.checkbox {
   text-align: center;
 }
 
 /* Drupal core wrongly puts this in system.menus.css. Since we override that, add it back. */
-/* line 665, ../sass/components/_misc.scss */
+/* line 681, ../sass/components/_misc.scss */
 td.menu-disabled {
   background: #ccc;
 }
@@ -2417,7 +2437,7 @@ td.menu-disabled {
  * @see autocomplete.js
  */
 /* Suggestion list. */
-/* line 676, ../sass/components/_misc.scss */
+/* line 692, ../sass/components/_misc.scss */
 #autocomplete .selected {
   background: #0072b9;
   color: #fff;
@@ -2428,19 +2448,19 @@ td.menu-disabled {
  *
  * @see collapse.js
  */
-/* line 687, ../sass/components/_misc.scss */
+/* line 703, ../sass/components/_misc.scss */
 html.js .collapsible .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   background-position: 5px 65%;
   background-repeat: no-repeat;
   padding-left: 15px;
 }
-/* line 696, ../sass/components/_misc.scss */
+/* line 712, ../sass/components/_misc.scss */
 html.js .collapsed .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   background-position: 5px 50%;
 }
-/* line 703, ../sass/components/_misc.scss */
+/* line 719, ../sass/components/_misc.scss */
 .fieldset-legend .summary {
   color: #999;
   font-size: 0.9em;
@@ -2452,17 +2472,17 @@ html.js .collapsed .fieldset-legend {
  *
  * @see tabledrag.js
  */
-/* line 715, ../sass/components/_misc.scss */
+/* line 731, ../sass/components/_misc.scss */
 tr.drag {
   background-color: #fffff0;
 }
 
-/* line 718, ../sass/components/_misc.scss */
+/* line 734, ../sass/components/_misc.scss */
 tr.drag-previous {
   background-color: #ffd;
 }
 
-/* line 721, ../sass/components/_misc.scss */
+/* line 737, ../sass/components/_misc.scss */
 .tabledrag-toggle-weight {
   font-size: 0.9em;
 }
@@ -2472,7 +2492,7 @@ tr.drag-previous {
  *
  * @see tableselect.js
  */
-/* line 730, ../sass/components/_misc.scss */
+/* line 746, ../sass/components/_misc.scss */
 tr.selected td {
   background: #ffc;
 }
@@ -2482,11 +2502,11 @@ tr.selected td {
  *
  * @see progress.js
  */
-/* line 739, ../sass/components/_misc.scss */
+/* line 755, ../sass/components/_misc.scss */
 .progress {
   font-weight: bold;
 }
-/* line 742, ../sass/components/_misc.scss */
+/* line 758, ../sass/components/_misc.scss */
 .progress .bar {
   background: #ccc;
   border-color: #666;
@@ -2495,13 +2515,13 @@ tr.selected td {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 748, ../sass/components/_misc.scss */
+/* line 764, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1461165606');
+  background-image: url('../images/progress.gif?1464939989');
 }
 
-/* line 754, ../sass/components/_misc.scss */
+/* line 770, ../sass/components/_misc.scss */
 body.not-logged-in.page-user #main {
   padding: 100px 100px 50px;
 }
@@ -3823,7 +3843,12 @@ hr.hero__line--half {
   }
 }
 
-/* line 67, ../sass/components/_landing_page--views.scss */
+/* line 61, ../sass/components/_landing_page--views.scss */
+.panel-pane + .pane-bp-featured-sub-page {
+  margin-top: 90px;
+}
+
+/* line 71, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node,
 .view-id-bp_featured_sub_page .views-field-field-document,
 .view-bp-featured-resource-page .views-field-view-node,
@@ -3837,7 +3862,7 @@ hr.hero__line--half {
   float: right;
   vertical-align: top;
 }
-/* line 72, ../sass/components/_landing_page--views.scss */
+/* line 76, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-view-node a,
 .view-bp-featured-resource-page .views-field-view-node a,
 .view-id-departments .views-field-view-node a,
@@ -3853,7 +3878,7 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 76, ../sass/components/_landing_page--views.scss */
+/* line 80, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-field-document a,
 .view-bp-featured-resource-page .views-field-field-document a,
 .view-id-departments .views-field-field-document a,
@@ -3869,7 +3894,7 @@ hr.hero__line--half {
   float: right;
   margin: 0 0 0 6px;
 }
-/* line 81, ../sass/components/_landing_page--views.scss */
+/* line 85, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-body,
 .view-id-bp_featured_sub_page .views-field-field-description,
 .view-bp-featured-resource-page .views-field-body,
@@ -3884,7 +3909,7 @@ hr.hero__line--half {
   width: 90%;
 }
 @media all and (min-width: 720px) {
-  /* line 81, ../sass/components/_landing_page--views.scss */
+  /* line 85, ../sass/components/_landing_page--views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
   .view-id-bp_featured_sub_page .views-field-field-description,
   .view-bp-featured-resource-page .views-field-body,
@@ -3899,7 +3924,7 @@ hr.hero__line--half {
   }
 }
 @media all and (min-width: 960px) {
-  /* line 81, ../sass/components/_landing_page--views.scss */
+  /* line 85, ../sass/components/_landing_page--views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
   .view-id-bp_featured_sub_page .views-field-field-description,
   .view-bp-featured-resource-page .views-field-body,
@@ -3916,7 +3941,7 @@ hr.hero__line--half {
   }
 }
 
-/* line 97, ../sass/components/_landing_page--views.scss */
+/* line 101, ../sass/components/_landing_page--views.scss */
 .view-id-departments .views-row-1 {
   padding-top: 0;
 }
@@ -4255,7 +4280,7 @@ hr.hero__line--half {
   position: absolute;
   top: 15px;
   right: 0;
-  background-image: url('../images/wizard/icon_context_help.png?1461525799');
+  background-image: url('../images/wizard/icon_context_help.png?1464939989');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4587,7 +4612,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461525799');
+  background-image: url('../images/wizard/progress_bar.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 14px 14px;
@@ -4657,7 +4682,7 @@ a.wizard__button--selected {
 /* line 92, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4667,7 +4692,7 @@ a.wizard__button--selected {
 /* line 103, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4677,7 +4702,7 @@ a.wizard__button--selected {
 /* line 115, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4752,7 +4777,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1464939989');
 }
 
 /* line 190, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4763,7 +4788,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1464939989');
 }
 
 /* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4774,7 +4799,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1464939989');
 }
 
 /**********/
@@ -4819,7 +4844,7 @@ a.wizard__button--selected {
 /* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461525799');
+  background-image: url('../images/wizard/icon_close.png?1464939989');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4904,7 +4929,7 @@ a.wizard__arrow-back,
 a.wizard__arrow-down {
   display: block;
   position: relative;
-  background-image: url('../images/wizard/arrow_down.png?1461525799');
+  background-image: url('../images/wizard/arrow_down.png?1464939989');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position: 0 50%;
@@ -4942,12 +4967,12 @@ a.wizard__arrow-down {
 
 /* line 74, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461165606');
+  background-image: url('../images/wizard/arrow_up.png?1464939989');
 }
 
 /* line 78, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461525799');
+  background-image: url('../images/wizard/arrow_down.png?1464939989');
 }
 @media all and (max-width: 719px) {
   /* line 81, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4964,7 +4989,7 @@ a.wizard__arrow-down {
 @media all and (max-width: 719px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled.png?1466697537');
+    background-image: url('../images/wizard/arrow_down_enabled.png?1466763048');
   }
   /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled::before {
@@ -4974,7 +4999,7 @@ a.wizard__arrow-down {
 @media all and (min-width: 720px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
+    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
   }
 }
 @media all and (min-width: 720px) {
@@ -4988,7 +5013,7 @@ a.wizard__arrow-down {
 
 /* line 111, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
   background-position: 100% center;
   float: right;
   text-align: right;
@@ -5010,7 +5035,7 @@ a.wizard__arrow-back {
 @media all and (max-width: 719px) {
   /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-back.enabled {
-    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466697537');
+    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466763048');
   }
 }
 
@@ -5144,7 +5169,7 @@ a.wizard__arrow-down.enabled.section {
   top: 0;
   height: 20px;
   width: 20px;
-  background-image: url('../images/wizard/icon_info.png?1461525799');
+  background-image: url('../images/wizard/icon_info.png?1464939989');
   background-size: 100%;
 }
 
