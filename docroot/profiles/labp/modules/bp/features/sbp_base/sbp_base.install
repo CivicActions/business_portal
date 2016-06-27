@@ -280,3 +280,10 @@ function sbp_base_update_7019() {
   features_revert_module('labp_users');
 }
 
+/**
+ * Search fix.
+ */
+function sbp_base_update_7020() {
+  drupal_set_message('Search updates.');
+  features_revert_module('sbp_search');
+}
