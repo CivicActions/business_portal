@@ -21,7 +21,6 @@
   position:fixed;
   top:47px;
   z-index:5;
-  min-width: 285px;
   width: auto;
   width: -webkit-calc(100% - 35px);
   width:   expression(100% - 35px);
@@ -46,7 +45,7 @@
   float: left;
   width: 171px;
   height: 32px;
-  margin: 8px 0 0 0;
+  margin: 0;
   @include window_size(tab-wide-up){
     width: 213px;
     height: 39px;
