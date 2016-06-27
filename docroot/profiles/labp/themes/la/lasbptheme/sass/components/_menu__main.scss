@@ -1,78 +1,106 @@
-@media (min-width: 0px) and (max-width: 719px) {
-  #block-system-main-menu {
-    display: none;
-    width: 100%;
-    height: auto;
-    background-color: $medium-blue;
-    position: fixed;
-    right: 0;
-    top: 94px;
-    overflow: visible;
-    padding: 0;
-    margin: 0;
+/**
+* Styles for the MAIN MENU
+*/
+
+#header {
+  @include window_size(tab-wide-up) {
     .menu {
-      height: auto;
-      margin: 0 auto;
+      float: left;
+      margin-left: 66px;
       padding: 0;
-      display: block;
-      float: none;
-      width: 90%;
-      .menu__item {
-        background: none;
-        list-style-image: none;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        border-bottom: 1px solid $medium-blue-dim;
-        &.last {
-          border-bottom-width: 0;
+      height: 55px;
+      position: relative;
+      // Hide dropdown menu
+      ul.menu {
+        display: none;
+        height: 0;
+        position: absolute;
+        top: 43px;
+        padding: 15px 0 10px 1em;
+        width: 285px;
+        margin-left: 0 !important;
+        background: rgba(255, 255, 255, 0.8);
+
+        .menu__item {
+          // Styling links
+          .menu__link {
+            color: $dark_blue;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            margin-top: 0;
+          }
+
         }
-        a.menu__link {
-          margin: 0;
-          line-height: 1;
+      }
+      // Display dropdown on hover
+      > li:hover > .menu {
+        display: block;
+        height: auto;
+        li {
           display: block;
-          padding: 21px 0;
-          font-size: 1.3em;
+          //Hiding deeper level menus
+          .menu {
+            display: none;
+          }
         }
       }
     }
-    .burger-visible & {
-      display: block;
-    }
-    .burger-hidden & {
-      display: none;
-    }
-  }
-  #header {
-    &.burger-visible {
-      background-color: $medium-blue-dim;
-    }
-    &.burger-hidden {
-      background: rgba(0,0,0,.25);
+
+    .menu {
+      > .menu__item {
+        height: 100%;
+        @include window_size(tab-wide-up) {
+          margin: 0 15px 0 0;
+          padding: 0;
+          color: $white;
+          font-size: 15px;
+          list-style: none;
+          display: inline-block;
+        }
+        &.active-trail {
+          background-image: url("../images/hero/menu_selector.png");
+          background-position: 50% 77%;
+          background-repeat: repeat-x;
+
+          // Hiding bottom border on deeper level active items
+          .active-trail {
+            background-image: none;
+          }
+        }
+      }
+
+      > .menu__item--selected {
+        height: 100%;
+        @include window_size(tab-wide-up) {
+          margin: 0 15px 0 0;
+          border: 0px solid pink;
+          color: $white;
+          font-size: 15px;
+          font-weight: 700;
+          list-style: none;
+          display: inline-block;
+          background-image: url("../images/hero/menu_selector.png");
+          background-position: bottom;
+          background-repeat: repeat-x;
+        }
+        display: none;
+      }
     }
   }
 }
 
-a#menu__hamburger {
-  display: block;
-  width: 18px;
-  height: 16px;
-  overflow: hidden;
-  margin: 15px 19px 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  float: right;
-  text-indent: -1000px;
-  &.open {
-    background-image: url(../images/icon_hamburger.png);
-  }
-  &.close {
-    background-image: url(../images/icon_close.png);
-  }
-  @media (min-width: 720px) {
-    display: none;
-  }
-}
 
-      
+
+   .menu__item a {
+    //border:1px solid red;
+    //margin: 15px 0 0 0;
+    display: block;
+    font-weight: bold;
+  }
+
+  .menu__link {
+    border: 0px solid red;
+    margin: 8px 0 0 0;
+    display: block;
+  }

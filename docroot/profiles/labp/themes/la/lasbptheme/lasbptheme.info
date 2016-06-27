@@ -70,6 +70,7 @@ stylesheets[all][] = css/fontello/css/fontello.css
 
 scripts[] = js/plugins/isotope.pkgd.min.js
 scripts[] = js/plugins/slick.min.js
+scripts[] = js/plugins/jquery.meanmenu.min.js
 scripts[] = js/script.js
 
 

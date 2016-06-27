@@ -19,7 +19,7 @@ $sidebar_second = render($page['sidebar_second']);
 ?>
 
 <div id="page">
-
+  <div id = "mean-menu--mobile"><!-- Mobile Menu gets attached here --></div>
   <header class="header" id="header" role="banner">
     <div class = "header--wrapper">
       <?php if ($logo): ?>
@@ -57,11 +57,9 @@ $sidebar_second = render($page['sidebar_second']);
       <?php endif; ?>
       <?php print render($page['header']); ?>
     </div>
-    <a id="menu__hamburger" class="open">menu</a>
   </header>
 
   <div id="main">
-
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>

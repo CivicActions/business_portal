@@ -121,27 +121,28 @@ Drupal.behaviors.rotator = {
   };
 
   /**
-    * LA-166: jQuery to support responsive menu.
-    */
-  $(document).ready(function() {
-    $( "#menu__hamburger" ).click(function() {
-      var classList = $('#menu__hamburger').attr('class').split(/\s+/);
-      $.each(classList, function(index, item) {
-        if (item === 'open') {
-          $( "#header" ).addClass( "burger-visible" );
-          $( "#header" ).removeClass( "burger-hidden" );
-          $( "#menu__hamburger" ).addClass( "close" );
-          $( "#menu__hamburger" ).removeClass( "open" );
-        }
-        if (item === 'close') {
-          $( "#header" ).addClass( "burger-hidden" );
-          $( "#header" ).removeClass( "burger-visible" );
-          $( "#menu__hamburger" ).addClass( "open" );
-          $( "#menu__hamburger" ).removeClass( "close" );
-        }
+   * LA-369 Mobile Menu plugin
+   * https://github.com/meanthemes/meanMenu
+   * @type {{attach: Drupal.behaviors.mobileMenu.attach}}
+   */
+  Drupal.behaviors.mobileMenu = {
+    attach: function(context, settings) {
+      $('.header__region.region.region-header').meanmenu({
+        meanScreenWidth: "720",
+        meanMenuContainer: '#mean-menu--mobile',
+        meanMenuCloseSize: "22px"
       });
-    });
-  });
+    }
+  };
+
+  Drupal.behaviors.changeHeaderBg = {
+    attach: function(context, settings) {
+      $("a.meanmenu-reveal").click(function () {
+        $("#header").toggleClass("dark-blue-bg");
+      });
+     }
+    };
+
 
   /**
    * LA-335: Adding a dynamic column layout for the featured resources widget.
@@ -193,6 +194,32 @@ Drupal.behaviors.rotator = {
           }
         });
       }
+
+      // Applying the function on window resize
+      $(window).resize(function() {
+        if(windowWidth > 959) {
+          $.each(dynamicBlock, function (i) {
+            // Get the height of each node block
+            var blockHeight = $(dynamicBlock[i]).outerHeight();
+
+            if (i == 0 || i % 2 == 0) {
+              // For the first block and every other block with an even index
+              function compareHeights() {
+                // Compare heights and assign the largest height to both blocks in the row.
+                var nextBlockHeight = $(dynamicBlock[i + 1]).outerHeight();
+                if (blockHeight < nextBlockHeight) {
+                  $(dynamicBlock[i]).height(nextBlockHeight);
+
+                } else {
+                  $(dynamicBlock[i + 1]).height(blockHeight);
+                }
+              }
+              return compareHeights();
+            }
+          });
+        }
+      });
+
     }
   };
 

@@ -8,19 +8,26 @@
 
 #header {
   color: $white;
-  background: rgba(0,0,0,.25);
   padding: 0;
+  background: rgba(0,0,0,.25);
   a {
     color: $white;
   }
   height: 47px;
   @include window_size(tab-wide-up){
     height: 55px;
+    width: 100%;
   }
   position:fixed;
   top:47px;
   z-index:5;
-  width:100%;
+  min-width: 285px;
+  width: auto;
+  width: -webkit-calc(100% - 35px);
+  width:   expression(100% - 35px);
+  width:    -moz-calc(100% - 35px);
+  width:      -o-calc(100% - 35px);
+  width:         calc(100% - 35px);
 }
 
 .header--wrapper {
@@ -37,7 +44,6 @@
   vertical-align: middle;
   padding: 0;
   float: left;
-  display: inline-block;
   width: 171px;
   height: 32px;
   margin: 8px 0 0 0;
@@ -104,124 +110,6 @@
 
 .block__title {
   display: none;
-}
-
-#header .menu {
-  float: left;
-  margin:0 0 0 66px;
-  padding: 0;
-  height:100%;
-  height: 55px;
-  .menu {
-    display: none;
-  }
-}
-
-#header .menu__item {
-  height: 100%;
-  @include window_size(tab-wide-up) {
-    margin: 0 15px 0 0;
-    padding: 0;
-    color: $white;
-    font-size: 1.286em;
-    list-style: none;
-    display: inline-block;
-  }
-  &.active-trail {
-    background-image: url("../images/hero/menu_selector.png");
-    background-position: 50% 88%;
-    background-repeat: repeat-x;
-  }
-}
-
-#header .menu__item--selected {
-  height: 100%;
-  @include window_size(tab-wide-up){
-    //background-image: url("../images/sublevel_left_menu_bg.png");
-    margin: 0 15px 0 0;
-    //padding: 15px 0 0 0;
-    border: 0px solid pink;
-    color: $white;
-    font-size: 1.286em;
-    font-weight: 700;
-    list-style: none;
-    display: inline-block;
-    background-image:url("../images/hero/menu_selector.png");
-    background-position: bottom;
-    background-repeat:repeat-x;
-  };
-  display: none;
-}
-
-#header .menu__item a {
-  //border:1px solid red;
-  //margin: 15px 0 0 0;
-  display: block;
-  font-weight: bold;
-}
-
-#header .menu__link {
-  border:0px solid red;
-  margin: 8px 0 0 0;
-  display: block;
-}
-
-.menu__hamburger {
-  width: 18px;
-  height: 15px;
-  float: right;
-  margin: 16px 16px 0 0;
-  @include window_size(tab-wide-up) {
-    display: none;
-  }
-}
-
-.menu__hamburger--close {
-  width: 16px;
-  height: 16px;
-  float: right;
-  margin: 16px 16px 0 0;
-  @include window_size(tab-wide-up) {
-    display: none;
-  }
-}
-
-.menu__hamburger_contents {
-  background-color: #47aee6;
-  position: absolute;
-  top:0px;
-  z-index: 1;
-  margin: 0px 16px 0 0;
-  padding: 47px 0 0 0;
-  width: 100%;
-  @include window_size(tab-wide-up) {
-    display: none;
-  }
-}
-
-.menu__hamburger_items {
-  list-style: none;
-  margin:0;
-  padding: 0;
-}
-.menu__item_hamburger {
-  margin: 20px 25px 20px 25px;
-  padding: 0 0 20px 0;
-  color: $white;
-  font-size: 1.286em;
-  border-bottom: 1px solid #398bb8;
-  font-weight: 700;
-  list-style: none;
-}
-
-.menu__item_hamburger--last {
-  margin: 20px 25px 0 25px;
-  padding: 0 0 20px 0;
-  color: $white;
-  font-size: 1.286em;
-  border-bottom: 0px solid #398bb8;
-  font-weight: 700;
-  list-style: none;
 }
 
 /* Special styles to line header elements up in the resources section */
