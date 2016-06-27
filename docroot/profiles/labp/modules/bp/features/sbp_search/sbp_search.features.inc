@@ -8,12 +8,16 @@
  * Implements hook_ctools_plugin_api().
  */
 function sbp_search_ctools_plugin_api($module = NULL, $api = NULL) {
-  if ($module == "context" && $api == "context") {
-    return array("version" => "3");
-  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function sbp_search_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }
 
 /**
@@ -50,16 +54,10 @@ function sbp_search_default_search_api_index() {
         }
       },
       "fields" : {
-        "author" : { "type" : "integer", "entity_type" : "user" },
-        "body:value" : { "type" : "text" },
-        "changed" : { "type" : "date" },
-        "comment_count" : { "type" : "integer" },
-        "created" : { "type" : "date" },
-        "promote" : { "type" : "boolean" },
-        "search_api_language" : { "type" : "string" },
-        "sticky" : { "type" : "boolean" },
-        "title" : { "type" : "text", "boost" : "5.0" },
-        "type" : { "type" : "string" }
+        "field_hero" : { "type" : "integer", "entity_type" : "field_collection_item" },
+        "field_hero:field_description:value" : { "type" : "text" },
+        "field_hero:field_hero_title" : { "type" : "text", "boost" : "3.0" },
+        "search_api_language" : { "type" : "string" }
       }
     },
     "enabled" : "1",
