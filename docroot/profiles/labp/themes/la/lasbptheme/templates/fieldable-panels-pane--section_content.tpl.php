@@ -17,13 +17,15 @@ if (!empty($field_component_body)) {
 }
 if (!empty($field_background_image)) {
   $background_image = file_create_url($field_background_image[0]['uri']);
+  $background_image_alt = file_create_url($field_background_image[0]['alt']);
 }
 
 ?>
   <div class="panel__intro style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?> >
     <?php if (!empty($background_image)): ?>
     <div class="panel__background_image">
-      <img src="<?php print $background_image; ?>"/>
+      <img src="<?php print $background_image; ?>"
+           alt="<?php print $background_image_alt; ?>"/>
     </div>
     <?php endif; ?>
     <div class="panel__content_wrapper">

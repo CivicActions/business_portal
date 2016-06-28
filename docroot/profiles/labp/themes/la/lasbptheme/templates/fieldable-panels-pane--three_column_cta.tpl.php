@@ -42,7 +42,7 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
           }
       ?>
           <div class="panel__section">
-          <?php if (!empty($cta_icon) and !empty($cta_icon_alt)): ?>
+          <?php if (!empty($cta_icon) || !empty($cta_icon_alt)): ?>
             <div class="panel__icon"><img
                 alt="<?php print $cta_icon_alt; ?>"
                 src="<?php print $cta_icon; ?>"/></div>

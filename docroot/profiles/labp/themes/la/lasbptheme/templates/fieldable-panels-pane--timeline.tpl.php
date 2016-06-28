@@ -47,7 +47,9 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
         }
       ?>
         <div class="timeline__item">
-          <img class = "timeline__item__image" src="<?php print $banner_image; ?>"/>
+          <img class = "timeline__item__image"
+               src = "<?php print $banner_image; ?>"
+               alt = "<?php print $banner_image_alt; ?>"/>
           <div class = "timeline__item--inner">
             <div class="timeline__item__title"><?php print $title; ?></div>
             <hr class="timeline__item__hr"/>
