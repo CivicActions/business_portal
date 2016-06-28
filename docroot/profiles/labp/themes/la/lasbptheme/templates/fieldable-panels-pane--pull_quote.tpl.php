@@ -24,7 +24,7 @@ if (!empty($field_component_body)) {
 }
 if (!empty($content['field_quote_image']) and !empty($content['field_quote_image'][0])) {
   $quote_image = file_create_url($content['field_quote_image'][0]['#item']['uri']);
-  $quote_image_alt = file_create_url($content['field_quote_image'][0]['#item']['alt']);
+  $quote_image_alt = $content['field_quote_image'][0]['#item']['alt'];
 } else {
   $quote_image = '';
 }

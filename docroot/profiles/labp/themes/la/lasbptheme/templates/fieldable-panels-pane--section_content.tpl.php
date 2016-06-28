@@ -17,7 +17,7 @@ if (!empty($field_component_body)) {
 }
 if (!empty($field_background_image)) {
   $background_image = file_create_url($field_background_image[0]['uri']);
-  $background_image_alt = file_create_url($field_background_image[0]['alt']);
+  $background_image_alt = $field_background_image[0]['alt'];
 }
 
 ?>

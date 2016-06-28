@@ -29,7 +29,7 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
           $cta_description = $cta_field_collection->field_description[LANGUAGE_NONE][0]['value'];
           if (!empty($cta_field_collection->field_icon)) {
             $cta_icon = file_create_url($cta_field_collection->field_icon[LANGUAGE_NONE][0]['uri']);
-            $cta_icon_alt = file_create_url($cta_field_collection->field_icon[LANGUAGE_NONE][0]['alt']);
+            $cta_icon_alt = $cta_field_collection->field_icon[LANGUAGE_NONE][0]['alt'];
           }
           if (!empty($cta_field_collection->field_link)) {
             $cta_link = $cta_field_collection->field_link[LANGUAGE_NONE];
