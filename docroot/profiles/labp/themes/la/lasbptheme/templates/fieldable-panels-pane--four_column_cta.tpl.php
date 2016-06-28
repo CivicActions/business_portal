@@ -29,6 +29,7 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
           $cta_description = $cta_field_collection->field_description[LANGUAGE_NONE][0]['value'];
           if (!empty($cta_field_collection->field_icon)) {
             $cta_icon = file_create_url($cta_field_collection->field_icon[LANGUAGE_NONE][0]['uri']);
+            $cta_icon_alt = $cta_field_collection->field_icon[LANGUAGE_NONE][0]['alt'];
           }
           if (!empty($cta_field_collection->field_link)) {
             $cta_link = $cta_field_collection->field_link[LANGUAGE_NONE];
@@ -37,7 +38,8 @@ $pane_style = $pane_style->field_style_class[LANGUAGE_NONE][0]['value'];
           <div class="panel__section">
           <?php if (!empty($cta_icon)): ?>
             <div class="panel__icon"><img
-                src="<?php print $cta_icon; ?>"/></div>
+                src="<?php print $cta_icon; ?>"
+                alt="<?php print $cta_icon_alt; ?>"/></div>
           <?php endif; ?>
             <h3 class="panel__icon_header"><?php if (!empty($cta_title)): print $cta_title; endif; ?></h3>
             <hr class="panel__header-line_thin"/>

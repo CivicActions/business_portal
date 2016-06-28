@@ -24,6 +24,7 @@ if (!empty($field_component_body)) {
 }
 if (!empty($content['field_quote_image']) and !empty($content['field_quote_image'][0])) {
   $quote_image = file_create_url($content['field_quote_image'][0]['#item']['uri']);
+  $quote_image_alt = $content['field_quote_image'][0]['#item']['alt'];
 } else {
   $quote_image = '';
 }
@@ -33,7 +34,8 @@ if (!empty($content['field_quote_image']) and !empty($content['field_quote_image
     <?php if (!empty($quote_image)): ?>
     <div class="panel__quote_col_1">
       <div class="panel__quote_image">
-        <img src="<?php print $quote_image; ?>"/>
+        <img src="<?php print $quote_image; ?>"
+             alt="<?php print $quote_image_alt; ?>"/>
       </div>
     </div>
     <?php endif; ?>

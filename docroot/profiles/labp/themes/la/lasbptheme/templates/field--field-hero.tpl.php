@@ -57,6 +57,7 @@ foreach($heros as $hero){
   $hero_title = $hero['field_hero_title'][0]['#markup'];
   if (!empty($hero['field_icon'])) {
     $icon = $hero['field_icon']['#items']['0']['uri'];
+    $icon_alt_text = $hero['field_icon']['#items']['0']['alt'];
     $icon_path = file_create_url($icon);
   }
   if (!empty($hero['field_subtitle_long'])) {
@@ -119,9 +120,10 @@ foreach($heros as $hero){
                              <?php } ?> >
                           <div class = "hero__image--overlay">
                             <div class = "hero__header--inner">
-                              <?php if (!empty($icon)): ?>
+                              <?php if (!empty($icon) || !empty($icon_alt_text)): ?>
                                   <div class = "hero__icon--mobile">
-                                      <img src = "<?php print $icon_path; ?>" />
+                                      <img src = "<?php print $icon_path; ?>"
+                                           alt = "<?php print $icon_alt_text ?>" />
                                   </div>
                               <?php endif; ?>
                               <div class="hero__headline--half--mobile"><?php print $hero_title; ?></div>
@@ -144,9 +146,10 @@ foreach($heros as $hero){
 
                     <div class = "right">
                       <div class = "hero__header--inner">
-                        <?php if (!empty($icon)): ?>
+                        <?php if (!empty($icon) || !empty($icon_alt_text)): ?>
                             <div class = "hero__icon">
-                                <img src = "<?php print $icon_path; ?>" />
+                                <img src = "<?php print $icon_path; ?>"
+                                     alt = "<?php print $icon_alt_text ?>"/>
                             </div>
                         <?php endif; ?>
                         <div class="hero__headline--half"><?php print $hero_title; ?></div>

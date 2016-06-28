@@ -41,12 +41,15 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
         // Banner image.
         if (!empty($item->field_banner_image) and !empty($item->field_banner_image[LANGUAGE_NONE][0])) {
           $banner_image = file_create_url($item->field_banner_image[LANGUAGE_NONE][0]['uri']);
+          $banner_image_alt = $item->field_banner_image[LANGUAGE_NONE][0]['alt'];
         } else {
           $banner_image = '';
         }
       ?>
         <div class="timeline__item">
-          <img class = "timeline__item__image" src="<?php print $banner_image; ?>"/>
+          <img class = "timeline__item__image"
+               src = "<?php print $banner_image; ?>"
+               alt = "<?php print $banner_image_alt; ?>"/>
           <div class = "timeline__item--inner">
             <div class="timeline__item__title"><?php print $title; ?></div>
             <hr class="timeline__item__hr"/>

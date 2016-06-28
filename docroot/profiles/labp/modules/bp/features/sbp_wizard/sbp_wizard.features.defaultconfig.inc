@@ -892,14 +892,14 @@ function sbp_wizard_defaultconfig_field_default_fields() {
       'label' => 'Icon',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => 'wizard',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '100x100',
         'min_resolution' => '50x50',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(

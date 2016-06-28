@@ -287,3 +287,13 @@ function sbp_base_update_7020() {
   drupal_set_message('Search updates.');
   features_revert_module('sbp_search');
 }
+
+/**
+ * Adding Alt text to images.
+ */
+function sbp_base_update_7021() {
+  drupal_set_message('Enabling alt text for images.');
+  features_revert_module('sbp_hero');
+  features_revert_module('sbp_panels');
+  features_revert_module('sbp_wizard');
+}
