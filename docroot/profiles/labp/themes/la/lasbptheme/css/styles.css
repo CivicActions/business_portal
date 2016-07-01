@@ -2498,7 +2498,7 @@ tr.selected td {
 /* line 748, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1461165606');
+  background-image: url('../images/progress.gif?1464939989');
 }
 
 /* line 754, ../sass/components/_misc.scss */
@@ -2506,6 +2506,12 @@ body.not-logged-in.page-user #main {
   padding: 100px 100px 50px;
 }
 
+/**
+ * @file
+ *
+ * Content Styleguide.
+ *
+ */
 /**
  * @file
  * SMACSS Modules
@@ -4255,7 +4261,7 @@ hr.hero__line--half {
   position: absolute;
   top: 15px;
   right: 0;
-  background-image: url('../images/wizard/icon_context_help.png?1461525799');
+  background-image: url('../images/wizard/icon_context_help.png?1464939989');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4587,7 +4593,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1461525799');
+  background-image: url('../images/wizard/progress_bar.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 14px 14px;
@@ -4657,7 +4663,7 @@ a.wizard__button--selected {
 /* line 92, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4667,7 +4673,7 @@ a.wizard__button--selected {
 /* line 103, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4677,7 +4683,7 @@ a.wizard__button--selected {
 /* line 115, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1464939989');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4752,7 +4758,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1464939989');
 }
 
 /* line 190, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4763,7 +4769,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1464939989');
 }
 
 /* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4774,7 +4780,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1461525799');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1464939989');
 }
 
 /**********/
@@ -4819,7 +4825,7 @@ a.wizard__button--selected {
 /* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1461525799');
+  background-image: url('../images/wizard/icon_close.png?1464939989');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4904,7 +4910,7 @@ a.wizard__arrow-back,
 a.wizard__arrow-down {
   display: block;
   position: relative;
-  background-image: url('../images/wizard/arrow_down.png?1461525799');
+  background-image: url('../images/wizard/arrow_down.png?1464939989');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position: 0 50%;
@@ -4942,12 +4948,12 @@ a.wizard__arrow-down {
 
 /* line 74, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1461165606');
+  background-image: url('../images/wizard/arrow_up.png?1464939989');
 }
 
 /* line 78, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1461525799');
+  background-image: url('../images/wizard/arrow_down.png?1464939989');
 }
 @media all and (max-width: 719px) {
   /* line 81, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4964,7 +4970,7 @@ a.wizard__arrow-down {
 @media all and (max-width: 719px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled.png?1466697537');
+    background-image: url('../images/wizard/arrow_down_enabled.png?1466763048');
   }
   /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled::before {
@@ -4974,7 +4980,7 @@ a.wizard__arrow-down {
 @media all and (min-width: 720px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1461525799');
+    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
   }
 }
 @media all and (min-width: 720px) {
@@ -4988,7 +4994,7 @@ a.wizard__arrow-down {
 
 /* line 111, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1461690430');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
   background-position: 100% center;
   float: right;
   text-align: right;
@@ -5010,7 +5016,7 @@ a.wizard__arrow-back {
 @media all and (max-width: 719px) {
   /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-back.enabled {
-    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466697537');
+    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466763048');
   }
 }
 
@@ -5144,7 +5150,7 @@ a.wizard__arrow-down.enabled.section {
   top: 0;
   height: 20px;
   width: 20px;
-  background-image: url('../images/wizard/icon_info.png?1461525799');
+  background-image: url('../images/wizard/icon_info.png?1464939989');
   background-size: 100%;
 }
 
@@ -6076,6 +6082,197 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 /* line 38, ../sass/components/_departments.scss */
 .node-type-sbp-department .panel-2col-stacked .panel-col-last .field-items .field-items {
   font-size: 1em;
+}
+
+/* line 51, ../sass/components/_departments.scss */
+.field-name-field-description h1 {
+  font-size: 26px;
+  font-weight: 900;
+  padding: 20px 0 0 0;
+  margin: 0;
+  color: #0f2940;
+  font-family: Merriweather, serif;
+}
+@media all and (min-width: 960px) {
+  /* line 51, ../sass/components/_departments.scss */
+  .field-name-field-description h1 {
+    padding: 30px 0 0 0;
+    font-size: 36px;
+  }
+}
+/* line 54, ../sass/components/_departments.scss */
+.field-name-field-description h2 {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 400;
+  border-top: 3px solid #0f2940;
+  margin: 20px 0 15px 0;
+  padding: 15px 20px 0 0;
+}
+@media all and (min-width: 960px) {
+  /* line 54, ../sass/components/_departments.scss */
+  .field-name-field-description h2 {
+    font-size: 28px;
+    margin: 40px 0 30px 0;
+    padding: 20px 0 0 0;
+  }
+}
+/* line 57, ../sass/components/_departments.scss */
+.field-name-field-description h2.thin_line {
+  font-size: 20px;
+  font-weight: 400;
+  border-top: 1px solid #dcdcdc;
+  margin: 20px 0 15px 0;
+  padding: 15px 20px 0 0;
+}
+@media all and (min-width: 960px) {
+  /* line 57, ../sass/components/_departments.scss */
+  .field-name-field-description h2.thin_line {
+    font-size: 28px;
+    margin: 40px 0 30px 0;
+    padding: 20px 0 0 0;
+  }
+}
+/* line 60, ../sass/components/_departments.scss */
+.field-name-field-description h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #0f2940 !important;
+  padding: 20px 0 0 0;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  border: 0px solid red;
+  background-image: url("../images/subsections/line_l3.png");
+  background-repeat: no-repeat;
+}
+/* line 63, ../sass/components/_departments.scss */
+.field-name-field-description p.intro {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 0px solid red;
+  margin: 20px 0 25px 0;
+  padding: 0;
+}
+@media all and (min-width: 960px) {
+  /* line 63, ../sass/components/_departments.scss */
+  .field-name-field-description p.intro {
+    margin: 30px 0 40px 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+/* line 66, ../sass/components/_departments.scss */
+.field-name-field-description p {
+  color: rgba(0, 0, 0, 0.6) !important;
+  margin: 10px 0 20px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 19px;
+  width: 95%;
+}
+@media all and (min-width: 960px) {
+  /* line 66, ../sass/components/_departments.scss */
+  .field-name-field-description p {
+    margin: 15px 0 25px 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+/* line 69, ../sass/components/_departments.scss */
+.field-name-field-description ul {
+  padding: 0 0 10px 0;
+  margin: 10px 0 20px 10px;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+@media all and (min-width: 960px) {
+  /* line 69, ../sass/components/_departments.scss */
+  .field-name-field-description ul {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px 0 20px 20px;
+  }
+}
+/* line 138, ../sass/components/_content_styleguide.scss */
+.field-name-field-description ul li {
+  border: 0px solid green;
+  margin: 4px 0 4px 10px;
+  line-height: 1.5em;
+}
+/* line 72, ../sass/components/_departments.scss */
+.field-name-field-description ul.no_bullets {
+  font-size: 14px;
+  line-height: 19px;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 10px 0 20px 0;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+@media all and (min-width: 960px) {
+  /* line 72, ../sass/components/_departments.scss */
+  .field-name-field-description ul.no_bullets {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px 0 20px 0;
+    padding: 0;
+  }
+}
+/* line 159, ../sass/components/_content_styleguide.scss */
+.field-name-field-description ul.no_bullets li {
+  border: 0px solid green;
+  margin: 10px 0 10px 0;
+  line-height: 1.5em;
+}
+/* line 75, ../sass/components/_departments.scss */
+.field-name-field-description ol {
+  border: 0px solid red !important;
+  padding: 0 0 10px 0;
+  margin: 10px 0 20px 10px;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+@media all and (min-width: 960px) {
+  /* line 75, ../sass/components/_departments.scss */
+  .field-name-field-description ol {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px 0 20px 20px;
+  }
+}
+/* line 178, ../sass/components/_content_styleguide.scss */
+.field-name-field-description ol li {
+  margin: 4px 0 4px 10px;
+  line-height: 1.5em;
+}
+@media all and (min-width: 960px) {
+  /* line 178, ../sass/components/_content_styleguide.scss */
+  .field-name-field-description ol li {
+    margin: 2px 0 2px 10px;
+  }
+}
+/* line 78, ../sass/components/_departments.scss */
+.field-name-field-description a.content_link {
+  font-size: 16px;
+  color: #7ac7f6;
+  font-weight: 700;
+  border: 0px solid red;
+  margin: 0 0 30px 0;
+  padding: 0;
+  background-image: url("../images/subsections/icon_link_arrow.png");
+  background-repeat: no-repeat;
+  background-size: 9px 16px;
+  background-position: 28px 2px;
+  display: block;
+  width: 120px;
+  text-decoration: none !important;
+}
+@media all and (min-width: 960px) {
+  /* line 78, ../sass/components/_departments.scss */
+  .field-name-field-description a.content_link {
+    font-size: 18px;
+    background-size: 9px 16px;
+    background-position: 30px 3px;
+  }
 }
 
 /* line 1, ../sass/components/_faq.scss */
