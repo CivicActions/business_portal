@@ -6108,41 +6108,91 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
   background-color: white;
   font-family: Roboto, sans-serif;
 }
-/* line 4, ../sass/components/_faq.scss */
-.view-faq-listing h3.views-accordion-faq_listing-block-header {
-  border-top: 3px solid #0F2940;
-  font-weight: 400;
+/* line 5, ../sass/components/_faq.scss */
+.view-faq-listing .ui-accordion .views-accordion-faq_listing-default-header {
+  border-top: 3px solid #0f2940;
   font-family: Merriweather, serif;
+  color: #0f2940;
+  font-size: 1.285em;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  padding: 15px 20px 0 0;
 }
-/* line 10, ../sass/components/_faq.scss */
-.view-faq-listing .views-field-title {
+@media all and (min-width: 960px) {
+  /* line 5, ../sass/components/_faq.scss */
+  .view-faq-listing .ui-accordion .views-accordion-faq_listing-default-header {
+    font-size: 2em;
+  }
+}
+/* line 19, ../sass/components/_faq.scss */
+.view-faq-listing .ui-accordion .ui-accordion-header {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-family: Roboto, sans-serif;
+  /*margin-top: 25px;*/
+  padding: 15px 0 15px 25px;
   font-weight: 700;
   font-size: 18px;
-  border: none;
-  border-top: 1px solid #dcdcdc;
+  border: none !important;
+  border-top: 1px solid #dcdcdc !important;
   line-height: 1.2em;
-  color: #0F2940;
-  font-family: Roboto, sans-serif;
-}
-/* line 20, ../sass/components/_faq.scss */
-.view-faq-listing .ui-accordion-content {
-  font-size: 1.143em;
-  line-height: 1.35em;
-  color: rgba(0, 0, 0, 0.6);
-  margin: 0px 0 25px 25px;
-  font-family: Roboto, sans-serif;
-  padding: 0;
-  padding-left: .75em;
-}
-/* line 30, ../sass/components/_faq.scss */
-.view-faq-listing .ui-widget-content {
   background: white;
-  border: none;
+  position: relative;
+}
+/* line 29, ../sass/components/_faq.scss */
+.view-faq-listing .ui-accordion .ui-accordion-header a {
+  color: #0f2940;
 }
 /* line 35, ../sass/components/_faq.scss */
-.view-faq-listing .ui-state-default {
+.view-faq-listing .ui-accordion .ui-accordion-content {
+  font-family: Roboto, sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0 0 10px 25px;
   background: white;
-  color: #0F2940;
+  border: none !important;
+  max-width: 90%;
+  font-size: 14px;
+  line-height: 1.35;
+  height: auto;
+}
+@media all and (min-width: 720px) {
+  /* line 35, ../sass/components/_faq.scss */
+  .view-faq-listing .ui-accordion .ui-accordion-content {
+    max-width: 70%;
+    font-size: 1em;
+  }
+}
+@media all and (min-width: 960px) {
+  /* line 35, ../sass/components/_faq.scss */
+  .view-faq-listing .ui-accordion .ui-accordion-content {
+    max-width: 85%;
+  }
+}
+/* line 55, ../sass/components/_faq.scss */
+.view-faq-listing .ui-accordion .views-row-last {
+  margin-bottom: 30px;
+}
+/* line 59, ../sass/components/_faq.scss */
+.view-faq-listing .ui-accordion .ui-accordion-header-icon {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  top: 25px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+  -webkit-transform: rotate(0deg);
+  outline: none;
+  background: url("../images/subsections/arrow_right.png") 0 0 no-repeat;
+  background-size: 11px 17px;
+}
+/* line 72, ../sass/components/_faq.scss */
+.view-faq-listing .ui-accordion .ui-accordion-header-active .ui-accordion-header-icon {
+  top: 22px;
+  left: -6px;
+  outline: none;
+  -webkit-transform: rotate(90deg);
 }
 
 /* Panels */
