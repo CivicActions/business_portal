@@ -2528,6 +2528,12 @@ body.not-logged-in.page-user #main {
 
 /**
  * @file
+ *
+ * Content Styleguide.
+ *
+ */
+/**
+ * @file
  * SMACSS Modules
  *
  * header component.
@@ -6722,7 +6728,197 @@ ul.facetapi-facet-field-resource-type li a,
     width: 90%;
   }
 }
-/* line 18, ../sass/components/_general_content_widget.scss */
+/* line 17, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body h1 {
+  font-size: 26px;
+  font-weight: 900;
+  padding: 20px 0 0 0;
+  margin: 0;
+  color: #0f2940;
+  font-family: Merriweather, serif;
+}
+@media all and (min-width: 960px) {
+  /* line 17, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body h1 {
+    padding: 30px 0 0 0;
+    font-size: 36px;
+  }
+}
+/* line 20, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body h2 {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 400;
+  border-top: 3px solid #0f2940;
+  margin: 20px 0 15px 0;
+  padding: 15px 20px 0 0;
+}
+@media all and (min-width: 960px) {
+  /* line 20, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body h2 {
+    font-size: 28px;
+    margin: 40px 0 30px 0;
+    padding: 20px 0 0 0;
+  }
+}
+/* line 23, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body h2.thin_line {
+  font-size: 20px;
+  font-weight: 400;
+  border-top: 1px solid #dcdcdc;
+  margin: 20px 0 15px 0;
+  padding: 15px 20px 0 0;
+}
+@media all and (min-width: 960px) {
+  /* line 23, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body h2.thin_line {
+    font-size: 28px;
+    margin: 40px 0 30px 0;
+    padding: 20px 0 0 0;
+  }
+}
+/* line 26, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #0f2940 !important;
+  padding: 20px 0 0 0;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  border: 0px solid red;
+  background-image: url("../images/subsections/line_l3.png");
+  background-repeat: no-repeat;
+}
+/* line 29, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body p.intro {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 0px solid red;
+  margin: 20px 0 25px 0;
+  padding: 0;
+}
+@media all and (min-width: 960px) {
+  /* line 29, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body p.intro {
+    margin: 30px 0 40px 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+/* line 32, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body p {
+  color: rgba(0, 0, 0, 0.6) !important;
+  margin: 10px 0 20px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 19px;
+  width: 95%;
+}
+@media all and (min-width: 960px) {
+  /* line 32, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body p {
+    margin: 15px 0 25px 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+/* line 35, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body ul {
+  padding: 0 0 10px 0;
+  margin: 10px 0 20px 10px;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+@media all and (min-width: 960px) {
+  /* line 35, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body ul {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px 0 20px 20px;
+  }
+}
+/* line 138, ../sass/components/_content_styleguide.scss */
+.panel__general_content .panel__general_content__body ul li {
+  border: 0px solid green;
+  margin: 4px 0 4px 10px;
+  line-height: 1.5em;
+}
+/* line 38, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body ul.no_bullets {
+  font-size: 14px;
+  line-height: 19px;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 10px 0 20px 0;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+@media all and (min-width: 960px) {
+  /* line 38, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body ul.no_bullets {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px 0 20px 0;
+    padding: 0;
+  }
+}
+/* line 159, ../sass/components/_content_styleguide.scss */
+.panel__general_content .panel__general_content__body ul.no_bullets li {
+  border: 0px solid green;
+  margin: 10px 0 10px 0;
+  line-height: 1.5em;
+}
+/* line 41, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body ol {
+  border: 0px solid red !important;
+  padding: 0 0 10px 0;
+  margin: 10px 0 20px 10px;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+@media all and (min-width: 960px) {
+  /* line 41, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body ol {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px 0 20px 20px;
+  }
+}
+/* line 178, ../sass/components/_content_styleguide.scss */
+.panel__general_content .panel__general_content__body ol li {
+  margin: 4px 0 4px 10px;
+  line-height: 1.5em;
+}
+@media all and (min-width: 960px) {
+  /* line 178, ../sass/components/_content_styleguide.scss */
+  .panel__general_content .panel__general_content__body ol li {
+    margin: 2px 0 2px 10px;
+  }
+}
+/* line 44, ../sass/components/_general_content_widget.scss */
+.panel__general_content .panel__general_content__body a.content_link {
+  font-size: 16px;
+  color: #7ac7f6;
+  font-weight: 700;
+  border: 0px solid red;
+  margin: 0 0 30px 0;
+  padding: 0;
+  background-image: url("../images/subsections/icon_link_arrow.png");
+  background-repeat: no-repeat;
+  background-size: 9px 16px;
+  background-position: 28px 2px;
+  display: block;
+  width: 120px;
+  text-decoration: none !important;
+}
+@media all and (min-width: 960px) {
+  /* line 44, ../sass/components/_general_content_widget.scss */
+  .panel__general_content .panel__general_content__body a.content_link {
+    font-size: 18px;
+    background-size: 9px 16px;
+    background-position: 30px 3px;
+  }
+}
+/* line 49, ../sass/components/_general_content_widget.scss */
 .panel__general_content .panel__quote-line {
   height: 2px;
 }
