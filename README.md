@@ -104,11 +104,7 @@ All steps below are assumed to be run from the command line
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Default node index`
 - Switch the server to LABP VM by clicking `Edit` under `Operations` for `Resources & Incentives`
 
-### Step 8. Switch theme back to profile theme
-- `drush dis labusinessportaltheme -y`
-- `drush vset theme_default lasbptheme`
-
-### Step 9. Clear cache
+### Step 8. Clear cache
 `drush cc all`
 
 
@@ -122,7 +118,7 @@ If running from Outside DrupalVM, please substitute `/var/www/labp` with `~/Proj
 
 ### Step 1. Install bundler
 ```bash
-cd /var/www/labp/docroot/profiles/labp/themes/la/lasbptheme
+cd /var/www/labp/docroot/profiles/labp/themes/la/labusinessportaltheme
 gem install bundler
 ```
 Please use `sudo gem install bundler` when running on DrupalVM
