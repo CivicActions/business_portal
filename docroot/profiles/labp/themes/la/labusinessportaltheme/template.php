@@ -17,12 +17,12 @@
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function lasbptheme_preprocess_maintenance_page(&$variables, $hook) {
+function labusinessportaltheme_preprocess_maintenance_page(&$variables, $hook) {
   // When a variable is manipulated or added in preprocess_html or
   // preprocess_page, that same work is probably needed for the maintenance page
   // as well, so we can just re-use those functions to do that work here.
-  lasbptheme_preprocess_html($variables, $hook);
-  lasbptheme_preprocess_page($variables, $hook);
+  labusinessportaltheme_preprocess_html($variables, $hook);
+  labusinessportaltheme_preprocess_page($variables, $hook);
 }
 // */
 
@@ -35,7 +35,7 @@ function lasbptheme_preprocess_maintenance_page(&$variables, $hook) {
  *   The name of the template being rendered ("html" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function lasbptheme_preprocess_html(&$variables, $hook) {
+function labusinessportaltheme_preprocess_html(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 
   // The body tag's classes are controlled by the $classes_array variable. To
@@ -53,7 +53,7 @@ function lasbptheme_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 
-function lasbptheme_preprocess_page(&$variables, $hook) {
+function labusinessportaltheme_preprocess_page(&$variables, $hook) {
   global $user;
   if (!$variables['logged_in']) {
     drupal_add_js('https://globalnav.lacity.org/global_nav_2.0.js', 'external');
@@ -68,7 +68,7 @@ function lasbptheme_preprocess_page(&$variables, $hook) {
 /**
  * Implements preprocess_panels_pane().
  */
-function lasbptheme_preprocess_panels_pane(&$vars) {
+function labusinessportaltheme_preprocess_panels_pane(&$vars) {
   if ($vars['title'] == 'Filter by business need:') {
     $vars['title'] = 'Business Need';
   }
@@ -100,7 +100,7 @@ function lasbptheme_preprocess_panels_pane(&$vars) {
  * @param array &$variables
  *   Template variables.
  */
-function lasbptheme_preprocess_html(&$vars) {
+function labusinessportaltheme_preprocess_html(&$vars) {
   /* LA-313 Add google verification code */
   $google_site_verification = array(
       '#type' => 'html_tag',
@@ -123,11 +123,11 @@ function lasbptheme_preprocess_html(&$vars) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function lasbptheme_preprocess_node(&$variables, $hook) {
+function labusinessportaltheme_preprocess_node(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 
   // Optionally, run node-type-specific preprocess functions, like
-  // lasbptheme_preprocess_node_page() or lasbptheme_preprocess_node_story().
+  // labusinessportaltheme_preprocess_node_page() or labusinessportaltheme_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
@@ -144,7 +144,7 @@ function lasbptheme_preprocess_node(&$variables, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function lasbptheme_preprocess_comment(&$variables, $hook) {
+function labusinessportaltheme_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -158,7 +158,7 @@ function lasbptheme_preprocess_comment(&$variables, $hook) {
  *   The name of the template being rendered ("region" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function lasbptheme_preprocess_region(&$variables, $hook) {
+function labusinessportaltheme_preprocess_region(&$variables, $hook) {
   // Don't use Zen's region--sidebar.tpl.php template for sidebars.
   //if (strpos($variables['region'], 'sidebar_') === 0) {
   //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('region__sidebar'));
@@ -175,7 +175,7 @@ function lasbptheme_preprocess_region(&$variables, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function lasbptheme_preprocess_block(&$variables, $hook) {
+function labusinessportaltheme_preprocess_block(&$variables, $hook) {
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 
