@@ -3201,10 +3201,12 @@ a#menu__hamburger {
   /* line 21, ../sass/components/_footer--sponsors.scss */
   .sponsors__logo {
     display: block;
+    max-width: 70px;
+    height: auto;
   }
 }
 
-/* line 28, ../sass/components/_footer--sponsors.scss */
+/* line 30, ../sass/components/_footer--sponsors.scss */
 .sponsors__title {
   margin-bottom: 15px;
   line-height: 1.25;
@@ -3216,7 +3218,7 @@ a#menu__hamburger {
 /**********************************
          LAYOUT
 ***********************************/
-/* line 40, ../sass/components/_footer--sponsors.scss */
+/* line 42, ../sass/components/_footer--sponsors.scss */
 .view-bp-sponsors .view-content {
   /*  @include zen-grid-container();
     $zen-grid-width: 100%;
@@ -3230,15 +3232,24 @@ a#menu__hamburger {
     }*/
 }
 @media all and (min-width: 960px) {
-  /* line 46, ../sass/components/_footer--sponsors.scss */
+  /* line 48, ../sass/components/_footer--sponsors.scss */
+  .view-bp-sponsors .view-content::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0 !important;
+    clear: both;
+  }
+  /* line 55, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor {
-    display: inline-block;
+    display: block;
+    float: left;
     width: 102px;
     margin-right: 35px;
   }
-  /* line 50, ../sass/components/_footer--sponsors.scss */
+  /* line 60, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor:last-child {
-    width: 70px;
+    /*width: 70px;*/
     margin: 0;
   }
 }
