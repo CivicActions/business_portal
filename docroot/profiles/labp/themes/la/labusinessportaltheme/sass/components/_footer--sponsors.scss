@@ -38,14 +38,19 @@
 ***********************************/
 
 .view-bp-sponsors .view-content {
-  @include zen-grid-container();
+/*  @include zen-grid-container();
   $zen-grid-width: 100%;
-  $zen-column-count: 7;
+  $zen-column-count: 7;*/
 
   @include window_size(desktop) {
     .bp-sponsor {
-      @include zen-grid-flow-item(1, 7, false, false);
-      @include zen-float(left);
+      display: inline-block;
+      width: 102px;
+      margin-right: 35px;
+      &:last-child {
+        width: 70px;
+        margin: 0;
+      }
     }
   }
 /*  @include window_size(desktop) {

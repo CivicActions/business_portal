@@ -2518,7 +2518,7 @@ tr.selected td {
 /* line 764, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1464939989');
+  background-image: url('../images/progress.gif?1468920640');
 }
 
 /* line 770, ../sass/components/_misc.scss */
@@ -3070,18 +3070,32 @@ a#menu__hamburger {
 }
 /* line 41, ../sass/components/_footer.scss */
 .region--footer .block {
-  padding: 27px 37px 8px 25px;
+  padding: 25px 25px 10px;
   position: relative;
 }
-/* line 48, ../sass/components/_footer.scss */
+@media all and (min-width: 960px) {
+  /* line 41, ../sass/components/_footer.scss */
+  .region--footer .block {
+    padding: 40px 45px 0 0;
+  }
+}
+/* line 49, ../sass/components/_footer.scss */
+.region--footer .col4 .block {
+  padding-right: 0;
+}
+/* line 55, ../sass/components/_footer.scss */
+.region--footer .region--footer-col {
+  color: #fff;
+}
+/* line 57, ../sass/components/_footer.scss */
 .region--footer .region--footer-col .block__title {
   display: block;
   color: white;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
-/* line 57, ../sass/components/_footer.scss */
+/* line 66, ../sass/components/_footer.scss */
 .region--footer .region--footer-col.col3 .labp-twitter-feed {
   max-width: 320px;
 }
@@ -3098,7 +3112,7 @@ a#menu__hamburger {
 .region--footer:after {
   clear: both;
 }
-/* line 72, ../sass/components/_footer.scss */
+/* line 81, ../sass/components/_footer.scss */
 .region--footer .region--footer--col {
   padding-left: 10px;
   padding-right: 10px;
@@ -3109,28 +3123,28 @@ a#menu__hamburger {
   word-wrap: break-word;
 }
 @media all and (min-width: 720px) {
-  /* line 79, ../sass/components/_footer.scss */
+  /* line 88, ../sass/components/_footer.scss */
   .region--footer .col1 {
     float: left;
     width: 25%;
     margin-left: 0%;
     margin-right: -25%;
   }
-  /* line 80, ../sass/components/_footer.scss */
+  /* line 89, ../sass/components/_footer.scss */
   .region--footer .col2 {
     float: left;
     width: 25%;
     margin-left: 25%;
     margin-right: -50%;
   }
-  /* line 81, ../sass/components/_footer.scss */
+  /* line 90, ../sass/components/_footer.scss */
   .region--footer .col3 {
     float: left;
     width: 25%;
     margin-left: 50%;
     margin-right: -75%;
   }
-  /* line 82, ../sass/components/_footer.scss */
+  /* line 91, ../sass/components/_footer.scss */
   .region--footer .col4 {
     float: left;
     width: 25%;
@@ -3142,16 +3156,16 @@ a#menu__hamburger {
 /****************************************
           TWITTER BLOCK OVERRIDES
 *****************************************/
-/* line 93, ../sass/components/_footer.scss */
+/* line 102, ../sass/components/_footer.scss */
 .SandboxRoot.env-bp-550 .timeline-Tweet-text {
   font-size: 14px !important;
 }
 
-/* line 98, ../sass/components/_footer.scss */
-.labp-twitter-feed .block__title {
+/* line 107, ../sass/components/_footer.scss */
+.block-twitter-block .block__title {
   background: url(../images/icon_twitter-white.svg) no-repeat;
-  background-size: 27.7px 22.9px;
-  background-position-x: 140px;
+  background-size: 28px 23px;
+  background-position-x: 130px;
   height: 28px;
   padding-top: 2px;
 }
@@ -3204,6 +3218,9 @@ a#menu__hamburger {
 ***********************************/
 /* line 40, ../sass/components/_footer--sponsors.scss */
 .view-bp-sponsors .view-content {
+  /*  @include zen-grid-container();
+    $zen-grid-width: 100%;
+    $zen-column-count: 7;*/
   /*  @include window_size(desktop) {
       .bp-sponsor {
         width: 13.8%;
@@ -3212,30 +3229,17 @@ a#menu__hamburger {
       }
     }*/
 }
-/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-.view-bp-sponsors .view-content:before, .view-bp-sponsors .view-content:after {
-  content: "";
-  display: table;
-}
-/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-.view-bp-sponsors .view-content:after {
-  clear: both;
-}
 @media all and (min-width: 960px) {
   /* line 46, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor {
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    width: 14.28571%;
-    padding-left: 0;
-    padding-right: 17.14286px;
-    margin-right: -17.14286px;
-    float: left;
+    display: inline-block;
+    width: 102px;
+    margin-right: 35px;
+  }
+  /* line 50, ../sass/components/_footer--sponsors.scss */
+  .view-bp-sponsors .view-content .bp-sponsor:last-child {
+    width: 70px;
+    margin: 0;
   }
 }
 
@@ -4286,7 +4290,7 @@ hr.hero__line--half {
   position: absolute;
   top: 15px;
   right: 0;
-  background-image: url('../images/wizard/icon_context_help.png?1464939989');
+  background-image: url('../images/wizard/icon_context_help.png?1468920640');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4618,7 +4622,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1464939989');
+  background-image: url('../images/wizard/progress_bar.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 14px 14px;
@@ -4688,7 +4692,7 @@ a.wizard__button--selected {
 /* line 92, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4698,7 +4702,7 @@ a.wizard__button--selected {
 /* line 103, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4708,7 +4712,7 @@ a.wizard__button--selected {
 /* line 115, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4783,7 +4787,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1468920640');
 }
 
 /* line 190, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4794,7 +4798,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1468920640');
 }
 
 /* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4805,7 +4809,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1468920640');
 }
 
 /**********/
@@ -4850,7 +4854,7 @@ a.wizard__button--selected {
 /* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1464939989');
+  background-image: url('../images/wizard/icon_close.png?1468920640');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4935,7 +4939,7 @@ a.wizard__arrow-back,
 a.wizard__arrow-down {
   display: block;
   position: relative;
-  background-image: url('../images/wizard/arrow_down.png?1464939989');
+  background-image: url('../images/wizard/arrow_down.png?1468920640');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position: 0 50%;
@@ -4973,12 +4977,12 @@ a.wizard__arrow-down {
 
 /* line 74, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1464939989');
+  background-image: url('../images/wizard/arrow_up.png?1468920640');
 }
 
 /* line 78, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1464939989');
+  background-image: url('../images/wizard/arrow_down.png?1468920640');
 }
 @media all and (max-width: 719px) {
   /* line 81, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4995,7 +4999,7 @@ a.wizard__arrow-down {
 @media all and (max-width: 719px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled.png?1466763048');
+    background-image: url('../images/wizard/arrow_down_enabled.png?1468920640');
   }
   /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled::before {
@@ -5005,7 +5009,7 @@ a.wizard__arrow-down {
 @media all and (min-width: 720px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
+    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1468920640');
   }
 }
 @media all and (min-width: 720px) {
@@ -5019,7 +5023,7 @@ a.wizard__arrow-down {
 
 /* line 111, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1468920640');
   background-position: 100% center;
   float: right;
   text-align: right;
@@ -5041,7 +5045,7 @@ a.wizard__arrow-back {
 @media all and (max-width: 719px) {
   /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-back.enabled {
-    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466763048');
+    background-image: url('../images/wizard/arrow_left_enabled_help.png?1468920640');
   }
 }
 
@@ -5175,7 +5179,7 @@ a.wizard__arrow-down.enabled.section {
   top: 0;
   height: 20px;
   width: 20px;
-  background-image: url('../images/wizard/icon_info.png?1464939989');
+  background-image: url('../images/wizard/icon_info.png?1468920640');
   background-size: 100%;
 }
 
