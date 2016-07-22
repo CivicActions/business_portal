@@ -137,4 +137,50 @@
       }
     }
   }
+  
+  #block-sbp-search-sbp-search-icon, 
+  #block-sbp-translation-sbp-translation-icon {
+    display: inline-block;
+    padding: 8px 0;
+    img {
+      cursor: pointer;
+    }
+  }
+  #block-sbp-search-sbp-search-icon {
+    margin-right: 15px;
+  }
+
+  #block-sbp-translation-sbp-translation-form,
+  #block-sbp-search-sbp-search-form {
+    display: none;
+    position: absolute;
+    margin: 0; padding: 0;
+    top: 50px; right: 0;
+    background: #fff;
+    padding: 0;
+  }
+  #block-sbp-search-sbp-search-form {
+    width: 685px;
+    max-width: 685px;
+    .sbp-search-intro-text {
+      display: none;
+    }
+    .form-item-search {
+      margin: 0;
+    }
+    #edit-search {
+      background: transparent;
+      margin: 0; 
+      padding: 14px 19px 13px;
+      line-height: 28px;
+      border: none;
+      width: 100%;
+    }
+  }
+
+  #block-sbp-translation-sbp-translation-form {
+    width: 562px;
+    max-width: 562px;
+    padding: 14px 19px 13px;
+  }
 }

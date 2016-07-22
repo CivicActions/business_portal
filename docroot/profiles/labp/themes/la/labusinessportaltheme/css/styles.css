@@ -2518,7 +2518,7 @@ tr.selected td {
 /* line 764, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1464939989');
+  background-image: url('../images/progress.gif?1468920640');
 }
 
 /* line 770, ../sass/components/_misc.scss */
@@ -2693,6 +2693,66 @@ body.not-logged-in.page-user #main {
   body.section-resources #header .menu,
   body.section-content #header .menu {
     margin-left: 28px;
+  }
+
+  /* line 141, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-icon,
+  #block-sbp-translation-sbp-translation-icon {
+    display: inline-block;
+    padding: 8px 0;
+  }
+  /* line 145, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-icon img,
+  #block-sbp-translation-sbp-translation-icon img {
+    cursor: pointer;
+  }
+
+  /* line 149, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-icon {
+    margin-right: 15px;
+  }
+
+  /* line 153, ../sass/components/_header.scss */
+  #block-sbp-translation-sbp-translation-form,
+  #block-sbp-search-sbp-search-form {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    padding: 0;
+  }
+
+  /* line 162, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-form {
+    width: 685px;
+    max-width: 685px;
+  }
+  /* line 165, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-form .sbp-search-intro-text {
+    display: none;
+  }
+  /* line 168, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-form .form-item-search {
+    margin: 0;
+  }
+  /* line 171, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-form #edit-search {
+    background: transparent;
+    margin: 0;
+    padding: 14px 19px 13px;
+    line-height: 28px;
+    border: none;
+    width: 100%;
+  }
+
+  /* line 181, ../sass/components/_header.scss */
+  #block-sbp-translation-sbp-translation-form {
+    width: 562px;
+    max-width: 562px;
+    padding: 14px 19px 13px;
   }
 }
 /**
@@ -4286,7 +4346,7 @@ hr.hero__line--half {
   position: absolute;
   top: 15px;
   right: 0;
-  background-image: url('../images/wizard/icon_context_help.png?1464939989');
+  background-image: url('../images/wizard/icon_context_help.png?1468920640');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4618,7 +4678,7 @@ a.wizard__button--selected {
   *zoom: 1;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1464939989');
+  background-image: url('../images/wizard/progress_bar.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 14px 14px;
@@ -4688,7 +4748,7 @@ a.wizard__button--selected {
 /* line 92, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4698,7 +4758,7 @@ a.wizard__button--selected {
 /* line 103, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4708,7 +4768,7 @@ a.wizard__button--selected {
 /* line 115, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1468920640');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4783,7 +4843,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1468920640');
 }
 
 /* line 190, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4794,7 +4854,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1468920640');
 }
 
 /* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4805,7 +4865,7 @@ a.wizard__button--selected {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1464939989');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1468920640');
 }
 
 /**********/
@@ -4850,7 +4910,7 @@ a.wizard__button--selected {
 /* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1464939989');
+  background-image: url('../images/wizard/icon_close.png?1468920640');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -4935,7 +4995,7 @@ a.wizard__arrow-back,
 a.wizard__arrow-down {
   display: block;
   position: relative;
-  background-image: url('../images/wizard/arrow_down.png?1464939989');
+  background-image: url('../images/wizard/arrow_down.png?1468920640');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position: 0 50%;
@@ -4973,12 +5033,12 @@ a.wizard__arrow-down {
 
 /* line 74, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1464939989');
+  background-image: url('../images/wizard/arrow_up.png?1468920640');
 }
 
 /* line 78, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1464939989');
+  background-image: url('../images/wizard/arrow_down.png?1468920640');
 }
 @media all and (max-width: 719px) {
   /* line 81, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -4995,7 +5055,7 @@ a.wizard__arrow-down {
 @media all and (max-width: 719px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled.png?1466763048');
+    background-image: url('../images/wizard/arrow_down_enabled.png?1468920640');
   }
   /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled::before {
@@ -5005,7 +5065,7 @@ a.wizard__arrow-down {
 @media all and (min-width: 720px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1464939989');
+    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1468920640');
   }
 }
 @media all and (min-width: 720px) {
@@ -5019,7 +5079,7 @@ a.wizard__arrow-down {
 
 /* line 111, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1464939989');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1468920640');
   background-position: 100% center;
   float: right;
   text-align: right;
@@ -5041,7 +5101,7 @@ a.wizard__arrow-back {
 @media all and (max-width: 719px) {
   /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-back.enabled {
-    background-image: url('../images/wizard/arrow_left_enabled_help.png?1466763048');
+    background-image: url('../images/wizard/arrow_left_enabled_help.png?1468920640');
   }
 }
 
@@ -5175,7 +5235,7 @@ a.wizard__arrow-down.enabled.section {
   top: 0;
   height: 20px;
   width: 20px;
-  background-image: url('../images/wizard/icon_info.png?1464939989');
+  background-image: url('../images/wizard/icon_info.png?1468920640');
   background-size: 100%;
 }
 
