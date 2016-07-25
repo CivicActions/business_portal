@@ -3152,18 +3152,33 @@ a#menu__hamburger {
 }
 /* line 41, ../sass/components/_footer.scss */
 .region--footer .block {
-  padding: 27px 37px 8px 25px;
+  padding: 25px 25px 10px;
   position: relative;
 }
-/* line 48, ../sass/components/_footer.scss */
+@media all and (min-width: 960px) {
+  /* line 41, ../sass/components/_footer.scss */
+  .region--footer .block {
+    padding: 40px 45px 0 0;
+  }
+}
+/* line 49, ../sass/components/_footer.scss */
+.region--footer .col4 .block {
+  padding-right: 0;
+}
+/* line 55, ../sass/components/_footer.scss */
+.region--footer .region--footer-col {
+  color: #fff;
+}
+/* line 57, ../sass/components/_footer.scss */
 .region--footer .region--footer-col .block__title {
+  font-family: Roboto, sans-serif;
   display: block;
   color: white;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
-/* line 57, ../sass/components/_footer.scss */
+/* line 67, ../sass/components/_footer.scss */
 .region--footer .region--footer-col.col3 .labp-twitter-feed {
   max-width: 320px;
 }
@@ -3180,7 +3195,7 @@ a#menu__hamburger {
 .region--footer:after {
   clear: both;
 }
-/* line 72, ../sass/components/_footer.scss */
+/* line 82, ../sass/components/_footer.scss */
 .region--footer .region--footer--col {
   padding-left: 10px;
   padding-right: 10px;
@@ -3191,28 +3206,28 @@ a#menu__hamburger {
   word-wrap: break-word;
 }
 @media all and (min-width: 720px) {
-  /* line 79, ../sass/components/_footer.scss */
+  /* line 86, ../sass/components/_footer.scss */
   .region--footer .col1 {
     float: left;
     width: 25%;
     margin-left: 0%;
     margin-right: -25%;
   }
-  /* line 80, ../sass/components/_footer.scss */
+  /* line 87, ../sass/components/_footer.scss */
   .region--footer .col2 {
     float: left;
     width: 25%;
     margin-left: 25%;
     margin-right: -50%;
   }
-  /* line 81, ../sass/components/_footer.scss */
+  /* line 88, ../sass/components/_footer.scss */
   .region--footer .col3 {
     float: left;
     width: 25%;
     margin-left: 50%;
     margin-right: -75%;
   }
-  /* line 82, ../sass/components/_footer.scss */
+  /* line 89, ../sass/components/_footer.scss */
   .region--footer .col4 {
     float: left;
     width: 25%;
@@ -3220,20 +3235,26 @@ a#menu__hamburger {
     margin-right: -100%;
   }
 }
+@media all and (min-width: 960px) {
+  /* line 77, ../sass/components/_footer.scss */
+  .region--footer {
+    padding-bottom: 40px;
+  }
+}
 
 /****************************************
           TWITTER BLOCK OVERRIDES
 *****************************************/
-/* line 93, ../sass/components/_footer.scss */
+/* line 103, ../sass/components/_footer.scss */
 .SandboxRoot.env-bp-550 .timeline-Tweet-text {
   font-size: 14px !important;
 }
 
-/* line 98, ../sass/components/_footer.scss */
-.labp-twitter-feed .block__title {
+/* line 108, ../sass/components/_footer.scss */
+.block-twitter-block .block__title {
   background: url(../images/icon_twitter-white.svg) no-repeat;
-  background-size: 27.7px 22.9px;
-  background-position-x: 140px;
+  background-size: 28px 23px;
+  background-position-x: 130px;
   height: 28px;
   padding-top: 2px;
 }
@@ -3269,10 +3290,12 @@ a#menu__hamburger {
   /* line 21, ../sass/components/_footer--sponsors.scss */
   .sponsors__logo {
     display: block;
+    max-width: 70px;
+    height: auto;
   }
 }
 
-/* line 28, ../sass/components/_footer--sponsors.scss */
+/* line 30, ../sass/components/_footer--sponsors.scss */
 .sponsors__title {
   margin-bottom: 15px;
   line-height: 1.25;
@@ -3284,8 +3307,11 @@ a#menu__hamburger {
 /**********************************
          LAYOUT
 ***********************************/
-/* line 40, ../sass/components/_footer--sponsors.scss */
+/* line 42, ../sass/components/_footer--sponsors.scss */
 .view-bp-sponsors .view-content {
+  /*  @include zen-grid-container();
+    $zen-grid-width: 100%;
+    $zen-column-count: 7;*/
   /*  @include window_size(desktop) {
       .bp-sponsor {
         width: 13.8%;
@@ -3294,30 +3320,26 @@ a#menu__hamburger {
       }
     }*/
 }
-/* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-.view-bp-sponsors .view-content:before, .view-bp-sponsors .view-content:after {
-  content: "";
-  display: table;
-}
-/* line 50, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-.view-bp-sponsors .view-content:after {
-  clear: both;
-}
 @media all and (min-width: 960px) {
-  /* line 46, ../sass/components/_footer--sponsors.scss */
+  /* line 48, ../sass/components/_footer--sponsors.scss */
+  .view-bp-sponsors .view-content::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0 !important;
+    clear: both;
+  }
+  /* line 55, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor {
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    width: 14.28571%;
-    padding-left: 0;
-    padding-right: 17.14286px;
-    margin-right: -17.14286px;
+    display: block;
     float: left;
+    width: 102px;
+    margin-right: 35px;
+  }
+  /* line 60, ../sass/components/_footer--sponsors.scss */
+  .view-bp-sponsors .view-content .bp-sponsor:last-child {
+    /*width: 70px;*/
+    margin: 0;
   }
 }
 
@@ -4106,22 +4128,26 @@ hr.hero__line--half {
 .region--bottom .region-bottom {
   display: inline-block;
 }
-/* line 74, ../sass/components/_bottom-region.scss */
+/* line 70, ../sass/components/_bottom-region.scss */
+.region--bottom .footer__credits {
+  margin-top: 8px;
+}
+/* line 76, ../sass/components/_bottom-region.scss */
 .region--bottom ul {
   padding: 0 2%;
 }
-/* line 75, ../sass/components/_bottom-region.scss */
+/* line 77, ../sass/components/_bottom-region.scss */
 .region--bottom li {
   display: inline-block;
   padding: 1em;
   list-style: none;
 }
-/* line 82, ../sass/components/_bottom-region.scss */
+/* line 84, ../sass/components/_bottom-region.scss */
 .region--bottom a {
   color: #7ac7f6;
   font-weight: bold;
 }
-/* line 87, ../sass/components/_bottom-region.scss */
+/* line 89, ../sass/components/_bottom-region.scss */
 .region--bottom ul.menu,
 .region--bottom ol.menu,
 .region--bottom menu.menu {
