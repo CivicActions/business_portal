@@ -313,5 +313,37 @@ Drupal.behaviors.rotator = {
       }
     });
   });
+  
+  /**
+   * Code to make search and translation icon clickable to show/hide search form
+   * or google translation widget.
+   */
+  $(document).ready(function() {
+    $('#block-sbp-search-sbp-search-icon').click(function(e) {
+      e.preventDefault();
+      if($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('#block-sbp-search-sbp-search-form').stop().hide();
+      } else {
+        $(this).addClass('active');
+        $('#block-sbp-translation-sbp-translation-icon').removeClass('active');
+        $('#block-sbp-search-sbp-search-form').stop().show();
+        $('#block-sbp-translation-sbp-translation-form').stop().hide();
+      }
+      
+    });
+    $('#block-sbp-translation-sbp-translation-icon').click(function(e) {
+      e.preventDefault();
+      if($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('#block-sbp-translation-sbp-translation-form').stop().hide();
+      } else {
+        $(this).addClass('active');
+        $('#block-sbp-search-sbp-search-icon').removeClass('active');
+        $('#block-sbp-translation-sbp-translation-form').stop().show();
+        $('#block-sbp-search-sbp-search-form').stop().hide();
+      }
+    }) ;
+  });
 
 })(jQuery, Drupal, this, this.document);
