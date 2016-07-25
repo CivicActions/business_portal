@@ -55,6 +55,7 @@
   .region--footer-col {
     color: #fff;
     .block__title {
+      font-family: Roboto, sans-serif;
       display: block;
       color: $white;
       font-size: 16px;
@@ -74,21 +75,21 @@
           FOOTER 4-COLS LAYOUT
 *****************************************/
 .region--footer {
-    $zen-column-count: 4;
-    $zen-grid-width: 100%;
-    @include zen-grid-container();
+  $zen-column-count: 4;
+  $zen-grid-width: 100%;
+  @include zen-grid-container();
 
-    .region--footer--col {
-      @include zen-grid-item-base();
-    }
-
-
-
+  .region--footer--col {
+    @include zen-grid-item-base();
+  }
   @include window_size(tab-wide-up) {
     .col1 { @include zen-grid-item (1, 1); }
     .col2 { @include zen-grid-item (1, 2); }
     .col3 { @include zen-grid-item (1, 3); }
     .col4 { @include zen-grid-item (1, 4); }
+  }
+  @include window_size(desktop) {
+    padding-bottom: 40px;
   }
 
 }
