@@ -2699,20 +2699,42 @@ body.not-logged-in.page-user #main {
   #block-sbp-search-sbp-search-icon,
   #block-sbp-translation-sbp-translation-icon {
     display: inline-block;
-    padding: 8px 0;
-  }
-  /* line 145, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-icon img,
-  #block-sbp-translation-sbp-translation-icon img {
+    position: absolute;
+    top: 8px;
     cursor: pointer;
   }
 
-  /* line 149, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-icon {
-    margin-right: 15px;
+  /* line 151, ../sass/components/_header.scss */
+  #block-sbp-translation-sbp-translation-icon {
+    right: 0;
+    width: 31px;
+    height: 28px;
+  }
+  /* line 155, ../sass/components/_header.scss */
+  #block-sbp-translation-sbp-translation-icon.active {
+    background: url(../images/icon-google-translate-blue.png);
+  }
+  /* line 157, ../sass/components/_header.scss */
+  #block-sbp-translation-sbp-translation-icon.active img {
+    visibility: hidden;
   }
 
-  /* line 153, ../sass/components/_header.scss */
+  /* line 162, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-icon {
+    right: 50px;
+    width: 25px;
+    height: 25px;
+  }
+  /* line 166, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-icon.active {
+    background: url(../images/icon-search-blue.png);
+  }
+  /* line 168, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-icon.active img {
+    visibility: hidden;
+  }
+
+  /* line 174, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form,
   #block-sbp-search-sbp-search-form {
     display: none;
@@ -2725,20 +2747,20 @@ body.not-logged-in.page-user #main {
     padding: 0;
   }
 
-  /* line 162, ../sass/components/_header.scss */
+  /* line 183, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-form {
     width: 685px;
     max-width: 685px;
   }
-  /* line 165, ../sass/components/_header.scss */
+  /* line 186, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-form .sbp-search-intro-text {
     display: none;
   }
-  /* line 168, ../sass/components/_header.scss */
+  /* line 189, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-form .form-item-search {
     margin: 0;
   }
-  /* line 171, ../sass/components/_header.scss */
+  /* line 192, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-form #edit-search {
     background: transparent;
     margin: 0;
@@ -2748,7 +2770,7 @@ body.not-logged-in.page-user #main {
     width: 100%;
   }
 
-  /* line 181, ../sass/components/_header.scss */
+  /* line 202, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form {
     width: 562px;
     max-width: 562px;
@@ -2762,7 +2784,7 @@ body.not-logged-in.page-user #main {
   /* line 7, ../sass/components/_menu__main.scss */
   #header .menu {
     float: left;
-    margin-left: 66px;
+    margin-left: 40px;
     padding: 0;
     height: 55px;
     position: relative;

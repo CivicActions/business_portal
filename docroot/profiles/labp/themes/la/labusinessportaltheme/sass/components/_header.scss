@@ -141,13 +141,34 @@
   #block-sbp-search-sbp-search-icon, 
   #block-sbp-translation-sbp-translation-icon {
     display: inline-block;
-    padding: 8px 0;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
     img {
-      cursor: pointer;
+      
+    }
+  }
+  #block-sbp-translation-sbp-translation-icon {
+    right: 0;
+    width: 31px;
+    height: 28px;
+    &.active {
+      background: url(../images/icon-google-translate-blue.png);
+      img {
+        visibility: hidden;
+      }
     }
   }
   #block-sbp-search-sbp-search-icon {
-    margin-right: 15px;
+    right: 50px;
+    width: 25px;
+    height: 25px;
+    &.active {
+      background: url(../images/icon-search-blue.png);
+      img {
+        visibility: hidden;
+      }
+    }
   }
 
   #block-sbp-translation-sbp-translation-form,
