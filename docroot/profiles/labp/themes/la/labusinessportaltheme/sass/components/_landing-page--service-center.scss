@@ -18,9 +18,14 @@
 
 .view-id-labp_service_center {
   .view-content {
+    color: #666;
     h3 {
       text-transform: uppercase;
       margin: 12px 0;
+      color: $dark_blue;
+    }
+    .views-field-title {
+      color: $dark_blue;
     }
   }
   .views-label {
@@ -31,6 +36,7 @@
     display: block;
     font-size: 1.143em;
     line-height: 1.35em;
+    color: $dark_blue;
   }
   .field-content {
     line-height: 1.25em;
