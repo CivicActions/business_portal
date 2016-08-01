@@ -326,6 +326,7 @@ Drupal.behaviors.rotator = {
         $('#header, .meanmenu-reveal').removeClass('dark-blue-background');
         $('#block-sbp-search-sbp-search-form').stop().hide();
       } else {
+        $(this).addClass('active');
         $('.meanclose').trigger('click');
         $('#header, .meanmenu-reveal').addClass('dark-blue-background');
         $('#block-sbp-translation-sbp-translation-icon').removeClass('active');
