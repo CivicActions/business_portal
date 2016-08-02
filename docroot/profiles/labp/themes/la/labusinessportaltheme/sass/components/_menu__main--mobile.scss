@@ -5,10 +5,9 @@ a#menu__hamburger {
 }
 
 @media (min-width: 0px) and (max-width: 720px) {
-
   nav.mean-nav {
     height: auto;
-    background-color: $medium-blue;
+    background-color: #41ade8;
     overflow: visible;
     margin: 0;
     position: fixed;
@@ -22,13 +21,12 @@ a#menu__hamburger {
       display: block;
       float: none;
       > .menu__item {
-        background: 0;
+        background: transparent;
         list-style-image: none;
         list-style-type: none;
-        width: 90%;
-        margin: 0;
-        margin-left: 5%;
-        border-bottom: 1px solid $medium-blue-dim;
+        border-bottom: 2px solid #2e79a3;
+        padding-left: 26px;
+        position: relative;
         // Add dropdown icon to menu items with nested links
         &.is-expanded {
           background: none;
@@ -42,7 +40,7 @@ a#menu__hamburger {
           display: block;
           padding: 16px 0;
           font-size: 16px;
-          margin-left: 26px;
+          /*margin-left: 26px;*/
         }
       }
 
@@ -84,8 +82,7 @@ a#menu__hamburger {
 
     // Toggle Menu
     a.meanmenu-reveal {
-      width: 22px;
-      height: 22px;
+      width: 35px; height: 47px;
       padding: 13px 13px 12px 0;
       position: absolute;
       top: 0;
@@ -102,6 +99,9 @@ a#menu__hamburger {
       font-family: $font-body;
       font-weight: 700;
       background: rgba(0,0,0,.25);
+      &.meanclose {
+        background: #2e79a3;
+      }
     }
 
     // CSS Hamburger icon
@@ -119,11 +119,10 @@ a#menu__hamburger {
       margin-top: 47px;
 
       ul {
-        padding: 0;
+        padding: 0 25px;
         margin: 0;
         width: 100%;
         list-style-type: none;
-
         li {
           position: relative;
           float: left;
@@ -132,56 +131,46 @@ a#menu__hamburger {
           a {
             display: block;
             float: left;
-            padding: 1em 5%;
+            padding: 1em 0;
             margin: 0;
             text-align: left;
             text-decoration: none;
             color: #fff;
 
             &.mean-expand {
-              margin-top: 1px;
-              width: 26px;
-              height: 32px;
-              padding: 12px !important;
-              text-align: center;
+              width: 16px;
+              height: 16px;
+              padding: 0; margin: 0;
               position: absolute;
-              left: 0;
-              top: 0;
+              left: 0; top: 16px;
               z-index: 2;
               font-weight: 700;
               border: none !important;
-              background: url(../images/icons/icon-arrow-right-small.svg) no-repeat left 42%;
+              background: url(../images/icon-arrow-right-small.svg) no-repeat center center;
               background-size: 8px 16px;
-              display: inline-block;
               text-indent: 9999px;
               outline: none;
             }
 
             &.mean-expand.mean-clicked {
-              background: url(../images/icons/icon-arrow-bottom-small.svg) no-repeat left 42%;
-
+              background-image: url(../images/icon-arrow-bottom-small.svg);
+              background-size: 16px 8px;
             }
           }
         }
       }
 
-
       .block {
         margin-bottom: 0;
       }
     }
-
-
-
   } //End mean-container
 
 
-
   .mean-container .mean-nav ul li li a {
-    width: 80%;
-    padding: 1em 10%;
     text-shadow: none !important;
     visibility: visible;
+    color: #163d53;
   }
 
   .mean-container .mean-nav ul li.mean-last a {
@@ -210,15 +199,12 @@ a#menu__hamburger {
 
   /* Fix for box sizing on Foundation Framework etc. */
   .mean-container .mean-bar, .mean-container .mean-bar * {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .mean-remove {
     display: none !important;
   }
 }
-
-
-

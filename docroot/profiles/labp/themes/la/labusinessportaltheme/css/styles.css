@@ -2569,20 +2569,23 @@ body.not-logged-in.page-user #main {
 
 /* line 32, ../sass/components/_header.scss */
 .header--wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   max-width: 960px;
+  padding: 0 15px 0 25px;
+  box-sizing: border-box;
 }
-@media all and (min-width: 960px) {
+@media all and (min-width: 720px) {
   /* line 32, ../sass/components/_header.scss */
   .header--wrapper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
 /* Wrapping link for logo. */
-/* line 41, ../sass/components/_header.scss */
+/* line 44, ../sass/components/_header.scss */
 .header__logo {
   display: inline-block;
   vertical-align: middle;
@@ -2593,7 +2596,7 @@ body.not-logged-in.page-user #main {
   margin: 0;
 }
 @media all and (min-width: 720px) {
-  /* line 41, ../sass/components/_header.scss */
+  /* line 44, ../sass/components/_header.scss */
   .header__logo {
     width: 213px;
     height: 39px;
@@ -2601,19 +2604,19 @@ body.not-logged-in.page-user #main {
   }
 }
 
-/* line 57, ../sass/components/_header.scss */
+/* line 60, ../sass/components/_header.scss */
 .front #header a.header__logo.icon-egg {
   color: #0d84e9;
 }
 
 /* Logo image. */
-/* line 62, ../sass/components/_header.scss */
+/* line 65, ../sass/components/_header.scss */
 .header__logo-image {
   vertical-align: middle;
 }
 
 /* Wrapper for website name and slogan. */
-/* line 67, ../sass/components/_header.scss */
+/* line 70, ../sass/components/_header.scss */
 .header__name-and-slogan {
   display: inline-block;
   vertical-align: middle;
@@ -2622,159 +2625,211 @@ body.not-logged-in.page-user #main {
 }
 
 /* The name of the website. */
-/* line 75, ../sass/components/_header.scss */
+/* line 78, ../sass/components/_header.scss */
 .header__site-name {
   margin: 0;
   font-size: 12px;
 }
 
 /* The link around the name of the website. */
-/* line 82, ../sass/components/_header.scss */
+/* line 85, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
   text-decoration: none;
 }
-/* line 87, ../sass/components/_header.scss */
+/* line 90, ../sass/components/_header.scss */
 .header__site-link:focus, .header__site-link:hover {
   text-decoration: underline;
 }
 
 /* The slogan (or tagline) of a website. */
-/* line 94, ../sass/components/_header.scss */
+/* line 97, ../sass/components/_header.scss */
 .header__site-slogan {
   margin: 0;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 99, ../sass/components/_header.scss */
+/* line 102, ../sass/components/_header.scss */
 .header__secondary-menu {
   float: right;
 }
 
 /* Wrapper for any blocks placed in the header region. */
-/* line 104, ../sass/components/_header.scss */
+/* line 107, ../sass/components/_header.scss */
 .header__region {
   /* Clear the logo. */
   position: relative;
 }
 
-/* line 110, ../sass/components/_header.scss */
+/* line 113, ../sass/components/_header.scss */
 .block__title {
   display: none;
 }
 
 /* Special styles to line header elements up in the resources section */
 @media (min-width: 960px) {
-  /* line 119, ../sass/components/_header.scss */
+  /* line 122, ../sass/components/_header.scss */
   body.section-resources #header .header--wrapper,
   body.section-content #header .header--wrapper {
     width: auto;
     margin: 0;
     max-width: none;
   }
-  /* line 124, ../sass/components/_header.scss */
+  /* line 127, ../sass/components/_header.scss */
   body.section-resources #header .header__logo,
   body.section-content #header .header__logo {
     width: 30%;
   }
-  /* line 127, ../sass/components/_header.scss */
+  /* line 130, ../sass/components/_header.scss */
   body.section-resources #header .header__logo-image,
   body.section-content #header .header__logo-image {
     height: 38px;
     float: right;
     padding-right: 43px;
   }
-  /* line 132, ../sass/components/_header.scss */
+  /* line 135, ../sass/components/_header.scss */
   body.section-resources #header .header__region,
   body.section-content #header .header__region {
     width: 70%;
+    margin-left: 30%;
+    max-width: 710px;
   }
-  /* line 135, ../sass/components/_header.scss */
+  /* line 140, ../sass/components/_header.scss */
   body.section-resources #header .menu,
   body.section-content #header .menu {
     margin-left: 28px;
   }
+}
+/* line 148, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-icon,
+#block-sbp-translation-sbp-translation-icon {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  cursor: pointer;
+}
 
-  /* line 141, ../sass/components/_header.scss */
+/* line 155, ../sass/components/_header.scss */
+#block-sbp-translation-sbp-translation-icon {
+  right: 0;
+  width: 31px;
+  height: 28px;
+}
+/* line 159, ../sass/components/_header.scss */
+#block-sbp-translation-sbp-translation-icon.active {
+  background: url(../images/icon-google-translate-blue.png);
+}
+/* line 161, ../sass/components/_header.scss */
+#block-sbp-translation-sbp-translation-icon.active img {
+  visibility: hidden;
+}
+
+/* line 166, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-icon {
+  right: 50px;
+  width: 25px;
+  height: 25px;
+}
+/* line 170, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-icon.active {
+  background: url(../images/icon-search-blue.png);
+}
+/* line 172, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-icon.active img {
+  visibility: hidden;
+}
+
+/* line 178, ../sass/components/_header.scss */
+#block-sbp-translation-sbp-translation-form,
+#block-sbp-search-sbp-search-form {
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50px;
+  right: 0;
+  background: #fff;
+  padding: 0;
+}
+
+/* line 187, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-form {
+  width: 100%;
+  max-width: 720px;
+}
+/* line 190, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-form .sbp-search-intro-text {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 14px 19px 13px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 28px;
+  color: #9b9b9b;
+}
+/* line 201, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-form .form-item-search {
+  margin: 0;
+}
+/* line 204, ../sass/components/_header.scss */
+#block-sbp-search-sbp-search-form #edit-search {
+  background: transparent;
+  margin: 0;
+  padding: 14px 19px 13px;
+  line-height: 28px;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+/* line 215, ../sass/components/_header.scss */
+#block-sbp-translation-sbp-translation-form {
+  width: 562px;
+  max-width: 562px;
+  padding: 14px 19px 13px;
+}
+
+@media (min-width: 0px) and (max-width: 720px) {
+  /* line 222, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon,
   #block-sbp-translation-sbp-translation-icon {
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    cursor: pointer;
+    top: 5px;
   }
 
-  /* line 151, ../sass/components/_header.scss */
-  #block-sbp-translation-sbp-translation-icon {
-    right: 0;
-    width: 31px;
-    height: 28px;
-  }
-  /* line 155, ../sass/components/_header.scss */
-  #block-sbp-translation-sbp-translation-icon.active {
-    background: url(../images/icon-google-translate-blue.png);
-  }
-  /* line 157, ../sass/components/_header.scss */
-  #block-sbp-translation-sbp-translation-icon.active img {
-    visibility: hidden;
-  }
-
-  /* line 162, ../sass/components/_header.scss */
+  /* line 226, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon {
-    right: 50px;
-    width: 25px;
-    height: 25px;
-  }
-  /* line 166, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-icon.active {
-    background: url(../images/icon-search-blue.png);
-  }
-  /* line 168, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-icon.active img {
-    visibility: hidden;
+    right: 45px;
   }
 
-  /* line 174, ../sass/components/_header.scss */
+  /* line 230, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form,
   #block-sbp-search-sbp-search-form {
-    display: none;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    top: 50px;
-    right: 0;
-    background: #fff;
-    padding: 0;
-  }
-
-  /* line 183, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-form {
-    width: 685px;
-    max-width: 685px;
-  }
-  /* line 186, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-form .sbp-search-intro-text {
-    display: none;
-  }
-  /* line 189, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-form .form-item-search {
-    margin: 0;
-  }
-  /* line 192, ../sass/components/_header.scss */
-  #block-sbp-search-sbp-search-form #edit-search {
-    background: transparent;
-    margin: 0;
-    padding: 14px 19px 13px;
-    line-height: 28px;
-    border: none;
+    position: fixed;
+    top: 94px;
+    left: 0;
     width: 100%;
+    max-width: 100%;
   }
 
-  /* line 202, ../sass/components/_header.scss */
+  /* line 238, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form {
-    width: 562px;
-    max-width: 562px;
     padding: 14px 19px 13px;
+  }
+}
+@media (min-width: 0px) and (max-width: 720px) {
+  /* line 244, ../sass/components/_header.scss */
+  #header.dark-blue-bg {
+    background: #2e79a3;
+  }
+
+  /* line 247, ../sass/components/_header.scss */
+  #header.dark-blue-background,
+  .meanmenu-reveal.dark-blue-background {
+    background: #2e79a3 !important;
   }
 }
 /**
@@ -2890,17 +2945,17 @@ a#menu__hamburger {
 }
 
 @media (min-width: 0px) and (max-width: 720px) {
-  /* line 9, ../sass/components/_menu__main--mobile.scss */
+  /* line 8, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav {
     height: auto;
-    background-color: #47aee6;
+    background-color: #41ade8;
     overflow: visible;
     margin: 0;
     position: fixed;
     top: 47px;
     width: 100%;
   }
-  /* line 17, ../sass/components/_menu__main--mobile.scss */
+  /* line 16, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu {
     height: auto;
     margin: 0 auto;
@@ -2909,43 +2964,42 @@ a#menu__hamburger {
     display: block;
     float: none;
   }
-  /* line 24, ../sass/components/_menu__main--mobile.scss */
+  /* line 23, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu > .menu__item {
-    background: 0;
+    background: transparent;
     list-style-image: none;
     list-style-type: none;
-    width: 90%;
-    margin: 0;
-    margin-left: 5%;
-    border-bottom: 1px solid #3582ac;
+    border-bottom: 2px solid #2e79a3;
+    padding-left: 26px;
+    position: relative;
   }
-  /* line 33, ../sass/components/_menu__main--mobile.scss */
+  /* line 31, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu > .menu__item.is-expanded {
     background: none;
   }
-  /* line 36, ../sass/components/_menu__main--mobile.scss */
+  /* line 34, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu > .menu__item.last {
     border-bottom-width: 0;
   }
-  /* line 39, ../sass/components/_menu__main--mobile.scss */
+  /* line 37, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu > .menu__item a.menu__link {
     margin: 0;
     line-height: 1.25;
     display: block;
     padding: 16px 0;
     font-size: 16px;
-    margin-left: 26px;
+    /*margin-left: 26px;*/
   }
-  /* line 50, ../sass/components/_menu__main--mobile.scss */
+  /* line 48, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu .menu {
     display: none;
     padding-left: 0 !important;
   }
-  /* line 53, ../sass/components/_menu__main--mobile.scss */
+  /* line 51, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu .menu .menu__item {
     list-style: none;
   }
-  /* line 55, ../sass/components/_menu__main--mobile.scss */
+  /* line 53, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav > .menu .menu .menu__item a.menu__link {
     color: #0f2940;
     padding: 0 0 15px;
@@ -2957,12 +3011,12 @@ a#menu__hamburger {
             MeanMenu 2.0.7 Jquery Mobile Menu styles
   ===========================================================*/
   /* hide the link until viewport size is reached */
-  /* line 71, ../sass/components/_menu__main--mobile.scss */
+  /* line 69, ../sass/components/_menu__main--mobile.scss */
   a.meanmenu-reveal {
     display: none;
   }
 
-  /* line 76, ../sass/components/_menu__main--mobile.scss */
+  /* line 74, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-bar {
     float: left;
     width: 100%;
@@ -2971,10 +3025,10 @@ a#menu__hamburger {
     height: 47px;
     z-index: 4;
   }
-  /* line 86, ../sass/components/_menu__main--mobile.scss */
+  /* line 84, ../sass/components/_menu__main--mobile.scss */
   .mean-container a.meanmenu-reveal {
-    width: 22px;
-    height: 22px;
+    width: 35px;
+    height: 47px;
     padding: 13px 13px 12px 0;
     position: absolute;
     top: 0;
@@ -2992,6 +3046,10 @@ a#menu__hamburger {
     font-weight: 700;
     background: rgba(0, 0, 0, 0.25);
   }
+  /* line 102, ../sass/components/_menu__main--mobile.scss */
+  .mean-container a.meanmenu-reveal.meanclose {
+    background: #2e79a3;
+  }
   /* line 108, ../sass/components/_menu__main--mobile.scss */
   .mean-container a.meanmenu-reveal span {
     display: block;
@@ -3007,75 +3065,73 @@ a#menu__hamburger {
   }
   /* line 121, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul {
-    padding: 0;
+    padding: 0 25px;
     margin: 0;
     width: 100%;
     list-style-type: none;
   }
-  /* line 127, ../sass/components/_menu__main--mobile.scss */
+  /* line 126, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li {
     position: relative;
     float: left;
     width: 100%;
   }
-  /* line 132, ../sass/components/_menu__main--mobile.scss */
+  /* line 131, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li a {
     display: block;
     float: left;
-    padding: 1em 5%;
+    padding: 1em 0;
     margin: 0;
     text-align: left;
     text-decoration: none;
     color: #fff;
   }
-  /* line 141, ../sass/components/_menu__main--mobile.scss */
+  /* line 140, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li a.mean-expand {
-    margin-top: 1px;
-    width: 26px;
-    height: 32px;
-    padding: 12px !important;
-    text-align: center;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 16px;
     z-index: 2;
     font-weight: 700;
     border: none !important;
-    background: url(../images/icons/icon-arrow-right-small.svg) no-repeat left 42%;
+    background: url(../images/icon-arrow-right-small.svg) no-repeat center center;
     background-size: 8px 16px;
-    display: inline-block;
     text-indent: 9999px;
     outline: none;
   }
-  /* line 160, ../sass/components/_menu__main--mobile.scss */
+  /* line 155, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li a.mean-expand.mean-clicked {
-    background: url(../images/icons/icon-arrow-bottom-small.svg) no-repeat left 42%;
+    background-image: url(../images/icon-arrow-bottom-small.svg);
+    background-size: 16px 8px;
   }
-  /* line 169, ../sass/components/_menu__main--mobile.scss */
+  /* line 163, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav .block {
     margin-bottom: 0;
   }
 
-  /* line 180, ../sass/components/_menu__main--mobile.scss */
+  /* line 170, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li li a {
-    width: 80%;
-    padding: 1em 10%;
     text-shadow: none !important;
     visibility: visible;
+    color: #163d53;
   }
 
-  /* line 187, ../sass/components/_menu__main--mobile.scss */
+  /* line 176, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li.mean-last a {
     border-bottom: none;
     margin-bottom: 0;
   }
 
-  /* line 193, ../sass/components/_menu__main--mobile.scss */
+  /* line 182, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul ul ul {
     display: none;
   }
 
-  /* line 197, ../sass/components/_menu__main--mobile.scss */
+  /* line 186, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-push {
     float: left;
     width: 100%;
@@ -3084,7 +3140,7 @@ a#menu__hamburger {
     clear: both;
   }
 
-  /* line 205, ../sass/components/_menu__main--mobile.scss */
+  /* line 194, ../sass/components/_menu__main--mobile.scss */
   .mean-nav .wrapper {
     width: 100%;
     padding: 0;
@@ -3092,14 +3148,14 @@ a#menu__hamburger {
   }
 
   /* Fix for box sizing on Foundation Framework etc. */
-  /* line 212, ../sass/components/_menu__main--mobile.scss */
+  /* line 201, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-bar, .mean-container .mean-bar * {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
-  /* line 218, ../sass/components/_menu__main--mobile.scss */
+  /* line 207, ../sass/components/_menu__main--mobile.scss */
   .mean-remove {
     display: none !important;
   }

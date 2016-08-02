@@ -323,27 +323,54 @@ Drupal.behaviors.rotator = {
       e.preventDefault();
       if($(this).hasClass('active')) {
         $(this).removeClass('active');
+        $('#header, .meanmenu-reveal').removeClass('dark-blue-background');
         $('#block-sbp-search-sbp-search-form').stop().hide();
       } else {
-        $(this).addClass('active');
+        $('.meanclose').trigger('click');
+        $('#header, .meanmenu-reveal').addClass('dark-blue-background');
         $('#block-sbp-translation-sbp-translation-icon').removeClass('active');
         $('#block-sbp-search-sbp-search-form').stop().show();
         $('#block-sbp-translation-sbp-translation-form').stop().hide();
+        $(this).addClass('active');
       }
-      
     });
     $('#block-sbp-translation-sbp-translation-icon').click(function(e) {
       e.preventDefault();
       if($(this).hasClass('active')) {
         $(this).removeClass('active');
+        $('#header, .meanmenu-reveal').removeClass('dark-blue-background');
         $('#block-sbp-translation-sbp-translation-form').stop().hide();
       } else {
-        $(this).addClass('active');
+        $('.meanclose').trigger('click');
+        $('#header, .meanmenu-reveal').addClass('dark-blue-background');
         $('#block-sbp-search-sbp-search-icon').removeClass('active');
         $('#block-sbp-translation-sbp-translation-form').stop().show();
         $('#block-sbp-search-sbp-search-form').stop().hide();
+        $(this).addClass('active');
       }
-    }) ;
+    });
+    
+    $('.sbp-search-intro-text').click(function(e) {
+      e.preventDefault();
+      $(this).hide();
+      $('#edit-search').focus();
+    });
+    $('#edit-search').blur(function() {
+      if($(this).val()==='') {
+        $('.sbp-search-intro-text').show();
+      }
+    });
+    
+    $('.meanmenu-reveal').click(function(e) {
+//      if($(this).hasClass('meanclose')) {
+//        // do nothing
+//        alert("A");
+//      } else {
+        $('#block-sbp-translation-sbp-translation-icon.active').trigger('click');
+        $('#block-sbp-search-sbp-search-icon.active').trigger('click');
+//      }
+    });
+    
   });
 
 })(jQuery, Drupal, this, this.document);
