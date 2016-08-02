@@ -363,13 +363,8 @@ Drupal.behaviors.rotator = {
     });
     
     $('.meanmenu-reveal').click(function(e) {
-//      if($(this).hasClass('meanclose')) {
-//        // do nothing
-//        alert("A");
-//      } else {
         $('#block-sbp-translation-sbp-translation-icon.active').trigger('click');
         $('#block-sbp-search-sbp-search-icon.active').trigger('click');
-//      }
     });
     
   });
