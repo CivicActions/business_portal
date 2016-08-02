@@ -7,90 +7,64 @@
 .region--bottom {
   background: $dark_blue;
   color: $white;
-
+  padding: 25px 25px 35px;
+  
   .region--bottom--wrapper {
     @include wrapper(100%);
-    //max-width: 960px;
   }
-
-  @include window_size(tab-narrow-up) {
-    .region-bottom {
-      width:100%;
-    }
-    .footer__copyright {
-      width: 30%
-    }
-    .footer__credits {
-      width: auto;
-      float: right;
-      padding-right: 1em;
-    }
-
-  }
-
-  @include window_size(tab-wide-up) {
-    .region-bottom {
-      width:32%;
-    }
-    .footer__copyright {
-      width: 23%
-    }
-    .footer__credits {
-      width: auto;
-      float: right;
-    }
-
-  }
-  @include window_size(desktop) {
-    .region-bottom {
-      width: 230px;
-    }
-    .footer__copyright {
-      width: 30%
-    }
-    .footer__credits {
-      width: auto;
-      float: right;
-    }
-  }
-
-
-
-  .footer__copyright,
-  .footer__credits {
-    padding: 1em;
-  }
-
-  .footer__copyright,
-  .footer__credits,
-  .region-bottom {
-    display: inline-block;
-  }
-
-  .footer__credits {
-    margin-top: 8px;
-  }
-
-
-  //Lists
-  ul { padding: 0 2%;}
-  li {
-    display: inline-block;
-    padding: 1em;
-    list-style: none;
-  }
-
-  //Links
+  
   a {
     color: $light-blue;
     font-weight: bold;
   }
-
-  ul.menu,
-  ol.menu,
-  menu.menu {
-    margin: 0;
+  
+  .region-bottom {
+    // footer menu links
+    ul {
+      margin: 0; padding: 0;
+      list-style: none;
+      li {
+        margin: 0 0 10px 0;
+        list-style: none;
+        a {
+          margin: 0;
+        }
+      }
+    }
   }
-
-
+  
+  .footer__copyright {
+    margin: 30px 0 5px;
+  }
+  
+  @include window_size(tab-wide-up) {
+    
+  }
+  @include window_size(desktop) {
+    .region-bottom, .footer__copyright, .footer__credits {
+      width: auto;
+    }
+    .region-bottom, .footer__copyright {
+      float: left;
+    }
+    .footer__credits {
+      float: right;
+    }
+    
+    .region-bottom {
+      // footer menu links
+      ul {
+        li {
+          display: inline-block;
+          margin: 0 20px 0 0;
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .footer__copyright {
+      margin: 0 0 0 50px;
+    }
+  }
 }
