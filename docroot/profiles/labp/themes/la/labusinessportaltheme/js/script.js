@@ -295,24 +295,24 @@ Drupal.behaviors.rotator = {
     return this.height( Math.max.apply(this, $(this).map(function(i,e){return $(e).height();}).get() ) );
   };
   
-  $(document).ready(function() {
-    // Equalize columns on page load
-    var $panels = $('.center-wrapper .panel-panel');
-    $(window).load(function() {
-      if ($(window).width() > 959) {
-        $panels.equalizeHeights();
-      }
-    });
-    
-    // Equalize columns on page resize
-    $(window).resize(function() {
-      if ($(window).width() > 959) {
-        $panels.equalizeHeights();
-      } else {
-        $panels.css({'height': 'auto'});
-      }
-    });
-  });
+//  $(document).ready(function() {
+//    // Equalize columns on page load
+//    var $panels = $('.center-wrapper .panel-panel');
+//    $(window).load(function() {
+//      if ($(window).width() > 959) {
+//        $panels.equalizeHeights();
+//      }
+//    });
+//    
+//    // Equalize columns on page resize
+//    $(window).resize(function() {
+//      if ($(window).width() > 959) {
+//        $panels.equalizeHeights();
+//      } else {
+//        $panels.css({'height': 'auto'});
+//      }
+//    });
+//  });
   
   /**
    * Code to make search and translation icon clickable to show/hide search form
