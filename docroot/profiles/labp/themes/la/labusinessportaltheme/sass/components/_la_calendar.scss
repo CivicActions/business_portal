@@ -11,7 +11,7 @@ $lacity-text-color: #39afef;
     }
     .fc-left {
       position: absolute;
-      left: 0; top: 20px;
+      left: 0; top: 25px;
     }
     .fc-right {
       position: absolute;
@@ -21,7 +21,10 @@ $lacity-text-color: #39afef;
       display: block;
       color: $dark_blue;
       h2 {
-        color: darkblue;
+        color: $dark_blue;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 0; padding: 0;
       }
     }
   }
@@ -40,6 +43,7 @@ $lacity-text-color: #39afef;
     border: none;
     color: $dark_blue;
     font-size: 15px;
+    padding: 10px 0 20px;
   }
   
   .fc-event-container {
@@ -69,10 +73,14 @@ $lacity-text-color: #39afef;
     }
   }
   .fc-more-cell {
+    padding-top: 50px;
     padding-right: 15px;
     div {
       border-top: 2px solid $lacity-border-color !important;
-      padding-top: 20px;
+      padding-top: 10px;
+      a {
+        font-size: 14px;
+      }
     }
   }
   .fc-today {
@@ -102,7 +110,7 @@ $lacity-text-color: #39afef;
       position: relative;
       .fc-time {
         display: block;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
       }
       .fc-title {
         
@@ -135,17 +143,28 @@ $lacity-text-color: #39afef;
       text-indent: -999em;
       font-size: 0; line-height: 0;
       display: inline-block;
-      width: 30px;
-      height: 30px;
+      width: 11px;
+      height: 18px;
       background: transparent;
-      border: 1px solid red;
+      border: none;
+      background-position: center center;
+      background-size: 11px 18px;
+      background-repeat: no-repeat;
+    }
+    &.fc-prev-button {
+      background-image: url(../images/calendar-prev.svg);
+    }
+    &.fc-next-button {
+      margin-left: 25px !important;
+      background-image: url(../images/calendar-next.svg);
     }
   }
   
   .fc-right {
     .fc-button {
+      box-sizing: border-box;
       margin-left: 10px !important;
-      padding: 10px;
+      padding: 5px 10px;
       height: auto;
       border: none;
       background: transparent;
