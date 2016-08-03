@@ -2549,11 +2549,11 @@ body.not-logged-in.page-user #main {
   top: 47px;
   z-index: 5;
   width: auto;
-  width: -webkit-calc(100% - 35px);
-  width: expression(100% - 35px);
-  width: -moz-calc(100% - 35px);
-  width: -o-calc(100% - 35px);
-  width: calc(100% - 35px);
+  width: -webkit-calc(100% - 38px);
+  width: expression(100% - 38px);
+  width: -moz-calc(100% - 38px);
+  width: -o-calc(100% - 38px);
+  width: calc(100% - 38px);
 }
 /* line 13, ../sass/components/_header.scss */
 #header a {
@@ -2765,7 +2765,7 @@ body.not-logged-in.page-user #main {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 14px 19px 13px;
+  padding: 14px 24px 13px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 28px;
@@ -2779,7 +2779,7 @@ body.not-logged-in.page-user #main {
 #block-sbp-search-sbp-search-form #edit-search {
   background: transparent;
   margin: 0;
-  padding: 14px 19px 13px;
+  padding: 14px 24px 13px;
   line-height: 28px;
   border: none;
   width: 100%;
@@ -2790,7 +2790,7 @@ body.not-logged-in.page-user #main {
 #block-sbp-translation-sbp-translation-form {
   width: 562px;
   max-width: 562px;
-  padding: 14px 19px 13px;
+  padding: 14px 24px 13px;
 }
 
 @media (min-width: 0px) and (max-width: 720px) {
@@ -2817,19 +2817,19 @@ body.not-logged-in.page-user #main {
 
   /* line 238, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form {
-    padding: 14px 19px 13px;
+    padding: 14px 24px 13px;
   }
 }
 @media (min-width: 0px) and (max-width: 720px) {
   /* line 244, ../sass/components/_header.scss */
   #header.dark-blue-bg {
-    background: #2e79a3;
+    background-color: #2e79a3;
   }
 
   /* line 247, ../sass/components/_header.scss */
   #header.dark-blue-background,
   .meanmenu-reveal.dark-blue-background {
-    background: #2e79a3 !important;
+    background-color: #2e79a3 !important;
   }
 }
 /**
@@ -2969,7 +2969,7 @@ a#menu__hamburger {
     background: transparent;
     list-style-image: none;
     list-style-type: none;
-    border-bottom: 2px solid #2e79a3;
+    border-bottom: 1px solid #2e79a3;
     padding-left: 26px;
     position: relative;
   }
@@ -3027,56 +3027,59 @@ a#menu__hamburger {
   }
   /* line 84, ../sass/components/_menu__main--mobile.scss */
   .mean-container a.meanmenu-reveal {
-    width: 35px;
+    width: 38px;
     height: 47px;
-    padding: 13px 13px 12px 0;
+    /*padding: 13px 20px 12px 0;*/
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url(../images/icon_hamburger.png);
+    background-repeat: no-repeat;
+    background-position: right 19px center;
+    background-size: 18px 15px;
     top: 0;
     right: 0;
     cursor: pointer;
     outline: none;
-    color: #fff;
-    text-decoration: none;
     z-index: 5;
     text-indent: -9999em;
-    line-height: 22px;
-    font-size: 1px;
+    color: transparent;
+    line-height: 0;
+    font-size: 0;
     display: block;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    background: rgba(0, 0, 0, 0.25);
   }
-  /* line 102, ../sass/components/_menu__main--mobile.scss */
+  /* line 101, ../sass/components/_menu__main--mobile.scss */
   .mean-container a.meanmenu-reveal.meanclose {
-    background: #2e79a3;
+    background-color: #2e79a3;
+    background-image: url(../images/icon_close.png);
+    background-size: 18px 18px;
   }
-  /* line 108, ../sass/components/_menu__main--mobile.scss */
+  /* line 109, ../sass/components/_menu__main--mobile.scss */
   .mean-container a.meanmenu-reveal span {
-    display: block;
+    display: none;
     background: #fff;
     height: 3px;
     margin-top: 3px;
   }
-  /* line 116, ../sass/components/_menu__main--mobile.scss */
+  /* line 117, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav {
     float: left;
     width: 100%;
     margin-top: 47px;
   }
-  /* line 121, ../sass/components/_menu__main--mobile.scss */
+  /* line 122, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul {
     padding: 0 25px;
     margin: 0;
     width: 100%;
     list-style-type: none;
   }
-  /* line 126, ../sass/components/_menu__main--mobile.scss */
+  /* line 127, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li {
     position: relative;
     float: left;
     width: 100%;
   }
-  /* line 131, ../sass/components/_menu__main--mobile.scss */
+  /* line 132, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li a {
     display: block;
     float: left;
@@ -3086,7 +3089,7 @@ a#menu__hamburger {
     text-decoration: none;
     color: #fff;
   }
-  /* line 140, ../sass/components/_menu__main--mobile.scss */
+  /* line 141, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li a.mean-expand {
     width: 16px;
     height: 16px;
@@ -3103,35 +3106,35 @@ a#menu__hamburger {
     text-indent: 9999px;
     outline: none;
   }
-  /* line 155, ../sass/components/_menu__main--mobile.scss */
+  /* line 156, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li a.mean-expand.mean-clicked {
     background-image: url(../images/icon-arrow-bottom-small.svg);
     background-size: 16px 8px;
   }
-  /* line 163, ../sass/components/_menu__main--mobile.scss */
+  /* line 164, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav .block {
     margin-bottom: 0;
   }
 
-  /* line 170, ../sass/components/_menu__main--mobile.scss */
+  /* line 171, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li li a {
     text-shadow: none !important;
     visibility: visible;
     color: #163d53;
   }
 
-  /* line 176, ../sass/components/_menu__main--mobile.scss */
+  /* line 177, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li.mean-last a {
     border-bottom: none;
     margin-bottom: 0;
   }
 
-  /* line 182, ../sass/components/_menu__main--mobile.scss */
+  /* line 183, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul ul ul {
     display: none;
   }
 
-  /* line 186, ../sass/components/_menu__main--mobile.scss */
+  /* line 187, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-push {
     float: left;
     width: 100%;
@@ -3140,7 +3143,7 @@ a#menu__hamburger {
     clear: both;
   }
 
-  /* line 194, ../sass/components/_menu__main--mobile.scss */
+  /* line 195, ../sass/components/_menu__main--mobile.scss */
   .mean-nav .wrapper {
     width: 100%;
     padding: 0;
@@ -3148,14 +3151,14 @@ a#menu__hamburger {
   }
 
   /* Fix for box sizing on Foundation Framework etc. */
-  /* line 201, ../sass/components/_menu__main--mobile.scss */
+  /* line 202, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-bar, .mean-container .mean-bar * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 207, ../sass/components/_menu__main--mobile.scss */
+  /* line 208, ../sass/components/_menu__main--mobile.scss */
   .mean-remove {
     display: none !important;
   }
