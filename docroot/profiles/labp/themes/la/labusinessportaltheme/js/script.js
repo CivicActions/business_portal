@@ -295,24 +295,24 @@ Drupal.behaviors.rotator = {
     return this.height( Math.max.apply(this, $(this).map(function(i,e){return $(e).height();}).get() ) );
   };
   
-  $(document).ready(function() {
-    // Equalize columns on page load
-    var $panels = $('.center-wrapper .panel-panel');
-    $(window).load(function() {
-      if ($(window).width() > 959) {
-        $panels.equalizeHeights();
-      }
-    });
-    
-    // Equalize columns on page resize
-    $(window).resize(function() {
-      if ($(window).width() > 959) {
-        $panels.equalizeHeights();
-      } else {
-        $panels.css({'height': 'auto'});
-      }
-    });
-  });
+//  $(document).ready(function() {
+//    // Equalize columns on page load
+//    var $panels = $('.center-wrapper .panel-panel');
+//    $(window).load(function() {
+//      if ($(window).width() > 959) {
+//        $panels.equalizeHeights();
+//      }
+//    });
+//    
+//    // Equalize columns on page resize
+//    $(window).resize(function() {
+//      if ($(window).width() > 959) {
+//        $panels.equalizeHeights();
+//      } else {
+//        $panels.css({'height': 'auto'});
+//      }
+//    });
+//  });
   
   /**
    * Code to make search and translation icon clickable to show/hide search form
@@ -326,6 +326,7 @@ Drupal.behaviors.rotator = {
         $('#header, .meanmenu-reveal').removeClass('dark-blue-background');
         $('#block-sbp-search-sbp-search-form').stop().hide();
       } else {
+        $(this).addClass('active');
         $('.meanclose').trigger('click');
         $('#header, .meanmenu-reveal').addClass('dark-blue-background');
         $('#block-sbp-translation-sbp-translation-icon').removeClass('active');
@@ -362,13 +363,8 @@ Drupal.behaviors.rotator = {
     });
     
     $('.meanmenu-reveal').click(function(e) {
-//      if($(this).hasClass('meanclose')) {
-//        // do nothing
-//        alert("A");
-//      } else {
         $('#block-sbp-translation-sbp-translation-icon.active').trigger('click');
         $('#block-sbp-search-sbp-search-icon.active').trigger('click');
-//      }
     });
     
   });
