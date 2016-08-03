@@ -24,7 +24,7 @@ a#menu__hamburger {
         background: transparent;
         list-style-image: none;
         list-style-type: none;
-        border-bottom: 2px solid #2e79a3;
+        border-bottom: 1px solid #2e79a3;
         padding-left: 26px;
         position: relative;
         // Add dropdown icon to menu items with nested links
@@ -82,31 +82,32 @@ a#menu__hamburger {
 
     // Toggle Menu
     a.meanmenu-reveal {
-      width: 35px; height: 47px;
-      padding: 13px 13px 12px 0;
+      width: 38px; height: 47px;
+      /*padding: 13px 20px 12px 0;*/
       position: absolute;
-      top: 0;
-      right: 0;
+      background-color: rgba(0,0,0,.25);
+      background-image: url(../images/icon_hamburger.png);
+      background-repeat: no-repeat;
+      background-position: right 19px center;
+      background-size: 18px 15px;
+      top: 0; right: 0;
       cursor: pointer;
       outline: none;
-      color: #fff;
-      text-decoration: none;
       z-index: 5;
       text-indent: -9999em;
-      line-height: 22px;
-      font-size: 1px;
+      color: transparent;
+      line-height: 0; font-size: 0;
       display: block;
-      font-family: $font-body;
-      font-weight: 700;
-      background: rgba(0,0,0,.25);
       &.meanclose {
-        background: #2e79a3;
+        background-color: #2e79a3;
+        background-image: url(../images/icon_close.png);
+        background-size: 18px 18px;
       }
     }
 
     // CSS Hamburger icon
     a.meanmenu-reveal span {
-      display: block;
+      display: none;
       background: #fff;
       height: 3px;
       margin-top: 3px;
