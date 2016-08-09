@@ -7057,21 +7057,22 @@ ul.facetapi-facet-field-resource-type li a,
 
 /* line 1, ../sass/components/_pull_quote.scss */
 .panel__pull_quote {
-  background-color: #f2f2f2;
-  padding: 25px 50px 25px 50px;
   display: block;
 }
-/* line 6, ../sass/components/_pull_quote.scss */
+/* line 4, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__content_wrapper {
+  position: relative;
+}
+/* line 7, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_col_1 {
-  display: inline-block;
-  width: 30%;
-  margin-right: 20px;
+  display: none;
 }
-/* line 16, ../sass/components/_pull_quote.scss */
+/* line 10, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_col_2 {
-  display: inline-block;
+  display: block;
+  padding: 30px 0;
 }
-/* line 20, ../sass/components/_pull_quote.scss */
+/* line 14, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_quote {
   font-family: "Merriweather", serif;
   font-weight: 400;
@@ -7079,33 +7080,120 @@ ul.facetapi-facet-field-resource-type li a,
   padding: 0;
   font-size: 1.714em;
   width: 100%;
+  padding: 60px 0 50px 0;
+  position: relative;
+  box-sizing: border-box;
 }
 @media all and (min-width: 720px) {
-  /* line 20, ../sass/components/_pull_quote.scss */
+  /* line 14, ../sass/components/_pull_quote.scss */
   .panel__pull_quote .panel__quote_quote {
     font-size: 2.571em;
     margin: 0 0 30px 0;
   }
 }
-/* line 24, ../sass/components/_pull_quote.scss */
+/* line 19, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_quote::before, .panel__pull_quote .panel__quote_quote::after {
+  font-family: "Merriweather", serif;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 0.68;
+  color: #ffffff;
+  position: absolute;
+}
+/* line 28, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_quote::before {
+  top: 10px;
+  left: 0;
+  content: open-quote;
+}
+/* line 32, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_quote::after {
+  bottom: -25px;
+  right: 0;
+  content: close-quote;
+}
+/* line 38, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote-line {
+  height: 2px;
   height: 2px;
   background-color: white !important;
   border-color: white !important;
 }
-/* line 30, ../sass/components/_pull_quote.scss */
+/* line 45, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_attribution {
-  margin-left: 40px;
-  margin-top: 20px;
+  padding: 20px 0 0 60px;
+  position: relative;
   color: #1e3549;
 }
-/* line 36, ../sass/components/_pull_quote.scss */
+/* line 49, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_attribution::before {
+  content: '';
+  height: 2px;
+  width: 40px;
+  background: #1e3549;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+/* line 59, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_author {
   font-weight: 700;
+  font-size: 16px;
 }
-/* line 40, ../sass/components/_pull_quote.scss */
+/* line 64, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_subtitle {
-  font-size: .5em;
+  font-size: 14px;
+}
+@media all and (min-width: 960px) {
+  /* line 69, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_col_1 {
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 82px;
+    left: 0;
+  }
+  /* line 74, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_col_1 img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 79, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_col_2 {
+    padding-left: 400px;
+    min-height: 340px;
+    padding: 100px 70px 72px 400px;
+  }
+  /* line 85, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote {
+    padding: 0 60px 0 0;
+  }
+  /* line 87, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote::before, .panel__pull_quote .panel__quote_quote::after {
+    font-size: 72px;
+    top: 20px;
+  }
+  /* line 91, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote::before {
+    left: -60px;
+  }
+  /* line 94, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote::after {
+    right: -25px;
+  }
+  /* line 99, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote-line {
+    height: 4px;
+  }
+  /* line 104, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_attribution::before {
+    top: 33px;
+  }
+  /* line 108, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_author {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 }
 
 /* line 3, ../sass/components/_featured_resources.scss */

@@ -31,6 +31,7 @@ if (!empty($content['field_quote_image']) and !empty($content['field_quote_image
 
 ?>
   <div class="panel__pull_quote style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?> >
+    <div class="panel__content_wrapper">
     <?php if (!empty($quote_image)): ?>
     <div class="panel__quote_col_1">
       <div class="panel__quote_image">
@@ -65,6 +66,7 @@ if (!empty($content['field_quote_image']) and !empty($content['field_quote_image
       <?php
       endif;
       ?>
+      </div>
     </div>
   </div>
 
