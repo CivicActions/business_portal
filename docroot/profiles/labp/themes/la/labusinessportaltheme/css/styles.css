@@ -2559,7 +2559,7 @@ body.not-logged-in.page-user #main {
 #header a {
   color: white;
 }
-@media all and (min-width: 720px) {
+@media all and (min-width: 960px) {
   /* line 9, ../sass/components/_header.scss */
   #header {
     height: 55px;
@@ -2575,7 +2575,7 @@ body.not-logged-in.page-user #main {
   padding: 0 15px 0 25px;
   box-sizing: border-box;
 }
-@media all and (min-width: 720px) {
+@media all and (min-width: 960px) {
   /* line 32, ../sass/components/_header.scss */
   .header--wrapper {
     width: 100%;
@@ -2595,7 +2595,7 @@ body.not-logged-in.page-user #main {
   height: 32px;
   margin: 0;
 }
-@media all and (min-width: 720px) {
+@media all and (min-width: 960px) {
   /* line 44, ../sass/components/_header.scss */
   .header__logo {
     width: 213px;
@@ -2750,14 +2750,15 @@ body.not-logged-in.page-user #main {
   right: 0;
   background: #fff;
   padding: 0;
+  border-bottom: 1px solid #b2b2b2;
 }
 
-/* line 187, ../sass/components/_header.scss */
+/* line 188, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form {
   width: 100%;
   max-width: 720px;
 }
-/* line 190, ../sass/components/_header.scss */
+/* line 191, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form .sbp-search-intro-text {
   display: block;
   position: absolute;
@@ -2771,11 +2772,11 @@ body.not-logged-in.page-user #main {
   line-height: 28px;
   color: #9b9b9b;
 }
-/* line 201, ../sass/components/_header.scss */
+/* line 202, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form .form-item-search {
   margin: 0;
 }
-/* line 204, ../sass/components/_header.scss */
+/* line 205, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form #edit-search {
   background: transparent;
   margin: 0;
@@ -2786,26 +2787,26 @@ body.not-logged-in.page-user #main {
   outline: none;
 }
 
-/* line 215, ../sass/components/_header.scss */
+/* line 216, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-form {
   width: 562px;
   max-width: 562px;
   padding: 14px 24px 13px;
 }
 
-@media (min-width: 0px) and (max-width: 720px) {
-  /* line 222, ../sass/components/_header.scss */
+@media (min-width: 0px) and (max-width: 960px) {
+  /* line 223, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon,
   #block-sbp-translation-sbp-translation-icon {
     top: 5px;
   }
 
-  /* line 226, ../sass/components/_header.scss */
+  /* line 227, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon {
     right: 45px;
   }
 
-  /* line 230, ../sass/components/_header.scss */
+  /* line 231, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form,
   #block-sbp-search-sbp-search-form {
     position: fixed;
@@ -2815,18 +2816,18 @@ body.not-logged-in.page-user #main {
     max-width: 100%;
   }
 
-  /* line 238, ../sass/components/_header.scss */
+  /* line 239, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form {
     padding: 14px 24px 13px;
   }
 }
-@media (min-width: 0px) and (max-width: 720px) {
-  /* line 244, ../sass/components/_header.scss */
+@media (min-width: 0px) and (max-width: 960px) {
+  /* line 245, ../sass/components/_header.scss */
   #header.dark-blue-bg {
     background-color: #2e79a3;
   }
 
-  /* line 247, ../sass/components/_header.scss */
+  /* line 248, ../sass/components/_header.scss */
   #header.dark-blue-background,
   .meanmenu-reveal.dark-blue-background {
     background-color: #2e79a3 !important;
@@ -2835,7 +2836,7 @@ body.not-logged-in.page-user #main {
 /**
 * Styles for the MAIN MENU
 */
-@media all and (min-width: 720px) {
+@media all and (min-width: 960px) {
   /* line 7, ../sass/components/_menu__main.scss */
   #header .menu {
     float: left;
@@ -2881,7 +2882,7 @@ body.not-logged-in.page-user #main {
     height: 100%;
   }
 }
-@media all and (min-width: 720px) and (min-width: 720px) {
+@media all and (min-width: 960px) and (min-width: 720px) {
   /* line 51, ../sass/components/_menu__main.scss */
   #header .menu > .menu__item {
     margin: 0 15px 0 0;
@@ -2892,7 +2893,7 @@ body.not-logged-in.page-user #main {
     display: inline-block;
   }
 }
-@media all and (min-width: 720px) {
+@media all and (min-width: 960px) {
   /* line 61, ../sass/components/_menu__main.scss */
   #header .menu > .menu__item.active-trail {
     background-image: url("../images/hero/menu_selector.png");
@@ -2909,7 +2910,7 @@ body.not-logged-in.page-user #main {
     display: none;
   }
 }
-@media all and (min-width: 720px) and (min-width: 720px) {
+@media all and (min-width: 960px) and (min-width: 720px) {
   /* line 73, ../sass/components/_menu__main.scss */
   #header .menu > .menu__item--selected {
     margin: 0 15px 0 0;
@@ -2944,7 +2945,7 @@ a#menu__hamburger {
   display: inline-block;
 }
 
-@media (min-width: 0px) and (max-width: 720px) {
+@media (min-width: 0px) and (max-width: 960px) {
   /* line 8, ../sass/components/_menu__main--mobile.scss */
   nav.mean-nav {
     height: auto;
@@ -7057,21 +7058,22 @@ ul.facetapi-facet-field-resource-type li a,
 
 /* line 1, ../sass/components/_pull_quote.scss */
 .panel__pull_quote {
-  background-color: #f2f2f2;
-  padding: 25px 50px 25px 50px;
   display: block;
 }
-/* line 6, ../sass/components/_pull_quote.scss */
+/* line 4, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__content_wrapper {
+  position: relative;
+}
+/* line 7, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_col_1 {
-  display: inline-block;
-  width: 30%;
-  margin-right: 20px;
+  display: none;
 }
-/* line 16, ../sass/components/_pull_quote.scss */
+/* line 10, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_col_2 {
-  display: inline-block;
+  display: block;
+  padding: 30px 0;
 }
-/* line 20, ../sass/components/_pull_quote.scss */
+/* line 14, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_quote {
   font-family: "Merriweather", serif;
   font-weight: 400;
@@ -7079,33 +7081,120 @@ ul.facetapi-facet-field-resource-type li a,
   padding: 0;
   font-size: 1.714em;
   width: 100%;
+  padding: 60px 0 50px 0;
+  position: relative;
+  box-sizing: border-box;
 }
 @media all and (min-width: 720px) {
-  /* line 20, ../sass/components/_pull_quote.scss */
+  /* line 14, ../sass/components/_pull_quote.scss */
   .panel__pull_quote .panel__quote_quote {
     font-size: 2.571em;
     margin: 0 0 30px 0;
   }
 }
-/* line 24, ../sass/components/_pull_quote.scss */
+/* line 19, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_quote::before, .panel__pull_quote .panel__quote_quote::after {
+  font-family: "Merriweather", serif;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 0.68;
+  color: #ffffff;
+  position: absolute;
+}
+/* line 28, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_quote::before {
+  top: 10px;
+  left: 0;
+  content: open-quote;
+}
+/* line 32, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_quote::after {
+  bottom: -25px;
+  right: 0;
+  content: close-quote;
+}
+/* line 38, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote-line {
+  height: 2px;
   height: 2px;
   background-color: white !important;
   border-color: white !important;
 }
-/* line 30, ../sass/components/_pull_quote.scss */
+/* line 45, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_attribution {
-  margin-left: 40px;
-  margin-top: 20px;
+  padding: 20px 0 0 60px;
+  position: relative;
   color: #1e3549;
 }
-/* line 36, ../sass/components/_pull_quote.scss */
+/* line 49, ../sass/components/_pull_quote.scss */
+.panel__pull_quote .panel__quote_attribution::before {
+  content: '';
+  height: 2px;
+  width: 40px;
+  background: #1e3549;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+/* line 59, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_author {
   font-weight: 700;
+  font-size: 16px;
 }
-/* line 40, ../sass/components/_pull_quote.scss */
+/* line 64, ../sass/components/_pull_quote.scss */
 .panel__pull_quote .panel__quote_subtitle {
-  font-size: .5em;
+  font-size: 14px;
+}
+@media all and (min-width: 960px) {
+  /* line 69, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_col_1 {
+    display: block;
+    position: absolute;
+    width: 340px;
+    top: 82px;
+    left: 0;
+  }
+  /* line 74, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_col_1 img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 79, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_col_2 {
+    padding-left: 400px;
+    min-height: 340px;
+    padding: 100px 70px 72px 400px;
+  }
+  /* line 85, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote {
+    padding: 0 60px 0 0;
+  }
+  /* line 87, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote::before, .panel__pull_quote .panel__quote_quote::after {
+    font-size: 72px;
+    top: 20px;
+  }
+  /* line 91, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote::before {
+    left: -60px;
+  }
+  /* line 94, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_quote::after {
+    right: -25px;
+  }
+  /* line 99, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote-line {
+    height: 4px;
+  }
+  /* line 104, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_attribution::before {
+    top: 33px;
+  }
+  /* line 108, ../sass/components/_pull_quote.scss */
+  .panel__pull_quote .panel__quote_author {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
 }
 
 /* line 3, ../sass/components/_featured_resources.scss */

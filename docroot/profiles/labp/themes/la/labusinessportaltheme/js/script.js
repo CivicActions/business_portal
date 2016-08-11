@@ -128,7 +128,7 @@ Drupal.behaviors.rotator = {
   Drupal.behaviors.mobileMenu = {
     attach: function(context, settings) {
       $('#meanMenu--wrapper-block').once('revealMenu').meanmenu({
-        meanScreenWidth: "720",
+        meanScreenWidth: "960",
         meanMenuContainer: '#mean-menu--mobile',
         meanMenuCloseSize: "22px"
       });

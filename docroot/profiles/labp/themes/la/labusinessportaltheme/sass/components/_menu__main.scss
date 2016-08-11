@@ -3,7 +3,7 @@
 */
 
 #header {
-  @include window_size(tab-wide-up) {
+  @include window_size(desktop) {
     .menu {
       float: left;
       margin-left: 40px;
