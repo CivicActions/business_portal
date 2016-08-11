@@ -2,6 +2,10 @@ $lacity-border-color: #6BC3F3;
 $lacity-text-color: #39afef;
 
 .lacity-calendar-container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  
   font-family: Roboto, sans-serif;
   .fc-toolbar {
     border-bottom: 2px solid $lacity-border-color;
@@ -127,7 +131,48 @@ $lacity-text-color: #39afef;
     
   }
   
-  .fc-today-button, .fc-month-button, .calendar-share-btn, .mobile-filter {
+  .fc-month-view {
+    table {
+      border-collapse: separate;
+    }
+    .fc-day-number {
+      border-top: 2px solid $lacity-border-color !important;
+      border-color: $lacity-border-color !important;
+      border-top-width: 2px !important;
+      padding-top: 10px;
+      text-align: left !important;
+      color: $navy;
+      font-weight: 700;
+      position: relative;
+      &::before {
+        position: absolute !important;
+        width: 10px;
+        z-index: 999;
+        content: '';
+        position: absolute;
+        top: -2px; right: 0;
+        height: 2px;
+        background: #fff;
+      }
+      &:last-child::before {
+        display: none;
+      }
+    }
+    .fc-event-container, .fc-more-cell {
+      padding-bottom: 30px;
+    }
+    .fc-more-cell {
+      padding-top: 0;
+      div {
+        border-top: none !important;
+      }
+    }
+  }
+  
+  
+  
+  
+  .fc-today-button, .calendar-share-btn, .mobile-filter {
     display: none;
   }
   
