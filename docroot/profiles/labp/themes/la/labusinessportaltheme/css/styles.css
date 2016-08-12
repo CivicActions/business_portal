@@ -1612,15 +1612,17 @@ table {
 /* line 8, ../sass/layouts/_panels.scss */
 .panel-2col-stacked {
   background: #f2f2f2;
+  overflow: hidden;
+  *zoom: 1;
   /***************************
   *        Layout
   ***************************/
 }
-/* line 11, ../sass/layouts/_panels.scss */
+/* line 12, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last {
   background: white;
 }
-/* line 13, ../sass/layouts/_panels.scss */
+/* line 14, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-last .inside {
   margin: 0;
   max-width: 100%;
@@ -1628,27 +1630,27 @@ table {
   padding: 25px;
 }
 @media all and (min-width: 960px) {
-  /* line 13, ../sass/layouts/_panels.scss */
+  /* line 14, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding: 25px 0 25px 30px;
     max-width: 710px;
   }
 }
-/* line 27, ../sass/layouts/_panels.scss */
+/* line 28, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first h2 {
   font-family: "Roboto", sans-serif;
 }
-/* line 30, ../sass/layouts/_panels.scss */
+/* line 31, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first .inside {
   padding: 25px;
   margin: 0;
 }
-/* line 32, ../sass/layouts/_panels.scss */
+/* line 33, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first .inside:empty {
   padding: 0;
 }
 @media all and (min-width: 960px) {
-  /* line 30, ../sass/layouts/_panels.scss */
+  /* line 31, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first .inside {
     padding: 1.5em 25px 2em 0;
     margin: 0;
@@ -1657,19 +1659,19 @@ table {
     width: 225px;
   }
 }
-/* line 47, ../sass/layouts/_panels.scss */
+/* line 48, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top h2.pane-title {
   display: none;
 }
-/* line 48, ../sass/layouts/_panels.scss */
+/* line 49, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-top .inside {
   margin-bottom: 0;
 }
-/* line 51, ../sass/layouts/_panels.scss */
+/* line 52, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .field-collection-container {
   margin-bottom: 0;
 }
-/* line 60, ../sass/layouts/_panels.scss */
+/* line 61, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .center-wrapper {
   width: 100%;
   padding-left: 0;
@@ -1683,7 +1685,7 @@ table {
 .panel-2col-stacked .center-wrapper:after {
   clear: both;
 }
-/* line 65, ../sass/layouts/_panels.scss */
+/* line 66, ../sass/layouts/_panels.scss */
 .panel-2col-stacked .panel-col-first,
 .panel-2col-stacked .panel-col-last {
   float: none;
@@ -1691,29 +1693,35 @@ table {
   width: 100%;
 }
 @media all and (min-width: 960px) {
-  /* line 73, ../sass/layouts/_panels.scss */
+  /* line 77, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-first {
     float: left;
-    width: 30%;
-    margin-left: 0%;
-    margin-right: -30%;
+    width: -webkit-calc(50% - 230px);
+    width: expression(50% - 230px);
+    width: -moz-calc(50% - 230px);
+    width: -o-calc(50% - 230px);
+    width: calc(50% - 230px);
+    /*@include zen-grid-item (3, 1);*/
   }
-  /* line 80, ../sass/layouts/_panels.scss */
+  /* line 91, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last {
     float: left;
-    width: 70%;
-    margin-left: 30%;
-    margin-right: -100%;
+    width: -webkit-calc(50% + 230px);
+    width: expression(50% + 230px);
+    width: -moz-calc(50% + 230px);
+    width: -o-calc(50% + 230px);
+    width: calc(50% + 230px);
+    /*@include zen-grid-item (7, 4);*/
   }
 }
 
-/* line 88, ../sass/layouts/_panels.scss */
+/* line 105, ../sass/layouts/_panels.scss */
 .node-type-online-resource.section-content .panel-col-last .inside {
   padding-top: 26px;
 }
 
 @media all and (min-width: 960px) {
-  /* line 97, ../sass/layouts/_panels.scss */
+  /* line 114, ../sass/layouts/_panels.scss */
   .section-resources .panel-2col-stacked .panel-col-first,
   .section-resources .panel-2col-stacked .panel-col-last,
   .section-content .panel-2col-stacked .panel-col-first,
@@ -1723,7 +1731,7 @@ table {
 }
 
 @media (max-width: 720px) {
-  /* line 108, ../sass/layouts/_panels.scss */
+  /* line 125, ../sass/layouts/_panels.scss */
   .panel-2col-stacked .panel-col-last .inside {
     padding-bottom: 30px !important;
   }
@@ -1731,7 +1739,7 @@ table {
 /*************************************************
   @TODO Refactor code
 * Flexible panel */
-/* line 119, ../sass/layouts/_panels.scss */
+/* line 136, ../sass/layouts/_panels.scss */
 .panels-flexible-region-2-center {
   width: 100%;
 }
@@ -2668,39 +2676,54 @@ body.not-logged-in.page-user #main {
 
 /* Special styles to line header elements up in the resources section */
 @media (min-width: 960px) {
-  /* line 122, ../sass/components/_header.scss */
-  body.section-resources #header .header--wrapper,
-  body.section-content #header .header--wrapper {
-    width: auto;
-    margin: 0;
-    max-width: none;
-  }
-  /* line 127, ../sass/components/_header.scss */
-  body.section-resources #header .header__logo,
-  body.section-content #header .header__logo {
-    width: 30%;
-  }
-  /* line 130, ../sass/components/_header.scss */
-  body.section-resources #header .header__logo-image,
-  body.section-content #header .header__logo-image {
-    height: 38px;
-    float: right;
-    padding-right: 43px;
-  }
-  /* line 135, ../sass/components/_header.scss */
-  body.section-resources #header .header__region,
-  body.section-content #header .header__region {
-    width: 70%;
-    margin-left: 30%;
-    max-width: 710px;
-  }
-  /* line 140, ../sass/components/_header.scss */
-  body.section-resources #header .menu,
-  body.section-content #header .menu {
-    margin-left: 28px;
-  }
+  /*  body.section-resources,
+    body.section-content {
+      #header {
+        .header--wrapper {
+          width: auto;
+          margin: 0;
+          max-width: none;
+        }
+        
+        .logo--wrapper {
+          float: left;
+          width: -webkit-calc(50% - 230px);
+          width:   expression(50% - 230px);
+          width:    -moz-calc(50% - 230px);
+          width:      -o-calc(50% - 230px);
+          width:         calc(50% - 230px);
+          padding: 8px 43px 7px 0;
+          
+          box-sizing: border-box;
+          text-align: right;
+        }
+        .header__logo {
+          float: right;
+          .header__logo-image {
+            height: 38px;
+            width: auto;
+          }
+        }
+        .header__region {
+          width: 70%;
+          margin-left: 30%;
+          max-width: 710px;
+          float: left;
+          width: -webkit-calc(50% + 230px);
+          width:   expression(50% + 230px);
+          width:    -moz-calc(50% + 230px);
+          width:      -o-calc(50% + 230px);
+          width:         calc(50% + 230px);
+          
+          
+        }
+        .menu {
+          margin-left: 28px;
+        }
+      }
+    }*/
 }
-/* line 148, ../sass/components/_header.scss */
+/* line 168, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon,
 #block-sbp-translation-sbp-translation-icon {
   display: inline-block;
@@ -2709,37 +2732,37 @@ body.not-logged-in.page-user #main {
   cursor: pointer;
 }
 
-/* line 155, ../sass/components/_header.scss */
+/* line 175, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-icon {
   right: 0;
   width: 31px;
   height: 28px;
 }
-/* line 159, ../sass/components/_header.scss */
+/* line 179, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-icon.active {
   background: url(../images/icon-google-translate-blue.png);
 }
-/* line 161, ../sass/components/_header.scss */
+/* line 181, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-icon.active img {
   visibility: hidden;
 }
 
-/* line 166, ../sass/components/_header.scss */
+/* line 186, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon {
   right: 50px;
   width: 25px;
   height: 25px;
 }
-/* line 170, ../sass/components/_header.scss */
+/* line 190, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon.active {
   background: url(../images/icon-search-blue.png);
 }
-/* line 172, ../sass/components/_header.scss */
+/* line 192, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon.active img {
   visibility: hidden;
 }
 
-/* line 178, ../sass/components/_header.scss */
+/* line 198, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-form,
 #block-sbp-search-sbp-search-form {
   display: none;
@@ -2753,12 +2776,12 @@ body.not-logged-in.page-user #main {
   border-bottom: 1px solid #b2b2b2;
 }
 
-/* line 188, ../sass/components/_header.scss */
+/* line 208, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form {
   width: 100%;
   max-width: 720px;
 }
-/* line 191, ../sass/components/_header.scss */
+/* line 211, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form .sbp-search-intro-text {
   display: block;
   position: absolute;
@@ -2772,11 +2795,11 @@ body.not-logged-in.page-user #main {
   line-height: 28px;
   color: #9b9b9b;
 }
-/* line 202, ../sass/components/_header.scss */
+/* line 222, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form .form-item-search {
   margin: 0;
 }
-/* line 205, ../sass/components/_header.scss */
+/* line 225, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form #edit-search {
   background: transparent;
   margin: 0;
@@ -2787,7 +2810,7 @@ body.not-logged-in.page-user #main {
   outline: none;
 }
 
-/* line 216, ../sass/components/_header.scss */
+/* line 236, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-form {
   width: 562px;
   max-width: 562px;
@@ -2795,18 +2818,18 @@ body.not-logged-in.page-user #main {
 }
 
 @media (min-width: 0px) and (max-width: 960px) {
-  /* line 223, ../sass/components/_header.scss */
+  /* line 243, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon,
   #block-sbp-translation-sbp-translation-icon {
     top: 5px;
   }
 
-  /* line 227, ../sass/components/_header.scss */
+  /* line 247, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon {
     right: 45px;
   }
 
-  /* line 231, ../sass/components/_header.scss */
+  /* line 251, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form,
   #block-sbp-search-sbp-search-form {
     position: fixed;
@@ -2816,18 +2839,18 @@ body.not-logged-in.page-user #main {
     max-width: 100%;
   }
 
-  /* line 239, ../sass/components/_header.scss */
+  /* line 259, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form {
     padding: 14px 24px 13px;
   }
 }
 @media (min-width: 0px) and (max-width: 960px) {
-  /* line 245, ../sass/components/_header.scss */
+  /* line 265, ../sass/components/_header.scss */
   #header.dark-blue-bg {
     background-color: #2e79a3;
   }
 
-  /* line 248, ../sass/components/_header.scss */
+  /* line 268, ../sass/components/_header.scss */
   #header.dark-blue-background,
   .meanmenu-reveal.dark-blue-background {
     background-color: #2e79a3 !important;
@@ -3577,6 +3600,8 @@ hr.hero__line--half {
 }
 /* line 16, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__content-wrapper {
+  overflow: hidden;
+  *zoom: 1;
   width: 100%;
   padding-left: 0;
   position: relative;
@@ -3591,86 +3616,91 @@ hr.hero__line--half {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 24, ../sass/components/hero/_hero__half-width.scss */
+  /* line 25, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left {
-    float: left;
-    width: 30%;
-    margin-left: 0%;
-    margin-right: -30%;
+    /*@include zen-grid-item (3, 1);*/
+    width: -webkit-calc(50% - 230px);
+    width: expression(50% - 230px);
+    width: -moz-calc(50% - 230px);
+    width: -o-calc(50% - 230px);
+    width: calc(50% - 230px);
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
   }
-  /* line 30, ../sass/components/hero/_hero__half-width.scss */
+  /* line 36, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .right {
-    float: left;
-    width: 70%;
-    margin-left: 30%;
-    margin-right: -100%;
+    /*@include zen-grid-item (7, 4);*/
+    float: right;
+    width: -webkit-calc(50% + 230px);
+    width: expression(50% + 230px);
+    width: -moz-calc(50% + 230px);
+    width: -o-calc(50% + 230px);
+    width: calc(50% + 230px);
     padding: 0;
   }
-  /* line 34, ../sass/components/hero/_hero__half-width.scss */
+  /* line 46, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left, .hero__layout--half .right {
     box-sizing: border-box;
   }
 }
-/* line 39, ../sass/components/hero/_hero__half-width.scss */
+/* line 51, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__header--inner {
   padding: 25px;
   position: relative;
 }
 @media all and (min-width: 960px) {
-  /* line 39, ../sass/components/hero/_hero__half-width.scss */
+  /* line 51, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__header--inner {
     max-width: 710px;
     padding: 125px 0 40px 30px;
     box-sizing: border-box;
   }
 }
-/* line 50, ../sass/components/hero/_hero__half-width.scss */
+/* line 62, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .left .hero__header--inner {
   padding-top: 90px;
 }
 @media all and (min-width: 960px) {
-  /* line 50, ../sass/components/hero/_hero__half-width.scss */
+  /* line 62, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .left .hero__header--inner {
     padding-top: 125px;
     max-width: 100%;
   }
 }
-/* line 62, ../sass/components/hero/_hero__half-width.scss */
+/* line 74, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__icon img,
 .hero__layout--half .hero__icon--mobile img {
   width: 100%;
   max-width: 100px;
 }
-/* line 68, ../sass/components/hero/_hero__half-width.scss */
+/* line 80, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__icon,
 .hero__layout--half .hero__headline--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 73, ../sass/components/hero/_hero__half-width.scss */
+  /* line 85, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__icon,
   .hero__layout--half .hero__headline--half {
     display: block;
   }
-  /* line 75, ../sass/components/hero/_hero__half-width.scss */
+  /* line 87, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__icon--mobile,
   .hero__layout--half .hero__headline--half--mobile {
     display: none;
   }
 }
-/* line 80, ../sass/components/hero/_hero__half-width.scss */
+/* line 92, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline,
 .hero__layout--half .hero__headline--half,
 .hero__layout--half .hero__headline--half--mobile {
   font-size: 1.8em;
 }
 @media all and (min-width: 960px) {
-  /* line 80, ../sass/components/hero/_hero__half-width.scss */
+  /* line 92, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__headline,
   .hero__layout--half .hero__headline--half,
   .hero__layout--half .hero__headline--half--mobile {
@@ -3678,33 +3708,33 @@ hr.hero__line--half {
     margin: 15px 0 0;
   }
 }
-/* line 89, ../sass/components/hero/_hero__half-width.scss */
+/* line 101, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__headline--half--mobile {
   margin: 10px 0 0 0;
   font-size: 1.4em;
 }
-/* line 95, ../sass/components/hero/_hero__half-width.scss */
+/* line 107, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half hr.hero__line,
 .hero__layout--half hr.hero__line--half {
   height: 4px;
   max-width: 80px;
   margin: 25px 0 0;
 }
-/* line 102, ../sass/components/hero/_hero__half-width.scss */
+/* line 114, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__description {
   margin: 0;
   font-size: 1.143em;
   max-width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 102, ../sass/components/hero/_hero__half-width.scss */
+  /* line 114, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__description {
     font-size: 1.429em;
     line-height: 1.4;
     margin: 25px 0 0;
   }
 }
-/* line 114, ../sass/components/hero/_hero__half-width.scss */
+/* line 126, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__bottom_align--bn {
   max-width: 250px;
   padding: 20px 0 0;
@@ -3712,7 +3742,7 @@ hr.hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 114, ../sass/components/hero/_hero__half-width.scss */
+  /* line 126, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__bottom_align--bn {
     position: absolute;
     z-index: 999;
@@ -3723,7 +3753,7 @@ hr.hero__line--half {
     display: block;
   }
 }
-/* line 129, ../sass/components/hero/_hero__half-width.scss */
+/* line 141, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name {
   color: #fff;
   font-size: 1.1em;
@@ -3731,7 +3761,7 @@ hr.hero__line--half {
   font-weight: bold;
   width: 160px;
 }
-/* line 137, ../sass/components/hero/_hero__half-width.scss */
+/* line 149, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__description {
   color: #fff;
   font-size: 1em;
@@ -3740,30 +3770,30 @@ hr.hero__line--half {
   padding-right: 5em;
 }
 @media all and (min-width: 960px) {
-  /* line 137, ../sass/components/hero/_hero__half-width.scss */
+  /* line 149, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__description {
     padding-right: 90px;
   }
 }
-/* line 149, ../sass/components/hero/_hero__half-width.scss */
+/* line 161, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__business__name,
 .hero__layout--half .hero__business__description,
 .hero__layout--half .hero__line--half {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 149, ../sass/components/hero/_hero__half-width.scss */
+  /* line 161, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__business__name,
   .hero__layout--half .hero__business__description,
   .hero__layout--half .hero__line--half {
     display: block;
   }
 }
-/* line 158, ../sass/components/hero/_hero__half-width.scss */
+/* line 170, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--wrapper {
   margin-top: 20px;
 }
-/* line 163, ../sass/components/hero/_hero__half-width.scss */
+/* line 175, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item {
   text-transform: uppercase;
   background: #fff;
@@ -3773,40 +3803,40 @@ hr.hero__line--half {
   padding: 10px 20px;
   font-weight: bold;
 }
-/* line 171, ../sass/components/hero/_hero__half-width.scss */
+/* line 183, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__call-to-action--item a {
   color: #0f2940;
 }
 @media all and (min-width: 960px) {
-  /* line 163, ../sass/components/hero/_hero__half-width.scss */
+  /* line 175, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__call-to-action--item {
     font-size: 1.143em;
   }
 }
-/* line 182, ../sass/components/hero/_hero__half-width.scss */
+/* line 194, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__background-image {
   background-position: 50%;
   background-size: cover;
 }
 @media all and (min-width: 960px) {
-  /* line 182, ../sass/components/hero/_hero__half-width.scss */
+  /* line 194, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__background-image {
     background-size: auto 100%;
     height: 100%;
   }
 }
-/* line 191, ../sass/components/hero/_hero__half-width.scss */
+/* line 203, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay {
   position: relative;
   /*overflow: hidden;*/
 }
 @media all and (min-width: 960px) {
-  /* line 191, ../sass/components/hero/_hero__half-width.scss */
+  /* line 203, ../sass/components/hero/_hero__half-width.scss */
   .hero__layout--half .hero__image--overlay {
     height: 100%;
   }
 }
-/* line 197, ../sass/components/hero/_hero__half-width.scss */
+/* line 209, ../sass/components/hero/_hero__half-width.scss */
 .hero__layout--half .hero__image--overlay .hero__header--inner {
   height: 100%;
 }
@@ -4606,31 +4636,32 @@ a.wizard__button--selected {
 }
 
 /* Special styles to line header elements up in the startup guide (wizard) section */
-@media (min-width: 720px) {
-  /* line 7, ../sass/components/wizard/_wizard_header.scss */
-  body.wizard-page #header .header--wrapper {
-    width: auto;
-    max-width: 960px;
-    padding: 0 25px;
-  }
-  /* line 13, ../sass/components/wizard/_wizard_header.scss */
-  body.wizard-page #header .header__logo {
-    width: 17.5em;
-  }
-  /* line 16, ../sass/components/wizard/_wizard_header.scss */
-  body.wizard-page #header .header__logo-image {
-    height: 38px;
-    float: left;
-    padding-right: 35px;
-  }
-  /* line 21, ../sass/components/wizard/_wizard_header.scss */
-  body.wizard-page #header .header__region {
-    width: auto;
-  }
-  /* line 24, ../sass/components/wizard/_wizard_header.scss */
-  body.wizard-page #header .menu {
-    margin-left: 28px;
-  }
+/* line 3, ../sass/components/wizard/_wizard_header.scss */
+body.wizard-page {
+  /*  @media (min-width: 720px) {
+      #header {
+        .header--wrapper {
+          width: auto;
+          max-width: $max-site-width;
+          padding: 0 25px;
+          
+        }
+        .header__logo {
+          width: 17.5em;
+        }
+        .header__logo-image {
+          height: 38px;
+          float: left;
+          padding-right: 35px;
+        }
+        .header__region {
+          width: auto;
+        }
+        .menu {
+          margin-left: 28px;
+        }
+      }
+    }*/
 }
 
 /* line 2, ../sass/components/wizard/_wizard_start.scss */

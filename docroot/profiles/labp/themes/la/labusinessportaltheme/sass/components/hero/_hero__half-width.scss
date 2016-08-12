@@ -15,6 +15,7 @@
 
   .hero__content-wrapper {
     @include zen-grid-container();
+    @include clearfix;
     width: 100%;
     padding-left: 0;
     position: relative;
@@ -22,13 +23,24 @@
 
   @include window_size(desktop){
     .left  {
-      @include zen-grid-item (3, 1);
+      /*@include zen-grid-item (3, 1);*/
+      width: -webkit-calc(50% - 230px);
+      width:   expression(50% - 230px);
+      width:    -moz-calc(50% - 230px);
+      width:      -o-calc(50% - 230px);
+      width:         calc(50% - 230px);
       height: 100%;
       position: absolute;
       left: 0; top: 0; bottom: 0;
     }
     .right {
-      @include zen-grid-item (7, 4);
+      /*@include zen-grid-item (7, 4);*/
+      float: right;
+      width: -webkit-calc(50% + 230px);
+      width:   expression(50% + 230px);
+      width:    -moz-calc(50% + 230px);
+      width:      -o-calc(50% + 230px);
+      width:         calc(50% + 230px);
       padding: 0;
     }
     .left, .right {

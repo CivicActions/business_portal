@@ -7,6 +7,7 @@
 
 .panel-2col-stacked {
   background: $light-grey;
+  @include clearfix;
 
   .panel-col-last {
     background: $white;
@@ -68,17 +69,33 @@
     margin: 0;
     width: 100%;
   }
+  
+  
+  
 
   @include window_size(desktop){
     .panel-col-first {
-      @include zen-grid-item (3, 1);
+      float: left;
+      width: -webkit-calc(50% - 230px);
+      width:   expression(50% - 230px);
+      width:    -moz-calc(50% - 230px);
+      width:      -o-calc(50% - 230px);
+      width:         calc(50% - 230px);
+      
+      /*@include zen-grid-item (3, 1);*/
       .inside {
        // padding: 0 1em 2em 0;
       }
     }
 
     .panel-col-last {
-      @include zen-grid-item (7, 4);
+      float: left;
+      width: -webkit-calc(50% + 230px);
+      width:   expression(50% + 230px);
+      width:    -moz-calc(50% + 230px);
+      width:      -o-calc(50% + 230px);
+      width:         calc(50% + 230px);
+      /*@include zen-grid-item (7, 4);*/
     }
   }
 }
