@@ -11,6 +11,7 @@
       padding: 25px 25px 15px;
     }
     @include window_size(desktop) {
+      padding-bottom: 37px;
       > .block:first-child {
         padding: 28px 0 47px;
       }
@@ -38,13 +39,13 @@
   }
   
   @include window_size(desktop) {
-    &::after {
+/*    &::after {
       content: "."; 
       visibility: hidden;
       display: block; 
       height: 0 !important;
       clear: both;
-    }
+    }*/
     .bp-sponsor {
       display: block;
       float: left;

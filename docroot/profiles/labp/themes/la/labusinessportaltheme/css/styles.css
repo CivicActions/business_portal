@@ -2746,7 +2746,7 @@ body.not-logged-in.page-user #main {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 50px;
+  top: 49px;
   right: 0;
   background: #fff;
   padding: 0;
@@ -2851,7 +2851,7 @@ body.not-logged-in.page-user #main {
     height: 0;
     position: absolute;
     top: 43px;
-    padding: 15px 0 10px 1em;
+    padding: 11px 20px 9px;
     width: 285px;
     margin-left: 0 !important;
     background: rgba(255, 255, 255, 0.8);
@@ -2926,14 +2926,13 @@ body.not-logged-in.page-user #main {
   }
 }
 
-/* line 95, ../sass/components/_menu__main.scss */
-.menu__item a {
+/* line 92, ../sass/components/_menu__main.scss */
+#header .menu__item a {
   display: block;
   font-weight: bold;
 }
-
-/* line 102, ../sass/components/_menu__main.scss */
-.menu__link {
+/* line 99, ../sass/components/_menu__main.scss */
+#header .menu__link {
   border: 0px solid red;
   margin: 8px 0 0 0;
   display: block;
@@ -3340,25 +3339,29 @@ a#menu__hamburger {
   padding: 25px 25px 15px;
 }
 @media all and (min-width: 960px) {
-  /* line 14, ../sass/components/_footer--sponsors.scss */
+  /* line 5, ../sass/components/_footer--sponsors.scss */
+  .region--footer-sponsors .region {
+    padding-bottom: 37px;
+  }
+  /* line 15, ../sass/components/_footer--sponsors.scss */
   .region--footer-sponsors .region > .block:first-child {
     padding: 28px 0 47px;
   }
 }
 
-/* line 23, ../sass/components/_footer--sponsors.scss */
+/* line 24, ../sass/components/_footer--sponsors.scss */
 .view-bp-sponsors .view-content .bp-sponsor .sponsors__logo {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 23, ../sass/components/_footer--sponsors.scss */
+  /* line 24, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor .sponsors__logo {
     display: block;
     max-width: 70px;
     height: auto;
   }
 }
-/* line 31, ../sass/components/_footer--sponsors.scss */
+/* line 32, ../sass/components/_footer--sponsors.scss */
 .view-bp-sponsors .view-content .bp-sponsor .sponsors__title {
   margin-bottom: 15px;
   line-height: 1.25;
@@ -3367,22 +3370,24 @@ a#menu__hamburger {
   margin-top: 8px;
 }
 @media all and (min-width: 960px) {
-  /* line 41, ../sass/components/_footer--sponsors.scss */
-  .view-bp-sponsors .view-content::after {
-    content: ".";
-    visibility: hidden;
-    display: block;
-    height: 0 !important;
-    clear: both;
+  /* line 22, ../sass/components/_footer--sponsors.scss */
+  .view-bp-sponsors .view-content {
+    /*    &::after {
+          content: "."; 
+          visibility: hidden;
+          display: block; 
+          height: 0 !important;
+          clear: both;
+        }*/
   }
-  /* line 48, ../sass/components/_footer--sponsors.scss */
+  /* line 49, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor {
     display: block;
     float: left;
     width: 102px;
     margin-right: 35px;
   }
-  /* line 53, ../sass/components/_footer--sponsors.scss */
+  /* line 54, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor:last-child {
     margin: 0;
   }
@@ -4052,14 +4057,19 @@ hr.hero__line--half {
 /* line 85, ../sass/components/_landing_page--views.scss */
 .view-id-bp_featured_sub_page .views-field-body,
 .view-id-bp_featured_sub_page .views-field-field-description,
+.view-id-bp_featured_sub_page .views-field-description,
 .view-bp-featured-resource-page .views-field-body,
 .view-bp-featured-resource-page .views-field-field-description,
+.view-bp-featured-resource-page .views-field-description,
 .view-id-departments .views-field-body,
 .view-id-departments .views-field-field-description,
+.view-id-departments .views-field-description,
 .view-terms-definitions .views-field-body,
 .view-terms-definitions .views-field-field-description,
+.view-terms-definitions .views-field-description,
 .view-id-sbp_resource_incentives .views-field-body,
-.view-id-sbp_resource_incentives .views-field-field-description {
+.view-id-sbp_resource_incentives .views-field-field-description,
+.view-id-sbp_resource_incentives .views-field-description {
   line-height: 1.25em;
   width: 90%;
 }
@@ -4067,14 +4077,19 @@ hr.hero__line--half {
   /* line 85, ../sass/components/_landing_page--views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
   .view-id-bp_featured_sub_page .views-field-field-description,
+  .view-id-bp_featured_sub_page .views-field-description,
   .view-bp-featured-resource-page .views-field-body,
   .view-bp-featured-resource-page .views-field-field-description,
+  .view-bp-featured-resource-page .views-field-description,
   .view-id-departments .views-field-body,
   .view-id-departments .views-field-field-description,
+  .view-id-departments .views-field-description,
   .view-terms-definitions .views-field-body,
   .view-terms-definitions .views-field-field-description,
+  .view-terms-definitions .views-field-description,
   .view-id-sbp_resource_incentives .views-field-body,
-  .view-id-sbp_resource_incentives .views-field-field-description {
+  .view-id-sbp_resource_incentives .views-field-field-description,
+  .view-id-sbp_resource_incentives .views-field-description {
     width: 70%;
   }
 }
@@ -4082,21 +4097,27 @@ hr.hero__line--half {
   /* line 85, ../sass/components/_landing_page--views.scss */
   .view-id-bp_featured_sub_page .views-field-body,
   .view-id-bp_featured_sub_page .views-field-field-description,
+  .view-id-bp_featured_sub_page .views-field-description,
   .view-bp-featured-resource-page .views-field-body,
   .view-bp-featured-resource-page .views-field-field-description,
+  .view-bp-featured-resource-page .views-field-description,
   .view-id-departments .views-field-body,
   .view-id-departments .views-field-field-description,
+  .view-id-departments .views-field-description,
   .view-terms-definitions .views-field-body,
   .view-terms-definitions .views-field-field-description,
+  .view-terms-definitions .views-field-description,
   .view-id-sbp_resource_incentives .views-field-body,
-  .view-id-sbp_resource_incentives .views-field-field-description {
+  .view-id-sbp_resource_incentives .views-field-field-description,
+  .view-id-sbp_resource_incentives .views-field-description {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
+    color: rgba(0, 0, 0, 0.6);
   }
 }
 
-/* line 101, ../sass/components/_landing_page--views.scss */
+/* line 103, ../sass/components/_landing_page--views.scss */
 .view-id-departments .views-row-1 {
   padding-top: 0;
 }
@@ -4110,7 +4131,9 @@ hr.hero__line--half {
 .region--bottom {
   background: #0f2940;
   color: white;
-  padding: 25px 25px 35px;
+  padding: 26px 25px 19px;
+  overflow: hidden;
+  *zoom: 1;
 }
 /* line 12, ../sass/components/_bottom-region.scss */
 .region--bottom .region--bottom--wrapper {
