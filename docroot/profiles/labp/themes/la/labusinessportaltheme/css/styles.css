@@ -302,9 +302,9 @@
   color: #1e3549;
 }
 /* line 238, ../sass/base/_mixins.scss */
-.style_variant.light_grey hr.panel__header-line_thin,
-.style_variant.light_grey hr.hero__line--half {
-  background: white;
+.style_variant.light_grey hr.panel__header-line,
+.style_variant.light_grey hr.panel__header-line_thin {
+  background: #7ac7f6;
 }
 
 /*****************************************************
@@ -634,9 +634,9 @@ body {
   color: #1e3549;
 }
 /* line 238, ../sass/base/_mixins.scss */
-.style_variant.light_grey hr.panel__header-line_thin,
-.style_variant.light_grey hr.hero__line--half {
-  background: white;
+.style_variant.light_grey hr.panel__header-line,
+.style_variant.light_grey hr.panel__header-line_thin {
+  background: #7ac7f6;
 }
 
 /*****************************************************
@@ -5711,11 +5711,21 @@ a.wizard__arrow-down.enabled.section {
 
 /* line 46, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .tool-tip {
-  background: url("../images/subsections/icon_bulb_no_circle.png") #def6fe 20px center no-repeat;
-  font-size: 14px !important;
-  padding: 1em 55px !important;
-  margin: 1em 0 !important;
+  padding: 60px 16px 16px !important;
+  background-image: url("../images/subsections/icon_bulb_no_circle.png");
+  background-color: #def6fe;
+  background-repeat: no-repeat;
   background-size: 23px 33px;
+  background-position: 16px 16px;
+  margin: 1em 0 !important;
+  color: rgba(0, 0, 0, 0.6);
+}
+@media all and (min-width: 960px) {
+  /* line 46, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  .tool-tip {
+    background-position: 20px center;
+    padding: 1em 55px !important;
+  }
 }
 
 /* line 50, ../sass/components/starter-kit/_bp_starter_kit.scss */
@@ -5754,6 +5764,10 @@ a.wizard__arrow-down.enabled.section {
 /******** Starter Kit Specific Styles ******/
 /* line 59, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit {
+  /*  .panel-2col-stacked .panel-col-first .inside {
+      padding: 0;
+      margin: 0;
+    }*/
   /*****Download Block*****/
   /********* Content Sections *********/
 }
@@ -5768,87 +5782,82 @@ a.wizard__arrow-down.enabled.section {
     margin: 0;
   }
 }
-/* line 68, ../sass/components/starter-kit/_bp_starter_kit.scss */
-.node-type-sbp-starter-kit p,
-.node-type-sbp-starter-kit .field-name-field-guide-description,
-.node-type-sbp-starter-kit .field-name-field-permit-description,
-.node-type-sbp-starter-kit .field-name-field-section-description {
+/* line 69, ../sass/components/starter-kit/_bp_starter_kit.scss */
+.node-type-sbp-starter-kit .panel-2col-stacked .panel-col-last .inside p,
+.node-type-sbp-starter-kit .panel-2col-stacked .panel-col-last .inside .field-name-field-guide-description,
+.node-type-sbp-starter-kit .panel-2col-stacked .panel-col-last .inside .field-name-field-permit-description,
+.node-type-sbp-starter-kit .panel-2col-stacked .panel-col-last .inside .field-name-field-section-description {
   color: rgba(0, 0, 0, 0.6);
   margin: 10px 0 20px 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 22px;
 }
-/* line 83, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 85, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__layout--half .hero__background-image {
   background-size: 200%;
   background-position: 50% 60%;
   height: 250px;
 }
 @media all and (min-width: 480px) {
-  /* line 83, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 85, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .hero__layout--half .hero__background-image {
     background-size: 150%;
   }
 }
 @media all and (min-width: 720px) {
-  /* line 83, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 85, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .hero__layout--half .hero__background-image {
     background-size: cover;
     height: auto;
   }
 }
-/* line 97, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 99, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__headline--half--mobile {
   font-size: 1.714em;
   font-weight: 700;
   color: #0f2940;
 }
-/* line 103, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 105, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__header--inner {
   padding-top: 200px;
 }
-/* line 108, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 110, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__layout--half .hero__call-to-action--item {
   margin-left: 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 108, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 110, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .hero__layout--half .hero__call-to-action--item {
     margin-left: 0;
   }
 }
-/* line 115, ../sass/components/starter-kit/_bp_starter_kit.scss */
-.node-type-sbp-starter-kit .panel-2col-stacked .panel-col-first .inside {
-  padding: 0;
-  margin: 0;
-}
 @media all and (min-width: 960px) {
-  /* line 122, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 124, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .page__starter-kit-download {
     display: inline-block;
     width: 45%;
   }
 }
-/* line 130, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 132, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__starter-kit--icon {
   width: 134px;
   height: 134px;
   margin: 0 auto 15px;
 }
-/* line 137, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 139, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__button {
   text-align: center;
   padding: 8px 20px;
 }
-/* line 140, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 142, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__button a {
   width: 200px;
   display: block;
   margin: 0 auto 15px;
   font-size: 1.143em;
 }
-/* line 149, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 151, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit h2.pane-title {
   font-family: "Merriweather", serif;
   font-size: 20px;
@@ -5858,14 +5867,14 @@ a.wizard__arrow-down.enabled.section {
   padding: 15px 20px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 149, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 151, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit h2.pane-title {
     font-size: 28px;
     margin: 30px 0 30px 0;
     padding: 20px 0 0 0;
   }
 }
-/* line 164, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 166, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .field-name-field-section-title,
 .node-type-sbp-starter-kit .field-name-field-agency {
   font-family: "Roboto", sans-serif;
@@ -5880,14 +5889,14 @@ a.wizard__arrow-down.enabled.section {
   background-position: 0px 26px;
   border-top: 1px solid #dcdcdc;
 }
-/* line 180, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 182, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit ul.depth {
   margin: 10px 0 20px 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 22px;
 }
-/* line 185, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 187, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit ul.depth li.depth {
   list-style: none;
   background-image: url("../images/subsections/icon_checkmark_red.png");
@@ -6478,7 +6487,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 @media all and (min-width: 720px) {
   /* line 99, ../sass/components/_four_column_cta.scss */
   .four-col-wrapper .panel__section .panel__icon_header, .four-col-wrapper .panel__section p {
-    max-width: 150px;
+    max-width: 170px;
   }
 }
 

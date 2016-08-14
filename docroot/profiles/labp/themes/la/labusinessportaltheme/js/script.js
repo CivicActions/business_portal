@@ -367,6 +367,12 @@ Drupal.behaviors.rotator = {
         $('#block-sbp-search-sbp-search-icon.active').trigger('click');
     });
     
+    
+    $('.tool-tip').each(function() {
+      var $parent = $('.tool-tip').parents('li');
+      $parent.css({'background-image': 'none'});
+    })
+    
   });
 
 })(jQuery, Drupal, this, this.document);

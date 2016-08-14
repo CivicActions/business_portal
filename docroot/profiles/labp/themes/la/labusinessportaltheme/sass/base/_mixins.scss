@@ -235,9 +235,9 @@ $border--thick: 3px solid $dark_blue;
       color: $navy;
     }
 
-    hr.panel__header-line_thin,
-    hr.hero__line--half {
-      background: $white;
+    hr.panel__header-line,
+    hr.panel__header-line_thin {
+      background: $light-blue;
     }
   }
 }
@@ -260,7 +260,6 @@ $border--thick: 3px solid $dark_blue;
   @include window_size(desktop){
     //@include border-radius(25px);
     font-size: 1.143em;
-
   }
 }
 
@@ -307,11 +306,18 @@ $border--thick: 3px solid $dark_blue;
 
 /*************** TOOL TIP************/
 @mixin tool-tip($tip-bg-color: $tooltip-blue, $tip-icon: "../images/subsections/icon_bulb_no_circle.png") {
-  background: url($tip-icon) $tip-bg-color 20px center no-repeat;
-  font-size: 14px !important;
-  padding: 1em 55px !important;
-  margin: 1em 0 !important;
+  padding: 60px 16px 16px !important;
+  background-image: url($tip-icon);
+  background-color: $tip-bg-color;
+  background-repeat: no-repeat;
   background-size: 23px 33px;
+  background-position: 16px 16px;
+  margin: 1em 0 !important;
+  color: rgba(0,0,0,.6);
+  @include window_size(desktop){
+    background-position: 20px center;
+    padding: 1em 55px !important;
+  }
 }
 /***************TITLE************/
 @mixin headline($heading-font, $zen-grid-width) {
