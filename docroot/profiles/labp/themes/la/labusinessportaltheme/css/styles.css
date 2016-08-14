@@ -5893,8 +5893,8 @@ a.wizard__arrow-down.enabled.section {
 .node-type-sbp-starter-kit ul.depth {
   margin: 10px 0 20px 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 18px;
 }
 /* line 187, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit ul.depth li.depth {
