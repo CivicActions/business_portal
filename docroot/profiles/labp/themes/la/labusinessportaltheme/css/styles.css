@@ -4072,6 +4072,7 @@ hr.hero__line--half {
 .view-id-sbp_resource_incentives .views-field-description {
   line-height: 1.25em;
   width: 90%;
+  color: rgba(0, 0, 0, 0.6);
 }
 @media all and (min-width: 720px) {
   /* line 85, ../sass/components/_landing_page--views.scss */
@@ -4113,7 +4114,6 @@ hr.hero__line--half {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
-    color: rgba(0, 0, 0, 0.6);
   }
 }
 

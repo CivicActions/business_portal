@@ -87,6 +87,7 @@
   .views-field-description {
     line-height: 1.25em;
     width: 90%;
+    color: rgba(0, 0, 0, 0.6);
     @include window_size(tab-wide-up){
       width: 70%;
     }
@@ -94,7 +95,6 @@
       width: 85%;
       font-size: 1.143em;
       line-height: 1.35em;
-      color: rgba(0, 0, 0, 0.6);
     }
   }
 }
