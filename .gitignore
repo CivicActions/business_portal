@@ -47,6 +47,7 @@ test/results.xml
 # Composer
 /vendor
 /.composer
+/.bash_history
 
 # Drupal #
 ##########
