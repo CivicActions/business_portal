@@ -54,7 +54,8 @@ cd PROJECT
 ### Step 3. Place a recent, sanitized copy of the database in the base directory:
 
 ``` bash
-rsync -P user@example.com:latest/sanitized-daily_drupal.sql.gz .snapshot.sql.gz
+cp -v assets/DEV-2016-06-28T18-23-59.sql .snapshot.sql
+gzip .snapshot.sql
 ```
 
 ### Step 4. Build and run your "PROJECT" container
@@ -62,6 +63,7 @@ rsync -P user@example.com:latest/sanitized-daily_drupal.sql.gz .snapshot.sql.gz
 Docker creates virtual instances of Linux on your local machine, and this next step installs those machines, then sets the ~/workspace/PROJECT directory to work with the Linux environments installed here.
 
 ``` bash
+build
 import
 ```
 

@@ -49,10 +49,6 @@ test/results.xml
 /.composer
 /.bash_history
 
-# Drupal #
-##########
-docroot/sites/default/*
-
 # Drupal VM #
 #############
 box/.vagrant/
