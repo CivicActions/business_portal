@@ -54,7 +54,7 @@ cd PROJECT
 ### Step 3. Place a recent, sanitized copy of the database in the base directory:
 
 ``` bash
-cp -v assets/DEV-2016-06-28T18-23-59.sql .snapshot.sql
+cp -v assets/FULL-2016-06-22T12-28-51.sql .snapshot.sql
 gzip .snapshot.sql
 ```
 

@@ -44,10 +44,11 @@ tests/behat/local.yml
 *.sass-cache
 .drush
 test/results.xml
+/.bash_history
+/files-private
 # Composer
 /vendor
 /.composer
-/.bash_history
 
 # Drupal VM #
 #############
