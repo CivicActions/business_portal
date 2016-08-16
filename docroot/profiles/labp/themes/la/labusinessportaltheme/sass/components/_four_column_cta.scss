@@ -99,7 +99,7 @@
     .panel__icon_header, p {
       max-width: 65%;
       @include window_size(tab-wide-up) {
-        max-width: 150px;
+        max-width: 170px;
       }
     }
   }
