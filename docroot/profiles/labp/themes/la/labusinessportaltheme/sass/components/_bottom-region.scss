@@ -7,8 +7,8 @@
 .region--bottom {
   background: $dark_blue;
   color: $white;
-  padding: 25px 25px 35px;
-  
+  padding: 26px 25px 19px;
+  @include clearfix;
   .region--bottom--wrapper {
     @include wrapper(100%);
   }
