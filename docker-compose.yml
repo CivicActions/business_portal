@@ -23,6 +23,8 @@ php:
   links:
     - db:dbhost
   hostname: php_host
+solr:
+  image: solr:5-alpine
 web:
   image: davenuman/bowline-centos
   command: httpd -D FOREGROUND -e debug
@@ -31,6 +33,7 @@ web:
   links:
     - db:dbhost
     - php:php_host
+    - solr:solr
   volumes_from:
     - php
   hostname: drupal
