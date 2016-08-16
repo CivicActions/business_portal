@@ -74,13 +74,10 @@
 .four-col-wrapper {
   $zen-column-count: 4;
   @include zen-grid-container;
-
   margin: auto;
   max-width: $max-site-width;
-  @include wrapper(90%);
-  padding: 1em 0 3em;
+  padding: 1em 25px 3em;
   @include window_size(desktop) {
-    @include wrapper(80%);
     padding: 1em 0 6em;
   }
 

@@ -3,15 +3,12 @@ body.node-type-sbp-landing-page {
   /********* Layout *************/
 
   .panel__content_wrapper {
-    $zen-grid-width: 90%;
+    padding: 0 25px;
     margin: 0 auto;
     max-width: $max-site-width;
     @include zen-grid-container();
-    width: $zen-grid-width;
-    padding-bottom: 0;
     @include window-size(desktop){
-      @include wrapper (80%);
-      padding-bottom: 0;
+      padding: 0;
     }
     
     .panel__button_wrapper {

@@ -68,10 +68,13 @@ hr.hero__line--half {
 
 .hero__layout--full {
   .hero__content-wrapper {
-    @include wrapper(90%);
+/*    @include wrapper(90%);*/
+    padding: 0 25px;
     max-width: $max-site-width;
+    margin: auto;
     @include window_size(desktop) {
-      @include wrapper(80%);
+      /*@include wrapper(80%);*/
+      padding: 0;
     }
   }
   .hero__headline {
