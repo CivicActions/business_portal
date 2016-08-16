@@ -116,7 +116,7 @@
 
 /* Special styles to line header elements up in the resources section */
 @media (min-width: 960px) {
-  body.section-resources,
+/*  body.section-resources,
   body.section-content {
     #header {
       .header--wrapper {
@@ -124,24 +124,44 @@
         margin: 0;
         max-width: none;
       }
-      .header__logo {
-        width: 30%;
+      
+      .logo--wrapper {
+        float: left;
+        width: -webkit-calc(50% - 230px);
+        width:   expression(50% - 230px);
+        width:    -moz-calc(50% - 230px);
+        width:      -o-calc(50% - 230px);
+        width:         calc(50% - 230px);
+        padding: 8px 43px 7px 0;
+        
+        box-sizing: border-box;
+        text-align: right;
       }
-      .header__logo-image {
-        height: 38px;
+      .header__logo {
         float: right;
-        padding-right: 43px;
+        .header__logo-image {
+          height: 38px;
+          width: auto;
+        }
       }
       .header__region {
         width: 70%;
         margin-left: 30%;
         max-width: 710px;
+        float: left;
+        width: -webkit-calc(50% + 230px);
+        width:   expression(50% + 230px);
+        width:    -moz-calc(50% + 230px);
+        width:      -o-calc(50% + 230px);
+        width:         calc(50% + 230px);
+        
+        
       }
       .menu {
         margin-left: 28px;
       }
     }
-  }
+  }*/
 }
 
 
