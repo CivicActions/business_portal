@@ -1326,31 +1326,6 @@ function sbp_field_base_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_line_separator'.
-  $field_bases['field_line_separator'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_line_separator',
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 'no',
-        1 => 'yes',
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
   // Exported field_base: 'field_link'.
   $field_bases['field_link'] = array(
     'active' => 1,

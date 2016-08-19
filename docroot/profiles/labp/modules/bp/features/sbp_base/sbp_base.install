@@ -305,3 +305,15 @@ function sbp_base_update_7022() {
   drupal_set_message('Calendar updates.');
   features_revert_module('labp_calendar');
 }
+
+/**
+ * LA-426.
+ */
+function sbp_base_update_7023() {
+  drupal_set_message('Removing line separator in GC widget.');
+  field_delete_field('field_line_separator');
+
+  drupal_set_message('Cleaning up features.');
+  features_revert_module('sbp_field_base');
+  features_revert_module('sbp_panels');
+}

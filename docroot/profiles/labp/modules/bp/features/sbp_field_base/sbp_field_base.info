@@ -77,7 +77,6 @@ features[field_base][] = field_intro_title
 features[field_base][] = field_issuing_department
 features[field_base][] = field_jurisdiction
 features[field_base][] = field_languages
-features[field_base][] = field_line_separator
 features[field_base][] = field_link
 features[field_base][] = field_logo
 features[field_base][] = field_main_feature
