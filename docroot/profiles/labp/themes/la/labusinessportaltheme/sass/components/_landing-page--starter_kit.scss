@@ -1,0 +1,63 @@
+body.node-type-sbp-landing-page {
+  .three-col-wrapper {
+    .panel__section {
+      margin-top: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    
+      .panel__icon {
+        float: none !important;
+        max-width: 220px !important;
+        margin-bottom: 20px;
+        img {
+          width: 100% !important;
+          height: auto !important;
+
+        }
+      }
+      
+      .panel__header,
+      .panel__icon_header {
+        margin:0 0 10px;
+        font-size:1.714em;
+        @include window_size(tab-wide-up){
+          max-width: 260px;
+        }
+      }
+
+      .panel__header-line, .panel__header-line_thin {
+        display: none;
+      }
+      
+      .panel__paragraph {
+        font-size: 1.071em;
+        line-height: 1.33;
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 20px;
+        @include window_size(tab-wide-up) {
+          font-size: 1.285em;
+          max-width: 260px;
+        }
+      }
+      
+      .panel__button {
+        font-size: 18px;
+        color:$light-blue;
+        font-weight: 700;
+        padding: 0;
+        background-color: transparent;
+        background-image: url("../images/subsections/calendar-next.svg");
+        background-repeat: no-repeat;
+        background-size: 11px 18px;
+        background-position: right center;
+        text-decoration: none !important;
+        line-height: 24px;
+        display: inline-block;
+        margin: 0;
+        padding-right: 17px;
+        width: auto;
+      }
+    }
+  }
+}
