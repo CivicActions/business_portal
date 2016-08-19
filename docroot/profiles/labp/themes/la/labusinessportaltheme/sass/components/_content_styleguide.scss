@@ -4,6 +4,24 @@
  * Content Styleguide.
  *
  */
+
+@mixin page__content_header--level_1_thin {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 400;
+  border-top: 1px solid #dcdcdc;
+  margin: 0 0 15px;
+  padding: 15px 0 0;
+
+  @include window_size(desktop){
+    font-size: 28px;
+    margin: 0 0 30px;
+    padding: 20px 0 0 0;
+  }
+}
+
+
 @mixin page__content_header--level_1 {
   font-size:26px;
   font-weight: 900;
@@ -35,6 +53,8 @@
 }
 
 @mixin page__content_header--level_2_thin {
+  font-family: Merriweather, serif;
+  font-weight: normal;
   font-size: 20px;
   font-weight: 400;
   border-top: 1px solid #dcdcdc;
@@ -190,18 +210,17 @@
   color:$light-blue;
   font-weight: 700;
   border: 0px solid red;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
   padding: 0;
   background-image: url("../images/subsections/icon_link_arrow.png");
   background-repeat: no-repeat;
   background-size: 9px 16px;
-  background-position: 28px 2px;
-  display: block;
-  width: 120px;
+  padding-right: 17px;
+  background-position: right center;
+  display: inline-block;
+  /*width: 120px;*/
   text-decoration: none !important;
   @include window_size(desktop){
     font-size: 18px;
-    background-size: 9px 16px;
-    background-position: 30px 3px;
   }
 }

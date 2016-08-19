@@ -1,19 +1,11 @@
 .panel__general_content {
   margin-top: 15px;
-
+  
   .panel__general_content__title {
-    @include headline($heading-font, $zen-grid-width);
+    @include page__content_header--level_1_thin;
   }
 
   .panel__general_content__body {
-    font-size:1.286em;
-    line-height: 1.4em;
-
-    @include window_size(tab-wide-up){
-      font-size: 1.429em;
-      width: 90%;
-    }
-    
     h1 {
       @include page__content_header--level_1
     }
@@ -41,7 +33,7 @@
     ol {
       @include page__content_ordered_list;
     }
-    a.content_link {
+    a.content_link, a.page__content_link {
       @include page__content_link;
     }
   }
