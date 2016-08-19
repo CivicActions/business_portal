@@ -8,7 +8,7 @@ $lacity-text-color: #39afef;
   
   font-family: Roboto, sans-serif;
   .fc-toolbar {
-    border-bottom: 2px solid $lacity-border-color;
+    border-bottom: 1px solid $lacity-border-color;
     position: relative;
     padding: 20px 160px 20px 90px;
     .fc-left, .fc-right, .fc-center {
@@ -82,7 +82,7 @@ $lacity-text-color: #39afef;
     padding-top: 50px;
     padding-right: 15px;
     div {
-      border-top: 2px solid $lacity-border-color !important;
+      border-top: 1px solid $lacity-border-color !important;
       padding-top: 10px;
       a {
         font-size: 14px;
@@ -135,15 +135,21 @@ $lacity-text-color: #39afef;
     table {
       border-collapse: separate;
     }
+    td {
+      height: 55px;
+      padding-bottom: 20px;
+    }
     .fc-day-number {
-      border-top: 2px solid $lacity-border-color !important;
+      border-top: 1px solid $lacity-border-color !important;
       border-color: $lacity-border-color !important;
-      border-top-width: 2px !important;
+      border-top-width: 1px !important;
       padding-top: 10px;
+      padding-bottom: 10px;
       text-align: left !important;
       color: $navy;
       font-weight: 700;
       position: relative;
+      height: auto;
       &::before {
         position: absolute !important;
         width: 10px;
@@ -217,6 +223,7 @@ $lacity-text-color: #39afef;
       background: transparent;
       &.fc-state-active {
         border: 1px solid $lacity-border-color;
+        font-weight: 700;
       }
     }
   }
