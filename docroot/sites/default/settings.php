@@ -588,4 +588,14 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 // Include file for docker database connection.
 if (file_exists('/var/www/.docker/etc/settings.docker.php')) {
   require '/var/www/.docker/etc/settings.docker.php';
+// Let's hook up DrupalVM.
+} else {
+  $databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => 'drupal',
+    'username' => 'drupal',
+    'password' => 'drupal',
+    'host' => 'localhost',
+    'prefix' => '',
+  );
 }
