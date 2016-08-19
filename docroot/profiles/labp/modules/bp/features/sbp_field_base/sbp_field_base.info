@@ -29,7 +29,6 @@ features[field_base][] = field_apply_online
 features[field_base][] = field_author
 features[field_base][] = field_background
 features[field_base][] = field_background_image
-features[field_base][] = field_banner_image
 features[field_base][] = field_business_need
 features[field_base][] = field_business_ownership
 features[field_base][] = field_business_stage

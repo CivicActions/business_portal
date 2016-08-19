@@ -317,3 +317,26 @@ function sbp_base_update_7023() {
   features_revert_module('sbp_field_base');
   features_revert_module('sbp_panels');
 }
+
+/**
+ * LA-426.
+ */
+function sbp_base_update_7024() {
+  drupal_set_message('Deleting hero fieldable panel pane type.');
+  features_revert_module('sbp_hero');
+
+  drupal_set_message('Cache clear.');
+  cache_clear_all();
+}
+
+/**
+ * LA-411.
+ */
+function sbp_base_update_7025() {
+  drupal_set_message('Removing banner image in timeline widget.');
+  field_delete_field('field_banner_image');
+
+  drupal_set_message('Cleaning up features.');
+  features_revert_module('sbp_field_base');
+  features_revert_module('sbp_panels');
+}
