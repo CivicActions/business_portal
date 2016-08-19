@@ -155,7 +155,7 @@ function sbp_starter_kit_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Guide Image */
+  /* Field: Content: Checklist Image */
   $handler->display->display_options['fields']['field_guide_image']['id'] = 'field_guide_image';
   $handler->display->display_options['fields']['field_guide_image']['table'] = 'field_data_field_guide_image';
   $handler->display->display_options['fields']['field_guide_image']['field'] = 'field_guide_image';
@@ -167,7 +167,7 @@ function sbp_starter_kit_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Content: Guide PDF */
+  /* Field: Content: Checklist PDF */
   $handler->display->display_options['fields']['field_guide_pdf']['id'] = 'field_guide_pdf';
   $handler->display->display_options['fields']['field_guide_pdf']['table'] = 'field_data_field_guide_pdf';
   $handler->display->display_options['fields']['field_guide_pdf']['field'] = 'field_guide_pdf';

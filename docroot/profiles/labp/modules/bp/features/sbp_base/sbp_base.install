@@ -340,3 +340,11 @@ function sbp_base_update_7025() {
   features_revert_module('sbp_field_base');
   features_revert_module('sbp_panels');
 }
+
+/**
+ * LA-399.
+ */
+function sbp_base_update_7026() {
+  drupal_set_message('Cleaning up features.');
+  features_revert_module('sbp_starter_kit');
+}
