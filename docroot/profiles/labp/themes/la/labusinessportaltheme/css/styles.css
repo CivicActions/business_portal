@@ -5723,6 +5723,77 @@ a.wizard__arrow-down.enabled.section {
  *
  */
 /* Sub-component: guide__teaser  */
+/* line 3, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section {
+  margin-top: 40px;
+}
+/* line 5, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section:last-child {
+  margin-bottom: 0;
+}
+/* line 9, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__icon {
+  float: none !important;
+  max-width: 220px !important;
+  margin-bottom: 20px;
+}
+/* line 13, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__icon img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 20, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__header,
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__icon_header {
+  margin: 0 0 10px;
+  font-size: 1.714em;
+}
+@media all and (min-width: 720px) {
+  /* line 20, ../sass/components/_landing-page--starter_kit.scss */
+  body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__header,
+  body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__icon_header {
+    max-width: 260px;
+  }
+}
+/* line 29, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__header-line, body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__header-line_thin {
+  display: none;
+}
+/* line 33, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__paragraph {
+  font-size: 1.071em;
+  line-height: 1.33;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+@media all and (min-width: 720px) {
+  /* line 33, ../sass/components/_landing-page--starter_kit.scss */
+  body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__paragraph {
+    font-size: 1.285em;
+    max-width: 260px;
+  }
+}
+/* line 44, ../sass/components/_landing-page--starter_kit.scss */
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__button, body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 body.node-type-sbp-landing-page .three-col-wrapper .panel__section a.facetapi__toggle,
+body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle,
+.panel-2col-stacked .pane-sbp-terms-definitions body.node-type-sbp-landing-page .three-col-wrapper .panel__section a.facetapi__toggle {
+  font-size: 18px;
+  color: #7ac7f6;
+  font-weight: 700;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../images/subsections/calendar-next.svg");
+  background-repeat: no-repeat;
+  background-size: 11px 18px;
+  background-position: right center;
+  text-decoration: none !important;
+  line-height: 24px;
+  display: inline-block;
+  margin: 0;
+  padding-right: 17px;
+  width: auto;
+}
+
 /**
  * @file
  * SMACSS Modules
@@ -6567,6 +6638,8 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 /* line 25, ../sass/components/_three_column_cta.scss */
 .three-col-wrapper {
   margin: auto;
+  max-width: 960px;
+  padding: 1em 25px;
 }
 /* line 45, ../sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
 .three-col-wrapper:before, .three-col-wrapper:after {
@@ -6577,12 +6650,12 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 .three-col-wrapper:after {
   clear: both;
 }
-/* line 37, ../sass/components/_three_column_cta.scss */
+/* line 36, ../sass/components/_three_column_cta.scss */
 .three-col-wrapper .panel__section {
   margin-top: 2em;
 }
 @media all and (min-width: 720px) {
-  /* line 37, ../sass/components/_three_column_cta.scss */
+  /* line 36, ../sass/components/_three_column_cta.scss */
   .three-col-wrapper .panel__section {
     padding-left: 10px;
     padding-right: 10px;
@@ -6600,11 +6673,11 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
     margin-right: 0;
   }
 }
-/* line 47, ../sass/components/_three_column_cta.scss */
+/* line 46, ../sass/components/_three_column_cta.scss */
 .three-col-wrapper .panel__icon_header {
   min-height: 30px;
 }
-/* line 51, ../sass/components/_three_column_cta.scss */
+/* line 50, ../sass/components/_three_column_cta.scss */
 .three-col-wrapper .panel__icon {
   margin-bottom: .5em;
 }
