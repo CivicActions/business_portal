@@ -885,16 +885,6 @@ function labp_users_user_default_permissions() {
     'module' => 'fieldable_panels_panes',
   );
 
-  // Exported permission: 'create fieldable hero'.
-  $permissions['create fieldable hero'] = array(
-    'name' => 'create fieldable hero',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'fieldable_panels_panes',
-  );
-
   // Exported permission: 'create fieldable map'.
   $permissions['create fieldable map'] = array(
     'name' => 'create fieldable map',
@@ -1241,16 +1231,6 @@ function labp_users_user_default_permissions() {
     'name' => 'delete fieldable general_content',
     'roles' => array(
       'Editor' => 'Editor',
-    ),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'delete fieldable hero'.
-  $permissions['delete fieldable hero'] = array(
-    'name' => 'delete fieldable hero',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'administrator' => 'administrator',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -1893,16 +1873,6 @@ function labp_users_user_default_permissions() {
     'name' => 'edit fieldable general_content',
     'roles' => array(
       'Editor' => 'Editor',
-    ),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'edit fieldable hero'.
-  $permissions['edit fieldable hero'] = array(
-    'name' => 'edit fieldable hero',
-    'roles' => array(
-      'Editor' => 'Editor',
-      'administrator' => 'administrator',
     ),
     'module' => 'fieldable_panels_panes',
   );

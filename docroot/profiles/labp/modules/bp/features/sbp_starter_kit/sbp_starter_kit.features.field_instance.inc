@@ -558,7 +558,7 @@ function sbp_starter_kit_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_guide_image',
-    'label' => 'Guide Image',
+    'label' => 'Checklist Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -648,7 +648,7 @@ function sbp_starter_kit_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_guide_pdf',
-    'label' => 'Guide PDF',
+    'label' => 'Checklist PDF',
     'required' => 1,
     'settings' => array(
       'description_field' => 0,
@@ -961,7 +961,7 @@ function sbp_starter_kit_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 15,
+      'weight' => 12,
     ),
   );
 
@@ -1031,7 +1031,7 @@ function sbp_starter_kit_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 16,
+      'weight' => 13,
     ),
   );
 
@@ -1110,11 +1110,11 @@ function sbp_starter_kit_field_default_field_instances() {
   t('Agency');
   t('Checklist Description');
   t('Checklist Hierarchy');
+  t('Checklist Image');
+  t('Checklist PDF');
   t('Checklist Sections');
   t('Comment');
   t('Guide Description');
-  t('Guide Image');
-  t('Guide PDF');
   t('Guide Title');
   t('Hero');
   t('Permit Description');

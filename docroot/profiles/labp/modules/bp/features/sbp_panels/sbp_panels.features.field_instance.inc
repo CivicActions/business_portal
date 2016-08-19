@@ -375,70 +375,6 @@ function sbp_panels_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_timeline_items-field_banner_image'.
-  $field_instances['field_collection_item-field_timeline_items-field_banner_image'] = array(
-    'bundle' => 'field_timeline_items',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'image',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_banner_image',
-    'label' => 'Banner Image',
-    'required' => 1,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'oembed' => 0,
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
-          'upload' => 0,
-        ),
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'media_generic',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-field_timeline_items-field_timeline_body'.
   $field_instances['field_collection_item-field_timeline_items-field_timeline_body'] = array(
     'bundle' => 'field_timeline_items',
@@ -858,7 +794,7 @@ function sbp_panels_field_default_field_instances() {
     'entity_type' => 'fieldable_panels_pane',
     'field_name' => 'field_intro_title',
     'label' => 'Introductory Title',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -871,48 +807,6 @@ function sbp_panels_field_default_field_instances() {
       ),
       'type' => 'text_textfield',
       'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'fieldable_panels_pane-general_content-field_line_separator'.
-  $field_instances['fieldable_panels_pane-general_content-field_line_separator'] = array(
-    'bundle' => 'general_content',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
-        ),
-        'type' => 'list_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'fieldable_panels_pane',
-    'field_name' => 'field_line_separator',
-    'label' => 'Line Separator',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'display_label' => 1,
-      ),
-      'type' => 'options_onoff',
-      'weight' => 5,
     ),
   );
 
@@ -1944,7 +1838,6 @@ function sbp_panels_field_default_field_instances() {
   t('Author');
   t('Background');
   t('Background Image');
-  t('Banner Image');
   t('Body');
   t('Bottom Right Background Image');
   t('Button');
@@ -1957,7 +1850,6 @@ function sbp_panels_field_default_field_instances() {
   t('Featured Resources');
   t('Icon');
   t('Introductory Title');
-  t('Line Separator');
   t('Please select the content pane style');
   t('Please select the style of this content pane');
   t('Quote');
