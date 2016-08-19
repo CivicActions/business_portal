@@ -26,7 +26,39 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
 
 ?>
 <div class="panel__timeline style_variant <?php print $pane_style; ?> <?php print $classes; ?>" <?php print $attributes; ?>>
-    <div class="timeline__container slick-carousel">
+
+    <?php
+
+    /*
+    <div class="timeline-arrow_left" id="timeline-tmpl_arrow_left"></div>
+    <div class="timeline-arrow_right" id="timeline-tmpl_arrow_right"></div>
+    */
+    ?>
+
+    <?php
+
+    /*
+    <div id="timeline_content" >
+      <div id="timeline-content_area"  class="timeline-content_area">
+      </div>
+    </div>
+    */
+    ?>
+    <div class="timeline__container">
+
+      <div class="timeline-illustration">
+        <div class="timeline-large_cloud"></div>
+        <div class="timeline-bldgs_move1"></div>
+        <div class="timeline-bldgs_move2"></div>
+        <div class="timeline-bldgs_move3"></div>
+
+        <div class="timeline-small_cloud"></div>
+        <div class="timeline-blimp"></div>
+        <div class="timeline-truck"></div>
+        <div class="timeline-food_truck"></div>
+      </div>
+      <div class="timeline-items slick-carousel">
+
     <?php
       foreach ($items as $item) {
         $item = field_collection_item_load($item['value']);
@@ -47,9 +79,6 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
         }
       ?>
         <div class="timeline__item">
-          <img class = "timeline__item__image"
-               src = "<?php print $banner_image; ?>"
-               alt = "<?php print $banner_image_alt; ?>"/>
           <div class = "timeline__item--inner">
             <div class="timeline__item__title"><?php print $title; ?></div>
             <hr class="timeline__item__hr"/>
@@ -60,6 +89,7 @@ if (!empty($content['field_timeline_items']) and !empty($content['field_timeline
       <?php
       }
     ?>
-
     </div>
+
   </div>
+</div>

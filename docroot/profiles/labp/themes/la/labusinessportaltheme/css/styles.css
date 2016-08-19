@@ -2526,7 +2526,7 @@ tr.selected td {
 /* line 764, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1468920640');
+  background-image: url('../images/progress.gif?1468856569');
 }
 
 /* line 770, ../sass/components/_misc.scss */
@@ -4463,7 +4463,7 @@ hr.hero__line--half {
   position: absolute;
   top: 15px;
   right: 0;
-  background-image: url('../images/wizard/icon_context_help.png?1468920640');
+  background-image: url('../images/wizard/icon_context_help.png?1468856569');
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -4796,7 +4796,7 @@ body.wizard-page {
   *zoom: 1;
   top: 0;
   right: 0;
-  background-image: url('../images/wizard/progress_bar.png?1468920640');
+  background-image: url('../images/wizard/progress_bar.png?1468856569');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 14px 14px;
@@ -4866,7 +4866,7 @@ body.wizard-page {
 /* line 92, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed_first_section {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1468920640');
+  background-image: url('../images/wizard/progress_bar_completed.png?1468856569');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 12px;
@@ -4876,7 +4876,7 @@ body.wizard-page {
 /* line 103, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--completed {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed.png?1468920640');
+  background-image: url('../images/wizard/progress_bar_completed.png?1468856569');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4886,7 +4886,7 @@ body.wizard-page {
 /* line 115, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__progress-bar_location_bar--selected {
   width: 58px;
-  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1468920640');
+  background-image: url('../images/wizard/progress_bar_completed_10_px.png?1468856569');
   background-repeat: no-repeat;
   background-size: 12px;
   background-position: 24px 0;
@@ -4961,7 +4961,7 @@ body.wizard-page {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1468920640');
+  background-image: url('../images/wizard/progress_bar_circle_incomplete.png?1468856569');
 }
 
 /* line 190, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4972,7 +4972,7 @@ body.wizard-page {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_completed.png?1468920640');
+  background-image: url('../images/wizard/progress_bar_circle_completed.png?1468856569');
 }
 
 /* line 197, ../sass/components/wizard/_wizard_progress_bar.scss */
@@ -4983,7 +4983,7 @@ body.wizard-page {
   padding: 0;
   display: inline-block;
   background-size: 100% 100%;
-  background-image: url('../images/wizard/progress_bar_circle_selected.png?1468920640');
+  background-image: url('../images/wizard/progress_bar_circle_selected.png?1468856569');
 }
 
 /**********/
@@ -5028,7 +5028,7 @@ body.wizard-page {
 /* line 241, ../sass/components/wizard/_wizard_progress_bar.scss */
 .wizard__button--close {
   border: 0px solid white;
-  background-image: url('../images/wizard/icon_close.png?1468920640');
+  background-image: url('../images/wizard/icon_close.png?1468856569');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 18px;
@@ -5113,7 +5113,7 @@ a.wizard__arrow-back,
 a.wizard__arrow-down {
   display: block;
   position: relative;
-  background-image: url('../images/wizard/arrow_down.png?1468920640');
+  background-image: url('../images/wizard/arrow_down.png?1468856569');
   background-repeat: no-repeat;
   background-size: 24px 25px;
   background-position: 0 50%;
@@ -5151,12 +5151,12 @@ a.wizard__arrow-down {
 
 /* line 74, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-up {
-  background-image: url('../images/wizard/arrow_up.png?1468920640');
+  background-image: url('../images/wizard/arrow_up.png?1468856569');
 }
 
 /* line 78, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-down {
-  background-image: url('../images/wizard/arrow_down.png?1468920640');
+  background-image: url('../images/wizard/arrow_down.png?1468856569');
 }
 @media all and (max-width: 719px) {
   /* line 81, ../sass/components/wizard/_wizard_bottom_nav.scss */
@@ -5173,7 +5173,7 @@ a.wizard__arrow-down {
 @media all and (max-width: 719px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled.png?1468920640');
+    background-image: url('../images/wizard/arrow_down_enabled.png?1468856569');
   }
   /* line 93, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled::before {
@@ -5183,7 +5183,7 @@ a.wizard__arrow-down {
 @media all and (min-width: 720px) {
   /* line 90, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-down.enabled {
-    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1468920640');
+    background-image: url('../images/wizard/arrow_down_enabled_desktop.png?1468856569');
   }
 }
 @media all and (min-width: 720px) {
@@ -5197,7 +5197,7 @@ a.wizard__arrow-down {
 
 /* line 111, ../sass/components/wizard/_wizard_bottom_nav.scss */
 a.wizard__arrow-back {
-  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1468920640');
+  background-image: url('../images/wizard/arrow_left_enabled_desktop.png?1468856569');
   background-position: 100% center;
   float: right;
   text-align: right;
@@ -5219,7 +5219,7 @@ a.wizard__arrow-back {
 @media all and (max-width: 719px) {
   /* line 124, ../sass/components/wizard/_wizard_bottom_nav.scss */
   a.wizard__arrow-back.enabled {
-    background-image: url('../images/wizard/arrow_left_enabled_help.png?1468920640');
+    background-image: url('../images/wizard/arrow_left_enabled_help.png?1468856569');
   }
 }
 
@@ -5353,7 +5353,7 @@ a.wizard__arrow-down.enabled.section {
   top: 0;
   height: 20px;
   width: 20px;
-  background-image: url('../images/wizard/icon_info.png?1468920640');
+  background-image: url('../images/wizard/icon_info.png?1468856569');
   background-size: 100%;
 }
 
@@ -7655,87 +7655,106 @@ ul.facetapi-facet-field-resource-type li a,
 **************************************/
 /* line 5, ../sass/components/timeline/_timeline.scss */
 .panel__timeline {
-  height: 490px;
+  min-height: 270px;
+  clear: both;
+  position: relative;
+  display: block;
+  -animation-speed: 0.8s;
+  /*
+   * Stationary elements
+   */
+  /*
+   * Buildings
+   */
+  /*
+   * Food Truck
+   */
+  /*
+   * Blimp
+   */
+  /*
+   * Clouds
+   */
 }
-/* line 9, ../sass/components/timeline/_timeline.scss */
+/* line 15, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow {
   font-size: 41px;
   width: 44px;
   font-family: "Merriweather", serif;
   color: rgba(255, 255, 255, 0.3);
   display: block;
-  height: 490px;
+  height: 100%;
   z-index: 4;
   border: none;
   outline: none;
   -webkit-appearance: none;
   background-size: 50% !important;
 }
-/* line 22, ../sass/components/timeline/_timeline.scss */
+/* line 28, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev, .panel__timeline .timeline__arrow.next {
   opacity: .5;
 }
-/* line 25, ../sass/components/timeline/_timeline.scss */
+/* line 31, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev:hover, .panel__timeline .timeline__arrow.prev:focus, .panel__timeline .timeline__arrow.next:hover, .panel__timeline .timeline__arrow.next:focus {
   opacity: 1;
   outline: none;
   background-color: #f0a82c;
   color: white;
 }
-/* line 34, ../sass/components/timeline/_timeline.scss */
+/* line 40, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev {
   position: absolute;
   background: url("../images/subsections/arrow-left.svg") no-repeat 50% transparent;
   left: 0;
   top: 0;
 }
-/* line 42, ../sass/components/timeline/_timeline.scss */
+/* line 48, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.next {
   position: absolute;
   background: url("../images/subsections/arrow-right.svg") no-repeat 50%;
   right: 0;
   top: 0;
 }
-/* line 50, ../sass/components/timeline/_timeline.scss */
+/* line 56, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item {
   vertical-align: top;
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 260px;
 }
-/* line 57, ../sass/components/timeline/_timeline.scss */
+/* line 63, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item:first-child .timeline__item--inner {
   padding-left: 50px;
 }
-/* line 69, ../sass/components/timeline/_timeline.scss */
+/* line 75, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item:focus {
   outline: 0;
 }
-/* line 73, ../sass/components/timeline/_timeline.scss */
+/* line 79, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item.right-spacer {
   width: 10px !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-/* line 81, ../sass/components/timeline/_timeline.scss */
+/* line 87, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item--inner {
   padding: 11.1px 25px 44px;
   font-size: 12px;
   line-height: 1.5;
 }
-/* line 88, ../sass/components/timeline/_timeline.scss */
+/* line 94, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item__image {
   width: 100%;
   max-width: 400px;
   margin-top: 13px;
 }
-/* line 94, ../sass/components/timeline/_timeline.scss */
+/* line 100, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item__title {
   font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 20px;
 }
-/* line 100, ../sass/components/timeline/_timeline.scss */
+/* line 106, ../sass/components/timeline/_timeline.scss */
 .panel__timeline hr.timeline__item__hr {
   height: 2px;
   max-width: 40px;
@@ -7743,7 +7762,7 @@ ul.facetapi-facet-field-resource-type li a,
   margin-top: 15px;
   margin-bottom: 17px;
 }
-/* line 107, ../sass/components/timeline/_timeline.scss */
+/* line 113, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item__button {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -7761,13 +7780,331 @@ ul.facetapi-facet-field-resource-type li a,
   color: #0f2940;
 }
 @media all and (min-width: 960px) {
-  /* line 107, ../sass/components/timeline/_timeline.scss */
+  /* line 113, ../sass/components/timeline/_timeline.scss */
   .panel__timeline .timeline__item__button {
     font-size: 1.143em;
   }
 }
+/* line 120, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline {
+  position: relative;
+  top: 200px;
+  background-color: #FDB743;
+}
+/* line 127, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-arrow_left {
+  width: 53px;
+  height: 100%;
+  background-color: #F0A82C;
+  position: relative;
+  z-index: 10;
+  background-image: url('../images/timeline/timeline-arrow_left.svg?1466290847');
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  cursor: pointer;
+}
+/* line 138, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-arrow_right {
+  width: 53px;
+  height: 100%;
+  background-color: #F0A82C;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background-image: url('../images/timeline/timeline-arrow_right.svg?1466290866');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  cursor: pointer;
+}
+/* line 156, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-illustration {
+  height: 186px;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  opacity: 0.9;
+  z-index: 1;
+}
+/* line 166, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-truck {
+  width: 98px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-image: url('../images/timeline/timeline-truck.svg?1471559747');
+  position: absolute;
+  top: 123px;
+  left: 42%;
+}
+/* line 179, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-bldgs_move1 {
+  width: 2400px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-image: url('../images/timeline/timeline-bldgs.svg?1471563196');
+  animation: bldgs_move1 70s 0s linear infinite both;
+  position: absolute;
+  top: 34px;
+  left: 0px;
+}
+@keyframes bldgs_move1 {
+  /* line 190, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 0%  {
+    left: 0px;
+    opacity: 1;
+  }
+  /* line 191, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 25%  {
+    left: -1200px;
+    opacity: 1;
+  }
+  /* line 192, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 49%  {
+    opacity: 1;
+  }
+  /* line 193, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 50%  {
+    left: -2400px;
+    opacity: 0;
+  }
+  /* line 194, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 75%  {
+    left: -2400px;
+    opacity: 0;
+  }
+  /* line 195, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 100%  {
+    left: 0px;
+    opacity: 0;
+  }
+}
+/* line 198, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-bldgs_move2 {
+  width: 2400px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-image: url('../images/timeline/timeline-bldgs.svg?1471563196');
+  animation: bldgs_move2 70s 0s linear infinite both;
+  position: absolute;
+  top: 34px;
+  left: 1800px;
+  opacity: .8;
+}
+@keyframes bldgs_move2 {
+  /* line 210, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 0%  {
+    left: 2400px;
+    opacity: 1;
+  }
+  /* line 211, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 24%  {
+    opacity: 1;
+  }
+  /* line 212, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 25%  {
+    left: 1200px;
+    opacity: 1;
+  }
+  /* line 213, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 50%  {
+    left: 0px;
+    opacity: 1;
+  }
+  /* line 214, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 75%  {
+    left: -1200px;
+    opacity: 1;
+  }
+  /* line 215, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 100%  {
+    left: -2400px;
+    opacity: 1;
+  }
+}
+/* line 218, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-bldgs_move3 {
+  width: 2400px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-image: url('../images/timeline/timeline-bldgs.svg?1471563196');
+  animation: bldgs_move3 70s 0s linear infinite both;
+  position: absolute;
+  top: 34px;
+  right: 0px;
+  opacity: .8;
+}
+@keyframes bldgs_move3 {
+  /* line 230, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 0%  {
+    left: -2400px;
+    opacity: 0;
+  }
+  /* line 231, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 25%  {
+    left: -2400px;
+    opacity: 0;
+  }
+  /* line 232, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 49%  {
+    opacity: 0;
+  }
+  /* line 233, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 50%  {
+    left: 2400px;
+    opacity: 1;
+  }
+  /* line 234, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 75%  {
+    left: 1200px;
+    opacity: 1;
+  }
+  /* line 235, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 100%  {
+    left: 0px;
+    opacity: 1;
+  }
+}
+/* line 241, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-food_truck {
+  width: 95px;
+  height: 107px;
+  background-repeat: no-repeat;
+  background-image: url('../images/timeline/timeline-food_truck.svg?1466403479');
+  animation: food_truck_move 50s 0s linear infinite forwards;
+  position: absolute;
+  top: 74px;
+  left: -100px;
+}
+@keyframes food_truck_move {
+  /* line 252, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 0%  {
+    left: 100%;
+  }
+  /* line 253, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 100%  {
+    left: 0%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 256, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline .timeline-food_truck {
+    display: none;
+  }
+}
+/* line 263, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-blimp {
+  width: 90px;
+  height: 48px;
+  /*border: 10px solid red;*/
+  background-image: url('../images/timeline/timeline-blimp.svg?1470780737');
+  background-repeat: no-repeat;
+  animation: blimp_move 24s 0s linear infinite backwards;
+  position: absolute;
+  left: -100%;
+  top: 28px;
+}
+@keyframes blimp_move {
+  /* line 275, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 0%  {
+    left: 100%;
+  }
+  /* line 276, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 15%  {
+    left: 82%;
+  }
+  /* line 277, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 100%  {
+    left: 0%;
+  }
+}
+/* line 283, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-large_cloud {
+  width: 60px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url('../images/timeline/timeline-large_cloud.svg?1470780747');
+  animation: large_cloud_move 17s 0s linear infinite both;
+  position: absolute;
+  top: 50px;
+  left: -60px;
+}
+@keyframes large_cloud_move {
+  /* line 294, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 0%  {
+    left: 100%;
+  }
+  /* line 295, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 100%  {
+    left: 0%;
+  }
+}
+/* line 298, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-small_cloud {
+  width: 39px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-image: url('../images/timeline/timeline-small_cloud.svg?1470780756');
+  animation: small_cloud_move 20s 0s linear infinite both;
+  position: absolute;
+  top: 42px;
+  left: -260px;
+}
+@keyframes small_cloud_move {
+  /* line 309, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 0%  {
+    left: 100%;
+  }
+  /* line 310, ../sass/components/timeline/_timeline.scss */
+  .panel__timeline 100%  {
+    left: 0%;
+  }
+}
+/* line 313, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__container {
+  width: 100%;
+  overflow: hidden;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  z-index: 3;
+  background-color: #f0a82c;
+}
+/* line 327, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-content_area {
+  width: 100%;
+  cursor: grab;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 336, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .content_block {
+  width: 200px;
+  position: absolute;
+  color: #0F2940;
+}
+/* line 342, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .content_block h1 {
+  font-family: Merriweather;
+  font-size: 20px;
+}
+/* line 347, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .content_block p {
+  font-family: Roboto;
+  font-size: 12px;
+}
+/* line 351, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .content_block a {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #0F2940;
+  text-decoration: none;
+}
 
-/* line 114, ../sass/components/timeline/_timeline.scss */
+/* line 364, ../sass/components/timeline/_timeline.scss */
 .draggable {
   cursor: move;
   /* fallback if grab cursor is unsupported */
@@ -7777,7 +8114,7 @@ ul.facetapi-facet-field-resource-type li a,
 }
 
 /* (Optional) Apply a "closed-hand" cursor during drag operation. */
-/* line 122, ../sass/components/timeline/_timeline.scss */
+/* line 372, ../sass/components/timeline/_timeline.scss */
 .draggable:active {
   cursor: grabbing;
   cursor: -moz-grabbing;
