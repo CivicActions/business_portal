@@ -1,19 +1,28 @@
 body.node-type-sbp-landing-page {
+  .pane-bundle-three-column-cta {
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 50px;
+    }
+    @include window_size(tab-wide-up) {
+      padding-top: 50px;
+    }
+  }
+  
   .three-col-wrapper {
+    padding-top: 0; 
+    padding-bottom: 0;
     .panel__section {
-      margin-top: 40px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    
       .panel__icon {
+        display: none;
         float: none !important;
         max-width: 220px !important;
         margin-bottom: 20px;
         img {
           width: 100% !important;
           height: auto !important;
-
         }
       }
       
@@ -21,9 +30,7 @@ body.node-type-sbp-landing-page {
       .panel__icon_header {
         margin:0 0 10px;
         font-size:1.714em;
-        @include window_size(tab-wide-up){
-          max-width: 260px;
-        }
+        width: 80%;
       }
 
       .panel__header-line, .panel__header-line_thin {
@@ -31,14 +38,11 @@ body.node-type-sbp-landing-page {
       }
       
       .panel__paragraph {
+        width: 80%;
         font-size: 1.071em;
         line-height: 1.33;
         color: rgba(0, 0, 0, 0.6);
         margin-bottom: 20px;
-        @include window_size(tab-wide-up) {
-          font-size: 1.285em;
-          max-width: 260px;
-        }
       }
       
       .panel__button {
@@ -57,6 +61,20 @@ body.node-type-sbp-landing-page {
         margin: 0;
         padding-right: 17px;
         width: auto;
+      }
+      
+      @include window_size(tab-wide-up){
+        .panel__icon {
+          display: block;
+        }
+        .panel__header,
+        .panel__icon_header {
+          max-width: 240px;
+        }
+        .panel__paragraph {
+          font-size: 1.285em;
+          max-width: 240px;
+        }
       }
     }
   }
