@@ -115,5 +115,6 @@ function sbp_search_box_form_validate($form, &$form_state) {
  * @param $form_state
  */
 function sbp_search_box_form_submit($form, &$form_state) {
-  drupal_goto('/search/portal?search='.urlencode($form_state['values']['search']));
+  $options = array('query' => array('search' => urlencode($form_state['values']['search'])));
+  drupal_goto('/search/portal', $options);
 }
