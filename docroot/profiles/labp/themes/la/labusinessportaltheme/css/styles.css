@@ -7054,11 +7054,11 @@ ul.facetapi-facet-field-resource-type li a,
   font-family: Roboto, sans-serif;
   font-weight: 700;
   color: #0f2940 !important;
-  padding: 20px 0 0 0;
+  /*padding: 20px 0 0 0;*/
   font-size: 18px;
   margin: 0 0 10px 0;
   border: 0px solid red;
-  background-image: url("../images/subsections/line_l3.png");
+  /*background-image: url("../images/subsections/line_l3.png");*/
   background-repeat: no-repeat;
 }
 /* line 21, ../sass/components/_general_content_widget.scss */
@@ -7171,7 +7171,7 @@ ul.facetapi-facet-field-resource-type li a,
   color: #7ac7f6;
   font-weight: 700;
   border: 0px solid red;
-  margin: 0 0 30px;
+  margin: 20px 0 30px;
   padding: 0;
   background-image: url("../images/subsections/icon_link_arrow.png");
   background-repeat: no-repeat;

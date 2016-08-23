@@ -73,11 +73,11 @@
   font-family: Roboto, sans-serif;
   font-weight: 700;
   color:$dark-blue !important;
-  padding: 20px 0 0 0;
+  /*padding: 20px 0 0 0;*/
   font-size: 18px;
   margin:0 0 10px 0;
   border: 0px solid red;
-  background-image: url("../images/subsections/line_l3.png");
+  /*background-image: url("../images/subsections/line_l3.png");*/
   background-repeat: no-repeat;
 }
 
@@ -210,7 +210,7 @@
   color:$light-blue;
   font-weight: 700;
   border: 0px solid red;
-  margin: 0 0 30px;
+  margin: 20px 0 30px;
   padding: 0;
   background-image: url("../images/subsections/icon_link_arrow.png");
   background-repeat: no-repeat;
