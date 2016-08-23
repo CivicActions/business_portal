@@ -3337,12 +3337,13 @@ a#menu__hamburger {
   background-position-x: 130px;
   height: 28px;
   padding-top: 2px;
-}
-@media all and (min-width: 960px) {
-  /* line 107, ../sass/components/_footer.scss */
-  .block-twitter-block .block__title {
+  /*    @include window_size(desktop) {
     padding-left: 10px;
-  }
+  }*/
+}
+/* line 117, ../sass/components/_footer.scss */
+.block-twitter-block iframe {
+  margin-left: -10px;
 }
 
 /** Styling the Footer sponsors region **/
@@ -3368,7 +3369,7 @@ a#menu__hamburger {
   }
   /* line 15, ../sass/components/_footer--sponsors.scss */
   .region--footer-sponsors .region > .block:first-child {
-    padding: 28px 0 47px;
+    padding: 28px 0 0;
   }
 }
 
@@ -3405,8 +3406,8 @@ a#menu__hamburger {
   }
   /* line 49, ../sass/components/_footer--sponsors.scss */
   .view-bp-sponsors .view-content .bp-sponsor {
-    display: block;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
     width: 102px;
     margin-right: 35px;
   }

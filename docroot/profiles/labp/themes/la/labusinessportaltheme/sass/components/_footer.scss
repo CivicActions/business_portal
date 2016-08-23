@@ -110,8 +110,13 @@
     background-position-x: 130px;
     height: 28px;
     padding-top: 2px;
-    @include window_size(desktop) {
+    /*    @include window_size(desktop) {
       padding-left: 10px;
-    }
+    }*/
   }
+  iframe {
+    margin-left: -10px;
+  }
+    
+
 }

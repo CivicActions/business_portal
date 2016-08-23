@@ -13,7 +13,7 @@
     @include window_size(desktop) {
       padding-bottom: 37px;
       > .block:first-child {
-        padding: 28px 0 47px;
+        padding: 28px 0 0;
       }
     }
   }
@@ -47,8 +47,8 @@
       clear: both;
     }*/
     .bp-sponsor {
-      display: block;
-      float: left;
+      display: inline-block;
+      vertical-align: top;
       width: 102px;
       margin-right: 35px;
       &:last-child {
