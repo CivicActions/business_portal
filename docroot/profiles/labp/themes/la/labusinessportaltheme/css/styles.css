@@ -24,6 +24,7 @@
   /********** Mint ************/
   /****** White ******/
   /****** Light Grey ******/
+  /****** Dark Grey ******/
 }
 /* line 116, ../sass/base/_mixins.scss */
 .style_variant.light_blue {
@@ -305,6 +306,44 @@
 .style_variant.light_grey hr.panel__header-line,
 .style_variant.light_grey hr.panel__header-line_thin {
   background: #7ac7f6;
+}
+/* line 245, ../sass/base/_mixins.scss */
+.style_variant.dark_grey {
+  background-color: #dde2e4;
+  color: white;
+  border-color: #dde2e4;
+  color: #1e3549;
+}
+/* line 96, ../sass/base/_mixins.scss */
+.style_variant.dark_grey .panel__intro_header,
+.style_variant.dark_grey .hero__description {
+  color: white;
+}
+/* line 99, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr {
+  background-color: #dde2e4;
+  border: none;
+}
+/* line 102, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr.panel__header-line_thin {
+  margin: 0 0 1em 0;
+  background: #1e3549;
+}
+/* line 106, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 248, ../sass/base/_mixins.scss */
+.style_variant.dark_grey .panel__intro_header,
+.style_variant.dark_grey .hero__headline--half,
+.style_variant.dark_grey .hero__description {
+  color: #1e3549;
+}
+/* line 254, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr.panel__header-line,
+.style_variant.dark_grey hr.panel__header-line_thin {
+  background: white;
 }
 
 /*****************************************************
@@ -356,6 +395,7 @@ body {
   /********** Mint ************/
   /****** White ******/
   /****** Light Grey ******/
+  /****** Dark Grey ******/
 }
 /* line 116, ../sass/base/_mixins.scss */
 .style_variant.light_blue {
@@ -637,6 +677,44 @@ body {
 .style_variant.light_grey hr.panel__header-line,
 .style_variant.light_grey hr.panel__header-line_thin {
   background: #7ac7f6;
+}
+/* line 245, ../sass/base/_mixins.scss */
+.style_variant.dark_grey {
+  background-color: #dde2e4;
+  color: white;
+  border-color: #dde2e4;
+  color: #1e3549;
+}
+/* line 96, ../sass/base/_mixins.scss */
+.style_variant.dark_grey .panel__intro_header,
+.style_variant.dark_grey .hero__description {
+  color: white;
+}
+/* line 99, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr {
+  background-color: #dde2e4;
+  border: none;
+}
+/* line 102, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr.panel__header-line_thin {
+  margin: 0 0 1em 0;
+  background: #1e3549;
+}
+/* line 106, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr.panel__header-line {
+  margin-bottom: 2em;
+  background: white;
+}
+/* line 248, ../sass/base/_mixins.scss */
+.style_variant.dark_grey .panel__intro_header,
+.style_variant.dark_grey .hero__headline--half,
+.style_variant.dark_grey .hero__description {
+  color: #1e3549;
+}
+/* line 254, ../sass/base/_mixins.scss */
+.style_variant.dark_grey hr.panel__header-line,
+.style_variant.dark_grey hr.panel__header-line_thin {
+  background: white;
 }
 
 /*****************************************************
@@ -5887,7 +5965,7 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-s
   margin: 1em 0;
   cursor: pointer;
 }
-/* line 258, ../sass/base/_mixins.scss */
+/* line 274, ../sass/base/_mixins.scss */
 .field-name-field-guide-pdf a a,
 .field-name-field-permit-pdf a a,
 .checklist--download a a,
@@ -6763,7 +6841,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
   margin: 1em 0;
   cursor: pointer;
 }
-/* line 258, ../sass/base/_mixins.scss */
+/* line 274, ../sass/base/_mixins.scss */
 .panel__button a, .panel-2col-stacked form#views-exposed-form-sbp-resource-incentives-panel-pane-1 a.facetapi__toggle a,
 .panel-2col-stacked .pane-sbp-terms-definitions a.facetapi__toggle a {
   color: #1e3549;
@@ -7857,7 +7935,7 @@ ul.facetapi-facet-field-resource-type li a,
   margin: 1em 0;
   cursor: pointer;
 }
-/* line 258, ../sass/base/_mixins.scss */
+/* line 274, ../sass/base/_mixins.scss */
 .panel__timeline .timeline__item__button a {
   color: #0f2940;
 }

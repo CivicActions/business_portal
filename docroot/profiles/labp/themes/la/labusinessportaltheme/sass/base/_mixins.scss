@@ -240,6 +240,22 @@ $border--thick: 3px solid $dark_blue;
       background: $light-blue;
     }
   }
+  
+  /****** Dark Grey ******/
+  &.dark_grey {
+    @include style-variant ($homepage__panel--bg-dark-grey);
+    color: $navy;
+    .panel__intro_header,
+    .hero__headline--half,
+    .hero__description {
+      color: $navy;
+    }
+
+    hr.panel__header-line,
+    hr.panel__header-line_thin {
+      background: $white;
+    }
+  }
 }
 
 /*****************************************************
