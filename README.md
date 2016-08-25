@@ -146,5 +146,19 @@ bundle exec compass watch
 ### Step 6. Configure Solr
 - `bash /assets/configure-solr.sh`
 
+## Patches
 
+The following patches are currently in use. When updating modules for this project please check to see if the module you are updating is listed here. If so be sure the functionality contained in all patches listed below has been included in the new version you're installing.
+
+## Field Group
+- [field_group-php7-2661484-2.patch](https://www.drupal.org/node/2661484)
+
+## Twitter Block
+- [twitter_block-issue_2751845-1.patch](https://www.drupal.org/node/2751845)
+
+## Text Hierarchical
+- [no-parents_2738989-7.x-1.x.patch](https://www.drupal.org/node/2738989)
+- [no-data-display_2739025-7.x-1.x.patch](https://www.drupal.org/node/2739025)
+- [not-saving_2738981-7.x-1.x.patch](https://www.drupal.org/node/2738981)
+- [no-field-values_2738937-7.x-1.x.patch](https://www.drupal.org/node/2738937)
 

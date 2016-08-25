@@ -37,7 +37,7 @@ function sbp_starter_kit_field_group_info() {
       ),
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_checklist|node|sbp_starter_kit|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -50,7 +50,7 @@ function sbp_starter_kit_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Summary',
-    'weight' => '2',
+    'weight' => '0',
     'children' => array(
       0 => 'field_guide_description',
       1 => 'field_guide_image',
@@ -71,7 +71,7 @@ function sbp_starter_kit_field_group_info() {
       'formatter' => 'collapsible',
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_guide|node|sbp_starter_kit|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -100,7 +100,7 @@ function sbp_starter_kit_field_group_info() {
       ),
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_permits|node|sbp_starter_kit|form'] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.

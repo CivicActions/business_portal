@@ -133,7 +133,7 @@ function sbp_starter_kit_strongarm() {
           'weight' => '6',
         ),
         'title' => array(
-          'weight' => '1',
+          'weight' => '2',
         ),
         'path' => array(
           'weight' => '5',
