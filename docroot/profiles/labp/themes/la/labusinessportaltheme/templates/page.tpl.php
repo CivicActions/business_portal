@@ -122,7 +122,7 @@ $sidebar_second = render($page['sidebar_second']);
     <?php print render($page['bottom']); ?>
     <div class="footer__copyright">&copy; 2016 All rights reserved</div>
     <div class="footer__credits">
-      Site by <a href="http://www.tomorrowpartners.com/">Tomorrow Partners</a> + <a href="https://civicactions.com/">CivicActions</a>
+      Site by <a href="http://businessportal.tomorrowpartners.com/" target="_blank">Tomorrow Partners</a> + <a href="https://civicactions.com/" target="_blank">CivicActions</a>
     </div>
   </div>
 </div>
