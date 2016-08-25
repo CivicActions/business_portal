@@ -802,7 +802,7 @@ function sbp_starter_kit_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
