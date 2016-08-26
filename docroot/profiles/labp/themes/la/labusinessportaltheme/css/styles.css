@@ -2819,28 +2819,30 @@ body.not-logged-in.page-user #main {
 /* line 179, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-icon.active {
   background: url(../images/icon-google-translate-blue.png);
+  background-size: 31px 28px;
 }
-/* line 181, ../sass/components/_header.scss */
+/* line 182, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-icon.active img {
   visibility: hidden;
 }
 
-/* line 186, ../sass/components/_header.scss */
+/* line 187, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon {
   right: 50px;
   width: 25px;
   height: 25px;
 }
-/* line 190, ../sass/components/_header.scss */
+/* line 191, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon.active {
   background: url(../images/icon-search-blue.png);
+  background-size: 25px 25px;
 }
-/* line 192, ../sass/components/_header.scss */
+/* line 194, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon.active img {
   visibility: hidden;
 }
 
-/* line 198, ../sass/components/_header.scss */
+/* line 200, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-form,
 #block-sbp-search-sbp-search-form {
   display: none;
@@ -2854,12 +2856,12 @@ body.not-logged-in.page-user #main {
   border-bottom: 1px solid #b2b2b2;
 }
 
-/* line 208, ../sass/components/_header.scss */
+/* line 210, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form {
   width: 100%;
   max-width: 720px;
 }
-/* line 211, ../sass/components/_header.scss */
+/* line 213, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form .sbp-search-intro-text {
   display: block;
   position: absolute;
@@ -2873,11 +2875,11 @@ body.not-logged-in.page-user #main {
   line-height: 28px;
   color: #9b9b9b;
 }
-/* line 222, ../sass/components/_header.scss */
+/* line 224, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form .form-item-search {
   margin: 0;
 }
-/* line 225, ../sass/components/_header.scss */
+/* line 227, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form #edit-search {
   background: transparent;
   margin: 0;
@@ -2888,7 +2890,7 @@ body.not-logged-in.page-user #main {
   outline: none;
 }
 
-/* line 236, ../sass/components/_header.scss */
+/* line 238, ../sass/components/_header.scss */
 #block-sbp-translation-sbp-translation-form {
   width: 562px;
   max-width: 562px;
@@ -2896,18 +2898,18 @@ body.not-logged-in.page-user #main {
 }
 
 @media (min-width: 0px) and (max-width: 960px) {
-  /* line 243, ../sass/components/_header.scss */
+  /* line 245, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon,
   #block-sbp-translation-sbp-translation-icon {
     top: 5px;
   }
 
-  /* line 247, ../sass/components/_header.scss */
+  /* line 249, ../sass/components/_header.scss */
   #block-sbp-search-sbp-search-icon {
     right: 45px;
   }
 
-  /* line 251, ../sass/components/_header.scss */
+  /* line 253, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form,
   #block-sbp-search-sbp-search-form {
     position: fixed;
@@ -2917,18 +2919,18 @@ body.not-logged-in.page-user #main {
     max-width: 100%;
   }
 
-  /* line 259, ../sass/components/_header.scss */
+  /* line 261, ../sass/components/_header.scss */
   #block-sbp-translation-sbp-translation-form {
     padding: 14px 24px 13px;
   }
 }
 @media (min-width: 0px) and (max-width: 960px) {
-  /* line 265, ../sass/components/_header.scss */
+  /* line 267, ../sass/components/_header.scss */
   #header.dark-blue-bg {
     background-color: #2e79a3;
   }
 
-  /* line 268, ../sass/components/_header.scss */
+  /* line 270, ../sass/components/_header.scss */
   #header.dark-blue-background,
   .meanmenu-reveal.dark-blue-background {
     background-color: #2e79a3 !important;
