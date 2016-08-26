@@ -3942,7 +3942,7 @@ hr.hero__line--half {
   }
 }
 
-/* line 14, ../sass/components/_search.scss */
+/* line 13, ../sass/components/_search.scss */
 .pane-sbp-resource-incentives-panel-pane-1 h2 {
   font-family: Merriweather, serif;
   font-weight: normal;
@@ -3954,13 +3954,13 @@ hr.hero__line--half {
   padding: 0 10px 0.8em 0;
 }
 @media all and (min-width: 960px) {
-  /* line 14, ../sass/components/_search.scss */
+  /* line 13, ../sass/components/_search.scss */
   .pane-sbp-resource-incentives-panel-pane-1 h2 {
     font-size: 2em;
   }
 }
 
-/* line 29, ../sass/components/_search.scss */
+/* line 28, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-title {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -3971,19 +3971,19 @@ hr.hero__line--half {
   line-height: 1.2em;
 }
 @media all and (min-width: 960px) {
-  /* line 29, ../sass/components/_search.scss */
+  /* line 28, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-title {
     font-size: 1.571em;
   }
 }
 
-/* line 43, ../sass/components/_search.scss */
+/* line 42, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node {
   width: 20%;
   display: inline-block;
 }
 
-/* line 48, ../sass/components/_search.scss */
+/* line 47, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-view-node a {
   text-indent: -9999px;
   background-image: url("../images/icon_view.png");
@@ -3996,17 +3996,80 @@ hr.hero__line--half {
   margin: 0 0 0 6px;
 }
 
-/* line 53, ../sass/components/_search.scss */
+/* line 52, ../sass/components/_search.scss */
 .view-id-sbp_resource_incentives .views-field-body {
   line-height: 1.25em;
   width: 90%;
 }
 @media all and (min-width: 960px) {
-  /* line 53, ../sass/components/_search.scss */
+  /* line 52, ../sass/components/_search.scss */
   .view-id-sbp_resource_incentives .views-field-body {
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
+  }
+}
+
+/* line 63, ../sass/components/_search.scss */
+.view-bp-search .view-header {
+  font-family: Merriweather, serif;
+  font-weight: normal;
+  font-size: 1.142em;
+  color: #0f2940;
+  margin-bottom: 30px;
+}
+@media all and (min-width: 960px) {
+  /* line 63, ../sass/components/_search.scss */
+  .view-bp-search .view-header {
+    font-size: 1.429em;
+    margin-bottom: 20px;
+  }
+}
+/* line 74, ../sass/components/_search.scss */
+.view-bp-search .view-filters {
+  display: none;
+}
+/* line 77, ../sass/components/_search.scss */
+.view-bp-search .views-row {
+  margin: 0 0 30px;
+}
+@media all and (min-width: 960px) {
+  /* line 77, ../sass/components/_search.scss */
+  .view-bp-search .views-row {
+    margin: 0 0 20px;
+  }
+}
+/* line 82, ../sass/components/_search.scss */
+.view-bp-search .views-row .views-field-field-hero-title {
+  border-top: 1px solid #dcdcdc;
+  padding: 15px 0 0;
+  margin: 0 0 10px;
+  font-size: 1.142em;
+}
+/* line 87, ../sass/components/_search.scss */
+.view-bp-search .views-row .views-field-field-hero-title a {
+  color: #1e3549;
+}
+/* line 89, ../sass/components/_search.scss */
+.view-bp-search .views-row .views-field-field-hero-title a:hover {
+  color: #7ac7f6;
+}
+@media all and (min-width: 960px) {
+  /* line 82, ../sass/components/_search.scss */
+  .view-bp-search .views-row .views-field-field-hero-title {
+    font-size: 1.714em;
+    padding-right: 200px;
+  }
+}
+/* line 98, ../sass/components/_search.scss */
+.view-bp-search .views-row .views-field-field-description {
+  color: rgba(0, 0, 0, 0.6);
+}
+@media all and (min-width: 960px) {
+  /* line 98, ../sass/components/_search.scss */
+  .view-bp-search .views-row .views-field-field-description {
+    font-size: 1.142em;
+    max-width: 85%;
   }
 }
 

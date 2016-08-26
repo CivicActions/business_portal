@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 
-
   @include window_size(desktop){
     width: $zen-grid-width;
     @include clearfix;
@@ -57,5 +56,51 @@
     width: 85%;
     font-size: 1.143em;
     line-height: 1.35em;
+  }
+}
+
+.view-bp-search {
+  .view-header {
+    font-family: Merriweather, serif;
+    font-weight: normal;
+    font-size: 1.142em;
+    color: $dark_blue;
+    margin-bottom: 30px;
+    @include window_size(desktop){
+      font-size: 1.429em;
+      margin-bottom: 20px;
+    }
+  }
+  .view-filters {
+    display: none;
+  }
+  .views-row {
+    margin: 0 0 30px;
+    @include window_size(desktop) {
+      margin: 0 0 20px;
+    }
+    .views-field-field-hero-title {
+      border-top: 1px solid #dcdcdc;
+      padding: 15px 0 0;
+      margin: 0 0 10px;
+      font-size: 1.142em;
+      a {
+        color: $navy;
+        &:hover {
+          color: $light-blue;
+        }
+      }
+      @include window_size(desktop) {
+        font-size: 1.714em;
+        padding-right: 200px;
+      }
+    }
+    .views-field-field-description {
+      color: rgba(0, 0, 0, .6);
+      @include window_size(desktop) {
+        font-size: 1.142em;
+        max-width: 85%;
+      }
+    }
   }
 }
