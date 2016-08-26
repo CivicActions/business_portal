@@ -7684,7 +7684,21 @@ ul.facetapi-facet-field-resource-type li a,
   margin-left: 25px !important;
   background-image: url(../images/calendar-next.svg);
 }
-/* line 217, ../sass/components/_la_calendar.scss */
+/* line 216, ../sass/components/_la_calendar.scss */
+.lacity-calendar-container .fc-right {
+  display: none;
+}
+@media all and (min-width: 960px) {
+  /* line 216, ../sass/components/_la_calendar.scss */
+  .lacity-calendar-container .fc-right {
+    display: block;
+  }
+}
+/* line 221, ../sass/components/_la_calendar.scss */
+.lacity-calendar-container .fc-right .fc-button-group {
+  padding-left: 64px !important;
+}
+/* line 224, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-right .fc-button {
   box-sizing: border-box;
   margin-left: 10px !important;
@@ -7693,10 +7707,16 @@ ul.facetapi-facet-field-resource-type li a,
   border: none;
   background: transparent;
 }
-/* line 224, ../sass/components/_la_calendar.scss */
+/* line 231, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-right .fc-button.fc-state-active {
   border: 1px solid #6bc3f3;
   font-weight: 700;
+}
+/* line 235, ../sass/components/_la_calendar.scss */
+.lacity-calendar-container .fc-right .fc-button.fc-month-button {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Timeline*/
