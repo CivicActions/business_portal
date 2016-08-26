@@ -214,6 +214,13 @@ $lacity-text-color: #39afef;
   }
   
   .fc-right {
+    display: none;
+    @include window_size(desktop) {
+      display: block;
+    }
+    .fc-button-group {
+      padding-left: 64px !important;
+    }
     .fc-button {
       box-sizing: border-box;
       margin-left: 10px !important;
@@ -225,7 +232,10 @@ $lacity-text-color: #39afef;
         border: 1px solid $lacity-border-color;
         font-weight: 700;
       }
+      &.fc-month-button {
+        position: absolute;
+        left: 0; top: 0;
+      }
     }
-  }
-  
+  }  
 }
