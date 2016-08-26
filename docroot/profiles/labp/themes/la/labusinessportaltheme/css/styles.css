@@ -7849,10 +7849,11 @@ ul.facetapi-facet-field-resource-type li a,
   outline: none;
   -webkit-appearance: none;
   background-size: 50% !important;
+  background-color: #f0a82c !important;
 }
 /* line 26, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev, .panel__timeline .timeline__arrow.next {
-  opacity: .5;
+  /*opacity: .5;*/
 }
 /* line 29, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev:hover, .panel__timeline .timeline__arrow.prev:focus, .panel__timeline .timeline__arrow.next:hover, .panel__timeline .timeline__arrow.next:focus {
