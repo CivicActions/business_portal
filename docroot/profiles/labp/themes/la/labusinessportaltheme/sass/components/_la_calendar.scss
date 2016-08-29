@@ -24,6 +24,7 @@ $lacity-text-color: #39afef;
     }
     .fc-center {
       display: block;
+      min-width: 200px;
       color: $dark_blue;
       h2 {
         color: $dark_blue;
