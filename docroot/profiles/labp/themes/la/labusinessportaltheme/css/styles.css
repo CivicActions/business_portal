@@ -4089,7 +4089,7 @@ hr.hero__line--half {
   font-family: "Merriweather", serif;
   font-weight: 400;
   width: 70%;
-  line-height: 1.2em;
+  line-height: 1.4em;
   display: inline-block;
   color: #1e3549;
   padding: 0 0 14px;
@@ -7922,6 +7922,10 @@ ul.facetapi-facet-field-resource-type li a,
    */
 }
 /* line 13, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline-items {
+  padding-left: 84px;
+}
+/* line 18, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow {
   font-size: 41px;
   width: 44px;
@@ -7936,71 +7940,73 @@ ul.facetapi-facet-field-resource-type li a,
   background-size: 50% !important;
   background-color: #f0a82c !important;
 }
-/* line 26, ../sass/components/timeline/_timeline.scss */
+/* line 31, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev, .panel__timeline .timeline__arrow.next {
   /*opacity: .5;*/
 }
-/* line 29, ../sass/components/timeline/_timeline.scss */
+/* line 34, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev:hover, .panel__timeline .timeline__arrow.prev:focus, .panel__timeline .timeline__arrow.next:hover, .panel__timeline .timeline__arrow.next:focus {
   opacity: 1;
   outline: none;
   background-color: #f0a82c;
   color: white;
 }
-/* line 38, ../sass/components/timeline/_timeline.scss */
+/* line 43, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.prev {
   position: absolute;
   background: url("../images/subsections/arrow-left.svg") no-repeat 50% transparent;
   left: 0;
   top: 0;
 }
-/* line 46, ../sass/components/timeline/_timeline.scss */
+/* line 51, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__arrow.next {
   position: absolute;
   background: url("../images/subsections/arrow-right.svg") no-repeat 50%;
   right: 0;
   top: 0;
 }
-/* line 54, ../sass/components/timeline/_timeline.scss */
+/* line 59, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item {
   vertical-align: top;
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 260px;
 }
-/* line 61, ../sass/components/timeline/_timeline.scss */
-.panel__timeline .timeline__item:first-child .timeline__item--inner {
-  padding-left: 50px;
+/* line 65, ../sass/components/timeline/_timeline.scss */
+.panel__timeline .timeline__item:first-child {
+  /*      .timeline__item--inner{
+          padding-left: 50px;
+        }*/
 }
-/* line 73, ../sass/components/timeline/_timeline.scss */
+/* line 78, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item:focus {
   outline: 0;
 }
-/* line 77, ../sass/components/timeline/_timeline.scss */
+/* line 82, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item.right-spacer {
   width: 10px !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-/* line 85, ../sass/components/timeline/_timeline.scss */
+/* line 90, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item--inner {
   padding: 11.1px 25px 44px;
   font-size: 12px;
   line-height: 1.5;
 }
-/* line 92, ../sass/components/timeline/_timeline.scss */
+/* line 97, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item__image {
   width: 100%;
   max-width: 400px;
   margin-top: 13px;
 }
-/* line 98, ../sass/components/timeline/_timeline.scss */
+/* line 103, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item__title {
   font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 20px;
 }
-/* line 104, ../sass/components/timeline/_timeline.scss */
+/* line 109, ../sass/components/timeline/_timeline.scss */
 .panel__timeline hr.timeline__item__hr {
   height: 2px;
   max-width: 40px;
@@ -8008,7 +8014,7 @@ ul.facetapi-facet-field-resource-type li a,
   margin-top: 15px;
   margin-bottom: 17px;
 }
-/* line 111, ../sass/components/timeline/_timeline.scss */
+/* line 116, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__item__button {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -8026,18 +8032,18 @@ ul.facetapi-facet-field-resource-type li a,
   color: #0f2940;
 }
 @media all and (min-width: 960px) {
-  /* line 111, ../sass/components/timeline/_timeline.scss */
+  /* line 116, ../sass/components/timeline/_timeline.scss */
   .panel__timeline .timeline__item__button {
     font-size: 1.143em;
   }
 }
-/* line 118, ../sass/components/timeline/_timeline.scss */
+/* line 123, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline {
   position: relative;
   top: 200px;
   background-color: #FDB743;
 }
-/* line 125, ../sass/components/timeline/_timeline.scss */
+/* line 130, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-arrow_left {
   width: 53px;
   height: 100%;
@@ -8049,7 +8055,7 @@ ul.facetapi-facet-field-resource-type li a,
   background-position: 12px center;
   cursor: pointer;
 }
-/* line 136, ../sass/components/timeline/_timeline.scss */
+/* line 141, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-arrow_right {
   width: 53px;
   height: 100%;
@@ -8063,7 +8069,7 @@ ul.facetapi-facet-field-resource-type li a,
   background-position: 15px center;
   cursor: pointer;
 }
-/* line 154, ../sass/components/timeline/_timeline.scss */
+/* line 159, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-illustration {
   height: 186px;
   width: 100%;
@@ -8073,7 +8079,7 @@ ul.facetapi-facet-field-resource-type li a,
   opacity: 0.9;
   z-index: 1;
 }
-/* line 164, ../sass/components/timeline/_timeline.scss */
+/* line 169, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-truck {
   width: 98px;
   height: 58px;
@@ -8083,7 +8089,7 @@ ul.facetapi-facet-field-resource-type li a,
   top: 123px;
   left: 42%;
 }
-/* line 177, ../sass/components/timeline/_timeline.scss */
+/* line 182, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-bldgs_move1,
 .panel__timeline .timeline-bldgs_move2,
 .panel__timeline .timeline-bldgs_move3 {
@@ -8093,27 +8099,27 @@ ul.facetapi-facet-field-resource-type li a,
   position: absolute;
   top: 34px;
 }
-/* line 186, ../sass/components/timeline/_timeline.scss */
+/* line 191, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-bldgs_move1 {
   background-image: url('../images/timeline/timeline-bldgs.svg?1471861560');
   animation: bldgs_move1 70s 0s linear infinite both;
   left: 0;
 }
-/* line 191, ../sass/components/timeline/_timeline.scss */
+/* line 196, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-bldgs_move2 {
   background-image: url('../images/timeline/timeline-bldgs.svg?1471861560');
   animation: bldgs_move2 70s 0s linear infinite both;
   left: 1800px;
   opacity: .8;
 }
-/* line 197, ../sass/components/timeline/_timeline.scss */
+/* line 202, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-bldgs_move3 {
   background-image: url('../images/timeline/timeline-bldgs.svg?1471861560');
   animation: bldgs_move3 70s 0s linear infinite both;
   right: 0;
   opacity: .8;
 }
-/* line 207, ../sass/components/timeline/_timeline.scss */
+/* line 212, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-food_truck {
   width: 95px;
   height: 107px;
@@ -8125,12 +8131,12 @@ ul.facetapi-facet-field-resource-type li a,
   left: -100px;
 }
 @media (max-width: 600px) {
-  /* line 219, ../sass/components/timeline/_timeline.scss */
+  /* line 224, ../sass/components/timeline/_timeline.scss */
   .panel__timeline .timeline-food_truck {
     display: none;
   }
 }
-/* line 226, ../sass/components/timeline/_timeline.scss */
+/* line 231, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-blimp {
   width: 90px;
   height: 48px;
@@ -8142,7 +8148,7 @@ ul.facetapi-facet-field-resource-type li a,
   left: -100%;
   top: 28px;
 }
-/* line 242, ../sass/components/timeline/_timeline.scss */
+/* line 247, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-large_cloud {
   width: 60px;
   height: 32px;
@@ -8153,7 +8159,7 @@ ul.facetapi-facet-field-resource-type li a,
   top: 50px;
   left: -60px;
 }
-/* line 254, ../sass/components/timeline/_timeline.scss */
+/* line 259, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-small_cloud {
   width: 39px;
   height: 21px;
@@ -8164,7 +8170,7 @@ ul.facetapi-facet-field-resource-type li a,
   top: 42px;
   left: -260px;
 }
-/* line 266, ../sass/components/timeline/_timeline.scss */
+/* line 271, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline__container {
   width: 100%;
   overflow: hidden;
@@ -8176,7 +8182,7 @@ ul.facetapi-facet-field-resource-type li a,
   z-index: 3;
   background-color: #FDB743;
 }
-/* line 280, ../sass/components/timeline/_timeline.scss */
+/* line 285, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .timeline-content_area {
   width: 100%;
   cursor: grab;
@@ -8184,23 +8190,23 @@ ul.facetapi-facet-field-resource-type li a,
   top: 0;
   left: 0;
 }
-/* line 289, ../sass/components/timeline/_timeline.scss */
+/* line 294, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .content_block {
   width: 200px;
   position: absolute;
   color: #0F2940;
 }
-/* line 295, ../sass/components/timeline/_timeline.scss */
+/* line 300, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .content_block h1 {
   font-family: Merriweather;
   font-size: 20px;
 }
-/* line 300, ../sass/components/timeline/_timeline.scss */
+/* line 305, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .content_block p {
   font-family: Roboto;
   font-size: 12px;
 }
-/* line 304, ../sass/components/timeline/_timeline.scss */
+/* line 309, ../sass/components/timeline/_timeline.scss */
 .panel__timeline .content_block a {
   font-family: Roboto;
   font-size: 12px;
@@ -8208,7 +8214,7 @@ ul.facetapi-facet-field-resource-type li a,
   text-decoration: none;
 }
 
-/* line 315, ../sass/components/timeline/_timeline.scss */
+/* line 320, ../sass/components/timeline/_timeline.scss */
 .draggable {
   cursor: move;
   /* fallback if grab cursor is unsupported */
@@ -8218,7 +8224,7 @@ ul.facetapi-facet-field-resource-type li a,
 }
 
 /* (Optional) Apply a "closed-hand" cursor during drag operation. */
-/* line 323, ../sass/components/timeline/_timeline.scss */
+/* line 328, ../sass/components/timeline/_timeline.scss */
 .draggable:active {
   cursor: grabbing;
   cursor: -moz-grabbing;
@@ -8226,144 +8232,133 @@ ul.facetapi-facet-field-resource-type li a,
 }
 
 @keyframes bldgs_move1 {
-  /* line 330, ../sass/components/timeline/_timeline.scss */
+  /* line 335, ../sass/components/timeline/_timeline.scss */
   0% {
     left: 0px;
     opacity: 1;
   }
 
-  /* line 331, ../sass/components/timeline/_timeline.scss */
+  /* line 336, ../sass/components/timeline/_timeline.scss */
   25% {
     left: -1200px;
     opacity: 1;
   }
 
-  /* line 332, ../sass/components/timeline/_timeline.scss */
+  /* line 337, ../sass/components/timeline/_timeline.scss */
   49% {
     opacity: 1;
   }
 
-  /* line 333, ../sass/components/timeline/_timeline.scss */
+  /* line 338, ../sass/components/timeline/_timeline.scss */
   50% {
     left: -2400px;
     opacity: 0;
   }
 
-  /* line 334, ../sass/components/timeline/_timeline.scss */
+  /* line 339, ../sass/components/timeline/_timeline.scss */
   75% {
     left: -2400px;
     opacity: 0;
   }
 
-  /* line 335, ../sass/components/timeline/_timeline.scss */
+  /* line 340, ../sass/components/timeline/_timeline.scss */
   100% {
     left: 0px;
     opacity: 0;
   }
 }
 @keyframes bldgs_move2 {
-  /* line 339, ../sass/components/timeline/_timeline.scss */
+  /* line 344, ../sass/components/timeline/_timeline.scss */
   0% {
     left: 2400px;
     opacity: 1;
   }
 
-  /* line 340, ../sass/components/timeline/_timeline.scss */
+  /* line 345, ../sass/components/timeline/_timeline.scss */
   24% {
     opacity: 1;
   }
 
-  /* line 341, ../sass/components/timeline/_timeline.scss */
+  /* line 346, ../sass/components/timeline/_timeline.scss */
   25% {
     left: 1200px;
     opacity: 1;
   }
 
-  /* line 342, ../sass/components/timeline/_timeline.scss */
+  /* line 347, ../sass/components/timeline/_timeline.scss */
   50% {
     left: 0px;
     opacity: 1;
   }
 
-  /* line 343, ../sass/components/timeline/_timeline.scss */
+  /* line 348, ../sass/components/timeline/_timeline.scss */
   75% {
     left: -1200px;
     opacity: 1;
   }
 
-  /* line 344, ../sass/components/timeline/_timeline.scss */
+  /* line 349, ../sass/components/timeline/_timeline.scss */
   100% {
     left: -2400px;
     opacity: 1;
   }
 }
 @keyframes bldgs_move3 {
-  /* line 348, ../sass/components/timeline/_timeline.scss */
+  /* line 353, ../sass/components/timeline/_timeline.scss */
   0% {
     left: -2400px;
     opacity: 0;
   }
 
-  /* line 349, ../sass/components/timeline/_timeline.scss */
+  /* line 354, ../sass/components/timeline/_timeline.scss */
   25% {
     left: -2400px;
     opacity: 0;
   }
 
-  /* line 350, ../sass/components/timeline/_timeline.scss */
+  /* line 355, ../sass/components/timeline/_timeline.scss */
   49% {
     opacity: 0;
   }
 
-  /* line 351, ../sass/components/timeline/_timeline.scss */
+  /* line 356, ../sass/components/timeline/_timeline.scss */
   50% {
     left: 2400px;
     opacity: 1;
   }
 
-  /* line 352, ../sass/components/timeline/_timeline.scss */
+  /* line 357, ../sass/components/timeline/_timeline.scss */
   75% {
     left: 1200px;
     opacity: 1;
   }
 
-  /* line 353, ../sass/components/timeline/_timeline.scss */
+  /* line 358, ../sass/components/timeline/_timeline.scss */
   100% {
     left: 0px;
     opacity: 1;
   }
 }
 @keyframes food_truck_move {
-  /* line 357, ../sass/components/timeline/_timeline.scss */
-  0% {
-    left: 100%;
-  }
-
-  /* line 358, ../sass/components/timeline/_timeline.scss */
-  100% {
-    left: 0%;
-  }
-}
-@keyframes blimp_move {
   /* line 362, ../sass/components/timeline/_timeline.scss */
   0% {
     left: 100%;
   }
 
   /* line 363, ../sass/components/timeline/_timeline.scss */
-  15% {
-    left: 82%;
-  }
-
-  /* line 364, ../sass/components/timeline/_timeline.scss */
   100% {
     left: 0%;
   }
 }
-@keyframes large_cloud_move {
-  /* line 368, ../sass/components/timeline/_timeline.scss */
+@keyframes blimp_move {
+  /* line 367, ../sass/components/timeline/_timeline.scss */
   0% {
     left: 100%;
+  }
+
+  /* line 368, ../sass/components/timeline/_timeline.scss */
+  15% {
+    left: 82%;
   }
 
   /* line 369, ../sass/components/timeline/_timeline.scss */
@@ -8371,13 +8366,24 @@ ul.facetapi-facet-field-resource-type li a,
     left: 0%;
   }
 }
-@keyframes small_cloud_move {
+@keyframes large_cloud_move {
   /* line 373, ../sass/components/timeline/_timeline.scss */
   0% {
     left: 100%;
   }
 
   /* line 374, ../sass/components/timeline/_timeline.scss */
+  100% {
+    left: 0%;
+  }
+}
+@keyframes small_cloud_move {
+  /* line 378, ../sass/components/timeline/_timeline.scss */
+  0% {
+    left: 100%;
+  }
+
+  /* line 379, ../sass/components/timeline/_timeline.scss */
   100% {
     left: 0%;
   }
