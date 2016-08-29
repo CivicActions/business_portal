@@ -9,6 +9,11 @@
   display: block;
   overflow: hidden !important;
   -animation-speed: 0.8s;
+  
+  .timeline-items {
+    padding-left: 84px;
+  }
+  
   // Previous and Next buttons
   .timeline__arrow {
     font-size: 41px;
@@ -58,9 +63,9 @@
     width: 260px;
 
     &:first-child {
-      .timeline__item--inner{
+/*      .timeline__item--inner{
         padding-left: 50px;
-      }
+      }*/
     }
 
     &:last-child {
