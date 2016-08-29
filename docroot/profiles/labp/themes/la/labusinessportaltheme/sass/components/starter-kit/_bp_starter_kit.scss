@@ -85,7 +85,7 @@
     .hero__background-image {
       background-size: 200%;
       background-position: 50% 60%;
-      height: 250px;
+      /*height: 250px;*/
       @include window_size(tab-narrow-up) {
         background-size: 150%;
       }
@@ -99,11 +99,12 @@
   .hero__headline--half--mobile {
     font-size: 1.714em;
     font-weight: 700;
+    margin-top: 100px;
     color: $dark_blue;
   }
 
   .hero__header--inner {
-    padding-top: 200px;
+    /*padding-top: 200px;*/
   }
 
   //Hero CTA button

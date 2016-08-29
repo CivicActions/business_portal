@@ -3214,30 +3214,34 @@ a#menu__hamburger {
     background-image: url(../images/icon-arrow-bottom-small.svg);
     background-size: 16px 8px;
   }
-  /* line 164, ../sass/components/_menu__main--mobile.scss */
+  /* line 161, ../sass/components/_menu__main--mobile.scss */
+  .mean-container .mean-nav ul li ul .mean-expand {
+    display: none !important;
+  }
+  /* line 167, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav .block {
     margin-bottom: 0;
   }
 
-  /* line 171, ../sass/components/_menu__main--mobile.scss */
+  /* line 174, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li li a {
     text-shadow: none !important;
     visibility: visible;
     color: #163d53;
   }
 
-  /* line 177, ../sass/components/_menu__main--mobile.scss */
+  /* line 180, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul li.mean-last a {
     border-bottom: none;
     margin-bottom: 0;
   }
 
-  /* line 183, ../sass/components/_menu__main--mobile.scss */
+  /* line 186, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-nav ul ul ul {
     display: none;
   }
 
-  /* line 187, ../sass/components/_menu__main--mobile.scss */
+  /* line 190, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-push {
     float: left;
     width: 100%;
@@ -3246,7 +3250,7 @@ a#menu__hamburger {
     clear: both;
   }
 
-  /* line 195, ../sass/components/_menu__main--mobile.scss */
+  /* line 198, ../sass/components/_menu__main--mobile.scss */
   .mean-nav .wrapper {
     width: 100%;
     padding: 0;
@@ -3254,14 +3258,14 @@ a#menu__hamburger {
   }
 
   /* Fix for box sizing on Foundation Framework etc. */
-  /* line 202, ../sass/components/_menu__main--mobile.scss */
+  /* line 205, ../sass/components/_menu__main--mobile.scss */
   .mean-container .mean-bar, .mean-container .mean-bar * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  /* line 208, ../sass/components/_menu__main--mobile.scss */
+  /* line 211, ../sass/components/_menu__main--mobile.scss */
   .mean-remove {
     display: none !important;
   }
@@ -6124,7 +6128,7 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-s
 .node-type-sbp-starter-kit .hero__layout--half .hero__background-image {
   background-size: 200%;
   background-position: 50% 60%;
-  height: 250px;
+  /*height: 250px;*/
 }
 @media all and (min-width: 480px) {
   /* line 85, ../sass/components/starter-kit/_bp_starter_kit.scss */
@@ -6143,48 +6147,49 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-s
 .node-type-sbp-starter-kit .hero__headline--half--mobile {
   font-size: 1.714em;
   font-weight: 700;
+  margin-top: 100px;
   color: #0f2940;
 }
-/* line 105, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 106, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__header--inner {
-  padding-top: 200px;
+  /*padding-top: 200px;*/
 }
-/* line 110, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 111, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .hero__layout--half .hero__call-to-action--item {
   margin-left: 2em;
 }
 @media all and (min-width: 960px) {
-  /* line 110, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 111, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .hero__layout--half .hero__call-to-action--item {
     margin-left: 0;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 124, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 125, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit .page__starter-kit-download {
     display: inline-block;
     width: 45%;
   }
 }
-/* line 132, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 133, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__starter-kit--icon {
   width: 134px;
   height: 134px;
   margin: 0 auto 15px;
 }
-/* line 139, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 140, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__button {
   text-align: center;
   padding: 8px 20px;
 }
-/* line 142, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 143, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .page__button a {
   width: 200px;
   display: block;
   margin: 0 auto 15px;
   font-size: 1.143em;
 }
-/* line 151, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 152, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit h2.pane-title {
   font-family: "Merriweather", serif;
   font-size: 20px;
@@ -6194,14 +6199,14 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-s
   padding: 15px 20px 0 0;
 }
 @media all and (min-width: 960px) {
-  /* line 151, ../sass/components/starter-kit/_bp_starter_kit.scss */
+  /* line 152, ../sass/components/starter-kit/_bp_starter_kit.scss */
   .node-type-sbp-starter-kit h2.pane-title {
     font-size: 28px;
     margin: 30px 0 30px 0;
     padding: 20px 0 0 0;
   }
 }
-/* line 166, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 167, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit .field-name-field-section-title,
 .node-type-sbp-starter-kit .field-name-field-agency {
   font-family: "Roboto", sans-serif;
@@ -6216,14 +6221,14 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-s
   background-position: 0px 26px;
   border-top: 1px solid #dcdcdc;
 }
-/* line 182, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 183, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit ul.depth {
   margin: 10px 0 20px 0;
   padding: 0;
   font-size: 14px;
   line-height: 18px;
 }
-/* line 187, ../sass/components/starter-kit/_bp_starter_kit.scss */
+/* line 188, ../sass/components/starter-kit/_bp_starter_kit.scss */
 .node-type-sbp-starter-kit ul.depth li.depth {
   list-style: none;
   background-image: url("../images/subsections/icon_checkmark_red.png");
@@ -7600,9 +7605,10 @@ ul.facetapi-facet-field-resource-type li a,
 /* line 25, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-toolbar .fc-center {
   display: block;
+  min-width: 200px;
   color: #0f2940;
 }
-/* line 28, ../sass/components/_la_calendar.scss */
+/* line 29, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-toolbar .fc-center h2 {
   color: #0f2940;
   font-size: 20px;
@@ -7611,16 +7617,16 @@ ul.facetapi-facet-field-resource-type li a,
   padding: 0;
   font-weight: 700;
 }
-/* line 38, ../sass/components/_la_calendar.scss */
+/* line 39, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container thead, .lacity-calendar-container tbody, .lacity-calendar-container td, .lacity-calendar-container th {
   border: none !important;
 }
-/* line 42, ../sass/components/_la_calendar.scss */
+/* line 43, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-thead {
   text-align: left;
   background: none;
 }
-/* line 46, ../sass/components/_la_calendar.scss */
+/* line 47, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-day-header {
   text-align: left;
   background: none;
@@ -7629,13 +7635,13 @@ ul.facetapi-facet-field-resource-type li a,
   font-size: 15px;
   padding: 10px 0 20px;
 }
-/* line 55, ../sass/components/_la_calendar.scss */
+/* line 56, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-event-container {
   border: none;
   padding: 10px 15px 10px 0;
   background: none;
 }
-/* line 59, ../sass/components/_la_calendar.scss */
+/* line 60, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-event-container .fc-day-grid-event {
   margin: 0;
   padding: 0;
@@ -7644,72 +7650,72 @@ ul.facetapi-facet-field-resource-type li a,
   border: none !important;
   font-size: 14px;
 }
-/* line 65, ../sass/components/_la_calendar.scss */
+/* line 66, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-event-container .fc-day-grid-event:hover {
   color: #0f2940;
 }
-/* line 71, ../sass/components/_la_calendar.scss */
+/* line 72, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-event-container .fc-day-grid-event .fc-content .fc-time {
   color: #0f2940;
   font-weight: 400;
 }
-/* line 75, ../sass/components/_la_calendar.scss */
+/* line 76, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-event-container .fc-day-grid-event .fc-content .fc-title {
   white-space: normal;
 }
-/* line 81, ../sass/components/_la_calendar.scss */
+/* line 82, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-more-cell {
   padding-top: 50px;
   padding-right: 15px;
 }
-/* line 84, ../sass/components/_la_calendar.scss */
+/* line 85, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-more-cell div {
   border-top: 1px solid #6bc3f3 !important;
   padding-top: 10px;
 }
-/* line 87, ../sass/components/_la_calendar.scss */
+/* line 88, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-more-cell div a {
   font-size: 14px;
 }
-/* line 92, ../sass/components/_la_calendar.scss */
+/* line 93, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-today {
   background: none !important;
 }
-/* line 98, ../sass/components/_la_calendar.scss */
+/* line 99, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-basicDay-view .fc-day-header {
   padding-left: 90px;
 }
-/* line 101, ../sass/components/_la_calendar.scss */
+/* line 102, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-basicDay-view .fc-content {
   position: relative;
   padding-left: 90px;
 }
-/* line 104, ../sass/components/_la_calendar.scss */
+/* line 105, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-basicDay-view .fc-content .fc-time {
   position: absolute;
   left: 0;
   top: 0;
   max-width: 70px;
 }
-/* line 115, ../sass/components/_la_calendar.scss */
+/* line 116, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-basicThreeDay-view .fc-content, .lacity-calendar-container .fc-basicWeek-view .fc-content {
   position: relative;
 }
-/* line 117, ../sass/components/_la_calendar.scss */
+/* line 118, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-basicThreeDay-view .fc-content .fc-time, .lacity-calendar-container .fc-basicWeek-view .fc-content .fc-time {
   display: block;
   padding-bottom: 5px;
 }
-/* line 135, ../sass/components/_la_calendar.scss */
+/* line 136, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view table {
   border-collapse: separate;
 }
-/* line 138, ../sass/components/_la_calendar.scss */
+/* line 139, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view td {
   height: 55px;
   padding-bottom: 20px;
 }
-/* line 142, ../sass/components/_la_calendar.scss */
+/* line 143, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view .fc-day-number {
   border-top: 1px solid #6bc3f3 !important;
   border-color: #6bc3f3 !important;
@@ -7722,7 +7728,7 @@ ul.facetapi-facet-field-resource-type li a,
   position: relative;
   height: auto;
 }
-/* line 153, ../sass/components/_la_calendar.scss */
+/* line 154, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view .fc-day-number::before {
   position: absolute !important;
   width: 10px;
@@ -7734,40 +7740,40 @@ ul.facetapi-facet-field-resource-type li a,
   height: 2px;
   background: #fff;
 }
-/* line 163, ../sass/components/_la_calendar.scss */
+/* line 164, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view .fc-day-number:last-child::before {
   display: none;
 }
-/* line 167, ../sass/components/_la_calendar.scss */
+/* line 168, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view .fc-event-container, .lacity-calendar-container .fc-month-view .fc-more-cell {
   padding-bottom: 30px;
 }
-/* line 170, ../sass/components/_la_calendar.scss */
+/* line 171, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view .fc-more-cell {
   padding-top: 0;
 }
-/* line 172, ../sass/components/_la_calendar.scss */
+/* line 173, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-month-view .fc-more-cell div {
   border-top: none !important;
 }
-/* line 181, ../sass/components/_la_calendar.scss */
+/* line 182, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-today-button, .lacity-calendar-container .calendar-share-btn, .lacity-calendar-container .mobile-filter {
   display: none;
 }
-/* line 185, ../sass/components/_la_calendar.scss */
+/* line 186, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-button {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
-/* line 188, ../sass/components/_la_calendar.scss */
+/* line 189, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-button:focus, .lacity-calendar-container .fc-button:active {
   outline: none;
 }
-/* line 191, ../sass/components/_la_calendar.scss */
+/* line 192, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-button.fc-corner-left, .lacity-calendar-container .fc-button.fc-corner-right {
   border-radius: 0 !important;
 }
-/* line 194, ../sass/components/_la_calendar.scss */
+/* line 195, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-button.fc-prev-button, .lacity-calendar-container .fc-button.fc-next-button {
   text-indent: -999em;
   font-size: 0;
@@ -7781,30 +7787,30 @@ ul.facetapi-facet-field-resource-type li a,
   background-size: 11px 18px;
   background-repeat: no-repeat;
 }
-/* line 207, ../sass/components/_la_calendar.scss */
+/* line 208, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-button.fc-prev-button {
   background-image: url(../images/calendar-prev.svg);
 }
-/* line 210, ../sass/components/_la_calendar.scss */
+/* line 211, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-button.fc-next-button {
   margin-left: 25px !important;
   background-image: url(../images/calendar-next.svg);
 }
-/* line 216, ../sass/components/_la_calendar.scss */
+/* line 217, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-right {
   display: none;
 }
 @media all and (min-width: 960px) {
-  /* line 216, ../sass/components/_la_calendar.scss */
+  /* line 217, ../sass/components/_la_calendar.scss */
   .lacity-calendar-container .fc-right {
     display: block;
   }
 }
-/* line 221, ../sass/components/_la_calendar.scss */
+/* line 222, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-right .fc-button-group {
   padding-left: 64px !important;
 }
-/* line 224, ../sass/components/_la_calendar.scss */
+/* line 225, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-right .fc-button {
   box-sizing: border-box;
   margin-left: 10px !important;
@@ -7813,12 +7819,12 @@ ul.facetapi-facet-field-resource-type li a,
   border: none;
   background: transparent;
 }
-/* line 231, ../sass/components/_la_calendar.scss */
+/* line 232, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-right .fc-button.fc-state-active {
   border: 1px solid #6bc3f3;
   font-weight: 700;
 }
-/* line 235, ../sass/components/_la_calendar.scss */
+/* line 236, ../sass/components/_la_calendar.scss */
 .lacity-calendar-container .fc-right .fc-button.fc-month-button {
   position: absolute;
   left: 0;
