@@ -348,3 +348,11 @@ function sbp_base_update_7026() {
   drupal_set_message('Cleaning up features.');
   features_revert_module('sbp_starter_kit');
 }
+
+/**
+ * Bug with media modal with editor role.
+ */
+function sbp_base_update_7027() {
+  drupal_set_message('Rebuilding permissions.');
+  features_revert_module('labp_users');
+}
