@@ -414,18 +414,6 @@ Drupal.behaviors.rotator = {
         _render_screen_question(node);
       } else if(screen_type === 'contextual help') {
         _render_contextual_help(node);
-
-//        if(options.display === 'append') {
-//          _render_contextual_help({node: node, display: options.display});
-//        } else {
-//          return _render_contextual_help({node: node, display: options.display});
-//        }
-      } else if(screen_type === 'address lookup') {
-        if(options.display === 'append') {
-          _render_address_lookup({node: node, display: options.display});
-        } else {
-          return _render_address_lookup({node: node, display: options.display});
-        }
       } else if(screen_type === 'confirmation') {
         _render_confirmation(node);
       }
@@ -727,12 +715,33 @@ Drupal.behaviors.rotator = {
       $container = $('<div class="container">')
       $container.append('<div class="wizard__header--title">'+node["Name"]+'</div>');;
       $container.append('<div class="wizard__confirmation--title">'+node["title"]+'</div>');
-//      $container.append('<div class="wizard__illustration"><img src="'+node["illustration"]+'" alt="" /></div>')
+      $container.append('<div class="wizard__illustration"><img src="'+node["illustration"]+'" alt="" /></div>')
       $container.append('<div class="wizard__confirmation--copy">'+node["Description"]+'</div>');
       
-      $container.append('<a href="#print" class="wizard__button wizard__button-print">Print</a>');
-      $container.append('<a href="#email" class="wizard__button wizard__button-email">Email</a>');
+      $printButton = $('<a href="#print" class="wizard__button wizard__button-print">Print</a>');
+      $emailButton = $('<a href="#email" class="wizard__button wizard__button-email">Email</a>');
+      $emailForm = $('<div class="wizard__checklist--email">');
+      $emailForm.append($('#sbp-wizard-email-form'));
+      $emailForm.append('<div id="message-response"></div>');
+      $container.append($printButton);
+      $container.append($emailButton);
+      $container.append($emailForm);
       
+      $emailButton.click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass("selected");
+        $('#sbp-wizard-email-form').stop().slideToggle();
+      });
+      
+      $printButton.click(function(e) {
+//        e.preventDefault();
+//        alert("A");
+        window.print();
+//        alert("B");
+      });
+      
+      
+      $wizard__result = $('<div class="wizard__result">'); 
       
       $buttons = $('a.wizard__button--selected[data-has_result_text]');
       $buttons.sort(function (a, b) {
@@ -744,13 +753,16 @@ Drupal.behaviors.rotator = {
       var i = 1;
       $buttons.each(function() {
         var $item = $(this);
-        $container.append('<div class="result-step"><div class="step-number">Step '+ i + '</div>' + $item.next('.wizard__button--result').html()+'</div>');
+        $wizard__result.append('<div class="result-step"><div class="step-number">Step '+ i + '</div>' + $item.next('.wizard__button--result').html()+'</div>');
         i++;
       });
+      $container.append($wizard__result);
       
+      $startoverButtonWrapper = $('<div class="wizard__startover">');
       $startoverButton = $('<a href="#startover" class="wizard__button wizard__button-startover">');
       $startoverButton.text('Start Over');
-      $container.append($startoverButton);
+      $startoverButtonWrapper.append($startoverButton)
+      $container.append($startoverButtonWrapper);
       $startoverButton.click(function(e) {
         _render_wizard();
       });
@@ -760,12 +772,12 @@ Drupal.behaviors.rotator = {
     };
     
     $('#sbp-wizard-email-form').submit(function() {
-      alert("A");
+      $('#message-response').empty();
       
       var email = 'email=' + $( "input[name='emailResults']" ).val();
       var emailValidate = '&emailvalidate=' + $( "input[name='emailCheck']" ).val();
       var emailToken = '&emailtoken=' + $( "input[name='form_token']" ).val();
-      var message = 'Hello';
+      var message = $('.wizard__result').html();
       
       var strip = ['%5Cn', '%5C%22'];
       var replacement = ['', '%22'];
@@ -773,6 +785,7 @@ Drupal.behaviors.rotator = {
         message = message.split(strip[ind]).join(replacement[ind]);
       }
       message = '&message=' + message;
+      console.log(message);
       $.ajax({
           url: '/labp/wizard-email',
           dataType: 'text',
@@ -781,21 +794,18 @@ Drupal.behaviors.rotator = {
           data: email + emailValidate + emailToken + message,
           success: function( data, textStatus, jQxhr ){
             console.log(data);
-//            $("#wizard-email").addClass("element-invisible");
-//            $( "#message-response" ).html( "Your message has been sent" );
+            $("#wizard-email").addClass("element-invisible");
+            $( "#message-response" ).html( "Your message has been sent" );
           },
           error: function( jqXhr, textStatus, errorThrown ){
             console.log( errorThrown );
-//            $("#wizard-email").addClass("element-invisible");
-//            $( "#message-response" ).html( "There was an error sending your message. If you continue to experience problems, please contact the site administrator." );
+            $( "#message-response" ).html( "There was an error sending your message. If you continue to experience problems, please contact the site administrator." );
           }
       });
-      
       
       return false;
     });
     
-
     
     function getObjects(obj, key, val) {
       var objects = [];
