@@ -4513,8 +4513,9 @@ hr.hero__line--half {
   font-size: 1em;
   padding: 0 0 24px;
   margin: 0 0 15px;
+  font-size: 1.357em;
 }
-/* line 66, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 67, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__header--title::after {
   content: '';
   position: absolute;
@@ -4531,40 +4532,52 @@ hr.hero__line--half {
   }
 }
 
-/* line 80, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 81, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__copy--section_intro {
   max-width: 540px;
   margin: 15px 0px 20px 0;
   font-size: 0.929em;
 }
-/* line 84, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 85, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__copy--section_intro a {
   text-decoration: underline;
 }
 @media all and (min-width: 720px) {
-  /* line 80, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 81, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__copy--section_intro {
     font-size: 1.285em;
   }
 }
 
-/* line 90, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 91, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__illustration {
   padding: 30px 0 40px;
+  margin: 0 -25px;
   width: 100%;
 }
-/* line 93, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 95, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__illustration img {
-  width: 100%;
+  max-width: 110%;
+  width: 110%;
   height: auto;
 }
+@media all and (min-width: 720px) {
+  /* line 91, ../sass/components/startup-guide/_startup-guide.scss */
+  .wizard__illustration {
+    margin: 0;
+  }
+  /* line 102, ../sass/components/startup-guide/_startup-guide.scss */
+  .wizard__illustration img {
+    width: 100%;
+  }
+}
 
-/* line 99, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 108, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question {
   padding: 25px 0 0;
   position: relative;
 }
-/* line 102, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 111, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question .wizard__question-title {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -4574,13 +4587,13 @@ hr.hero__line--half {
   max-width: 640px;
 }
 @media all and (min-width: 960px) {
-  /* line 102, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 111, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__question .wizard__question-title {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
-/* line 114, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 123, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question::before {
   content: '';
   position: absolute;
@@ -4591,7 +4604,7 @@ hr.hero__line--half {
   width: 100%;
 }
 
-/* line 124, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 133, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__buttons {
   border: 0px solid white;
   margin: 28px 0 28px 0;
@@ -4599,7 +4612,7 @@ hr.hero__line--half {
   *zoom: 1;
 }
 
-/* line 130, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 139, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -4615,17 +4628,17 @@ hr.hero__line--half {
   margin-bottom: 10px;
 }
 
-/* line 134, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 143, ../sass/components/startup-guide/_startup-guide.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
-/* line 137, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 146, ../sass/components/startup-guide/_startup-guide.scss */
 a.wizard__button:focus {
   outline: none;
 }
 
-/* line 142, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 151, ../sass/components/startup-guide/_startup-guide.scss */
 a.wizard__button--selected {
   text-decoration: none;
   padding: 8px 40px 8px 30px;
@@ -4635,18 +4648,18 @@ a.wizard__button--selected {
   background-size: 14px 10px;
 }
 
-/* line 151, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 160, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__button--result {
   display: none;
 }
 
-/* line 155, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 164, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 161, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 170, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__tip {
   margin: 20px 0 0;
   padding-bottom: 20px;
@@ -4654,16 +4667,16 @@ a.wizard__button--selected {
   font-size: 1.142em;
   line-height: 1.25;
 }
-/* line 167, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 176, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__tip p {
   margin: 0;
 }
 
-/* line 173, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 182, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help {
   padding-bottom: 20px;
 }
-/* line 175, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 184, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-header {
   font-size: 12px;
   font-weight: 700;
@@ -4677,7 +4690,7 @@ a.wizard__button--selected {
   position: relative;
   cursor: pointer;
 }
-/* line 187, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 196, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-header::after {
   position: absolute;
   content: '';
@@ -4691,26 +4704,26 @@ a.wizard__button--selected {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 200, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 209, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-content {
   display: none;
   padding: 0 0 20px;
   max-width: 600px;
 }
-/* line 204, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 213, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-content p, .wizard__contextual_help .help-content ul, .wizard__contextual_help .help-content ol {
   margin: 0 0 20px;
 }
-/* line 208, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 217, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-content ul li, .wizard__contextual_help .help-content ol li {
   margin: 0 0 10px;
 }
-/* line 215, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 224, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help.wizard__contextual_help--open .help-header {
   border-top-color: transparent;
   border-bottom-color: rgba(15, 40, 64, 0.2);
 }
-/* line 218, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 227, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help.wizard__contextual_help--open .help-header::after {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -4719,16 +4732,16 @@ a.wizard__button--selected {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
 }
 
-/* line 230, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 239, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected {
   padding-bottom: 30px;
 }
-/* line 232, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 241, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question {
   position: relative;
   cursor: pointer;
 }
-/* line 235, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 244, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question::after {
   position: absolute;
   content: '';
@@ -4741,11 +4754,11 @@ a.wizard__button--selected {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 246, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 255, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question-title {
   font-size: 18px;
 }
-/* line 249, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 258, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question-selection {
   font-size: 11px;
   line-height: 12px;
@@ -4759,11 +4772,11 @@ a.wizard__button--selected {
   border-radius: 100px;
   border: solid 2px rgba(255, 255, 255, 0.5);
 }
-/* line 262, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 271, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__buttons, .wizard__question--selected .wizard__tip, .wizard__question--selected .wizard__contextual_help {
   display: none;
 }
-/* line 268, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 277, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected.expanded .wizard__question::after {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -4771,22 +4784,22 @@ a.wizard__button--selected {
   -o-transform: rotate(-180deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
 }
-/* line 276, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 285, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected.expanded .wizard__buttons, .wizard__question--selected.expanded .wizard__tip, .wizard__question--selected.expanded .wizard__contextual_help {
   display: block;
 }
 
-/* line 282, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 291, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help {
   padding-bottom: 40px;
 }
-/* line 284, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 293, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .wizard__title {
   padding: 25px 0 0;
   margin: 0 0 40px 0;
   position: relative;
 }
-/* line 288, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 297, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .wizard__title::before {
   content: '';
   position: absolute;
@@ -4796,7 +4809,7 @@ a.wizard__button--selected {
   height: 2px;
   width: 100%;
 }
-/* line 296, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 305, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .wizard__title h3 {
   padding: 0;
   margin: 0;
@@ -4807,38 +4820,38 @@ a.wizard__button--selected {
   max-width: 640px;
 }
 @media all and (min-width: 960px) {
-  /* line 296, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 305, ../sass/components/startup-guide/_startup-guide.scss */
   .node-contextual_help .wizard__title h3 {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
-/* line 309, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 318, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .node-description {
   max-width: 420px;
 }
-/* line 311, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 320, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .node-description p {
   padding: 0;
   margin: 0 0 22px 0;
   font-size: 1.142em;
 }
-/* line 316, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 325, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .node-description a {
   color: inherit;
   text-decoration: underline;
 }
 
 /* Start Screen */
-/* line 325, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 334, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start {
   padding: 100px 0 50px;
 }
-/* line 327, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 336, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .wizard__header--title {
   position: relative;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 1.428em;
   margin: 10px 0 30px;
   color: white;
   line-height: 1.1;
@@ -4848,42 +4861,64 @@ a.wizard__button--selected {
   background-position: 120px 0;
   padding-top: 35px;
 }
-/* line 334, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 343, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .wizard__header--title strong {
   font-size: 1.65em;
   color: white;
 }
 @media all and (min-width: 720px) {
-  /* line 327, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 336, ../sass/components/startup-guide/_startup-guide.scss */
   .node-start .wizard__header--title {
     background-position: 150px 0;
+    font-size: 2em;
   }
 }
-/* line 348, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 357, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-description {
   max-width: 600px;
 }
-/* line 350, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 359, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-description p {
   padding: 0;
   margin: 0 0 22px 0;
-  font-size: 1.357em;
+  font-size: 0.929em;
 }
-/* line 355, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 359, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start .node-description p {
+    font-size: 1.357em;
+  }
+}
+/* line 367, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-description p:last-child {
   font-weight: 700;
   margin: 0 0 20px 0;
-  font-size: 1.071em;
+  font-size: 0.929em;
   line-height: 1.4;
 }
-/* line 363, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 367, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start .node-description p:last-child {
+    font-size: 1.071em;
+  }
+}
+/* line 378, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-info {
+  font-size: 0.857em;
+  line-height: 1.33;
   color: #fff;
-  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   margin-top: 40px;
   padding: 20px 0;
 }
-/* line 369, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 378, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start .node-info {
+    border-width: 1px;
+    font-size: 1em;
+  }
+}
+/* line 390, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-info .start__wizard {
   display: inline-block;
   background-image: url("../images/startup-guide/arrow-next.svg");
@@ -4896,15 +4931,15 @@ a.wizard__button--selected {
   color: #fff;
 }
 
-/* line 384, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 405, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup {
   position: relative;
 }
-/* line 386, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 407, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form {
   padding: 20px 0;
 }
-/* line 388, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 409, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form #streetAddress {
   max-width: 370px;
   width: 100%;
@@ -4917,16 +4952,16 @@ a.wizard__button--selected {
   border: none;
   outline: none !important;
 }
-/* line 399, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 420, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form .node-description {
   margin: 0 0 25px;
 }
-/* line 401, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 422, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form .node-description p {
   margin: 0;
   padding: 0;
 }
-/* line 405, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 426, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form #streetAddressSubmit {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -4942,19 +4977,19 @@ a.wizard__button--selected {
   border: none;
   color: #0f2940;
 }
-/* line 409, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 430, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form #streetAddressSubmit:hover {
   color: white;
   background: #0f2940;
 }
-/* line 416, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 437, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--checking {
   display: none;
   padding: 20px 0 40px;
   font-family: "Merriweather";
   font-size: 1.428em;
 }
-/* line 421, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 442, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--checking .icon-checking {
   background-image: url("../images/startup-guide/checking.svg");
   background-repeat: no-repeat;
@@ -4969,12 +5004,12 @@ a.wizard__button--selected {
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
-/* line 436, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 457, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results {
   display: none;
   padding: 20px 0;
 }
-/* line 439, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 460, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results h3 {
   margin: 0 0 30px;
   font-family: Merriweather, serif;
@@ -4984,18 +5019,18 @@ a.wizard__button--selected {
   max-width: 640px;
 }
 @media all and (min-width: 960px) {
-  /* line 439, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 460, ../sass/components/startup-guide/_startup-guide.scss */
   .node-address_lookup .address__lookup .address__lookup--results h3 {
     font-size: 2.4em;
   }
 }
-/* line 450, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 471, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results p {
   max-width: 420px;
   margin: 0 0 22px;
   font-size: 1.142em;
 }
-/* line 455, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 476, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results .reset__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -5012,55 +5047,55 @@ a.wizard__button--selected {
   text-decoration: none;
   margin-bottom: 20px;
 }
-/* line 460, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 481, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results .reset__button:focus {
   outline: none;
 }
-/* line 463, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 484, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results .reset__button:hover {
   color: white;
   background: #0f2940;
 }
-/* line 471, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 492, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.checking .address__lookup--form, .node-address_lookup .address__lookup.checking .address__lookup--results {
   display: none;
 }
-/* line 474, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 495, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.checking .address__lookup--checking {
   display: block;
 }
-/* line 479, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 500, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-results .address__lookup--form, .node-address_lookup .address__lookup.show-results .address__lookup--checking {
   display: none;
 }
-/* line 482, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 503, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-results .address__lookup--results {
   display: block;
 }
-/* line 487, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 508, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-form .address__lookup--results, .node-address_lookup .address__lookup.show-form .address__lookup--checking {
   display: none;
 }
-/* line 490, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 511, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-form .address__lookup--form {
   display: block;
 }
 
-/* line 497, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 518, ../sass/components/startup-guide/_startup-guide.scss */
 .node-section {
   padding: 40px 0 0;
 }
 
-/* line 501, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 522, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation {
   padding: 40px 0;
 }
-/* line 503, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 524, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 507, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 528, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__confirmation--title {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -5070,47 +5105,47 @@ a.wizard__button--selected {
   max-width: 640px;
 }
 @media all and (min-width: 960px) {
-  /* line 507, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 528, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation .wizard__confirmation--title {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
-/* line 519, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 540, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__illustration {
   padding-bottom: 25px;
 }
-/* line 522, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 543, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__confirmation--copy {
   max-width: 690px;
   margin: 0 0 20px;
   font-size: 0.929em;
 }
 @media all and (min-width: 720px) {
-  /* line 522, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 543, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation .wizard__confirmation--copy {
     font-size: 1.142em;
     padding-right: 20%;
   }
 }
-/* line 532, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 553, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation a.wizard__button {
   text-decoration: none !important;
   font-size: 13px;
 }
-/* line 535, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 556, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation a.wizard__button:focus {
   outline: none;
 }
-/* line 540, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 561, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation p, .node-confirmation ul, .node-confirmation ol {
   margin: 0 0 25px;
 }
-/* line 544, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 565, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation ul li, .node-confirmation ol li {
   margin-bottom: 10px;
 }
-/* line 549, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 570, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .result-step {
   box-sizing: border-box;
   max-width: 690px;
@@ -5119,18 +5154,18 @@ a.wizard__button--selected {
   font-size: 0.929em;
   border-top: 2px solid #fff;
 }
-/* line 556, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 577, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .result-step a {
   text-decoration: underline;
 }
 @media all and (min-width: 720px) {
-  /* line 549, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 570, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation .result-step {
     font-size: 1.142em;
     padding-right: 70px;
   }
 }
-/* line 562, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 583, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .result-step .step-number {
   font-size: 12px;
   margin: 0 0 10px;
@@ -5139,7 +5174,7 @@ a.wizard__button--selected {
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-/* line 570, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 591, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .result-step h3 {
   font-family: Merriweather, serif;
   font-weight: 400;
@@ -5147,7 +5182,7 @@ a.wizard__button--selected {
   line-height: 1.4;
   margin: 0 0 20px 0;
 }
-/* line 579, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 600, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__startover {
   max-width: 690px;
   padding: 25px 0;
@@ -5155,7 +5190,7 @@ a.wizard__button--selected {
 }
 
 @-webkit-keyframes rotating {
-  /* line 589, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 610, ../sass/components/startup-guide/_startup-guide.scss */
   from {
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -5164,7 +5199,7 @@ a.wizard__button--selected {
     transform: rotate(0deg);
   }
 
-  /* line 596, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 617, ../sass/components/startup-guide/_startup-guide.scss */
   to {
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -5174,7 +5209,7 @@ a.wizard__button--selected {
   }
 }
 @keyframes rotating {
-  /* line 605, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 626, ../sass/components/startup-guide/_startup-guide.scss */
   from {
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -5183,7 +5218,7 @@ a.wizard__button--selected {
     transform: rotate(0deg);
   }
 
-  /* line 612, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 633, ../sass/components/startup-guide/_startup-guide.scss */
   to {
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -5193,35 +5228,35 @@ a.wizard__button--selected {
   }
 }
 @media print {
-  /* line 623, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 644, ../sass/components/startup-guide/_startup-guide.scss */
   header.header,
   .region--footer, .region--footer-sponsors, .region--bottom {
     display: none;
   }
 
-  /* line 628, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 649, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard-node, .lacity__wizard--email-form {
     display: none;
   }
 
-  /* line 632, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 653, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation {
     display: block;
   }
-  /* line 634, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 655, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation .wizard__illustration, .node-confirmation .wizard__startover {
     display: none;
   }
 
-  /* line 639, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 660, ../sass/components/startup-guide/_startup-guide.scss */
   #lacity__wizard .wizard-node {
     display: none;
   }
-  /* line 642, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 663, ../sass/components/startup-guide/_startup-guide.scss */
   #lacity__wizard .node-confirmation {
     display: block;
   }
-  /* line 644, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 665, ../sass/components/startup-guide/_startup-guide.scss */
   #lacity__wizard .node-confirmation .wizard__illustration, #lacity__wizard .node-confirmation .wizard__startover {
     display: none;
   }
