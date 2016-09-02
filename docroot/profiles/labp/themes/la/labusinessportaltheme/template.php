@@ -91,6 +91,7 @@ function labusinessportaltheme_preprocess_panels_pane(&$vars) {
     drupal_add_js($theme_path . '/js/wizard/views.js');
     drupal_add_js($theme_path . '/js/wizard/app.js');
     drupal_add_js($theme_path . '/js/wizard/theming.js');
+    drupal_add_js($theme_path . '/js/startup-guide/init.js');
   }
 }
 

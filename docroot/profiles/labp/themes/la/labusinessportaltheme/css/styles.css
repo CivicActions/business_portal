@@ -4429,6 +4429,10 @@ hr.hero__line--half {
   margin: auto;
   color: #0f2940;
 }
+/* line 6, ../sass/components/startup-guide/_startup-guide.scss */
+.container h3 {
+  color: #0f2940 !important;
+}
 @media all and (min-width: 960px) {
   /* line 1, ../sass/components/startup-guide/_startup-guide.scss */
   .container {
@@ -4436,21 +4440,21 @@ hr.hero__line--half {
   }
 }
 
-/* line 11, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 14, ../sass/components/startup-guide/_startup-guide.scss */
 #sbp-wizard-email-form {
   display: none;
   padding: 20px 0;
   max-width: 370px;
 }
-/* line 15, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 18, ../sass/components/startup-guide/_startup-guide.scss */
 #sbp-wizard-email-form .form-item {
   margin: 20px 0;
 }
-/* line 18, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 21, ../sass/components/startup-guide/_startup-guide.scss */
 #sbp-wizard-email-form label {
   margin: 10px 0;
 }
-/* line 21, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 24, ../sass/components/startup-guide/_startup-guide.scss */
 #sbp-wizard-email-form #edit-emailresults {
   width: 100%;
   margin: 0;
@@ -4462,7 +4466,7 @@ hr.hero__line--half {
   border: none;
   outline: none !important;
 }
-/* line 31, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 34, ../sass/components/startup-guide/_startup-guide.scss */
 #sbp-wizard-email-form #wizard-results-submit {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -4478,44 +4482,44 @@ hr.hero__line--half {
   border: none;
   color: #0f2940;
 }
-/* line 35, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 38, ../sass/components/startup-guide/_startup-guide.scss */
 #sbp-wizard-email-form #wizard-results-submit:hover {
   color: white;
   background: #0f2940;
 }
 @media all and (min-width: 720px) {
-  /* line 11, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 14, ../sass/components/startup-guide/_startup-guide.scss */
   #sbp-wizard-email-form {
     font-size: 1.142em;
   }
 }
 
-/* line 47, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 50, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__header--title-government {
   font-size: 0.857em;
   text-transform: uppercase;
   border: 0px solid red;
-  margin: 0 0 4px 0;
-  padding: 0px;
+  margin: 0 0 4px;
+  padding: 0;
   font-weight: 700;
 }
 @media all and (min-width: 960px) {
-  /* line 47, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 50, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__header--title-government {
     font-size: 1em;
   }
 }
 
-/* line 60, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 63, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__header--title {
   position: relative;
   font-weight: 700;
   font-size: 1em;
-  padding: 0 0 24px;
-  margin: 0 0 15px;
+  padding: 0 0 16px;
+  margin: 0 0 10px;
   font-size: 1.357em;
 }
-/* line 67, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 70, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__header--title::after {
   content: '';
   position: absolute;
@@ -4525,75 +4529,80 @@ hr.hero__line--half {
   height: 4px;
   width: 80px;
 }
-@media all and (min-width: 960px) {
-  /* line 60, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 63, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__header--title {
+    padding: 0 0 24px;
+    margin: 0 0 15px;
     font-size: 2em;
   }
 }
 
-/* line 81, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 86, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__copy--section_intro {
-  max-width: 540px;
+  max-width: 80%;
   margin: 15px 0px 20px 0;
   font-size: 0.929em;
 }
-/* line 85, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 90, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__copy--section_intro a {
   text-decoration: underline;
 }
 @media all and (min-width: 720px) {
-  /* line 81, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 86, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__copy--section_intro {
+    max-width: 540px;
     font-size: 1.285em;
   }
 }
 
-/* line 91, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 97, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__illustration {
-  padding: 30px 0 40px;
+  padding: 30px 0 30px;
   margin: 0 -25px;
   width: 100%;
 }
-/* line 95, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 101, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__illustration img {
-  max-width: 110%;
-  width: 110%;
+  max-width: 120%;
+  width: 120%;
   height: auto;
 }
 @media all and (min-width: 720px) {
-  /* line 91, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 97, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__illustration {
+    padding-bottom: 40px;
     margin: 0;
   }
-  /* line 102, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 109, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__illustration img {
     width: 100%;
   }
 }
 
-/* line 108, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 115, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question {
   padding: 25px 0 0;
   position: relative;
 }
-/* line 111, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 118, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question .wizard__question-title {
   font-family: Merriweather, serif;
   font-weight: 400;
-  font-size: 1.667em;
+  font-size: 1.428em;
   line-height: 1.4;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px;
   max-width: 640px;
 }
-@media all and (min-width: 960px) {
-  /* line 111, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 118, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard__question .wizard__question-title {
+    margin: 0 0 20px;
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
-/* line 123, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 131, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question::before {
   content: '';
   position: absolute;
@@ -4604,7 +4613,7 @@ hr.hero__line--half {
   width: 100%;
 }
 
-/* line 133, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 141, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__buttons {
   border: 0px solid white;
   margin: 28px 0 28px 0;
@@ -4612,7 +4621,7 @@ hr.hero__line--half {
   *zoom: 1;
 }
 
-/* line 139, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 147, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -4628,17 +4637,17 @@ hr.hero__line--half {
   margin-bottom: 10px;
 }
 
-/* line 143, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 151, ../sass/components/startup-guide/_startup-guide.scss */
 a.wizard__button {
   color: #0f2940;
   text-decoration: none;
 }
-/* line 146, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 154, ../sass/components/startup-guide/_startup-guide.scss */
 a.wizard__button:focus {
   outline: none;
 }
 
-/* line 151, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 159, ../sass/components/startup-guide/_startup-guide.scss */
 a.wizard__button--selected {
   text-decoration: none;
   padding: 8px 40px 8px 30px;
@@ -4648,35 +4657,42 @@ a.wizard__button--selected {
   background-size: 14px 10px;
 }
 
-/* line 160, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 168, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__button--result {
   display: none;
 }
 
-/* line 164, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 172, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__button--selected-icon {
   height: 10px;
   margin: 0 0 0 3px;
 }
 
-/* line 170, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 178, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__tip {
   margin: 20px 0 0;
   padding-bottom: 20px;
-  max-width: 430px;
-  font-size: 1.142em;
+  max-width: 80%;
+  font-size: 0.928em;
   line-height: 1.25;
 }
-/* line 176, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 184, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__tip p {
   margin: 0;
 }
+@media all and (min-width: 720px) {
+  /* line 178, ../sass/components/startup-guide/_startup-guide.scss */
+  .wizard__tip {
+    max-width: 430px;
+    font-size: 1.142em;
+  }
+}
 
-/* line 182, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 194, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help {
   padding-bottom: 20px;
 }
-/* line 184, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 196, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-header {
   font-size: 12px;
   font-weight: 700;
@@ -4690,7 +4706,7 @@ a.wizard__button--selected {
   position: relative;
   cursor: pointer;
 }
-/* line 196, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 208, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-header::after {
   position: absolute;
   content: '';
@@ -4704,26 +4720,32 @@ a.wizard__button--selected {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 209, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 221, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-content {
   display: none;
   padding: 0 0 20px;
-  max-width: 600px;
+  max-width: 80%;
 }
-/* line 213, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 225, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-content p, .wizard__contextual_help .help-content ul, .wizard__contextual_help .help-content ol {
   margin: 0 0 20px;
 }
-/* line 217, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 229, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help .help-content ul li, .wizard__contextual_help .help-content ol li {
   margin: 0 0 10px;
 }
-/* line 224, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 221, ../sass/components/startup-guide/_startup-guide.scss */
+  .wizard__contextual_help .help-content {
+    max-width: 600px;
+  }
+}
+/* line 239, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help.wizard__contextual_help--open .help-header {
   border-top-color: transparent;
   border-bottom-color: rgba(15, 40, 64, 0.2);
 }
-/* line 227, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 242, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__contextual_help.wizard__contextual_help--open .help-header::after {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -4732,16 +4754,16 @@ a.wizard__button--selected {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
 }
 
-/* line 239, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 254, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected {
   padding-bottom: 30px;
 }
-/* line 241, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 256, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question {
   position: relative;
   cursor: pointer;
 }
-/* line 244, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 259, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question::after {
   position: absolute;
   content: '';
@@ -4754,12 +4776,20 @@ a.wizard__button--selected {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 255, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 270, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question-title {
-  font-size: 18px;
+  font-size: 0.857em;
+  padding-right: 25px;
 }
-/* line 258, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 270, ../sass/components/startup-guide/_startup-guide.scss */
+  .wizard__question--selected .wizard__question-title {
+    font-size: 1.285em;
+  }
+}
+/* line 277, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__question-selection {
+  box-sizing: border-box;
   font-size: 11px;
   line-height: 12px;
   padding: 8px 15px 6px 15px;
@@ -4772,11 +4802,15 @@ a.wizard__button--selected {
   border-radius: 100px;
   border: solid 2px rgba(255, 255, 255, 0.5);
 }
-/* line 271, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 291, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected .wizard__buttons, .wizard__question--selected .wizard__tip, .wizard__question--selected .wizard__contextual_help {
   display: none;
 }
-/* line 277, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 295, ../sass/components/startup-guide/_startup-guide.scss */
+.wizard__question--selected.expanded {
+  padding-bottom: 0;
+}
+/* line 298, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected.expanded .wizard__question::after {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -4784,22 +4818,22 @@ a.wizard__button--selected {
   -o-transform: rotate(-180deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=6);
 }
-/* line 285, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 306, ../sass/components/startup-guide/_startup-guide.scss */
 .wizard__question--selected.expanded .wizard__buttons, .wizard__question--selected.expanded .wizard__tip, .wizard__question--selected.expanded .wizard__contextual_help {
   display: block;
 }
 
-/* line 291, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 312, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help {
   padding-bottom: 40px;
 }
-/* line 293, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 314, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .wizard__title {
   padding: 25px 0 0;
   margin: 0 0 40px 0;
   position: relative;
 }
-/* line 297, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 318, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .wizard__title::before {
   content: '';
   position: absolute;
@@ -4809,45 +4843,51 @@ a.wizard__button--selected {
   height: 2px;
   width: 100%;
 }
-/* line 305, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 326, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .wizard__title h3 {
   padding: 0;
   margin: 0;
   font-family: Merriweather, serif;
   font-weight: 400;
-  font-size: 1.667em;
+  font-size: 1.428em;
   line-height: 1.4;
   max-width: 640px;
 }
-@media all and (min-width: 960px) {
-  /* line 305, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 326, ../sass/components/startup-guide/_startup-guide.scss */
   .node-contextual_help .wizard__title h3 {
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
-/* line 318, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 339, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .node-description {
   max-width: 420px;
 }
-/* line 320, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 341, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .node-description p {
   padding: 0;
   margin: 0 0 22px 0;
   font-size: 1.142em;
 }
-/* line 325, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 346, ../sass/components/startup-guide/_startup-guide.scss */
 .node-contextual_help .node-description a {
   color: inherit;
   text-decoration: underline;
 }
 
 /* Start Screen */
-/* line 334, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 355, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start {
-  padding: 100px 0 50px;
+  padding: 65px 0 15px;
 }
-/* line 336, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 355, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start {
+    padding: 100px 0 50px;
+  }
+}
+/* line 360, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .wizard__header--title {
   position: relative;
   font-weight: 700;
@@ -4861,35 +4901,29 @@ a.wizard__button--selected {
   background-position: 120px 0;
   padding-top: 35px;
 }
-/* line 343, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 367, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .wizard__header--title strong {
   font-size: 1.65em;
   color: white;
 }
 @media all and (min-width: 720px) {
-  /* line 336, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 360, ../sass/components/startup-guide/_startup-guide.scss */
   .node-start .wizard__header--title {
     background-position: 150px 0;
     font-size: 2em;
   }
 }
-/* line 357, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 381, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-description {
-  max-width: 600px;
+  max-width: 80%;
 }
-/* line 359, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 383, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-description p {
   padding: 0;
   margin: 0 0 22px 0;
   font-size: 0.929em;
 }
-@media all and (min-width: 720px) {
-  /* line 359, ../sass/components/startup-guide/_startup-guide.scss */
-  .node-start .node-description p {
-    font-size: 1.357em;
-  }
-}
-/* line 367, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 387, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-description p:last-child {
   font-weight: 700;
   margin: 0 0 20px 0;
@@ -4897,28 +4931,43 @@ a.wizard__button--selected {
   line-height: 1.4;
 }
 @media all and (min-width: 720px) {
-  /* line 367, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 387, ../sass/components/startup-guide/_startup-guide.scss */
   .node-start .node-description p:last-child {
     font-size: 1.071em;
   }
 }
-/* line 378, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 381, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start .node-description {
+    max-width: 600px;
+  }
+  /* line 399, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start .node-description p {
+    font-size: 1.357em;
+  }
+  /* line 401, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start .node-description p:last-child {
+    font-size: 1.071em;
+  }
+}
+/* line 408, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-info {
   font-size: 0.857em;
   line-height: 1.33;
   color: #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 20px 0;
 }
 @media all and (min-width: 720px) {
-  /* line 378, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 408, ../sass/components/startup-guide/_startup-guide.scss */
   .node-start .node-info {
+    margin-top: 40px;
     border-width: 1px;
     font-size: 1em;
   }
 }
-/* line 390, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 421, ../sass/components/startup-guide/_startup-guide.scss */
 .node-start .node-info .start__wizard {
   display: inline-block;
   background-image: url("../images/startup-guide/arrow-next.svg");
@@ -4926,20 +4975,26 @@ a.wizard__button--selected {
   background-size: 20px 22px;
   background-position: 0 5px;
   padding-left: 40px;
-  max-width: 360px;
+  max-width: 80%;
   font-weight: 700;
   color: #fff;
 }
+@media all and (min-width: 720px) {
+  /* line 421, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-start .node-info .start__wizard {
+    max-width: 360px;
+  }
+}
 
-/* line 405, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 439, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup {
   position: relative;
 }
-/* line 407, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 441, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form {
   padding: 20px 0;
 }
-/* line 409, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 443, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form #streetAddress {
   max-width: 370px;
   width: 100%;
@@ -4952,16 +5007,16 @@ a.wizard__button--selected {
   border: none;
   outline: none !important;
 }
-/* line 420, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 454, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form .node-description {
   margin: 0 0 25px;
 }
-/* line 422, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 456, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form .node-description p {
   margin: 0;
   padding: 0;
 }
-/* line 426, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 460, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form #streetAddressSubmit {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -4977,19 +5032,19 @@ a.wizard__button--selected {
   border: none;
   color: #0f2940;
 }
-/* line 430, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 464, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--form #streetAddressSubmit:hover {
   color: white;
   background: #0f2940;
 }
-/* line 437, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 471, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--checking {
   display: none;
   padding: 20px 0 40px;
   font-family: "Merriweather";
   font-size: 1.428em;
 }
-/* line 442, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 476, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--checking .icon-checking {
   background-image: url("../images/startup-guide/checking.svg");
   background-repeat: no-repeat;
@@ -5004,12 +5059,12 @@ a.wizard__button--selected {
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
-/* line 457, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 491, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results {
   display: none;
   padding: 20px 0;
 }
-/* line 460, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 494, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results h3 {
   margin: 0 0 30px;
   font-family: Merriweather, serif;
@@ -5018,19 +5073,25 @@ a.wizard__button--selected {
   line-height: 1.3;
   max-width: 640px;
 }
-@media all and (min-width: 960px) {
-  /* line 460, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 494, ../sass/components/startup-guide/_startup-guide.scss */
   .node-address_lookup .address__lookup .address__lookup--results h3 {
     font-size: 2.4em;
   }
 }
-/* line 471, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 505, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results p {
-  max-width: 420px;
+  max-width: 80%;
   margin: 0 0 22px;
   font-size: 1.142em;
 }
-/* line 476, ../sass/components/startup-guide/_startup-guide.scss */
+@media all and (min-width: 720px) {
+  /* line 505, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-address_lookup .address__lookup .address__lookup--results p {
+    max-width: 420px;
+  }
+}
+/* line 513, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results .reset__button {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -5047,126 +5108,139 @@ a.wizard__button--selected {
   text-decoration: none;
   margin-bottom: 20px;
 }
-/* line 481, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 518, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results .reset__button:focus {
   outline: none;
 }
-/* line 484, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 521, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup .address__lookup--results .reset__button:hover {
   color: white;
   background: #0f2940;
 }
-/* line 492, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 529, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.checking .address__lookup--form, .node-address_lookup .address__lookup.checking .address__lookup--results {
   display: none;
 }
-/* line 495, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 532, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.checking .address__lookup--checking {
   display: block;
 }
-/* line 500, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 537, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-results .address__lookup--form, .node-address_lookup .address__lookup.show-results .address__lookup--checking {
   display: none;
 }
-/* line 503, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 540, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-results .address__lookup--results {
   display: block;
 }
-/* line 508, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 545, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-form .address__lookup--results, .node-address_lookup .address__lookup.show-form .address__lookup--checking {
   display: none;
 }
-/* line 511, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 548, ../sass/components/startup-guide/_startup-guide.scss */
 .node-address_lookup .address__lookup.show-form .address__lookup--form {
   display: block;
 }
 
-/* line 518, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 555, ../sass/components/startup-guide/_startup-guide.scss */
 .node-section {
-  padding: 40px 0 0;
+  padding: 30px 0 0;
+}
+@media all and (min-width: 720px) {
+  /* line 555, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-section {
+    padding: 40px 0 0;
+  }
 }
 
-/* line 522, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 562, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation {
   padding: 40px 0;
 }
-/* line 524, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 564, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation a {
   color: inherit;
   text-decoration: underline;
 }
-/* line 528, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 568, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__confirmation--title {
   font-family: Merriweather, serif;
   font-weight: 400;
-  font-size: 1.667em;
+  font-size: 1.428em;
   line-height: 1.4;
   margin: 0 0 20px 0;
-  max-width: 640px;
+  max-width: 80%;
 }
 @media all and (min-width: 960px) {
-  /* line 528, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 568, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation .wizard__confirmation--title {
+    max-width: 640px;
     font-size: 2.571em;
     font-size: 2.4em;
   }
 }
-/* line 540, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 581, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__illustration {
   padding-bottom: 25px;
 }
-/* line 543, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 584, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__confirmation--copy {
-  max-width: 690px;
+  max-width: 80%;
   margin: 0 0 20px;
   font-size: 0.929em;
 }
 @media all and (min-width: 720px) {
-  /* line 543, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 584, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation .wizard__confirmation--copy {
+    max-width: 690px;
     font-size: 1.142em;
     padding-right: 20%;
   }
 }
-/* line 553, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 595, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation a.wizard__button {
   text-decoration: none !important;
   font-size: 13px;
 }
-/* line 556, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 598, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation a.wizard__button:focus {
   outline: none;
 }
-/* line 561, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 603, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation p, .node-confirmation ul, .node-confirmation ol {
   margin: 0 0 25px;
 }
-/* line 565, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 607, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation ul li, .node-confirmation ol li {
   margin-bottom: 10px;
 }
-/* line 570, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 612, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .result-step {
   box-sizing: border-box;
-  max-width: 690px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 615, ../sass/components/startup-guide/_startup-guide.scss */
+.node-confirmation .result-step .step-content {
+  max-width: 80%;
   padding: 10px 0 0;
   margin: 40px 0;
   font-size: 0.929em;
-  border-top: 2px solid #fff;
 }
-/* line 577, ../sass/components/startup-guide/_startup-guide.scss */
-.node-confirmation .result-step a {
+/* line 620, ../sass/components/startup-guide/_startup-guide.scss */
+.node-confirmation .result-step .step-content a {
   text-decoration: underline;
 }
 @media all and (min-width: 720px) {
-  /* line 570, ../sass/components/startup-guide/_startup-guide.scss */
-  .node-confirmation .result-step {
+  /* line 615, ../sass/components/startup-guide/_startup-guide.scss */
+  .node-confirmation .result-step .step-content {
+    padding-right: 0;
+    max-width: 690px;
     font-size: 1.142em;
     padding-right: 70px;
   }
 }
-/* line 583, ../sass/components/startup-guide/_startup-guide.scss */
-.node-confirmation .result-step .step-number {
+/* line 627, ../sass/components/startup-guide/_startup-guide.scss */
+.node-confirmation .result-step .step-content .step-number {
   font-size: 12px;
   margin: 0 0 10px;
   color: #fff;
@@ -5174,23 +5248,23 @@ a.wizard__button--selected {
   text-transform: uppercase;
   letter-spacing: .05em;
 }
-/* line 591, ../sass/components/startup-guide/_startup-guide.scss */
-.node-confirmation .result-step h3 {
+/* line 635, ../sass/components/startup-guide/_startup-guide.scss */
+.node-confirmation .result-step .step-content h3 {
   font-family: Merriweather, serif;
   font-weight: 400;
   font-size: 1.375em;
   line-height: 1.4;
   margin: 0 0 20px 0;
 }
-/* line 600, ../sass/components/startup-guide/_startup-guide.scss */
+/* line 645, ../sass/components/startup-guide/_startup-guide.scss */
 .node-confirmation .wizard__startover {
-  max-width: 690px;
+  max-width: 100%;
   padding: 25px 0;
-  border-top: 2px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 @-webkit-keyframes rotating {
-  /* line 610, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 655, ../sass/components/startup-guide/_startup-guide.scss */
   from {
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -5199,7 +5273,7 @@ a.wizard__button--selected {
     transform: rotate(0deg);
   }
 
-  /* line 617, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 662, ../sass/components/startup-guide/_startup-guide.scss */
   to {
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -5209,7 +5283,7 @@ a.wizard__button--selected {
   }
 }
 @keyframes rotating {
-  /* line 626, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 671, ../sass/components/startup-guide/_startup-guide.scss */
   from {
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -5218,7 +5292,7 @@ a.wizard__button--selected {
     transform: rotate(0deg);
   }
 
-  /* line 633, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 678, ../sass/components/startup-guide/_startup-guide.scss */
   to {
     -ms-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -5228,35 +5302,35 @@ a.wizard__button--selected {
   }
 }
 @media print {
-  /* line 644, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 689, ../sass/components/startup-guide/_startup-guide.scss */
   header.header,
   .region--footer, .region--footer-sponsors, .region--bottom {
     display: none;
   }
 
-  /* line 649, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 694, ../sass/components/startup-guide/_startup-guide.scss */
   .wizard-node, .lacity__wizard--email-form {
     display: none;
   }
 
-  /* line 653, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 698, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation {
     display: block;
   }
-  /* line 655, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 700, ../sass/components/startup-guide/_startup-guide.scss */
   .node-confirmation .wizard__illustration, .node-confirmation .wizard__startover {
     display: none;
   }
 
-  /* line 660, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 705, ../sass/components/startup-guide/_startup-guide.scss */
   #lacity__wizard .wizard-node {
     display: none;
   }
-  /* line 663, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 708, ../sass/components/startup-guide/_startup-guide.scss */
   #lacity__wizard .node-confirmation {
     display: block;
   }
-  /* line 665, ../sass/components/startup-guide/_startup-guide.scss */
+  /* line 710, ../sass/components/startup-guide/_startup-guide.scss */
   #lacity__wizard .node-confirmation .wizard__illustration, #lacity__wizard .node-confirmation .wizard__startover {
     display: none;
   }
