@@ -5935,7 +5935,7 @@ body.node-type-sbp-landing-page .three-col-wrapper {
 body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__icon {
   display: none;
   float: none !important;
-  max-width: 220px !important;
+  max-width: 180px !important;
   margin-bottom: 20px;
 }
 /* line 23, ../sass/components/_landing-page--starter_kit.scss */
@@ -5947,7 +5947,7 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__icon 
 body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__header,
 body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__icon_header {
   margin: 0 0 10px;
-  font-size: 1.714em;
+  font-size: 1.571em;
   width: 80%;
 }
 /* line 36, ../sass/components/_landing-page--starter_kit.scss */
@@ -5957,7 +5957,7 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__heade
 /* line 40, ../sass/components/_landing-page--starter_kit.scss */
 body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__paragraph {
   width: 80%;
-  font-size: 1.071em;
+  /*font-size: 1.071em;*/
   line-height: 1.33;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
@@ -5994,7 +5994,7 @@ body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel-2col-s
   }
   /* line 74, ../sass/components/_landing-page--starter_kit.scss */
   body.node-type-sbp-landing-page .three-col-wrapper .panel__section .panel__paragraph {
-    font-size: 1.285em;
+    font-size: 1.142em;
     max-width: 240px;
   }
 }
@@ -6821,7 +6821,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 **************************************/
 /* line 5, ../sass/components/_three_column_cta.scss */
 .pane-bundle-three-column-cta > .pane-title {
-  font-size: 2em;
+  font-size: 1.571em;
   width: 90%;
   padding: 0px 0px 0.8em;
   font-family: "Merriweather", serif;
@@ -6832,7 +6832,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
 
 /* line 15, ../sass/components/_three_column_cta.scss */
 .three-col-body {
-  font-size: 1.429em;
+  font-size: 1.142em;
   line-height: 1.4em;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -6874,16 +6874,17 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
     padding-left: 0;
     padding-right: 13.33333px;
     margin-right: 6.66667px;
+    max-width: 280px;
     float: left;
     margin-top: 0;
     margin-right: 0;
   }
 }
-/* line 46, ../sass/components/_three_column_cta.scss */
+/* line 47, ../sass/components/_three_column_cta.scss */
 .three-col-wrapper .panel__icon_header {
   min-height: 30px;
 }
-/* line 50, ../sass/components/_three_column_cta.scss */
+/* line 51, ../sass/components/_three_column_cta.scss */
 .three-col-wrapper .panel__icon {
   margin-bottom: .5em;
 }

@@ -3,7 +3,7 @@
 **************************************/
 
 .pane-bundle-three-column-cta > .pane-title {
-  font-size: 2em;
+  font-size: 1.571em;
   width: 90%;
   padding: 0px 0px 0.8em;
   font-family: "Merriweather", serif;
@@ -13,7 +13,7 @@
 }
 
 .three-col-body {
-  font-size: 1.429em;
+  font-size: 1.142em;
   line-height: 1.4em;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,6 +37,7 @@
     margin-top: 2em;
     @include window_size(tab-wide-up) {
       @include zen-grid-flow-item(1, 3, false, true);
+      max-width: 280px;
       @include zen-float(left);
       margin-top: 0;
       margin-right: 0;
