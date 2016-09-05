@@ -1,3 +1,31 @@
+#lacity_wizard {
+  background: rgb(107, 195, 243);
+}
+
+.lacity_wizard--loading {
+  padding: 150px 0 100px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Merriweather";
+  font-size: 1.428em;
+  .icon-checking {
+    background-image: url("../images/startup-guide/checking.svg"); 
+    background-repeat: no-repeat;
+    background-size: 68px 68px;
+    width: 68px; height: 68px;
+    display: block;
+    margin: 0 auto 10px;
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+}
+
+
+
 .container {
   padding: 0 25px;
   max-width: 960px;
@@ -10,7 +38,9 @@
     padding: 0;
   }
 }
-
+.wizard-node {
+  overflow: hidden;
+}
 #sbp-wizard-email-form {
   display: none;
   padding: 20px 0;
@@ -362,7 +392,8 @@ a.wizard__button--selected {
     position: relative;
     font-weight: 700;
     font-size: 1.428em;
-    margin: 10px 0 30px;
+    margin: 10px 0 15px;
+    
     color: $white;
     line-height: 1.1;
     strong {
@@ -376,6 +407,7 @@ a.wizard__button--selected {
     padding-top: 35px;
     @include window_size(tab-wide-up){
       background-position: 150px 0;
+      margin: 10px 0 30px;
       font-size: 2em;
     }
   }
@@ -610,13 +642,18 @@ a.wizard__button--selected {
     }
   }
   
+  .wizard__result {
+    margin-top: 40px;
+  }
+  
+  
   .result-step {
     box-sizing: border-box;
     border-top: 1px solid rgba(255,255,255,.5);
     .step-content {
       max-width: 80%;
-      padding: 10px 0 0;
-      margin: 40px 0;
+      padding: 20px 0 0;
+      margin: 0 0 40px;
       font-size: 0.929em;
       a {text-decoration: underline;}
       @include window_size(tab-wide-up){
