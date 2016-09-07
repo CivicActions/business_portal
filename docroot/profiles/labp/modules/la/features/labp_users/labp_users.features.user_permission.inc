@@ -2446,6 +2446,7 @@ function labp_users_user_default_permissions() {
   $permissions['view ember support mods'] = array(
     'name' => 'view ember support mods',
     'roles' => array(
+      'Editor' => 'Editor',
       'administrator' => 'administrator',
       'curator' => 'curator',
       'marketer' => 'marketer',
