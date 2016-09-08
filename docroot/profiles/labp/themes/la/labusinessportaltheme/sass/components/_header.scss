@@ -80,7 +80,7 @@
   font-size: 12px;
 }
 
-/* The link around the name of the website. */
+/* The link around the name of the website.  */
 .header__site-link {
   &:link,
   &:visited {
@@ -185,7 +185,7 @@
   }
 }
 #block-sbp-search-sbp-search-icon {
-  right: 50px;
+  right: 45px;
   width: 25px;
   height: 25px;
   &.active {
@@ -209,7 +209,7 @@
 }
 #block-sbp-search-sbp-search-form {
   width: 100%;
-  max-width: 720px;
+  max-width: 711px;
   .sbp-search-intro-text {
     display: block;
     position: absolute;

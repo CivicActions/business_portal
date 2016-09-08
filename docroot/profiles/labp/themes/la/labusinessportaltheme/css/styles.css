@@ -2717,7 +2717,7 @@ body.not-logged-in.page-user #main {
   font-size: 12px;
 }
 
-/* The link around the name of the website. */
+/* The link around the name of the website.  */
 /* line 85, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
@@ -2828,7 +2828,7 @@ body.not-logged-in.page-user #main {
 
 /* line 187, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-icon {
-  right: 50px;
+  right: 45px;
   width: 25px;
   height: 25px;
 }
@@ -2859,7 +2859,7 @@ body.not-logged-in.page-user #main {
 /* line 210, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form {
   width: 100%;
-  max-width: 720px;
+  max-width: 711px;
 }
 /* line 213, ../sass/components/_header.scss */
 #block-sbp-search-sbp-search-form .sbp-search-intro-text {
@@ -2988,7 +2988,7 @@ body.not-logged-in.page-user #main {
 @media all and (min-width: 960px) and (min-width: 720px) {
   /* line 51, ../sass/components/_menu__main.scss */
   #header .menu > .menu__item {
-    margin: 0 15px 0 0;
+    margin: 0 10px 0 0;
     padding: 0;
     color: white;
     font-size: 15px;
@@ -3037,7 +3037,7 @@ body.not-logged-in.page-user #main {
 /* line 99, ../sass/components/_menu__main.scss */
 #header .menu__link {
   border: 0px solid red;
-  margin: 8px 0 0 0;
+  margin: 5px 0 0;
   display: block;
 }
 
