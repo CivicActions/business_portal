@@ -2717,7 +2717,7 @@ body.not-logged-in.page-user #main {
   font-size: 12px;
 }
 
-/* The link around the name of the website. */
+/* The link around the name of the website.  */
 /* line 85, ../sass/components/_header.scss */
 .header__site-link:link, .header__site-link:visited {
   color: #000;
