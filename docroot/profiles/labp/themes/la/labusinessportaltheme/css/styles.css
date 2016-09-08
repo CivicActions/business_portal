@@ -6457,11 +6457,12 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
   }
   /* line 66, ../sass/components/_section_content.scss */
   .panel__background_image img {
+    max-width: 420px;
     vertical-align: bottom;
   }
 }
 
-/* line 72, ../sass/components/_section_content.scss */
+/* line 73, ../sass/components/_section_content.scss */
 .pane-bundle-section-content > .pane-title {
   display: none;
 }
@@ -6479,7 +6480,7 @@ body.node-type-sbp-landing-page .panel__content_col_1 .panel__header-line {
   clear: both;
 }
 @media all and (min-width: 960px) {
-  /* line 79, ../sass/components/_section_content.scss */
+  /* line 80, ../sass/components/_section_content.scss */
   .panel__content_wrapper {
     margin-left: auto;
     margin-right: auto;
