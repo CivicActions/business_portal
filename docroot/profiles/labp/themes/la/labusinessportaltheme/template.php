@@ -84,6 +84,7 @@ function labusinessportaltheme_preprocess_panels_pane(&$vars) {
   if ($vars['pane']->subtype == 'sbp_wizard-wizard') {
     $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
     drupal_add_js($theme_path . '/js/startup-guide/init.js');
+
   }
 }
 
