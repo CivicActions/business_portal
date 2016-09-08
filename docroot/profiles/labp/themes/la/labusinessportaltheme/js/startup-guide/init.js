@@ -103,7 +103,7 @@
       var $quesTitle = $('<div class="wizard__question"><div class="wizard__question-title">'+node["title"]+'</div></div>');
       $container.append($quesTitle);
       
-      $quesSelect = $('<span class="wizard__question-selection"></span>');
+      $quesSelect = $('<a class="wizard__question-selection"></a>');
       $container.append($quesSelect);
       
       $quesTitle.click(function(e) {
