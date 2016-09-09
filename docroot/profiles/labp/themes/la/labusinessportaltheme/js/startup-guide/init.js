@@ -426,7 +426,7 @@
         message = message.split(strip[ind]).join(replacement[ind]);
       }
 //      message = '&message=' + message.replace('&amp;', '&');
-      console.log(message);
+//      console.log(message);
       $.ajax({
           url: '/labp/wizard-email',
           dataType: 'text',
