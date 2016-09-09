@@ -403,6 +403,8 @@
       $startoverButtonWrapper.append($startoverButton);
       $container.append($startoverButtonWrapper);
       $startoverButton.click(function(e) {
+        $('#sbp-wizard-email-form').hide();
+        $('.email_form_wrapper').append($('#sbp-wizard-email-form'));
         _render_wizard();
       });
       
@@ -418,12 +420,12 @@
       var emailToken = '&emailtoken=' + $( "input[name='form_token']" ).val();
       var message = $('.wizard__result').html();
       
-      var strip = ['%5Cn', '%5C%22'];
-      var replacement = ['', '%22'];
+      var strip = ['%5Cn', '%5C%22', '&amp;', '&nbsp;', '<div class="result-step">'];
+      var replacement = ['', '%22', '&', '', '<br><div class="result-step">'];
       for (var ind = 0; ind < strip.length; ind++) {
         message = message.split(strip[ind]).join(replacement[ind]);
       }
-      message = '&message=' + message;
+//      message = '&message=' + message.replace('&amp;', '&');
       console.log(message);
       $.ajax({
           url: '/labp/wizard-email',
