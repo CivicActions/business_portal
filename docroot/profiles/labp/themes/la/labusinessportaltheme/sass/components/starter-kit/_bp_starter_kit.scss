@@ -22,7 +22,7 @@
   // padding: 0.7em 0;
   // margin: 1em 0 0;
    font-size: 28px;
-   margin: 30px 0 30px 0;
+   margin: 15px 0 30px 0;
    padding: 20px 0 0 0;
  }
 }
@@ -91,7 +91,7 @@
       }
       @include window_size(tab-wide-up) {
         background-size: cover;
-        height: auto;
+        height: 100%;
       }
     }
   }

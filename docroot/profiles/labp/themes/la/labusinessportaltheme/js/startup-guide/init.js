@@ -161,7 +161,11 @@
       }
 
       if(node["tip"] && node["tip"] !== "") {
-        $container.append('<div class="wizard__tip">'+node["tip"]+'</div>');
+        if(helpButtons.length <= 0) {
+          $container.append('<div class="wizard__tip wizard__tip--padding">'+node["tip"]+'</div>');
+        } else {
+          $container.append('<div class="wizard__tip">'+node["tip"]+'</div>');
+        }
       }
 
       $myDiv.append($container);
@@ -434,7 +438,7 @@
           success: function( data, textStatus, jQxhr ){
             console.log(data);
             $("#wizard-email").addClass("element-invisible");
-            $( "#message-response" ).html( "Your message has been sent" );
+            $( "#message-response" ).html( "Your message has been sent." );
           },
           error: function( jqXhr, textStatus, errorThrown ){
             console.log( errorThrown );

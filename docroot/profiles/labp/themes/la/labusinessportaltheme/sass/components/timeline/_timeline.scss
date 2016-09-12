@@ -60,7 +60,8 @@
     vertical-align: top;
     background-repeat: no-repeat;
     background-position: 0 0;
-    width: 260px;
+    width: 220px;
+    padding-right: 40px;
 
     &:first-child {
 /*      .timeline__item--inner{
@@ -88,9 +89,8 @@
   }
 
   .timeline__item--inner {
-    padding: 11.1px 25px 44px;
-    font-size: 12px;
-    line-height: 1.5;
+    padding: 15px 25px 44px;
+    line-height: 1.3;
 
   }
 
@@ -103,7 +103,11 @@
   .timeline__item__title{
     font-family: $heading-font;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.286em;
+    line-height:1.3;
+    @include window_size(tab-wide-up){
+      font-size: 1.429em;
+    }
   }
 
   hr.timeline__item__hr {
