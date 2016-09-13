@@ -1786,6 +1786,7 @@ table {
     width: -moz-calc(50% - 230px);
     width: -o-calc(50% - 230px);
     width: calc(50% - 230px);
+    padding-bottom: 10px;
     /*@include zen-grid-item (3, 1);*/
   }
   /* line 91, ../sass/layouts/_panels.scss */
