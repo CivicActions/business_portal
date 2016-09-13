@@ -114,7 +114,7 @@
   .panel-2col-stacked .panel-col-first,
   .panel-2col-stacked .panel-col-last {
     @include window_size(desktop) {
-      padding-bottom: 100px;
+      padding-bottom: 120px;
     }
   }
 }

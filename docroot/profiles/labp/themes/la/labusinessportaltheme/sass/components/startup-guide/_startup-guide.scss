@@ -30,9 +30,9 @@
   padding: 0 25px;
   max-width: 960px;
   margin: auto;
-  color: #0f2940;
+  color: $dark_blue;
   h3 {
-    color: #0f2940 !important;
+    color: $dark_blue !important;
   }
   @include window_size(desktop){
     padding: 0;
@@ -50,6 +50,9 @@
   }
   label {
     margin: 10px 0;
+    .form-required {
+      color: $dark_blue;
+    }
   }
   #edit-emailresults {
     width: 100%;
@@ -64,14 +67,14 @@
   #wizard-results-submit {
     @include wizard__button--base;
     border: none;
-    color: #0f2940;
+    color: $dark_blue;
     &:hover {
       color: $wizard__button_text--selected;
       background: $wizard__button--selected;
     }
   }
   @include window_size(tab-wide-up){
-    font-size: 1.142em;
+    /*font-size: 1.142em;*/
   }
 }
 
@@ -101,7 +104,7 @@
     content: '';
     position: absolute;
     left: 0; bottom: 0;
-    background: #0f2940;
+    background: $dark_blue;
     height: 4px;
     width: 80px;
   }
@@ -162,7 +165,7 @@
     content: '';
     position: absolute;
     left: 0; top: 0;
-    background: #0f2940;
+    background: $dark_blue;
     height: 2px;
     width: 100%;
   }
@@ -218,17 +221,20 @@ a.wizard__button--selected {
     max-width: 430px;
     font-size: 1.142em;
   }
+  &.wizard__tip--padding {
+    padding-bottom: 100px;
+  }
 }
 
 
 .wizard__contextual_help {
-  padding-bottom: 20px;
+  padding-bottom: 80px;
   .help-header {
     font-size: 12px;
     font-weight: 700;
     line-height: 1.25;
     letter-spacing: 0.5px;
-    color: #0f2940;
+    color: $dark_blue;
     padding: 20px 0 15px 0;
     margin: 0;
     border-top: 1px solid rgba(15, 40, 64, 0.2);
@@ -314,7 +320,7 @@ a.wizard__button--selected {
     width: auto;
     font-weight: 700;
     text-align: center;
-    color: #0f2940;
+    color: $dark_blue;
     min-width: 54px;
     border-radius: 100px;
     border: solid 2px rgba(255, 255, 255, 0.5);
@@ -350,7 +356,7 @@ a.wizard__button--selected {
       content: '';
       position: absolute;
       left: 0; top: 0;
-      background: #0f2940;
+      background: $dark_blue;
       height: 2px;
       width: 100%;
     }
@@ -493,7 +499,7 @@ a.wizard__button--selected {
       #streetAddressSubmit {
         @include wizard__button--base;
         border: none;
-        color: #0f2940;
+        color: $dark_blue;
         &:hover {
           color: $wizard__button_text--selected;
           background: $wizard__button--selected;

@@ -37,6 +37,15 @@
       @include page__content_link;
     }
   }
+  
+  .panel__button {
+    @include border-radius(0);
+    background-color: transparent;
+    padding: 0; margin: 0;
+    a {
+      @include page__content_link;
+    }
+  }
 
   .panel__quote-line {
     @include hr-full;
