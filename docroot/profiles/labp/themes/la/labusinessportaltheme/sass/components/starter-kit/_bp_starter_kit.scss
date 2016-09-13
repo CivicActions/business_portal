@@ -171,17 +171,23 @@
     color: $dark_blue;
     padding: 20px 0 10px 25px;
     font-size: 18px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 0;
     background-image: url("../images/subsections/arrow_down.png");
     background-repeat: no-repeat;
     background-size: 17px 10px;
     background-position: 0px 26px;
     border-top: 1px solid #dcdcdc;
+    cursor: pointer;
+    &.collapsed {
+      background-image: url("../images/subsections/arrow_right.png");
+      background-size: 10px 17px;
+      background-position: 0px 23px;
+    }
   }
 
   // Checklist Bullets
   ul.depth {
-    margin: 10px 0 20px 0;
+    margin: 0 0 20px;
     padding: 0;
     font-size: 14px;
     line-height: 18px;

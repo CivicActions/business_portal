@@ -255,23 +255,30 @@ Drupal.behaviors.rotator = {
             }
           },
           {
-            breakpoint: 961,
+            breakpoint: 1281,
             settings: {
               slidesToShow: 4,
               slidesToScroll: 3
             }
           },
           {
-            breakpoint: 721,
+            breakpoint: 961,
             settings: {
               slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 721,
+            settings: {
+              slidesToShow: 2,
               slidesToScroll: 2
             }
           },
           {
             breakpoint: 481,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           },
@@ -372,5 +379,38 @@ Drupal.behaviors.rotator = {
       var $parent = $('.tool-tip').parents('li');
       $parent.css({'background-image': 'none'});
     });
+    
+    
+    /* Implementation of accordion in starter kit */
+    if($('.field-name-field-section-title').length > 0) {
+      $('.field-name-field-section-title').each(function() {
+        var $title = $(this);
+        var $parent = $title.parents(".content");
+        var $content = $( ".field-name-field-section-tip, .field-name-field-checklist-hierarchy", $parent ).wrap( '<div class="item-content"></div>' );
+        $title.addClass('collapsed');
+        $content.css({'display': 'none'});
+        $title.click(function(e) {
+          e.preventDefault();
+          $content.stop().slideToggle();
+          $title.toggleClass('collapsed');
+        });
+      });
+    }
+    
+    if($('.field-name-field-agency').length > 0) {
+      $('.field-name-field-agency').each(function() {
+        var $title = $(this);
+        var $parent = $title.parents(".content");
+        var $content = $( ".field-name-field-section-description, .field-name-field-permit-links", $parent ).wrap( '<div class="item-content"></div>' );
+        $title.addClass('collapsed');
+        $content.css({'display': 'none'});
+        $title.click(function(e) {
+          e.preventDefault();
+          $content.stop().slideToggle();
+          $title.toggleClass('collapsed');
+        });
+      });
+    }
+    
   });
 })(jQuery, Drupal, this, this.document);
