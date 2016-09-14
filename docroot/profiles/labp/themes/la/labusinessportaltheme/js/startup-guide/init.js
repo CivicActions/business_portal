@@ -362,19 +362,19 @@
       $container.append('<div class="wizard__confirmation--copy">'+node["Description"]+'</div>');
       
       $printButton = $('<a href="#print" class="wizard__button wizard__button-print">Print</a>');
-      $emailButton = $('<a href="#email" class="wizard__button wizard__button-email">Email</a>');
-      $emailForm = $('<div class="wizard__checklist--email">');
-      $emailForm.append($('#sbp-wizard-email-form'));
-      $emailForm.append('<div id="message-response"></div>');
+//      $emailButton = $('<a href="#email" class="wizard__button wizard__button-email">Email</a>');
+//      $emailForm = $('<div class="wizard__checklist--email">');
+//      $emailForm.append($('#sbp-wizard-email-form'));
+//      $emailForm.append('<div id="message-response"></div>');
       $container.append($printButton);
-      $container.append($emailButton);
-      $container.append($emailForm);
+//      $container.append($emailButton);
+//      $container.append($emailForm);
       
-      $emailButton.click(function(e) {
-        e.preventDefault();
-        $(this).toggleClass("selected");
-        $('#sbp-wizard-email-form').stop().slideToggle();
-      });
+//      $emailButton.click(function(e) {
+//        e.preventDefault();
+//        $(this).toggleClass("selected");
+//        $('#sbp-wizard-email-form').stop().slideToggle();
+//      });
       
       $printButton.click(function(e) {
 //        e.preventDefault();
@@ -407,8 +407,8 @@
       $startoverButtonWrapper.append($startoverButton);
       $container.append($startoverButtonWrapper);
       $startoverButton.click(function(e) {
-        $('#sbp-wizard-email-form').hide();
-        $('.email_form_wrapper').append($('#sbp-wizard-email-form'));
+//        $('#sbp-wizard-email-form').hide();
+//        $('.email_form_wrapper').append($('#sbp-wizard-email-form'));
         _render_wizard();
       });
       
