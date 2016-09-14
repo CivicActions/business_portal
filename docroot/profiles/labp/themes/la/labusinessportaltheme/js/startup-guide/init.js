@@ -429,7 +429,7 @@
       for (var ind = 0; ind < strip.length; ind++) {
         message = message.split(strip[ind]).join(replacement[ind]);
       }
-//      message = '&message=' + message.replace('&amp;', '&');
+      message = '&message=' + message;
 //      console.log(message);
       $.ajax({
           url: '/labp/wizard-email',
