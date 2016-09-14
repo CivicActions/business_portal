@@ -2945,6 +2945,17 @@ body.not-logged-in.page-user #main {
     background-color: #2e79a3 !important;
   }
 }
+@media (min-width: 0px) and (max-width: 321px) {
+  /* line 278, ../sass/components/_header.scss */
+  #block-sbp-translation-sbp-translation-icon {
+    right: -5px;
+  }
+
+  /* line 281, ../sass/components/_header.scss */
+  #block-sbp-search-sbp-search-icon {
+    right: 34px;
+  }
+}
 /**
 * Styles for the MAIN MENU
 */

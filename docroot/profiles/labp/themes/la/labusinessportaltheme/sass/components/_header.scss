@@ -273,3 +273,12 @@
     background-color: #2e79a3 !important;
   }
 }
+
+@media (min-width: 0px) and (max-width: 321px) {
+  #block-sbp-translation-sbp-translation-icon {
+    right: -5px;
+  }
+  #block-sbp-search-sbp-search-icon {
+    right: 34px;
+  }
+}
