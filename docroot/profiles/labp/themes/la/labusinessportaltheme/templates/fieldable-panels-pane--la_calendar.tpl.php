@@ -33,7 +33,7 @@ if (user_is_logged_in()) {
 ?>
 <div class="lacity-calendar-container">
   <script
-    src="http://calendar.dev2-cityofla.acsitefactory.com/app/loader.php?name=embed-calendar"
+    src="http://calendar.cityofla.acsitefactory.com/app/loader.php?name=embed-calendar"
     data-version="v1"
     data-widget-id="0001"
     id="<?php print $unique_id; ?>"
